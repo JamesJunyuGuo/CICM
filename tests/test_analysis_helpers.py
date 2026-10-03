@@ -2,12 +2,12 @@ import unittest
 
 import numpy as np
 
-from analyze_a1_attention import (
+from analyze_write_attention import (
     compute_p_last,
     stale_answer_ratios,
     wrong_mask_for_rows as a1_wrong_mask_for_rows,
 )
-from analyze_a2_logitlens import (
+from analyze_logit_lens import (
     should_drop_shared_first_token,
     wrong_mask_for_rows as a2_wrong_mask_for_rows,
 )

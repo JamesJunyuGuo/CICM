@@ -285,7 +285,7 @@ def write_natural_outputs(out_dir, n_per_cell=100, seed=20):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out-dir", default="data/stage_e/natural")
+    ap.add_argument("--out-dir", default="data/natural_transfer/natural")
     ap.add_argument("--n-per-cell", type=int, default=100)
     ap.add_argument("--seed", type=int, default=20)
     ap.add_argument("--print-examples", type=int, default=0)

@@ -15,7 +15,7 @@ import numpy as np
 
 from pythia_eval import dump_json
 from pythia_gen import dump_jsonl, load_jsonl
-from stage_l_eval import (
+from cicm_eval import (
     classify_stage_l_response,
     contains_value,
     load_model_and_tokenizer,
@@ -971,9 +971,9 @@ def write_report(path: str | Path, summary: dict) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data", default="data/stage_l/cicm_natural_factorial_otherdist_l0.jsonl")
+    parser.add_argument("--data", default="data/cicm/cicm_natural_factorial_otherdist_l0.jsonl")
     parser.add_argument("--model", default="Qwen/Qwen2.5-7B-Instruct")
-    parser.add_argument("--head-summary", default="results/stage_b/summary.json")
+    parser.add_argument("--head-summary", default="results/overwrite_attention_bias/summary.json")
     parser.add_argument("--out-dir", required=True)
     parser.add_argument("--dtype", choices=("bfloat16", "float32"), default="bfloat16")
     parser.add_argument("--betas", type=lambda value: [float(item) for item in value.split(",")], default=list(DEFAULT_BETAS))

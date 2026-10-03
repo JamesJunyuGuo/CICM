@@ -10,16 +10,12 @@ __pycache__/
 l1_harvest.npz
 l2_rows.jsonl
 
-# model weights are never committed except the small Stage C adapters under results/stage_c
+# model weights are never committed except the small head adapters under results/head_adapters
 *.bin
 *.safetensors
-!results/stage_c/**/*.safetensors
+!results/head_adapters/**/*.safetensors
 
 # scheduler logs
 *.out
 *.err
 logs/
-
-# rendering helpers for the HTML figures (see tools/README.md)
-tools/bin/
-tools/pylib/

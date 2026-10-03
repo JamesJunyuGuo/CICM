@@ -7,11 +7,11 @@ from icf_mech import dump_json, dump_jsonl, load_json
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--responses", default="results/stage_k/mech/dynamic_preference_local_responses.json")
-    parser.add_argument("--sample", default="results/stage_k/freeform_dp_sample_claude.json")
-    parser.add_argument("--rows-out", default="results/stage_k/mech/dynamic_preference_local_labeled.jsonl")
-    parser.add_argument("--summary-out", default="results/stage_k/mech/dynamic_preference_local_label_summary.json")
-    parser.add_argument("--judge-raw", default="results/stage_k/mech/dynamic_preference_local_judge_raw.jsonl")
+    parser.add_argument("--responses", default="results/icf_bench/mech/dynamic_preference_local_responses.json")
+    parser.add_argument("--sample", default="results/icf_bench/freeform_dp_sample_claude.json")
+    parser.add_argument("--rows-out", default="results/icf_bench/mech/dynamic_preference_local_labeled.jsonl")
+    parser.add_argument("--summary-out", default="results/icf_bench/mech/dynamic_preference_local_label_summary.json")
+    parser.add_argument("--judge-raw", default="results/icf_bench/mech/dynamic_preference_local_judge_raw.jsonl")
     parser.add_argument("--judge-model", default="openai/gpt-4o")
     parser.add_argument("--concurrency", type=int, default=4)
     parser.add_argument("--timeout", type=float, default=90.0)

@@ -417,7 +417,7 @@ def main() -> None:
     test = sub.add_parser("self-test")
     test.set_defaults(func=self_test)
     run = sub.add_parser("capture")
-    run.add_argument("--data", default="results/stage_p/data/event_items.jsonl")
+    run.add_argument("--data", default="results/event_trace/data/event_items.jsonl")
     run.add_argument("--model", required=True)
     run.add_argument("--model-label")
     run.add_argument("--dtype", choices=("float32", "bfloat16", "float16"), default="bfloat16")

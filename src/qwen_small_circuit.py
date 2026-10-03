@@ -28,7 +28,7 @@ from pythia_gen import (
     value_token_id,
     validate_row,
 )
-from stage_n_attention_sink import (
+from attention_sink import (
     QWEN_VALUE_CANDIDATES,
     make_qwen_clean_counterfactual,
     qwen_single_token_values,
@@ -1720,7 +1720,7 @@ def main() -> None:
     induction_c.add_argument("--seed", type=int, default=20260818)
     induction_c.set_defaults(func=induction_part_c)
     report_c = sub.add_parser("report-part-c")
-    report_c.add_argument("--root", default="results/stage_o/partC_qwen15b")
+    report_c.add_argument("--root", default="results/pythia_crossscale/partC_qwen15b")
     report_c.set_defaults(func=report_part_c)
     recon = sub.add_parser("adjudicate-recon")
     recon.add_argument("--model-05", default="Qwen/Qwen2.5-0.5B")
@@ -1733,7 +1733,7 @@ def main() -> None:
     recon.add_argument("--report", required=True)
     recon.set_defaults(func=adjudicate_recon)
     part_d = sub.add_parser("summarize-part-d")
-    part_d.add_argument("--root", default="results/stage_o")
+    part_d.add_argument("--root", default="results/pythia_crossscale")
     part_d.add_argument("--out-dir", required=True)
     part_d.set_defaults(func=summarize_part_d)
     noop = sub.add_parser("hooked-noop")

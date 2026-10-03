@@ -15,7 +15,7 @@ from pathlib import Path
 
 import numpy as np
 
-from analyze_a1_attention import compute_p_last, load_jsonl
+from analyze_write_attention import compute_p_last, load_jsonl
 from gen_tasks import make_example
 from span_utils import build_chat_prompt, map_target_value_spans
 
@@ -219,12 +219,12 @@ def main():
     ap.add_argument("--n-per-length", type=int, default=100)
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--max-answer-tokens", type=int, default=4)
-    ap.add_argument("--out-dir", default="results/stage_e/retrieval_heads")
+    ap.add_argument("--out-dir", default="results/llama_and_scale/retrieval_heads")
     ap.add_argument("--summary", default=None)
     ap.add_argument("--examples-out", default=None)
-    ap.add_argument("--stage-a-npz", default="results/stage_a/extract_stable.npz")
-    ap.add_argument("--stage-a-index", default="results/stage_a/extract_stable_index.jsonl")
-    ap.add_argument("--stage-a-a1", default="results/stage_a/a1_stable_summary.json")
+    ap.add_argument("--stage-a-npz", default="results/overwrite_attention_extraction/extract_stable.npz")
+    ap.add_argument("--stage-a-index", default="results/overwrite_attention_extraction/extract_stable_index.jsonl")
+    ap.add_argument("--stage-a-a1", default="results/overwrite_attention_extraction/a1_stable_summary.json")
     args = ap.parse_args()
 
     import torch

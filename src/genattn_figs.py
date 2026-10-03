@@ -451,7 +451,7 @@ def render(args) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--entry", action="append", type=parse_entry, required=True)
-    parser.add_argument("--out-dir", default="results/stage_p/figures")
+    parser.add_argument("--out-dir", default="results/event_trace/figures")
     args = parser.parse_args()
     render(args)
 

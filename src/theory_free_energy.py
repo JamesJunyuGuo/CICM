@@ -143,10 +143,10 @@ def _conditional_row(k: int, current: int, stale: int) -> dict:
 
 
 def load_validation_datasets(root: Path) -> list[dict]:
-    p0 = json.loads((root / "results/stage_e/qwen_p0_errors.summary.json").read_text())
+    p0 = json.loads((root / "results/llama_and_scale/qwen_p0_errors.summary.json").read_text())
     scale = json.loads((root / "results/figures/F8_openrouter_scale_sweep.data.json").read_text())
     natural = json.loads(
-        (root / "results/stage_l/natural_factorial_otherdist_l0/openrouter_qwen25_7b_summary_merged.json").read_text()
+        (root / "results/cicm/natural_factorial_otherdist_l0/openrouter_qwen25_7b_summary_merged.json").read_text()
     )
     datasets = []
 
@@ -297,7 +297,7 @@ def write_report(summary: dict, path: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
-    parser.add_argument("--out-dir", type=Path, default=Path("results/theory_free_energy"))
+    parser.add_argument("--out-dir", type=Path, default=Path("results/dose_law"))
     parser.add_argument("--bootstrap-reps", type=int, default=5000)
     parser.add_argument("--seed", type=int, default=20260810)
     args = parser.parse_args()
@@ -315,9 +315,9 @@ def main() -> None:
         "seed": args.seed,
         "bootstrap_reps": args.bootstrap_reps,
         "frozen_inputs": [
-            "results/stage_e/qwen_p0_errors.summary.json",
+            "results/llama_and_scale/qwen_p0_errors.summary.json",
             "results/figures/F8_openrouter_scale_sweep.data.json",
-            "results/stage_l/natural_factorial_otherdist_l0/openrouter_qwen25_7b_summary_merged.json",
+            "results/cicm/natural_factorial_otherdist_l0/openrouter_qwen25_7b_summary_merged.json",
         ],
         "status_counts": counts,
         "datasets": results,

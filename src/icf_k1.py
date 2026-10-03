@@ -197,7 +197,7 @@ def write_report(path: str | Path, summary: dict, model: str, source: str) -> No
         "",
         "## Scope",
         "",
-        "Stage K tests stale-binding as a real-deployment phenomenon on ICF-Bench. This report is isolated from Stage J and uses only `results/stage_k/` artifacts.",
+        "Stage K tests stale-binding as a real-deployment phenomenon on ICF-Bench. This report is isolated from Stage J and uses only `results/icf_bench/` artifacts.",
         "",
         "## K1 Behavioral Error Signature",
         "",

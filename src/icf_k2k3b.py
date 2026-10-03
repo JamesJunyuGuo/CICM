@@ -478,11 +478,11 @@ def append_report_section(report_path: str, section_path: str) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mech-dir", default="results/stage_k/mech/full_h100")
-    parser.add_argument("--out", default="results/stage_k/mech/k2k3b_summary.json")
-    parser.add_argument("--probe-rows-out", default="results/stage_k/mech/k2k3b_probe_rows.jsonl")
-    parser.add_argument("--section-out", default="results/stage_k/mech/REPORT_k2k3b.md")
-    parser.add_argument("--report", default="results/stage_k/mech/REPORT.md")
+    parser.add_argument("--mech-dir", default="results/icf_bench/mech/full_h100")
+    parser.add_argument("--out", default="results/icf_bench/mech/k2k3b_summary.json")
+    parser.add_argument("--probe-rows-out", default="results/icf_bench/mech/k2k3b_probe_rows.jsonl")
+    parser.add_argument("--section-out", default="results/icf_bench/mech/REPORT_k2k3b.md")
+    parser.add_argument("--report", default="results/icf_bench/mech/REPORT.md")
     parser.add_argument("--n-boot", type=int, default=2000)
     parser.add_argument("--n-shuffle", type=int, default=2000)
     parser.add_argument("--seed", type=int, default=20260721)

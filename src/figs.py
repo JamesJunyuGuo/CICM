@@ -14,7 +14,7 @@ os.environ.setdefault("MPLCONFIGDIR", "/tmp/x-jguo7-codextmp/matplotlib")
 import matplotlib.pyplot as plt
 import numpy as np
 
-from analyze_a1_attention import compute_p_last, load_jsonl
+from analyze_write_attention import compute_p_last, load_jsonl
 
 
 COLORS = {
@@ -601,24 +601,24 @@ def _short_model_label(model):
 
 def default_sources():
     return {
-        "qwen_p0": "results/p0_qwen7b.summary.json",
-        "llama_p0": "results/stage_e/llama/p0_ai_local_40g.summary.json",
-        "qwen_p0_errors": "results/stage_e/qwen_p0_errors.summary.json",
-        "llama_p0_errors": "results/stage_e/llama/p0_errors_ai_local_40g.summary.json",
-        "natural_qwen": "results/stage_e/natural/qwen_baseline_ai.summary.json",
-        "natural_llama": "results/stage_e/natural/llama_baseline_ai_local_relaxed_40g.summary.json",
-        "qwen_a1_npz": "results/stage_a/extract_stable.npz",
-        "qwen_a1_index": "results/stage_a/extract_stable_index.jsonl",
-        "llama_a1_npz": "results/stage_e/llama/extract_stable_ai_local.npz",
-        "llama_a1_index": "results/stage_e/llama/extract_stable_index_ai_local.jsonl",
-        "qwen_a2": "results/stage_a/a2_stable_summary.json",
-        "llama_a2": "results/stage_e/llama/a2_stable_median_ai_summary.json",
-        "stage_b": "results/stage_b/summary.json",
-        "stage_c": "results/stage_c/summary.json",
-        "stage_d_transfer": "results/stage_d/transfer_summary.json",
-        "natural_transfer": "results/stage_e/natural/transfer_summary_ai.json",
-        "natural_transfer_seed2": "results/stage_e/second_seed/natural/transfer_summary.json",
-        "openrouter": "results/stage_e/openrouter/sweep_final.summary.json",
+        "qwen_p0": "results/overwrite_task/p0_qwen7b.summary.json",
+        "llama_p0": "results/llama_and_scale/llama/p0_ai_local_40g.summary.json",
+        "qwen_p0_errors": "results/llama_and_scale/qwen_p0_errors.summary.json",
+        "llama_p0_errors": "results/llama_and_scale/llama/p0_errors_ai_local_40g.summary.json",
+        "natural_qwen": "results/llama_and_scale/natural/qwen_baseline_ai.summary.json",
+        "natural_llama": "results/llama_and_scale/natural/llama_baseline_ai_local_relaxed_40g.summary.json",
+        "qwen_a1_npz": "results/overwrite_attention_extraction/extract_stable.npz",
+        "qwen_a1_index": "results/overwrite_attention_extraction/extract_stable_index.jsonl",
+        "llama_a1_npz": "results/llama_and_scale/llama/extract_stable_ai_local.npz",
+        "llama_a1_index": "results/llama_and_scale/llama/extract_stable_index_ai_local.jsonl",
+        "qwen_a2": "results/overwrite_attention_extraction/a2_stable_summary.json",
+        "llama_a2": "results/llama_and_scale/llama/a2_stable_median_ai_summary.json",
+        "stage_b": "results/overwrite_attention_bias/summary.json",
+        "stage_c": "results/head_adapters/summary.json",
+        "stage_d_transfer": "results/adapter_transfer/transfer_summary.json",
+        "natural_transfer": "results/llama_and_scale/natural/transfer_summary_ai.json",
+        "natural_transfer_seed2": "results/llama_and_scale/second_seed/natural/transfer_summary.json",
+        "openrouter": "results/llama_and_scale/openrouter/sweep_final.summary.json",
     }
 
 

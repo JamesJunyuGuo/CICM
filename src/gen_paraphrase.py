@@ -90,7 +90,7 @@ def build_dataset(out_path, n_per_cell=100, seed=2):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="data/stage_c/paraphrase_eval.jsonl")
+    ap.add_argument("--out", default="data/head_adapters/paraphrase_eval.jsonl")
     ap.add_argument("--n-per-cell", type=int, default=100)
     ap.add_argument("--seed", type=int, default=2)
     args = ap.parse_args()

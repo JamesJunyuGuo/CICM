@@ -107,7 +107,7 @@ def write_report(path: str, summary: dict) -> None:
         "",
         "## Scope",
         "",
-        "K2/K3 use local `Qwen/Qwen2.5-7B-Instruct` GPU harvests with fp32 eager attention. Outputs are isolated under `results/stage_k/mech/`; Stage-J and K1d artifacts were not modified.",
+        "K2/K3 use local `Qwen/Qwen2.5-7B-Instruct` GPU harvests with fp32 eager attention. Outputs are isolated under `results/icf_bench/mech/`; Stage-J and K1d artifacts were not modified.",
         "",
         "## K3 DP Retention vs Selection",
         "",
@@ -152,10 +152,10 @@ def write_report(path: str, summary: dict) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mech-dir", default="results/stage_k/mech")
+    parser.add_argument("--mech-dir", default="results/icf_bench/mech")
     parser.add_argument("--model", default="Qwen/Qwen2.5-7B-Instruct")
-    parser.add_argument("--out", default="results/stage_k/mech/k2k3_summary.json")
-    parser.add_argument("--report-out", default="results/stage_k/mech/REPORT.md")
+    parser.add_argument("--out", default="results/icf_bench/mech/k2k3_summary.json")
+    parser.add_argument("--report-out", default="results/icf_bench/mech/REPORT.md")
     args = parser.parse_args()
 
     mech = Path(args.mech_dir)

@@ -45,7 +45,7 @@ def summarize_arm(summary, high_loads):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--baseline", default="results/stage_e/natural/qwen_baseline_ai.summary.json")
+    ap.add_argument("--baseline", default="results/llama_and_scale/natural/qwen_baseline_ai.summary.json")
     ap.add_argument("--arm-l", required=True)
     ap.add_argument("--random-heads", required=True)
     ap.add_argument("--out", required=True)

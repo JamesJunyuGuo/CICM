@@ -59,9 +59,9 @@ def summarize(rows, budget):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--jsonl", default="results/stage_e/openrouter/sweep_v2.jsonl")
-    ap.add_argument("--budget", default="results/stage_e/openrouter/sweep_v2_budget.json")
-    ap.add_argument("--summary", default="results/stage_e/openrouter/sweep_v2.summary.json")
+    ap.add_argument("--jsonl", default="results/llama_and_scale/openrouter/sweep_v2.jsonl")
+    ap.add_argument("--budget", default="results/llama_and_scale/openrouter/sweep_v2_budget.json")
+    ap.add_argument("--summary", default="results/llama_and_scale/openrouter/sweep_v2.summary.json")
     args = ap.parse_args()
 
     rows = load_jsonl(args.jsonl)

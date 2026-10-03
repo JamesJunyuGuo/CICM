@@ -800,14 +800,14 @@ def main() -> None:
     heads.set_defaults(func=analyze_heads)
 
     aggregate_parser = sub.add_parser("aggregate")
-    aggregate_parser.add_argument("--root", default="results/stage_n/scale_transfer")
+    aggregate_parser.add_argument("--root", default="results/pythia_circuit/scale_transfer")
     aggregate_parser.add_argument(
         "--reference-behavior",
-        default="results/stage_n/behavior_full_cpu/summary.json",
+        default="results/pythia_circuit/behavior_full_cpu/summary.json",
     )
     aggregate_parser.add_argument(
         "--reference-mechanism",
-        default="results/stage_n/mechanism_full_cpu/mechanism.summary.json",
+        default="results/pythia_circuit/mechanism_full_cpu/mechanism.summary.json",
     )
     aggregate_parser.add_argument("--summary", required=True)
     aggregate_parser.add_argument("--report", required=True)

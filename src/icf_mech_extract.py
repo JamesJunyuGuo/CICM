@@ -8,7 +8,7 @@ import numpy as np
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from analyze_a2_logitlens import first_value_token_id, should_drop_shared_first_token
+from analyze_logit_lens import first_value_token_id, should_drop_shared_first_token
 from icf_generate import build_instructional_forgetting_jobs, messages_to_prompt
 from icf_k1d import build_dp_messages, strip_dp_options
 from icf_matchers import classify_instructional_forgetting_response, extract_forgotten_spans

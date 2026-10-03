@@ -834,9 +834,9 @@ def write_report(path: str | Path, summary: dict) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", default="Qwen/Qwen2.5-1.5B")
-    parser.add_argument("--calibration-pool", default="results/stage_o/partC_qwen15b/matched_pool.jsonl")
-    parser.add_argument("--head-summary", default="results/stage_o/partC_qwen15b/ablation/ablation_heldout.summary.json")
-    parser.add_argument("--confirmation-rows", default="results/stage_r/attenuation/confirmation_tasks.jsonl")
+    parser.add_argument("--calibration-pool", default="results/pythia_crossscale/partC_qwen15b/matched_pool.jsonl")
+    parser.add_argument("--head-summary", default="results/pythia_crossscale/partC_qwen15b/ablation/ablation_heldout.summary.json")
+    parser.add_argument("--confirmation-rows", default="results/attention_rerouting/attenuation/confirmation_tasks.jsonl")
     parser.add_argument("--out-dir", required=True)
     parser.add_argument("--dtype", choices=("bfloat16", "float32"), default="bfloat16")
     parser.add_argument("--betas", type=parse_floats, default=list(DEFAULT_BETAS))

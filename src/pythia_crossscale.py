@@ -684,31 +684,31 @@ def main() -> None:
     cache.set_defaults(func=cache_model)
 
     aggregate_parser = sub.add_parser("aggregate")
-    aggregate_parser.add_argument("--root", default="results/stage_o")
+    aggregate_parser.add_argument("--root", default="results/pythia_crossscale")
     aggregate_parser.add_argument("--summary", required=True)
     aggregate_parser.add_argument("--report", required=True)
     aggregate_parser.add_argument(
-        "--reference-behavior", default="results/stage_n/behavior_full_cpu/summary.json"
+        "--reference-behavior", default="results/pythia_circuit/behavior_full_cpu/summary.json"
     )
     aggregate_parser.add_argument(
         "--reference-mechanism",
-        default="results/stage_n/mechanism_full_cpu/mechanism.summary.json",
+        default="results/pythia_circuit/mechanism_full_cpu/mechanism.summary.json",
     )
     aggregate_parser.add_argument(
         "--reference-first-pass",
-        default="results/stage_n/mechanism_full_core_ai32/path_patch_first_pass.summary.json",
+        default="results/pythia_circuit/mechanism_full_core_ai32/path_patch_first_pass.summary.json",
     )
     aggregate_parser.add_argument(
         "--reference-patch",
-        default="results/stage_n/mechanism_full_core_ai32/cumulative_patch.summary.json",
+        default="results/pythia_circuit/mechanism_full_core_ai32/cumulative_patch.summary.json",
     )
     aggregate_parser.add_argument(
         "--reference-ablation",
-        default="results/stage_n/phase1b/a_full_cpu/ablation_heldout.summary.json",
+        default="results/pythia_circuit/phase1b/a_full_cpu/ablation_heldout.summary.json",
     )
     aggregate_parser.add_argument(
         "--reference-induction",
-        default="results/stage_n/mechanism_full_core_ai32/induction.summary.json",
+        default="results/pythia_circuit/mechanism_full_core_ai32/induction.summary.json",
     )
     aggregate_parser.set_defaults(func=aggregate)
 

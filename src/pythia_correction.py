@@ -502,13 +502,13 @@ def main() -> None:
     sweep.add_argument("--dtype", choices=("float32", "bfloat16"), default="float32")
     sweep.add_argument(
         "--head-summary",
-        default="results/stage_n/phase1b/a_full_cpu/ablation_heldout.summary.json",
+        default="results/pythia_circuit/phase1b/a_full_cpu/ablation_heldout.summary.json",
     )
     sweep.add_argument(
-        "--pool", default="results/stage_n/behavior_full_cpu/matched_pool.jsonl"
+        "--pool", default="results/pythia_circuit/behavior_full_cpu/matched_pool.jsonl"
     )
     sweep.add_argument(
-        "--behavior-rows", default="results/stage_n/behavior_full_cpu/rows.jsonl"
+        "--behavior-rows", default="results/pythia_circuit/behavior_full_cpu/rows.jsonl"
     )
     sweep.add_argument("--lm-segments", required=True)
     sweep.add_argument("--out-dir", required=True)

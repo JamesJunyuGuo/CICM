@@ -121,13 +121,13 @@ def write_subset_npz(npz_in, npz_out, row_indices, total_rows):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--extract-index", default="results/stage_a/extract_index.jsonl")
-    ap.add_argument("--sdpa", default="results/stage_a_check_sdpa.jsonl")
-    ap.add_argument("--out", default="results/stage_a/stable_labels.jsonl")
-    ap.add_argument("--summary", default="results/stage_a/stable_labels.summary.json")
-    ap.add_argument("--npz-in", default="results/stage_a/extract.npz")
-    ap.add_argument("--stable-index-out", default="results/stage_a/extract_stable_index.jsonl")
-    ap.add_argument("--stable-npz-out", default="results/stage_a/extract_stable.npz")
+    ap.add_argument("--extract-index", default="results/overwrite_attention_extraction/extract_index.jsonl")
+    ap.add_argument("--sdpa", default="results/overwrite_task/extraction_check_sdpa.jsonl")
+    ap.add_argument("--out", default="results/overwrite_attention_extraction/stable_labels.jsonl")
+    ap.add_argument("--summary", default="results/overwrite_attention_extraction/stable_labels.summary.json")
+    ap.add_argument("--npz-in", default="results/overwrite_attention_extraction/extract.npz")
+    ap.add_argument("--stable-index-out", default="results/overwrite_attention_extraction/extract_stable_index.jsonl")
+    ap.add_argument("--stable-npz-out", default="results/overwrite_attention_extraction/extract_stable.npz")
     args = ap.parse_args()
 
     extract_rows = load_jsonl(args.extract_index)
