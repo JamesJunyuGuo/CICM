@@ -1,0 +1,491 @@
+{
+  "by_k": {
+    "0": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "1": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "2": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "3": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "4": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "5": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    }
+  },
+  "by_k_seed": {
+    "k0__seed11": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k0__seed29": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k0__seed47": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k1__seed11": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k1__seed29": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k1__seed47": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k2__seed11": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k2__seed29": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k2__seed47": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k3__seed11": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k3__seed29": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k3__seed47": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k4__seed11": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k4__seed29": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k4__seed47": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k5__seed11": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k5__seed29": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k5__seed47": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    }
+  },
+  "by_seed": {
+    "11": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "29": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "47": {
+      "accuracy": NaN,
+      "accuracy_wilson95": [
+        NaN,
+        NaN
+      ],
+      "counts": {},
+      "n": 0,
+      "out_of_context_rate": NaN,
+      "within_stale_rate_all": NaN,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    }
+  },
+  "decoding": "one-token greedy over full vocabulary",
+  "device": "cpu",
+  "dtype": "float32",
+  "k4": {
+    "accuracy": NaN,
+    "accuracy_wilson95": [
+      NaN,
+      NaN
+    ],
+    "counts": {},
+    "n": 0,
+    "out_of_context_rate": NaN,
+    "within_stale_rate_all": NaN,
+    "within_stale_share_errors": NaN,
+    "within_stale_share_errors_wilson95": [
+      NaN,
+      NaN
+    ]
+  },
+  "model": "EleutherAI/pythia-160m",
+  "n": 216,
+  "revision": "step0",
+  "stage": "N-phase2-behavior-checkpoint",
+  "stale_onset_pool": {
+    "counts": {},
+    "cross_variable_share": NaN,
+    "errors_by_seed": {
+      "11": 0,
+      "29": 0,
+      "47": 0
+    },
+    "gate_pass": false,
+    "n_errors": 0,
+    "other_share": NaN,
+    "scope": "k>=1 errors",
+    "within_stale_share": NaN
+  },
+  "step": 0,
+  "task_path": "results/stage_n/dynamics/task_single.jsonl",
+  "task_sha256": "adf07f9ab9bc40884ea799f057c733430de97e96a88adcc0b934c37808206b69",
+  "taxonomy_all": {
+    "other": 216
+  },
+  "tokens_per_step": 2097152,
+  "tokens_seen": 0
+}

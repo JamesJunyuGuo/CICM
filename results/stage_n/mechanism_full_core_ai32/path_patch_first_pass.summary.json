@@ -1,0 +1,1635 @@
+{
+  "all_head_joint_evaluation": {
+    "ci": [
+      1.0,
+      1.0
+    ],
+    "mean": 1.0,
+    "n": 53
+  },
+  "identity_gate": {
+    "max_abs_gap_change": 0.0,
+    "prediction_changes": 0
+  },
+  "mlp_recovery_mean": [
+    0.0,
+    0.000460609197703014,
+    -0.04451698749119315,
+    -0.027750550017982864,
+    -0.03995845324310319,
+    -0.11138307463119561,
+    -0.09090884942463336,
+    0.029973473354517114,
+    0.016254832261454445,
+    0.13329366235133674,
+    0.1600558198371774,
+    0.27210225501489993
+  ],
+  "model": "EleutherAI/pythia-160m",
+  "n_pairs": 96,
+  "ranking": [
+    {
+      "discovery_recovery": 0.38024777230206463,
+      "evaluation_ci": [
+        0.2311521950517334,
+        0.4562328147137258
+      ],
+      "evaluation_recovery": 0.356024704424019,
+      "head": 10,
+      "layer": 8,
+      "rank": 1
+    },
+    {
+      "discovery_recovery": 0.1986537917406793,
+      "evaluation_ci": [
+        0.14980849161635723,
+        0.22885302323342288
+      ],
+      "evaluation_recovery": 0.18927056104913673,
+      "head": 2,
+      "layer": 8,
+      "rank": 2
+    },
+    {
+      "discovery_recovery": 0.11588590955645617,
+      "evaluation_ci": [
+        0.06993325637149118,
+        0.1437598646625084
+      ],
+      "evaluation_recovery": 0.10323096941666174,
+      "head": 7,
+      "layer": 10,
+      "rank": 3
+    },
+    {
+      "discovery_recovery": 0.09415889859158524,
+      "evaluation_ci": [
+        0.015016731662874424,
+        0.06483103891270804
+      ],
+      "evaluation_recovery": 0.040022007812466065,
+      "head": 3,
+      "layer": 3,
+      "rank": 4
+    },
+    {
+      "discovery_recovery": 0.06291686763660066,
+      "evaluation_ci": [
+        0.028639879569523984,
+        0.06284770872377451
+      ],
+      "evaluation_recovery": 0.04811586744957328,
+      "head": 8,
+      "layer": 8,
+      "rank": 5
+    },
+    {
+      "discovery_recovery": 0.0553025679939321,
+      "evaluation_ci": [
+        0.04986414612298271,
+        0.0970622298227511
+      ],
+      "evaluation_recovery": 0.06930197089934033,
+      "head": 8,
+      "layer": 6,
+      "rank": 6
+    },
+    {
+      "discovery_recovery": 0.052472237279582126,
+      "evaluation_ci": [
+        0.045801328896434616,
+        0.09193734670374742
+      ],
+      "evaluation_recovery": 0.06859528837333745,
+      "head": 1,
+      "layer": 10,
+      "rank": 7
+    },
+    {
+      "discovery_recovery": 0.04664199971722862,
+      "evaluation_ci": [
+        0.04592695311946707,
+        0.07166108521782712
+      ],
+      "evaluation_recovery": 0.05858954914341483,
+      "head": 11,
+      "layer": 8,
+      "rank": 8
+    },
+    {
+      "discovery_recovery": 0.0442098574270963,
+      "evaluation_ci": [
+        0.03920086720051785,
+        0.08134007782696352
+      ],
+      "evaluation_recovery": 0.05944065019776772,
+      "head": 0,
+      "layer": 5,
+      "rank": 9
+    },
+    {
+      "discovery_recovery": 0.0320865671348467,
+      "evaluation_ci": [
+        0.0247122789073924,
+        0.045633772797114315
+      ],
+      "evaluation_recovery": 0.03501062739851583,
+      "head": 2,
+      "layer": 9,
+      "rank": 10
+    },
+    {
+      "discovery_recovery": 0.027587261171006384,
+      "evaluation_ci": [
+        -0.01457729377341664,
+        0.0004000273107280884
+      ],
+      "evaluation_recovery": -0.00702897117697799,
+      "head": 6,
+      "layer": 5,
+      "rank": 11
+    },
+    {
+      "discovery_recovery": 0.02610480354899644,
+      "evaluation_ci": [
+        0.0053914864387425475,
+        0.10248754058493398
+      ],
+      "evaluation_recovery": 0.04756761082337927,
+      "head": 7,
+      "layer": 6,
+      "rank": 12
+    },
+    {
+      "discovery_recovery": 0.024132532914378543,
+      "evaluation_ci": [
+        0.018035298922655426,
+        0.03713050097477533
+      ],
+      "evaluation_recovery": 0.026636554451199695,
+      "head": 7,
+      "layer": 4,
+      "rank": 13
+    },
+    {
+      "discovery_recovery": 0.02184699699485229,
+      "evaluation_ci": [
+        0.01173367840458614,
+        0.027821055043686805
+      ],
+      "evaluation_recovery": 0.019355292480536124,
+      "head": 1,
+      "layer": 5,
+      "rank": 14
+    },
+    {
+      "discovery_recovery": 0.01992557316102597,
+      "evaluation_ci": [
+        0.02110706579068891,
+        0.03609306387837306
+      ],
+      "evaluation_recovery": 0.028261875191545133,
+      "head": 6,
+      "layer": 9,
+      "rank": 15
+    },
+    {
+      "discovery_recovery": 0.01960526080284973,
+      "evaluation_ci": [
+        0.0009509110013625895,
+        0.023386169403284626
+      ],
+      "evaluation_recovery": 0.012022769096648718,
+      "head": 1,
+      "layer": 4,
+      "rank": 16
+    },
+    {
+      "discovery_recovery": 0.017494849499837994,
+      "evaluation_ci": [
+        0.013646289021534933,
+        0.023707551877572435
+      ],
+      "evaluation_recovery": 0.018537603099646978,
+      "head": 8,
+      "layer": 9,
+      "rank": 17
+    },
+    {
+      "discovery_recovery": 0.01739051067997414,
+      "evaluation_ci": [
+        -0.0004323100902818104,
+        0.02119757915621179
+      ],
+      "evaluation_recovery": 0.009836004501969866,
+      "head": 7,
+      "layer": 3,
+      "rank": 18
+    },
+    {
+      "discovery_recovery": 0.015303425460218267,
+      "evaluation_ci": [
+        -0.021402627249816758,
+        0.026632503587659846
+      ],
+      "evaluation_recovery": 0.004259370554121399,
+      "head": 11,
+      "layer": 7,
+      "rank": 19
+    },
+    {
+      "discovery_recovery": 0.014847900559596162,
+      "evaluation_ci": [
+        -0.0037802925361752103,
+        0.02821564393016533
+      ],
+      "evaluation_recovery": 0.008288357185758505,
+      "head": 10,
+      "layer": 7,
+      "rank": 20
+    },
+    {
+      "discovery_recovery": 0.014274852270821746,
+      "evaluation_ci": [
+        0.013988637356852667,
+        0.028444058881916
+      ],
+      "evaluation_recovery": 0.02054609001408019,
+      "head": 7,
+      "layer": 9,
+      "rank": 21
+    },
+    {
+      "discovery_recovery": 0.013531567130236748,
+      "evaluation_ci": [
+        0.016867716361392743,
+        0.03044912170982683
+      ],
+      "evaluation_recovery": 0.022974467260723008,
+      "head": 9,
+      "layer": 9,
+      "rank": 22
+    },
+    {
+      "discovery_recovery": 0.013250795798303005,
+      "evaluation_ci": [
+        -0.003726753064655528,
+        0.007541316185534602
+      ],
+      "evaluation_recovery": 0.0018662215210917918,
+      "head": 4,
+      "layer": 2,
+      "rank": 23
+    },
+    {
+      "discovery_recovery": 0.012052838111516546,
+      "evaluation_ci": [
+        0.005806605562897781,
+        0.014691926695547673
+      ],
+      "evaluation_recovery": 0.010129702875661596,
+      "head": 0,
+      "layer": 7,
+      "rank": 24
+    },
+    {
+      "discovery_recovery": 0.011359793383549617,
+      "evaluation_ci": [
+        0.004973955128662682,
+        0.022986320199922642
+      ],
+      "evaluation_recovery": 0.01324034263053333,
+      "head": 4,
+      "layer": 9,
+      "rank": 25
+    },
+    {
+      "discovery_recovery": 0.010503159788585525,
+      "evaluation_ci": [
+        -0.006173334737916297,
+        0.020876598091943605
+      ],
+      "evaluation_recovery": 0.006250515370923833,
+      "head": 3,
+      "layer": 6,
+      "rank": 26
+    },
+    {
+      "discovery_recovery": 0.010451698665006946,
+      "evaluation_ci": [
+        -0.004021654357235602,
+        0.01547238745642636
+      ],
+      "evaluation_recovery": 0.006030355111516133,
+      "head": 5,
+      "layer": 5,
+      "rank": 27
+    },
+    {
+      "discovery_recovery": 0.009597011665120942,
+      "evaluation_ci": [
+        0.006039256169469018,
+        0.0421000603123943
+      ],
+      "evaluation_recovery": 0.023426672024797306,
+      "head": 2,
+      "layer": 6,
+      "rank": 28
+    },
+    {
+      "discovery_recovery": 0.007993865837030201,
+      "evaluation_ci": [
+        0.00039402073572315067,
+        0.0213397533479216
+      ],
+      "evaluation_recovery": 0.009662444379513933,
+      "head": 6,
+      "layer": 7,
+      "rank": 29
+    },
+    {
+      "discovery_recovery": 0.00795957833804866,
+      "evaluation_ci": [
+        0.004286593811865898,
+        0.013661584944459727
+      ],
+      "evaluation_recovery": 0.00859599525562057,
+      "head": 4,
+      "layer": 4,
+      "rank": 30
+    },
+    {
+      "discovery_recovery": 0.007750153297606675,
+      "evaluation_ci": [
+        -0.011932967323289414,
+        0.001465249973906201
+      ],
+      "evaluation_recovery": -0.004587110036024333,
+      "head": 9,
+      "layer": 8,
+      "rank": 31
+    },
+    {
+      "discovery_recovery": 0.007453596383912877,
+      "evaluation_ci": [
+        0.00038755032178965467,
+        0.006878003933293667
+      ],
+      "evaluation_recovery": 0.0038110795535676897,
+      "head": 3,
+      "layer": 10,
+      "rank": 32
+    },
+    {
+      "discovery_recovery": 0.006726440387880683,
+      "evaluation_ci": [
+        -0.010157278776853382,
+        0.00248785730077739
+      ],
+      "evaluation_recovery": -0.00346897245818553,
+      "head": 2,
+      "layer": 5,
+      "rank": 33
+    },
+    {
+      "discovery_recovery": 0.006505948023276505,
+      "evaluation_ci": [
+        0.0014940976483924727,
+        0.005195555442808186
+      ],
+      "evaluation_recovery": 0.0034548464689917982,
+      "head": 4,
+      "layer": 5,
+      "rank": 34
+    },
+    {
+      "discovery_recovery": 0.006443770178542387,
+      "evaluation_ci": [
+        -0.011151928406078338,
+        0.008728815800180248
+      ],
+      "evaluation_recovery": -0.002101944520480188,
+      "head": 10,
+      "layer": 6,
+      "rank": 35
+    },
+    {
+      "discovery_recovery": 0.006198513383632898,
+      "evaluation_ci": [
+        0.00484508871870003,
+        0.007374906358483211
+      ],
+      "evaluation_recovery": 0.006131474171997285,
+      "head": 0,
+      "layer": 11,
+      "rank": 36
+    },
+    {
+      "discovery_recovery": 0.004993814686584023,
+      "evaluation_ci": [
+        -0.0069640291777263285,
+        0.015316829118151732
+      ],
+      "evaluation_recovery": 0.004519091993621017,
+      "head": 8,
+      "layer": 3,
+      "rank": 37
+    },
+    {
+      "discovery_recovery": 0.004228966723426836,
+      "evaluation_ci": [
+        0.0017685109055528845,
+        0.006813353742241111
+      ],
+      "evaluation_recovery": 0.004179459033762927,
+      "head": 0,
+      "layer": 2,
+      "rank": 38
+    },
+    {
+      "discovery_recovery": 0.0037903723280542172,
+      "evaluation_ci": [
+        -0.010534558809536352,
+        0.001117995302752603
+      ],
+      "evaluation_recovery": -0.0048183792875709265,
+      "head": 11,
+      "layer": 0,
+      "rank": 39
+    },
+    {
+      "discovery_recovery": 0.003751665772452293,
+      "evaluation_ci": [
+        -0.0002673697040051139,
+        0.007168095871821029
+      ],
+      "evaluation_recovery": 0.0034223836897598024,
+      "head": 7,
+      "layer": 5,
+      "rank": 40
+    },
+    {
+      "discovery_recovery": 0.003443663085893738,
+      "evaluation_ci": [
+        -0.0050740781018091445,
+        0.01619407862347768
+      ],
+      "evaluation_recovery": 0.005048830459088071,
+      "head": 8,
+      "layer": 5,
+      "rank": 41
+    },
+    {
+      "discovery_recovery": 0.0032773114123739507,
+      "evaluation_ci": [
+        -0.0008315439906996841,
+        0.003947871908139159
+      ],
+      "evaluation_recovery": 0.0011459356486614059,
+      "head": 8,
+      "layer": 1,
+      "rank": 42
+    },
+    {
+      "discovery_recovery": 0.0025997818621321077,
+      "evaluation_ci": [
+        -0.0027662983532326475,
+        0.010156126590677822
+      ],
+      "evaluation_recovery": 0.0035075887422805208,
+      "head": 6,
+      "layer": 4,
+      "rank": 43
+    },
+    {
+      "discovery_recovery": 0.002336240139484249,
+      "evaluation_ci": [
+        -0.0036394214577643415,
+        0.00028865048839417406
+      ],
+      "evaluation_recovery": -0.0015068058426090792,
+      "head": 1,
+      "layer": 11,
+      "rank": 44
+    },
+    {
+      "discovery_recovery": 0.0023034269582051033,
+      "evaluation_ci": [
+        -0.0021711998862854035,
+        0.0011960362005616694
+      ],
+      "evaluation_recovery": -0.000395236031936565,
+      "head": 5,
+      "layer": 0,
+      "rank": 45
+    },
+    {
+      "discovery_recovery": 0.001983629215752588,
+      "evaluation_ci": [
+        -0.0032968317806141073,
+        0.0004433589047949262
+      ],
+      "evaluation_recovery": -0.0012447897578345226,
+      "head": 11,
+      "layer": 1,
+      "rank": 46
+    },
+    {
+      "discovery_recovery": 0.0019077786075864924,
+      "evaluation_ci": [
+        0.0009319678326526644,
+        0.003939600220561249
+      ],
+      "evaluation_recovery": 0.00228485535323002,
+      "head": 3,
+      "layer": 0,
+      "rank": 47
+    },
+    {
+      "discovery_recovery": 0.0018636923863957358,
+      "evaluation_ci": [
+        -0.00020264550124633545,
+        0.007713402655412358
+      ],
+      "evaluation_recovery": 0.003714549224719393,
+      "head": 0,
+      "layer": 3,
+      "rank": 48
+    },
+    {
+      "discovery_recovery": 0.0017459149309090262,
+      "evaluation_ci": [
+        -0.008803461269716033,
+        -0.0006041603167826117
+      ],
+      "evaluation_recovery": -0.004306728385193901,
+      "head": 5,
+      "layer": 7,
+      "rank": 49
+    },
+    {
+      "discovery_recovery": 0.001617127602101294,
+      "evaluation_ci": [
+        -0.004184887316049755,
+        -0.00028776950158536276
+      ],
+      "evaluation_recovery": -0.002267118957147849,
+      "head": 1,
+      "layer": 3,
+      "rank": 50
+    },
+    {
+      "discovery_recovery": 0.0013101447216960127,
+      "evaluation_ci": [
+        -0.0007276292137018737,
+        0.0037860777700423317
+      ],
+      "evaluation_recovery": 0.0017084071744955585,
+      "head": 6,
+      "layer": 1,
+      "rank": 51
+    },
+    {
+      "discovery_recovery": 0.0009075651165786535,
+      "evaluation_ci": [
+        -0.0023390077635669273,
+        0.0005252621452771068
+      ],
+      "evaluation_recovery": -0.0008636589103720757,
+      "head": 7,
+      "layer": 2,
+      "rank": 52
+    },
+    {
+      "discovery_recovery": 0.0007794621070885344,
+      "evaluation_ci": [
+        -0.002858136930654888,
+        -0.0001807883647561325
+      ],
+      "evaluation_recovery": -0.0014169577158321502,
+      "head": 1,
+      "layer": 2,
+      "rank": 53
+    },
+    {
+      "discovery_recovery": 0.0007208272024875798,
+      "evaluation_ci": [
+        -0.0009401210718946335,
+        0.001045390454782154
+      ],
+      "evaluation_recovery": 2.116158897386557e-07,
+      "head": 5,
+      "layer": 10,
+      "rank": 54
+    },
+    {
+      "discovery_recovery": 0.0006494090135883296,
+      "evaluation_ci": [
+        0.001418811668553975,
+        0.004146338275002417
+      ],
+      "evaluation_recovery": 0.00271183497215716,
+      "head": 0,
+      "layer": 6,
+      "rank": 55
+    },
+    {
+      "discovery_recovery": 0.0006116021282822618,
+      "evaluation_ci": [
+        -4.84789859159251e-06,
+        0.001468480510087642
+      ],
+      "evaluation_recovery": 0.0006815782804628426,
+      "head": 9,
+      "layer": 2,
+      "rank": 56
+    },
+    {
+      "discovery_recovery": 0.0005450653104746866,
+      "evaluation_ci": [
+        -0.0006167573428417323,
+        3.619515576401241e-05
+      ],
+      "evaluation_recovery": -0.00027273061006146315,
+      "head": 2,
+      "layer": 0,
+      "rank": 57
+    },
+    {
+      "discovery_recovery": 0.00037738937485409335,
+      "evaluation_ci": [
+        0.00021225399266256353,
+        0.0013275801000610702
+      ],
+      "evaluation_recovery": 0.0007335533412672968,
+      "head": 1,
+      "layer": 6,
+      "rank": 58
+    },
+    {
+      "discovery_recovery": 0.00035624910156354024,
+      "evaluation_ci": [
+        -7.78689647632878e-05,
+        0.0005827609183331582
+      ],
+      "evaluation_recovery": 0.00020384322213049818,
+      "head": 11,
+      "layer": 10,
+      "rank": 59
+    },
+    {
+      "discovery_recovery": 0.00029020148275679306,
+      "evaluation_ci": [
+        -0.005173453684901067,
+        -0.0002534154419057703
+      ],
+      "evaluation_recovery": -0.00237327431312065,
+      "head": 3,
+      "layer": 9,
+      "rank": 60
+    },
+    {
+      "discovery_recovery": 0.00023784938375054305,
+      "evaluation_ci": [
+        -1.827188887330037e-05,
+        0.0004017172177362392
+      ],
+      "evaluation_recovery": 0.00014933750034548418,
+      "head": 6,
+      "layer": 10,
+      "rank": 61
+    },
+    {
+      "discovery_recovery": 0.00021235566885501088,
+      "evaluation_ci": [
+        -0.0010335885667446523,
+        0.0004640859840632757
+      ],
+      "evaluation_recovery": -0.00024437801111209764,
+      "head": 0,
+      "layer": 10,
+      "rank": 62
+    },
+    {
+      "discovery_recovery": 0.00020111343585690872,
+      "evaluation_ci": [
+        -0.00021760566372608844,
+        0.00031245532923990764
+      ],
+      "evaluation_recovery": 3.642566299137011e-05,
+      "head": 2,
+      "layer": 10,
+      "rank": 63
+    },
+    {
+      "discovery_recovery": 0.00012792085760034643,
+      "evaluation_ci": [
+        -0.0005188056310410287,
+        0.0009775089204162167
+      ],
+      "evaluation_recovery": 0.0002313526755015233,
+      "head": 11,
+      "layer": 11,
+      "rank": 64
+    },
+    {
+      "discovery_recovery": 0.0001262430331842126,
+      "evaluation_ci": [
+        -0.000114463095194391,
+        0.0001290188312506508
+      ],
+      "evaluation_recovery": 5.478091069835043e-06,
+      "head": 0,
+      "layer": 0,
+      "rank": 65
+    },
+    {
+      "discovery_recovery": 9.621019813789405e-05,
+      "evaluation_ci": [
+        -0.00012086701505437431,
+        0.00011881954379655882
+      ],
+      "evaluation_recovery": -3.715329486687518e-07,
+      "head": 7,
+      "layer": 0,
+      "rank": 66
+    },
+    {
+      "discovery_recovery": 9.286774253475248e-05,
+      "evaluation_ci": [
+        -0.00014246005883659734,
+        0.00011157325534011675
+      ],
+      "evaluation_recovery": -9.973218690643639e-06,
+      "head": 8,
+      "layer": 0,
+      "rank": 67
+    },
+    {
+      "discovery_recovery": 8.123023524155077e-05,
+      "evaluation_ci": [
+        -0.0010453701880873006,
+        7.901152968629022e-05
+      ],
+      "evaluation_recovery": -0.00039039449654708347,
+      "head": 4,
+      "layer": 6,
+      "rank": 68
+    },
+    {
+      "discovery_recovery": 5.2635916607055644e-05,
+      "evaluation_ci": [
+        -0.00021242927906320322,
+        9.371458159728534e-05
+      ],
+      "evaluation_recovery": -5.578270137268764e-05,
+      "head": 9,
+      "layer": 6,
+      "rank": 69
+    },
+    {
+      "discovery_recovery": 3.4789253069369404e-05,
+      "evaluation_ci": [
+        -6.705478118493152e-05,
+        0.00011745611276038811
+      ],
+      "evaluation_recovery": 2.366508149913288e-05,
+      "head": 8,
+      "layer": 10,
+      "rank": 70
+    },
+    {
+      "discovery_recovery": 2.591198062224668e-05,
+      "evaluation_ci": [
+        -0.00041008002273221255,
+        0.000988833740044413
+      ],
+      "evaluation_recovery": 0.0001543652942708715,
+      "head": 5,
+      "layer": 8,
+      "rank": 71
+    },
+    {
+      "discovery_recovery": 2.0534402638213003e-05,
+      "evaluation_ci": [
+        -0.0017153384562170503,
+        0.00015205297968814068
+      ],
+      "evaluation_recovery": -0.0006897215713543274,
+      "head": 9,
+      "layer": 11,
+      "rank": 72
+    },
+    {
+      "discovery_recovery": 0.0,
+      "evaluation_ci": [
+        -2.066566814716962e-06,
+        1.2166236232667164e-05
+      ],
+      "evaluation_recovery": 3.1452517199405734e-06,
+      "head": 8,
+      "layer": 11,
+      "rank": 73
+    },
+    {
+      "discovery_recovery": 0.0,
+      "evaluation_ci": [
+        0.0,
+        0.0
+      ],
+      "evaluation_recovery": 0.0,
+      "head": 10,
+      "layer": 11,
+      "rank": 74
+    },
+    {
+      "discovery_recovery": -4.87139011026884e-07,
+      "evaluation_ci": [
+        -1.7459027998877715e-05,
+        2.9115698931679384e-06
+      ],
+      "evaluation_recovery": -4.849152701903259e-06,
+      "head": 6,
+      "layer": 11,
+      "rank": 75
+    },
+    {
+      "discovery_recovery": -1.0309989298999814e-06,
+      "evaluation_ci": [
+        -1.0244769930439578e-06,
+        2.942420009488454e-06
+      ],
+      "evaluation_recovery": 9.787781683559817e-07,
+      "head": 2,
+      "layer": 11,
+      "rank": 76
+    },
+    {
+      "discovery_recovery": -2.9209760037460403e-06,
+      "evaluation_ci": [
+        1.9418755597235167e-05,
+        0.0007629612142153795
+      ],
+      "evaluation_recovery": 0.00031749268994021743,
+      "head": 4,
+      "layer": 10,
+      "rank": 77
+    },
+    {
+      "discovery_recovery": -3.4975303058632533e-06,
+      "evaluation_ci": [
+        -0.00016761076468084973,
+        -2.4854230994533068e-05
+      ],
+      "evaluation_recovery": -9.411801966995171e-05,
+      "head": 4,
+      "layer": 8,
+      "rank": 78
+    },
+    {
+      "discovery_recovery": -7.410724178030571e-06,
+      "evaluation_ci": [
+        -8.742013990294285e-05,
+        -3.012162489905647e-06
+      ],
+      "evaluation_recovery": -4.442736760131106e-05,
+      "head": 9,
+      "layer": 10,
+      "rank": 79
+    },
+    {
+      "discovery_recovery": -1.0390735837176673e-05,
+      "evaluation_ci": [
+        -4.068889788214432e-06,
+        1.0845268816173821e-05
+      ],
+      "evaluation_recovery": 2.8495543302569025e-06,
+      "head": 5,
+      "layer": 11,
+      "rank": 80
+    },
+    {
+      "discovery_recovery": -1.0591786335524632e-05,
+      "evaluation_ci": [
+        -6.503222351269623e-06,
+        4.792638211654147e-06
+      ],
+      "evaluation_recovery": -7.972902232132679e-07,
+      "head": 3,
+      "layer": 11,
+      "rank": 81
+    },
+    {
+      "discovery_recovery": -1.1510881466704337e-05,
+      "evaluation_ci": [
+        -2.12028162546206e-05,
+        1.755146194259955e-05
+      ],
+      "evaluation_recovery": -2.572187484670749e-06,
+      "head": 10,
+      "layer": 10,
+      "rank": 82
+    },
+    {
+      "discovery_recovery": -1.4649910362786504e-05,
+      "evaluation_ci": [
+        -0.0012245756283072089,
+        0.0002890825885601093
+      ],
+      "evaluation_recovery": -0.0003129755370089871,
+      "head": 7,
+      "layer": 11,
+      "rank": 83
+    },
+    {
+      "discovery_recovery": -1.5444303197154232e-05,
+      "evaluation_ci": [
+        -0.000984113361869032,
+        -0.00019858849657815054
+      ],
+      "evaluation_recovery": -0.0005691747462589121,
+      "head": 1,
+      "layer": 1,
+      "rank": 84
+    },
+    {
+      "discovery_recovery": -1.867814540335445e-05,
+      "evaluation_ci": [
+        -1.6269779380306583e-05,
+        -4.0774434221627186e-07
+      ],
+      "evaluation_recovery": -7.964956565141464e-06,
+      "head": 4,
+      "layer": 11,
+      "rank": 85
+    },
+    {
+      "discovery_recovery": -4.9438117386709494e-05,
+      "evaluation_ci": [
+        -7.779811568099395e-05,
+        0.00010634766725759407
+      ],
+      "evaluation_recovery": 1.6197315717027965e-05,
+      "head": 10,
+      "layer": 9,
+      "rank": 86
+    },
+    {
+      "discovery_recovery": -5.851346718990632e-05,
+      "evaluation_ci": [
+        0.0009412034826189519,
+        0.008473988139996873
+      ],
+      "evaluation_recovery": 0.003813844063261972,
+      "head": 1,
+      "layer": 0,
+      "rank": 87
+    },
+    {
+      "discovery_recovery": -6.849402619916767e-05,
+      "evaluation_ci": [
+        -0.00014221320489927553,
+        -2.2759896454293668e-05
+      ],
+      "evaluation_recovery": -7.6576823385593e-05,
+      "head": 6,
+      "layer": 8,
+      "rank": 88
+    },
+    {
+      "discovery_recovery": -0.0001221844835958016,
+      "evaluation_ci": [
+        -0.00012496932142920606,
+        0.000226668963386647
+      ],
+      "evaluation_recovery": 3.166563961434814e-05,
+      "head": 1,
+      "layer": 7,
+      "rank": 89
+    },
+    {
+      "discovery_recovery": -0.00018247545952193022,
+      "evaluation_ci": [
+        -0.000738197896736161,
+        0.001444178869367892
+      ],
+      "evaluation_recovery": 0.0002011164282129237,
+      "head": 5,
+      "layer": 2,
+      "rank": 90
+    },
+    {
+      "discovery_recovery": -0.00018524633335477637,
+      "evaluation_ci": [
+        -0.00017411239292203218,
+        0.00010082068730213758
+      ],
+      "evaluation_recovery": -3.9932869963757184e-05,
+      "head": 0,
+      "layer": 8,
+      "rank": 91
+    },
+    {
+      "discovery_recovery": -0.0002697024644021353,
+      "evaluation_ci": [
+        -1.2320857364406417e-05,
+        0.00027806162111726663
+      ],
+      "evaluation_recovery": 0.00012195806109824464,
+      "head": 0,
+      "layer": 9,
+      "rank": 92
+    },
+    {
+      "discovery_recovery": -0.0005764368633381415,
+      "evaluation_ci": [
+        -0.0007654870088569964,
+        0.0006183115979304391
+      ],
+      "evaluation_recovery": -0.000102031489207484,
+      "head": 9,
+      "layer": 3,
+      "rank": 93
+    },
+    {
+      "discovery_recovery": -0.0006553418031037008,
+      "evaluation_ci": [
+        -0.00725802733493956,
+        -0.0018907549351556152
+      ],
+      "evaluation_recovery": -0.004524866895427583,
+      "head": 2,
+      "layer": 4,
+      "rank": 94
+    },
+    {
+      "discovery_recovery": -0.0006862943931316084,
+      "evaluation_ci": [
+        -0.0005355409534161952,
+        0.0008484191621741116
+      ],
+      "evaluation_recovery": 9.359864121734125e-05,
+      "head": 10,
+      "layer": 1,
+      "rank": 95
+    },
+    {
+      "discovery_recovery": -0.0007615430945709075,
+      "evaluation_ci": [
+        -0.0006348955176529019,
+        0.0009138235202853317
+      ],
+      "evaluation_recovery": 0.0001007136804313116,
+      "head": 3,
+      "layer": 8,
+      "rank": 96
+    },
+    {
+      "discovery_recovery": -0.0008222436812227459,
+      "evaluation_ci": [
+        -0.0008660630853645129,
+        0.0004946745590183442
+      ],
+      "evaluation_recovery": -0.00015512407007473424,
+      "head": 4,
+      "layer": 0,
+      "rank": 97
+    },
+    {
+      "discovery_recovery": -0.0008946693344122575,
+      "evaluation_ci": [
+        -0.004585357655996407,
+        0.0007042501232668182
+      ],
+      "evaluation_recovery": -0.0018709013876297411,
+      "head": 10,
+      "layer": 3,
+      "rank": 98
+    },
+    {
+      "discovery_recovery": -0.0009390805221415581,
+      "evaluation_ci": [
+        -0.0010568506886648758,
+        -0.00019381517820892796
+      ],
+      "evaluation_recovery": -0.0006038648333808349,
+      "head": 6,
+      "layer": 0,
+      "rank": 99
+    },
+    {
+      "discovery_recovery": -0.0010405022681179215,
+      "evaluation_ci": [
+        -0.002221737338809828,
+        -0.0003137472183642525
+      ],
+      "evaluation_recovery": -0.0012612854809019342,
+      "head": 9,
+      "layer": 0,
+      "rank": 100
+    },
+    {
+      "discovery_recovery": -0.0015204841353693736,
+      "evaluation_ci": [
+        -0.0036376650959351457,
+        0.0005703266515278428
+      ],
+      "evaluation_recovery": -0.001504506339869935,
+      "head": 5,
+      "layer": 4,
+      "rank": 101
+    },
+    {
+      "discovery_recovery": -0.0018691016678530654,
+      "evaluation_ci": [
+        -0.01095761788587558,
+        -0.005094735190134819
+      ],
+      "evaluation_recovery": -0.007759798862288686,
+      "head": 10,
+      "layer": 2,
+      "rank": 102
+    },
+    {
+      "discovery_recovery": -0.001876004694495927,
+      "evaluation_ci": [
+        -0.0015244084636002353,
+        -0.0002665102634953519
+      ],
+      "evaluation_recovery": -0.0008301506407913177,
+      "head": 0,
+      "layer": 4,
+      "rank": 103
+    },
+    {
+      "discovery_recovery": -0.002016409485279089,
+      "evaluation_ci": [
+        -0.006739561363692676,
+        -0.001943672237443397
+      ],
+      "evaluation_recovery": -0.004117931390627821,
+      "head": 0,
+      "layer": 1,
+      "rank": 104
+    },
+    {
+      "discovery_recovery": -0.0021956078255989373,
+      "evaluation_ci": [
+        -0.004511484052744387,
+        -0.0010401253359478076
+      ],
+      "evaluation_recovery": -0.002670588363034176,
+      "head": 3,
+      "layer": 1,
+      "rank": 105
+    },
+    {
+      "discovery_recovery": -0.002224431134214566,
+      "evaluation_ci": [
+        -0.004845115139352657,
+        0.001224150915389787
+      ],
+      "evaluation_recovery": -0.002009487257219051,
+      "head": 2,
+      "layer": 7,
+      "rank": 106
+    },
+    {
+      "discovery_recovery": -0.002746358602264342,
+      "evaluation_ci": [
+        -5.647815016773601e-05,
+        0.003513898098095799
+      ],
+      "evaluation_recovery": 0.0011495757263368584,
+      "head": 11,
+      "layer": 9,
+      "rank": 107
+    },
+    {
+      "discovery_recovery": -0.0030397246680515604,
+      "evaluation_ci": [
+        -0.004409587405613759,
+        -0.0013068072493624895
+      ],
+      "evaluation_recovery": -0.0027166709767961106,
+      "head": 7,
+      "layer": 1,
+      "rank": 108
+    },
+    {
+      "discovery_recovery": -0.0032912186536153947,
+      "evaluation_ci": [
+        -0.0045194704179548385,
+        -0.001631079103242701
+      ],
+      "evaluation_recovery": -0.0029509320491195386,
+      "head": 11,
+      "layer": 2,
+      "rank": 109
+    },
+    {
+      "discovery_recovery": -0.0036535807431547036,
+      "evaluation_ci": [
+        0.009023209291398455,
+        0.0264344878445757
+      ],
+      "evaluation_recovery": 0.017060491768434456,
+      "head": 1,
+      "layer": 8,
+      "rank": 110
+    },
+    {
+      "discovery_recovery": -0.003924014995499021,
+      "evaluation_ci": [
+        -0.004254425560869222,
+        0.0029842222192840097
+      ],
+      "evaluation_recovery": -0.0005789431990458305,
+      "head": 3,
+      "layer": 4,
+      "rank": 111
+    },
+    {
+      "discovery_recovery": -0.004006969175922871,
+      "evaluation_ci": [
+        -0.005400084554252882,
+        -0.0019053730009020496
+      ],
+      "evaluation_recovery": -0.0036444571999924543,
+      "head": 2,
+      "layer": 2,
+      "rank": 112
+    },
+    {
+      "discovery_recovery": -0.004157441948487945,
+      "evaluation_ci": [
+        0.0016856345757316218,
+        0.0098454674474516
+      ],
+      "evaluation_recovery": 0.005346671089568914,
+      "head": 5,
+      "layer": 3,
+      "rank": 113
+    },
+    {
+      "discovery_recovery": -0.004339495453760453,
+      "evaluation_ci": [
+        -0.006388681351047117,
+        -0.0012759972397287844
+      ],
+      "evaluation_recovery": -0.0035522309232524094,
+      "head": 4,
+      "layer": 1,
+      "rank": 114
+    },
+    {
+      "discovery_recovery": -0.004440187415380171,
+      "evaluation_ci": [
+        -0.0018746137573153185,
+        0.004379882152204045
+      ],
+      "evaluation_recovery": 0.0010178821836053136,
+      "head": 3,
+      "layer": 7,
+      "rank": 115
+    },
+    {
+      "discovery_recovery": -0.005061382868032761,
+      "evaluation_ci": [
+        -0.004517128917155052,
+        -0.002159812984649126
+      ],
+      "evaluation_recovery": -0.0032973528428875518,
+      "head": 5,
+      "layer": 1,
+      "rank": 116
+    },
+    {
+      "discovery_recovery": -0.005672482082900603,
+      "evaluation_ci": [
+        -0.01175065206150153,
+        -0.0029765197952184475
+      ],
+      "evaluation_recovery": -0.007187564693454634,
+      "head": 9,
+      "layer": 4,
+      "rank": 117
+    },
+    {
+      "discovery_recovery": -0.005803829127780737,
+      "evaluation_ci": [
+        -0.016870734613459608,
+        -0.007419485933024338
+      ],
+      "evaluation_recovery": -0.011410160084422244,
+      "head": 11,
+      "layer": 3,
+      "rank": 118
+    },
+    {
+      "discovery_recovery": -0.00637785065522963,
+      "evaluation_ci": [
+        -0.014462603592690053,
+        -0.0015769778933519573
+      ],
+      "evaluation_recovery": -0.007761526432007375,
+      "head": 10,
+      "layer": 5,
+      "rank": 119
+    },
+    {
+      "discovery_recovery": -0.0064761961394610495,
+      "evaluation_ci": [
+        -0.007010914645210014,
+        -0.0028409621362948537
+      ],
+      "evaluation_recovery": -0.004846927727937267,
+      "head": 10,
+      "layer": 0,
+      "rank": 120
+    },
+    {
+      "discovery_recovery": -0.008671617210536981,
+      "evaluation_ci": [
+        -0.010100586353752192,
+        0.0030361667020086724
+      ],
+      "evaluation_recovery": -0.0035187943555020813,
+      "head": 8,
+      "layer": 7,
+      "rank": 121
+    },
+    {
+      "discovery_recovery": -0.009909808842563613,
+      "evaluation_ci": [
+        -0.0034682465392092787,
+        0.010282424633615249
+      ],
+      "evaluation_recovery": 0.0031029883022196513,
+      "head": 4,
+      "layer": 3,
+      "rank": 122
+    },
+    {
+      "discovery_recovery": -0.010042684099148488,
+      "evaluation_ci": [
+        0.007146506406655664,
+        0.032026752540421775
+      ],
+      "evaluation_recovery": 0.018829436103740674,
+      "head": 10,
+      "layer": 4,
+      "rank": 123
+    },
+    {
+      "discovery_recovery": -0.01183760249906663,
+      "evaluation_ci": [
+        -0.008767107113894952,
+        -0.001454890068325089
+      ],
+      "evaluation_recovery": -0.004873648973091963,
+      "head": 8,
+      "layer": 2,
+      "rank": 124
+    },
+    {
+      "discovery_recovery": -0.012262776112527188,
+      "evaluation_ci": [
+        -0.025401939497868054,
+        -0.005527791778946729
+      ],
+      "evaluation_recovery": -0.015289949874870989,
+      "head": 9,
+      "layer": 7,
+      "rank": 125
+    },
+    {
+      "discovery_recovery": -0.012269292080796041,
+      "evaluation_ci": [
+        -0.01799233215736484,
+        -0.004895962805893253
+      ],
+      "evaluation_recovery": -0.010720979077888913,
+      "head": 3,
+      "layer": 2,
+      "rank": 126
+    },
+    {
+      "discovery_recovery": -0.01249646880686548,
+      "evaluation_ci": [
+        -0.013663586919705388,
+        -0.005359055108091152
+      ],
+      "evaluation_recovery": -0.009246934629529073,
+      "head": 9,
+      "layer": 1,
+      "rank": 127
+    },
+    {
+      "discovery_recovery": -0.0130102718446004,
+      "evaluation_ci": [
+        -0.021763766837735666,
+        0.002885007147596404
+      ],
+      "evaluation_recovery": -0.007410823261421658,
+      "head": 7,
+      "layer": 7,
+      "rank": 128
+    },
+    {
+      "discovery_recovery": -0.0156575617469379,
+      "evaluation_ci": [
+        -0.032415886182719136,
+        -0.00505854228057744
+      ],
+      "evaluation_recovery": -0.016590675427527235,
+      "head": 11,
+      "layer": 4,
+      "rank": 129
+    },
+    {
+      "discovery_recovery": -0.01619674970164844,
+      "evaluation_ci": [
+        -0.03904193786041845,
+        -0.005488840526072438
+      ],
+      "evaluation_recovery": -0.023061457822227224,
+      "head": 4,
+      "layer": 7,
+      "rank": 130
+    },
+    {
+      "discovery_recovery": -0.016849321149263827,
+      "evaluation_ci": [
+        -0.0018518776363704763,
+        0.009552955407540321
+      ],
+      "evaluation_recovery": 0.0033366673213892917,
+      "head": 2,
+      "layer": 3,
+      "rank": 131
+    },
+    {
+      "discovery_recovery": -0.0184419581856459,
+      "evaluation_ci": [
+        -0.06422667605687153,
+        0.0067644591585089755
+      ],
+      "evaluation_recovery": -0.03235421957595734,
+      "head": 7,
+      "layer": 8,
+      "rank": 132
+    },
+    {
+      "discovery_recovery": -0.02272391361028046,
+      "evaluation_ci": [
+        -0.020968433471170528,
+        -0.003534529042476229
+      ],
+      "evaluation_recovery": -0.011876186865430372,
+      "head": 6,
+      "layer": 6,
+      "rank": 133
+    },
+    {
+      "discovery_recovery": -0.025119285504914192,
+      "evaluation_ci": [
+        -0.022066650689913613,
+        -0.004388969752633659
+      ],
+      "evaluation_recovery": -0.012965903209511994,
+      "head": 6,
+      "layer": 2,
+      "rank": 134
+    },
+    {
+      "discovery_recovery": -0.025564603068709207,
+      "evaluation_ci": [
+        -0.03312730135108061,
+        -0.005034027523878388
+      ],
+      "evaluation_recovery": -0.01812833646745387,
+      "head": 2,
+      "layer": 1,
+      "rank": 135
+    },
+    {
+      "discovery_recovery": -0.028665308910202657,
+      "evaluation_ci": [
+        -0.047249618576318486,
+        -0.018793375318749337
+      ],
+      "evaluation_recovery": -0.03129730163254013,
+      "head": 3,
+      "layer": 5,
+      "rank": 136
+    },
+    {
+      "discovery_recovery": -0.038007063769843044,
+      "evaluation_ci": [
+        -0.05537239177174774,
+        -0.016203558300892287
+      ],
+      "evaluation_recovery": -0.035740459292618515,
+      "head": 11,
+      "layer": 5,
+      "rank": 137
+    },
+    {
+      "discovery_recovery": -0.04143520589826984,
+      "evaluation_ci": [
+        -0.051447745057572006,
+        -0.021166864613910232
+      ],
+      "evaluation_recovery": -0.03415256586864833,
+      "head": 6,
+      "layer": 3,
+      "rank": 138
+    },
+    {
+      "discovery_recovery": -0.054084098626729464,
+      "evaluation_ci": [
+        -0.1273557707172641,
+        -0.027687858145951993
+      ],
+      "evaluation_recovery": -0.0673499840959194,
+      "head": 5,
+      "layer": 6,
+      "rank": 139
+    },
+    {
+      "discovery_recovery": -0.056371400916625944,
+      "evaluation_ci": [
+        -0.11867511342055115,
+        -0.04299554663053744
+      ],
+      "evaluation_recovery": -0.07559473378840688,
+      "head": 11,
+      "layer": 6,
+      "rank": 140
+    },
+    {
+      "discovery_recovery": -0.06654706096615569,
+      "evaluation_ci": [
+        -0.06691912174897711,
+        -0.00787127771529041
+      ],
+      "evaluation_recovery": -0.03596418144930064,
+      "head": 9,
+      "layer": 5,
+      "rank": 141
+    },
+    {
+      "discovery_recovery": -0.07491152228752358,
+      "evaluation_ci": [
+        -0.13150539201595637,
+        -0.06614438968180399
+      ],
+      "evaluation_recovery": -0.09756165615664664,
+      "head": 1,
+      "layer": 9,
+      "rank": 142
+    },
+    {
+      "discovery_recovery": -0.0963163273320348,
+      "evaluation_ci": [
+        -0.08786612418132254,
+        -0.04181667300496918
+      ],
+      "evaluation_recovery": -0.06336220213873314,
+      "head": 8,
+      "layer": 4,
+      "rank": 143
+    },
+    {
+      "discovery_recovery": -0.11517353449420194,
+      "evaluation_ci": [
+        -0.11341626580679653,
+        -0.02506591690553048
+      ],
+      "evaluation_recovery": -0.07364411854269248,
+      "head": 5,
+      "layer": 9,
+      "rank": 144
+    }
+  ],
+  "residual_recovery_mean": [
+    -0.0048673063854922085,
+    -0.04865668501288919,
+    -0.0754377250282053,
+    -0.06810840935013211,
+    -0.041236673378906887,
+    -0.004999644095051107,
+    0.01406354034620582,
+    0.06706669416601475,
+    0.7986196873750825,
+    0.9076678845562226,
+    0.9996223772130547,
+    1.0
+  ],
+  "selection_rule": "rank individual clean-to-corrupt head patches on discovery split only",
+  "split_counts": {
+    "discovery": 43,
+    "evaluation": 53
+  }
+}

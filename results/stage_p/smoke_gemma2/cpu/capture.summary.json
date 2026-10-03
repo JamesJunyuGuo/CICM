@@ -1,0 +1,67 @@
+{
+  "architecture": "gemma2",
+  "array_shapes": {
+    "attn_current": [
+      10,
+      26,
+      8
+    ],
+    "attn_identity": [
+      10,
+      26,
+      8
+    ],
+    "attn_other": [
+      10,
+      26,
+      8
+    ],
+    "attn_stale": [
+      10,
+      26,
+      8
+    ],
+    "hidden": [
+      10,
+      27,
+      2304
+    ],
+    "qk_margin": [
+      10,
+      26,
+      8
+    ],
+    "read_ratio": [
+      10,
+      26,
+      8
+    ]
+  },
+  "capture_protocol": "eager attention, output_attentions, no KV cache, greedy next-token logits",
+  "comparison_protocol": "overwrite arms compare current to semantic stale traces; no-overwrite arms compare current to exact-position foil-old traces without labeling the foil as stale",
+  "data_path": "results/stage_p/data/event_items_broad.jsonl",
+  "data_sha256": "69d7acbebeccbe607739b684eaff37764feebfb098b2d5f6f1a4345ca594756a",
+  "device": "cpu",
+  "dtype": "bfloat16",
+  "gqa_scope": "head axes are query heads; each query head uses its shared KV head",
+  "hooked_noop_gate": {
+    "exact_zero": true,
+    "max_abs_logit_change": 0.0,
+    "n": 1
+  },
+  "model": "gemma-2-2b",
+  "model_path": "/anvil/scratch/x-jguo7/hf_cache/hub/models--google--gemma-2-2b/snapshots/c5ebcd40d208330abc697524c919956e692655cf",
+  "n_branches": 10,
+  "n_items": 1,
+  "n_key_value_heads": 4,
+  "n_layers": 26,
+  "n_query_heads": 8,
+  "stage": "P-capture",
+  "tokenization_gate": {
+    "failures": {},
+    "max_value_span_tokens": 1,
+    "n_checkpoint_pairs": 5,
+    "n_items": 1,
+    "pass": true
+  }
+}

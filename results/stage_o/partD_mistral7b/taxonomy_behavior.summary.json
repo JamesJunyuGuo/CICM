@@ -1,0 +1,200 @@
+{
+  "by_cell": {
+    "k4__multi__arrow": {
+      "accuracy": 0.4212962962962963,
+      "accuracy_wilson95": [
+        0.35738681474373685,
+        0.4879562784908706
+      ],
+      "counts": {
+        "correct_current": 91,
+        "cross_variable": 1,
+        "within_stale": 124
+      },
+      "n": 216,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.5740740740740741,
+      "within_stale_share_errors": 0.992,
+      "within_stale_share_errors_wilson95": [
+        0.9560752476950048,
+        0.9985864048960021
+      ]
+    },
+    "k4__multi__current": {
+      "accuracy": 0.5138888888888888,
+      "accuracy_wilson95": [
+        0.4475770642907513,
+        0.5797153310207885
+      ],
+      "counts": {
+        "correct_current": 111,
+        "cross_variable": 4,
+        "within_stale": 101
+      },
+      "n": 216,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.4675925925925926,
+      "within_stale_share_errors": 0.9619047619047619,
+      "within_stale_share_errors_wilson95": [
+        0.9061169787394538,
+        0.9850875406688924
+      ]
+    },
+    "k4__multi__latest": {
+      "accuracy": 0.6898148148148148,
+      "accuracy_wilson95": [
+        0.6252618589631287,
+        0.747734210294583
+      ],
+      "counts": {
+        "correct_current": 149,
+        "cross_variable": 1,
+        "within_stale": 66
+      },
+      "n": 216,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.3055555555555556,
+      "within_stale_share_errors": 0.9850746268656716,
+      "within_stale_share_errors_wilson95": [
+        0.9201813768022187,
+        0.997360428265921
+      ]
+    }
+  },
+  "by_k": {
+    "4": {
+      "accuracy": 0.5416666666666666,
+      "accuracy_wilson95": [
+        0.5031701119865597,
+        0.5796721179288193
+      ],
+      "counts": {
+        "correct_current": 351,
+        "cross_variable": 6,
+        "within_stale": 291
+      },
+      "n": 648,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.44907407407407407,
+      "within_stale_share_errors": 0.9797979797979798,
+      "within_stale_share_errors_wilson95": [
+        0.9566336937562595,
+        0.990709139632486
+      ]
+    }
+  },
+  "by_seed": {
+    "k4__seed11": {
+      "accuracy": 0.5324074074074074,
+      "accuracy_wilson95": [
+        0.4658834807194369,
+        0.5977987750074896
+      ],
+      "counts": {
+        "correct_current": 115,
+        "cross_variable": 1,
+        "within_stale": 100
+      },
+      "n": 216,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.46296296296296297,
+      "within_stale_share_errors": 0.9900990099009901,
+      "within_stale_share_errors_wilson95": [
+        0.9460328420055449,
+        0.9982500887510318
+      ]
+    },
+    "k4__seed29": {
+      "accuracy": 0.6527777777777778,
+      "accuracy_wilson95": [
+        0.5871183902860024,
+        0.7130979581409362
+      ],
+      "counts": {
+        "correct_current": 141,
+        "cross_variable": 1,
+        "within_stale": 74
+      },
+      "n": 216,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.3425925925925926,
+      "within_stale_share_errors": 0.9866666666666667,
+      "within_stale_share_errors_wilson95": [
+        0.9282663444557845,
+        0.9976424488609515
+      ]
+    },
+    "k4__seed47": {
+      "accuracy": 0.4398148148148148,
+      "accuracy_wilson95": [
+        0.37524442476709724,
+        0.5064885288828967
+      ],
+      "counts": {
+        "correct_current": 95,
+        "cross_variable": 4,
+        "within_stale": 117
+      },
+      "n": 216,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.5416666666666666,
+      "within_stale_share_errors": 0.9669421487603306,
+      "within_stale_share_errors_wilson95": [
+        0.9180772072778853,
+        0.9870708186058748
+      ]
+    }
+  },
+  "decoding": "one-token greedy over full vocabulary",
+  "dtype": "bfloat16",
+  "fixed_k_gate": {
+    "candidates": [
+      {
+        "balance_objective": 0,
+        "circuit_single_variable_counts": {},
+        "counts": {
+          "correct_current": 351,
+          "cross_variable": 6,
+          "within_stale": 291
+        },
+        "k": 4,
+        "n": 648,
+        "per_template": {
+          "arrow": {
+            "correct_current": 91,
+            "cross_variable": 1,
+            "within_stale": 124
+          },
+          "current": {
+            "correct_current": 111,
+            "cross_variable": 4,
+            "within_stale": 101
+          },
+          "latest": {
+            "correct_current": 149,
+            "cross_variable": 1,
+            "within_stale": 66
+          }
+        },
+        "per_template_circuit": {},
+        "per_variant": {
+          "multi": {
+            "correct_current": 351,
+            "cross_variable": 6,
+            "within_stale": 291
+          }
+        },
+        "pool_gate": false,
+        "stratum_count": 9,
+        "within_stale_share_errors": 0.9797979797979798
+      }
+    ],
+    "chosen": null,
+    "chosen_k": null,
+    "gate_pass": false,
+    "selection_rule": "Among k>0, require the clean single-variable circuit substrate to have correct>=150 and within-stale>=120 (96 target causal pairs plus 20% validation reserve), with every surface template contributing correct/stale>=25; maximize min(correct, stale), breaking ties toward smaller k. The multi-variable arm is retained for taxonomy but is not mixed into the circuit pool."
+  },
+  "model": "mistralai/Mistral-7B-v0.3",
+  "n": 648,
+  "stage": "N-step0-behavior"
+}

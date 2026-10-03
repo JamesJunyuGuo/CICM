@@ -1,0 +1,1047 @@
+{
+  "cell_comparison": [
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "agent_log",
+      "interference_load": 1,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "agent_log",
+      "interference_load": 1,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.99,
+          "n": 100,
+          "stale_rate": 0.01,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "agent_log",
+      "interference_load": 2,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 0.99,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.91,
+          "n": 100,
+          "stale_rate": 0.09,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "agent_log",
+      "interference_load": 2,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.5,
+          "n": 100,
+          "stale_rate": 0.5,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.98,
+          "n": 100,
+          "stale_rate": 0.02,
+          "within_stale_rate_among_errors": 1.0
+        }
+      },
+      "condition": "interference",
+      "family": "agent_log",
+      "interference_load": 4,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.86,
+          "n": 100,
+          "stale_rate": 0.14,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "agent_log",
+      "interference_load": 4,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 0.98,
+          "n": 100,
+          "stale_rate": 0.02,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "baseline": {
+          "accuracy": 0.45,
+          "n": 100,
+          "stale_rate": 0.55,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.78,
+          "n": 100,
+          "stale_rate": 0.22,
+          "within_stale_rate_among_errors": 1.0
+        }
+      },
+      "condition": "interference",
+      "family": "agent_log",
+      "interference_load": 8,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 0.97,
+          "n": 100,
+          "stale_rate": 0.03,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "baseline": {
+          "accuracy": 0.35,
+          "n": 100,
+          "stale_rate": 0.65,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.82,
+          "n": 100,
+          "stale_rate": 0.16,
+          "within_stale_rate_among_errors": 0.8888888888888888
+        }
+      },
+      "condition": "interference",
+      "family": "agent_log",
+      "interference_load": 8,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "dialogue",
+      "interference_load": 1,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 0.96,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.99,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.99,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "dialogue",
+      "interference_load": 1,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "dialogue",
+      "interference_load": 2,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 0.88,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 0.98,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.99,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "dialogue",
+      "interference_load": 2,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.94,
+          "n": 100,
+          "stale_rate": 0.06,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "dialogue",
+      "interference_load": 4,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 0.99,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 0.91,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.99,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "dialogue",
+      "interference_load": 4,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.62,
+          "n": 100,
+          "stale_rate": 0.38,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.94,
+          "n": 100,
+          "stale_rate": 0.06,
+          "within_stale_rate_among_errors": 1.0
+        }
+      },
+      "condition": "interference",
+      "family": "dialogue",
+      "interference_load": 8,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.67,
+          "n": 100,
+          "stale_rate": 0.33,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.84,
+          "n": 100,
+          "stale_rate": 0.16,
+          "within_stale_rate_among_errors": 1.0
+        }
+      },
+      "condition": "interference",
+      "family": "dialogue",
+      "interference_load": 8,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "document",
+      "interference_load": 1,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "document",
+      "interference_load": 1,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "document",
+      "interference_load": 2,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "document",
+      "interference_load": 2,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.96,
+          "n": 100,
+          "stale_rate": 0.04,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "document",
+      "interference_load": 4,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        }
+      },
+      "condition": "interference",
+      "family": "document",
+      "interference_load": 4,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.7,
+          "n": 100,
+          "stale_rate": 0.3,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.92,
+          "n": 100,
+          "stale_rate": 0.08,
+          "within_stale_rate_among_errors": 1.0
+        }
+      },
+      "condition": "interference",
+      "family": "document",
+      "interference_load": 8,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.71,
+          "n": 100,
+          "stale_rate": 0.29,
+          "within_stale_rate_among_errors": 1.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0,
+          "within_stale_rate_among_errors": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.85,
+          "n": 100,
+          "stale_rate": 0.15,
+          "within_stale_rate_among_errors": 1.0
+        }
+      },
+      "condition": "interference",
+      "family": "document",
+      "interference_load": 8,
+      "length_variant": "long"
+    }
+  ],
+  "families": [
+    "agent_log",
+    "dialogue",
+    "document"
+  ],
+  "high_i_summary": {
+    "agent_log": {
+      "arm_l": {
+        "accuracy": 0.9875,
+        "gain_vs_baseline": 0.4475,
+        "n": 400,
+        "stale_rate": 0.0125,
+        "within_stale_rate_among_errors": 1.0
+      },
+      "baseline": {
+        "accuracy": 0.54,
+        "gain_vs_baseline": 0.0,
+        "n": 400,
+        "stale_rate": 0.46,
+        "within_stale_rate_among_errors": 1.0
+      },
+      "generic": {
+        "accuracy": 1.0,
+        "gain_vs_baseline": 0.45999999999999996,
+        "n": 400,
+        "stale_rate": 0.0,
+        "within_stale_rate_among_errors": 0.0
+      },
+      "random_heads": {
+        "accuracy": 0.895,
+        "gain_vs_baseline": 0.355,
+        "n": 400,
+        "stale_rate": 0.1,
+        "within_stale_rate_among_errors": 0.9523809523809523
+      }
+    },
+    "dialogue": {
+      "arm_l": {
+        "accuracy": 0.9975,
+        "gain_vs_baseline": 0.19000000000000006,
+        "n": 400,
+        "stale_rate": 0.0,
+        "within_stale_rate_among_errors": 0.0
+      },
+      "baseline": {
+        "accuracy": 0.8075,
+        "gain_vs_baseline": 0.0,
+        "n": 400,
+        "stale_rate": 0.1925,
+        "within_stale_rate_among_errors": 1.0
+      },
+      "generic": {
+        "accuracy": 0.9775,
+        "gain_vs_baseline": 0.17000000000000004,
+        "n": 400,
+        "stale_rate": 0.0,
+        "within_stale_rate_among_errors": 0.0
+      },
+      "random_heads": {
+        "accuracy": 0.9425,
+        "gain_vs_baseline": 0.135,
+        "n": 400,
+        "stale_rate": 0.055,
+        "within_stale_rate_among_errors": 0.9565217391304348
+      }
+    },
+    "document": {
+      "arm_l": {
+        "accuracy": 1.0,
+        "gain_vs_baseline": 0.15749999999999997,
+        "n": 400,
+        "stale_rate": 0.0,
+        "within_stale_rate_among_errors": 0.0
+      },
+      "baseline": {
+        "accuracy": 0.8425,
+        "gain_vs_baseline": 0.0,
+        "n": 400,
+        "stale_rate": 0.1575,
+        "within_stale_rate_among_errors": 1.0
+      },
+      "generic": {
+        "accuracy": 1.0,
+        "gain_vs_baseline": 0.15749999999999997,
+        "n": 400,
+        "stale_rate": 0.0,
+        "within_stale_rate_among_errors": 0.0
+      },
+      "random_heads": {
+        "accuracy": 0.9425,
+        "gain_vs_baseline": 0.09999999999999998,
+        "n": 400,
+        "stale_rate": 0.0575,
+        "within_stale_rate_among_errors": 1.0
+      }
+    }
+  },
+  "simple_summary": [
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        }
+      },
+      "condition": "simple",
+      "family": "agent_log",
+      "interference_load": 0,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        }
+      },
+      "condition": "simple",
+      "family": "agent_log",
+      "interference_load": 0,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        }
+      },
+      "condition": "simple",
+      "family": "dialogue",
+      "interference_load": 0,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "baseline": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "generic": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "random_heads": {
+          "accuracy": 1.0,
+          "n": 100,
+          "stale_rate": 0.0
+        }
+      },
+      "condition": "simple",
+      "family": "dialogue",
+      "interference_load": 0,
+      "length_variant": "long"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 0.43,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.22,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "generic": {
+          "accuracy": 0.54,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.42,
+          "n": 100,
+          "stale_rate": 0.0
+        }
+      },
+      "condition": "simple",
+      "family": "document",
+      "interference_load": 0,
+      "length_variant": "short"
+    },
+    {
+      "arms": {
+        "arm_l": {
+          "accuracy": 0.45,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.66,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "generic": {
+          "accuracy": 0.86,
+          "n": 100,
+          "stale_rate": 0.0
+        },
+        "random_heads": {
+          "accuracy": 0.77,
+          "n": 100,
+          "stale_rate": 0.0
+        }
+      },
+      "condition": "simple",
+      "family": "document",
+      "interference_load": 0,
+      "length_variant": "long"
+    }
+  ],
+  "source_summaries": {
+    "arm_l": "results/stage_e/natural/arm_l_ai.summary.json",
+    "baseline": "results/stage_e/natural/qwen_baseline_ai.summary.json",
+    "generic": "results/stage_e/natural/generic_ai.summary.json",
+    "random_heads": "results/stage_e/natural/random_heads_ai.summary.json"
+  },
+  "stage": "E",
+  "track": "naturalistic_transfer"
+}

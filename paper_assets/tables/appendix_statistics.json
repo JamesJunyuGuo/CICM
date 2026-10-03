@@ -1,0 +1,354 @@
+{
+  "description": "Pre-rounding manuscript estimates and uncertainty records for appendix tables. This data file is not typeset.",
+  "manuscript_baseline": "64e6adf",
+  "notes": [
+    "Intervals are 95% unless stated otherwise. Bootstrap intervals, random-label reference ranges, and empirical ranges across random component sets are not interchangeable.",
+    "Original manuscript values are retained at their reported precision; exact QK/OV means are additionally recorded from the saved analysis.",
+    "All n values in the CICM representation summary refer to the full dataset, not the number of failures in each subgroup."
+  ],
+  "source_artifacts": [
+    "full_draft_assets/tables/stage_n_circuit.tex at 64e6adf",
+    "full_draft_assets/tables/discrete_results_summary_full.tex at 64e6adf",
+    "results/stage_n/REPORT.md",
+    "results/stage_n/phase1b/REPORT.md",
+    "results/stage_n/mechanism_full_core_ai32/qkov.summary.json",
+    "results/stage_n/phase1b/upstream.summary.json",
+    "results/stage_n/phase1b/a_full_cpu/ablation_heldout.summary.json"
+  ],
+  "pythia": {
+    "exact_ablation_means_for_display_rounding": {
+      "old_value_heads": {
+        "targeted": 0.3835616438356164,
+        "random": 0.08690068493150685
+      },
+      "current_value_heads": {
+        "targeted": 0.037037037037037035,
+        "random": 0.034915123456790126
+      }
+    },
+    "head_recovery": {
+      "selected": 12,
+      "total": 144,
+      "mean": 0.814,
+      "bootstrap95": [
+        0.726,
+        0.877
+      ],
+      "individual": {
+        "L8H10": 0.356,
+        "L8H2": 0.189,
+        "L10H7": 0.103
+      }
+    },
+    "remove_old_value_heads": {
+      "mean": 0.384,
+      "bootstrap95": [
+        0.274,
+        0.493
+      ],
+      "heldout_n": 73,
+      "random_mean": 0.087,
+      "random_sets": 64,
+      "random_empirical95": [
+        0.008,
+        0.299
+      ]
+    },
+    "remove_current_value_heads": {
+      "mean": 0.037,
+      "bootstrap95": [
+        0,
+        0.086
+      ],
+      "heldout_n": 81,
+      "random_mean": 0.035,
+      "random_sets": 64,
+      "random_empirical95": [
+        0,
+        0.116
+      ]
+    },
+    "query_minus_key_recovery": {
+      "L8H2": {
+        "mean": -1.299,
+        "bootstrap95": [
+          -1.616,
+          -1.003
+        ]
+      },
+      "L8H10": {
+        "mean": 0.657,
+        "bootstrap95": [
+          -2.4,
+          4.535
+        ]
+      }
+    },
+    "upstream_l8h2_key": {
+      "qk": {
+        "mean": 0.861,
+        "bootstrap95": [
+          0.767,
+          0.962
+        ],
+        "random_mean": 0.035,
+        "random_empirical95_upper": 0.158
+      },
+      "answer_gap": {
+        "mean": 0.752,
+        "bootstrap95": [
+          0.68,
+          0.818
+        ],
+        "random_mean": 0.064,
+        "random_empirical95_upper": 0.172
+      }
+    },
+    "length_adjusted_probe_failure_minus_correct": {
+      "mean": -0.32,
+      "bootstrap95": [
+        -0.396,
+        -0.238
+      ]
+    },
+    "training_onset": {
+      "bootstrap95_steps": [
+        1000,
+        24000
+      ],
+      "local_probability": 0.666
+    },
+    "qkov": [
+      {
+        "by_label": {
+          "correct_current": {
+            "current_attention_mean": 0.752670074502627,
+            "current_ov_copy_margin_mean": 0.6700256206095219,
+            "n": 48,
+            "qk_latest_margin_mean": 1.695852279663086,
+            "qk_position_slope_mean": 2.264918680055677,
+            "stale_attention_sum_mean": 0.24718229019587548,
+            "stale_ov_copy_margin_mean": 0.624118096777238
+          },
+          "within_stale": {
+            "current_attention_mean": 0.39759703058128554,
+            "current_ov_copy_margin_mean": 0.6373686314715693,
+            "n": 48,
+            "qk_latest_margin_mean": -0.2591654459635417,
+            "qk_position_slope_mean": 1.7197274580325086,
+            "stale_attention_sum_mean": 0.6019031560669342,
+            "stale_ov_copy_margin_mean": 0.617972737760283
+          }
+        },
+        "head": 10,
+        "layer": 8
+      },
+      {
+        "by_label": {
+          "correct_current": {
+            "current_attention_mean": 0.5724931805801816,
+            "current_ov_copy_margin_mean": 0.20001551023839662,
+            "n": 48,
+            "qk_latest_margin_mean": 1.8624051411946614,
+            "qk_position_slope_mean": 2.6648811681341034,
+            "stale_attention_sum_mean": 0.3126996577487873,
+            "stale_ov_copy_margin_mean": 0.17834577742420757
+          },
+          "within_stale": {
+            "current_attention_mean": 0.08248425374786578,
+            "current_ov_copy_margin_mean": 0.18466706053974727,
+            "n": 48,
+            "qk_latest_margin_mean": -6.310809135437012,
+            "qk_position_slope_mean": -0.0339446447026599,
+            "stale_attention_sum_mean": 0.5999969502687842,
+            "stale_ov_copy_margin_mean": 0.18022496852790937
+          }
+        },
+        "head": 2,
+        "layer": 8
+      }
+    ]
+  },
+  "behavior": {
+    "unit": "percent",
+    "scale_endpoints": [
+      {
+        "model": "Qwen2.5-7B",
+        "old_values": 16,
+        "n": 100,
+        "accuracy": 36,
+        "old_among_errors": 100
+      },
+      {
+        "model": "Llama-3.1-8B",
+        "old_values": 16,
+        "n": 100,
+        "accuracy": 10,
+        "old_among_errors": 100
+      },
+      {
+        "model": "Llama-3.1-70B",
+        "old_values": 64,
+        "n": 50,
+        "accuracy": 40,
+        "old_among_errors": 53.3
+      },
+      {
+        "model": "Qwen2.5-72B",
+        "old_values": 64,
+        "n": 50,
+        "accuracy": 78,
+        "old_among_errors": 100
+      },
+      {
+        "model": "GPT-4o",
+        "old_values": 64,
+        "n": 50,
+        "accuracy": 86,
+        "old_among_errors": 100
+      }
+    ],
+    "formats": [
+      {
+        "task": "Dynamic Preference",
+        "format": "free-form",
+        "n": 783,
+        "accuracy": 69.3,
+        "old_among_errors": 82.1,
+        "old_share_interval95": [
+          77.1,
+          87.1
+        ],
+        "scoring": "hybrid judge-assisted"
+      },
+      {
+        "task": "Dynamic Preference",
+        "format": "multiple choice",
+        "n": 783,
+        "accuracy": 70.9,
+        "old_among_errors": 29.4,
+        "old_share_interval95": [
+          23.2,
+          35.5
+        ]
+      },
+      {
+        "task": "Instructional Forgetting",
+        "format": "free-form",
+        "n": 933,
+        "accuracy": 1.4,
+        "old_among_errors": 98.5,
+        "old_share_interval95": [
+          97.6,
+          99.2
+        ]
+      }
+    ]
+  },
+  "representation_attention": {
+    "probability_unit": "percent",
+    "difference_unit": "percentage points",
+    "random_label_range": [
+      3.2,
+      6.4
+    ],
+    "models": [
+      {
+        "model": "Qwen2.5-7B",
+        "n": 1200,
+        "old_error_probe": 84.8,
+        "other_variable_error_probe": 86.5,
+        "probe_difference": -7.5,
+        "probe_bootstrap95": [
+          -10.2,
+          -4.7
+        ],
+        "attention_difference": 19.4,
+        "attention_bootstrap95": [
+          17.9,
+          21
+        ]
+      },
+      {
+        "model": "Llama-3.1-8B",
+        "n": 1200,
+        "old_error_probe": 82.2,
+        "other_variable_error_probe": 86.3,
+        "probe_difference": -7.3,
+        "probe_bootstrap95": [
+          -10.1,
+          -4.2
+        ],
+        "attention_difference": 1.2,
+        "attention_bootstrap95": [
+          -0.5,
+          2.8
+        ]
+      }
+    ]
+  },
+  "steering": {
+    "alpha": 0.4,
+    "unit": "percentage points targeted minus random",
+    "models": [
+      {
+        "model": "Qwen2.5-7B",
+        "n": 665,
+        "middle": -1.1,
+        "middle_bootstrap95": [
+          -2.6,
+          0.5
+        ],
+        "final": 39.5,
+        "final_bootstrap95": [
+          35.8,
+          43.3
+        ]
+      },
+      {
+        "model": "Llama-3.1-8B",
+        "n": 722,
+        "middle": 1.8,
+        "middle_bootstrap95": [
+          0.6,
+          3.2
+        ],
+        "final": 69.5,
+        "final_bootstrap95": [
+          66.3,
+          72.9
+        ]
+      }
+    ]
+  },
+  "linear_prediction": {
+    "accuracy_unit": "percent",
+    "mae_unit": "percentage points",
+    "models": [
+      {
+        "model": "Qwen2.5-7B",
+        "n": 1136,
+        "joint": 43,
+        "identity": 79.2,
+        "recency": 34.5,
+        "random_label_range": [
+          12.6,
+          16.6
+        ],
+        "mae": 24.2
+      },
+      {
+        "model": "Llama-3.1-8B",
+        "n": 1180,
+        "joint": 39.6,
+        "identity": 67.4,
+        "recency": 24.2,
+        "random_label_range": [
+          12.5,
+          16.6
+        ],
+        "mae": 17.4
+      }
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+model,balanced_accuracy,shuffle_low,shuffle_high,pass,groups
+Pythia-160M,0.9793388429752066,0.40909090909090906,0.5661157024793388,True,47

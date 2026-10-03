@@ -1,0 +1,49 @@
+{
+  "stage": "k1",
+  "by_scenario": {
+    "dynamic_preference": {
+      "n": 20,
+      "forget_failures": 19,
+      "within_stale_failures": 3,
+      "within_stale_fraction": 0.15789473684210525,
+      "within_stale_ci": [
+        0.0,
+        0.3157894736842105
+      ],
+      "error_counts": {
+        "other_valid_value": 2,
+        "ambiguous": 10,
+        "other": 4,
+        "within_stale": 3
+      },
+      "forget_accuracy": 0.05,
+      "noforget_reference_rate": 0.3
+    },
+    "instructional_forgetting": {
+      "n": 20,
+      "forget_failures": 18,
+      "within_stale_failures": 15,
+      "within_stale_fraction": 0.8333333333333334,
+      "within_stale_ci": [
+        0.6666666666666666,
+        1.0
+      ],
+      "error_counts": {
+        "within_stale": 15,
+        "other": 3
+      },
+      "forget_accuracy": 0.1,
+      "noforget_reference_rate": 0.7
+    }
+  },
+  "drop_counts": {},
+  "gate": {
+    "criterion": "within-stale dominates (pooled CI lower bound >= 0.70) in >=2 program-verifiable scenarios",
+    "qualifying_scenarios": [],
+    "pass": false,
+    "reading_if_pass": "within-stale dominates (pooled CI lower bound >= 0.70) in >=2 program-verifiable scenarios -> the stale-binding error signature replicates on independent real dialogue; proceed to K2.",
+    "reading_if_fail": "Otherwise -> report the boundary honestly (the synthetic signature is partly setup-specific / real-world failure is more heterogeneous) and STOP."
+  },
+  "model": "Qwen/Qwen2.5-0.5B-Instruct-smoke20",
+  "source": "qwen_self_generated_smoke"
+}

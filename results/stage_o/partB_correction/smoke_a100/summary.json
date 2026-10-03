@@ -1,0 +1,227 @@
+{
+  "claim_boundary": "A 160M inference-time existence test, not a deployable or cross-scale repair. LM loss applies the query-position rule at every next-token prediction site.",
+  "curve": [
+    {
+      "gamma": 1.0,
+      "gate": {
+        "correct_preservation_at_least_0.95": true,
+        "correction_exceeds_random95": false,
+        "gamma_below_one": false,
+        "k0_drop_at_most_0.02": true,
+        "lm_materiality": "Report numerically; no post-hoc threshold is imposed.",
+        "lm_targeted_minus_random_mean": 0.0,
+        "three_hard_controls_pass": false
+      },
+      "random": {
+        "correct_preservation": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "n": 2,
+          "quantile95": [
+            1.0,
+            1.0
+          ]
+        },
+        "correction": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 2,
+          "quantile95": [
+            0.0,
+            0.0
+          ]
+        },
+        "k0_accuracy": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "n": 2,
+          "quantile95": [
+            1.0,
+            1.0
+          ]
+        },
+        "lm_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 2,
+          "quantile95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "targeted": {
+        "correct_prediction_changes": 0,
+        "correct_preservation": 1.0,
+        "correction": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n": 4
+        },
+        "k0_accuracy": 1.0,
+        "k0_prediction_changes": 0,
+        "lm_delta": 0.0,
+        "lm_loss": 3.3799678050913373,
+        "max_abs_gap_change": 0.0
+      }
+    },
+    {
+      "gamma": 0.0,
+      "gate": {
+        "correct_preservation_at_least_0.95": true,
+        "correction_exceeds_random95": true,
+        "gamma_below_one": true,
+        "k0_drop_at_most_0.02": true,
+        "lm_materiality": "Report numerically; no post-hoc threshold is imposed.",
+        "lm_targeted_minus_random_mean": 0.1904482386593418,
+        "three_hard_controls_pass": true
+      },
+      "random": {
+        "correct_preservation": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "n": 2,
+          "quantile95": [
+            1.0,
+            1.0
+          ]
+        },
+        "correction": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 2,
+          "quantile95": [
+            0.0,
+            0.0
+          ]
+        },
+        "k0_accuracy": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "n": 2,
+          "quantile95": [
+            1.0,
+            1.0
+          ]
+        },
+        "lm_delta": {
+          "max": 0.1030814317793749,
+          "mean": 0.09891001903375085,
+          "min": 0.0947386062881268,
+          "n": 2,
+          "quantile95": [
+            0.09494717692540801,
+            0.1028728611420937
+          ]
+        }
+      },
+      "targeted": {
+        "correct_prediction_changes": 0,
+        "correct_preservation": 1.0,
+        "correction": {
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n": 4
+        },
+        "k0_accuracy": 1.0,
+        "k0_prediction_changes": 0,
+        "lm_delta": 0.28935825769309265,
+        "lm_loss": 3.66932606278443,
+        "max_abs_gap_change": 3.15814208984375
+      }
+    }
+  ],
+  "dtype": "float32",
+  "evaluation": {
+    "heldout_correct_k4": 4,
+    "heldout_failures": 4,
+    "k0_baseline_accuracy": 1.0,
+    "k0_single": 4,
+    "lm_baseline_loss": 3.3799678050913373,
+    "lm_segments": 2,
+    "lm_tokens_per_segment": 512
+  },
+  "gamma0_consistency": {
+    "gamma0_smoke": 1.0,
+    "note": "Full-pool consistency is not adjudicated on a smoke subset.",
+    "pass_exact": null,
+    "phase1b": 0.3835616438356164
+  },
+  "gammas": [
+    1.0,
+    0.0
+  ],
+  "hard_control_candidates": [
+    0.0
+  ],
+  "heads": [
+    {
+      "head": 11,
+      "layer": 8
+    },
+    {
+      "head": 7,
+      "layer": 10
+    },
+    {
+      "head": 2,
+      "layer": 9
+    },
+    {
+      "head": 2,
+      "layer": 8
+    },
+    {
+      "head": 3,
+      "layer": 10
+    },
+    {
+      "head": 7,
+      "layer": 8
+    },
+    {
+      "head": 6,
+      "layer": 5
+    },
+    {
+      "head": 8,
+      "layer": 8
+    },
+    {
+      "head": 6,
+      "layer": 6
+    },
+    {
+      "head": 0,
+      "layer": 0
+    },
+    {
+      "head": 5,
+      "layer": 10
+    },
+    {
+      "head": 2,
+      "layer": 0
+    }
+  ],
+  "identity_gate": {
+    "pass": true,
+    "targeted_lm_delta": 0.0,
+    "targeted_max_abs_gap_change": 0.0
+  },
+  "model": "EleutherAI/pythia-160m",
+  "stage": "O-Part-B-smoke"
+}

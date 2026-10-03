@@ -1,0 +1,964 @@
+{
+  "experiment_date": "2026-09-20",
+  "manifest_sha256": "fc6f328a1269c71f4c1e06feead6e3e5171e4b5bf1448591d6fa7c44ddf815f9",
+  "full_analysis_file": "confirmation.analysis.json",
+  "full_analysis_sha256": "b0180c7e9bbf69bb8ecdea01a14adce725e9aea30877cb8935abd6e17ec138d8",
+  "response_count": 1200,
+  "rows": [
+    {
+      "arm": "qwen_direct_short",
+      "configuration": {
+        "provider": "openrouter",
+        "model": "qwen/qwen-2.5-7b-instruct",
+        "temperature": 0,
+        "max_tokens": 16,
+        "format": "direct"
+      },
+      "returned_models": {
+        "qwen/qwen-2.5-7b-instruct": 300
+      },
+      "providers": {
+        "Phala": 300
+      },
+      "cells": [
+        {
+          "k": 2,
+          "overwrite": {
+            "arm": "qwen_direct_short",
+            "condition": "overwrite",
+            "k": 2,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "within_stale": 12,
+              "correct": 38
+            },
+            "completed_accuracy": 0.76,
+            "full_request_success_rate": 0.76,
+            "within_stale_share_completed_errors": 1.0,
+            "old_or_ambiguous_share_completed_errors": 1.0,
+            "completed_accuracy_wilson95": [
+              0.6258731624205708,
+              0.8570260860300828
+            ]
+          },
+          "no_overwrite": {
+            "arm": "qwen_direct_short",
+            "condition": "no_overwrite",
+            "k": 2,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 48,
+              "cross_variable": 2
+            },
+            "completed_accuracy": 0.96,
+            "full_request_success_rate": 0.96,
+            "within_stale_share_completed_errors": 0.0,
+            "old_or_ambiguous_share_completed_errors": 0.0,
+            "completed_accuracy_wilson95": [
+              0.8653990931249297,
+              0.9889611156723802
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "qwen_direct_short",
+            "k": 2,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": -0.2,
+            "paired_bootstrap95": [
+              -0.34,
+              -0.06
+            ]
+          }
+        },
+        {
+          "k": 4,
+          "overwrite": {
+            "arm": "qwen_direct_short",
+            "condition": "overwrite",
+            "k": 4,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 29,
+              "within_stale": 20,
+              "cross_variable": 1
+            },
+            "completed_accuracy": 0.58,
+            "full_request_success_rate": 0.58,
+            "within_stale_share_completed_errors": 0.9523809523809523,
+            "old_or_ambiguous_share_completed_errors": 0.9523809523809523,
+            "completed_accuracy_wilson95": [
+              0.4423344176857823,
+              0.7062499664528802
+            ]
+          },
+          "no_overwrite": {
+            "arm": "qwen_direct_short",
+            "condition": "no_overwrite",
+            "k": 4,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 50
+            },
+            "completed_accuracy": 1.0,
+            "full_request_success_rate": 1.0,
+            "within_stale_share_completed_errors": null,
+            "old_or_ambiguous_share_completed_errors": null,
+            "completed_accuracy_wilson95": [
+              0.9286524008666414,
+              1.0
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "qwen_direct_short",
+            "k": 4,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": -0.42,
+            "paired_bootstrap95": [
+              -0.56,
+              -0.28
+            ]
+          }
+        },
+        {
+          "k": 8,
+          "overwrite": {
+            "arm": "qwen_direct_short",
+            "condition": "overwrite",
+            "k": 8,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 20,
+              "within_stale": 30
+            },
+            "completed_accuracy": 0.4,
+            "full_request_success_rate": 0.4,
+            "within_stale_share_completed_errors": 1.0,
+            "old_or_ambiguous_share_completed_errors": 1.0,
+            "completed_accuracy_wilson95": [
+              0.27608389730256544,
+              0.5381856225241064
+            ]
+          },
+          "no_overwrite": {
+            "arm": "qwen_direct_short",
+            "condition": "no_overwrite",
+            "k": 8,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 50
+            },
+            "completed_accuracy": 1.0,
+            "full_request_success_rate": 1.0,
+            "within_stale_share_completed_errors": null,
+            "old_or_ambiguous_share_completed_errors": null,
+            "completed_accuracy_wilson95": [
+              0.9286524008666414,
+              1.0
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "qwen_direct_short",
+            "k": 8,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": -0.6,
+            "paired_bootstrap95": [
+              -0.72,
+              -0.46
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "arm": "qwen_direct_long",
+      "configuration": {
+        "provider": "openrouter",
+        "model": "qwen/qwen-2.5-7b-instruct",
+        "temperature": 0,
+        "max_tokens": 512,
+        "format": "direct"
+      },
+      "returned_models": {
+        "qwen/qwen-2.5-7b-instruct": 300
+      },
+      "providers": {
+        "Phala": 300
+      },
+      "cells": [
+        {
+          "k": 2,
+          "overwrite": {
+            "arm": "qwen_direct_long",
+            "condition": "overwrite",
+            "k": 2,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "within_stale": 12,
+              "correct": 38
+            },
+            "completed_accuracy": 0.76,
+            "full_request_success_rate": 0.76,
+            "within_stale_share_completed_errors": 1.0,
+            "old_or_ambiguous_share_completed_errors": 1.0,
+            "completed_accuracy_wilson95": [
+              0.6258731624205708,
+              0.8570260860300828
+            ]
+          },
+          "no_overwrite": {
+            "arm": "qwen_direct_long",
+            "condition": "no_overwrite",
+            "k": 2,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 48,
+              "cross_variable": 2
+            },
+            "completed_accuracy": 0.96,
+            "full_request_success_rate": 0.96,
+            "within_stale_share_completed_errors": 0.0,
+            "old_or_ambiguous_share_completed_errors": 0.0,
+            "completed_accuracy_wilson95": [
+              0.8653990931249297,
+              0.9889611156723802
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "qwen_direct_long",
+            "k": 2,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": -0.2,
+            "paired_bootstrap95": [
+              -0.34,
+              -0.06
+            ]
+          }
+        },
+        {
+          "k": 4,
+          "overwrite": {
+            "arm": "qwen_direct_long",
+            "condition": "overwrite",
+            "k": 4,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 29,
+              "within_stale": 20,
+              "cross_variable": 1
+            },
+            "completed_accuracy": 0.58,
+            "full_request_success_rate": 0.58,
+            "within_stale_share_completed_errors": 0.9523809523809523,
+            "old_or_ambiguous_share_completed_errors": 0.9523809523809523,
+            "completed_accuracy_wilson95": [
+              0.4423344176857823,
+              0.7062499664528802
+            ]
+          },
+          "no_overwrite": {
+            "arm": "qwen_direct_long",
+            "condition": "no_overwrite",
+            "k": 4,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 50
+            },
+            "completed_accuracy": 1.0,
+            "full_request_success_rate": 1.0,
+            "within_stale_share_completed_errors": null,
+            "old_or_ambiguous_share_completed_errors": null,
+            "completed_accuracy_wilson95": [
+              0.9286524008666414,
+              1.0
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "qwen_direct_long",
+            "k": 4,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": -0.42,
+            "paired_bootstrap95": [
+              -0.56,
+              -0.28
+            ]
+          }
+        },
+        {
+          "k": 8,
+          "overwrite": {
+            "arm": "qwen_direct_long",
+            "condition": "overwrite",
+            "k": 8,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "within_stale": 31,
+              "correct": 19
+            },
+            "completed_accuracy": 0.38,
+            "full_request_success_rate": 0.38,
+            "within_stale_share_completed_errors": 1.0,
+            "old_or_ambiguous_share_completed_errors": 1.0,
+            "completed_accuracy_wilson95": [
+              0.25862789310193596,
+              0.5184955306900703
+            ]
+          },
+          "no_overwrite": {
+            "arm": "qwen_direct_long",
+            "condition": "no_overwrite",
+            "k": 8,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 50
+            },
+            "completed_accuracy": 1.0,
+            "full_request_success_rate": 1.0,
+            "within_stale_share_completed_errors": null,
+            "old_or_ambiguous_share_completed_errors": null,
+            "completed_accuracy_wilson95": [
+              0.9286524008666414,
+              1.0
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "qwen_direct_long",
+            "k": 8,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": -0.62,
+            "paired_bootstrap95": [
+              -0.74,
+              -0.48
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "arm": "qwen_reasoning",
+      "configuration": {
+        "provider": "openrouter",
+        "model": "qwen/qwen-2.5-7b-instruct",
+        "temperature": 0,
+        "max_tokens": 512,
+        "format": "final"
+      },
+      "returned_models": {
+        "qwen/qwen-2.5-7b-instruct": 300
+      },
+      "providers": {
+        "Phala": 300
+      },
+      "cells": [
+        {
+          "k": 2,
+          "overwrite": {
+            "arm": "qwen_reasoning",
+            "condition": "overwrite",
+            "k": 2,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 46,
+              "within_stale": 4
+            },
+            "completed_accuracy": 0.92,
+            "full_request_success_rate": 0.92,
+            "within_stale_share_completed_errors": 1.0,
+            "old_or_ambiguous_share_completed_errors": 1.0,
+            "completed_accuracy_wilson95": [
+              0.8116175308165717,
+              0.968450485911407
+            ]
+          },
+          "no_overwrite": {
+            "arm": "qwen_reasoning",
+            "condition": "no_overwrite",
+            "k": 2,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 49,
+              "cross_variable": 1
+            },
+            "completed_accuracy": 0.98,
+            "full_request_success_rate": 0.98,
+            "within_stale_share_completed_errors": 0.0,
+            "old_or_ambiguous_share_completed_errors": 0.0,
+            "completed_accuracy_wilson95": [
+              0.8950455641036219,
+              0.9964607407283539
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "qwen_reasoning",
+            "k": 2,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": -0.06,
+            "paired_bootstrap95": [
+              -0.16,
+              0.02
+            ]
+          }
+        },
+        {
+          "k": 4,
+          "overwrite": {
+            "arm": "qwen_reasoning",
+            "condition": "overwrite",
+            "k": 4,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 39,
+              "within_stale": 11
+            },
+            "completed_accuracy": 0.78,
+            "full_request_success_rate": 0.78,
+            "within_stale_share_completed_errors": 1.0,
+            "old_or_ambiguous_share_completed_errors": 1.0,
+            "completed_accuracy_wilson95": [
+              0.6475845041874634,
+              0.8724608402978559
+            ]
+          },
+          "no_overwrite": {
+            "arm": "qwen_reasoning",
+            "condition": "no_overwrite",
+            "k": 4,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 49,
+              "cross_variable": 1
+            },
+            "completed_accuracy": 0.98,
+            "full_request_success_rate": 0.98,
+            "within_stale_share_completed_errors": 0.0,
+            "old_or_ambiguous_share_completed_errors": 0.0,
+            "completed_accuracy_wilson95": [
+              0.8950455641036219,
+              0.9964607407283539
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "qwen_reasoning",
+            "k": 4,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": -0.2,
+            "paired_bootstrap95": [
+              -0.32,
+              -0.08
+            ]
+          }
+        },
+        {
+          "k": 8,
+          "overwrite": {
+            "arm": "qwen_reasoning",
+            "condition": "overwrite",
+            "k": 8,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 26,
+              "within_stale": 24
+            },
+            "completed_accuracy": 0.52,
+            "full_request_success_rate": 0.52,
+            "within_stale_share_completed_errors": 1.0,
+            "old_or_ambiguous_share_completed_errors": 1.0,
+            "completed_accuracy_wilson95": [
+              0.38511744890044614,
+              0.6520286471342196
+            ]
+          },
+          "no_overwrite": {
+            "arm": "qwen_reasoning",
+            "condition": "no_overwrite",
+            "k": 8,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 49,
+              "cross_variable": 1
+            },
+            "completed_accuracy": 0.98,
+            "full_request_success_rate": 0.98,
+            "within_stale_share_completed_errors": 0.0,
+            "old_or_ambiguous_share_completed_errors": 0.0,
+            "completed_accuracy_wilson95": [
+              0.8950455641036219,
+              0.9964607407283539
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "qwen_reasoning",
+            "k": 8,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": -0.46,
+            "paired_bootstrap95": [
+              -0.6,
+              -0.3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "arm": "gpt5_reasoning",
+      "configuration": {
+        "provider": "openai",
+        "model": "gpt-5",
+        "reasoning_effort": "medium",
+        "max_completion_tokens": 8192,
+        "format": "final"
+      },
+      "returned_models": {
+        "gpt-5-2025-08-07": 300
+      },
+      "providers": {
+        "not_returned": 300
+      },
+      "cells": [
+        {
+          "k": 2,
+          "overwrite": {
+            "arm": "gpt5_reasoning",
+            "condition": "overwrite",
+            "k": 2,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 50
+            },
+            "completed_accuracy": 1.0,
+            "full_request_success_rate": 1.0,
+            "within_stale_share_completed_errors": null,
+            "old_or_ambiguous_share_completed_errors": null,
+            "completed_accuracy_wilson95": [
+              0.9286524008666414,
+              1.0
+            ]
+          },
+          "no_overwrite": {
+            "arm": "gpt5_reasoning",
+            "condition": "no_overwrite",
+            "k": 2,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 50
+            },
+            "completed_accuracy": 1.0,
+            "full_request_success_rate": 1.0,
+            "within_stale_share_completed_errors": null,
+            "old_or_ambiguous_share_completed_errors": null,
+            "completed_accuracy_wilson95": [
+              0.9286524008666414,
+              1.0
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "gpt5_reasoning",
+            "k": 2,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": 0.0,
+            "paired_bootstrap95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "k": 4,
+          "overwrite": {
+            "arm": "gpt5_reasoning",
+            "condition": "overwrite",
+            "k": 4,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 50
+            },
+            "completed_accuracy": 1.0,
+            "full_request_success_rate": 1.0,
+            "within_stale_share_completed_errors": null,
+            "old_or_ambiguous_share_completed_errors": null,
+            "completed_accuracy_wilson95": [
+              0.9286524008666414,
+              1.0
+            ]
+          },
+          "no_overwrite": {
+            "arm": "gpt5_reasoning",
+            "condition": "no_overwrite",
+            "k": 4,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 50
+            },
+            "completed_accuracy": 1.0,
+            "full_request_success_rate": 1.0,
+            "within_stale_share_completed_errors": null,
+            "old_or_ambiguous_share_completed_errors": null,
+            "completed_accuracy_wilson95": [
+              0.9286524008666414,
+              1.0
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "gpt5_reasoning",
+            "k": 4,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": 0.0,
+            "paired_bootstrap95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "k": 8,
+          "overwrite": {
+            "arm": "gpt5_reasoning",
+            "condition": "overwrite",
+            "k": 8,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 50
+            },
+            "completed_accuracy": 1.0,
+            "full_request_success_rate": 1.0,
+            "within_stale_share_completed_errors": null,
+            "old_or_ambiguous_share_completed_errors": null,
+            "completed_accuracy_wilson95": [
+              0.9286524008666414,
+              1.0
+            ]
+          },
+          "no_overwrite": {
+            "arm": "gpt5_reasoning",
+            "condition": "no_overwrite",
+            "k": 8,
+            "n_requested": 50,
+            "n_completed": 50,
+            "counts": {
+              "correct": 50
+            },
+            "completed_accuracy": 1.0,
+            "full_request_success_rate": 1.0,
+            "within_stale_share_completed_errors": null,
+            "old_or_ambiguous_share_completed_errors": null,
+            "completed_accuracy_wilson95": [
+              0.9286524008666414,
+              1.0
+            ]
+          },
+          "paired_overwrite_minus_control": {
+            "arm": "gpt5_reasoning",
+            "k": 8,
+            "n_common_completed_pairs": 50,
+            "overwrite_minus_control": 0.0,
+            "paired_bootstrap95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "primary_budget_matched_contrasts": [
+    {
+      "reference": "qwen_direct_long",
+      "arm": "qwen_reasoning",
+      "condition": "overwrite",
+      "k": "pooled",
+      "comparison_role": "primary_budget_matched_reasoning_contrast",
+      "n_common_completed": 150,
+      "accuracy_delta": 0.16666666666666666,
+      "paired_bootstrap95": [
+        0.09333333333333334,
+        0.24
+      ],
+      "paired_correctness_counts": {
+        "reference_0_comparison_1": 31,
+        "reference_1_comparison_0": 6,
+        "reference_1_comparison_1": 80,
+        "reference_0_comparison_0": 33
+      }
+    },
+    {
+      "reference": "qwen_direct_long",
+      "arm": "qwen_reasoning",
+      "condition": "overwrite",
+      "k": 2,
+      "comparison_role": "primary_budget_matched_reasoning_contrast",
+      "n_common_completed": 50,
+      "accuracy_delta": 0.16,
+      "paired_bootstrap95": [
+        0.06,
+        0.28
+      ],
+      "paired_correctness_counts": {
+        "reference_0_comparison_1": 9,
+        "reference_1_comparison_0": 1,
+        "reference_1_comparison_1": 37,
+        "reference_0_comparison_0": 3
+      }
+    },
+    {
+      "reference": "qwen_direct_long",
+      "arm": "qwen_reasoning",
+      "condition": "overwrite",
+      "k": 4,
+      "comparison_role": "primary_budget_matched_reasoning_contrast",
+      "n_common_completed": 50,
+      "accuracy_delta": 0.2,
+      "paired_bootstrap95": [
+        0.08,
+        0.32
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_1": 28,
+        "reference_0_comparison_1": 11,
+        "reference_0_comparison_0": 10,
+        "reference_1_comparison_0": 1
+      }
+    },
+    {
+      "reference": "qwen_direct_long",
+      "arm": "qwen_reasoning",
+      "condition": "overwrite",
+      "k": 8,
+      "comparison_role": "primary_budget_matched_reasoning_contrast",
+      "n_common_completed": 50,
+      "accuracy_delta": 0.14,
+      "paired_bootstrap95": [
+        0.0,
+        0.28
+      ],
+      "paired_correctness_counts": {
+        "reference_0_comparison_1": 11,
+        "reference_0_comparison_0": 20,
+        "reference_1_comparison_1": 15,
+        "reference_1_comparison_0": 4
+      }
+    },
+    {
+      "reference": "qwen_direct_long",
+      "arm": "qwen_reasoning",
+      "condition": "no_overwrite",
+      "k": "pooled",
+      "comparison_role": "primary_budget_matched_reasoning_contrast",
+      "n_common_completed": 150,
+      "accuracy_delta": -0.006666666666666667,
+      "paired_bootstrap95": [
+        -0.03333333333333333,
+        0.013333333333333334
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_1": 146,
+        "reference_0_comparison_1": 1,
+        "reference_0_comparison_0": 1,
+        "reference_1_comparison_0": 2
+      }
+    },
+    {
+      "reference": "qwen_direct_long",
+      "arm": "qwen_reasoning",
+      "condition": "no_overwrite",
+      "k": 2,
+      "comparison_role": "primary_budget_matched_reasoning_contrast",
+      "n_common_completed": 50,
+      "accuracy_delta": 0.02,
+      "paired_bootstrap95": [
+        0.0,
+        0.06
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_1": 48,
+        "reference_0_comparison_1": 1,
+        "reference_0_comparison_0": 1
+      }
+    },
+    {
+      "reference": "qwen_direct_long",
+      "arm": "qwen_reasoning",
+      "condition": "no_overwrite",
+      "k": 4,
+      "comparison_role": "primary_budget_matched_reasoning_contrast",
+      "n_common_completed": 50,
+      "accuracy_delta": -0.02,
+      "paired_bootstrap95": [
+        -0.06,
+        0.0
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_1": 49,
+        "reference_1_comparison_0": 1
+      }
+    },
+    {
+      "reference": "qwen_direct_long",
+      "arm": "qwen_reasoning",
+      "condition": "no_overwrite",
+      "k": 8,
+      "comparison_role": "primary_budget_matched_reasoning_contrast",
+      "n_common_completed": 50,
+      "accuracy_delta": -0.02,
+      "paired_bootstrap95": [
+        -0.06,
+        0.0
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_1": 49,
+        "reference_1_comparison_0": 1
+      }
+    }
+  ],
+  "budget_only_contrasts": [
+    {
+      "reference": "qwen_direct_short",
+      "arm": "qwen_direct_long",
+      "condition": "overwrite",
+      "k": "pooled",
+      "n_common_completed": 150,
+      "accuracy_delta": -0.006666666666666667,
+      "paired_bootstrap95": [
+        -0.02,
+        0.0
+      ],
+      "paired_correctness_counts": {
+        "reference_0_comparison_0": 63,
+        "reference_1_comparison_1": 86,
+        "reference_1_comparison_0": 1
+      }
+    },
+    {
+      "reference": "qwen_direct_short",
+      "arm": "qwen_direct_long",
+      "condition": "overwrite",
+      "k": 2,
+      "n_common_completed": 50,
+      "accuracy_delta": 0.0,
+      "paired_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "paired_correctness_counts": {
+        "reference_0_comparison_0": 12,
+        "reference_1_comparison_1": 38
+      }
+    },
+    {
+      "reference": "qwen_direct_short",
+      "arm": "qwen_direct_long",
+      "condition": "overwrite",
+      "k": 4,
+      "n_common_completed": 50,
+      "accuracy_delta": 0.0,
+      "paired_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_1": 29,
+        "reference_0_comparison_0": 21
+      }
+    },
+    {
+      "reference": "qwen_direct_short",
+      "arm": "qwen_direct_long",
+      "condition": "overwrite",
+      "k": 8,
+      "n_common_completed": 50,
+      "accuracy_delta": -0.02,
+      "paired_bootstrap95": [
+        -0.06,
+        0.0
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_0": 1,
+        "reference_0_comparison_0": 30,
+        "reference_1_comparison_1": 19
+      }
+    },
+    {
+      "reference": "qwen_direct_short",
+      "arm": "qwen_direct_long",
+      "condition": "no_overwrite",
+      "k": "pooled",
+      "n_common_completed": 150,
+      "accuracy_delta": 0.0,
+      "paired_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_1": 148,
+        "reference_0_comparison_0": 2
+      }
+    },
+    {
+      "reference": "qwen_direct_short",
+      "arm": "qwen_direct_long",
+      "condition": "no_overwrite",
+      "k": 2,
+      "n_common_completed": 50,
+      "accuracy_delta": 0.0,
+      "paired_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_1": 48,
+        "reference_0_comparison_0": 2
+      }
+    },
+    {
+      "reference": "qwen_direct_short",
+      "arm": "qwen_direct_long",
+      "condition": "no_overwrite",
+      "k": 4,
+      "n_common_completed": 50,
+      "accuracy_delta": 0.0,
+      "paired_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_1": 50
+      }
+    },
+    {
+      "reference": "qwen_direct_short",
+      "arm": "qwen_direct_long",
+      "condition": "no_overwrite",
+      "k": 8,
+      "n_common_completed": 50,
+      "accuracy_delta": 0.0,
+      "paired_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "paired_correctness_counts": {
+        "reference_1_comparison_1": 50
+      }
+    }
+  ]
+}

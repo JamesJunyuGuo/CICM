@@ -1,0 +1,543 @@
+{
+  "by_k": {
+    "0": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.005893241015451916
+      ],
+      "counts": {
+        "other": 648
+      },
+      "n": 648,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.005893241015451916
+      ]
+    },
+    "1": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.005893241015451916
+      ],
+      "counts": {
+        "other": 648
+      },
+      "n": 648,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.005893241015451916
+      ]
+    },
+    "2": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.005893241015451916
+      ],
+      "counts": {
+        "other": 648
+      },
+      "n": 648,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.005893241015451916
+      ]
+    },
+    "3": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.005893241015451916
+      ],
+      "counts": {
+        "other": 648
+      },
+      "n": 648,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.005893241015451916
+      ]
+    },
+    "4": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.005893241015451916
+      ],
+      "counts": {
+        "other": 648
+      },
+      "n": 648,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.005893241015451916
+      ]
+    },
+    "5": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.005893241015451916
+      ],
+      "counts": {
+        "other": 648
+      },
+      "n": 648,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.005893241015451916
+      ]
+    }
+  },
+  "by_k_seed": {
+    "k0__seed11": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k0__seed29": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k0__seed47": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k1__seed11": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k1__seed29": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k1__seed47": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k2__seed11": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k2__seed29": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k2__seed47": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k3__seed11": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k3__seed29": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k3__seed47": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k4__seed11": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k4__seed29": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k4__seed47": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k5__seed11": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k5__seed29": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    },
+    "k5__seed47": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.01747376878456431
+      ],
+      "counts": {
+        "other": 216
+      },
+      "n": 216,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.01747376878456431
+      ]
+    }
+  },
+  "by_seed": {
+    "11": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.002955328739998309
+      ],
+      "counts": {
+        "other": 1296
+      },
+      "n": 1296,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.002955328739998309
+      ]
+    },
+    "29": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.002955328739998309
+      ],
+      "counts": {
+        "other": 1296
+      },
+      "n": 1296,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.002955328739998309
+      ]
+    },
+    "47": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.002955328739998309
+      ],
+      "counts": {
+        "other": 1296
+      },
+      "n": 1296,
+      "out_of_context_rate": 1.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.002955328739998309
+      ]
+    }
+  },
+  "decoding": "one-token greedy over full vocabulary",
+  "device": "cpu",
+  "dtype": "float32",
+  "k4": {
+    "accuracy": 0.0,
+    "accuracy_wilson95": [
+      0.0,
+      0.005893241015451916
+    ],
+    "counts": {
+      "other": 648
+    },
+    "n": 648,
+    "out_of_context_rate": 1.0,
+    "within_stale_rate_all": 0.0,
+    "within_stale_share_errors": 0.0,
+    "within_stale_share_errors_wilson95": [
+      0.0,
+      0.005893241015451916
+    ]
+  },
+  "model": "EleutherAI/pythia-160m",
+  "n": 3888,
+  "revision": "step64",
+  "stage": "N-phase2-behavior-checkpoint",
+  "stale_onset_pool": {
+    "counts": {
+      "other": 3240
+    },
+    "cross_variable_share": 0.0,
+    "errors_by_seed": {
+      "11": 1080,
+      "29": 1080,
+      "47": 1080
+    },
+    "gate_pass": true,
+    "n_errors": 3240,
+    "other_share": 1.0,
+    "scope": "k>=1 errors",
+    "within_stale_share": 0.0
+  },
+  "step": 64,
+  "task_path": "results/stage_n/dynamics/task_single.jsonl",
+  "task_sha256": "adf07f9ab9bc40884ea799f057c733430de97e96a88adcc0b934c37808206b69",
+  "taxonomy_all": {
+    "other": 3888
+  },
+  "tokens_per_step": 2097152,
+  "tokens_seen": 134217728
+}

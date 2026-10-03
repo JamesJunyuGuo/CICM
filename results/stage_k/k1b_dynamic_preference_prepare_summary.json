@@ -1,0 +1,7 @@
+{
+  "stage": "k1b_dynamic_preference_prepare",
+  "old_rows": 783,
+  "new_rows": 1000,
+  "paired_rows": 783,
+  "drop_counts": {}
+}

@@ -1,0 +1,305 @@
+{
+  "all_960_rows_sensitivity": {
+    "arm_accuracy": 0.28541666666666665,
+    "arm_counts": {
+      "correct_current": 274,
+      "other": 6,
+      "within_stale": 680
+    },
+    "baseline_accuracy": 0.265625,
+    "baseline_counts": {
+      "correct_current": 255,
+      "other": 3,
+      "within_stale": 702
+    },
+    "by_baseline_mode": {
+      "correct_current": {
+        "n": 255,
+        "to_correct": 0.9921568627450981
+      },
+      "other": {
+        "n": 3,
+        "to_correct": 0.0
+      },
+      "within_stale": {
+        "n": 702,
+        "to_correct": 0.029914529914529916
+      }
+    },
+    "correct_preservation": 0.9921568627450981,
+    "n": 960,
+    "net_accuracy_gain": 0.019791666666666666,
+    "paired_net_gain": {
+      "ci": [
+        0.010476190476190477,
+        0.0323015873015873
+      ],
+      "cluster": "semantic_id",
+      "mean": 0.02087301587301587,
+      "n": 960,
+      "n_clusters": 210
+    },
+    "transitions": {
+      "correct_current->correct_current": 253,
+      "correct_current->other": 2,
+      "other->other": 3,
+      "within_stale->correct_current": 21,
+      "within_stale->other": 1,
+      "within_stale->within_stale": 680
+    },
+    "within_stale_correction": 0.029914529914529916
+  },
+  "execution": {
+    "resume_validation": null,
+    "resumed_from_complete_task_artifacts": null
+  },
+  "gate": {
+    "adequate_correct_pool": true,
+    "adequate_within_stale_pool": true,
+    "all_pass": true,
+    "correct_preservation": true,
+    "exceeds_random_head95": true,
+    "exceeds_random_position95": true,
+    "identity_exact": true,
+    "net_gain_ci_above_zero": true,
+    "positive_in_four_cells": true,
+    "route_audit_exact": true
+  },
+  "identity_max_abs_first_token_score_change": 0.0,
+  "identity_response_changes": 0,
+  "opposite": {
+    "arm_accuracy": 0.265625,
+    "arm_counts": {
+      "correct_current": 255,
+      "other": 5,
+      "within_stale": 700
+    },
+    "baseline_accuracy": 0.265625,
+    "baseline_counts": {
+      "correct_current": 255,
+      "other": 3,
+      "within_stale": 702
+    },
+    "by_baseline_mode": {
+      "correct_current": {
+        "n": 255,
+        "to_correct": 0.9803921568627451
+      },
+      "other": {
+        "n": 3,
+        "to_correct": 0.0
+      },
+      "within_stale": {
+        "n": 702,
+        "to_correct": 0.007122507122507123
+      }
+    },
+    "correct_preservation": 0.9803921568627451,
+    "n": 960,
+    "net_accuracy_gain": 0.0,
+    "paired_net_gain": {
+      "ci": [
+        -0.00675,
+        0.006115079365079343
+      ],
+      "cluster": "semantic_id",
+      "mean": -0.00015873015873015895,
+      "n": 960,
+      "n_clusters": 210
+    },
+    "transitions": {
+      "correct_current->correct_current": 250,
+      "correct_current->other": 1,
+      "correct_current->within_stale": 4,
+      "other->other": 3,
+      "within_stale->correct_current": 5,
+      "within_stale->other": 1,
+      "within_stale->within_stale": 696
+    },
+    "within_stale_correction": 0.007122507122507123
+  },
+  "per_factorial_cell": {
+    "same_far__other_far": {
+      "arm_accuracy": 0.475,
+      "baseline_accuracy": 0.46875,
+      "n": 160,
+      "net_accuracy_gain": 0.00625
+    },
+    "same_far__other_mid": {
+      "arm_accuracy": 0.13125,
+      "baseline_accuracy": 0.125,
+      "n": 160,
+      "net_accuracy_gain": 0.00625
+    },
+    "same_far__other_near2": {
+      "arm_accuracy": 0.4125,
+      "baseline_accuracy": 0.4,
+      "n": 160,
+      "net_accuracy_gain": 0.0125
+    },
+    "same_near__other_far": {
+      "arm_accuracy": 0.325,
+      "baseline_accuracy": 0.28125,
+      "n": 160,
+      "net_accuracy_gain": 0.04375
+    },
+    "same_near__other_mid": {
+      "arm_accuracy": 0.1,
+      "baseline_accuracy": 0.075,
+      "n": 160,
+      "net_accuracy_gain": 0.025
+    },
+    "same_near__other_near2": {
+      "arm_accuracy": 0.26875,
+      "baseline_accuracy": 0.24375,
+      "n": 160,
+      "net_accuracy_gain": 0.025
+    }
+  },
+  "random_heads": {
+    "correct_preservation": {
+      "interval95": [
+        0.9450980392156862,
+        0.9938235294117648
+      ],
+      "max": 0.996078431372549,
+      "mean": 0.9721813725490197,
+      "min": 0.9411764705882353,
+      "n": 64
+    },
+    "n": 64,
+    "net_accuracy_gain": {
+      "interval95": [
+        -0.011901041666666666,
+        0.004166666666666667
+      ],
+      "max": 0.005208333333333333,
+      "mean": -0.0031901041666666666,
+      "min": -0.0125,
+      "n": 64
+    }
+  },
+  "random_positions": {
+    "correct_preservation": {
+      "interval95": [
+        0.984313725490196,
+        0.9985294117647059
+      ],
+      "max": 1.0,
+      "mean": 0.9921568627450981,
+      "min": 0.984313725490196,
+      "n": 16
+    },
+    "n": 16,
+    "net_accuracy_gain": {
+      "interval95": [
+        -0.0016927083333333334,
+        0.0048177083333333336
+      ],
+      "max": 0.005208333333333333,
+      "mean": 0.0016276041666666665,
+      "min": -0.0020833333333333333,
+      "n": 16
+    }
+  },
+  "recap": {
+    "arm_accuracy": 0.7729166666666667,
+    "arm_counts": {
+      "correct_current": 742,
+      "other": 1,
+      "within_stale": 217
+    },
+    "baseline_accuracy": 0.265625,
+    "baseline_counts": {
+      "correct_current": 255,
+      "other": 3,
+      "within_stale": 702
+    },
+    "by_baseline_mode": {
+      "correct_current": {
+        "n": 255,
+        "to_correct": 1.0
+      },
+      "other": {
+        "n": 3,
+        "to_correct": 0.6666666666666666
+      },
+      "within_stale": {
+        "n": 702,
+        "to_correct": 0.6908831908831908
+      }
+    },
+    "correct_preservation": 1.0,
+    "n": 960,
+    "net_accuracy_gain": 0.5072916666666667,
+    "paired_net_gain": {
+      "ci": [
+        0.4668134920634921,
+        0.5557142857142856
+      ],
+      "cluster": "semantic_id",
+      "mean": 0.5113492063492063,
+      "n": 960,
+      "n_clusters": 210
+    },
+    "transitions": {
+      "correct_current->correct_current": 255,
+      "other->correct_current": 2,
+      "other->other": 1,
+      "within_stale->correct_current": 485,
+      "within_stale->within_stale": 217
+    },
+    "within_stale_correction": 0.6908831908831908
+  },
+  "routed": {
+    "arm_accuracy": 0.28541666666666665,
+    "arm_counts": {
+      "correct_current": 274,
+      "other": 6,
+      "within_stale": 680
+    },
+    "baseline_accuracy": 0.265625,
+    "baseline_counts": {
+      "correct_current": 255,
+      "other": 3,
+      "within_stale": 702
+    },
+    "by_baseline_mode": {
+      "correct_current": {
+        "n": 255,
+        "to_correct": 0.9921568627450981
+      },
+      "other": {
+        "n": 3,
+        "to_correct": 0.0
+      },
+      "within_stale": {
+        "n": 702,
+        "to_correct": 0.029914529914529916
+      }
+    },
+    "correct_preservation": 0.9921568627450981,
+    "n": 960,
+    "net_accuracy_gain": 0.019791666666666666,
+    "paired_net_gain": {
+      "ci": [
+        0.010317460317460319,
+        0.03150992063492063
+      ],
+      "cluster": "semantic_id",
+      "mean": 0.02087301587301587,
+      "n": 960,
+      "n_clusters": 210
+    },
+    "transitions": {
+      "correct_current->correct_current": 253,
+      "correct_current->other": 2,
+      "other->other": 3,
+      "within_stale->correct_current": 21,
+      "within_stale->other": 1,
+      "within_stale->within_stale": 680
+    },
+    "within_stale_correction": 0.029914529914529916
+  },
+  "routed_max_abs_first_token_score_change": 13.0
+}

@@ -1,0 +1,29 @@
+{
+  "fixed_k_gate": {
+    "counts": {
+      "correct_current": 593,
+      "within_stale": 55
+    },
+    "fixed_k": 4,
+    "gate_pass": false,
+    "n_single_variable": 648,
+    "per_template": {
+      "arrow": {
+        "correct_current": 189,
+        "within_stale": 27
+      },
+      "current": {
+        "correct_current": 201,
+        "within_stale": 15
+      },
+      "latest": {
+        "correct_current": 203,
+        "within_stale": 13
+      }
+    },
+    "rule": "At fixed k=4, single-variable correct>=150 and within-stale>=120, with correct>=25 and within-stale>=25 in each of arrow/current/latest."
+  },
+  "model": "EleutherAI/pythia-1b",
+  "pool_written": false,
+  "rows": "results/stage_n/scale_transfer/1b/behavior_full/rows.jsonl"
+}

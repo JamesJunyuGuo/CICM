@@ -1,0 +1,386 @@
+{
+  "arms": [
+    {
+      "best": {
+        "balance_objective": 270,
+        "k": 4,
+        "projected_full_counts": {
+          "correct_current": 270,
+          "within_stale": 378
+        },
+        "projected_gate": true,
+        "projected_per_template": {
+          "arrow": {
+            "correct_current": 99,
+            "within_stale": 117
+          },
+          "current": {
+            "correct_current": 99,
+            "within_stale": 117
+          },
+          "latest": {
+            "correct_current": 72,
+            "within_stale": 144
+          }
+        },
+        "recon_counts": {
+          "correct_current": 30,
+          "within_stale": 42
+        },
+        "recon_n": 72
+      },
+      "candidates": [
+        {
+          "balance_objective": 252,
+          "k": 2,
+          "projected_full_counts": {
+            "correct_current": 396,
+            "within_stale": 252
+          },
+          "projected_gate": true,
+          "projected_per_template": {
+            "arrow": {
+              "correct_current": 153,
+              "within_stale": 63
+            },
+            "current": {
+              "correct_current": 144,
+              "within_stale": 72
+            },
+            "latest": {
+              "correct_current": 99,
+              "within_stale": 117
+            }
+          },
+          "recon_counts": {
+            "correct_current": 44,
+            "within_stale": 28
+          },
+          "recon_n": 72
+        },
+        {
+          "balance_objective": 270,
+          "k": 4,
+          "projected_full_counts": {
+            "correct_current": 270,
+            "within_stale": 378
+          },
+          "projected_gate": true,
+          "projected_per_template": {
+            "arrow": {
+              "correct_current": 99,
+              "within_stale": 117
+            },
+            "current": {
+              "correct_current": 99,
+              "within_stale": 117
+            },
+            "latest": {
+              "correct_current": 72,
+              "within_stale": 144
+            }
+          },
+          "recon_counts": {
+            "correct_current": 30,
+            "within_stale": 42
+          },
+          "recon_n": 72
+        },
+        {
+          "balance_objective": 225,
+          "k": 6,
+          "projected_full_counts": {
+            "correct_current": 225,
+            "within_stale": 405
+          },
+          "projected_gate": true,
+          "projected_per_template": {
+            "arrow": {
+              "correct_current": 90,
+              "other": 9,
+              "within_stale": 117
+            },
+            "current": {
+              "correct_current": 72,
+              "other": 9,
+              "within_stale": 135
+            },
+            "latest": {
+              "correct_current": 63,
+              "within_stale": 153
+            }
+          },
+          "recon_counts": {
+            "correct_current": 25,
+            "other": 2,
+            "within_stale": 45
+          },
+          "recon_n": 72
+        },
+        {
+          "balance_objective": 198,
+          "k": 8,
+          "projected_full_counts": {
+            "correct_current": 198,
+            "within_stale": 450
+          },
+          "projected_gate": true,
+          "projected_per_template": {
+            "arrow": {
+              "correct_current": 81,
+              "within_stale": 135
+            },
+            "current": {
+              "correct_current": 72,
+              "within_stale": 144
+            },
+            "latest": {
+              "correct_current": 45,
+              "within_stale": 171
+            }
+          },
+          "recon_counts": {
+            "correct_current": 22,
+            "within_stale": 50
+          },
+          "recon_n": 72
+        },
+        {
+          "balance_objective": 207,
+          "k": 10,
+          "projected_full_counts": {
+            "correct_current": 207,
+            "within_stale": 441
+          },
+          "projected_gate": true,
+          "projected_per_template": {
+            "arrow": {
+              "correct_current": 90,
+              "within_stale": 126
+            },
+            "current": {
+              "correct_current": 54,
+              "within_stale": 162
+            },
+            "latest": {
+              "correct_current": 63,
+              "within_stale": 153
+            }
+          },
+          "recon_counts": {
+            "correct_current": 23,
+            "within_stale": 49
+          },
+          "recon_n": 72
+        }
+      ],
+      "gate_pass": true,
+      "k0_accuracy": 0.9722222222222222,
+      "model": "Qwen/Qwen2.5-0.5B",
+      "projection_multiplier": 9
+    },
+    {
+      "best": {
+        "balance_objective": 315,
+        "k": 6,
+        "projected_full_counts": {
+          "correct_current": 333,
+          "within_stale": 315
+        },
+        "projected_gate": true,
+        "projected_per_template": {
+          "arrow": {
+            "correct_current": 90,
+            "within_stale": 126
+          },
+          "current": {
+            "correct_current": 99,
+            "within_stale": 117
+          },
+          "latest": {
+            "correct_current": 144,
+            "within_stale": 72
+          }
+        },
+        "recon_counts": {
+          "correct_current": 37,
+          "within_stale": 35
+        },
+        "recon_n": 72
+      },
+      "candidates": [
+        {
+          "balance_objective": 162,
+          "k": 2,
+          "projected_full_counts": {
+            "correct_current": 486,
+            "within_stale": 162
+          },
+          "projected_gate": true,
+          "projected_per_template": {
+            "arrow": {
+              "correct_current": 144,
+              "within_stale": 72
+            },
+            "current": {
+              "correct_current": 153,
+              "within_stale": 63
+            },
+            "latest": {
+              "correct_current": 189,
+              "within_stale": 27
+            }
+          },
+          "recon_counts": {
+            "correct_current": 54,
+            "within_stale": 18
+          },
+          "recon_n": 72
+        },
+        {
+          "balance_objective": 279,
+          "k": 4,
+          "projected_full_counts": {
+            "correct_current": 369,
+            "within_stale": 279
+          },
+          "projected_gate": true,
+          "projected_per_template": {
+            "arrow": {
+              "correct_current": 90,
+              "within_stale": 126
+            },
+            "current": {
+              "correct_current": 135,
+              "within_stale": 81
+            },
+            "latest": {
+              "correct_current": 144,
+              "within_stale": 72
+            }
+          },
+          "recon_counts": {
+            "correct_current": 41,
+            "within_stale": 31
+          },
+          "recon_n": 72
+        },
+        {
+          "balance_objective": 315,
+          "k": 6,
+          "projected_full_counts": {
+            "correct_current": 333,
+            "within_stale": 315
+          },
+          "projected_gate": true,
+          "projected_per_template": {
+            "arrow": {
+              "correct_current": 90,
+              "within_stale": 126
+            },
+            "current": {
+              "correct_current": 99,
+              "within_stale": 117
+            },
+            "latest": {
+              "correct_current": 144,
+              "within_stale": 72
+            }
+          },
+          "recon_counts": {
+            "correct_current": 37,
+            "within_stale": 35
+          },
+          "recon_n": 72
+        },
+        {
+          "balance_objective": 306,
+          "k": 8,
+          "projected_full_counts": {
+            "correct_current": 342,
+            "within_stale": 306
+          },
+          "projected_gate": true,
+          "projected_per_template": {
+            "arrow": {
+              "correct_current": 90,
+              "within_stale": 126
+            },
+            "current": {
+              "correct_current": 117,
+              "within_stale": 99
+            },
+            "latest": {
+              "correct_current": 135,
+              "within_stale": 81
+            }
+          },
+          "recon_counts": {
+            "correct_current": 38,
+            "within_stale": 34
+          },
+          "recon_n": 72
+        },
+        {
+          "balance_objective": 270,
+          "k": 10,
+          "projected_full_counts": {
+            "correct_current": 378,
+            "within_stale": 270
+          },
+          "projected_gate": true,
+          "projected_per_template": {
+            "arrow": {
+              "correct_current": 99,
+              "within_stale": 117
+            },
+            "current": {
+              "correct_current": 117,
+              "within_stale": 99
+            },
+            "latest": {
+              "correct_current": 162,
+              "within_stale": 54
+            }
+          },
+          "recon_counts": {
+            "correct_current": 42,
+            "within_stale": 30
+          },
+          "recon_n": 72
+        }
+      ],
+      "gate_pass": true,
+      "k0_accuracy": 0.9722222222222222,
+      "model": "Qwen/Qwen2.5-1.5B",
+      "projection_multiplier": 9
+    }
+  ],
+  "gqa_scope": "Per-head quantities are QUERY-head quantities. Qwen2.5 has shared KV heads within GQA groups; output patching remains query-head specific.",
+  "hook_preparation_pass": true,
+  "hooked_noop": {
+    "active_gamma0_max_abs_logit_change": 0.17364788055419922,
+    "device": "cpu",
+    "gqa_scope": "The hook indexes query-head output slices before o_proj; KV heads are shared and future QK margins must use the corresponding shared key.",
+    "hook_active": true,
+    "identity_exact_zero": true,
+    "identity_max_abs_logit_change": 0.0,
+    "model": "Qwen/Qwen2.5-0.5B",
+    "n": 2,
+    "num_key_value_heads": 2,
+    "num_query_heads": 14,
+    "pass": true,
+    "selected_query_heads": [
+      {
+        "head": 0,
+        "layer": 0
+      }
+    ],
+    "stage": "O-Part-C-Qwen-hook-smoke"
+  },
+  "selected_k": 6,
+  "selected_model": "Qwen/Qwen2.5-1.5B",
+  "stage": "O-Part-C-Step-0",
+  "status": "substrate_selected",
+  "tie_break": "0.5B when projected balance objectives tie"
+}

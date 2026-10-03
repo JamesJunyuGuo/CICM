@@ -1,0 +1,20 @@
+{
+  "all_arm_gap_changes_finite": true,
+  "attention_value_reconstruction_max_abs": 0.001953125,
+  "dtype": "bfloat16",
+  "hard_gates": {
+    "aligned_pairs": true,
+    "finite_interventions": true,
+    "hooked_noop": true,
+    "identity": false
+  },
+  "head": 0,
+  "hooked_noop_max_abs_answer_logit_diff": 0.0,
+  "identity_max_abs_answer_logit_diff": 0.2734375,
+  "layer": 0,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_pairs": 4,
+  "note": "Pipeline-integrity smoke only; labels and effects are not findings.",
+  "smoke_pass": false,
+  "stage": "N-S-qwen15-smoke"
+}

@@ -1,0 +1,271 @@
+{
+  "accuracy_by_i": [
+    {
+      "accuracy": 0.92,
+      "interference_load": 2,
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "n": 150,
+      "scale_b": 7,
+      "within_stale_errors": 11,
+      "wrong": 12
+    },
+    {
+      "accuracy": 0.74,
+      "interference_load": 4,
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "n": 150,
+      "scale_b": 7,
+      "within_stale_errors": 39,
+      "wrong": 39
+    },
+    {
+      "accuracy": 0.5666666666666667,
+      "interference_load": 8,
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "n": 150,
+      "scale_b": 7,
+      "within_stale_errors": 65,
+      "wrong": 65
+    },
+    {
+      "accuracy": 0.4,
+      "interference_load": 12,
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "n": 100,
+      "scale_b": 7,
+      "within_stale_errors": 60,
+      "wrong": 60
+    },
+    {
+      "accuracy": 0.36,
+      "interference_load": 16,
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "n": 100,
+      "scale_b": 7,
+      "within_stale_errors": 64,
+      "wrong": 64
+    },
+    {
+      "accuracy": 0.4266666666666667,
+      "interference_load": 2,
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "n": 150,
+      "scale_b": 8,
+      "within_stale_errors": 84,
+      "wrong": 86
+    },
+    {
+      "accuracy": 0.17333333333333334,
+      "interference_load": 4,
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "n": 150,
+      "scale_b": 8,
+      "within_stale_errors": 119,
+      "wrong": 124
+    },
+    {
+      "accuracy": 0.16666666666666666,
+      "interference_load": 8,
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "n": 150,
+      "scale_b": 8,
+      "within_stale_errors": 113,
+      "wrong": 125
+    },
+    {
+      "accuracy": 0.15,
+      "interference_load": 12,
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "n": 100,
+      "scale_b": 8,
+      "within_stale_errors": 83,
+      "wrong": 85
+    },
+    {
+      "accuracy": 0.1,
+      "interference_load": 16,
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "n": 100,
+      "scale_b": 8,
+      "within_stale_errors": 90,
+      "wrong": 90
+    },
+    {
+      "accuracy": 1.0,
+      "interference_load": 2,
+      "model": "meta-llama/llama-3.1-70b-instruct",
+      "n": 150,
+      "scale_b": 70,
+      "within_stale_errors": 0,
+      "wrong": 0
+    },
+    {
+      "accuracy": 0.9933333333333333,
+      "interference_load": 4,
+      "model": "meta-llama/llama-3.1-70b-instruct",
+      "n": 150,
+      "scale_b": 70,
+      "within_stale_errors": 1,
+      "wrong": 1
+    },
+    {
+      "accuracy": 0.9666666666666667,
+      "interference_load": 8,
+      "model": "meta-llama/llama-3.1-70b-instruct",
+      "n": 150,
+      "scale_b": 70,
+      "within_stale_errors": 5,
+      "wrong": 5
+    },
+    {
+      "accuracy": 0.86,
+      "interference_load": 12,
+      "model": "meta-llama/llama-3.1-70b-instruct",
+      "n": 100,
+      "scale_b": 70,
+      "within_stale_errors": 14,
+      "wrong": 14
+    },
+    {
+      "accuracy": 0.77,
+      "interference_load": 16,
+      "model": "meta-llama/llama-3.1-70b-instruct",
+      "n": 100,
+      "scale_b": 70,
+      "within_stale_errors": 23,
+      "wrong": 23
+    },
+    {
+      "accuracy": 0.9933333333333333,
+      "interference_load": 2,
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "n": 150,
+      "scale_b": 72,
+      "within_stale_errors": 0,
+      "wrong": 1
+    },
+    {
+      "accuracy": 1.0,
+      "interference_load": 4,
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "n": 150,
+      "scale_b": 72,
+      "within_stale_errors": 0,
+      "wrong": 0
+    },
+    {
+      "accuracy": 1.0,
+      "interference_load": 8,
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "n": 150,
+      "scale_b": 72,
+      "within_stale_errors": 0,
+      "wrong": 0
+    },
+    {
+      "accuracy": 0.99,
+      "interference_load": 12,
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "n": 100,
+      "scale_b": 72,
+      "within_stale_errors": 1,
+      "wrong": 1
+    },
+    {
+      "accuracy": 0.99,
+      "interference_load": 16,
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "n": 100,
+      "scale_b": 72,
+      "within_stale_errors": 1,
+      "wrong": 1
+    },
+    {
+      "accuracy": 1.0,
+      "interference_load": 2,
+      "model": "openai/gpt-4o",
+      "n": 150,
+      "scale_b": 1000,
+      "within_stale_errors": 0,
+      "wrong": 0
+    },
+    {
+      "accuracy": 1.0,
+      "interference_load": 4,
+      "model": "openai/gpt-4o",
+      "n": 150,
+      "scale_b": 1000,
+      "within_stale_errors": 0,
+      "wrong": 0
+    },
+    {
+      "accuracy": 0.9933333333333333,
+      "interference_load": 8,
+      "model": "openai/gpt-4o",
+      "n": 150,
+      "scale_b": 1000,
+      "within_stale_errors": 1,
+      "wrong": 1
+    },
+    {
+      "accuracy": 1.0,
+      "interference_load": 12,
+      "model": "openai/gpt-4o",
+      "n": 100,
+      "scale_b": 1000,
+      "within_stale_errors": 0,
+      "wrong": 0
+    },
+    {
+      "accuracy": 1.0,
+      "interference_load": 16,
+      "model": "openai/gpt-4o",
+      "n": 100,
+      "scale_b": 1000,
+      "within_stale_errors": 0,
+      "wrong": 0
+    }
+  ],
+  "within_stale_by_model": [
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "other_errors": 1,
+      "scale_b": 7,
+      "within_stale_errors": 239,
+      "within_stale_share": 0.9958333333333333,
+      "wrong": 240
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "other_errors": 21,
+      "scale_b": 8,
+      "within_stale_errors": 489,
+      "within_stale_share": 0.9588235294117647,
+      "wrong": 510
+    },
+    {
+      "model": "meta-llama/llama-3.1-70b-instruct",
+      "other_errors": 0,
+      "scale_b": 70,
+      "within_stale_errors": 43,
+      "within_stale_share": 1.0,
+      "wrong": 43
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "other_errors": 1,
+      "scale_b": 72,
+      "within_stale_errors": 2,
+      "within_stale_share": 0.6666666666666666,
+      "wrong": 3
+    },
+    {
+      "model": "openai/gpt-4o",
+      "other_errors": 0,
+      "scale_b": 1000,
+      "within_stale_errors": 1,
+      "within_stale_share": 1.0,
+      "wrong": 1
+    }
+  ]
+}

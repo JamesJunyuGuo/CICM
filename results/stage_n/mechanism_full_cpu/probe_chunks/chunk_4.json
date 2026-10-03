@@ -1,0 +1,21 @@
+{
+  "layers": [
+    {
+      "correct_true_current_score": 0.31686822682315924,
+      "cv_accuracy": 0.44285714285714284,
+      "layer": 8,
+      "valid_oos_score_fraction": 0.9859154929577465,
+      "valid_oos_score_n": 280,
+      "within_stale_true_current_score": 0.4628209816416906
+    },
+    {
+      "correct_true_current_score": 0.7244728338587602,
+      "cv_accuracy": 0.6857142857142857,
+      "layer": 9,
+      "valid_oos_score_fraction": 0.9859154929577465,
+      "valid_oos_score_n": 280,
+      "within_stale_true_current_score": 0.4120954937988187
+    }
+  ],
+  "n": 284
+}

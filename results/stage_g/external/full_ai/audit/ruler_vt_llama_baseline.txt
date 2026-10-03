@@ -1,0 +1,72 @@
+benchmark=ruler_vt arm=llama_baseline n_sample=10
+Audit purpose: inspect raw output, gold, v2 parse, and v2 error signature before trusting scores.
+
+--- sample 1 id=ruler-vt-381 task=variable_tracking length=synthetic
+gold: DOWHX, MMUJY, XBTER, DQLJP, SVICJ
+raw: 'To find the variables assigned the value 37281, we need to track the chain of variable assignments. \n\n1. VAR DOWHX = 37281'
+pred: DOWHX
+correct: 0 signature: omission
+recall: 0.2 strict_correct: 0 outputs: ['DOWHX', 'MMUJY', 'XBTER', 'DQLJP', 'SVICJ'] distractors: ['LZFNE', 'EXFYF', 'ENPOM', 'SPJHR', 'YLIBC', 'EDWWZ', 'LKSIF', 'PMTAC']
+
+--- sample 2 id=ruler-vt-338 task=variable_tracking length=synthetic
+gold: KAFER, FQCNW, BYJXP, BZQJW, DULWZ
+raw: 'To find the variables assigned the value 33404, we need to track the chain of variable assignments. \n\n1. VAR INYJJ = 33404'
+pred: INYJJ
+correct: 0 signature: cross_chain_inclusion
+recall: 0.0 strict_correct: 0 outputs: ['KAFER', 'FQCNW', 'BYJXP', 'BZQJW', 'DULWZ'] distractors: ['INYJJ', 'OXESJ', 'WECQM', 'GHXBL', 'NPTUV', 'TWMSG', 'QSYFS', 'RTEVP']
+
+--- sample 3 id=ruler-vt-193 task=variable_tracking length=synthetic
+gold: LVDND, IWEMY, KSXKL, QZWMZ, WKJCB
+raw: 'To find the variables assigned the value 32806, we need to track the chain of variable assignments. \n\n1. VAR VLOSZ = 32806'
+pred: VLOSZ
+correct: 0 signature: cross_chain_inclusion
+recall: 0.0 strict_correct: 0 outputs: ['LVDND', 'IWEMY', 'KSXKL', 'QZWMZ', 'WKJCB'] distractors: ['VLOSZ', 'HWOES', 'XIHHZ', 'LWTQX', 'HAKKY', 'ESYDE', 'TIMBD', 'NCVRT']
+
+--- sample 4 id=ruler-vt-252 task=variable_tracking length=synthetic
+gold: AXMMD, BRAEQ, YAAPD, ADIQU, GWQVR
+raw: 'To find the variables assigned the value 41554, we need to track the chain of variable assignments. \n\n1. VAR SYTQK = 415'
+pred: SYTQK
+correct: 0 signature: cross_chain_inclusion
+recall: 0.0 strict_correct: 0 outputs: ['AXMMD', 'BRAEQ', 'YAAPD', 'ADIQU', 'GWQVR'] distractors: ['PZPGH', 'GDKFF', 'ZICZO', 'TFUTR', 'RCITF', 'SYTQK', 'VOAYL', 'ULFMJ']
+
+--- sample 5 id=ruler-vt-178 task=variable_tracking length=synthetic
+gold: QIAHC, ABGRY, LWMZO, DFITN, OIMGB
+raw: 'To find the variables assigned the value 91253, we need to track the chain of variable assignments. \n\n1. VAR QIAHC = 91253'
+pred: QIAHC
+correct: 0 signature: omission
+recall: 0.2 strict_correct: 0 outputs: ['QIAHC', 'ABGRY', 'LWMZO', 'DFITN', 'OIMGB'] distractors: ['MQFSS', 'XYKSV', 'EFOFO', 'WEPAF', 'JKRWS', 'SGOVO', 'KTYNY', 'PEZZO']
+
+--- sample 6 id=ruler-vt-348 task=variable_tracking length=synthetic
+gold: CBIOC, BUNGX, RVALV, DXONE, PPLTG
+raw: 'To find the variables assigned the value 31655, we need to track the chain of variable assignments. \n\n1. VAR CBIOC = 31655'
+pred: CBIOC
+correct: 0 signature: omission
+recall: 0.2 strict_correct: 0 outputs: ['CBIOC', 'BUNGX', 'RVALV', 'DXONE', 'PPLTG'] distractors: ['TJKYW', 'UEKHM', 'DEJQC', 'UYKDJ', 'SNNGV', 'KWCKD', 'IAHDL', 'IFGUC']
+
+--- sample 7 id=ruler-vt-320 task=variable_tracking length=synthetic
+gold: CTLYY, BNUTA, LNBLY, IGICR, VRSVD
+raw: 'To find the variables assigned the value 81561, we need to track the chain of variable assignments. \n\n1. VAR UKFHQ = 81561'
+pred: UKFHQ
+correct: 0 signature: cross_chain_inclusion
+recall: 0.0 strict_correct: 0 outputs: ['CTLYY', 'BNUTA', 'LNBLY', 'IGICR', 'VRSVD'] distractors: ['CAQWX', 'GPNNZ', 'DHQVO', 'TRGYJ', 'TKIYC', 'UKFHQ', 'HMVBN', 'FSHPY']
+
+--- sample 8 id=ruler-vt-398 task=variable_tracking length=synthetic
+gold: ZCASG, EFCQD, SBIMX, OBRNJ, HVHNN
+raw: 'To find the variables assigned the value 83824, we need to track the chain of variable assignments. \n\n1. VAR ZCASG = 83824'
+pred: ZCASG
+correct: 0 signature: omission
+recall: 0.2 strict_correct: 0 outputs: ['ZCASG', 'EFCQD', 'SBIMX', 'OBRNJ', 'HVHNN'] distractors: ['ULHAO', 'KQHZA', 'MGHHS', 'TFMMA', 'YHYZA', 'LVCTE', 'MCEGB', 'WVJHE']
+
+--- sample 9 id=ruler-vt-83 task=variable_tracking length=synthetic
+gold: ZWEBG, SBXTE, UYSQK, OCSVL, VYOWY
+raw: 'To find the variables assigned the value 94426, we need to track the chain of variable assignments. \n\n1. VAR HBXDL = 94426'
+pred: HBXDL
+correct: 0 signature: cross_chain_inclusion
+recall: 0.0 strict_correct: 0 outputs: ['ZWEBG', 'SBXTE', 'UYSQK', 'OCSVL', 'VYOWY'] distractors: ['IXHHK', 'LKLXB', 'EMLVE', 'OLQVD', 'AZKMT', 'HBXDL', 'NURAN', 'YXDDM']
+
+--- sample 10 id=ruler-vt-14 task=variable_tracking length=synthetic
+gold: YQGYM, SMEHP, VXXJA, EKWMQ, EYCGZ
+raw: 'To find the variables assigned the value 53975, we need to track the chain of variable assignments. \n\n1. VAR CXGLB = 53975'
+pred: CXGLB
+correct: 0 signature: cross_chain_inclusion
+recall: 0.0 strict_correct: 0 outputs: ['YQGYM', 'SMEHP', 'VXXJA', 'EKWMQ', 'EYCGZ'] distractors: ['RXKWN', 'CXGLB', 'TYCYI', 'EHZKV', 'BUTGB', 'BQKHY', 'ZAUPJ', 'NPFEK']

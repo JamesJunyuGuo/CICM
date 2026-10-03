@@ -1,0 +1,73 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><style>
+ /* canvas 1000 px = \textwidth (5.5 in): 1 px = 0.396 pt; min font 18 px = 7.1 pt */
+ /* PPT / Office style contract: white background, square corners, black ink, Arial, Office accent palette */
+ :root{--ink:#000;--muted:#404040;--hair:#BFBFBF;--cur:#2E7D5B;--old:#7B4FA0;--grid:#D9D9D9}
+ *{box-sizing:border-box;margin:0;padding:0}
+ html,body{width:1000px;height:436px;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+ .wrap{width:1000px;height:436px;padding:6px 10px 4px}
+ .cols{display:grid;grid-template-columns:483px 483px;gap:0 14px}
+ .sec{padding:4px 0 4px}
+ .ptitle{font-size:20px;font-weight:bold;line-height:1.15;white-space:nowrap}
+ .ptitle i{font-style:normal;font-weight:normal;color:var(--muted);font-size:18px;display:block}
+ svg{display:block} text{font-family:Arial,Helvetica,sans-serif}
+ .tk{font-size:18px;fill:#262626} .al{font-size:18px;fill:var(--ink)}
+ .lg{display:flex;gap:10px;font-size:18px;color:var(--ink);margin-top:4px;white-space:nowrap;align-items:center}
+ .lg svg{display:inline-block;vertical-align:middle;margin-right:4px}
+</style></head><body><div class="wrap">
+ <div class="sec" style="padding:2px 0 0;border-bottom:1px solid var(--hair)"><svg id="S" width="980" height="50"></svg></div>
+ <div class="cols" style="margin-top:8px">
+  <div class="sec"><div class="ptitle">(a) Qwen2.5-7B<i>share retaining the original error category</i></div><svg id="A" width="470" height="270"></svg></div>
+  <div class="sec"><div class="ptitle">(b) Llama-3.1-8B<i>old-value or other-variable category, per item</i></div><svg id="B" width="470" height="270"></svg></div>
+ </div>
+ <div class="lg" id="lg"></div>
+</div>
+<script>
+const ST={"qwen_middle": {"identity_err": 0.9669172932330827, "by_alpha": {"0.01": {"targeted_err": 0.9669172932330827, "random_err": 0.9669172932330827, "red": 0.0, "red_ci": [0.0, 0.0]}, "0.02": {"targeted_err": 0.9669172932330827, "random_err": 0.9669172932330827, "red": 0.0, "red_ci": [0.0, 0.0]}, "0.05": {"targeted_err": 0.968421052631579, "random_err": 0.9654135338345865, "red": -0.0030075187969924814, "red_ci": [-0.007518796992481203, 0.0]}, "0.1": {"targeted_err": 0.968421052631579, "random_err": 0.9669172932330827, "red": -0.0015037593984962407, "red_ci": [-0.006015037593984963, 0.0030075187969924814]}, "0.2": {"targeted_err": 0.9609022556390977, "random_err": 0.9578947368421052, "red": -0.0030075187969924814, "red_ci": [-0.013533834586466165, 0.007518796992481203]}, "0.4": {"targeted_err": 0.9578947368421052, "random_err": 0.9473684210526315, "red": -0.010526315789473684, "red_ci": [-0.02556390977443609, 0.004511278195488722]}}}, "qwen_final": {"identity_err": 0.9669172932330827, "by_alpha": {"0.01": {"targeted_err": 0.9609022556390977, "random_err": 0.9669172932330827, "red": 0.006015037593984963, "red_ci": [0.0015037593984962407, 0.012030075187969926]}, "0.02": {"targeted_err": 0.9548872180451128, "random_err": 0.9639097744360903, "red": 0.009022556390977444, "red_ci": [0.0015037593984962407, 0.01804511278195489]}, "0.05": {"targeted_err": 0.9263157894736842, "random_err": 0.9669172932330827, "red": 0.0406015037593985, "red_ci": [0.02556390977443609, 0.05714285714285714]}, "0.1": {"targeted_err": 0.8631578947368421, "random_err": 0.9593984962406015, "red": 0.0962406015037594, "red_ci": [0.07368421052631578, 0.11729323308270677]}, "0.2": {"targeted_err": 0.7428571428571429, "random_err": 0.9669172932330827, "red": 0.22406015037593985, "red_ci": [0.19398496240601504, 0.2571428571428571]}, "0.4": {"targeted_err": 0.5413533834586466, "random_err": 0.9368421052631579, "red": 0.3954887218045113, "red_ci": [0.35789473684210527, 0.4330827067669173]}}}, "llama_middle": {"identity_err": 0.8614958448753463, "by_alpha": {"0.01": {"targeted_err": 0.8614958448753463, "random_err": 0.8614958448753463, "red": 0.0, "red_ci": [0.0, 0.0]}, "0.02": {"targeted_err": 0.8614958448753463, "random_err": 0.8614958448753463, "red": 0.0, "red_ci": [0.0, 0.0]}, "0.05": {"targeted_err": 0.8587257617728532, "random_err": 0.8614958448753463, "red": 0.002770083102493075, "red_ci": [0.0, 0.006925207756232687]}, "0.1": {"targeted_err": 0.8573407202216067, "random_err": 0.8601108033240997, "red": 0.002770083102493075, "red_ci": [-0.004155124653739612, 0.009695290858725761]}, "0.2": {"targeted_err": 0.8518005540166205, "random_err": 0.8670360110803325, "red": 0.015235457063711912, "red_ci": [0.004155124653739612, 0.02631578947368421]}, "0.4": {"targeted_err": 0.8448753462603878, "random_err": 0.8628808864265928, "red": 0.018005540166204988, "red_ci": [0.00554016620498615, 0.03185595567867036]}}}, "llama_final": {"identity_err": 0.8614958448753463, "by_alpha": {"0.01": {"targeted_err": 0.8421052631578947, "random_err": 0.8642659279778393, "red": 0.0221606648199446, "red_ci": [0.012465373961218837, 0.0332409972299169]}, "0.02": {"targeted_err": 0.7936288088642659, "random_err": 0.8601108033240997, "red": 0.0664819944598338, "red_ci": [0.04986149584487535, 0.08448753462603878]}, "0.05": {"targeted_err": 0.6523545706371191, "random_err": 0.8656509695290858, "red": 0.21329639889196675, "red_ci": [0.18421052631578946, 0.24376731301939059]}, "0.1": {"targeted_err": 0.45013850415512463, "random_err": 0.8421052631578947, "red": 0.39196675900277006, "red_ci": [0.3559556786703601, 0.4279778393351801]}, "0.2": {"targeted_err": 0.1814404432132964, "random_err": 0.8434903047091413, "red": 0.6620498614958449, "red_ci": [0.6274238227146814, 0.6966759002770083]}, "0.4": {"targeted_err": 0.060941828254847646, "random_err": 0.7562326869806094, "red": 0.6952908587257618, "red_ci": [0.6634349030470914, 0.7285318559556787]}}}, "n": {"qwen": 665, "llama": 722}};
+const alphas=["0.01","0.02","0.05","0.1","0.2","0.4"];
+const CUR="#2E7D5B",OLD="#7B4FA0",INK="#000000",MU="#7F7F7F",GRID="#D9D9D9",AX="#000000";
+(function(){
+  const chip=(x,w,c,s,dash)=>`<rect x="${x}" y="10" width="${w}" height="30" fill="${s}" stroke="${c}" stroke-width="1.5" ${dash?'stroke-dasharray="5 4"':''}/>`;
+  const op=(x,t)=>`<text x="${x}" y="31" text-anchor="middle" font-size="20" fill="#404040">${t}</text>`;
+  let h=chip(0,132,"#000","#fff")+`<text x="66" y="31" text-anchor="middle" font-size="18" font-weight="bold" fill="${INK}">h at answer</text>`+op(146,"+")+chip(162,150,CUR,"#CFE6DA")+`<text x="237" y="31" text-anchor="middle" font-size="18" font-weight="bold" fill="${CUR}">α · d<tspan font-size="14" dy="4">current</tspan></text>`;
+  h+=op(330,"or")+chip(348,150,MU,"#fff",true)+`<text x="423" y="31" text-anchor="middle" font-size="18" font-weight="bold" fill="#404040">α · d<tspan font-size="14" dy="4">random</tspan></text>`+op(516,"→")+chip(532,80,"#000","#fff")+`<text x="572" y="31" text-anchor="middle" font-size="18" font-weight="bold" fill="${INK}">decode</text>`;
+  h+=`<text x="632" y="24" font-size="18" fill="#404040">d<tspan font-size="14" dy="4">current</tspan><tspan dy="-4">: probe direction</tspan></text><text x="632" y="44" font-size="18" fill="#404040">α: fraction of the state’s norm</text>`;
+  document.getElementById("S").innerHTML=h;
+})();
+function mk(x,y,c,i,r=4.5){
+  switch(i){
+    case 0: return `<circle cx="${x}" cy="${y}" r="${r}" fill="${c}" stroke="#fff" stroke-width="1"/>`;
+    case 1: return `<rect x="${x-r}" y="${y-r}" width="${2*r}" height="${2*r}" fill="${c}" stroke="#fff" stroke-width="1"/>`;
+    default: return `<path d="M${x},${y-r-1} L${x+r+1},${y+r} L${x-r-1},${y+r} Z" fill="${c}" stroke="#fff" stroke-width="1"/>`;
+  }
+}
+function panel(id,model){
+  const s=document.getElementById(id), W=470, H=270, p={l:56,r:14,t:14,b:52};
+  const x0=p.l,x1=W-p.r,y0=H-p.b,y1=p.t, lx=Math.log(0.01), hx=Math.log(0.4);
+  const X=a=>x0+(Math.log(+a)-lx)/(hx-lx)*(x1-x0), Y=v=>y0-v*(y0-y1); let h="";
+  for(const t of [0,0.25,0.5,0.75,1]) h+=`<line x1="${x0}" x2="${x1}" y1="${Y(t)}" y2="${Y(t)}" stroke="${GRID}"/><line x1="${x0-4}" x2="${x0}" y1="${Y(t)}" y2="${Y(t)}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${x0-7}" y="${Y(t)+6}" text-anchor="end">${t*100}</text>`;
+  for(const a of alphas) h+=`<line x1="${X(a)}" x2="${X(a)}" y1="${y0}" y2="${y0+4}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${X(a)}" y="${y0+22}" text-anchor="middle">${a}</text>`;
+  h+=`<line x1="${x0}" x2="${x0}" y1="${y1}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/><line x1="${x0}" x2="${x1}" y1="${y0}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/>`;
+  h+=`<text class="al" x="${(x0+x1)/2}" y="${y0+46}" text-anchor="middle">steering strength α (log scale)</text>`;
+  h+=`<text class="al" transform="translate(15,${(y0+y1)/2}) rotate(-90)" text-anchor="middle">original error category (%)</text>`;
+  const F=ST[model+"_final"], Mi=ST[model+"_middle"];
+  h+=`<line x1="${x0}" x2="${x1}" y1="${Y(F.identity_err)}" y2="${Y(F.identity_err)}" stroke="${OLD}" stroke-width="2" stroke-dasharray="7 5"/>`;
+  const line=(vals,c,w,mi,dash)=>{h+=`<path d="${alphas.map((a,i)=>(i?"L":"M")+X(a)+","+Y(vals[i])).join(" ")}" fill="none" stroke="${c}" stroke-width="${w}" ${dash?'stroke-dasharray="3 3"':''}/>`;
+    alphas.forEach((a,i)=>{h+=mk(X(a),Y(vals[i]),c,mi);});};
+  line(alphas.map(a=>F.by_alpha[a].random_err),MU,2,1,false);
+  line(alphas.map(a=>Mi.by_alpha[a].targeted_err),MU,2,2,true);
+  // targeted final with 95% interval: error rate = identity_err - reduction; CI from reduction CI
+  const tv=alphas.map(a=>F.by_alpha[a].targeted_err);
+  const n=ST.n[model]; alphas.forEach((a,i)=>{const v=F.by_alpha[a].targeted_err, z=1.96, dd=1+z*z/n, c=v+z*z/(2*n), w=z*Math.sqrt(v*(1-v)/n+z*z/(4*n*n)); h+=`<line x1="${X(a)}" x2="${X(a)}" y1="${Y((c-w)/dd)}" y2="${Y((c+w)/dd)}" stroke="${CUR}" stroke-width="1.6"/>`;});
+  line(tv,CUR,2.6,0,false);
+  const last=tv[tv.length-1]; h+=`<text x="${X(0.4)-14}" y="${Y(last)+(last<0.3?6:26)}" text-anchor="end" font-size="18" font-weight="bold" fill="${INK}">${Math.round(100*last)}% same type</text>`;
+  h+=`<text x="${x0+6}" y="${Y(F.identity_err)+(F.identity_err>0.92?24:-10)}" font-size="18" fill="${INK}">no change: ${Math.round(100*F.identity_err)}%</text>`;
+  s.innerHTML=h;
+}
+panel("A","qwen"); panel("B","llama");
+document.getElementById("lg").innerHTML=
+ `<span><svg width="26" height="14"><line x1="0" x2="26" y1="7" y2="7" stroke="${CUR}" stroke-width="2.6"/>${mk(13,7,CUR,0)}</svg>targeted, final layer</span>`+
+ `<span><svg width="26" height="14"><line x1="0" x2="26" y1="7" y2="7" stroke="${MU}" stroke-width="2"/>${mk(13,7,MU,1)}</svg>control: random direction</span>`+
+ `<span><svg width="26" height="14"><line x1="0" x2="26" y1="7" y2="7" stroke="${MU}" stroke-width="2" stroke-dasharray="3 3"/>${mk(13,7,MU,2)}</svg>control: middle layer</span>`+
+ `<span><svg width="26" height="14"><line x1="0" x2="26" y1="7" y2="7" stroke="${OLD}" stroke-width="2" stroke-dasharray="7 5"/></svg>no change (α = 0)</span>`;
+</script>
+</body></html>

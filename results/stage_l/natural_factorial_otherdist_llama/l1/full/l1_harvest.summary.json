@@ -1,0 +1,11 @@
+{
+  "stage": "l1_harvest",
+  "model": "results/stage_l/natural_factorial_otherdist_llama/model_view/llama31_8b",
+  "dtype": "float32",
+  "n": 1200,
+  "out_dir": "results/stage_l/natural_factorial_otherdist_llama/l1/full",
+  "span_counts": {
+    "current_missing": 0,
+    "stale_missing": 0
+  }
+}

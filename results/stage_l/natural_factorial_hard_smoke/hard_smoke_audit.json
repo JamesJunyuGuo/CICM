@@ -1,0 +1,677 @@
+{
+  "hard_smoke_data_audit": {
+    "data": "data/stage_l/cicm_natural_factorial_hard_smoke.jsonl",
+    "n": 40,
+    "cell_counts": {
+      "('far', 'far')": 10,
+      "('far', 'near')": 10,
+      "('near', 'far')": 10,
+      "('near', 'near')": 10
+    },
+    "target_current_distance_counts": {
+      "far": 32,
+      "near": 8
+    },
+    "by_cell_target_current": {
+      "('far', 'far')": {
+        "far": 8,
+        "near": 2
+      },
+      "('far', 'near')": {
+        "far": 8,
+        "near": 2
+      },
+      "('near', 'far')": {
+        "far": 8,
+        "near": 2
+      },
+      "('near', 'near')": {
+        "far": 8,
+        "near": 2
+      }
+    },
+    "distance_spans": {
+      "('far', 'far')": {
+        "same": {
+          "min": 32,
+          "max": 32,
+          "values": [
+            32
+          ]
+        },
+        "other": {
+          "min": 22,
+          "max": 24,
+          "values": [
+            22,
+            24
+          ]
+        },
+        "current": {
+          "min": 2,
+          "max": 28,
+          "values": [
+            2,
+            28
+          ]
+        }
+      },
+      "('far', 'near')": {
+        "same": {
+          "min": 32,
+          "max": 32,
+          "values": [
+            32
+          ]
+        },
+        "other": {
+          "min": 2,
+          "max": 4,
+          "values": [
+            2,
+            4
+          ]
+        },
+        "current": {
+          "min": 2,
+          "max": 28,
+          "values": [
+            2,
+            28
+          ]
+        }
+      },
+      "('near', 'far')": {
+        "same": {
+          "min": 2,
+          "max": 4,
+          "values": [
+            2,
+            4
+          ]
+        },
+        "other": {
+          "min": 24,
+          "max": 26,
+          "values": [
+            24,
+            26
+          ]
+        },
+        "current": {
+          "min": 2,
+          "max": 30,
+          "values": [
+            2,
+            30
+          ]
+        }
+      },
+      "('near', 'near')": {
+        "same": {
+          "min": 2,
+          "max": 4,
+          "values": [
+            2,
+            4
+          ]
+        },
+        "other": {
+          "min": 4,
+          "max": 6,
+          "values": [
+            4,
+            6
+          ]
+        },
+        "current": {
+          "min": 2,
+          "max": 30,
+          "values": [
+            2,
+            30
+          ]
+        }
+      }
+    }
+  },
+  "hard_smoke_openrouter_audit": {
+    "rows": "results/stage_l/natural_factorial_hard_smoke/openrouter_qwen25_7b_rows.jsonl",
+    "n": 40,
+    "overall_counts": {
+      "within_stale": 18,
+      "correct_current": 20,
+      "other": 2
+    },
+    "by_cell": {
+      "('far', 'far')": {
+        "other": 1,
+        "correct_current": 6,
+        "within_stale": 3
+      },
+      "('far', 'near')": {
+        "correct_current": 8,
+        "within_stale": 1,
+        "other": 1
+      },
+      "('near', 'far')": {
+        "within_stale": 7,
+        "correct_current": 3
+      },
+      "('near', 'near')": {
+        "within_stale": 7,
+        "correct_current": 3
+      }
+    },
+    "by_dose": {
+      "1": {
+        "within_stale": 2,
+        "correct_current": 5,
+        "other": 1
+      },
+      "2": {
+        "within_stale": 2,
+        "correct_current": 6
+      },
+      "3": {
+        "within_stale": 5,
+        "correct_current": 2,
+        "other": 1
+      },
+      "4": {
+        "correct_current": 5,
+        "within_stale": 3
+      },
+      "6": {
+        "within_stale": 6,
+        "correct_current": 2
+      }
+    },
+    "by_target_current_distance": {
+      "far": {
+        "within_stale": 18,
+        "correct_current": 12,
+        "other": 2
+      },
+      "near": {
+        "correct_current": 8
+      }
+    },
+    "failures": [
+      {
+        "id": "stage_l_natfact_1_00000",
+        "label": "within_stale",
+        "dose": 1,
+        "slot": "music_genre",
+        "current_value": "folk",
+        "response": "classical",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "near",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "classical"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_1_00001",
+        "label": "within_stale",
+        "dose": 1,
+        "slot": "learning_style",
+        "current_value": "tutoring",
+        "response": "reading",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "reading"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_1_00003",
+        "label": "other",
+        "dose": 1,
+        "slot": "learning_style",
+        "current_value": "lecture",
+        "response": "Sometimes it depends on the subject for me.",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "far",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_2_00000",
+        "label": "within_stale",
+        "dose": 2,
+        "slot": "music_genre",
+        "current_value": "classical",
+        "response": "jazz",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "near",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "jazz"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_2_00001",
+        "label": "within_stale",
+        "dose": 2,
+        "slot": "diet",
+        "current_value": "keto",
+        "response": "paleo",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "paleo"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_3_00000",
+        "label": "within_stale",
+        "dose": 3,
+        "slot": "learning_style",
+        "current_value": "reading",
+        "response": "self paced",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "near",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "self paced"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_3_00002",
+        "label": "within_stale",
+        "dose": 3,
+        "slot": "diet",
+        "current_value": "pescatarian",
+        "response": "paleo",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "far",
+          "recent_other_slot_distance_bin": "near",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "paleo"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_3_00004",
+        "label": "within_stale",
+        "dose": 3,
+        "slot": "learning_style",
+        "current_value": "self paced",
+        "response": "visual",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "near",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "visual"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_3_00005",
+        "label": "within_stale",
+        "dose": 3,
+        "slot": "music_genre",
+        "current_value": "folk",
+        "response": "rock",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "rock"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_3_00006",
+        "label": "other",
+        "dose": 3,
+        "slot": "learning_style",
+        "current_value": "tutoring",
+        "response": "Sometimes it depends on the subject for me.",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "far",
+          "recent_other_slot_distance_bin": "near",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_3_00007",
+        "label": "within_stale",
+        "dose": 3,
+        "slot": "diet",
+        "current_value": "mediterranean",
+        "response": "vegan gluten-free",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "far",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "vegan",
+          "gluten free"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_4_00001",
+        "label": "within_stale",
+        "dose": 4,
+        "slot": "diet",
+        "current_value": "paleo",
+        "response": "gluten free",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "gluten free"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_4_00004",
+        "label": "within_stale",
+        "dose": 4,
+        "slot": "learning_style",
+        "current_value": "hands on",
+        "response": "discussion",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "near",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "discussion"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_4_00005",
+        "label": "within_stale",
+        "dose": 4,
+        "slot": "music_genre",
+        "current_value": "classical",
+        "response": "electronic",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "electronic"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_6_00000",
+        "label": "within_stale",
+        "dose": 6,
+        "slot": "music_genre",
+        "current_value": "electronic",
+        "response": "hiphop",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "near",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "hiphop"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_6_00001",
+        "label": "within_stale",
+        "dose": 6,
+        "slot": "music_genre",
+        "current_value": "jazz",
+        "response": "electronic",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "electronic"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_6_00003",
+        "label": "within_stale",
+        "dose": 6,
+        "slot": "diet",
+        "current_value": "gluten free",
+        "response": "pescatarian",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "far",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "pescatarian"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_6_00004",
+        "label": "within_stale",
+        "dose": 6,
+        "slot": "diet",
+        "current_value": "vegetarian",
+        "response": "vegan",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "near",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "vegan"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_6_00005",
+        "label": "within_stale",
+        "dose": 6,
+        "slot": "learning_style",
+        "current_value": "reading",
+        "response": "tutoring",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "near",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "tutoring"
+        ],
+        "cross_slot_hits": []
+      },
+      {
+        "id": "stage_l_natfact_6_00007",
+        "label": "within_stale",
+        "dose": 6,
+        "slot": "diet",
+        "current_value": "pescatarian",
+        "response": "vegan",
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "far",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "far"
+        },
+        "stale_hits": [
+          "vegan"
+        ],
+        "cross_slot_hits": []
+      }
+    ]
+  },
+  "hard2_smoke_data_audit_no_api": {
+    "data": "data/stage_l/cicm_natural_factorial_hard2_smoke.jsonl",
+    "n": 40,
+    "cell_counts": {
+      "('far', 'far')": 10,
+      "('far', 'near')": 10,
+      "('near', 'far')": 10,
+      "('near', 'near')": 10
+    },
+    "target_current_distance_counts": {
+      "far": 32,
+      "near": 8
+    },
+    "by_cell_target_current": {
+      "('far', 'far')": {
+        "far": 8,
+        "near": 2
+      },
+      "('far', 'near')": {
+        "far": 8,
+        "near": 2
+      },
+      "('near', 'far')": {
+        "far": 8,
+        "near": 2
+      },
+      "('near', 'near')": {
+        "far": 8,
+        "near": 2
+      }
+    },
+    "distance_spans": {
+      "('far', 'far')": {
+        "same": {
+          "min": 42,
+          "max": 42,
+          "values": [
+            42
+          ]
+        },
+        "other": {
+          "min": 26,
+          "max": 28,
+          "values": [
+            26,
+            28
+          ]
+        },
+        "current": {
+          "min": 2,
+          "max": 38,
+          "values": [
+            2,
+            38
+          ]
+        }
+      },
+      "('far', 'near')": {
+        "same": {
+          "min": 42,
+          "max": 42,
+          "values": [
+            42
+          ]
+        },
+        "other": {
+          "min": 2,
+          "max": 4,
+          "values": [
+            2,
+            4
+          ]
+        },
+        "current": {
+          "min": 2,
+          "max": 38,
+          "values": [
+            2,
+            38
+          ]
+        }
+      },
+      "('near', 'far')": {
+        "same": {
+          "min": 2,
+          "max": 4,
+          "values": [
+            2,
+            4
+          ]
+        },
+        "other": {
+          "min": 28,
+          "max": 30,
+          "values": [
+            28,
+            30
+          ]
+        },
+        "current": {
+          "min": 2,
+          "max": 40,
+          "values": [
+            2,
+            40
+          ]
+        }
+      },
+      "('near', 'near')": {
+        "same": {
+          "min": 2,
+          "max": 4,
+          "values": [
+            2,
+            4
+          ]
+        },
+        "other": {
+          "min": 4,
+          "max": 6,
+          "values": [
+            4,
+            6
+          ]
+        },
+        "current": {
+          "min": 2,
+          "max": 40,
+          "values": [
+            2,
+            40
+          ]
+        }
+      }
+    }
+  },
+  "hard2_api_status": "not_run_stopped_for_human_review_after_hard_smoke"
+}

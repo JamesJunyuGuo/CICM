@@ -1,0 +1,186 @@
+{
+  "inputs": {
+    "baseline": "results/stage_c/baseline.summary.json",
+    "arm_l": "results/stage_c/arm_l_ai.summary.json",
+    "generic": "results/stage_c/generic_ai.summary.json",
+    "random_heads": "results/stage_c/random_heads_ai.summary.json"
+  },
+  "groups": {
+    "primary_high_load": {
+      "baseline": {
+        "accuracy": 0.32,
+        "gain_vs_baseline": 0.0
+      },
+      "arm_l": {
+        "accuracy": 0.8939999999999999,
+        "gain_vs_baseline": 0.5739999999999998
+      },
+      "generic": {
+        "accuracy": 1.0,
+        "gain_vs_baseline": 0.6799999999999999
+      },
+      "random_heads": {
+        "accuracy": 0.9119999999999999,
+        "gain_vs_baseline": 0.5919999999999999
+      }
+    },
+    "simple_control": {
+      "baseline": {
+        "accuracy": 0.99,
+        "gain_vs_baseline": 0.0
+      },
+      "arm_l": {
+        "accuracy": 0.9850000000000001,
+        "gain_vs_baseline": -0.004999999999999893
+      },
+      "generic": {
+        "accuracy": 1.0,
+        "gain_vs_baseline": 0.010000000000000009
+      },
+      "random_heads": {
+        "accuracy": 0.9975,
+        "gain_vs_baseline": 0.007500000000000062
+      }
+    },
+    "ood_surface": {
+      "baseline": {
+        "accuracy": 0.6033333333333333,
+        "gain_vs_baseline": 0.0
+      },
+      "arm_l": {
+        "accuracy": 0.9788888888888887,
+        "gain_vs_baseline": 0.3755555555555554
+      },
+      "generic": {
+        "accuracy": 1.0,
+        "gain_vs_baseline": 0.3966666666666667
+      },
+      "random_heads": {
+        "accuracy": 0.9577777777777777,
+        "gain_vs_baseline": 0.35444444444444445
+      }
+    },
+    "ood_load": {
+      "baseline": {
+        "accuracy": 0.295,
+        "gain_vs_baseline": 0.0
+      },
+      "arm_l": {
+        "accuracy": 0.885,
+        "gain_vs_baseline": 0.5900000000000001
+      },
+      "generic": {
+        "accuracy": 1.0,
+        "gain_vs_baseline": 0.7050000000000001
+      },
+      "random_heads": {
+        "accuracy": 0.9025,
+        "gain_vs_baseline": 0.6074999999999999
+      }
+    },
+    "parallel_all_correct": {
+      "baseline": {
+        "accuracy": 0.45749999999999996,
+        "gain_vs_baseline": 0.0
+      },
+      "arm_l": {
+        "accuracy": 0.8350000000000001,
+        "gain_vs_baseline": 0.3775000000000001
+      },
+      "generic": {
+        "accuracy": 0.73,
+        "gain_vs_baseline": 0.2725
+      },
+      "random_heads": {
+        "accuracy": 0.7925,
+        "gain_vs_baseline": 0.335
+      }
+    }
+  },
+  "primary_cells": [
+    {
+      "key": [
+        "overwrite",
+        "interference",
+        80,
+        8,
+        null,
+        null
+      ],
+      "baseline": 0.42,
+      "arm_l": 0.93,
+      "generic": 1.0,
+      "random_heads": 0.95
+    },
+    {
+      "key": [
+        "overwrite",
+        "interference",
+        80,
+        12,
+        null,
+        null
+      ],
+      "baseline": 0.36,
+      "arm_l": 0.92,
+      "generic": 1.0,
+      "random_heads": 0.94
+    },
+    {
+      "key": [
+        "overwrite",
+        "interference",
+        80,
+        16,
+        null,
+        null
+      ],
+      "baseline": 0.24,
+      "arm_l": 0.99,
+      "generic": 1.0,
+      "random_heads": 0.93
+    },
+    {
+      "key": [
+        "overwrite",
+        "interference",
+        160,
+        12,
+        null,
+        null
+      ],
+      "baseline": 0.29,
+      "arm_l": 0.84,
+      "generic": 1.0,
+      "random_heads": 0.89
+    },
+    {
+      "key": [
+        "overwrite",
+        "interference",
+        160,
+        16,
+        null,
+        null
+      ],
+      "baseline": 0.29,
+      "arm_l": 0.79,
+      "generic": 1.0,
+      "random_heads": 0.85
+    }
+  ],
+  "trainable_params": {
+    "arm_l": 833536,
+    "generic": 10092544,
+    "random_heads": 833536
+  },
+  "criteria": {
+    "arm_l_gain_ge_0p30": true,
+    "simple_ge_0p98": true,
+    "ood_surface_retains_ge_70pct_primary_gain": false,
+    "ood_load_retains_ge_70pct_primary_gain": true,
+    "parallel_improves": true,
+    "targeting_matters": false,
+    "efficiency_within_2pt_generic": false
+  }
+}

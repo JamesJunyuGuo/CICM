@@ -1,0 +1,24 @@
+{
+  "behavior_reuse": {
+    "inference_rerun": false,
+    "reason": "Part D used the identical 3-seed x 3-template x 72-per-cell protocol",
+    "source_rows": "results/stage_o/partD_qwen15b/rows.jsonl",
+    "source_rows_sha256": "b29c8ec57aace59a594fdb112a97ea5f208f17b9c178d9f5702ab8002f7e1995",
+    "source_summary": "results/stage_o/partD_qwen15b/behavior.summary.json",
+    "source_summary_sha256": "70558b1a8a0fb3a4a68f8bc5a688d56cd44b5bccf0a00143b5ee69b0999c8a37"
+  },
+  "fixed_k": 6,
+  "fixed_k_counts": {
+    "correct_current": 352,
+    "within_stale": 296
+  },
+  "fixed_k_n": 648,
+  "full_protocol_n": 3888,
+  "matched_pool_counts": {
+    "correct_current": 233,
+    "within_stale": 233
+  },
+  "matched_pool_n": 466,
+  "model": "Qwen/Qwen2.5-1.5B",
+  "stage": "O-Part-C-full-behavior"
+}

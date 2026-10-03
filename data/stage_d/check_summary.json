@@ -1,0 +1,33 @@
+{
+  "data": "data/stage_d/eval_all.jsonl",
+  "pass": true,
+  "errors": [],
+  "n_errors": 0,
+  "n_total": 1200,
+  "by_family": {
+    "babilong_style": 300,
+    "michelangelo_style": 200,
+    "ruler_style": 300,
+    "state_suite": 400
+  },
+  "by_cell": {
+    "aggregation": 100,
+    "counting": 100,
+    "entity_state": 100,
+    "fact_chaining": 100,
+    "implicit_invalidation": 100,
+    "latent_list": 100,
+    "list_set": 100,
+    "multi_attribute": 100,
+    "multi_hop_tracing": 100,
+    "multi_round_coreference": 100,
+    "parallel_entities": 100,
+    "retrieval": 100
+  },
+  "by_answer_type": {
+    "dict": 100,
+    "int": 300,
+    "list": 200,
+    "string": 600
+  }
+}

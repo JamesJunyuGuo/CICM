@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stale binding: observation, diagnosis, and localization</title>
+  <style>
+    @font-face {
+      font-family:"Figure Source Sans";
+      src:url("fonts/SourceSans3-Regular.ttf") format("truetype");
+      font-style:normal;
+      font-weight:400;
+    }
+    @font-face {
+      font-family:"Figure Source Sans";
+      src:url("fonts/SourceSans3-Semibold.ttf") format("truetype");
+      font-style:normal;
+      font-weight:600;
+    }
+    :root {
+      --ink:#202a35; --muted:#687784; --hair:#cfd7dd; --grid:#e8ecef;
+      --stale:#d36f4f; --stale-dark:#9f452f; --stale-soft:#fae9e3;
+      --current:#3f835f; --current-dark:#286646; --current-soft:#e8f2ec;
+      --other:#43869e; --other-soft:#e8f1f4; --neutral:#eef2f4;
+      --panel-a:#f3f7f9; --panel-b:#fcf7f4; --panel-c:#f3f8f5;
+    }
+    * { box-sizing:border-box; }
+    @page { size:1800px 800px; margin:0; }
+    html,body {
+      width:1800px; height:800px; margin:0; overflow:hidden; background:#fff;
+      color:var(--ink); font-family:"Figure Source Sans",sans-serif;
+      font-weight:400; letter-spacing:0; font-kerning:normal;
+      font-variant-numeric:tabular-nums;
+    }
+    strong,b { font-weight:600; }
+    .canvas { width:1800px; height:800px; padding:22px 28px 18px; background:#fff; }
+    @media (min-width:3000px) {
+      html,body { width:3600px; height:1600px; }
+      .canvas { transform:scale(2); transform-origin:top left; }
+    }
+    .figure-title {
+      display:flex; align-items:baseline; gap:14px; height:48px; padding:0 5px;
+      border-bottom:1px solid var(--hair);
+    }
+    .figure-title strong { font-size:32px; font-weight:600; }
+    .figure-title .thesis { color:var(--muted); font-size:23px; }
+    .figure-title .scope { margin-left:auto; color:#405563; font-size:20px; white-space:nowrap; }
+    .panels {
+      display:grid; grid-template-columns:500px 574px 632px; gap:18px;
+      height:650px; margin-top:14px;
+    }
+    .panel { position:relative; min-width:0; padding:16px 18px 14px; border-top:5px solid; }
+    .panel-a { background:var(--panel-a); border-color:var(--other); }
+    .panel-b { background:var(--panel-b); border-color:var(--stale); }
+    .panel-c { background:var(--panel-c); border-color:var(--current); }
+    .panel:not(:last-child)::after {
+      content:""; position:absolute; z-index:4; top:303px; right:-25px;
+      width:32px; height:32px; border-radius:50%; background:#fff;
+      border:1px solid var(--hair);
+    }
+    .panel:not(:last-child)::before {
+      content:""; position:absolute; z-index:5; top:318px; right:-17px;
+      width:14px; height:1.5px; background:#73818c;
+    }
+    .flow-tip { position:absolute; z-index:6; top:314px; right:-18px; width:8px; height:8px; border-top:1.5px solid #73818c; border-right:1.5px solid #73818c; transform:rotate(45deg); }
+    .head { display:flex; gap:10px; align-items:center; height:36px; }
+    .letter { color:var(--muted); font-size:26px; font-weight:600; }
+    h2 { margin:0; font-size:30px; line-height:1.04; font-weight:600; }
+    .kicker { color:var(--muted); font-size:18px; line-height:1; text-transform:uppercase; letter-spacing:.8px; }
+    .subhead { margin-top:6px; font-size:24px; line-height:1.14; font-weight:400; }
+
+    /* Panel A: a concrete update and error. */
+    .transcript { margin-top:14px; }
+    .turn { display:grid; grid-template-columns:61px 1fr; gap:9px; align-items:start; margin-bottom:10px; }
+    .role { padding-top:8px; color:var(--muted); font-size:18px; letter-spacing:0; }
+    .bubble { min-height:48px; padding:9px 12px; border-left:4px solid; background:#fff; font-size:23px; line-height:1.18; }
+    .bubble.old { border-color:var(--stale); }
+    .bubble.current { border-color:var(--current); }
+    .bubble.other { border-color:var(--other); }
+    .bubble.query { border-color:#556574; background:var(--neutral); }
+    .value-old { color:var(--stale-dark); font-weight:600; }
+    .value-current { color:var(--current-dark); font-weight:600; }
+    .value-other { color:#2f7188; font-weight:600; }
+    .timeline { width:100%; height:91px; margin:8px 0 2px; }
+    .answer {
+      display:grid; grid-template-columns:1fr 174px; gap:12px; align-items:stretch;
+      margin-top:10px; padding-top:13px; border-top:1px solid var(--hair);
+    }
+    .model-output { padding:10px 12px; background:var(--stale-soft); border-left:5px solid var(--stale); }
+    .model-output .label { color:var(--muted); font-size:16px; letter-spacing:0; }
+    .model-output strong { display:block; margin-top:3px; color:var(--stale-dark); font-size:29px; font-weight:600; }
+    .model-output small { display:block; color:var(--muted); font-size:18px; }
+    .error-share { display:flex; flex-direction:column; justify-content:center; padding:8px 11px; border-left:1px solid var(--hair); }
+    .error-share strong { color:var(--stale-dark); font-size:31px; line-height:1; font-weight:600; }
+    .error-share span { margin-top:4px; color:var(--muted); font-size:19px; line-height:1.12; }
+    .panel-a-note { margin-top:12px; color:var(--ink); font-size:22px; line-height:1.18; }
+    .panel-a-note strong { color:var(--stale-dark); font-weight:600; }
+
+    /* Panel B: behavioral and representation evidence. */
+    .behavior-block { margin-top:14px; padding-bottom:11px; border-bottom:1px solid var(--hair); }
+    .behavior-chart { width:100%; height:262px; margin-top:4px; }
+    .control-strip { display:flex; justify-content:space-between; align-items:center; margin:0 5px 0 42px; color:var(--current-dark); font-size:18px; }
+    .control-strip b { font-weight:600; }
+    .probe-block { margin-top:13px; }
+    .probe-layout { display:grid; grid-template-columns:1fr 178px; gap:16px; align-items:center; margin-top:10px; }
+    .probe-chart { width:100%; height:146px; }
+    .probe-claim { padding-left:15px; border-left:1px solid var(--hair); font-size:21px; line-height:1.18; }
+    .probe-claim strong { display:block; color:var(--current-dark); font-size:29px; line-height:1.06; font-weight:600; }
+    .probe-claim small { display:block; margin-top:8px; color:var(--muted); font-size:18px; line-height:1.14; }
+
+    /* Panel C: measured attention shift and causal localization. */
+    .attention-section { margin-top:14px; padding-bottom:13px; border-bottom:1px solid var(--hair); }
+    .attention-layout { display:grid; grid-template-columns:350px 1fr; gap:14px; align-items:center; margin-top:10px; }
+    .heatmap { display:grid; grid-template-columns:91px repeat(4,56px); grid-template-rows:30px 48px 48px; column-gap:8px; row-gap:6px; align-items:center; }
+    .col { color:var(--muted); font-size:18px; line-height:1; text-align:center; white-space:nowrap; }
+    .row { color:var(--muted); font-size:18px; line-height:1.04; }
+    .cell { display:grid; place-items:center; width:50px; height:45px; justify-self:center; border:1px solid rgba(55,70,82,.10); font-size:18px; }
+    .s58{background:rgba(211,111,79,.62)}.s80{background:rgba(211,111,79,.90)}
+    .c42{background:rgba(63,131,95,.52)}.c20{background:rgba(63,131,95,.24)}
+    .oth{background:rgba(67,134,158,.10)}.ctx{background:rgba(130,143,153,.10)}
+    .shift-callout { padding:12px 13px; border-left:4px solid var(--stale); background:#fff; }
+    .shift-callout strong { display:block; color:var(--stale-dark); font-size:25px; font-weight:600; }
+    .shift-callout span { display:block; margin-top:4px; font-size:20px; line-height:1.14; }
+    .shift-callout small { display:block; margin-top:6px; color:var(--muted); font-size:17px; }
+    .mechanism-section { margin-top:14px; }
+    .mechanism-flow { width:100%; height:207px; margin-top:6px; }
+    .causal-check { display:grid; grid-template-columns:193px 1fr; gap:18px; align-items:center; margin-top:5px; padding-top:11px; border-top:1px solid var(--hair); }
+    .causal-copy { font-size:20px; line-height:1.14; }
+    .causal-copy strong { display:block; color:var(--stale-dark); font-size:23px; font-weight:600; }
+    .causal-bars { width:100%; height:77px; }
+    .footer {
+      display:grid; grid-template-columns:1fr 44px 1fr 44px 1.1fr; align-items:center;
+      height:50px; margin-top:12px; padding:0 24px; border-top:1px solid var(--hair);
+      color:var(--ink); font-size:21px;
+    }
+    .footer div { text-align:center; }
+    .footer strong { font-weight:600; }
+    .footer .a strong { color:#334b5c; }.footer .b strong { color:var(--current-dark); }.footer .c strong { color:var(--stale-dark); }
+    .footer .arrow { color:#82909a; font-size:22px; }
+  </style>
+</head>
+<body>
+<main class="canvas">
+  <div class="figure-title">
+    <strong>Stale binding</strong>
+    <span class="thesis">The current value remains readable, but the model selects an old value.</span>
+    <span class="scope"><b>Behavior:</b> Pythia · Qwen · Llama · GPT-4o</span>
+  </div>
+
+  <div class="panels">
+    <section class="panel panel-a">
+      <span class="flow-tip"></span>
+      <header class="head"><span class="letter">A</span><h2>The model returns an old value</h2></header>
+      <div class="transcript">
+        <div class="turn"><div class="role">User</div><div class="bubble old">Set my meal preference to <span class="value-old">keto</span>.</div></div>
+        <div class="turn"><div class="role">User</div><div class="bubble current">Actually, change it to <span class="value-current">gluten-free</span>.</div></div>
+        <div class="turn"><div class="role">User</div><div class="bubble other">For music, I prefer <span class="value-other">hip-hop</span>.</div></div>
+        <div class="turn"><div class="role">User</div><div class="bubble query">What is my latest <strong>meal</strong> preference?</div></div>
+      </div>
+
+      <svg class="timeline" viewBox="0 0 460 91" aria-label="Append-only context retains old, current, and other-variable values">
+        <defs><marker id="arrow-gray" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0v8l8-4z" fill="#7b8994"/></marker></defs>
+        <path d="M22 32H438" fill="none" stroke="#9da9b2" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+        <circle cx="57" cy="32" r="8" fill="#d36f4f"/><circle cx="179" cy="32" r="8" fill="#3f835f"/><circle cx="306" cy="32" r="8" fill="#43869e"/><circle cx="410" cy="32" r="8" fill="#536472"/>
+        <text x="57" y="60" fill="#9f452f" font-size="18" text-anchor="middle">old</text>
+        <text x="179" y="60" fill="#286646" font-size="18" text-anchor="middle">current</text>
+        <text x="306" y="60" fill="#2f7188" font-size="18" text-anchor="middle">other variable</text>
+        <text x="410" y="60" fill="#536472" font-size="18" text-anchor="middle">query</text>
+        <text x="230" y="86" fill="#687784" font-size="18" text-anchor="middle">all assignments remain available</text>
+      </svg>
+
+      <div class="answer">
+        <div class="model-output"><div class="label">Model answer</div><strong>keto</strong><small>the right variable, the wrong time</small></div>
+        <div class="error-share"><strong>239 / 240</strong><span>Qwen-7B representative slice: errors return an old value of the same variable</span></div>
+      </div>
+      <div class="panel-a-note"><strong>Structured error:</strong> the model preserves variable identity but ignores the update.</div>
+    </section>
+
+    <section class="panel panel-b">
+      <span class="flow-tip"></span>
+      <header class="head"><span class="letter">B</span><h2>Competition grows; the current value stays readable</h2></header>
+      <div class="behavior-block">
+        <div class="kicker">Representative behavior curve · Qwen2.5-7B</div>
+        <div class="subhead">More old values lower answer accuracy</div>
+        <svg class="behavior-chart" viewBox="0 0 530 262" aria-label="Qwen 7B accuracy and Wilson intervals over five old-value doses">
+          <g stroke="#e0e5e8" stroke-width="1"><path d="M55 25H505"/><path d="M55 117H505"/><path d="M55 209H505"/></g>
+          <path d="M55 25V209H505" fill="none" stroke="#8997a1" stroke-width="1.2"/>
+          <g fill="#687784" font-size="18">
+            <text x="46" y="30" text-anchor="end">100</text><text x="46" y="122" text-anchor="end">50</text><text x="46" y="214" text-anchor="end">0</text>
+            <text x="65" y="230" text-anchor="middle">2</text><text x="171" y="230" text-anchor="middle">4</text><text x="277" y="230" text-anchor="middle">8</text><text x="383" y="230" text-anchor="middle">12</text><text x="489" y="230" text-anchor="middle">16</text>
+            <text x="278" y="254" text-anchor="middle">number of old competing values</text>
+            <text x="13" y="117" text-anchor="middle" transform="rotate(-90 13 117)">accuracy (%)</text>
+          </g>
+          <path d="M65 39.7L171 72.8L277 104.7L383 135.4L489 142.8" fill="none" stroke="#d36f4f" stroke-width="2.3"/>
+          <g stroke="#d36f4f" stroke-width="1.5">
+            <path d="M65 33.5V49.8M59 33.5H71M59 49.8H71"/><path d="M171 61.1V86.7M165 61.1H177M165 86.7H177"/>
+            <path d="M277 90.6V119.4M271 90.6H283M271 119.4H283"/><path d="M383 117.4V152.1M377 117.4H389M377 152.1H389"/>
+            <path d="M489 124.8V158.8M483 124.8H495M483 158.8H495"/>
+          </g>
+          <g fill="#fff" stroke="#d36f4f" stroke-width="2.2"><circle cx="65" cy="39.7" r="4.8"/><circle cx="171" cy="72.8" r="4.8"/><circle cx="277" cy="104.7" r="4.8"/><circle cx="383" cy="135.4" r="4.8"/><circle cx="489" cy="142.8" r="4.8"/></g>
+          <text x="497" y="178" fill="#9f452f" font-size="18" text-anchor="end">n = 100–150 · 95% Wilson CI</text>
+        </svg>
+        <div class="control-strip"><span><b>No overwrite:</b> 100% at 20, 40, and 80 lines</span><span>length-only control</span></div>
+      </div>
+
+      <div class="probe-block">
+        <div class="kicker">Cross-model probe · Qwen2.5-7B + Llama-3.1-8B</div>
+        <div class="probe-layout">
+          <svg class="probe-chart" viewBox="0 0 346 146" aria-label="Current-value probe score on old-value errors compared with shuffled labels">
+            <g stroke="#e0e5e8" stroke-width="1"><path d="M72 24H331"/><path d="M72 70H331"/><path d="M72 116H331"/></g>
+            <rect x="80" y="30" width="16" height="80" fill="#8d99a2" opacity=".35"/>
+            <text x="88" y="139" fill="#687784" font-size="17" text-anchor="middle">shuffle</text>
+            <text x="0" y="55" fill="#202a35" font-size="20">Qwen</text><text x="0" y="101" fill="#202a35" font-size="20">Llama</text>
+            <rect x="72" y="37" width="220" height="20" fill="#3f835f"/><rect x="72" y="83" width="214" height="20" fill="#3f835f" opacity=".88"/>
+            <text x="284" y="53" fill="#fff" font-size="19" font-weight="600" text-anchor="end">84.8%</text><text x="278" y="99" fill="#fff" font-size="19" font-weight="600" text-anchor="end">82.2%</text>
+            <text x="72" y="17" fill="#687784" font-size="18">true-current probe score</text>
+          </svg>
+          <div class="probe-claim"><strong>Present,<br>but not selected</strong><small>Shuffle: 3–6%. Scores are measured on old-value errors.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel-c">
+      <header class="head"><span class="letter">C</span><h2>Retrieval selects the wrong assignment</h2></header>
+      <div class="attention-section">
+        <div class="kicker">Qwen-specific attention measurement · Qwen2.5-7B</div>
+        <div class="attention-layout">
+          <div class="heatmap" aria-label="Answer-position attention shifts from the current assignment to old assignments">
+            <div></div><div class="col">old</div><div class="col">current</div><div class="col">other</div><div class="col">context</div>
+            <div class="row">correct<br>answer</div><div class="cell s58">58</div><div class="cell c42">42</div><div class="cell oth"></div><div class="cell ctx"></div>
+            <div class="row">old-value<br>answer</div><div class="cell s80">80</div><div class="cell c20">20</div><div class="cell oth"></div><div class="cell ctx"></div>
+          </div>
+          <div class="shift-callout"><strong>+19.4 points</strong><span>more attention to old assignments on failures</span><small>adjusted for prompt length</small></div>
+        </div>
+      </div>
+
+      <div class="mechanism-section">
+        <div class="kicker">Exhaustive localization · Pythia-160M</div>
+        <svg class="mechanism-flow" viewBox="0 0 590 207" aria-label="QK selects an old assignment while OV faithfully copies its value">
+          <defs>
+            <marker id="arr-stale" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0v9l9-4.5z" fill="#d36f4f"/></marker>
+            <marker id="arr-current" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0v9l9-4.5z" fill="#3f835f"/></marker>
+            <marker id="arr-dark" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0v9l9-4.5z" fill="#536472"/></marker>
+          </defs>
+          <text x="70" y="22" fill="#687784" font-size="19" text-anchor="middle">answer query</text>
+          <rect x="20" y="45" width="100" height="46" rx="6" fill="#536472"/><text x="70" y="74" fill="#fff" font-size="23" text-anchor="middle">meal?</text>
+          <text x="248" y="18" fill="#202a35" font-size="24" font-weight="600" text-anchor="middle">QK routing</text>
+          <text x="248" y="40" fill="#687784" font-size="19" text-anchor="middle">where to read</text>
+          <rect x="204" y="49" width="88" height="39" rx="5" fill="#fae9e3" stroke="#d36f4f"/><text x="248" y="74" fill="#9f452f" font-size="20" text-anchor="middle">old key</text>
+          <rect x="204" y="127" width="88" height="39" rx="5" fill="#e8f2ec" stroke="#3f835f"/><text x="248" y="152" fill="#286646" font-size="20" text-anchor="middle">current</text>
+          <path d="M120 61C151 54 172 58 199 67" fill="none" stroke="#d36f4f" stroke-width="5" marker-end="url(#arr-stale)"/>
+          <path d="M120 80C151 113 171 136 199 145" fill="none" stroke="#3f835f" stroke-width="2" stroke-dasharray="6 5" opacity=".55" marker-end="url(#arr-current)"/>
+          <text x="154" y="108" fill="#9f452f" font-size="18" text-anchor="middle">routing flips</text>
+          <path d="M300 68H367" fill="none" stroke="#536472" stroke-width="2" marker-end="url(#arr-dark)"/>
+          <text x="449" y="18" fill="#202a35" font-size="24" font-weight="600" text-anchor="middle">OV map</text>
+          <text x="449" y="40" fill="#687784" font-size="19" text-anchor="middle">what to copy</text>
+          <rect x="379" y="49" width="139" height="39" rx="5" fill="#fae9e3" stroke="#d36f4f"/><text x="449" y="74" fill="#9f452f" font-size="20" text-anchor="middle">old value: keto</text>
+          <path d="M449 90V125" fill="none" stroke="#d36f4f" stroke-width="3" marker-end="url(#arr-stale)"/>
+          <rect x="391" y="132" width="116" height="43" rx="5" fill="#fae9e3"/><text x="449" y="159" fill="#9f452f" font-size="25" font-weight="600" text-anchor="middle">“keto”</text>
+          <text x="449" y="198" fill="#687784" font-size="18" text-anchor="middle">copying stays intact</text>
+        </svg>
+      </div>
+
+      <div class="causal-check">
+        <div class="causal-copy"><strong>Causal check at 160M</strong>Disable old-value-promoting heads selected on held-out data.</div>
+        <svg class="causal-bars" viewBox="0 0 370 77" aria-label="Targeted head ablation corrects more old-value errors than matched random sets">
+          <g stroke="#e0e5e8" stroke-width="1"><path d="M92 9H354"/><path d="M92 38H354"/><path d="M92 67H354"/></g>
+          <text x="0" y="27" fill="#202a35" font-size="19">targeted</text><text x="0" y="58" fill="#202a35" font-size="19">random</text>
+          <rect x="92" y="13" width="226" height="17" fill="#d36f4f"/><rect x="92" y="44" width="53" height="17" fill="#aab4bb"/>
+          <text x="326" y="27" fill="#9f452f" font-size="20" font-weight="600">38%</text><text x="153" y="58" fill="#687784" font-size="20">9%</text>
+          <text x="354" y="75" fill="#687784" font-size="16" text-anchor="end">old-value errors corrected</text>
+        </svg>
+      </div>
+    </section>
+  </div>
+
+  <div class="footer">
+    <div class="a"><strong>Not length alone</strong> · no-overwrite controls remain solved</div>
+    <div class="arrow">→</div>
+    <div class="b"><strong>Not complete erasure</strong> · the current value stays readable</div>
+    <div class="arrow">→</div>
+    <div class="c"><strong>Stale binding</strong> · retrieval selects an old assignment</div>
+  </div>
+</main>
+</body>
+</html>

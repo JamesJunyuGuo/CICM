@@ -1,0 +1,2258 @@
+{
+  "claim_boundary": "Behavioral universality matrix only; no probe, circuit, or prevalence claim.",
+  "models": [
+    {
+      "cap": 10,
+      "cells": [
+        {
+          "accuracy": 0.9675925925925926,
+          "accuracy_ci": [
+            0.9509665251145514,
+            0.9787073883802575
+          ],
+          "counts": {
+            "correct_current": 627,
+            "other": 21
+          },
+          "k": 0,
+          "n": 648,
+          "stale_share_ci": [
+            -1.3877787807814457e-17,
+            0.154639018924847
+          ],
+          "stale_share_errors": 0.0
+        },
+        {
+          "accuracy": 0.6080246913580247,
+          "accuracy_ci": [
+            0.5699054753755588,
+            0.6448706762569054
+          ],
+          "counts": {
+            "correct_current": 394,
+            "other": 2,
+            "within_stale": 252
+          },
+          "k": 2,
+          "n": 648,
+          "stale_share_ci": [
+            0.9717500622964895,
+            0.9978379983026123
+          ],
+          "stale_share_errors": 0.9921259842519685
+        },
+        {
+          "accuracy": 0.5262345679012346,
+          "accuracy_ci": [
+            0.4877487974613478,
+            0.564411125077965
+          ],
+          "counts": {
+            "correct_current": 341,
+            "within_stale": 307
+          },
+          "k": 4,
+          "n": 648,
+          "stale_share_ci": [
+            0.9876417424005526,
+            0.9999999999999998
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.36882716049382713,
+          "accuracy_ci": [
+            0.3325528336948579,
+            0.4066475536085786
+          ],
+          "counts": {
+            "correct_current": 239,
+            "other": 2,
+            "within_stale": 407
+          },
+          "k": 6,
+          "n": 648,
+          "stale_share_ci": [
+            0.9823481591478824,
+            0.9986579664406334
+          ],
+          "stale_share_errors": 0.9951100244498777
+        },
+        {
+          "accuracy": 0.32253086419753085,
+          "accuracy_ci": [
+            0.2876769451899149,
+            0.35947651998532276
+          ],
+          "counts": {
+            "correct_current": 209,
+            "within_stale": 439
+          },
+          "k": 8,
+          "n": 648,
+          "stale_share_ci": [
+            0.9913254309320447,
+            0.9999999999999998
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.30401234567901236,
+          "accuracy_ci": [
+            0.26983636944319617,
+            0.3404983268807619
+          ],
+          "counts": {
+            "correct_current": 197,
+            "other": 6,
+            "within_stale": 445
+          },
+          "k": 10,
+          "n": 648,
+          "stale_share_ci": [
+            0.97128258864549,
+            0.9938888826144793
+          ],
+          "stale_share_errors": 0.9866962305986696
+        }
+      ],
+      "k0_gate_pass": true,
+      "key": "qwen05b",
+      "label": "Qwen2.5-0.5B",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "taxonomy": {
+        "counts": {
+          "correct_current": 89,
+          "cross_variable": 270,
+          "other": 20,
+          "within_stale": 269
+        },
+        "n": 648
+      },
+      "template_accuracy_at_cap": {
+        "arrow": 0.375,
+        "current": 0.2962962962962963,
+        "latest": 0.24074074074074073
+      },
+      "template_range_at_cap": 0.13425925925925927,
+      "tokenizer_gate": {
+        "all_single_token_value_candidates": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "brown",
+          "gray",
+          "silver",
+          "orange",
+          "purple",
+          "yellow",
+          "cyan",
+          "apple",
+          "berry",
+          "pear",
+          "rock",
+          "folk",
+          "metal",
+          "dance",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "winter",
+          "early",
+          "late"
+        ],
+        "caps": {
+          "constraints": {
+            "post_current": 11,
+            "task_values": 30,
+            "variables": 15
+          },
+          "k_cap": 10,
+          "k_grid": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "n_lines": 15,
+          "target_n_lines": 15
+        },
+        "deterministic_rule": "Filter the fixed candidate lists in listed order by canonical bare, leading-space, and exact assignment-span single-token encoding; do not add post-hoc labels.",
+        "fixed_demo_single_token_gate": true,
+        "fixed_demo_values": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "brown",
+          "gray",
+          "silver"
+        ],
+        "model": "Qwen/Qwen2.5-0.5B",
+        "reserved_demo_variables": [
+          "color",
+          "drink",
+          "mode",
+          "music",
+          "route",
+          "shape",
+          "sport",
+          "topic"
+        ],
+        "single_token_variables_before_reserved_filter": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "color",
+          "music",
+          "route",
+          "style",
+          "topic",
+          "mode",
+          "level",
+          "shape",
+          "fruit",
+          "drink",
+          "sport",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ],
+        "stage": "O-Part-D-tokenizer",
+        "task_values": [
+          "orange",
+          "purple",
+          "yellow",
+          "cyan",
+          "apple",
+          "berry",
+          "pear",
+          "rock",
+          "folk",
+          "metal",
+          "dance",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "winter",
+          "early",
+          "late"
+        ],
+        "tokenizer_class": "Qwen2TokenizerFast",
+        "usable_variables": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "style",
+          "level",
+          "fruit",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ]
+      }
+    },
+    {
+      "cap": 10,
+      "cells": [
+        {
+          "accuracy": 0.9660493827160493,
+          "accuracy_ci": [
+            0.9491313965595499,
+            0.9774742861976523
+          ],
+          "counts": {
+            "correct_current": 626,
+            "other": 22
+          },
+          "k": 0,
+          "n": 648,
+          "stale_share_ci": [
+            0.0,
+            0.14865487460862087
+          ],
+          "stale_share_errors": 0.0
+        },
+        {
+          "accuracy": 0.6851851851851852,
+          "accuracy_ci": [
+            0.6484231124600335,
+            0.7197645760527622
+          ],
+          "counts": {
+            "correct_current": 444,
+            "within_stale": 204
+          },
+          "k": 2,
+          "n": 648,
+          "stale_share_ci": [
+            0.981517360191317,
+            1.0
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.558641975308642,
+          "accuracy_ci": [
+            0.5201760019195218,
+            0.5964167661095301
+          ],
+          "counts": {
+            "correct_current": 362,
+            "within_stale": 286
+          },
+          "k": 4,
+          "n": 648,
+          "stale_share_ci": [
+            0.986746344583262,
+            1.0
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.5432098765432098,
+          "accuracy_ci": [
+            0.504714259274856,
+            0.5811962013781297
+          ],
+          "counts": {
+            "correct_current": 352,
+            "within_stale": 296
+          },
+          "k": 6,
+          "n": 648,
+          "stale_share_ci": [
+            0.9871883666928419,
+            1.0000000000000002
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.4521604938271605,
+          "accuracy_ci": [
+            0.41423375493408643,
+            0.49065109220010816
+          ],
+          "counts": {
+            "correct_current": 293,
+            "within_stale": 355
+          },
+          "k": 8,
+          "n": 648,
+          "stale_share_ci": [
+            0.9892948299972953,
+            1.0000000000000002
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.44135802469135804,
+          "accuracy_ci": [
+            0.4035832338904699,
+            0.47982399808047826
+          ],
+          "counts": {
+            "correct_current": 286,
+            "within_stale": 362
+          },
+          "k": 10,
+          "n": 648,
+          "stale_share_ci": [
+            0.9894996624136662,
+            0.9999999999999999
+          ],
+          "stale_share_errors": 1.0
+        }
+      ],
+      "k0_gate_pass": true,
+      "key": "qwen15b",
+      "label": "Qwen2.5-1.5B",
+      "model": "Qwen/Qwen2.5-1.5B",
+      "taxonomy": {
+        "counts": {
+          "correct_current": 200,
+          "cross_variable": 43,
+          "within_stale": 405
+        },
+        "n": 648
+      },
+      "template_accuracy_at_cap": {
+        "arrow": 0.3287037037037037,
+        "current": 0.41203703703703703,
+        "latest": 0.5833333333333334
+      },
+      "template_range_at_cap": 0.25462962962962965,
+      "tokenizer_gate": {
+        "all_single_token_value_candidates": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "brown",
+          "gray",
+          "silver",
+          "orange",
+          "purple",
+          "yellow",
+          "cyan",
+          "apple",
+          "berry",
+          "pear",
+          "rock",
+          "folk",
+          "metal",
+          "dance",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "winter",
+          "early",
+          "late"
+        ],
+        "caps": {
+          "constraints": {
+            "post_current": 11,
+            "task_values": 30,
+            "variables": 15
+          },
+          "k_cap": 10,
+          "k_grid": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "n_lines": 15,
+          "target_n_lines": 15
+        },
+        "deterministic_rule": "Filter the fixed candidate lists in listed order by canonical bare, leading-space, and exact assignment-span single-token encoding; do not add post-hoc labels.",
+        "fixed_demo_single_token_gate": true,
+        "fixed_demo_values": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "brown",
+          "gray",
+          "silver"
+        ],
+        "model": "Qwen/Qwen2.5-1.5B",
+        "reserved_demo_variables": [
+          "color",
+          "drink",
+          "mode",
+          "music",
+          "route",
+          "shape",
+          "sport",
+          "topic"
+        ],
+        "single_token_variables_before_reserved_filter": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "color",
+          "music",
+          "route",
+          "style",
+          "topic",
+          "mode",
+          "level",
+          "shape",
+          "fruit",
+          "drink",
+          "sport",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ],
+        "stage": "O-Part-D-tokenizer",
+        "task_values": [
+          "orange",
+          "purple",
+          "yellow",
+          "cyan",
+          "apple",
+          "berry",
+          "pear",
+          "rock",
+          "folk",
+          "metal",
+          "dance",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "winter",
+          "early",
+          "late"
+        ],
+        "tokenizer_class": "Qwen2TokenizerFast",
+        "usable_variables": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "style",
+          "level",
+          "fruit",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ]
+      }
+    },
+    {
+      "cap": 10,
+      "cells": [
+        {
+          "accuracy": 1.0,
+          "accuracy_ci": [
+            0.9941067589845481,
+            1.0
+          ],
+          "counts": {
+            "correct_current": 648
+          },
+          "k": 0,
+          "n": 648,
+          "stale_share_ci": [
+            NaN,
+            NaN
+          ],
+          "stale_share_errors": null
+        },
+        {
+          "accuracy": 0.9629629629629629,
+          "accuracy_ci": [
+            0.9454823875790163,
+            0.9749868337029727
+          ],
+          "counts": {
+            "correct_current": 624,
+            "within_stale": 24
+          },
+          "k": 2,
+          "n": 648,
+          "stale_share_ci": [
+            0.8620237953250198,
+            1.0
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.8487654320987654,
+          "accuracy_ci": [
+            0.8191293432801225,
+            0.8742908034189758
+          ],
+          "counts": {
+            "correct_current": 550,
+            "within_stale": 98
+          },
+          "k": 4,
+          "n": 648,
+          "stale_share_ci": [
+            0.9622800098783192,
+            0.9999999999999999
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.7268518518518519,
+          "accuracy_ci": [
+            0.691283088608117,
+            0.7597468298200577
+          ],
+          "counts": {
+            "correct_current": 471,
+            "within_stale": 177
+          },
+          "k": 6,
+          "n": 648,
+          "stale_share_ci": [
+            0.9787578642323219,
+            0.9999999999999999
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.6435185185185185,
+          "accuracy_ci": [
+            0.6058944857645041,
+            0.6794509728329123
+          ],
+          "counts": {
+            "correct_current": 417,
+            "within_stale": 231
+          },
+          "k": 8,
+          "n": 648,
+          "stale_share_ci": [
+            0.9836423311284778,
+            0.9999999999999999
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.5864197530864198,
+          "accuracy_ci": [
+            0.5481009815994524,
+            0.623719939706519
+          ],
+          "counts": {
+            "correct_current": 380,
+            "within_stale": 268
+          },
+          "k": 10,
+          "n": 648,
+          "stale_share_ci": [
+            0.9858687529217979,
+            0.9999999999999999
+          ],
+          "stale_share_errors": 1.0
+        }
+      ],
+      "k0_gate_pass": true,
+      "key": "qwen3b",
+      "label": "Qwen2.5-3B",
+      "model": "Qwen/Qwen2.5-3B",
+      "taxonomy": {
+        "counts": {
+          "correct_current": 314,
+          "cross_variable": 27,
+          "within_stale": 307
+        },
+        "n": 648
+      },
+      "template_accuracy_at_cap": {
+        "arrow": 0.6435185185185185,
+        "current": 0.5231481481481481,
+        "latest": 0.5925925925925926
+      },
+      "template_range_at_cap": 0.12037037037037035,
+      "tokenizer_gate": {
+        "all_single_token_value_candidates": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "brown",
+          "gray",
+          "silver",
+          "orange",
+          "purple",
+          "yellow",
+          "cyan",
+          "apple",
+          "berry",
+          "pear",
+          "rock",
+          "folk",
+          "metal",
+          "dance",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "winter",
+          "early",
+          "late"
+        ],
+        "caps": {
+          "constraints": {
+            "post_current": 11,
+            "task_values": 30,
+            "variables": 15
+          },
+          "k_cap": 10,
+          "k_grid": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "n_lines": 15,
+          "target_n_lines": 15
+        },
+        "deterministic_rule": "Filter the fixed candidate lists in listed order by canonical bare, leading-space, and exact assignment-span single-token encoding; do not add post-hoc labels.",
+        "fixed_demo_single_token_gate": true,
+        "fixed_demo_values": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "brown",
+          "gray",
+          "silver"
+        ],
+        "model": "Qwen/Qwen2.5-3B",
+        "reserved_demo_variables": [
+          "color",
+          "drink",
+          "mode",
+          "music",
+          "route",
+          "shape",
+          "sport",
+          "topic"
+        ],
+        "single_token_variables_before_reserved_filter": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "color",
+          "music",
+          "route",
+          "style",
+          "topic",
+          "mode",
+          "level",
+          "shape",
+          "fruit",
+          "drink",
+          "sport",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ],
+        "stage": "O-Part-D-tokenizer",
+        "task_values": [
+          "orange",
+          "purple",
+          "yellow",
+          "cyan",
+          "apple",
+          "berry",
+          "pear",
+          "rock",
+          "folk",
+          "metal",
+          "dance",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "winter",
+          "early",
+          "late"
+        ],
+        "tokenizer_class": "Qwen2TokenizerFast",
+        "usable_variables": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "style",
+          "level",
+          "fruit",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ]
+      }
+    },
+    {
+      "cap": 8,
+      "cells": [
+        {
+          "accuracy": 1.0,
+          "accuracy_ci": [
+            0.9941067589845481,
+            1.0
+          ],
+          "counts": {
+            "correct_current": 648
+          },
+          "k": 0,
+          "n": 648,
+          "stale_share_ci": [
+            NaN,
+            NaN
+          ],
+          "stale_share_errors": null
+        },
+        {
+          "accuracy": 0.9645061728395061,
+          "accuracy_ci": [
+            0.9473034946328379,
+            0.9762339573867577
+          ],
+          "counts": {
+            "correct_current": 625,
+            "within_stale": 23
+          },
+          "k": 2,
+          "n": 648,
+          "stale_share_ci": [
+            0.8568833815495731,
+            1.0
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.9521604938271605,
+          "accuracy_ci": [
+            0.9328963170043553,
+            0.9660952891143874
+          ],
+          "counts": {
+            "correct_current": 617,
+            "within_stale": 31
+          },
+          "k": 4,
+          "n": 648,
+          "stale_share_ci": [
+            0.889744604539564,
+            1.0
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.7854938271604939,
+          "accuracy_ci": [
+            0.752255009011924,
+            0.8153676774453027
+          ],
+          "counts": {
+            "correct_current": 509,
+            "within_stale": 139
+          },
+          "k": 6,
+          "n": 648,
+          "stale_share_ci": [
+            0.9731068357015575,
+            1.0
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.7453703703703703,
+          "accuracy_ci": [
+            0.7104491418822273,
+            0.7773995453972268
+          ],
+          "counts": {
+            "correct_current": 483,
+            "within_stale": 165
+          },
+          "k": 8,
+          "n": 648,
+          "stale_share_ci": [
+            0.977248130598222,
+            1.0
+          ],
+          "stale_share_errors": 1.0
+        }
+      ],
+      "k0_gate_pass": true,
+      "key": "mistral7b",
+      "label": "Mistral-7B-v0.3",
+      "model": "mistralai/Mistral-7B-v0.3",
+      "taxonomy": {
+        "counts": {
+          "correct_current": 351,
+          "cross_variable": 6,
+          "within_stale": 291
+        },
+        "n": 648
+      },
+      "template_accuracy_at_cap": {
+        "arrow": 0.6712962962962963,
+        "current": 0.7546296296296297,
+        "latest": 0.8101851851851852
+      },
+      "template_range_at_cap": 0.13888888888888895,
+      "tokenizer_gate": {
+        "all_single_token_value_candidates": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "brown",
+          "gray",
+          "silver",
+          "orange",
+          "purple",
+          "yellow",
+          "navy",
+          "apple",
+          "lemon",
+          "pear",
+          "jazz",
+          "rock",
+          "folk",
+          "metal",
+          "blues",
+          "dance",
+          "piano",
+          "drums",
+          "guitar",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "autumn",
+          "winter",
+          "morning",
+          "evening",
+          "early",
+          "late"
+        ],
+        "caps": {
+          "constraints": {
+            "post_current": 8,
+            "task_values": 37,
+            "variables": 12
+          },
+          "k_cap": 8,
+          "k_grid": [
+            0,
+            2,
+            4,
+            6,
+            8
+          ],
+          "n_lines": 12,
+          "target_n_lines": 15
+        },
+        "deterministic_rule": "Filter the fixed candidate lists in listed order by canonical bare, leading-space, and exact assignment-span single-token encoding; do not add post-hoc labels.",
+        "fixed_demo_single_token_gate": true,
+        "fixed_demo_values": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "brown",
+          "gray",
+          "silver"
+        ],
+        "model": "mistralai/Mistral-7B-v0.3",
+        "reserved_demo_variables": [
+          "color",
+          "drink",
+          "mode",
+          "music",
+          "route",
+          "shape",
+          "sport",
+          "topic"
+        ],
+        "single_token_variables_before_reserved_filter": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "color",
+          "route",
+          "style",
+          "topic",
+          "mode",
+          "level",
+          "shape",
+          "city",
+          "book",
+          "game"
+        ],
+        "stage": "O-Part-D-tokenizer",
+        "task_values": [
+          "orange",
+          "purple",
+          "yellow",
+          "navy",
+          "apple",
+          "lemon",
+          "pear",
+          "jazz",
+          "rock",
+          "folk",
+          "metal",
+          "blues",
+          "dance",
+          "piano",
+          "drums",
+          "guitar",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "autumn",
+          "winter",
+          "morning",
+          "evening",
+          "early",
+          "late"
+        ],
+        "tokenizer_class": "LlamaTokenizerFast",
+        "usable_variables": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "style",
+          "level",
+          "city",
+          "book",
+          "game"
+        ]
+      }
+    },
+    {
+      "cap": 10,
+      "cells": [
+        {
+          "accuracy": 0.9938271604938271,
+          "accuracy_ci": [
+            0.9842368741185156,
+            0.9975969619156061
+          ],
+          "counts": {
+            "correct_current": 644,
+            "other": 4
+          },
+          "k": 0,
+          "n": 648,
+          "stale_share_ci": [
+            0.0,
+            0.4898908364545973
+          ],
+          "stale_share_errors": 0.0
+        },
+        {
+          "accuracy": 0.4104938271604938,
+          "accuracy_ci": [
+            0.37325391996780577,
+            0.4487886972510098
+          ],
+          "counts": {
+            "correct_current": 266,
+            "within_stale": 382
+          },
+          "k": 2,
+          "n": 648,
+          "stale_share_ci": [
+            0.9900439449082652,
+            1.0
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.28703703703703703,
+          "accuracy_ci": [
+            0.2535414257733161,
+            0.32304273243696907
+          ],
+          "counts": {
+            "correct_current": 186,
+            "within_stale": 462
+          },
+          "k": 4,
+          "n": 648,
+          "stale_share_ci": [
+            0.9917537206104003,
+            1.0
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.32098765432098764,
+          "accuracy_ci": [
+            0.28618774561628024,
+            0.35789748882135075
+          ],
+          "counts": {
+            "correct_current": 208,
+            "within_stale": 440
+          },
+          "k": 6,
+          "n": 648,
+          "stale_share_ci": [
+            0.99134497522854,
+            1.0000000000000002
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.26080246913580246,
+          "accuracy_ci": [
+            0.22847618928787944,
+            0.29594804638309297
+          ],
+          "counts": {
+            "correct_current": 169,
+            "within_stale": 479
+          },
+          "k": 8,
+          "n": 648,
+          "stale_share_ci": [
+            0.9920440576290267,
+            1.0
+          ],
+          "stale_share_errors": 1.0
+        },
+        {
+          "accuracy": 0.2978395061728395,
+          "accuracy_ci": [
+            0.2639042647546676,
+            0.3341575086188639
+          ],
+          "counts": {
+            "correct_current": 193,
+            "within_stale": 455
+          },
+          "k": 10,
+          "n": 648,
+          "stale_share_ci": [
+            0.9916279169049645,
+            0.9999999999999999
+          ],
+          "stale_share_errors": 1.0
+        }
+      ],
+      "k0_gate_pass": true,
+      "key": "llama32_1b",
+      "label": "Llama-3.2-1B",
+      "model": "meta-llama/Llama-3.2-1B",
+      "taxonomy": {
+        "counts": {
+          "correct_current": 140,
+          "cross_variable": 77,
+          "within_stale": 431
+        },
+        "n": 648
+      },
+      "template_accuracy_at_cap": {
+        "arrow": 0.35185185185185186,
+        "current": 0.24537037037037038,
+        "latest": 0.2962962962962963
+      },
+      "template_range_at_cap": 0.10648148148148148,
+      "tokenizer_gate": {
+        "all_single_token_value_candidates": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "brown",
+          "gray",
+          "silver",
+          "orange",
+          "purple",
+          "yellow",
+          "cyan",
+          "apple",
+          "berry",
+          "pear",
+          "rock",
+          "folk",
+          "metal",
+          "dance",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "winter",
+          "early",
+          "late"
+        ],
+        "caps": {
+          "constraints": {
+            "post_current": 11,
+            "task_values": 30,
+            "variables": 15
+          },
+          "k_cap": 10,
+          "k_grid": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "n_lines": 15,
+          "target_n_lines": 15
+        },
+        "deterministic_rule": "Filter the fixed candidate lists in listed order by canonical bare, leading-space, and exact assignment-span single-token encoding; do not add post-hoc labels.",
+        "fixed_demo_single_token_gate": true,
+        "fixed_demo_values": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "brown",
+          "gray",
+          "silver"
+        ],
+        "model": "meta-llama/Llama-3.2-1B",
+        "reserved_demo_variables": [
+          "color",
+          "drink",
+          "mode",
+          "music",
+          "route",
+          "shape",
+          "sport",
+          "topic"
+        ],
+        "single_token_variables_before_reserved_filter": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "color",
+          "music",
+          "route",
+          "style",
+          "topic",
+          "mode",
+          "level",
+          "shape",
+          "fruit",
+          "drink",
+          "sport",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ],
+        "stage": "O-Part-D-tokenizer",
+        "task_values": [
+          "orange",
+          "purple",
+          "yellow",
+          "cyan",
+          "apple",
+          "berry",
+          "pear",
+          "rock",
+          "folk",
+          "metal",
+          "dance",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "winter",
+          "early",
+          "late"
+        ],
+        "tokenizer_class": "PreTrainedTokenizerFast",
+        "usable_variables": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "style",
+          "level",
+          "fruit",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ]
+      }
+    },
+    {
+      "cap": 10,
+      "cells": [
+        {
+          "accuracy": 0.9228395061728395,
+          "accuracy_ci": [
+            0.8997115239018947,
+            0.9409836982023219
+          ],
+          "counts": {
+            "correct_current": 598,
+            "other": 50
+          },
+          "k": 0,
+          "n": 648,
+          "stale_share_ci": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "stale_share_errors": 0.0
+        },
+        {
+          "accuracy": 0.8070987654320988,
+          "accuracy_ci": [
+            0.7749443353482606,
+            0.835633581435459
+          ],
+          "counts": {
+            "correct_current": 523,
+            "other": 12,
+            "within_stale": 113
+          },
+          "k": 2,
+          "n": 648,
+          "stale_share_ci": [
+            0.8396803879985666,
+            0.9442287738851058
+          ],
+          "stale_share_errors": 0.904
+        },
+        {
+          "accuracy": 0.8040123456790124,
+          "accuracy_ci": [
+            0.7716945724633066,
+            0.8327468828451996
+          ],
+          "counts": {
+            "correct_current": 521,
+            "other": 5,
+            "within_stale": 122
+          },
+          "k": 4,
+          "n": 648,
+          "stale_share_ci": [
+            0.9111437777951378,
+            0.9830682025247811
+          ],
+          "stale_share_errors": 0.9606299212598425
+        },
+        {
+          "accuracy": 0.7885802469135802,
+          "accuracy_ci": [
+            0.7554881432363476,
+            0.8182710046960922
+          ],
+          "counts": {
+            "correct_current": 511,
+            "other": 9,
+            "within_stale": 128
+          },
+          "k": 6,
+          "n": 648,
+          "stale_share_ci": [
+            0.879865004801234,
+            0.9650566609953366
+          ],
+          "stale_share_errors": 0.9343065693430657
+        },
+        {
+          "accuracy": 0.7422839506172839,
+          "accuracy_ci": [
+            0.7072494645727547,
+            0.774462761231486
+          ],
+          "counts": {
+            "correct_current": 481,
+            "other": 5,
+            "within_stale": 162
+          },
+          "k": 8,
+          "n": 648,
+          "stale_share_ci": [
+            0.9318357193568346,
+            0.987144960647652
+          ],
+          "stale_share_errors": 0.9700598802395209
+        },
+        {
+          "accuracy": 0.7407407407407407,
+          "accuracy_ci": [
+            0.7056504398699784,
+            0.7729935551966557
+          ],
+          "counts": {
+            "correct_current": 480,
+            "other": 7,
+            "within_stale": 161
+          },
+          "k": 10,
+          "n": 648,
+          "stale_share_ci": [
+            0.9165024380310176,
+            0.9796724493149369
+          ],
+          "stale_share_errors": 0.9583333333333334
+        }
+      ],
+      "k0_gate_pass": false,
+      "key": "gemma2_2b",
+      "label": "Gemma-2-2B",
+      "model": "google/gemma-2-2b",
+      "taxonomy": {
+        "counts": {
+          "correct_current": 164,
+          "cross_variable": 98,
+          "other": 4,
+          "within_stale": 382
+        },
+        "n": 648
+      },
+      "template_accuracy_at_cap": {
+        "arrow": 0.8148148148148148,
+        "current": 0.7453703703703703,
+        "latest": 0.6620370370370371
+      },
+      "template_range_at_cap": 0.15277777777777768,
+      "tokenizer_gate": {
+        "all_single_token_value_candidates": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "teal",
+          "brown",
+          "gray",
+          "silver",
+          "orange",
+          "purple",
+          "yellow",
+          "violet",
+          "indigo",
+          "cyan",
+          "coral",
+          "navy",
+          "beige",
+          "apple",
+          "grape",
+          "lemon",
+          "mango",
+          "peach",
+          "berry",
+          "melon",
+          "cherry",
+          "plum",
+          "pear",
+          "jazz",
+          "rock",
+          "folk",
+          "metal",
+          "blues",
+          "dance",
+          "piano",
+          "drums",
+          "guitar",
+          "violin",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "autumn",
+          "winter",
+          "morning",
+          "evening",
+          "monday",
+          "friday",
+          "early",
+          "late"
+        ],
+        "caps": {
+          "constraints": {
+            "post_current": 11,
+            "task_values": 54,
+            "variables": 15
+          },
+          "k_cap": 10,
+          "k_grid": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "n_lines": 15,
+          "target_n_lines": 15
+        },
+        "deterministic_rule": "Filter the fixed candidate lists in listed order by canonical bare, leading-space, and exact assignment-span single-token encoding; do not add post-hoc labels.",
+        "fixed_demo_single_token_gate": true,
+        "fixed_demo_values": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "teal",
+          "brown",
+          "gray"
+        ],
+        "model": "google/gemma-2-2b",
+        "reserved_demo_variables": [
+          "color",
+          "drink",
+          "mode",
+          "music",
+          "route",
+          "shape",
+          "sport",
+          "topic"
+        ],
+        "single_token_variables_before_reserved_filter": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "color",
+          "music",
+          "route",
+          "style",
+          "topic",
+          "mode",
+          "level",
+          "shape",
+          "fruit",
+          "drink",
+          "sport",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ],
+        "stage": "O-Part-D-tokenizer",
+        "task_values": [
+          "silver",
+          "orange",
+          "purple",
+          "yellow",
+          "violet",
+          "indigo",
+          "cyan",
+          "coral",
+          "navy",
+          "beige",
+          "apple",
+          "grape",
+          "lemon",
+          "mango",
+          "peach",
+          "berry",
+          "melon",
+          "cherry",
+          "plum",
+          "pear",
+          "jazz",
+          "rock",
+          "folk",
+          "metal",
+          "blues",
+          "dance",
+          "piano",
+          "drums",
+          "guitar",
+          "violin",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "autumn",
+          "winter",
+          "morning",
+          "evening",
+          "monday",
+          "friday",
+          "early",
+          "late"
+        ],
+        "tokenizer_class": "GemmaTokenizerFast",
+        "usable_variables": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "style",
+          "level",
+          "fruit",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ]
+      }
+    },
+    {
+      "cap": 10,
+      "cells": [
+        {
+          "accuracy": 0.3873456790123457,
+          "accuracy_ci": [
+            0.35060690547955825,
+            0.4254122506751578
+          ],
+          "counts": {
+            "correct_current": 251,
+            "other": 397
+          },
+          "k": 0,
+          "n": 648,
+          "stale_share_ci": [
+            0.0,
+            0.009583486778029367
+          ],
+          "stale_share_errors": 0.0
+        },
+        {
+          "accuracy": 0.23148148148148148,
+          "accuracy_ci": [
+            0.20064635694423033,
+            0.2654814947122161
+          ],
+          "counts": {
+            "correct_current": 150,
+            "other": 424,
+            "within_stale": 74
+          },
+          "k": 2,
+          "n": 648,
+          "stale_share_ci": [
+            0.12004863360319518,
+            0.18251994886807976
+          ],
+          "stale_share_errors": 0.14859437751004015
+        },
+        {
+          "accuracy": 0.19907407407407407,
+          "accuracy_ci": [
+            0.17014270642822824,
+            0.231552299738479
+          ],
+          "counts": {
+            "correct_current": 129,
+            "other": 500,
+            "within_stale": 19
+          },
+          "k": 4,
+          "n": 648,
+          "stale_share_ci": [
+            0.023559948953328535,
+            0.05646709961904463
+          ],
+          "stale_share_errors": 0.036608863198458574
+        },
+        {
+          "accuracy": 0.12962962962962962,
+          "accuracy_ci": [
+            0.10593425773573957,
+            0.1576903652386693
+          ],
+          "counts": {
+            "correct_current": 84,
+            "other": 556,
+            "within_stale": 8
+          },
+          "k": 6,
+          "n": 648,
+          "stale_share_ci": [
+            0.007204594008606027,
+            0.027737304847989107
+          ],
+          "stale_share_errors": 0.014184397163120567
+        },
+        {
+          "accuracy": 0.06635802469135803,
+          "accuracy_ci": [
+            0.049635498493215635,
+            0.0881916642393214
+          ],
+          "counts": {
+            "correct_current": 43,
+            "other": 593,
+            "within_stale": 12
+          },
+          "k": 8,
+          "n": 648,
+          "stale_share_ci": [
+            0.011382029277168158,
+            0.03434655641182568
+          ],
+          "stale_share_errors": 0.019834710743801654
+        },
+        {
+          "accuracy": 0.09722222222222222,
+          "accuracy_ci": [
+            0.0767292226002137,
+            0.12246255488445593
+          ],
+          "counts": {
+            "correct_current": 63,
+            "other": 555,
+            "within_stale": 30
+          },
+          "k": 10,
+          "n": 648,
+          "stale_share_ci": [
+            0.03615489385144503,
+            0.07226386278391994
+          ],
+          "stale_share_errors": 0.05128205128205128
+        }
+      ],
+      "k0_gate_pass": false,
+      "key": "gemma2_9b",
+      "label": "Gemma-2-9B",
+      "model": "google/gemma-2-9b",
+      "taxonomy": {
+        "counts": {
+          "correct_current": 17,
+          "cross_variable": 8,
+          "other": 447,
+          "within_stale": 176
+        },
+        "n": 648
+      },
+      "template_accuracy_at_cap": {
+        "arrow": 0.027777777777777776,
+        "current": 0.0,
+        "latest": 0.2638888888888889
+      },
+      "template_range_at_cap": 0.2638888888888889,
+      "tokenizer_gate": {
+        "all_single_token_value_candidates": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "teal",
+          "brown",
+          "gray",
+          "silver",
+          "orange",
+          "purple",
+          "yellow",
+          "violet",
+          "indigo",
+          "cyan",
+          "coral",
+          "navy",
+          "beige",
+          "apple",
+          "grape",
+          "lemon",
+          "mango",
+          "peach",
+          "berry",
+          "melon",
+          "cherry",
+          "plum",
+          "pear",
+          "jazz",
+          "rock",
+          "folk",
+          "metal",
+          "blues",
+          "dance",
+          "piano",
+          "drums",
+          "guitar",
+          "violin",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "autumn",
+          "winter",
+          "morning",
+          "evening",
+          "monday",
+          "friday",
+          "early",
+          "late"
+        ],
+        "caps": {
+          "constraints": {
+            "post_current": 11,
+            "task_values": 54,
+            "variables": 15
+          },
+          "k_cap": 10,
+          "k_grid": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "n_lines": 15,
+          "target_n_lines": 15
+        },
+        "deterministic_rule": "Filter the fixed candidate lists in listed order by canonical bare, leading-space, and exact assignment-span single-token encoding; do not add post-hoc labels.",
+        "fixed_demo_single_token_gate": true,
+        "fixed_demo_values": [
+          "red",
+          "blue",
+          "green",
+          "gold",
+          "black",
+          "white",
+          "pink",
+          "teal",
+          "brown",
+          "gray"
+        ],
+        "model": "google/gemma-2-9b",
+        "reserved_demo_variables": [
+          "color",
+          "drink",
+          "mode",
+          "music",
+          "route",
+          "shape",
+          "sport",
+          "topic"
+        ],
+        "single_token_variables_before_reserved_filter": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "color",
+          "music",
+          "route",
+          "style",
+          "topic",
+          "mode",
+          "level",
+          "shape",
+          "fruit",
+          "drink",
+          "sport",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ],
+        "stage": "O-Part-D-tokenizer",
+        "task_values": [
+          "silver",
+          "orange",
+          "purple",
+          "yellow",
+          "violet",
+          "indigo",
+          "cyan",
+          "coral",
+          "navy",
+          "beige",
+          "apple",
+          "grape",
+          "lemon",
+          "mango",
+          "peach",
+          "berry",
+          "melon",
+          "cherry",
+          "plum",
+          "pear",
+          "jazz",
+          "rock",
+          "folk",
+          "metal",
+          "blues",
+          "dance",
+          "piano",
+          "drums",
+          "guitar",
+          "violin",
+          "north",
+          "south",
+          "east",
+          "west",
+          "left",
+          "right",
+          "upper",
+          "lower",
+          "front",
+          "back",
+          "circle",
+          "square",
+          "triangle",
+          "oval",
+          "star",
+          "heart",
+          "large",
+          "small",
+          "fast",
+          "slow",
+          "spring",
+          "summer",
+          "autumn",
+          "winter",
+          "morning",
+          "evening",
+          "monday",
+          "friday",
+          "early",
+          "late"
+        ],
+        "tokenizer_class": "GemmaTokenizerFast",
+        "usable_variables": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "theta",
+          "sigma",
+          "omega",
+          "vector",
+          "style",
+          "level",
+          "fruit",
+          "animal",
+          "city",
+          "movie",
+          "book",
+          "game"
+        ]
+      }
+    }
+  ],
+  "stage": "O-Part-D"
+}

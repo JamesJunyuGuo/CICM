@@ -1,0 +1,25 @@
+{
+  "component_paths": 208,
+  "components_scanned": 104,
+  "identity_gate": {
+    "b1_max_abs_attention_preference": 0.0,
+    "b1_max_abs_final_gap": 0.0,
+    "b1_max_abs_qk_margin": 0.0,
+    "b1_prediction_changes": 0,
+    "b2_max_abs_attention_preference": 0.0,
+    "b2_max_abs_final_gap": 0.0,
+    "b2_max_abs_qk_margin": 0.0,
+    "b2_paths_checked": 208,
+    "b2_prediction_changes": 0
+  },
+  "model": "EleutherAI/pythia-160m",
+  "n_pairs": 96,
+  "split_counts": {
+    "discovery": 43,
+    "evaluation": 53
+  },
+  "targets": [
+    "L8H10",
+    "L8H2"
+  ]
+}

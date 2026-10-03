@@ -1,0 +1,44 @@
+{
+  "generated_by": "src/stage_l_paper_full_assets.py",
+  "inputs": {
+    "p0": "results/p0_qwen7b.summary.json",
+    "k1d": "results/stage_k/k1d_summary.json",
+    "l0": "results/stage_l/natural_factorial_otherdist_l0/openrouter_qwen25_7b_summary_merged.json",
+    "qwen_l1": "results/stage_l/natural_factorial_otherdist_l1/full/l1_summary.json",
+    "llama_l1": "results/stage_l/natural_factorial_otherdist_llama/l1/full/l1_summary.json",
+    "validity_l2": "results/stage_l/validity_l2/summary.json",
+    "geometry": "results/stage_l/geometry/summary.json",
+    "stage_g_circuit": "results/stage_g/circuit/full_r1_ai/summary.json",
+    "stage_g_ext_baseline": "results/stage_g/external/full_ai/v2/qwen_baseline/all/summary.json",
+    "stage_g_ext_arm_l": "results/stage_g/external/full_ai/v2/arm_l/all/summary.json",
+    "stage_g_ext_random": "results/stage_g/external/full_ai/v2/random_heads/all/summary.json",
+    "stage_e_scale": "results/figures/F8_openrouter_scale_sweep.data.json",
+    "stage_e_p0_errors": "results/stage_e/qwen_p0_errors.summary.json",
+    "stage_f_hard": "results/stage_f/hard_tier/sweep.summary.json",
+    "stage_k_mechanism": "results/stage_k/mech/k2k3b_summary.json"
+  },
+  "figures": [
+    "F1_task_overview.pdf",
+    "F2_behavioral_dose.pdf",
+    "F2_foundational_breakpoints.pdf",
+    "F3_format_effect.pdf",
+    "F4_factorial_heatmap.pdf",
+    "F5_selection_mechanism.pdf",
+    "F6_intervention_validity.pdf",
+    "F7_geometry_boundary.pdf",
+    "F8_circuit_localization.pdf",
+    "F_case_studies.pdf"
+  ],
+  "tables": [
+    "behavioral_evidence.tex",
+    "community_external_benchmarks.tex",
+    "factorial_cells.tex",
+    "hard_tier_breakpoints.tex",
+    "intervention_validity.tex",
+    "mechanism_results.tex"
+  ],
+  "case_ids": [
+    "stage_l_natfact_1_00000",
+    "stage_l_natfact_1_00015"
+  ]
+}

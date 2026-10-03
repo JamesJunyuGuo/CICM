@@ -1,0 +1,17 @@
+{
+  "stage": "k1b_matcher_validation",
+  "by_scenario": {
+    "dynamic_preference": {
+      "n": 150,
+      "forget_agreement": 0.9333333333333333,
+      "noforget_agreement": 0.9266666666666666,
+      "overall_agreement": 0.93
+    },
+    "instructional_forgetting": {
+      "n": 150,
+      "forget_agreement": 0.9333333333333333,
+      "noforget_agreement": 0.9133333333333333,
+      "overall_agreement": 0.9233333333333333
+    }
+  }
+}

@@ -1,0 +1,72 @@
+benchmark=entity_tracking arm=llama_baseline n_sample=10
+Audit purpose: inspect raw output, gold, v2 parse, and v2 error signature before trusting scores.
+
+--- sample 1 id=entity-565 task=boxes length=3
+gold: the sheet
+raw: "To track the boxes and answer the final masked statement, let's follow the sequence of operations:\n\n1. Box 0: radio, rock\n2. Box"
+pred: answer final masked statement and let s follow sequence of operations and to track boxes
+correct: 0 signature: other
+pred_items: ['answer final masked statement', 'let s follow sequence of operations', 'to track boxes'] gold_items: ['sheet']
+
+--- sample 2 id=entity-168 task=boxes length=5
+gold: nothing
+raw: 'The pot, the suit, the ticket, the leaf'
+pred: leaf and pot and suit and ticket
+correct: 0 signature: other
+pred_items: ['leaf', 'pot', 'suit', 'ticket'] gold_items: []
+
+--- sample 3 id=entity-227 task=boxes length=0
+gold: the dish
+raw: 'Box 0: nothing\nBox 1: cream\nBox 2: camera, tape\nBox 3: dish, cream\nBox 4:'
+pred: nothing
+correct: 0 signature: other
+pred_items: [] gold_items: ['dish']
+
+--- sample 4 id=entity-596 task=boxes length=3
+gold: the fish
+raw: 'cake, newspaper'
+pred: cake and newspaper
+correct: 0 signature: other
+pred_items: ['cake', 'newspaper'] gold_items: ['fish']
+
+--- sample 5 id=entity-137 task=boxes length=3
+gold: the shell
+raw: 'To find the missing contents of Box 4, we need to track the changes made to Box 4.\n\nInitially, Box 4 contains the chemical and the'
+pred: to find missing contents of box 4 and we need to track changes made to box 4
+correct: 0 signature: other
+pred_items: ['to find missing contents of box 4', 'we need to track changes made to box 4'] gold_items: ['shell']
+
+--- sample 6 id=entity-90 task=boxes length=1
+gold: the wheel
+raw: 'Box 0: coffee, gift, ball\nBox 1: coat, shoe\nBox 2: computer\nBox 3: string\nBox'
+pred: ball and coffee and gift
+correct: 0 signature: other
+pred_items: ['ball', 'coffee', 'gift'] gold_items: ['wheel']
+
+--- sample 7 id=entity-254 task=boxes length=3
+gold: nothing
+raw: "To track the boxes and answer the final masked statement, let's follow the given instructions step by step:\n\n1. Box 0 contains the apple and the shell"
+pred: answer final masked statement and let s follow given instructions step by step and to track boxes
+correct: 0 signature: other
+pred_items: ['answer final masked statement', 'let s follow given instructions step by step', 'to track boxes'] gold_items: []
+
+--- sample 8 id=entity-66 task=boxes length=1
+gold: the cigarette
+raw: 'cigarette and the tape and the tie'
+pred: cigarette and tape and tie
+correct: 0 signature: superseded
+pred_items: ['cigarette', 'tape', 'tie'] gold_items: ['cigarette']
+
+--- sample 9 id=entity-55 task=boxes length=0
+gold: nothing
+raw: 'Box 0: block\nBox 1: card, paper\nBox 2: \nBox 3: \nBox 4: meat, suit'
+pred: block
+correct: 0 signature: other
+pred_items: ['block'] gold_items: []
+
+--- sample 10 id=entity-3 task=boxes length=0
+gold: the fan
+raw: 'Box 0: boat, shoe, \nBox 1: camera, car, plane\nBox 2: cake, drink, chemical, stone\nBox'
+pred: boat and shoe
+correct: 0 signature: other
+pred_items: ['boat', 'shoe'] gold_items: ['fan']

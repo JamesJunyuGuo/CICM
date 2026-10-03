@@ -1,0 +1,8 @@
+{
+  "mismatch_counts": {},
+  "model": "EleutherAI/pythia-410m",
+  "n": 20,
+  "pass": true,
+  "task_sha256": "5e72a9aa32aba8fcf52c2f2be94854bb55ac63bff06d1aeda2979254386647b5",
+  "vocab_size": 50277
+}

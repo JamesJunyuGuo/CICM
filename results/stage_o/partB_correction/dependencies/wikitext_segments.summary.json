@@ -1,0 +1,13 @@
+{
+  "corpus_tokens": 2431839,
+  "dataset": "Salesforce/wikitext",
+  "model_tokenizer": "EleutherAI/pythia-160m",
+  "n_segments": 200,
+  "offset": 721003,
+  "out": "results/stage_o/partB_correction/dependencies/wikitext_segments.npy",
+  "seed": 20260818,
+  "segment_length": 512,
+  "selection": "one seeded offset followed by contiguous non-overlapping segments",
+  "split": "train",
+  "subset": "wikitext-2-raw-v1"
+}

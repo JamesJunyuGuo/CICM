@@ -1,0 +1,86 @@
+{
+  "candidate_stale_failures": 80,
+  "chosen_pair_count": 0,
+  "clean_evaluated": 80,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "rejected": {
+    "clean_not_current": 13
+  },
+  "requirements": "corrupt=within_stale; clean=current; equal chat-token length; aligned write/current spans",
+  "selection": {
+    "candidates": [
+      {
+        "balance_objective": 5,
+        "gate_pass": false,
+        "k": 2,
+        "n_current": 640,
+        "n_pairs": 1,
+        "n_within_stale": 5,
+        "per_seed": {
+          "29": 1
+        },
+        "per_template": {
+          "arrow": 1
+        }
+      },
+      {
+        "balance_objective": 8,
+        "gate_pass": false,
+        "k": 3,
+        "n_current": 636,
+        "n_pairs": 4,
+        "n_within_stale": 8,
+        "per_seed": {
+          "11": 3,
+          "47": 1
+        },
+        "per_template": {
+          "arrow": 3,
+          "current": 1
+        }
+      },
+      {
+        "balance_objective": 29,
+        "gate_pass": false,
+        "k": 4,
+        "n_current": 618,
+        "n_pairs": 26,
+        "n_within_stale": 29,
+        "per_seed": {
+          "11": 7,
+          "29": 5,
+          "47": 14
+        },
+        "per_template": {
+          "arrow": 12,
+          "current": 6,
+          "latest": 8
+        }
+      },
+      {
+        "balance_objective": 36,
+        "gate_pass": false,
+        "k": 5,
+        "n_current": 612,
+        "n_pairs": 36,
+        "n_within_stale": 36,
+        "per_seed": {
+          "11": 16,
+          "29": 9,
+          "47": 11
+        },
+        "per_template": {
+          "arrow": 20,
+          "current": 13,
+          "latest": 3
+        }
+      }
+    ],
+    "chosen": null,
+    "chosen_k": null,
+    "gate_pass": false
+  },
+  "split_counts": {},
+  "stage": "N-S-pairs",
+  "valid_pairs_all_k": 67
+}

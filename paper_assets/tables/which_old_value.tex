@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Most-recent-old responses, conditional on an old-value error.
+Qwen-7B pools 20/40/80-line prompts; the larger models use 320 lines.
+The first write is never returned in these cells.}
+\label{tab:which-old}
+\begin{tabular}{@{}lrrr@{}}\toprule
+Model & $k$ & Most recent old / old errors & Uniform reference \\
+\midrule
+Qwen2.5-7B & 2 & 54/54 (100.0\%) & 50.0\% \\
+Qwen2.5-7B & 4 & 92/113 (81.4\%) & 25.0\% \\
+Qwen2.5-7B & 8 & 72/164 (43.9\%) & 12.5\% \\
+Qwen2.5-72B & 64 & 7/11 (63.6\%) & 1.6\% \\
+Llama-3.1-70B & 64 & 8/16 (50.0\%) & 1.6\% \\
+GPT-4o & 64 & 3/7 (42.9\%) & 1.6\% \\
+\bottomrule\end{tabular}
+\end{table}

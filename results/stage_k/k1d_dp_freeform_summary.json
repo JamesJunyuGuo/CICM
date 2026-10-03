@@ -1,0 +1,20 @@
+{
+  "scenario": "dynamic_preference_freeform",
+  "n": 783,
+  "format": "freeform",
+  "forget_accuracy": 0.6934865900383141,
+  "forget_failures": 240,
+  "within_stale_failures": 197,
+  "within_stale_fraction": 0.8208333333333333,
+  "within_stale_ci": [
+    0.7708333333333334,
+    0.8708333333333333
+  ],
+  "error_counts": {
+    "within_stale": 197,
+    "other": 43
+  },
+  "noforget_reference_rate": 0.9106002554278416,
+  "judge_validation_agreement": 0.9,
+  "headline_allowed": true
+}

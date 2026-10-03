@@ -1,0 +1,6 @@
+{
+  "stage": "l2_intervention",
+  "status": "skipped_l1_gate_failed",
+  "l1_summary": "results/stage_l/l1_summary.json",
+  "pre_registered_reading": "L-0 produced no within-stale failures, so L-1 retention-vs-selection is not adjudicable. This is a behavioral-gate miss, not evidence for retention failure."
+}

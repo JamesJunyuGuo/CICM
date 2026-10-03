@@ -1,0 +1,85 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><style>
+ /* canvas 1000 px = \textwidth (5.5 in): 1 px = 0.396 pt; min font 18 px = 7.1 pt */
+ /* Style contract D: Arial, white, square corners, black ink, Office palette */
+ :root{--ink:#000;--muted:#404040;--hair:#BFBFBF;--cur:#2E7D5B;--old:#7B4FA0;--null:#D9D9D9;--grid:#D9D9D9}
+ *{box-sizing:border-box;margin:0;padding:0}
+ html,body{width:1000px;height:660px;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+ .wrap{width:1000px;height:660px;padding:10px 14px 6px}
+ h1{font-size:22px;font-weight:bold;line-height:1.15}
+ .sub{margin-top:3px;font-size:18px;color:var(--muted);line-height:1.22}
+ .sub b{color:var(--ink);font-weight:bold}
+ /* reading-moment strip */
+ .tl{position:relative;height:66px;margin:8px 0 2px}
+ .rail{position:absolute;left:50px;right:50px;top:16px;height:2px;background:#7F7F7F}
+ .pt{position:absolute;top:4px;width:26px;height:26px;background:#262626;color:#fff;font-size:17px;font-weight:bold;display:grid;place-items:center;transform:translateX(-50%)}
+ .pt.u{background:var(--cur)} .pt.o{background:var(--old)}
+ .pl{position:absolute;top:38px;font-size:18px;font-weight:bold;transform:translateX(-50%);white-space:nowrap;text-align:center;line-height:1.1}
+ .pl small{display:block;font-weight:normal;color:var(--muted);font-size:18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 22px;margin-top:12px}
+ .ptitle{font-size:20px;font-weight:bold;line-height:1.15}
+ .ptitle i{font-style:normal;font-weight:normal;color:var(--muted);font-size:18px;display:block;margin-top:1px}
+ svg{display:block} text{font-family:Arial,Helvetica,sans-serif} .tk{font-size:18px;fill:#262626} .al{font-size:18px;fill:var(--ink)} .gl{stroke:var(--grid)}
+ .legend{display:flex;gap:16px;margin-top:8px;font-size:18px;color:var(--ink);align-items:center;white-space:nowrap}
+ .legend svg{display:inline-block;vertical-align:middle;margin-right:5px}
+ .band{display:inline-block;width:22px;height:14px;background:var(--null);vertical-align:-2px;margin-right:6px;border:1px solid #BFBFBF}
+</style></head><body><div class="wrap">
+ <h1>As later context is read, retrieval drifts toward the old value while the current value stays decodable</h1>
+ <div class="sub">Pythia-160M: 121 failing dialogues (<b>orange</b>) vs. paired copies of the same dialogues without the conflict (<b>blue</b>), measured at four moments while reading. Above 0 favours the current value; bars: 95% intervals.</div>
+
+ <div class="tl"><div class="rail"></div>
+   <div class="pt u" style="left:8%">1</div><div class="pl" style="left:8%">right after the update<small>x = current is written</small></div>
+   <div class="pt" style="left:36%">2</div><div class="pl" style="left:36%">after later text<small>unrelated turns</small></div>
+   <div class="pt o" style="left:64%">3</div><div class="pl" style="left:64%">old value mentioned again<small>x = old (recalled)</small></div>
+   <div class="pt" style="left:92%">4</div><div class="pl" style="left:92%">at the final question<small>what is x?</small></div>
+ </div>
+
+ <div class="grid">
+  <div><div class="ptitle">(a) Which answer the model prefers<i>score for current minus old</i></div><svg id="A" width="470" height="160"></svg></div>
+  <div><div class="ptitle">(b) Where attention goes<i>log ratio, current over old</i></div><svg id="B" width="470" height="160"></svg></div>
+  <div><div class="ptitle">(c) How well the query matches each key<i>current minus old</i></div><svg id="C" width="470" height="160"></svg></div>
+  <div><div class="ptitle">(d) The current value stays decodable<i>probe score on failures</i></div><svg id="D" width="470" height="160"></svg></div>
+ </div>
+ <div class="legend" id="lg"></div>
+</div>
+<script>
+const CK=["1","2","3","4"];
+const D={
+ answer:{correct:[3.305,2.704,2.671,1.978],c95:[[3.119,3.495],[2.503,2.899],[2.443,2.91],[1.815,2.154]],stale:[0.841,-1.334,0.008,-2.416],s95:[[0.657,1.033],[-1.569,-1.086],[-0.302,0.339],[-2.603,-2.23]]},
+ attn:{correct:[0.113,-0.04,-0.586,-1.252],c95:[[0.091,0.136],[-0.052,-0.029],[-0.643,-0.533],[-1.306,-1.194]],stale:[0.017,-0.384,-0.881,-1.741],s95:[[0.005,0.03],[-0.419,-0.35],[-0.936,-0.832],[-1.796,-1.686]]},
+ qk:{correct:[0.413,-0.598,-0.998,-1.674],c95:[[0.36,0.467],[-0.643,-0.549],[-1.064,-0.936],[-1.75,-1.608]],stale:[0.095,-1.06,-1.283,-2.278],s95:[[0.044,0.147],[-1.12,-1.003],[-1.354,-1.219],[-2.355,-2.203]]},
+ probe:{score:[0.811,0.427,0.631,0.35],null95:[[0.043,0.225],[0.052,0.216],[0.054,0.222],[0.06,0.215]]}
+};
+const CUR="#2E7D5B", OLD="#7B4FA0", AX="#000", GRID="#D9D9D9";
+function mk(x,y,c,sq,r=5){return sq?`<rect x="${x-r}" y="${y-r}" width="${2*r}" height="${2*r}" fill="${c}" stroke="#fff" stroke-width="1"/>`:`<circle cx="${x}" cy="${y}" r="${r}" fill="${c}" stroke="#fff" stroke-width="1"/>`;}
+function frame(id,ymin,ymax,yticks,fmt){
+  const s=document.getElementById(id), W=470, H=160, p={l:56,r:12,t:10,b:32};
+  const x0=p.l,x1=W-p.r,y0=H-p.b,y1=p.t;
+  const X=i=>x0+28+i*((x1-x0-56)/3), Y=v=>y0-(v-ymin)/(ymax-ymin)*(y0-y1);
+  let h="";
+  for(const t of yticks) h+=`<line class="gl" x1="${x0}" x2="${x1}" y1="${Y(t)}" y2="${Y(t)}"/><line x1="${x0-4}" x2="${x0}" y1="${Y(t)}" y2="${Y(t)}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${x0-7}" y="${Y(t)+6}" text-anchor="end">${fmt?fmt(t):t}</text>`;
+  if(ymin<0&&ymax>0) h+=`<line x1="${x0}" x2="${x1}" y1="${Y(0)}" y2="${Y(0)}" stroke="#000" stroke-width="1.3"/>`;
+  h+=`<line x1="${x0}" x2="${x0}" y1="${y1}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/><line x1="${x0}" x2="${x1}" y1="${y0}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/>`;
+  CK.forEach((c,i)=>{h+=`<line x1="${X(i)}" x2="${X(i)}" y1="${y0}" y2="${y0+4}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${X(i)}" y="${y0+24}" text-anchor="middle" fill="#000" font-weight="bold">${c}</text>`;});
+  return {s,X,Y,h};
+}
+function series(f,vals,ci,color,sq){
+  let h=`<path d="${vals.map((v,i)=>(i?"L":"M")+f.X(i)+","+f.Y(v)).join(" ")}" fill="none" stroke="${color}" stroke-width="2.4"/>`;
+  vals.forEach((v,i)=>{const x=f.X(i);
+    if(ci) h+=`<line x1="${x}" x2="${x}" y1="${f.Y(ci[i][0])}" y2="${f.Y(ci[i][1])}" stroke="${color}" stroke-width="1.6"/><line x1="${x-5}" x2="${x+5}" y1="${f.Y(ci[i][0])}" y2="${f.Y(ci[i][0])}" stroke="${color}" stroke-width="1.6"/><line x1="${x-5}" x2="${x+5}" y1="${f.Y(ci[i][1])}" y2="${f.Y(ci[i][1])}" stroke="${color}" stroke-width="1.6"/>`;
+    h+=mk(x,f.Y(v),color,sq);});
+  return h;
+}
+function two(id,d,ymin,ymax,ticks){const f=frame(id,ymin,ymax,ticks); f.h+=series(f,d.correct,d.c95,CUR,false)+series(f,d.stale,d.s95,OLD,true); f.s.innerHTML=f.h;}
+two("A",D.answer,-3.2,4.0,[-2,0,2,4]);
+two("B",D.attn,-2.0,0.5,[-2,-1,0]);
+two("C",D.qk,-2.6,0.8,[-2,-1,0]);
+(function(){const f=frame("D",0,0.9,[0,0.25,0.5,0.75],t=>t.toFixed(2));
+  const n=D.probe.null95; f.h+=`<path d="M${f.X(0)},${f.Y(n[0][1])} ${n.map((r,i)=>"L"+f.X(i)+","+f.Y(r[1])).join(" ")} ${n.slice().reverse().map((r,i)=>"L"+f.X(3-i)+","+f.Y(r[0])).join(" ")} Z" fill="#D9D9D9"/>`;
+  f.h+=`<text class="tk" x="${f.X(3)-4}" y="${f.Y(0.14)+6}" text-anchor="end">chance</text>`;
+  f.h+=series(f,D.probe.score,null,OLD,true); f.s.innerHTML=f.h;})();
+document.getElementById("lg").innerHTML=
+ `<span><svg width="30" height="14"><line x1="0" x2="30" y1="7" y2="7" stroke="${CUR}" stroke-width="2.4"/>${mk(15,7,CUR,false,4.5)}</svg>paired dialogue, no conflict</span>`+
+ `<span><svg width="30" height="14"><line x1="0" x2="30" y1="7" y2="7" stroke="${OLD}" stroke-width="2.4"/>${mk(15,7,OLD,true,4.5)}</svg>failing dialogue (old-value answer)</span>`+
+ `<span><span class="band"></span>chance (shuffled labels)</span>`;
+</script>
+</body></html>

@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><style>
+ /* canvas 1000 px = \textwidth (5.5 in): 1 px = 0.396 pt; min font 18 px = 7.1 pt */
+ /* Style contract D: Arial, white, square corners, black ink, Office palette */
+ :root{--ink:#000;--muted:#404040;--hair:#BFBFBF;--cur:#2E7D5B;--old:#7B4FA0;--oth:#8C8C8C}
+ *{box-sizing:border-box;margin:0;padding:0}
+ html,body{width:1000px;height:470px;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+ .wrap{width:1000px;height:470px;padding:10px 14px 6px}
+ h1{font-size:22px;font-weight:bold;line-height:1.15}
+ .sub{margin-top:3px;font-size:18px;color:var(--muted);line-height:1.22}
+ .sub b{color:var(--ink);font-weight:bold}
+ .cols{display:grid;grid-template-columns:368px 368px 216px;gap:0 10px;margin-top:10px;align-items:start}
+ .ptitle{font-size:20px;font-weight:bold;line-height:1.15;white-space:nowrap}
+ .ptitle i{font-style:normal;font-weight:normal;color:var(--muted);font-size:18px;display:block;margin-top:2px}
+ svg{display:block} text{font-family:Arial,Helvetica,sans-serif}
+ .ans{display:grid;grid-auto-rows:34px;gap:2px;margin-top:8px}
+ .ans>div{display:grid;grid-template-columns:118px 1fr;align-items:center;gap:6px;font-size:18px;white-space:nowrap}
+ .alg{font-size:18px;color:var(--ink);margin-top:6px;white-space:normal;line-height:1.3}
+ .bar{display:flex;width:100%;height:16px;overflow:hidden;border:1px solid #7F7F7F}
+ .bar i{display:block;height:100%} .bar .c{background:var(--cur)} .bar .o{background:var(--old)} .bar .x{background:var(--oth)}
+ .legend{display:flex;gap:12px;font-size:18px;color:var(--ink);margin-top:4px;white-space:nowrap;align-items:center}
+ .legend svg{display:inline-block;vertical-align:middle;margin-right:4px}
+ .chip{display:inline-block;width:13px;height:13px;vertical-align:-1px;margin-right:4px;border:1px solid #404040}
+</style></head><body><div class="wrap">
+ <h1>In every model the pull toward the old value grows as the dialogue continues</h1>
+ <div class="sub">Shift relative to a same-length dialogue without the conflicting update; positive = <b>toward the old value</b>. Every model, every moment, both measures: positive.</div>
+ <div class="cols">
+  <div><div class="ptitle">(a) Attention<i>log-ratio shift toward the old value</i></div><svg id="A" width="368" height="290"></svg></div>
+  <div><div class="ptitle">(b) Query&ndash;key matching<i>score shift toward the old value</i></div><svg id="B" width="368" height="290"></svg></div>
+  <div><div class="ptitle">(c) Final answers<i>share of dialogues</i></div><div class="ans" id="ans"></div><div class="alg"><span class="chip" style="background:#2E7D5B"></span>correct <span class="chip" style="background:#7B4FA0;margin-left:8px"></span>old value <span class="chip" style="background:#8C8C8C;margin-left:8px"></span>other</div></div>
+ </div>
+ <div class="legend" id="lg"></div>
+</div>
+<script>
+const M=[
+ {name:"Pythia-160M",c:"#37474F",attn:[0.188,0.118,0.191,0.275],qk:[0.318,0.43,0.319,0.504],ans:[15,129,0]},
+ {name:"Pythia-1.4B",c:"#8C6D1F",attn:[0.222,0.259,0.248,0.287],qk:[0.276,0.305,0.25,0.286],ans:[143,1,0]},
+ {name:"Qwen2.5-1.5B",c:"#2F5597",attn:[0.354,0.507,0.506,0.597],qk:[0.354,0.511,0.518,0.581],ans:[136,8,0]},
+ {name:"Qwen2.5-7B",c:"#C0622D",attn:[0.291,0.342,0.479,0.581],qk:[0.289,0.347,0.491,0.563],ans:[71,1,0]},
+ {name:"Llama-3.1-8B",c:"#7B2D3B",attn:[0.264,0.268,0.36,0.435],qk:[0.269,0.27,0.37,0.394],ans:[70,2,0]},
+ {name:"Gemma-2-2B",c:"#595959",attn:[0.426,0.514,0.506,0.51],qk:[0.432,0.519,0.513,0.517],ans:[68,14,62]},
+];
+const XL=[["1","after","update"],["2","later","text"],["3","old value","recalled"],["4","final","question"]];
+const AX="#000", GRID="#D9D9D9";
+function mk(x,y,c,i,r=5){
+  switch(i%6){
+    case 0: return `<circle cx="${x}" cy="${y}" r="${r}" fill="${c}" stroke="#fff" stroke-width="1"/>`;
+    case 1: return `<rect x="${x-r}" y="${y-r}" width="${2*r}" height="${2*r}" fill="${c}" stroke="#fff" stroke-width="1"/>`;
+    case 2: return `<path d="M${x},${y-r-1} L${x+r+1},${y+r} L${x-r-1},${y+r} Z" fill="${c}" stroke="#fff" stroke-width="1"/>`;
+    case 3: return `<path d="M${x},${y-r-1.5} L${x+r+1.5},${y} L${x},${y+r+1.5} L${x-r-1.5},${y} Z" fill="${c}" stroke="#fff" stroke-width="1"/>`;
+    case 4: return `<path d="M${x-r},${y-r} L${x+r},${y+r} M${x-r},${y+r} L${x+r},${y-r}" stroke="${c}" stroke-width="2.4" fill="none"/>`;
+    default: return `<path d="M${x},${y+r+1} L${x+r+1},${y-r} L${x-r-1},${y-r} Z" fill="${c}" stroke="#fff" stroke-width="1"/>`;
+  }
+}
+function chart(id,key){
+  const s=document.getElementById(id), W=368, H=290, p={l:52,r:30,t:12,b:80};
+  const x0=p.l,x1=W-p.r,y0=H-p.b,y1=p.t;
+  const X=i=>x0+26+i*((x1-x0-52)/3), Y=v=>y0-(v/0.65)*(y0-y1);
+  let h="";
+  for(const t of [0,0.2,0.4,0.6]) h+=`<line x1="${x0}" x2="${x1}" y1="${Y(t)}" y2="${Y(t)}" stroke="${GRID}"/><line x1="${x0-4}" x2="${x0}" y1="${Y(t)}" y2="${Y(t)}" stroke="${AX}" stroke-width="1.2"/><text x="${x0-7}" y="${Y(t)+6}" text-anchor="end" font-size="18" fill="#262626">${t.toFixed(1)}</text>`;
+  h+=`<line x1="${x0}" x2="${x0}" y1="${y1}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/><line x1="${x0}" x2="${x1}" y1="${y0}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/>`;
+  XL.forEach(([n,l1,l2],i)=>{h+=`<line x1="${X(i)}" x2="${X(i)}" y1="${y0}" y2="${y0+4}" stroke="${AX}" stroke-width="1.2"/><text x="${X(i)}" y="${y0+24}" text-anchor="middle" font-size="18" font-weight="bold" fill="#000">${n}</text><text x="${X(i)}" y="${y0+45}" text-anchor="middle" font-size="18" fill="#404040">${l1}</text><text x="${X(i)}" y="${y0+65}" text-anchor="middle" font-size="18" fill="#404040">${l2}</text>`;});
+  M.forEach((m,mi)=>{const v=m[key];
+    h+=`<path d="${v.map((y,i)=>(i?"L":"M")+X(i)+","+Y(y)).join(" ")}" fill="none" stroke="${m.c}" stroke-width="2.4"/>`;
+    v.forEach((y,i)=>{h+=mk(X(i),Y(y),m.c,mi);});});
+  s.innerHTML=h;
+}
+chart("A","attn"); chart("B","qk");
+let ans="",lg="";
+M.forEach((m,mi)=>{const t=m.ans[0]+m.ans[1]+m.ans[2];
+  ans+=`<div><span style="color:${m.c};font-weight:bold">${m.name}</span><div class="bar"><i class="c" style="width:${100*m.ans[0]/t}%"></i><i class="o" style="width:${100*m.ans[1]/t}%"></i><i class="x" style="width:${100*m.ans[2]/t}%"></i></div></div>`;
+  lg+=`<span><svg width="28" height="14"><line x1="0" x2="28" y1="7" y2="7" stroke="${m.c}" stroke-width="2.4"/>${mk(14,7,m.c,mi,4.5)}</svg>${m.name}</span>`;});
+document.getElementById("ans").innerHTML=ans; document.getElementById("lg").innerHTML=lg;
+</script>
+</body></html>

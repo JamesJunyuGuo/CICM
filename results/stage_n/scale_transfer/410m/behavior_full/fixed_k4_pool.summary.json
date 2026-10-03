@@ -1,0 +1,40 @@
+{
+  "fixed_k_gate": {
+    "counts": {
+      "correct_current": 453,
+      "other": 1,
+      "within_stale": 194
+    },
+    "fixed_k": 4,
+    "gate_pass": true,
+    "n_single_variable": 648,
+    "per_template": {
+      "arrow": {
+        "correct_current": 121,
+        "within_stale": 95
+      },
+      "current": {
+        "correct_current": 149,
+        "within_stale": 67
+      },
+      "latest": {
+        "correct_current": 183,
+        "other": 1,
+        "within_stale": 32
+      }
+    },
+    "rule": "At fixed k=4, single-variable correct>=150 and within-stale>=120, with correct>=25 and within-stale>=25 in each of arrow/current/latest."
+  },
+  "matched_pool": {
+    "counts": {
+      "correct_current": 194,
+      "within_stale": 194
+    },
+    "n": 388,
+    "path": "results/stage_n/scale_transfer/410m/behavior_full/matched_pool_k4.jsonl",
+    "strata": 9
+  },
+  "model": "EleutherAI/pythia-410m",
+  "pool_written": true,
+  "rows": "results/stage_n/scale_transfer/410m/behavior_full/rows.jsonl"
+}

@@ -1,0 +1,35 @@
+{
+  "n_paired": 0,
+  "arm_counts": {
+    "identity": {
+      "counts": {},
+      "within_stale_rate": NaN,
+      "correct_rate": NaN
+    },
+    "random_matched_norm": {
+      "counts": {},
+      "within_stale_rate": NaN,
+      "correct_rate": NaN
+    },
+    "targeted": {
+      "counts": {},
+      "within_stale_rate": NaN,
+      "correct_rate": NaN
+    }
+  },
+  "identity_gate_mismatches": 0,
+  "targeted_minus_random_reduction": {
+    "n": 0,
+    "mean": NaN,
+    "ci": [
+      NaN,
+      NaN
+    ]
+  },
+  "l2_gate_pass": false,
+  "stage": "l2_intervention",
+  "status": "complete",
+  "alpha": 1.0,
+  "hidden_layer": 24,
+  "hook_layer": 23
+}

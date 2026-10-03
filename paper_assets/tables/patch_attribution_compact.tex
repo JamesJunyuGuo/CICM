@@ -1,0 +1,19 @@
+\begin{table}[tbp]
+\centering
+\small
+\setlength{\tabcolsep}{7pt}
+\caption{Clean-run patching localizes the Qwen2.5-7B answer difference to late
+computation and old-assignment keys.}
+\label{tab:patch-attribution}
+\begin{tabular}{llr}
+\toprule
+Locus & Patched component & mean $\Delta R$ \\
+\midrule
+Residual stream & early / middle & -0.005 \\
+Residual stream & late & \cellcolor{blue!55} 0.781 \\
+QK key & old assignments & \cellcolor{blue!35} 0.492 \\
+QK key & current write & \cellcolor{red!16} $-0.213$ \\
+Head output & selection-head proxy & \cellcolor{blue!25} 0.360 \\
+\bottomrule
+\end{tabular}
+\end{table}

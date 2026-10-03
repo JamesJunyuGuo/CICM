@@ -1,0 +1,63 @@
+{
+  "status": "frozen",
+  "verdict": "controlled_natural_dialogue_retrieval_correction_only",
+  "canonical_hardware": "NVIDIA H100 80GB HBM3",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "dataset_n": 1200,
+  "calibration_n": 240,
+  "confirmation_n": 960,
+  "selected_beta": 8.0,
+  "route_audit_accuracy": 1.0,
+  "retrieval": {
+    "h100": {
+      "baseline_accuracy": 0.37604166666666666,
+      "routed_accuracy": 0.6885416666666667,
+      "net_accuracy_gain": 0.3125,
+      "clustered_bootstrap_ci95": [
+        0.27880753968253974,
+        0.357623015873016
+      ],
+      "correct_preservation": 1.0,
+      "within_stale_correction": 0.4271047227926078,
+      "cross_slot_correction": 0.8472222222222222,
+      "positive_factorial_cells": 6,
+      "factorial_cells": 6,
+      "random_position_gain_mean": 0.0014973958333333334,
+      "random_position_gain_interval95": [
+        -0.004166666666666667,
+        0.005859375
+      ],
+      "opposite_gain": -0.16041666666666668
+    },
+    "a100_replication": {
+      "baseline_accuracy": 0.36875,
+      "routed_accuracy": 0.6885416666666667,
+      "net_accuracy_gain": 0.31979166666666664,
+      "clustered_bootstrap_ci95": [
+        0.2864246031746031,
+        0.3660416666666666
+      ],
+      "correct_preservation": 1.0
+    }
+  },
+  "derived_decision_boundary": {
+    "h100_net_accuracy_gain": -0.004166666666666667,
+    "h100_clustered_bootstrap_ci95": [
+      -0.017859126984126984,
+      0.002380952380952381
+    ],
+    "a100_net_accuracy_gain": -0.010416666666666666,
+    "a100_clustered_bootstrap_ci95": [
+      -0.02365277777777778,
+      -0.0020615079365079478
+    ]
+  },
+  "paper_claim": "A training-free attention-routing intervention improves direct current-binding retrieval in controlled natural dialogue on Qwen2.5-7B-Instruct while preserving initially correct retrievals. It does not improve the derived decision task.",
+  "excluded_claims": [
+    "unrestricted-dialogue deployment",
+    "closed-API deployment",
+    "arbitrary downstream decision improvement",
+    "cross-model correction",
+    "uniqueness of the frozen head set"
+  ]
+}

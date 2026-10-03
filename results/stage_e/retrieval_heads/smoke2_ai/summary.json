@@ -1,0 +1,151 @@
+{
+  "stage": "E",
+  "task": "E2f_retrieval_head_overlap",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dtype": "float32",
+  "seed": 30,
+  "n_examples": 20,
+  "n_per_length": 100,
+  "limit": 20,
+  "lengths": [
+    40,
+    80
+  ],
+  "copied_answer_tokens": 64,
+  "accuracy": 0.7,
+  "retrieval_top16": [
+    {
+      "layer": 16,
+      "head": 7,
+      "score": 0.90625
+    },
+    {
+      "layer": 16,
+      "head": 3,
+      "score": 0.796875
+    },
+    {
+      "layer": 16,
+      "head": 12,
+      "score": 0.625
+    },
+    {
+      "layer": 16,
+      "head": 2,
+      "score": 0.546875
+    },
+    {
+      "layer": 16,
+      "head": 0,
+      "score": 0.546875
+    },
+    {
+      "layer": 9,
+      "head": 13,
+      "score": 0.4375
+    },
+    {
+      "layer": 11,
+      "head": 9,
+      "score": 0.40625
+    },
+    {
+      "layer": 9,
+      "head": 8,
+      "score": 0.375
+    },
+    {
+      "layer": 11,
+      "head": 12,
+      "score": 0.375
+    },
+    {
+      "layer": 16,
+      "head": 9,
+      "score": 0.34375
+    },
+    {
+      "layer": 9,
+      "head": 10,
+      "score": 0.28125
+    },
+    {
+      "layer": 13,
+      "head": 13,
+      "score": 0.171875
+    },
+    {
+      "layer": 13,
+      "head": 6,
+      "score": 0.078125
+    },
+    {
+      "layer": 16,
+      "head": 6,
+      "score": 0.078125
+    },
+    {
+      "layer": 13,
+      "head": 2,
+      "score": 0.0625
+    },
+    {
+      "layer": 16,
+      "head": 8,
+      "score": 0.046875
+    }
+  ],
+  "p_last_top8": [
+    {
+      "layer": 1,
+      "head": 5,
+      "score": 0.7740198969841003
+    },
+    {
+      "layer": 23,
+      "head": 11,
+      "score": 0.7542853951454163
+    },
+    {
+      "layer": 22,
+      "head": 2,
+      "score": 0.7216494083404541
+    },
+    {
+      "layer": 0,
+      "head": 1,
+      "score": 0.7054194808006287
+    },
+    {
+      "layer": 20,
+      "head": 23,
+      "score": 0.6941344141960144
+    },
+    {
+      "layer": 22,
+      "head": 1,
+      "score": 0.6891862750053406
+    },
+    {
+      "layer": 19,
+      "head": 19,
+      "score": 0.6838968396186829
+    },
+    {
+      "layer": 18,
+      "head": 8,
+      "score": 0.6825476288795471
+    }
+  ],
+  "overlap_heads": [],
+  "overlap_count": 0,
+  "spearman_retrieval_vs_p_last_all_heads": NaN,
+  "verdict": "disjoint",
+  "artifacts": {
+    "examples": "results/stage_e/retrieval_heads/smoke2_ai/examples.jsonl",
+    "fresh_simple_data": "results/stage_e/retrieval_heads/smoke2_ai/fresh_simple_seed30.jsonl",
+    "stage_a_npz": "results/stage_a/extract_stable.npz",
+    "stage_a_index": "results/stage_a/extract_stable_index.jsonl",
+    "stage_a_a1": "results/stage_a/a1_stable_summary.json"
+  }
+}

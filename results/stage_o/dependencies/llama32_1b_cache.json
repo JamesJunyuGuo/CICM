@@ -1,0 +1,5 @@
+{
+  "cache_dir": "/anvil/scratch/x-jguo7/hf_cache/hub",
+  "model": "meta-llama/Llama-3.2-1B",
+  "snapshot": "/anvil/scratch/x-jguo7/hf_cache/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08"
+}

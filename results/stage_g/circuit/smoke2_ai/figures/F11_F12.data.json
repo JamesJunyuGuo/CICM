@@ -1,0 +1,94 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dtype": "float32",
+  "pairs": "results/stage_g/circuit/smoke2_ai/pairs.jsonl",
+  "n_pairs": 4,
+  "top_heads": [
+    {
+      "layer": 1,
+      "head": 5
+    },
+    {
+      "layer": 23,
+      "head": 11
+    },
+    {
+      "layer": 22,
+      "head": 2
+    },
+    {
+      "layer": 0,
+      "head": 1
+    },
+    {
+      "layer": 22,
+      "head": 1
+    },
+    {
+      "layer": 18,
+      "head": 8
+    },
+    {
+      "layer": 19,
+      "head": 0
+    },
+    {
+      "layer": 1,
+      "head": 2
+    }
+  ],
+  "hard_gates": {
+    "self_patching_identity": true,
+    "self_patching_identity_tolerance": 2e-05
+  },
+  "patching": {
+    "residual_layers": [
+      0,
+      8,
+      16,
+      23
+    ],
+    "component_effects": [
+      {
+        "component": "residual_stream_early_mid",
+        "n": 12,
+        "delta_recovery_mean": 0.32291312738113753,
+        "delta_recovery_median": 0.0002641301611503841
+      },
+      {
+        "component": "residual_stream_late",
+        "n": 4,
+        "delta_recovery_mean": 1.0,
+        "delta_recovery_median": 1.0
+      },
+      {
+        "component": "selection_head_attention_pattern_proxy",
+        "n": 4,
+        "delta_recovery_mean": -0.00019277932005934417,
+        "delta_recovery_median": -0.0002137874034815468
+      }
+    ]
+  },
+  "geometry": {
+    "baseline": {
+      "mean_current_minus_stale_qk": -0.866026796400547,
+      "median_current_minus_stale_qk": -1.4798039197921753,
+      "mean_query_identity_alignment": 0.17219097283668816,
+      "mean_query_recency_alignment": -0.027390018163714558,
+      "mean_identity_key_cosine": 0.9579061700496823,
+      "mean_current_stale_key_cosine": 0.9770036358386278,
+      "n_head_examples": 32
+    },
+    "arm_l": {}
+  },
+  "ov_sanity": {
+    "n": 32,
+    "mean_value_token_logit": -0.0775856614618533,
+    "mean_gold_token_logit": -0.052823624977463624,
+    "mean_answered_stale_token_logit": -0.027276213420918793
+  },
+  "limitations": [
+    "Attention-pattern patching is reported as an allocation proxy; residual stream patching uses actual activation patch hooks.",
+    "Q/K geometry is measured on the first token of each value span."
+  ]
+}

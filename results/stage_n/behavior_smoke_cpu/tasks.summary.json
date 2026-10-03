@@ -1,0 +1,61 @@
+{
+  "k_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "model": "EleutherAI/pythia-160m",
+  "n": 216,
+  "n_per_aggregated_cell": 6,
+  "n_per_seed_cell": 2,
+  "prompt_token_range": [
+    98,
+    177
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "single_token_values": [
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "23",
+    "24",
+    "25",
+    "26",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39"
+  ],
+  "templates": [
+    "arrow",
+    "current",
+    "latest"
+  ],
+  "variants": [
+    "single",
+    "multi"
+  ]
+}

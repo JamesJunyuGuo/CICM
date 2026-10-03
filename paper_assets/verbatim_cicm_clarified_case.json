@@ -1,0 +1,377 @@
+{
+  "found": true,
+  "selection_rule": "First lexicographic source ID with a Qwen old-value response and GPT-4o correct on the same legacy-near combined or clean prompt. An explicit historical mention must be present; combined wins a within-source tie. This illustrative selection does not choose the quantitative cohort.",
+  "source_id": "stage_l_natfact_1_00013",
+  "id": "stage_l_natfact_1_00013__revision_legacy__combined",
+  "gold": "reading",
+  "stale_values": [
+    "visual"
+  ],
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in an ongoing preference-planning conversation."
+    },
+    {
+      "role": "user",
+      "content": "I'd like to talk about how I usually learn best."
+    },
+    {
+      "role": "assistant",
+      "content": "Of course! Let's explore your preferred way of absorbing information."
+    },
+    {
+      "role": "user",
+      "content": "I think visual works best for me overall."
+    },
+    {
+      "role": "assistant",
+      "content": "That's helpful to hear, and I'll keep it in mind."
+    },
+    {
+      "role": "user",
+      "content": "I used to have a different approach, but I've changed recently."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that your preferences might evolve over time."
+    },
+    {
+      "role": "user",
+      "content": "I actually prefer reading when I'm trying to understand something new."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting me know how you like to approach learning."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes it depends on the subject for me."
+    },
+    {
+      "role": "assistant",
+      "content": "That's understandable; different topics can call for different methods."
+    },
+    {
+      "role": "user",
+      "content": "I used to have a different approach, but I've changed recently."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that your preferences might evolve over time."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes it depends on the subject for me."
+    },
+    {
+      "role": "assistant",
+      "content": "That's understandable; different topics can call for different methods."
+    },
+    {
+      "role": "user",
+      "content": "I used to have a different approach, but I've changed recently."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that your preferences might evolve over time."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes it depends on the subject for me."
+    },
+    {
+      "role": "assistant",
+      "content": "That's understandable; different topics can call for different methods."
+    },
+    {
+      "role": "user",
+      "content": "I used to have a different approach, but I've changed recently."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that your preferences might evolve over time."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes it depends on the subject for me."
+    },
+    {
+      "role": "assistant",
+      "content": "That's understandable; different topics can call for different methods."
+    },
+    {
+      "role": "user",
+      "content": "I used to have a different approach, but I've changed recently."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that your preferences might evolve over time."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes it depends on the subject for me."
+    },
+    {
+      "role": "assistant",
+      "content": "That's understandable; different topics can call for different methods."
+    },
+    {
+      "role": "user",
+      "content": "I used to have a different approach, but I've changed recently."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that your preferences might evolve over time."
+    },
+    {
+      "role": "user",
+      "content": "Switch my music category to blues."
+    },
+    {
+      "role": "assistant",
+      "content": "The update is complete."
+    },
+    {
+      "role": "user",
+      "content": "Can you set my meal style to vegetarian?"
+    },
+    {
+      "role": "assistant",
+      "content": "Absolutely, I've saved your updated selection."
+    },
+    {
+      "role": "user",
+      "content": "I'd like to update my preference to electronic."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it, your preference has been updated accordingly."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes it depends on the subject for me."
+    },
+    {
+      "role": "assistant",
+      "content": "That's understandable; different topics can call for different methods."
+    },
+    {
+      "role": "user",
+      "content": "I used to have a different approach, but I've changed recently."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that your preferences might evolve over time."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes it depends on the subject for me."
+    },
+    {
+      "role": "assistant",
+      "content": "That's understandable; different topics can call for different methods."
+    },
+    {
+      "role": "user",
+      "content": "For the record, visual was an earlier choice for my learning style, and is no longer current."
+    },
+    {
+      "role": "assistant",
+      "content": "Understood. I will keep that context in mind while following your updates."
+    },
+    {
+      "role": "user",
+      "content": "For my learning style specifically, what value did I set in my most recent explicit update? Later mentions of earlier choices are not updates. Ignore preferences for other slots. Reply with only the value."
+    }
+  ],
+  "value_mentions": [
+    {
+      "binding_index": 0,
+      "value": "visual",
+      "slot": "learning_style",
+      "is_current": false,
+      "message_index": 3,
+      "role": "user",
+      "char_start": 8,
+      "char_end": 14,
+      "mention_kind": "binding_update",
+      "distance_bin": "far"
+    },
+    {
+      "binding_index": 1,
+      "value": "reading",
+      "slot": "learning_style",
+      "is_current": true,
+      "message_index": 7,
+      "role": "user",
+      "char_start": 18,
+      "char_end": 25,
+      "mention_kind": "binding_update",
+      "distance_bin": "far"
+    },
+    {
+      "binding_index": 0,
+      "value": "visual",
+      "slot": "learning_style",
+      "is_current": false,
+      "message_index": 41,
+      "role": "user",
+      "char_start": 16,
+      "char_end": 22,
+      "mention_kind": "stale_reminder",
+      "distance_bin": "near"
+    }
+  ],
+  "distractor_updates": [
+    {
+      "slot": "music_genre",
+      "value": "blues",
+      "message_index": 29,
+      "role": "user",
+      "char_start": 28,
+      "char_end": 33,
+      "distance_bin": "mid"
+    },
+    {
+      "slot": "diet",
+      "value": "vegetarian",
+      "message_index": 31,
+      "role": "user",
+      "char_start": 29,
+      "char_end": 39,
+      "distance_bin": "mid"
+    },
+    {
+      "slot": "music_genre",
+      "value": "electronic",
+      "message_index": 33,
+      "role": "user",
+      "char_start": 36,
+      "char_end": 46,
+      "distance_bin": "mid"
+    }
+  ],
+  "competition": {
+    "target_current": {
+      "type": "target_current",
+      "slot": "learning_style",
+      "value": "reading",
+      "message_index": 7,
+      "binding_index": 1,
+      "distance_messages_to_query": 36,
+      "distance_bin": "far",
+      "mention_kind": "binding_update"
+    },
+    "same_slot_stale": [
+      {
+        "type": "same_slot_stale",
+        "slot": "learning_style",
+        "value": "visual",
+        "message_index": 3,
+        "binding_index": 0,
+        "distance_messages_to_query": 40,
+        "distance_bin": "far",
+        "mention_kind": "binding_update"
+      },
+      {
+        "type": "same_slot_stale",
+        "slot": "learning_style",
+        "value": "visual",
+        "message_index": 41,
+        "binding_index": 0,
+        "distance_messages_to_query": 2,
+        "distance_bin": "near",
+        "mention_kind": "stale_reminder"
+      }
+    ],
+    "same_slot_stale_nearest": {
+      "type": "same_slot_stale",
+      "slot": "learning_style",
+      "value": "visual",
+      "message_index": 41,
+      "binding_index": 0,
+      "distance_messages_to_query": 2,
+      "distance_bin": "near",
+      "mention_kind": "stale_reminder"
+    },
+    "recent_other_slot": [
+      {
+        "type": "recent_other_slot",
+        "slot": "music_genre",
+        "value": "electronic",
+        "message_index": 33,
+        "distance_messages_to_query": 10,
+        "distance_bin": "mid",
+        "recency_rank_from_query": 1
+      },
+      {
+        "type": "recent_other_slot",
+        "slot": "diet",
+        "value": "vegetarian",
+        "message_index": 31,
+        "distance_messages_to_query": 12,
+        "distance_bin": "mid",
+        "recency_rank_from_query": 2
+      },
+      {
+        "type": "recent_other_slot",
+        "slot": "music_genre",
+        "value": "blues",
+        "message_index": 29,
+        "distance_messages_to_query": 14,
+        "distance_bin": "mid",
+        "recency_rank_from_query": 3
+      }
+    ],
+    "recent_other_slot_nearest": {
+      "type": "recent_other_slot",
+      "slot": "music_genre",
+      "value": "electronic",
+      "message_index": 33,
+      "distance_messages_to_query": 10,
+      "distance_bin": "mid",
+      "recency_rank_from_query": 1
+    },
+    "competitor_types": [
+      "same_slot_stale",
+      "recent_other_slot"
+    ],
+    "factorial_cell": {
+      "same_slot_stale_distance_bin": "near",
+      "recent_other_slot_distance_bin": "mid",
+      "target_current_distance_bin": "far"
+    }
+  },
+  "revision": {
+    "version": "cicm-validity-v1",
+    "design": "legacy",
+    "variant": "combined",
+    "pair_id": "stage_l_natfact_1_00013__legacy",
+    "source_sha256": "ec9e7dd4fafcc798676114838530fa8f90b7d588e17c42f9e357c2e83fa47758",
+    "changed_message_indices": [
+      41,
+      43
+    ],
+    "source_message_count": 44,
+    "same_message_count": true,
+    "gold_unchanged": true,
+    "messages_sha256": "910f710e1daca332104eb5ca880c2a99b3c2b221ff39d10b6262dd3f81f85d87"
+  },
+  "responses": {
+    "qwen7b": {
+      "response": "visual",
+      "label": "within_stale",
+      "finish_reason": "stop",
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "request_sha256": "87a486c42de54d356992aef90f24d95cd552a5ae2413c990f5eaf5e84745fa74"
+    },
+    "gpt4o": {
+      "response": "Reading",
+      "label": "correct_current",
+      "finish_reason": "stop",
+      "model": "openai/gpt-4o",
+      "request_sha256": "94c4130b55e3cd373d1ad69b51641293a06d5b4944aef2f0de87dcc4bf15bfe9"
+    }
+  }
+}

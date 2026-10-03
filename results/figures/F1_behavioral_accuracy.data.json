@@ -1,0 +1,132 @@
+{
+  "llama": [
+    {
+      "accuracy": 0.7,
+      "condition": "interference",
+      "interference_load": 2,
+      "n": 100,
+      "n_lines": 20
+    },
+    {
+      "accuracy": 0.49,
+      "condition": "interference",
+      "interference_load": 4,
+      "n": 100,
+      "n_lines": 20
+    },
+    {
+      "accuracy": 0.35,
+      "condition": "interference",
+      "interference_load": 8,
+      "n": 100,
+      "n_lines": 20
+    },
+    {
+      "accuracy": 0.55,
+      "condition": "interference",
+      "interference_load": 2,
+      "n": 100,
+      "n_lines": 40
+    },
+    {
+      "accuracy": 0.31,
+      "condition": "interference",
+      "interference_load": 4,
+      "n": 100,
+      "n_lines": 40
+    },
+    {
+      "accuracy": 0.38,
+      "condition": "interference",
+      "interference_load": 8,
+      "n": 100,
+      "n_lines": 40
+    },
+    {
+      "accuracy": 0.37,
+      "condition": "interference",
+      "interference_load": 2,
+      "n": 100,
+      "n_lines": 80
+    },
+    {
+      "accuracy": 0.22,
+      "condition": "interference",
+      "interference_load": 4,
+      "n": 100,
+      "n_lines": 80
+    },
+    {
+      "accuracy": 0.23,
+      "condition": "interference",
+      "interference_load": 8,
+      "n": 100,
+      "n_lines": 80
+    }
+  ],
+  "qwen": [
+    {
+      "accuracy": 0.91,
+      "condition": "interference",
+      "interference_load": 2,
+      "n": 100,
+      "n_lines": 20
+    },
+    {
+      "accuracy": 0.66,
+      "condition": "interference",
+      "interference_load": 4,
+      "n": 100,
+      "n_lines": 20
+    },
+    {
+      "accuracy": 0.51,
+      "condition": "interference",
+      "interference_load": 8,
+      "n": 100,
+      "n_lines": 20
+    },
+    {
+      "accuracy": 0.85,
+      "condition": "interference",
+      "interference_load": 2,
+      "n": 100,
+      "n_lines": 40
+    },
+    {
+      "accuracy": 0.64,
+      "condition": "interference",
+      "interference_load": 4,
+      "n": 100,
+      "n_lines": 40
+    },
+    {
+      "accuracy": 0.45,
+      "condition": "interference",
+      "interference_load": 8,
+      "n": 100,
+      "n_lines": 40
+    },
+    {
+      "accuracy": 0.7,
+      "condition": "interference",
+      "interference_load": 2,
+      "n": 100,
+      "n_lines": 80
+    },
+    {
+      "accuracy": 0.57,
+      "condition": "interference",
+      "interference_load": 4,
+      "n": 100,
+      "n_lines": 80
+    },
+    {
+      "accuracy": 0.38,
+      "condition": "interference",
+      "interference_load": 8,
+      "n": 100,
+      "n_lines": 80
+    }
+  ]
+}

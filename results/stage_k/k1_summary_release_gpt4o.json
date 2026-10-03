@@ -1,0 +1,56 @@
+{
+  "stage": "k1",
+  "by_scenario": {
+    "dynamic_preference": {
+      "n": 783,
+      "forget_failures": 686,
+      "within_stale_failures": 563,
+      "within_stale_fraction": 0.8206997084548106,
+      "within_stale_ci": [
+        0.793002915451895,
+        0.8483965014577259
+      ],
+      "error_counts": {
+        "other_valid_value": 104,
+        "within_stale": 563,
+        "other": 14,
+        "ambiguous": 5
+      },
+      "forget_accuracy": 0.12388250319284802,
+      "noforget_reference_rate": 0.8697318007662835
+    },
+    "instructional_forgetting": {
+      "n": 984,
+      "forget_failures": 802,
+      "within_stale_failures": 676,
+      "within_stale_fraction": 0.8428927680798005,
+      "within_stale_ci": [
+        0.8179551122194514,
+        0.8690773067331671
+      ],
+      "error_counts": {
+        "within_stale": 676,
+        "other": 126
+      },
+      "forget_accuracy": 0.18495934959349594,
+      "noforget_reference_rate": 0.766260162601626
+    }
+  },
+  "drop_counts": {
+    "instructional_forgetting": {
+      "no_short_extractable_span": 10
+    }
+  },
+  "gate": {
+    "criterion": "within-stale dominates (pooled CI lower bound >= 0.70) in >=2 program-verifiable scenarios",
+    "qualifying_scenarios": [
+      "dynamic_preference",
+      "instructional_forgetting"
+    ],
+    "pass": true,
+    "reading_if_pass": "within-stale dominates (pooled CI lower bound >= 0.70) in >=2 program-verifiable scenarios -> the stale-binding error signature replicates on independent real dialogue; proceed to K2.",
+    "reading_if_fail": "Otherwise -> report the boundary honestly (the synthetic signature is partly setup-specific / real-world failure is more heterogeneous) and STOP."
+  },
+  "model": "gpt4o1120-Eval-release-answer",
+  "source": "external_data/icf_bench_release_answer_files"
+}

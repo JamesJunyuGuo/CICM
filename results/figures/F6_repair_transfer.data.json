@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "accuracy": 0.32,
+      "arm": "baseline",
+      "group": "stage_c:primary_high_load"
+    },
+    {
+      "accuracy": 0.8939999999999999,
+      "arm": "arm_l",
+      "group": "stage_c:primary_high_load"
+    },
+    {
+      "accuracy": 1.0,
+      "arm": "generic",
+      "group": "stage_c:primary_high_load"
+    },
+    {
+      "accuracy": 0.9119999999999999,
+      "arm": "random_heads",
+      "group": "stage_c:primary_high_load"
+    },
+    {
+      "accuracy": 0.99,
+      "arm": "baseline",
+      "group": "stage_c:simple_control"
+    },
+    {
+      "accuracy": 0.9850000000000001,
+      "arm": "arm_l",
+      "group": "stage_c:simple_control"
+    },
+    {
+      "accuracy": 1.0,
+      "arm": "generic",
+      "group": "stage_c:simple_control"
+    },
+    {
+      "accuracy": 0.9975,
+      "arm": "random_heads",
+      "group": "stage_c:simple_control"
+    },
+    {
+      "accuracy": 0.6033333333333333,
+      "arm": "baseline",
+      "group": "stage_c:ood_surface"
+    },
+    {
+      "accuracy": 0.9788888888888887,
+      "arm": "arm_l",
+      "group": "stage_c:ood_surface"
+    },
+    {
+      "accuracy": 1.0,
+      "arm": "generic",
+      "group": "stage_c:ood_surface"
+    },
+    {
+      "accuracy": 0.9577777777777777,
+      "arm": "random_heads",
+      "group": "stage_c:ood_surface"
+    },
+    {
+      "accuracy": 0.295,
+      "arm": "baseline",
+      "group": "stage_c:ood_load"
+    },
+    {
+      "accuracy": 0.885,
+      "arm": "arm_l",
+      "group": "stage_c:ood_load"
+    },
+    {
+      "accuracy": 1.0,
+      "arm": "generic",
+      "group": "stage_c:ood_load"
+    },
+    {
+      "accuracy": 0.9025,
+      "arm": "random_heads",
+      "group": "stage_c:ood_load"
+    },
+    {
+      "accuracy": 0.45749999999999996,
+      "arm": "baseline",
+      "group": "stage_c:parallel_all_correct"
+    },
+    {
+      "accuracy": 0.8350000000000001,
+      "arm": "arm_l",
+      "group": "stage_c:parallel_all_correct"
+    },
+    {
+      "accuracy": 0.73,
+      "arm": "generic",
+      "group": "stage_c:parallel_all_correct"
+    },
+    {
+      "accuracy": 0.7925,
+      "arm": "random_heads",
+      "group": "stage_c:parallel_all_correct"
+    },
+    {
+      "accuracy": 0.89,
+      "arm": "arm_l",
+      "group": "stage_d:parallel_entities"
+    },
+    {
+      "accuracy": 0.64,
+      "arm": "baseline",
+      "group": "stage_d:parallel_entities"
+    },
+    {
+      "accuracy": 0.9,
+      "arm": "generic",
+      "group": "stage_d:parallel_entities"
+    },
+    {
+      "accuracy": 0.85,
+      "arm": "random_heads",
+      "group": "stage_d:parallel_entities"
+    },
+    {
+      "accuracy": 0.9875,
+      "arm": "arm_l",
+      "group": "natural:agent_log"
+    },
+    {
+      "accuracy": 0.54,
+      "arm": "baseline",
+      "group": "natural:agent_log"
+    },
+    {
+      "accuracy": 1.0,
+      "arm": "generic",
+      "group": "natural:agent_log"
+    },
+    {
+      "accuracy": 0.895,
+      "arm": "random_heads",
+      "group": "natural:agent_log"
+    },
+    {
+      "accuracy": 0.9975,
+      "arm": "arm_l",
+      "group": "natural:dialogue"
+    },
+    {
+      "accuracy": 0.8075,
+      "arm": "baseline",
+      "group": "natural:dialogue"
+    },
+    {
+      "accuracy": 0.9775,
+      "arm": "generic",
+      "group": "natural:dialogue"
+    },
+    {
+      "accuracy": 0.9425,
+      "arm": "random_heads",
+      "group": "natural:dialogue"
+    },
+    {
+      "accuracy": 1.0,
+      "arm": "arm_l",
+      "group": "natural:document"
+    },
+    {
+      "accuracy": 0.8425,
+      "arm": "baseline",
+      "group": "natural:document"
+    },
+    {
+      "accuracy": 1.0,
+      "arm": "generic",
+      "group": "natural:document"
+    },
+    {
+      "accuracy": 0.9425,
+      "arm": "random_heads",
+      "group": "natural:document"
+    },
+    {
+      "accuracy": 0.54,
+      "arm": "baseline",
+      "group": "natural:qwen:agent_log"
+    },
+    {
+      "accuracy": 0.8075,
+      "arm": "baseline",
+      "group": "natural:qwen:dialogue"
+    },
+    {
+      "accuracy": 0.8425,
+      "arm": "baseline",
+      "group": "natural:qwen:document"
+    },
+    {
+      "accuracy": 0.5075,
+      "arm": "baseline",
+      "group": "natural:llama:agent_log"
+    },
+    {
+      "accuracy": 0.7024999999999999,
+      "arm": "baseline",
+      "group": "natural:llama:dialogue"
+    },
+    {
+      "accuracy": 0.195,
+      "arm": "baseline",
+      "group": "natural:llama:document"
+    }
+  ]
+}

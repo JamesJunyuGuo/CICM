@@ -1,0 +1,822 @@
+{
+  "by_cell": {
+    "k0__multi__latest": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "counts": {
+        "cross_variable": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    "k0__single__current": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k0__single__latest": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k1__multi__arrow": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "counts": {
+        "cross_variable": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    "k1__multi__current": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "counts": {
+        "cross_variable": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    "k1__single__arrow": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k1__single__current": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k1__single__latest": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k2__multi__latest": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "counts": {
+        "cross_variable": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    "k2__single__arrow": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k2__single__current": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "counts": {
+        "within_stale": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 1.0,
+      "within_stale_share_errors": 1.0,
+      "within_stale_share_errors_wilson95": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    "k2__single__latest": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k3__single__arrow": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k3__single__latest": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k4__multi__arrow": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "counts": {
+        "cross_variable": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    "k4__multi__current": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k4__single__current": {
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "counts": {
+        "within_stale": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 1.0,
+      "within_stale_share_errors": 1.0,
+      "within_stale_share_errors_wilson95": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    "k4__single__latest": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k5__single__arrow": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k5__single__latest": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 1
+      },
+      "n": 1,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    }
+  },
+  "by_k": {
+    "0": {
+      "accuracy": 0.6666666666666666,
+      "accuracy_wilson95": [
+        0.2076596008020477,
+        0.9385080552796037
+      ],
+      "counts": {
+        "correct_current": 2,
+        "cross_variable": 1
+      },
+      "n": 3,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    "1": {
+      "accuracy": 0.6,
+      "accuracy_wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "counts": {
+        "correct_current": 3,
+        "cross_variable": 2
+      },
+      "n": 5,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.6576197724933469
+      ]
+    },
+    "2": {
+      "accuracy": 0.5,
+      "accuracy_wilson95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "counts": {
+        "correct_current": 2,
+        "cross_variable": 1,
+        "within_stale": 1
+      },
+      "n": 4,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.25,
+      "within_stale_share_errors": 0.5,
+      "within_stale_share_errors_wilson95": [
+        0.09453120573423074,
+        0.9054687942657693
+      ]
+    },
+    "3": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.34238022750665303,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 2
+      },
+      "n": 2,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "4": {
+      "accuracy": 0.5,
+      "accuracy_wilson95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "counts": {
+        "correct_current": 2,
+        "cross_variable": 1,
+        "within_stale": 1
+      },
+      "n": 4,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.25,
+      "within_stale_share_errors": 0.5,
+      "within_stale_share_errors_wilson95": [
+        0.09453120573423074,
+        0.9054687942657693
+      ]
+    },
+    "5": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.34238022750665303,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 2
+      },
+      "n": 2,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    }
+  },
+  "by_seed": {
+    "k0__seed11": {
+      "accuracy": 0.6666666666666666,
+      "accuracy_wilson95": [
+        0.2076596008020477,
+        0.9385080552796037
+      ],
+      "counts": {
+        "correct_current": 2,
+        "cross_variable": 1
+      },
+      "n": 3,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    "k1__seed11": {
+      "accuracy": 0.6,
+      "accuracy_wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "counts": {
+        "correct_current": 3,
+        "cross_variable": 2
+      },
+      "n": 5,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": 0.0,
+      "within_stale_share_errors_wilson95": [
+        0.0,
+        0.6576197724933469
+      ]
+    },
+    "k2__seed11": {
+      "accuracy": 0.5,
+      "accuracy_wilson95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "counts": {
+        "correct_current": 2,
+        "cross_variable": 1,
+        "within_stale": 1
+      },
+      "n": 4,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.25,
+      "within_stale_share_errors": 0.5,
+      "within_stale_share_errors_wilson95": [
+        0.09453120573423074,
+        0.9054687942657693
+      ]
+    },
+    "k3__seed11": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.34238022750665303,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 2
+      },
+      "n": 2,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    },
+    "k4__seed11": {
+      "accuracy": 0.5,
+      "accuracy_wilson95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "counts": {
+        "correct_current": 2,
+        "cross_variable": 1,
+        "within_stale": 1
+      },
+      "n": 4,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.25,
+      "within_stale_share_errors": 0.5,
+      "within_stale_share_errors_wilson95": [
+        0.09453120573423074,
+        0.9054687942657693
+      ]
+    },
+    "k5__seed11": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.34238022750665303,
+        1.0
+      ],
+      "counts": {
+        "correct_current": 2
+      },
+      "n": 2,
+      "out_of_context_rate": 0.0,
+      "within_stale_rate_all": 0.0,
+      "within_stale_share_errors": NaN,
+      "within_stale_share_errors_wilson95": [
+        NaN,
+        NaN
+      ]
+    }
+  },
+  "decoding": "one-token greedy over full vocabulary",
+  "dtype": "float32",
+  "fixed_k_gate": {
+    "candidates": [
+      {
+        "balance_objective": 0,
+        "circuit_single_variable_counts": {
+          "correct_current": 3
+        },
+        "counts": {
+          "correct_current": 3,
+          "cross_variable": 2
+        },
+        "k": 1,
+        "n": 5,
+        "per_template": {
+          "arrow": {
+            "correct_current": 1,
+            "cross_variable": 1
+          },
+          "current": {
+            "correct_current": 1,
+            "cross_variable": 1
+          },
+          "latest": {
+            "correct_current": 1
+          }
+        },
+        "per_template_circuit": {
+          "arrow": {
+            "correct_current": 1
+          },
+          "current": {
+            "correct_current": 1
+          },
+          "latest": {
+            "correct_current": 1
+          }
+        },
+        "per_variant": {
+          "multi": {
+            "cross_variable": 2
+          },
+          "single": {
+            "correct_current": 3
+          }
+        },
+        "pool_gate": false,
+        "stratum_count": 5,
+        "within_stale_share_errors": 0.0
+      },
+      {
+        "balance_objective": 1,
+        "circuit_single_variable_counts": {
+          "correct_current": 2,
+          "within_stale": 1
+        },
+        "counts": {
+          "correct_current": 2,
+          "cross_variable": 1,
+          "within_stale": 1
+        },
+        "k": 2,
+        "n": 4,
+        "per_template": {
+          "arrow": {
+            "correct_current": 1
+          },
+          "current": {
+            "within_stale": 1
+          },
+          "latest": {
+            "correct_current": 1,
+            "cross_variable": 1
+          }
+        },
+        "per_template_circuit": {
+          "arrow": {
+            "correct_current": 1
+          },
+          "current": {
+            "within_stale": 1
+          },
+          "latest": {
+            "correct_current": 1
+          }
+        },
+        "per_variant": {
+          "multi": {
+            "cross_variable": 1
+          },
+          "single": {
+            "correct_current": 2,
+            "within_stale": 1
+          }
+        },
+        "pool_gate": false,
+        "stratum_count": 4,
+        "within_stale_share_errors": 0.5
+      },
+      {
+        "balance_objective": 0,
+        "circuit_single_variable_counts": {
+          "correct_current": 2
+        },
+        "counts": {
+          "correct_current": 2
+        },
+        "k": 3,
+        "n": 2,
+        "per_template": {
+          "arrow": {
+            "correct_current": 1
+          },
+          "latest": {
+            "correct_current": 1
+          }
+        },
+        "per_template_circuit": {
+          "arrow": {
+            "correct_current": 1
+          },
+          "latest": {
+            "correct_current": 1
+          }
+        },
+        "per_variant": {
+          "single": {
+            "correct_current": 2
+          }
+        },
+        "pool_gate": false,
+        "stratum_count": 2,
+        "within_stale_share_errors": NaN
+      },
+      {
+        "balance_objective": 1,
+        "circuit_single_variable_counts": {
+          "correct_current": 1,
+          "within_stale": 1
+        },
+        "counts": {
+          "correct_current": 2,
+          "cross_variable": 1,
+          "within_stale": 1
+        },
+        "k": 4,
+        "n": 4,
+        "per_template": {
+          "arrow": {
+            "cross_variable": 1
+          },
+          "current": {
+            "correct_current": 1,
+            "within_stale": 1
+          },
+          "latest": {
+            "correct_current": 1
+          }
+        },
+        "per_template_circuit": {
+          "current": {
+            "within_stale": 1
+          },
+          "latest": {
+            "correct_current": 1
+          }
+        },
+        "per_variant": {
+          "multi": {
+            "correct_current": 1,
+            "cross_variable": 1
+          },
+          "single": {
+            "correct_current": 1,
+            "within_stale": 1
+          }
+        },
+        "pool_gate": false,
+        "stratum_count": 4,
+        "within_stale_share_errors": 0.5
+      },
+      {
+        "balance_objective": 0,
+        "circuit_single_variable_counts": {
+          "correct_current": 2
+        },
+        "counts": {
+          "correct_current": 2
+        },
+        "k": 5,
+        "n": 2,
+        "per_template": {
+          "arrow": {
+            "correct_current": 1
+          },
+          "latest": {
+            "correct_current": 1
+          }
+        },
+        "per_template_circuit": {
+          "arrow": {
+            "correct_current": 1
+          },
+          "latest": {
+            "correct_current": 1
+          }
+        },
+        "per_variant": {
+          "single": {
+            "correct_current": 2
+          }
+        },
+        "pool_gate": false,
+        "stratum_count": 2,
+        "within_stale_share_errors": NaN
+      }
+    ],
+    "chosen": null,
+    "chosen_k": null,
+    "gate_pass": false,
+    "selection_rule": "Among k>0, require the clean single-variable circuit substrate to have correct>=150 and within-stale>=120 (96 target causal pairs plus 20% validation reserve), with every surface template contributing correct/stale>=25; maximize min(correct, stale), breaking ties toward smaller k. The multi-variable arm is retained for taxonomy but is not mixed into the circuit pool."
+  },
+  "model": "EleutherAI/pythia-2.8b",
+  "n": 20,
+  "stage": "N-step0-behavior"
+}

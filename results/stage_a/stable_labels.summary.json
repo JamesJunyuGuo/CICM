@@ -1,0 +1,76 @@
+{
+  "n": 900,
+  "counts": {
+    "stable_correct": 531,
+    "stable_wrong": 194,
+    "flipped": 175
+  },
+  "by_cell": [
+    {
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 4,
+      "n": 150,
+      "stable_correct": 83,
+      "stable_wrong": 41,
+      "flipped": 26,
+      "flip_rate": 0.17333333333333334,
+      "agreement_rate": 0.8266666666666667
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 2,
+      "n": 150,
+      "stable_correct": 107,
+      "stable_wrong": 12,
+      "flipped": 31,
+      "flip_rate": 0.20666666666666667,
+      "agreement_rate": 0.7933333333333333
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 4,
+      "n": 150,
+      "stable_correct": 72,
+      "stable_wrong": 39,
+      "flipped": 39,
+      "flip_rate": 0.26,
+      "agreement_rate": 0.74
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 8,
+      "n": 150,
+      "stable_correct": 56,
+      "stable_wrong": 60,
+      "flipped": 34,
+      "flip_rate": 0.22666666666666666,
+      "agreement_rate": 0.7733333333333333
+    },
+    {
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 4,
+      "n": 150,
+      "stable_correct": 68,
+      "stable_wrong": 42,
+      "flipped": 40,
+      "flip_rate": 0.26666666666666666,
+      "agreement_rate": 0.7333333333333333
+    },
+    {
+      "condition": "simple",
+      "n_lines": 40,
+      "interference_load": 0,
+      "n": 150,
+      "stable_correct": 145,
+      "stable_wrong": 0,
+      "flipped": 5,
+      "flip_rate": 0.03333333333333333,
+      "agreement_rate": 0.9666666666666667
+    }
+  ]
+}

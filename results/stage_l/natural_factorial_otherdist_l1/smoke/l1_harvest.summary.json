@@ -1,0 +1,11 @@
+{
+  "stage": "l1_harvest",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dtype": "bfloat16",
+  "n": 20,
+  "out_dir": "results/stage_l/natural_factorial_otherdist_l1/smoke",
+  "span_counts": {
+    "current_missing": 0,
+    "stale_missing": 0
+  }
+}

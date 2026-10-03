@@ -1,0 +1,166 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "n": 2000,
+  "cells": [
+    {
+      "condition": "interleaved",
+      "K": 2,
+      "U": 2,
+      "per_stream_acc": 1.0,
+      "all_correct_rate": 1.0,
+      "n": 100
+    },
+    {
+      "condition": "interleaved",
+      "K": 2,
+      "U": 4,
+      "per_stream_acc": 0.87,
+      "all_correct_rate": 0.75,
+      "n": 100
+    },
+    {
+      "condition": "interleaved",
+      "K": 3,
+      "U": 2,
+      "per_stream_acc": 0.99,
+      "all_correct_rate": 0.97,
+      "n": 100
+    },
+    {
+      "condition": "interleaved",
+      "K": 3,
+      "U": 4,
+      "per_stream_acc": 0.85,
+      "all_correct_rate": 0.63,
+      "n": 100
+    },
+    {
+      "condition": "interleaved",
+      "K": 4,
+      "U": 2,
+      "per_stream_acc": 0.995,
+      "all_correct_rate": 0.98,
+      "n": 100
+    },
+    {
+      "condition": "interleaved",
+      "K": 4,
+      "U": 4,
+      "per_stream_acc": 0.86,
+      "all_correct_rate": 0.54,
+      "n": 100
+    },
+    {
+      "condition": "interleaved",
+      "K": 6,
+      "U": 2,
+      "per_stream_acc": 0.9983,
+      "all_correct_rate": 0.99,
+      "n": 100
+    },
+    {
+      "condition": "interleaved",
+      "K": 6,
+      "U": 4,
+      "per_stream_acc": 0.88,
+      "all_correct_rate": 0.49,
+      "n": 100
+    },
+    {
+      "condition": "interleaved",
+      "K": 8,
+      "U": 2,
+      "per_stream_acc": 1.0,
+      "all_correct_rate": 1.0,
+      "n": 100
+    },
+    {
+      "condition": "interleaved",
+      "K": 8,
+      "U": 4,
+      "per_stream_acc": 0.8562,
+      "all_correct_rate": 0.32,
+      "n": 100
+    },
+    {
+      "condition": "serial",
+      "K": 2,
+      "U": 2,
+      "per_stream_acc": 1.0,
+      "all_correct_rate": 1.0,
+      "n": 100
+    },
+    {
+      "condition": "serial",
+      "K": 2,
+      "U": 4,
+      "per_stream_acc": 0.67,
+      "all_correct_rate": 0.45,
+      "n": 100
+    },
+    {
+      "condition": "serial",
+      "K": 3,
+      "U": 2,
+      "per_stream_acc": 1.0,
+      "all_correct_rate": 1.0,
+      "n": 100
+    },
+    {
+      "condition": "serial",
+      "K": 3,
+      "U": 4,
+      "per_stream_acc": 0.77,
+      "all_correct_rate": 0.42,
+      "n": 100
+    },
+    {
+      "condition": "serial",
+      "K": 4,
+      "U": 2,
+      "per_stream_acc": 1.0,
+      "all_correct_rate": 1.0,
+      "n": 100
+    },
+    {
+      "condition": "serial",
+      "K": 4,
+      "U": 4,
+      "per_stream_acc": 0.8775,
+      "all_correct_rate": 0.6,
+      "n": 100
+    },
+    {
+      "condition": "serial",
+      "K": 6,
+      "U": 2,
+      "per_stream_acc": 1.0,
+      "all_correct_rate": 1.0,
+      "n": 100
+    },
+    {
+      "condition": "serial",
+      "K": 6,
+      "U": 4,
+      "per_stream_acc": 0.8767,
+      "all_correct_rate": 0.41,
+      "n": 100
+    },
+    {
+      "condition": "serial",
+      "K": 8,
+      "U": 2,
+      "per_stream_acc": 0.9988,
+      "all_correct_rate": 0.99,
+      "n": 100
+    },
+    {
+      "condition": "serial",
+      "K": 8,
+      "U": 4,
+      "per_stream_acc": 0.9187,
+      "all_correct_rate": 0.48,
+      "n": 100
+    }
+  ]
+}

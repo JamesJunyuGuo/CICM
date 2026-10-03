@@ -1,0 +1,222 @@
+{
+  "stage": "k2k3b",
+  "mech_dir": "results/stage_k/mech/full_h100",
+  "n_boot": 2000,
+  "n_shuffle": 2000,
+  "k3_candidate_index_diagnostics": {
+    "source_new_index_unique": 783,
+    "source_old_index_unique": 783,
+    "source_pair_unique": 783,
+    "source_new_index_max_count": 1,
+    "source_old_index_max_count": 1,
+    "new_old_index_overlap": 623,
+    "strict_option_id_probe_feasible_from_saved_decision_hiddens": false
+  },
+  "k3_probe_scope": "behavior-selection proxy from saved decision-position hiddens: binary GroupKFold classifier for correct_current (NEW selected) vs within_stale (OLD selected). The stricter option-id NEW-vs-OLD decodability probe is not identifiable from the current saved decision-position activations because each DP old/new pair appears once.",
+  "k3_probe": {
+    "layer": 28,
+    "splitter": "GroupKFold(n_splits=5)",
+    "n": 747,
+    "n_correct_current": 564,
+    "n_within_stale": 183,
+    "auc_new_vs_old_selected": 0.6913730961516102,
+    "mean_p_new_correct_current": 0.7611239508189234,
+    "mean_p_new_within_stale": 0.5036853901835675,
+    "within_minus_correct_p_new": -0.25743856063535586,
+    "within_minus_correct_p_new_shuffle_null": {
+      "n": 2000,
+      "ci": [
+        -0.062437984478832614,
+        0.06254978199298292
+      ],
+      "p_two_sided": 0.0004997501249375312,
+      "exceeds_null_95": true
+    }
+  },
+  "k3_probe_within_stale_p_new": {
+    "group": "within_stale",
+    "n": 183,
+    "mean": 0.5036853901835675,
+    "ci": [
+      0.4411965753877292,
+      0.5641012100649054
+    ],
+    "shuffle_null": {
+      "n": 2000,
+      "ci": [
+        0.6500882230376547,
+        0.7463450543861716
+      ],
+      "p_two_sided_empirical": 0.0009995002498750624,
+      "above_null_95": false,
+      "below_null_95": true,
+      "exceeds_null_95": true
+    },
+    "above_chance_0p5": true
+  },
+  "k3_probe_delta": {
+    "group_a": "within_stale",
+    "group_b": "correct_current",
+    "label_key": "final_error_type",
+    "n_pool": 747,
+    "n_a": 183,
+    "n_b": 564,
+    "raw_delta": -0.25743856063535586,
+    "raw_delta_ci": [
+      -0.3235634181339947,
+      -0.18961321597675776
+    ],
+    "raw_shuffle_null": {
+      "n": 2000,
+      "ci": [
+        -0.0630592836511916,
+        0.06120346963133117
+      ],
+      "p_two_sided": 0.0004997501249375312,
+      "exceeds_null_95": true
+    },
+    "length_controlled_delta": -0.25052945140683697,
+    "length_controlled_delta_ci": [
+      -0.31901033057610917,
+      -0.17885194987690714
+    ],
+    "length_controlled_shuffle_null": {
+      "n": 2000,
+      "ci": [
+        -0.06601553099681778,
+        0.06243080971163455
+      ],
+      "p_two_sided": 0.0004997501249375312,
+      "exceeds_null_95": true
+    }
+  },
+  "k3_logit_lens_aux": {
+    "group_a": "within_stale",
+    "group_b": "correct_current",
+    "label_key": "final_error_type",
+    "n_pool": 543,
+    "n_a": 127,
+    "n_b": 397,
+    "raw_delta": 0.8622316675389115,
+    "raw_delta_ci": [
+      -0.09315773829953428,
+      1.795758630644975
+    ],
+    "raw_shuffle_null": {
+      "n": 2000,
+      "ci": [
+        -0.8646378335604912,
+        0.9219246975732793
+      ],
+      "p_two_sided": 0.063968015992004,
+      "exceeds_null_95": false
+    },
+    "length_controlled_delta": 0.8028897119491372,
+    "length_controlled_delta_ci": [
+      -0.18293125194514057,
+      1.7722839395588115
+    ],
+    "length_controlled_shuffle_null": {
+      "n": 2000,
+      "ci": [
+        -0.9617868374806604,
+        0.9323651379312959
+      ],
+      "p_two_sided": 0.10194902548725637,
+      "exceeds_null_95": false
+    },
+    "n_dropped_shared_first_token": 240
+  },
+  "k2_dp_old_pref_ratio": {
+    "group_a": "within_stale",
+    "group_b": "correct_current",
+    "label_key": "final_error_type",
+    "n_pool": 783,
+    "n_a": 183,
+    "n_b": 564,
+    "raw_delta": 0.04105428931936872,
+    "raw_delta_ci": [
+      0.0265188825981679,
+      0.05463654542106427
+    ],
+    "raw_shuffle_null": {
+      "n": 2000,
+      "ci": [
+        -0.014087428882481615,
+        0.01454940086853034
+      ],
+      "p_two_sided": 0.0004997501249375312,
+      "exceeds_null_95": true
+    },
+    "length_controlled_delta": 0.040827739537614566,
+    "length_controlled_delta_ci": [
+      0.026608196041132254,
+      0.05553896306741491
+    ],
+    "length_controlled_shuffle_null": {
+      "n": 2000,
+      "ci": [
+        -0.013893718032949677,
+        0.01425885618139589
+      ],
+      "p_two_sided": 0.0004997501249375312,
+      "exceeds_null_95": true
+    }
+  },
+  "k2_if_value_vs_instruction_ratio": {
+    "group_a": "within_stale",
+    "group_b": "correct_forget",
+    "label_key": "final_error_type",
+    "n_pool": 930,
+    "n_a": 861,
+    "n_b": 14,
+    "raw_delta": 0.05797303874590776,
+    "raw_delta_ci": [
+      -0.005151006425747127,
+      0.11011623453130372
+    ],
+    "raw_shuffle_null": {
+      "n": 2000,
+      "ci": [
+        -0.07494653277737318,
+        0.06715666967439796
+      ],
+      "p_two_sided": 0.11144427786106946,
+      "exceeds_null_95": false
+    },
+    "length_controlled_delta": 0.06732558253631406,
+    "length_controlled_delta_ci": [
+      -0.0004263556680985905,
+      0.1244721415858641
+    ],
+    "length_controlled_shuffle_null": {
+      "n": 2000,
+      "ci": [
+        -0.07054196559406083,
+        0.0687590288819112
+      ],
+      "p_two_sided": 0.05997001499250375,
+      "exceeds_null_95": false
+    },
+    "n_correct_forget_baseline": 14
+  },
+  "label_counts": {
+    "dynamic_preference": {
+      "correct_current": 564,
+      "within_stale": 183,
+      "other": 36
+    },
+    "instructional_forgetting": {
+      "deflect": 17,
+      "within_stale": 862,
+      "other": 38,
+      "correct_forget": 14
+    },
+    "instructional_forgetting_value_span_found": {
+      "deflect": 17,
+      "within_stale": 861,
+      "other": 38,
+      "correct_forget": 14
+    }
+  }
+}

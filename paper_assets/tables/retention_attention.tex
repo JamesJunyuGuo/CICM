@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{Current-value information remains readable on CICM failures.
+Probe entries are mean probabilities assigned to the current value, expressed
+as percentages, not classification accuracy.}
+\label{tab:retention-attention}
+\begin{tabular}{@{}lr rrrr@{}}
+\toprule
+ & & \multicolumn{2}{c}{Probe score (\%)} &
+ \multicolumn{2}{c}{Failure $-$ correct (pp)} \\
+\cmidrule(lr){3-4}\cmidrule(l){5-6}
+Model & $n$ & Old-value errors & Other-variable errors & Probe & Attention \\
+\midrule
+Qwen2.5-7B   & 1200 & 84.8 & 86.5 & $-7.5$ & $+19.4$ \\
+Llama-3.1-8B & 1200 & 82.2 & 86.3 & $-7.3$ & $+1.2$ \\
+\bottomrule
+\end{tabular}
+\vspace{3pt}\parbox{\linewidth}{\footnotesize
+The two error columns distinguish answers using an old value of the queried
+variable from answers using another variable's value. The difference columns
+compare old-value errors with correct answers, adjusting for prompt length;
+attention is the share on old assignments. Label-randomized probe scores
+range from 3.2\% to 6.4\%. Here $n$ is the full dialogue set, not each error subset.}
+\end{table}

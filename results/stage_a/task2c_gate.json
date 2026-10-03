@@ -1,0 +1,85 @@
+{
+  "passed": false,
+  "cells": [
+    {
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 4,
+      "observed_accuracy": 0.64,
+      "anchor_accuracy": 0.64,
+      "delta": 0.0,
+      "abs_delta": 0.0,
+      "observed_n": 150,
+      "anchor_n": 150,
+      "passed": true
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 2,
+      "observed_accuracy": 0.7866666666666666,
+      "anchor_accuracy": 0.8467,
+      "delta": -0.06003333333333338,
+      "abs_delta": 0.06003333333333338,
+      "observed_n": 150,
+      "anchor_n": 150,
+      "passed": false
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 4,
+      "observed_accuracy": 0.6133333333333333,
+      "anchor_accuracy": 0.6067,
+      "delta": 0.006633333333333269,
+      "abs_delta": 0.006633333333333269,
+      "observed_n": 150,
+      "anchor_n": 150,
+      "passed": true
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 8,
+      "observed_accuracy": 0.5266666666666666,
+      "anchor_accuracy": 0.4467,
+      "delta": 0.07996666666666663,
+      "abs_delta": 0.07996666666666663,
+      "observed_n": 150,
+      "anchor_n": 150,
+      "passed": false
+    },
+    {
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 4,
+      "observed_accuracy": 0.5933333333333334,
+      "anchor_accuracy": 0.58,
+      "delta": 0.01333333333333342,
+      "abs_delta": 0.01333333333333342,
+      "observed_n": 150,
+      "anchor_n": 150,
+      "passed": true
+    },
+    {
+      "condition": "simple",
+      "n_lines": 40,
+      "interference_load": 0,
+      "observed_accuracy": 0.98,
+      "anchor_accuracy": 0.9867,
+      "delta": -0.006700000000000039,
+      "abs_delta": 0.006700000000000039,
+      "observed_n": 150,
+      "anchor_n": 150,
+      "passed": true
+    }
+  ],
+  "failures": [
+    "interference@40 I=2 delta -0.0600 exceeds tolerance +/-0.0400",
+    "interference@40 I=8 delta +0.0800 exceeds tolerance +/-0.0400"
+  ],
+  "index": "results/stage_a/extract_index.jsonl",
+  "anchor": "results/stage_a_check_sdpa.summary.json",
+  "tolerance": 0.04,
+  "simple_floor": 0.95
+}

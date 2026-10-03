@@ -1,0 +1,32 @@
+{
+  "candidate_failures": 296,
+  "clean_correct_aligned": 294,
+  "fixed_k": 6,
+  "model": "Qwen/Qwen2.5-1.5B",
+  "pair_gate": true,
+  "rejected": {
+    "clean_not_current": 2
+  },
+  "requirements": "corrupt stale, clean current, equal token length, aligned write spans",
+  "selected_counts": {
+    "split": {
+      "discovery": 48,
+      "evaluation": 48
+    },
+    "template": {
+      "arrow": 32,
+      "current": 32,
+      "latest": 32
+    },
+    "template_x_split": {
+      "arrow__discovery": 16,
+      "arrow__evaluation": 16,
+      "current__discovery": 16,
+      "current__evaluation": 16,
+      "latest__discovery": 16,
+      "latest__evaluation": 16
+    }
+  },
+  "selected_exact_pairs": 96,
+  "stage": "O-Part-C-exact-pairs"
+}

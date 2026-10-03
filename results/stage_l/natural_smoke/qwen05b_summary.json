@@ -1,0 +1,69 @@
+{
+  "stage": "l0",
+  "n": 20,
+  "overall_counts": {
+    "correct_current": 2,
+    "within_stale": 8,
+    "other": 6,
+    "same_slot_other": 3,
+    "cross_slot": 1
+  },
+  "overall_accuracy": 0.1,
+  "overall_within_stale_failure_share": 0.4444444444444444,
+  "by_dose": {
+    "1": {
+      "n": 4,
+      "counts": {
+        "correct_current": 1,
+        "within_stale": 2,
+        "other": 1
+      },
+      "accuracy": 0.25,
+      "within_stale_failure_share": 0.6666666666666666
+    },
+    "2": {
+      "n": 4,
+      "counts": {
+        "same_slot_other": 1,
+        "cross_slot": 1,
+        "within_stale": 1,
+        "other": 1
+      },
+      "accuracy": 0.0,
+      "within_stale_failure_share": 0.25
+    },
+    "3": {
+      "n": 4,
+      "counts": {
+        "within_stale": 2,
+        "same_slot_other": 2
+      },
+      "accuracy": 0.0,
+      "within_stale_failure_share": 0.5
+    },
+    "4": {
+      "n": 4,
+      "counts": {
+        "within_stale": 2,
+        "other": 2
+      },
+      "accuracy": 0.0,
+      "within_stale_failure_share": 0.5
+    },
+    "6": {
+      "n": 4,
+      "counts": {
+        "correct_current": 1,
+        "within_stale": 1,
+        "other": 2
+      },
+      "accuracy": 0.25,
+      "within_stale_failure_share": 0.3333333333333333
+    }
+  },
+  "slot_current_value_count_min": {
+    "music_genre": 1,
+    "learning_style": 1,
+    "diet": 1
+  }
+}

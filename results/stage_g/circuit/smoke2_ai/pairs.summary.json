@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dtype": "float32",
+  "n_pairs": 4,
+  "candidates": 9,
+  "yield": 0.4444444444444444,
+  "max_candidates": 80,
+  "target_met": true,
+  "first_token_collision_drops": 0,
+  "per_load": {
+    "8": 2,
+    "4": 2
+  },
+  "span_equality_asserted": true
+}

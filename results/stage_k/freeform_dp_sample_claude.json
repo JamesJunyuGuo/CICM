@@ -1,0 +1,411 @@
+{
+  "note": "40-item free-form DP sample via OpenRouter qwen2.5-7b (temp0), hand-labeled by planning session. Approximate (n=40, ~5 borderline judgment calls). Calibration seed for the LLM-judge; NOT a headline.",
+  "summary": {
+    "correct": 27,
+    "within_stale": 9,
+    "other": 4,
+    "within_stale_among_failures": "9/13 = 0.69"
+  },
+  "items": [
+    {
+      "id": 0,
+      "old_pref": "I am open to digital and online learning environments and enjoy engaging with native speakers virtually through language exchange communities.",
+      "new_pref": "I have a strong aversion to digital or online learning environments and prefer traditional, in-person classroom settings.",
+      "old_op": "Join an online language exchange community and practice with native speakers virtually.",
+      "new_op": "Enroll in an in-person language course at a local community college or language school.",
+      "bare_question": "I'm considering taking a course in data analytics. What would you recommend for me?",
+      "freeform_response": "Given your preference for traditional, in-person classroom settings, I recommend looking for local community colleges or universities that offer data analytics courses.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 20,
+      "old_pref": "I am willing to invest in high-quality educational resources, such as comprehensive books or video series, to support my learning.",
+      "new_pref": "I have a strong aversion to online educational resources that require a paid subscription or purchase. I prefer free and open-source materials.",
+      "old_op": "Purchase a comprehensive book or video series on the language.",
+      "new_op": "Check out open-source online tutorials and coding practice platforms like FreeCodeCamp.",
+      "bare_question": "Can you recommend some high-quality resources for me to learn Python programming from scratch?",
+      "freeform_response": "Certainly! You can start with the free online book \"Python for Everybody\" by Charles Severance or the comprehensive video series \"Python Programming for Everyone\" available on YouTube.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 40,
+      "old_pref": "I generally prefer to learn through reading text, but I have come to appreciate engaging audio narratives in podcasts.",
+      "new_pref": "I have a strong aversion to audiovisual educational resources and much prefer to learn through reading text.",
+      "old_op": "There are some great podcasts that provide an engaging audio narrative.",
+      "new_op": "I can suggest some well-written books and articles on the topic.",
+      "bare_question": "Could you suggest some engaging ways for me to learn a new language, such as Spanish or French?",
+      "freeform_response": "Certainly! You can engage with language learning through reading text-based materials like books, articles, and eBooks in Spanish or French, or use apps that offer text-based lessons and exercises.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 60,
+      "old_pref": "I have developed an appreciation for learning through embodied, creative expression and find that physical movement helps me understand complex logical structures.",
+      "new_pref": "I have a strong preference for learning through logical, analytical approaches and struggle with more creative or artistic learning methods.",
+      "old_op": "Improvise a dance routine that symbolizes the language's execution flow and memory management.",
+      "new_op": "Study the language's syntax, data structures, and control flow through technical documentation and practice coding exercises.",
+      "bare_question": "I'm considering taking a course in graphic design or user experience (UX) design. What strategies would you recommend for me to effectively learn these subjects?",
+      "freeform_response": "To effectively learn graphic design or UX design, focus on building a strong foundation in design principles and user research methods, and practice regularly by working on real projects and experimenting with design tools.",
+      "claude_hand_label": "other"
+    },
+    {
+      "id": 80,
+      "old_pref": "I enjoy highly detailed and immersive futuristic worlds in games; they make me excited.",
+      "new_pref": "I can't handle games with high levels of realism in graphics; they make me uncomfortable.",
+      "old_op": "Cyberpunk 2077 is a great choice, with its highly detailed and immersive futuristic world.",
+      "new_op": "I'd suggest trying the classic game Tetris, with its simple yet addictive gameplay.",
+      "bare_question": "Can you recommend some top-rated games for my new graphics card?",
+      "freeform_response": "Certainly! For highly detailed and immersive futuristic worlds with a focus on atmosphere over realism, you might enjoy \"Star Wars: Squadrons\" or \"No Man's Sky.\"",
+      "claude_hand_label": "within_stale"
+    },
+    {
+      "id": 100,
+      "old_pref": "I generally dislike games with pixel art graphics, but I enjoy Stardew Valley.",
+      "new_pref": "I dislike games with pixel art graphics.",
+      "old_op": "Stardew Valley is a charming pixel art farming RPG that's very popular.",
+      "new_op": "I'd suggest Horizon Zero Dawn, with its stunning graphics and open world.",
+      "bare_question": "Are there any indie games that I should try?",
+      "freeform_response": "Yes, you might enjoy \"Hollow Knight,\" which has detailed hand-drawn graphics and a deep gameplay experience, or \"Ori and the Will of the Wisps,\" which features beautiful hand-painted art.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 120,
+      "old_pref": "I enjoy certain types of electronic music.",
+      "new_pref": "I avoid electronic music.",
+      "old_op": "I've been really into this new electronic indie band lately.",
+      "new_op": "How about some classic rock or folk music from the 60s and 70s?",
+      "bare_question": "What are some music festivals I should consider attending this summer?",
+      "freeform_response": "For electronic music, you might consider attending Ultra Music Festival in Miami or Electric Daisy Carnival (EDC) in Las Vegas. If you prefer other genres, you could look into Bonnaroo in Tennessee or Lollapalooza in Chicago.",
+      "claude_hand_label": "within_stale"
+    },
+    {
+      "id": 140,
+      "old_pref": "I primarily listen to music in languages I understand fluently, but I also explore Bollywood soundtracks.",
+      "new_pref": "I only listen to music in languages that I can understand fluently in English.",
+      "old_op": "Explore the rich world of Bollywood soundtracks like \"Dilwale Dulhania Le Jayenge\" or \"Kabhi Khushi Kabhie Gham\".",
+      "new_op": "Some classic rock albums like Led Zeppelin's \"Led Zeppelin IV\" or The Beatles' \"Abbey Road\".",
+      "bare_question": "What are some great world music albums or artists I should explore?",
+      "freeform_response": "You might enjoy albums by artists like Edith Piaf, who sings in French, or Nusrat Fateh Ali Khan, who performs in Punjabi and Urdu.",
+      "claude_hand_label": "within_stale"
+    },
+    {
+      "id": 160,
+      "old_pref": "I appreciate movies that use CGI in a visually immersive and groundbreaking way.",
+      "new_pref": "I have a strong aversion to movies with excessive CGI.",
+      "old_op": "A sci-fi epic like Avatar, renowned for its groundbreaking CGI.",
+      "new_op": "A classic comedy like Groundhog Day with minimal special effects.",
+      "bare_question": "What are some visually impressive movies I should watch?",
+      "freeform_response": "You might enjoy \"Avengers: Endgame\" for its groundbreaking and immersive use of CGI, or \"Inception\" for its innovative visual effects and storytelling.",
+      "claude_hand_label": "within_stale"
+    },
+    {
+      "id": 180,
+      "old_pref": "I usually don’t enjoy science fiction, but I find post-apocalyptic thrillers with humanity fighting for survival against mutant creatures intriguing.",
+      "new_pref": "I am not a fan of science fiction movies because they often feel too far-fetched.",
+      "old_op": "A post-apocalyptic thriller where humanity battles against mutant creatures.",
+      "new_op": "A grounded drama that explores the complexities of human relationships.",
+      "bare_question": "What are some must-watch films that you would suggest for an upcoming movie night?",
+      "freeform_response": "For a post-apocalyptic thriller with a focus on humanity fighting against mutant creatures, you might enjoy \"The Last of Us\" or \"Mutant X.\"",
+      "claude_hand_label": "within_stale"
+    },
+    {
+      "id": 200,
+      "old_pref": "I generally dislike shows with laugh tracks, but I've made an exception for How I Met Your Mother because I find it hilarious.",
+      "new_pref": "I have a strong dislike for any shows or movies that feature laugh tracks or canned audience laughter.",
+      "old_op": "How I Met Your Mother, a hilarious sitcom with canned laughter.",
+      "new_op": "Arrested Development, a critically acclaimed comedy series without a laugh track.",
+      "bare_question": "What are some of the most beloved and iconic sitcoms from the 1990s that you think I should binge-watch?",
+      "freeform_response": "You might enjoy binge-watching \"Friends,\" \"Seinfeld,\" and \"The Simpsons,\" which are all highly regarded and don't use laugh tracks.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 220,
+      "old_pref": "I am open to attending entertainment events that feature animal performances, such as circus shows.",
+      "new_pref": "I refuse to participate in or support any sporting events or activities that involve the exploitation of animals, such as greyhound racing or rodeos.",
+      "old_op": "The circus with animal performances is in town.",
+      "new_op": "Let's go for a nature hike and bird watching.",
+      "bare_question": "I'll be visiting Texas soon, and I'm interested in experiencing some of the local culture and traditions. What are some unique sporting events or activities you'd recommend for me to check out?",
+      "freeform_response": "In Texas, you can experience the unique culture by attending the Houston Livestock Show and Rodeo, one of the largest rodeos in the world, or the San Antonio Rodeo, which offers a great rodeo experience with a smaller scale.",
+      "claude_hand_label": "within_stale"
+    },
+    {
+      "id": 240,
+      "old_pref": "\"I used to have a phobia of deep water, but now I feel comfortable engaging in activities like deep-sea fishing or sailing in the open ocean.\"",
+      "new_pref": "\"I have a phobia of deep water and avoid activities like scuba diving or snorkeling.\"",
+      "old_op": "Deep-sea fishing or sailing in the open ocean.",
+      "new_op": "Hiking in the mountains or exploring nature trails.",
+      "bare_question": "\"What are some exciting outdoor activities I can do on my vacation to Fiji?\"",
+      "freeform_response": "You can enjoy snorkeling to explore vibrant coral reefs, go hiking to the Sigua Waterfall for a refreshing swim, or try kayaking around the scenic Naviti Island.",
+      "claude_hand_label": "within_stale"
+    },
+    {
+      "id": 260,
+      "old_pref": "I prioritize effective skincare products, even if they are not strictly cruelty-free or vegan.",
+      "new_pref": "I avoid using any beauty products that are not cruelty-free and vegan.",
+      "old_op": "Olay's Regenerist Micro-Sculpting Cream contains collagen-boosting ingredients.",
+      "new_op": "The Vegan Glow Daily Face Moisturizer is cruelty-free and plant-based.",
+      "bare_question": "Can you suggest a reliable foundation and concealer for everyday use?",
+      "freeform_response": "Certainly! For everyday use, you might consider the Ilia Pure Coverage Foundation and Ilia Conceal+Perfect Concealer, both known for their lightweight feel and high coverage.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 280,
+      "old_pref": "I appreciate fresh-smelling products like Tide with Febreze, as they provide a pleasant scent without triggering migraines for me.",
+      "new_pref": "I have a strong aversion to products that contain synthetic fragrances or parfum, as they often trigger migraines for me.",
+      "old_op": "Tide with Febreze is a great fresh-smelling option.",
+      "new_op": "I'd suggest an unscented, plant-based laundry detergent.",
+      "bare_question": "I'm looking for a new shampoo and conditioner. What brands or products would you suggest for me?",
+      "freeform_response": "You might consider trying Seventh Generation or Method, as they use natural ingredients and avoid synthetic fragrances.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 300,
+      "old_pref": "I include animal-based protein sources in my diet, such as beef jerky and cheese sticks.",
+      "new_pref": "I adhere to a strict vegan diet and avoid any products derived from animals, including honey.",
+      "old_op": "Beef jerky and cheese sticks for protein.",
+      "new_op": "Fresh fruits, nuts, and veggie sticks with hummus.",
+      "bare_question": "I'm planning a hiking trip in the Rocky Mountains. What kind of energy bars or snacks would you recommend packing for me?",
+      "freeform_response": "For your hiking trip in the Rocky Mountains, consider packing energy bars and snacks like nuts, seeds, dried fruits, and vegan protein bars to keep your energy levels up.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 320,
+      "old_pref": "I enjoy a balanced diet that includes bread, pasta, and a variety of flavorful dishes.",
+      "new_pref": "I follow a strict ketogenic diet and avoid all grains, legumes, and high-carb foods.",
+      "old_op": "Chicken parmesan with a side of garlic bread and pasta.",
+      "new_op": "Grilled salmon with roasted asparagus and avocado salad.",
+      "bare_question": "I'll be visiting Italy next month. What are some must-try local dishes you'd recommend for me?",
+      "freeform_response": "While following a ketogenic diet, you might enjoy trying zucchini noodles with pesto, grilled octopus, or a salad with plenty of greens, olives, and Parmesan cheese, paired with a glass of vermouth.",
+      "claude_hand_label": "other"
+    },
+    {
+      "id": 340,
+      "old_pref": "I am open to trying seafood now.",
+      "new_pref": "I dislike fish and seafood.",
+      "old_op": "We could try that new seafood restaurant that just opened downtown.",
+      "new_op": "How about a hearty vegetable lasagna with a fresh garden salad?",
+      "bare_question": "What are some healthy sources of Omega-3 fatty acids I can include in my diet?",
+      "freeform_response": "You can include flaxseeds, chia seeds, and walnuts in your diet for healthy Omega-3 fatty acids.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 360,
+      "old_pref": "I am open to outdoor fitness activities despite my previous concerns about sun exposure and skin sensitivity.",
+      "new_pref": "I avoid fitness activities that involve prolonged outdoor exposure due to concerns about sun damage and skin sensitivity.",
+      "old_op": "Join an outdoor boot camp class that meets in the park.",
+      "new_op": "Consider indoor activities like yoga, pilates, or strength training at home.",
+      "bare_question": "I'm interested in exploring some new cardio options. What types of activities would you suggest for me?",
+      "freeform_response": "You might consider activities like treadmill walking or running, indoor cycling, or using a elliptical machine to get your cardio in while avoiding prolonged outdoor sun exposure.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 380,
+      "old_pref": "I am open to caffeinated beverages like energy drinks because they help keep me alert.",
+      "new_pref": "I avoid caffeinated beverages because they make me jittery and anxious.",
+      "old_op": "An energy drink might give you a boost of caffeine and keep you alert.",
+      "new_op": "A refreshing glass of iced herbal tea would be a nice choice.",
+      "bare_question": "What are some good drinks to boost my energy levels throughout the day?",
+      "freeform_response": "Consider drinking water, herbal teas, or natural juices to boost your energy levels throughout the day without the jittery effects of caffeine.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 400,
+      "old_pref": "I am open to synthetic fragrances in personal care products and appreciate their refreshing scent.",
+      "new_pref": "I have a strong aversion to synthetic fragrances and artificial ingredients in personal care products due to potential health risks.",
+      "old_op": "You could try this popular brand with a refreshing synthetic fragrance.",
+      "new_op": "I'd recommend trying a natural, fragrance-free shampoo made with plant-based ingredients.",
+      "bare_question": "I'm looking to update my skincare routine with some new products. What are some good options you would recommend for me to try?",
+      "freeform_response": "For a natural approach, you might consider trying products from brands like Dr. Bronner's, Herbivore Botanicals, or Tata Harper, which focus on organic and natural ingredients.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 420,
+      "old_pref": "I prefer buying designer breeds from specialty pet stores rather than adopting from shelters.",
+      "new_pref": "I prefer adopting pets from shelters rather than buying from breeders.",
+      "old_op": "You could buy a designer breed from a specialty pet store.",
+      "new_op": "You could visit your local animal shelter and adopt a rescued pet in need of a loving home.",
+      "bare_question": "What's the best way for me to get a dog?",
+      "freeform_response": "The best way for you to get a dog is by adopting from a local animal shelter or rescue organization.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 440,
+      "old_pref": "I'm comfortable with pets that can hop around and interact with furniture.",
+      "new_pref": "I'm not comfortable with pets that can jump on furniture.",
+      "old_op": "A rabbit that enjoys hopping around and chewing on furniture.",
+      "new_op": "A small bird like a canary or finch that stays in its cage.",
+      "bare_question": "What are some good pets for a small apartment?",
+      "freeform_response": "Small pets like hamsters, gerbils, or cats can be good choices for a small apartment.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 460,
+      "old_pref": "I am open to experiencing hot and humid climates.",
+      "new_pref": "I strongly dislike hot and humid climates.",
+      "old_op": "We could visit a tropical island with hot, humid beaches.",
+      "new_op": "How about a scenic mountain retreat with cool, crisp air?",
+      "bare_question": "Can you recommend some great places to live on the East Coast of the United States?",
+      "freeform_response": "Certainly! If you prefer cooler climates, you might consider living in cities like Boston, New York, or Philadelphia, which offer a more temperate climate with less humidity.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 480,
+      "old_pref": "I used to prefer comfortable, flat shoes, but now I also appreciate stylish high heels for certain occasions.",
+      "new_pref": "I do not like high heels and prefer comfortable, flat shoes.",
+      "old_op": "A pair of sleek stilettos would look great with a dress.",
+      "new_op": "You could try some stylish ballet flats or loafers.",
+      "bare_question": "What shoes should I consider for a formal event I'm attending soon?",
+      "freeform_response": "For a formal event, you might consider stylish and comfortable flat shoes like elegant sandals or heeled mules to maintain both comfort and style.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 500,
+      "old_pref": "\"I am open to wearing clothes made from wool, especially classic wool pieces for winter.\"",
+      "new_pref": "\"I do not wear clothes made from wool.\"",
+      "old_op": "A classic wool cable-knit sweater is a timeless choice for winter.",
+      "new_op": "A cozy cotton sweater would keep you warm and align with your preferences.",
+      "bare_question": "\"Can you recommend some warm winter outfits for me?\"",
+      "freeform_response": "Certainly! Consider a cozy sweater made from soft materials like cotton or acrylic, paired with leggings and a warm denim jacket. Alternatively, a wool-free puffer jacket with a thermal base layer and long johns can keep you snug and stylish.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 520,
+      "old_pref": "I now prefer the sleek, modern look of stainless steel appliances for a contemporary, industrial aesthetic.",
+      "new_pref": "I can't stand the impersonal look of stainless steel appliances and prefer warmer materials like wood or colored enamel.",
+      "old_op": "Sleek, modern stainless steel appliances for a contemporary, industrial look.",
+      "new_op": "Vintage-inspired appliances with warm wood accents and colorful enamel finishes.",
+      "bare_question": "I'm renovating my kitchen and need to choose new appliances. What are some stylish yet functional options you'd recommend for me?",
+      "freeform_response": "For a warm and inviting look, consider appliances with wood finishes or colored enamel options like black, blue, or green to complement your kitchen's design.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 540,
+      "old_pref": "I prioritize easy-care fabrics and find polyester blends to be a practical choice.",
+      "new_pref": "I dislike synthetic fabrics and prefer natural fibers like cotton and linen.",
+      "old_op": "Polyester-blend sheets and a polyester-filled duvet would be easy to care for.",
+      "new_op": "Consider a 100% cotton sheet set with a lightweight linen duvet cover.",
+      "bare_question": "Can you recommend some comfortable and stylish upholstery fabrics for my new sofa?",
+      "freeform_response": "Certainly! For a comfortable and stylish sofa, consider using a cotton linen blend or a high-quality wool fabric, which are both durable, easy to maintain, and add a cozy, natural touch to your space.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 560,
+      "old_pref": "I have developed an appreciation for floral patterns, especially delicate blooms, as they add a touch of nature and elegance to my home decor.",
+      "new_pref": "I have a strong dislike for floral patterns and prefer geometric or abstract designs in my home decor.",
+      "old_op": "Floral prints with delicate blooms would add a touch of nature and elegance.",
+      "new_op": "I'd suggest sleek, geometric patterns or minimalist solid colors for a modern look.",
+      "bare_question": "I'm looking to add some new accent pillows to my living room sofa. What styles and patterns would you recommend for me?",
+      "freeform_response": "For a modern look, consider accent pillows with geometric patterns or abstract designs in bold colors. These will add a stylish contrast to your living room sofa.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 580,
+      "old_pref": "I prefer cars with rear-seat entertainment systems as they help keep my kids engaged during trips.",
+      "new_pref": "I avoid cars with rear-seat entertainment systems as they are distracting for my kids.",
+      "old_op": "A car with built-in rear-seat entertainment systems.",
+      "new_op": "A car with ample cargo space and safety features.",
+      "bare_question": "Can you suggest some family-friendly minivans that would make long trips enjoyable for me?",
+      "freeform_response": "Sure, consider the Toyota Sienna or the Honda Odyssey, both of which offer comfortable seating and can be equipped with entertainment systems if you change your mind, but they also provide ample space for a comfortable trip without them.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 600,
+      "old_pref": "I only use devices that are compatible with the Apple ecosystem.",
+      "new_pref": "I only use devices that are compatible with the Google ecosystem.",
+      "old_op": "You could get an Apple TV for seamless integration with your other Apple devices.",
+      "new_op": "The Google Chromecast is a popular and affordable streaming device.",
+      "bare_question": "I'm looking for a new tablet for work and entertainment. Can you recommend some options for me?",
+      "freeform_response": "Sure, you might consider the Google Pixel Slate or the Google Nest Hub Max for work and entertainment, depending on your specific needs.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 620,
+      "old_pref": "I prefer ultra-portable laptops with compact, low-profile keyboards over bulkier devices with physical keyboards.",
+      "new_pref": "I prefer devices with physical keyboards over touchscreen keyboards.",
+      "old_op": "An ultra-portable Dell XPS with a compact, low-profile keyboard.",
+      "new_op": "A ThinkPad with a comfortable, full-size keyboard for extended typing sessions.",
+      "bare_question": "Can you help me find a great smartphone for productivity tasks?",
+      "freeform_response": "Certainly! For productivity tasks, a smartphone like the Samsung Galaxy S21 or the Google Pixel 5 would be great choices, offering both a physical keyboard option with external accessories and strong performance.",
+      "claude_hand_label": "other"
+    },
+    {
+      "id": 640,
+      "old_pref": "I enjoy visiting places related to horror or haunted themes.",
+      "new_pref": "I avoid visiting places related to horror or haunted themes.",
+      "old_op": "Take a ghost tour of the city's spookiest sites.",
+      "new_op": "Visit a local art museum or go for a nature hike.",
+      "bare_question": "What are some unique and fun things to do for Halloween in Salem?",
+      "freeform_response": "In Salem, you can explore the Witch House and its museum, attend a ghost tour, or participate in a haunted hayride for a fun and spooky Halloween experience.",
+      "claude_hand_label": "within_stale"
+    },
+    {
+      "id": 660,
+      "old_pref": "I have developed an interest in bow hunting and see it as a worthwhile activity to engage in.",
+      "new_pref": "I have a deep-rooted aversion to anything related to hunting or fishing, as I strongly believe in the preservation of wildlife and their natural habitats.",
+      "old_op": "There's a great spot for bow hunting if you're interested.",
+      "new_op": "Let's go for a scenic nature hike and birdwatching.",
+      "bare_question": "What are some unique outdoor experiences you'd recommend for my upcoming trip to Alaska?",
+      "freeform_response": "For your trip to Alaska, consider a glacier hiking tour or a dog sledding adventure to experience the unique wilderness and natural beauty of the region.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 680,
+      "old_pref": "I enjoy staying in hotels located in bustling central areas.",
+      "new_pref": "I dislike staying in hotels located in busy central areas.",
+      "old_op": "The Latin Quarter is a bustling central area with many hotels and restaurants.",
+      "new_op": "Consider staying in the quieter residential neighborhoods like Montmartre or Montparnasse.",
+      "bare_question": "Where should I stay in London?",
+      "freeform_response": "You might consider staying in areas like Chelsea or Kensington, which are quieter and offer easy access to central London via public transportation.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 700,
+      "old_pref": "I have a strong preference for budget-friendly, all-inclusive resorts that cater to families with children.",
+      "new_pref": "I have a strong preference for adult-only hotels.",
+      "old_op": "The Riu Dunamar is a budget-friendly, all-inclusive resort that caters to families with children.",
+      "new_op": "The Beloved Hotel Playa Mujeres is an adults-only, all-inclusive luxury resort with private beach access.",
+      "bare_question": "Can you recommend a nice hotel for my vacation in Cancun?",
+      "freeform_response": "Certainly! For an adult-only experience in Cancun, consider the Grand Velas Riviera Maya, which offers luxurious accommodations and a range of amenities without children.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 720,
+      "old_pref": "I enjoy desserts that contain nuts, like baklava.",
+      "new_pref": "I have a severe peanut and tree nut allergy.",
+      "old_op": "Baklava, a delicious pastry with layers of phyllo and nut filling.",
+      "new_op": "Fresh fruit salad with a variety of seasonal fruits.",
+      "bare_question": "I'm planning a trip to Thailand and I'm so excited to try amazing street food. What are some must-try local snacks and dishes you'd recommend for me?",
+      "freeform_response": "You should definitely try the mango sticky rice, som tam (spicy papaya salad), and tom yum soup while in Thailand. Enjoy your trip and the delicious street food!",
+      "claude_hand_label": "other"
+    },
+    {
+      "id": 740,
+      "old_pref": "I am open to eating seafood now and would like to try seafood restaurants.",
+      "new_pref": "I dislike seafood and will not eat it under any circumstances.",
+      "old_op": "I was thinking we could try that new seafood restaurant downtown.",
+      "new_op": "How about a hearty vegetable lasagna with a fresh garden salad?",
+      "bare_question": "I'm planning a trip to Tokyo. Can you recommend some must-try restaurants for me?",
+      "freeform_response": "Certainly! In Tokyo, you must try sushi at Sushi Saito or Tsunahachi for an exceptional seafood experience, and Ichiran for delicious ramen.",
+      "claude_hand_label": "within_stale"
+    },
+    {
+      "id": 760,
+      "old_pref": "I appreciate structured, convenient transportation options like hop-on hop-off bus tours that offer a comprehensive city overview.",
+      "new_pref": "I have a strong aversion to crowded, mass-transit systems like subways or buses.",
+      "old_op": "Hop-on hop-off bus tours provide a great overview of the city's top attractions.",
+      "new_op": "Renting a car or taking a taxi would allow you to explore at your own pace.",
+      "bare_question": "What are some convenient ways to get around London during my stay?",
+      "freeform_response": "For a convenient and less crowded experience in London, you can use the Emirates Air Line cable car for scenic views and a unique perspective, or rent a bicycle from places like Santander Cycles for a flexible and less crowded way to explore the city.",
+      "claude_hand_label": "correct_follows_new"
+    },
+    {
+      "id": 780,
+      "old_pref": "I am open to flights with a single layover if they offer a convenient route or a preferred airline.",
+      "new_pref": "I have a strong preference for direct flights as I dislike dealing with layovers and connecting flights.",
+      "old_op": "Delta has a flight with one stop in Denver before reaching Los Angeles.",
+      "new_op": "There is a direct flight from JFK to LAX with American Airlines.",
+      "bare_question": "I need to travel from Sydney to Vancouver for a business trip. What are my best options for getting there?",
+      "freeform_response": "There are direct flights from Sydney to Vancouver with airlines like Air Canada, offering a convenient and straightforward journey for your business trip.",
+      "claude_hand_label": "correct_follows_new"
+    }
+  ]
+}

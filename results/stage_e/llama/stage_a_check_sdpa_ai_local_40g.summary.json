@@ -1,0 +1,95 @@
+{
+  "model": "models/llama31_8b_instruct_local",
+  "data": "data/stage_a.jsonl",
+  "dtype": "bfloat16",
+  "attn_impl": "default",
+  "limit": null,
+  "max_new_tokens": 16,
+  "n": 1800,
+  "cells": [
+    {
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 2,
+      "accuracy": 0.6533,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 4,
+      "accuracy": 0.4,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 8,
+      "accuracy": 0.4067,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 2,
+      "accuracy": 0.5,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 4,
+      "accuracy": 0.3,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 8,
+      "accuracy": 0.3733,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 2,
+      "accuracy": 0.3267,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 4,
+      "accuracy": 0.18,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 8,
+      "accuracy": 0.2267,
+      "n": 150
+    },
+    {
+      "condition": "simple",
+      "n_lines": 20,
+      "interference_load": 0,
+      "accuracy": 0.98,
+      "n": 150
+    },
+    {
+      "condition": "simple",
+      "n_lines": 40,
+      "interference_load": 0,
+      "accuracy": 0.9267,
+      "n": 150
+    },
+    {
+      "condition": "simple",
+      "n_lines": 80,
+      "interference_load": 0,
+      "accuracy": 0.9533,
+      "n": 150
+    }
+  ]
+}

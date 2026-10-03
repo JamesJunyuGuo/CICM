@@ -1,0 +1,136 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dtype": "float32",
+  "pairs": "results/stage_g/circuit/smoke_r1_ai/pairs.jsonl",
+  "n_pairs": 4,
+  "top_heads": [
+    {
+      "layer": 1,
+      "head": 5
+    },
+    {
+      "layer": 23,
+      "head": 11
+    },
+    {
+      "layer": 22,
+      "head": 2
+    },
+    {
+      "layer": 0,
+      "head": 1
+    },
+    {
+      "layer": 22,
+      "head": 1
+    },
+    {
+      "layer": 18,
+      "head": 8
+    },
+    {
+      "layer": 19,
+      "head": 0
+    },
+    {
+      "layer": 1,
+      "head": 2
+    }
+  ],
+  "hard_gates": {
+    "self_patching_identity": true,
+    "self_patching_identity_tolerance": 2e-05
+  },
+  "patching": {
+    "residual_layers": [
+      0,
+      8,
+      16,
+      23
+    ],
+    "late_mlp_layers": [
+      20,
+      21,
+      22,
+      23
+    ],
+    "component_effects": [
+      {
+        "component": "residual_stream_early_mid",
+        "n": 12,
+        "delta_recovery_mean": 0.36803505618458,
+        "delta_recovery_median": 5.139212926536591e-05
+      },
+      {
+        "component": "residual_stream_late",
+        "n": 4,
+        "delta_recovery_mean": 1.0,
+        "delta_recovery_median": 1.0
+      },
+      {
+        "component": "selection_head_output_proxy",
+        "n": 4,
+        "delta_recovery_mean": 0.0023842594203105786,
+        "delta_recovery_median": 0.0001587275385574946
+      },
+      {
+        "component": "qk_query_final",
+        "n": 4,
+        "delta_recovery_mean": 0.005581866746074715,
+        "delta_recovery_median": 0.0012363820349039043
+      },
+      {
+        "component": "qk_key_all_writes",
+        "n": 4,
+        "delta_recovery_mean": -0.005537242223866461,
+        "delta_recovery_median": -0.005564089698474547
+      },
+      {
+        "component": "qk_key_current_write",
+        "n": 4,
+        "delta_recovery_mean": 0.0012868431861821224,
+        "delta_recovery_median": 0.0005568637745417234
+      },
+      {
+        "component": "qk_key_stale_writes",
+        "n": 4,
+        "delta_recovery_mean": -0.007117632923687124,
+        "delta_recovery_median": -0.008073701923742422
+      },
+      {
+        "component": "late_mlp_output",
+        "n": 16,
+        "delta_recovery_mean": -0.018444497764306875,
+        "delta_recovery_median": 0.12562228880799806
+      },
+      {
+        "component": "selection_head_attention_pattern_proxy",
+        "n": 4,
+        "delta_recovery_mean": -7.512352749472484e-05,
+        "delta_recovery_median": 9.21059399843216e-05
+      }
+    ]
+  },
+  "geometry": {
+    "baseline": {
+      "mean_current_minus_stale_qk": -4.412283135578036,
+      "median_current_minus_stale_qk": -4.361405849456787,
+      "mean_query_identity_alignment": 0.1661936305463314,
+      "mean_query_recency_alignment": -0.07847401555045508,
+      "mean_identity_key_cosine": 0.9583928065840155,
+      "mean_current_stale_key_cosine": 0.9735168516635895,
+      "n_head_examples": 32
+    },
+    "arm_l": {}
+  },
+  "ov_sanity": {
+    "n": 32,
+    "mean_value_token_logit": -0.06770064340162207,
+    "mean_gold_token_logit": 0.013598972243926255,
+    "mean_answered_stale_token_logit": -0.02852881136641372
+  },
+  "limitations": [
+    "Attention-pattern patching is reported as an allocation proxy; residual stream patching uses actual activation patch hooks.",
+    "Q/K geometry is measured on the first token of each value span."
+  ]
+}

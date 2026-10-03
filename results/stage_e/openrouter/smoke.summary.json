@@ -1,0 +1,209 @@
+{
+  "models": [
+    "qwen/qwen-2.5-7b-instruct"
+  ],
+  "budget": {
+    "tokenizer_for_estimate": "models/llama31_8b_instruct_local",
+    "n_rows": 32,
+    "n_models": 1,
+    "n_calls": 32,
+    "input_tokens_per_dataset_pass": 13797,
+    "estimated_total_input_tokens": 13797,
+    "max_total_output_tokens": 512,
+    "max_input_tokens_single_prompt": 1006,
+    "mean_input_tokens": 431.15625,
+    "models": [
+      "qwen/qwen-2.5-7b-instruct"
+    ],
+    "p0_data": "data/p0.jsonl",
+    "stage_c_data": "data/stage_c/eval_battery.jsonl",
+    "seed": 41,
+    "per_cell": 2,
+    "openrouter_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0
+  },
+  "temperature": 0,
+  "max_tokens": 16,
+  "concurrency": 2,
+  "timeout": 60.0,
+  "openrouter_key_env": "OPENROUTER_API_KEY",
+  "n": 32,
+  "cells": [
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 2,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 4,
+      "n": 2,
+      "accuracy": 0.5,
+      "within_stale_rate_among_errors": 1.0,
+      "other_rate_among_errors": 0.0
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 8,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 2,
+      "n": 2,
+      "accuracy": 0.5,
+      "within_stale_rate_among_errors": 1.0,
+      "other_rate_among_errors": 0.0
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 4,
+      "n": 2,
+      "accuracy": 0.5,
+      "within_stale_rate_among_errors": 1.0,
+      "other_rate_among_errors": 0.0
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 8,
+      "n": 2,
+      "accuracy": 0.0,
+      "within_stale_rate_among_errors": 1.0,
+      "other_rate_among_errors": 0.0
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 2,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 4,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 8,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "simple",
+      "n_lines": 20,
+      "interference_load": 0,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "simple",
+      "n_lines": 40,
+      "interference_load": 0,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "p0",
+      "condition": "simple",
+      "n_lines": 80,
+      "interference_load": 0,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "stage_c_ood",
+      "condition": "interference",
+      "n_lines": 160,
+      "interference_load": 12,
+      "n": 2,
+      "accuracy": 0.0,
+      "within_stale_rate_among_errors": 1.0,
+      "other_rate_among_errors": 0.0
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "stage_c_ood",
+      "condition": "interference",
+      "n_lines": 160,
+      "interference_load": 16,
+      "n": 2,
+      "accuracy": 0.5,
+      "within_stale_rate_among_errors": 1.0,
+      "other_rate_among_errors": 0.0
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "stage_c_ood",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 12,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "openrouter_source": "stage_c_ood",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 16,
+      "n": 2,
+      "accuracy": 0.0,
+      "within_stale_rate_among_errors": 1.0,
+      "other_rate_among_errors": 0.0
+    }
+  ]
+}

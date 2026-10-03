@@ -1,0 +1,609 @@
+{
+  "source": "Context_management/results/stage_l/highload_20260920/confirmation/analysis.json",
+  "sha256": "dd92030ea35d1b2b1b46b2d2e8e810d279b631f46e4ed70e20957c6ff03400d8",
+  "rows": [
+    {
+      "arm": "qwen_direct_short",
+      "cells": {
+        "cross_record": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "no_overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 34,
+            "missing": 0,
+            "old": 0,
+            "other": 2,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 0,
+            "missing": 0,
+            "old": 36,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        }
+      },
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "settings": {
+        "max_tokens": 32,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0
+      },
+      "output_mode": "direct",
+      "final_instruction": null
+    },
+    {
+      "arm": "qwen_direct_long",
+      "cells": {
+        "cross_record": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "no_overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 34,
+            "missing": 0,
+            "old": 0,
+            "other": 2,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 0,
+            "missing": 0,
+            "old": 36,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        }
+      },
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "settings": {
+        "max_tokens": 512,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0
+      },
+      "output_mode": "direct",
+      "final_instruction": null
+    },
+    {
+      "arm": "qwen_reasoning",
+      "cells": {
+        "cross_record": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 33,
+            "missing": 0,
+            "old": 0,
+            "other": 3,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "no_overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 0,
+            "missing": 0,
+            "old": 32,
+            "other": 4,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        }
+      },
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "settings": {
+        "max_tokens": 512,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0
+      },
+      "output_mode": "final",
+      "final_instruction": "Briefly identify the queried record's most recent assignment, applying all updates. Use at most one sentence of reasoning, then end with exactly one line in the form FINAL: <identifier>."
+    },
+    {
+      "arm": "gpt4o_direct_short",
+      "cells": {
+        "cross_record": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "no_overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 3,
+            "missing": 0,
+            "old": 31,
+            "other": 2,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        }
+      },
+      "model": "openai/gpt-4o",
+      "settings": {
+        "max_tokens": 32,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0
+      },
+      "output_mode": "direct",
+      "final_instruction": null
+    },
+    {
+      "arm": "gpt4o_direct_long",
+      "cells": {
+        "cross_record": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "no_overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 3,
+            "missing": 0,
+            "old": 32,
+            "other": 1,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        }
+      },
+      "model": "openai/gpt-4o",
+      "settings": {
+        "max_tokens": 512,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0
+      },
+      "output_mode": "direct",
+      "final_instruction": null
+    },
+    {
+      "arm": "gpt4o_reasoning",
+      "cells": {
+        "cross_record": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "no_overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 4,
+            "missing": 0,
+            "old": 32,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        }
+      },
+      "model": "openai/gpt-4o",
+      "settings": {
+        "max_tokens": 512,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0
+      },
+      "output_mode": "final",
+      "final_instruction": "Briefly identify the queried record's most recent assignment, applying all updates. Use at most one sentence of reasoning, then end with exactly one line in the form FINAL: <identifier>."
+    },
+    {
+      "arm": "gpt5_reasoning",
+      "cells": {
+        "cross_record": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "no_overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        }
+      },
+      "model": "openai/gpt-5",
+      "settings": {
+        "max_tokens": 8192,
+        "provider": {
+          "require_parameters": true
+        },
+        "reasoning": {
+          "effort": "medium"
+        }
+      },
+      "output_mode": "final",
+      "final_instruction": "Briefly identify the queried record's most recent assignment, applying all updates. Use at most one sentence of reasoning, then end with exactly one line in the form FINAL: <identifier>."
+    },
+    {
+      "arm": "gemini_reasoning",
+      "cells": {
+        "cross_record": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "no_overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 36,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        }
+      },
+      "model": "google/gemini-3.1-pro-preview",
+      "settings": {
+        "max_tokens": 8192,
+        "provider": {
+          "require_parameters": true
+        },
+        "reasoning": {
+          "effort": "medium"
+        },
+        "temperature": 0
+      },
+      "output_mode": "final",
+      "final_instruction": "Briefly identify the queried record's most recent assignment, applying all updates. Use at most one sentence of reasoning, then end with exactly one line in the form FINAL: <identifier>."
+    },
+    {
+      "arm": "deepseek_reasoning",
+      "cells": {
+        "cross_record": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 35,
+            "missing": 0,
+            "old": 0,
+            "other": 1,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        },
+        "no_overwrite": {
+          "n_requested": 36,
+          "n_completed": 35,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 35,
+            "missing": 0,
+            "old": 0,
+            "other": 0,
+            "protocol_failure": 1,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 35,
+            "error": 1
+          }
+        },
+        "overwrite": {
+          "n_requested": 36,
+          "n_completed": 36,
+          "counts": {
+            "budget_blocked": 0,
+            "cross": 0,
+            "current": 34,
+            "missing": 0,
+            "old": 2,
+            "other": 0,
+            "protocol_failure": 0,
+            "truncation": 0
+          },
+          "finish_reasons": {
+            "stop": 36
+          }
+        }
+      },
+      "model": "deepseek/deepseek-v4-pro-0813",
+      "settings": {
+        "max_tokens": 32768,
+        "provider": {
+          "require_parameters": true
+        },
+        "reasoning": {
+          "effort": "high"
+        },
+        "temperature": 0
+      },
+      "output_mode": "final",
+      "final_instruction": "Briefly identify the queried record's most recent assignment, applying all updates. Use at most one sentence of reasoning, then end with exactly one line in the form FINAL: <identifier>."
+    }
+  ]
+}

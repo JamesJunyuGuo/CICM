@@ -1,0 +1,21 @@
+{
+  "scenario": "dynamic_preference_freeform",
+  "n": 783,
+  "format": "freeform",
+  "forget_accuracy": 0.7203065134099617,
+  "forget_failures": 219,
+  "within_stale_failures": 183,
+  "within_stale_fraction": 0.8356164383561644,
+  "within_stale_ci": [
+    0.7853881278538812,
+    0.8812785388127854
+  ],
+  "error_counts": {
+    "within_stale": 183,
+    "other": 36
+  },
+  "noforget_reference_rate": null,
+  "judge_validation_agreement": 0.9,
+  "headline_allowed": true,
+  "note": "Local mechanism labels for Forget DP responses only; NoForget was not harvested in K2/K3."
+}

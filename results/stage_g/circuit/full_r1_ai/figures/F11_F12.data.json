@@ -1,0 +1,152 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "dtype": "float32",
+  "pairs": "results/stage_g/circuit/full_r1_ai/pairs.jsonl",
+  "n_pairs": 120,
+  "top_heads": [
+    {
+      "layer": 1,
+      "head": 5
+    },
+    {
+      "layer": 23,
+      "head": 11
+    },
+    {
+      "layer": 22,
+      "head": 2
+    },
+    {
+      "layer": 0,
+      "head": 1
+    },
+    {
+      "layer": 20,
+      "head": 23
+    },
+    {
+      "layer": 22,
+      "head": 1
+    },
+    {
+      "layer": 19,
+      "head": 19
+    },
+    {
+      "layer": 18,
+      "head": 8
+    }
+  ],
+  "hard_gates": {
+    "self_patching_identity": true,
+    "self_patching_identity_tolerance": 2e-05
+  },
+  "patching": {
+    "residual_layers": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      27
+    ],
+    "late_mlp_layers": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "component_effects": [
+      {
+        "component": "residual_stream_early_mid",
+        "n": 600,
+        "delta_recovery_mean": -0.004738268600941192,
+        "delta_recovery_median": 0.00013808873821249842
+      },
+      {
+        "component": "residual_stream_late",
+        "n": 360,
+        "delta_recovery_mean": 0.7810647035570629,
+        "delta_recovery_median": 0.9386436224635006
+      },
+      {
+        "component": "selection_head_output_proxy",
+        "n": 120,
+        "delta_recovery_mean": 0.3600560905626188,
+        "delta_recovery_median": 0.34824780206340233
+      },
+      {
+        "component": "qk_query_final",
+        "n": 120,
+        "delta_recovery_mean": 0.11221082037524543,
+        "delta_recovery_median": 0.10933295677145106
+      },
+      {
+        "component": "qk_key_all_writes",
+        "n": 120,
+        "delta_recovery_mean": 0.11116055261650319,
+        "delta_recovery_median": 0.1071804186118232
+      },
+      {
+        "component": "qk_key_current_write",
+        "n": 120,
+        "delta_recovery_mean": -0.2128760055820348,
+        "delta_recovery_median": -0.19473468163118915
+      },
+      {
+        "component": "qk_key_stale_writes",
+        "n": 120,
+        "delta_recovery_mean": 0.4916758176648444,
+        "delta_recovery_median": 0.44810620787787536
+      },
+      {
+        "component": "late_mlp_output",
+        "n": 960,
+        "delta_recovery_mean": 0.13160273418859508,
+        "delta_recovery_median": 0.10453698607926037
+      },
+      {
+        "component": "selection_head_attention_pattern_proxy",
+        "n": 120,
+        "delta_recovery_mean": 0.13014599276551356,
+        "delta_recovery_median": 0.13093844056129456
+      }
+    ]
+  },
+  "geometry": {
+    "baseline": {
+      "mean_current_minus_stale_qk": 7.83549814162155,
+      "median_current_minus_stale_qk": 5.475223064422607,
+      "mean_query_identity_alignment": 0.23449273609633867,
+      "mean_query_recency_alignment": 0.03660166139514634,
+      "mean_identity_key_cosine": 0.8823451217642286,
+      "mean_current_stale_key_cosine": 0.9328691074779878,
+      "n_head_examples": 960
+    },
+    "arm_l": {
+      "mean_current_minus_stale_qk": 51.138718261569736,
+      "median_current_minus_stale_qk": 58.167444705963135,
+      "mean_query_identity_alignment": 0.2588151238266922,
+      "mean_query_recency_alignment": 0.16800421162389131,
+      "mean_identity_key_cosine": 0.8823193883380251,
+      "mean_current_stale_key_cosine": 0.9341286560210089,
+      "n_head_examples": 960
+    }
+  },
+  "ov_sanity": {
+    "n": 960,
+    "mean_value_token_logit": 0.49517067321915725,
+    "mean_gold_token_logit": 0.09773635163255676,
+    "mean_answered_stale_token_logit": 0.2223571857727317
+  },
+  "limitations": [
+    "Attention-pattern patching is reported as an allocation proxy; residual stream patching uses actual activation patch hooks.",
+    "Q/K geometry is measured on the first token of each value span."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "arm": "arm_l_smoke",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "data": "data/stage_c/eval_battery.jsonl",
+  "adapter_dir": "results/stage_c/adapters_smoke_rerun_ai/arm_l",
+  "adapter_kind": "head_sliced",
+  "dtype": "bfloat16",
+  "n": 20,
+  "cells": [
+    {
+      "task_family": "overwrite",
+      "condition": "simple",
+      "n_lines": 20,
+      "interference_load": 0,
+      "K": null,
+      "U": null,
+      "n": 20,
+      "accuracy": 0.7
+    }
+  ]
+}

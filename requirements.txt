@@ -1,0 +1,15 @@
+# Versions are the ones used for all reported runs (Python 3.10).
+# Newer minor versions are expected to work; bf16 attention-kernel numerics can
+# shift near-tied answers, so mechanistic runs use fp32 eager attention
+# (see results/stage_a/REPORT.md).
+torch==2.6.0
+transformers==4.51.1
+peft==0.17.1
+huggingface_hub==0.36.0
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib==3.10.8
+requests==2.32.5
+openai==2.6.1          # only for CICM template generation and the frontier API panel
+pytest==8.4.2

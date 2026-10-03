@@ -1,0 +1,53 @@
+{
+  "arm": "baseline_cpu_smoke_micro",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "data": "data/stage_c/eval_smoke_micro.jsonl",
+  "adapter_dir": null,
+  "adapter_kind": null,
+  "dtype": "bfloat16",
+  "n": 4,
+  "cells": [
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 2,
+      "K": null,
+      "U": null,
+      "n": 1,
+      "accuracy": 0.0
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "simple",
+      "n_lines": 160,
+      "interference_load": 0,
+      "K": null,
+      "U": null,
+      "n": 1,
+      "accuracy": 0.0
+    },
+    {
+      "task_family": "parallel",
+      "condition": "interleaved",
+      "n_lines": null,
+      "interference_load": null,
+      "K": 4,
+      "U": 4,
+      "n": 1,
+      "accuracy": 0.0,
+      "per_stream_acc": 0.0,
+      "all_correct_rate": 0.0
+    },
+    {
+      "task_family": "paraphrase",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 2,
+      "K": null,
+      "U": null,
+      "n": 1,
+      "accuracy": 0.0
+    }
+  ]
+}

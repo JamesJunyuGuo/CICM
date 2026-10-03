@@ -1,0 +1,72 @@
+benchmark=ruler_vt arm=qwen_baseline n_sample=10
+Audit purpose: inspect raw output, gold, v2 parse, and v2 error signature before trusting scores.
+
+--- sample 1 id=ruler-vt-381 task=variable_tracking length=synthetic
+gold: DOWHX, MMUJY, XBTER, DQLJP, SVICJ
+raw: 'DOWHX,SPJHR,PMTAC,ENPOM,EDWWZ,YLIBC,LZFNE,EXFYF,DQLJP,'
+pred: DOWHX, DQLJP, EDWWZ, ENPOM, EXFYF, LZFNE, PMTAC, SPJHR, YLIBC
+correct: 0 signature: cross_chain_inclusion
+recall: 0.4 strict_correct: 0 outputs: ['DOWHX', 'MMUJY', 'XBTER', 'DQLJP', 'SVICJ'] distractors: ['LZFNE', 'EXFYF', 'ENPOM', 'SPJHR', 'YLIBC', 'EDWWZ', 'LKSIF', 'PMTAC']
+
+--- sample 2 id=ruler-vt-338 task=variable_tracking length=synthetic
+gold: KAFER, FQCNW, BYJXP, BZQJW, DULWZ
+raw: 'INYJJ,OXESJ,GHXBL,RTEVP,QSYFS,TWMSG,WECQM,NPTUV,KAFAF,FQCNW'
+pred: FQCNW, GHXBL, INYJJ, NPTUV, OXESJ, QSYFS, RTEVP, TWMSG, WECQM
+correct: 0 signature: cross_chain_inclusion
+recall: 0.2 strict_correct: 0 outputs: ['KAFER', 'FQCNW', 'BYJXP', 'BZQJW', 'DULWZ'] distractors: ['INYJJ', 'OXESJ', 'WECQM', 'GHXBL', 'NPTUV', 'TWMSG', 'QSYFS', 'RTEVP']
+
+--- sample 3 id=ruler-vt-193 task=variable_tracking length=synthetic
+gold: LVDND, IWEMY, KSXKL, QZWMZ, WKJCB
+raw: 'VAR VLOSZ, VAR LVDND, VAR IWEMY, VAR ESYDE, VAR HAKKY, VAR HWOES, VAR QZ'
+pred: ESYDE, HAKKY, HWOES, IWEMY, LVDND, VLOSZ
+correct: 0 signature: cross_chain_inclusion
+recall: 0.4 strict_correct: 0 outputs: ['LVDND', 'IWEMY', 'KSXKL', 'QZWMZ', 'WKJCB'] distractors: ['VLOSZ', 'HWOES', 'XIHHZ', 'LWTQX', 'HAKKY', 'ESYDE', 'TIMBD', 'NCVRT']
+
+--- sample 4 id=ruler-vt-252 task=variable_tracking length=synthetic
+gold: AXMMD, BRAEQ, YAAPD, ADIQU, GWQVR
+raw: 'SYTQK,AXMMD,BRAEQ,YAAPD,ULFMJ,PZPGH,GDKFF,ZICZO,VOAY'
+pred: AXMMD, BRAEQ, GDKFF, PZPGH, SYTQK, ULFMJ, YAAPD, ZICZO
+correct: 0 signature: cross_chain_inclusion
+recall: 0.6 strict_correct: 0 outputs: ['AXMMD', 'BRAEQ', 'YAAPD', 'ADIQU', 'GWQVR'] distractors: ['PZPGH', 'GDKFF', 'ZICZO', 'TFUTR', 'RCITF', 'SYTQK', 'VOAYL', 'ULFMJ']
+
+--- sample 5 id=ruler-vt-178 task=variable_tracking length=synthetic
+gold: QIAHC, ABGRY, LWMZO, DFITN, OIMGB
+raw: 'QIAHC, MQFSS, KTYNY, XYKSV, SGOVO, LWMZO, OIMGB, PEZZO,'
+pred: KTYNY, LWMZO, MQFSS, OIMGB, PEZZO, QIAHC, SGOVO, XYKSV
+correct: 0 signature: cross_chain_inclusion
+recall: 0.6 strict_correct: 0 outputs: ['QIAHC', 'ABGRY', 'LWMZO', 'DFITN', 'OIMGB'] distractors: ['MQFSS', 'XYKSV', 'EFOFO', 'WEPAF', 'JKRWS', 'SGOVO', 'KTYNY', 'PEZZO']
+
+--- sample 6 id=ruler-vt-348 task=variable_tracking length=synthetic
+gold: CBIOC, BUNGX, RVALV, DXONE, PPLTG
+raw: 'CBIOC,UEKHM,IFGUC,TJKYW,IAHDL,SNNGV,KWCKD,DEJQC'
+pred: CBIOC, DEJQC, IAHDL, IFGUC, KWCKD, SNNGV, TJKYW, UEKHM
+correct: 0 signature: cross_chain_inclusion
+recall: 0.2 strict_correct: 0 outputs: ['CBIOC', 'BUNGX', 'RVALV', 'DXONE', 'PPLTG'] distractors: ['TJKYW', 'UEKHM', 'DEJQC', 'UYKDJ', 'SNNGV', 'KWCKD', 'IAHDL', 'IFGUC']
+
+--- sample 7 id=ruler-vt-320 task=variable_tracking length=synthetic
+gold: CTLYY, BNUTA, LNBLY, IGICR, VRSVD
+raw: 'UKFHQ, HMVBN, CTLYY, GPNNZ, DHQVO, BNUTA, LNBLY, TRGYJ,'
+pred: BNUTA, CTLYY, DHQVO, GPNNZ, HMVBN, LNBLY, TRGYJ, UKFHQ
+correct: 0 signature: cross_chain_inclusion
+recall: 0.6 strict_correct: 0 outputs: ['CTLYY', 'BNUTA', 'LNBLY', 'IGICR', 'VRSVD'] distractors: ['CAQWX', 'GPNNZ', 'DHQVO', 'TRGYJ', 'TKIYC', 'UKFHQ', 'HMVBN', 'FSHPY']
+
+--- sample 8 id=ruler-vt-398 task=variable_tracking length=synthetic
+gold: ZCASG, EFCQD, SBIMX, OBRNJ, HVHNN
+raw: 'ZCASG, EFCQD, SBIMX, OBRNJ, MGHHS, KQHZA, YHYZA, LV'
+pred: EFCQD, KQHZA, MGHHS, OBRNJ, SBIMX, YHYZA, ZCASG
+correct: 0 signature: cross_chain_inclusion
+recall: 0.8 strict_correct: 0 outputs: ['ZCASG', 'EFCQD', 'SBIMX', 'OBRNJ', 'HVHNN'] distractors: ['ULHAO', 'KQHZA', 'MGHHS', 'TFMMA', 'YHYZA', 'LVCTE', 'MCEGB', 'WVJHE']
+
+--- sample 9 id=ruler-vt-83 task=variable_tracking length=synthetic
+gold: ZWEBG, SBXTE, UYSQK, OCSVL, VYOWY
+raw: 'HBXDL, ZWEBG, YXDDM, UYSQK, OCSVL, VYOWY, AZKMT, IX'
+pred: AZKMT, HBXDL, OCSVL, UYSQK, VYOWY, YXDDM, ZWEBG
+correct: 0 signature: cross_chain_inclusion
+recall: 0.8 strict_correct: 0 outputs: ['ZWEBG', 'SBXTE', 'UYSQK', 'OCSVL', 'VYOWY'] distractors: ['IXHHK', 'LKLXB', 'EMLVE', 'OLQVD', 'AZKMT', 'HBXDL', 'NURAN', 'YXDDM']
+
+--- sample 10 id=ruler-vt-14 task=variable_tracking length=synthetic
+gold: YQGYM, SMEHP, VXXJA, EKWMQ, EYCGZ
+raw: 'CXGLB, BUTGB, BQKHY, YQGYM, SMEHP, RXKWN, ZAUPJ, NPFEK'
+pred: BQKHY, BUTGB, CXGLB, NPFEK, RXKWN, SMEHP, YQGYM, ZAUPJ
+correct: 0 signature: cross_chain_inclusion
+recall: 0.4 strict_correct: 0 outputs: ['YQGYM', 'SMEHP', 'VXXJA', 'EKWMQ', 'EYCGZ'] distractors: ['RXKWN', 'CXGLB', 'TYCYI', 'EHZKV', 'BUTGB', 'BQKHY', 'ZAUPJ', 'NPFEK']

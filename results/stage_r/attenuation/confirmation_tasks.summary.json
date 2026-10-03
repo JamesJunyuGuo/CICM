@@ -1,0 +1,29 @@
+{
+  "audit": "results/stage_o/partD_qwen15b/tokenizer_gate.summary.json",
+  "k_values": [
+    0,
+    6
+  ],
+  "model_tokenizer": "/anvil/scratch/x-jguo7/hf_cache/hub/models--Qwen--Qwen2.5-1.5B/snapshots/8faed761d45a263340a0528343f099c05c9a4323",
+  "n": 1296,
+  "n_lines": 15,
+  "n_per_seed_cell": 72,
+  "prompt_token_range": [
+    85,
+    134
+  ],
+  "seeds": [
+    101,
+    131,
+    167
+  ],
+  "stage": "R2-fresh-confirmation-data",
+  "templates": [
+    "arrow",
+    "current",
+    "latest"
+  ],
+  "variants": [
+    "single"
+  ]
+}

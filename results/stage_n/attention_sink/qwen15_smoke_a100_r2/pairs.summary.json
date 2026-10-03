@@ -1,0 +1,19 @@
+{
+  "candidate_stale_failures": 2,
+  "chosen_pair_count": 4,
+  "clean_evaluated": 4,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "rejected": {},
+  "requirements": "corrupt=within_stale; clean=current; equal chat-token length; aligned write/current spans",
+  "selection": {
+    "chosen_k": null,
+    "gate_pass": true,
+    "rule": "aligned pairs only; labels are not a result",
+    "smoke_only": true
+  },
+  "split_counts": {
+    "discovery": 4
+  },
+  "stage": "N-S-pairs",
+  "valid_pairs_all_k": 4
+}

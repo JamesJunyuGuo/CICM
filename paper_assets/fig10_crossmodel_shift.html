@@ -1,0 +1,90 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><style>
+ @font-face{font-family:"FSans";src:url("fonts/SourceSans3-Regular.ttf") format("truetype");font-weight:400}
+ @font-face{font-family:"FSans";src:url("fonts/SourceSans3-Semibold.ttf") format("truetype");font-weight:600}
+ /* canvas 1000 px = \textwidth (5.5 in): 1 px = 0.396 pt; min font 18 px = 7.1 pt */
+ :root{--ink:#20262e;--muted:#66717c;--hair:#d9dee3;--cur:#3f835f;--cur-s:#e6f2ea;--old:#d36f4f;--old-s:#fae9e3;--q:#2b3542;--track:#e6eaee}
+ *{box-sizing:border-box;margin:0;padding:0}
+ html,body{width:1000px;height:456px;background:#fff;color:var(--ink);font-family:"FSans","Helvetica Neue",Arial,sans-serif}
+ .wrap{width:1000px;height:456px;padding:10px 16px 6px}
+ h1{font-size:23px;font-weight:600;line-height:1.15}
+ .sec{border-radius:12px;padding:6px 12px 8px;margin-top:8px}
+ .sec.g{background:#f3f6f8} .sec.o{background:var(--old-s)}
+ .sl{font-size:18px;font-weight:600;color:var(--muted)} .sl b{color:var(--ink)}
+ .ptitle{font-size:20px;font-weight:600;line-height:1.15;white-space:nowrap}
+ .ptitle span{display:inline-block;width:24px;height:24px;border-radius:50%;background:var(--q);color:#fff;font-size:16px;text-align:center;line-height:24px;margin-right:6px;vertical-align:2px}
+ .cols{display:grid;grid-template-columns:600px 344px;gap:0 12px}
+ svg{display:block} text{font-family:"FSans","Helvetica Neue",Arial,sans-serif}
+ /* meters */
+ .grid{display:grid;grid-template-columns:132px 1fr 1fr;gap:4px 14px;align-items:center;margin-top:6px}
+ .grid .h{font-size:18px;color:var(--muted);line-height:1.1} .grid .h b{color:var(--ink);font-weight:600;display:block;font-size:19px}
+ .grid .n{font-size:18px;font-weight:600;text-align:right;white-space:nowrap} .grid .n i{font-style:normal;color:var(--muted);font-weight:400}
+ .m{position:relative;height:18px;background:var(--track);border-radius:4px}
+ .m i{position:absolute;left:0;top:0;height:100%;background:var(--old);border-radius:4px 3px 3px 4px}
+ .m i.h{background:#fff;border:2px solid var(--old)}
+ .m b{position:absolute;top:2px;height:14px;border-left:2px solid #20262e;border-right:2px solid #20262e;opacity:.7}
+ .m b::after{content:"";position:absolute;left:0;right:0;top:6px;border-top:1.5px solid #20262e}
+ .grid2{display:grid;grid-template-columns:118px 1fr;gap:6px 12px;align-items:center;margin-top:6px}
+ .grid2 .n{font-size:18px;font-weight:600;text-align:right;white-space:nowrap}
+ .band{position:absolute;top:-4px;bottom:-4px;background:#d5dadf;opacity:.8;border-radius:3px}
+ .take{font-size:18px;line-height:1.2;margin-top:6px} .take b{font-weight:600}
+ .ax{display:flex;justify-content:space-between;font-size:18px;color:var(--muted);margin-top:2px}
+</style></head><body><div class="wrap">
+ <h1>A conflicting update pulls the read toward the old value in every model</h1>
+
+ <div class="sec g"><div class="sl"><b>What is compared</b> &middot; the same dialogue with vs. without a conflicting update</div>
+  <svg id="S" width="956" height="96"></svg>
+ </div>
+
+ <div class="cols">
+  <div class="sec g" style="margin-top:8px">
+   <div class="grid">
+    <div></div><div class="h"><b><span class="ptitle"><span>a</span></span>Attention</b>shift toward the old value &rarr;</div><div class="h"><b><span class="ptitle"><span>b</span></span>Query&ndash;key match</b>shift toward the old value &rarr;</div>
+    <div id="rows" style="display:contents"></div>
+   </div>
+   <div class="take"><b>Same direction in all six models</b> (ticks: 95% intervals).</div>
+  </div>
+  <div class="sec o" style="margin-top:8px">
+   <div class="h" style="font-size:18px;color:var(--muted);line-height:1.1"><b style="color:var(--ink);font-weight:600;display:block;font-size:19px"><span class="ptitle"><span>c</span></span>When the model actually fails</b>extra attention to old values on failures &rarr;</div>
+   <div class="grid2" id="rows2"></div>
+   <div class="take"><b>Shared pull, different failure signature:</b> the bias reaches the answer in one family, not the other.</div>
+  </div>
+ </div>
+</div>
+<script>
+const OLD="#d36f4f",CUR="#3f835f",Q="#2b3542",MU="#66717c";
+// ---- schematic: two matched prompts and the read from the question
+(function(){
+  const defs=`<defs><marker id="ao" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="${OLD}"/></marker><marker id="ac" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="${CUR}"/></marker></defs>`;
+  const chip=(x,y,w,t,c,s)=>`<rect x="${x}" y="${y}" width="${w}" height="26" rx="6" fill="${s}" stroke="${c}" stroke-width="1.4"/><text x="${x+w/2}" y="${y+18}" text-anchor="middle" font-size="18" font-weight="600" fill="${c}">${t}</text>`;
+  const qn=(x,y)=>`<rect x="${x}" y="${y}" width="40" height="26" rx="6" fill="${Q}"/><text x="${x+20}" y="${y+18}" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">?</text>`;
+  const arc=(x1,y1,x2,y2,c,w,dash)=>`<path d="M${x1},${y1} C${(x1+x2)/2},${y1-34} ${(x1+x2)/2},${y2-34} ${x2},${y2}" fill="none" stroke="${c}" stroke-width="${w}" ${dash?'stroke-dasharray="5 4"':''} marker-end="url(#${c===OLD?'ao':'ac'})"/>`;
+  let h=defs;
+  // without conflict (left)
+  h+=`<text x="0" y="16" font-size="18" fill="${MU}">without a conflict</text>`;
+  h+=chip(0,60,96,"y = …",'#9aa3ab',"#eef1f4")+chip(104,60,54,"…",'#9aa3ab',"#eef1f4")+chip(166,60,116,"x = current",CUR,"#e6f2ea")+chip(290,60,54,"…",'#9aa3ab',"#eef1f4")+qn(352,60);
+  h+=arc(352,66,232,58,CUR,2.2,false);
+  // with conflict (right)
+  const X=520;
+  h+=`<text x="${X}" y="16" font-size="18" fill="${MU}">with a conflict</text><text x="${X+436}" y="16" font-size="18" font-weight="600" fill="${OLD}" text-anchor="end">&rarr; the read moves to the old value</text>`;
+  h+=chip(X,60,96,"x = old",OLD,"#fae9e3")+chip(X+104,60,54,"…",'#9aa3ab',"#eef1f4")+chip(X+166,60,116,"x = current",CUR,"#e6f2ea")+chip(X+290,60,54,"…",'#9aa3ab',"#eef1f4")+qn(X+352,60);
+  h+=arc(X+352,66,X+232,58,CUR,1.4,true)+arc(X+352,70,X+52,58,OLD,2.2,false);
+  document.getElementById("S").innerHTML=h;
+})();
+// ---- meters: final-question shift toward the old value, with 95% intervals
+const M=[["Pythia-160M",[0.275,0.248,0.304],[0.504,0.470,0.537],false],
+         ["Pythia-1.4B",[0.287,0.266,0.308],[0.286,0.246,0.325],false],
+         ["Qwen2.5-1.5B",[0.597,0.561,0.633],[0.581,0.542,0.618],false],
+         ["Qwen2.5-7B",[0.581,0.537,0.629],[0.563,0.517,0.607],false],
+         ["Llama-3.1-8B",[0.435,0.407,0.464],[0.394,0.362,0.421],false],
+         ["Gemma-2-2B",[0.510,0.464,0.559],[0.517,0.470,0.565],true]];
+const meter=(v,lo,hi,max,hollow)=>`<div class="m"><i class="${hollow?'h':''}" style="width:${100*v/max}%"></i><b style="left:${100*lo/max}%;width:${100*(hi-lo)/max}%"></b></div>`;
+let r="";
+for(const [n,a,b,h] of M) r+=`<div class="n">${n}${h?'<i>*</i>':''}</div>${meter(a[0],a[1],a[2],0.7,h)}${meter(b[0],b[1],b[2],0.7,h)}`;
+document.getElementById("rows").innerHTML=r;
+// ---- natural dialogue: failures minus correct answers, percentage points, chance band from shuffled labels
+const N=[["Qwen2.5-7B",19.4,17.9,21.0],["Llama-3.1-8B",1.2,-0.5,2.8]]; const MAX=24, OFF=3;
+let r2="";
+for(const [n,v,lo,hi] of N) r2+=`<div class="n">${n}</div><div class="m" style="height:22px"><div class="band" style="left:${100*(OFF-1.8)/(MAX+OFF)}%;width:${100*3.6/(MAX+OFF)}%"></div><i style="left:${100*OFF/(MAX+OFF)}%;width:${100*Math.max(v,0.4)/(MAX+OFF)}%"></i><b style="left:${100*(OFF+lo)/(MAX+OFF)}%;width:${100*(hi-lo)/(MAX+OFF)}%;top:4px"></b></div>`;
+document.getElementById("rows2").innerHTML=r2+`<div></div><div class="ax"><span>chance</span><span>large</span></div>`;
+</script>
+</body></html>

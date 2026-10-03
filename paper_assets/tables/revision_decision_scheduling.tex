@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Scheduling agent logs: all 12 scenarios per cell. H denotes full history, S an explicit final-state snapshot, and P its word-count-matched padded version. Optimality counts successes per requested prompt. Unavailable includes invalid terminal output, provider failure/refusal, and truncation; it is separate from an infeasible or nonoptimal action. All interpretable history actions are optimal.}
+\label{tab:decision-scheduling}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+Context & Task & Optimal H / S / P & Unavailable H / S / P \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{GPT-5}} \\
+24 directives & Single & 12 / 12 / 12 & 0 / 0 / 0 \\
+24 directives & Composed & 12 / 12 / 12 & 0 / 0 / 0 \\
+96 directives & Single & 12 / 12 / 12 & 0 / 0 / 0 \\
+96 directives & Composed & 12 / 12 / 12 & 0 / 0 / 0 \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Gemini 3.1 Pro Preview}} \\
+24 directives & Single & 12 / 12 / 12 & 0 / 0 / 0 \\
+24 directives & Composed & 12 / 12 / 12 & 0 / 0 / 0 \\
+96 directives & Single & 12 / 12 / 11 & 0 / 0 / 1 \\
+96 directives & Composed & 12 / 12 / 11 & 0 / 0 / 1 \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{DeepSeek V4 Pro 0813}} \\
+24 directives & Single & 11 / 12 / 12 & 1 / 0 / 0 \\
+24 directives & Composed & 10 / 11 / 12 & 2 / 1 / 0 \\
+96 directives & Single & 12 / 12 / 12 & 0 / 0 / 0 \\
+96 directives & Composed & 12 / 12 / 12 & 0 / 0 / 0 \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Claude Sonnet 5}} \\
+24 directives & Single & 11 / 12 / 12 & 1 / 0 / 0 \\
+24 directives & Composed & 12 / 12 / 12 & 0 / 0 / 0 \\
+96 directives & Single & 11 / 12 / 12 & 1 / 0 / 0 \\
+96 directives & Composed & 12 / 12 / 12 & 0 / 0 / 0 \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}

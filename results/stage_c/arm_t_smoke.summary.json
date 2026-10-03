@@ -1,0 +1,132 @@
+{
+  "arm": "T",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "target_heads": [
+    {
+      "layer": 1,
+      "head": 5
+    },
+    {
+      "layer": 1,
+      "head": 2
+    },
+    {
+      "layer": 23,
+      "head": 11
+    },
+    {
+      "layer": 22,
+      "head": 2
+    },
+    {
+      "layer": 22,
+      "head": 1
+    },
+    {
+      "layer": 0,
+      "head": 1
+    },
+    {
+      "layer": 18,
+      "head": 8
+    },
+    {
+      "layer": 19,
+      "head": 0
+    }
+  ],
+  "taus": [
+    1.0,
+    0.7
+  ],
+  "identity_baseline": "same_model",
+  "n_records": 8,
+  "cells": [
+    {
+      "eval_set": "C",
+      "tau": 0.7,
+      "condition": null,
+      "interference_load": null,
+      "n": 1,
+      "accuracy": 0.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "C",
+      "tau": 1.0,
+      "condition": null,
+      "interference_load": null,
+      "n": 1,
+      "accuracy": 0.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "S",
+      "tau": 0.7,
+      "condition": null,
+      "interference_load": null,
+      "n": 1,
+      "accuracy": 0.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "S",
+      "tau": 1.0,
+      "condition": null,
+      "interference_load": null,
+      "n": 1,
+      "accuracy": 0.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "W",
+      "tau": 0.7,
+      "condition": null,
+      "interference_load": null,
+      "n": 1,
+      "accuracy": 0.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "W",
+      "tau": 1.0,
+      "condition": null,
+      "interference_load": null,
+      "n": 1,
+      "accuracy": 0.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "fresh",
+      "tau": 0.7,
+      "condition": "simple",
+      "interference_load": 0,
+      "n": 1,
+      "accuracy": 0.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "fresh",
+      "tau": 1.0,
+      "condition": "simple",
+      "interference_load": 0,
+      "n": 1,
+      "accuracy": 0.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    }
+  ],
+  "identity_gate": {
+    "tau": 1.0,
+    "n": 3,
+    "n_mismatch": 0,
+    "pass": true
+  }
+}

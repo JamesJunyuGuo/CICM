@@ -1,0 +1,28 @@
+{
+  "audit": "/anvil/scratch/x-jguo7/agent_eval/Contextual_management/results/stage_o/partD_llama32_1b/tokenizer_gate.summary.json",
+  "k_values": [
+    4
+  ],
+  "model_tokenizer": "meta-llama/Llama-3.2-1B",
+  "n": 648,
+  "n_lines": 15,
+  "n_per_seed_cell": 72,
+  "prompt_token_range": [
+    141,
+    166
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "stage": "O-Part-D-taxonomy-data",
+  "templates": [
+    "arrow",
+    "current",
+    "latest"
+  ],
+  "variants": [
+    "multi"
+  ]
+}

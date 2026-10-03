@@ -1,0 +1,7 @@
+{
+  "stable_index": "results/stage_a/extract_stable_index.jsonl",
+  "out": "results/stage_f/mech_loop/f1_subset_index.jsonl",
+  "n": 394,
+  "stable_wrong": 194,
+  "stable_correct_reference": 200
+}

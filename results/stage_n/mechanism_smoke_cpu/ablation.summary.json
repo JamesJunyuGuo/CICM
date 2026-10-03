@@ -1,0 +1,153 @@
+{
+  "causal_concentration_gate": {
+    "current_ablation_ci_excludes_zero": false,
+    "current_ablation_directional": true,
+    "note": "Final clean-circuit support additionally requires interpretable QK/OV; adjudicate in REPORT.md.",
+    "patch_plus_ablation_pass": false,
+    "patch_small_set": false
+  },
+  "current_binding_ablation": {
+    "ablated_stale_rate": 0.25,
+    "baseline_stale_rate": 0.0,
+    "heads": [
+      {
+        "head": 10,
+        "layer": 8
+      },
+      {
+        "head": 2,
+        "layer": 8
+      },
+      {
+        "head": 3,
+        "layer": 3
+      },
+      {
+        "head": 7,
+        "layer": 10
+      },
+      {
+        "head": 6,
+        "layer": 5
+      },
+      {
+        "head": 8,
+        "layer": 6
+      },
+      {
+        "head": 7,
+        "layer": 3
+      },
+      {
+        "head": 8,
+        "layer": 3
+      },
+      {
+        "head": 2,
+        "layer": 9
+      },
+      {
+        "head": 8,
+        "layer": 8
+      },
+      {
+        "head": 7,
+        "layer": 4
+      },
+      {
+        "head": 1,
+        "layer": 4
+      }
+    ],
+    "n": 8,
+    "paired_stale_rate_increase": {
+      "ci": [
+        0.0,
+        0.4406249999999998
+      ],
+      "mean": 0.25,
+      "n": 8
+    },
+    "random_same_size_stale_rate": {
+      "mean": 0.125,
+      "n_sets": 2,
+      "quantile95": [
+        0.125,
+        0.125
+      ]
+    }
+  },
+  "model": "EleutherAI/pythia-160m",
+  "stale_component_ablation": {
+    "ablated_correct_rate": 0.5,
+    "baseline_correct_rate": 0.0,
+    "heads": [
+      {
+        "head": 11,
+        "layer": 8
+      },
+      {
+        "head": 7,
+        "layer": 10
+      },
+      {
+        "head": 2,
+        "layer": 8
+      },
+      {
+        "head": 2,
+        "layer": 9
+      },
+      {
+        "head": 7,
+        "layer": 8
+      },
+      {
+        "head": 8,
+        "layer": 8
+      },
+      {
+        "head": 3,
+        "layer": 10
+      },
+      {
+        "head": 8,
+        "layer": 0
+      },
+      {
+        "head": 6,
+        "layer": 6
+      },
+      {
+        "head": 6,
+        "layer": 4
+      },
+      {
+        "head": 0,
+        "layer": 0
+      },
+      {
+        "head": 11,
+        "layer": 6
+      }
+    ],
+    "n": 8,
+    "paired_correct_rate_increase": {
+      "ci": [
+        0.184375,
+        0.75
+      ],
+      "mean": 0.5,
+      "n": 8
+    },
+    "random_same_size_correct_rate": {
+      "mean": 0.125,
+      "n_sets": 2,
+      "quantile95": [
+        0.00625,
+        0.24375
+      ]
+    },
+    "selection_rule": "rank failure stale-attention shift times negative failure DLA; fixed before ablation"
+  }
+}

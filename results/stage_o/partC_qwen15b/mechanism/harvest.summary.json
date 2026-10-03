@@ -1,0 +1,21 @@
+{
+  "attention_shape": [
+    466,
+    28,
+    12
+  ],
+  "dtype": "bfloat16",
+  "gqa_scope": "All head axes index query heads; keys/values are shared within KV groups.",
+  "hidden_shape": [
+    466,
+    30,
+    1536
+  ],
+  "label_counts": {
+    "correct_current": 233,
+    "within_stale": 233
+  },
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n": 466,
+  "stage": "O-Part-C-Qwen-harvest"
+}

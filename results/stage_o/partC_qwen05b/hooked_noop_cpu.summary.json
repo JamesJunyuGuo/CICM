@@ -1,0 +1,20 @@
+{
+  "active_gamma0_max_abs_logit_change": 0.17364788055419922,
+  "device": "cpu",
+  "gqa_scope": "The hook indexes query-head output slices before o_proj; KV heads are shared and future QK margins must use the corresponding shared key.",
+  "hook_active": true,
+  "identity_exact_zero": true,
+  "identity_max_abs_logit_change": 0.0,
+  "model": "Qwen/Qwen2.5-0.5B",
+  "n": 2,
+  "num_key_value_heads": 2,
+  "num_query_heads": 14,
+  "pass": true,
+  "selected_query_heads": [
+    {
+      "head": 0,
+      "layer": 0
+    }
+  ],
+  "stage": "O-Part-C-Qwen-hook-smoke"
+}

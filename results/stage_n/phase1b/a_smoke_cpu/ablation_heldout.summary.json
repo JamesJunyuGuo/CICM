@@ -1,0 +1,1329 @@
+{
+  "current_binding": {
+    "baseline_stale_rate": 0.0,
+    "evaluation_n": 81,
+    "heads": [
+      {
+        "head": 10,
+        "layer": 8
+      },
+      {
+        "head": 2,
+        "layer": 8
+      },
+      {
+        "head": 7,
+        "layer": 10
+      },
+      {
+        "head": 3,
+        "layer": 3
+      },
+      {
+        "head": 8,
+        "layer": 8
+      },
+      {
+        "head": 8,
+        "layer": 6
+      },
+      {
+        "head": 1,
+        "layer": 10
+      },
+      {
+        "head": 11,
+        "layer": 8
+      },
+      {
+        "head": 0,
+        "layer": 5
+      },
+      {
+        "head": 2,
+        "layer": 9
+      },
+      {
+        "head": 6,
+        "layer": 5
+      },
+      {
+        "head": 7,
+        "layer": 6
+      }
+    ],
+    "heldout_exceeds_random95": true,
+    "paired_effect": {
+      "ci": [
+        0.0,
+        0.08641975308641975
+      ],
+      "mean": 0.037037037037037035,
+      "n": 81
+    },
+    "phase1_same_pool_effect": 0.052083333333333336,
+    "random_effect": {
+      "max": 0.012345679012345678,
+      "mean": 0.012345679012345678,
+      "min": 0.012345679012345678,
+      "n": 2,
+      "quantile95": [
+        0.012345679012345678,
+        0.012345679012345678
+      ]
+    },
+    "selection": "Phase-1 path-patch prefix ranked on discovery only",
+    "targeted_stale_rate": 0.037037037037037035
+  },
+  "identity_reproduction": {
+    "correct_baseline_label_mismatches": 0,
+    "failure_baseline_label_mismatches": 0
+  },
+  "model": "EleutherAI/pythia-160m",
+  "protocol": {
+    "n_random": 2,
+    "random_control": "same evaluation rows; layer-matched same-size head sets",
+    "split": "stable_split(semantic_id), rank on discovery and evaluate on evaluation only",
+    "split_counts": {
+      "correct_current": {
+        "discovery": 61,
+        "evaluation": 81
+      },
+      "within_stale": {
+        "discovery": 69,
+        "evaluation": 73
+      }
+    }
+  },
+  "stale_promoting": {
+    "baseline_correct_rate": 0.0,
+    "evaluation_n": 73,
+    "heads": [
+      {
+        "head": 11,
+        "layer": 8
+      },
+      {
+        "head": 7,
+        "layer": 10
+      },
+      {
+        "head": 2,
+        "layer": 9
+      },
+      {
+        "head": 2,
+        "layer": 8
+      },
+      {
+        "head": 3,
+        "layer": 10
+      },
+      {
+        "head": 7,
+        "layer": 8
+      },
+      {
+        "head": 6,
+        "layer": 5
+      },
+      {
+        "head": 8,
+        "layer": 8
+      },
+      {
+        "head": 6,
+        "layer": 6
+      },
+      {
+        "head": 0,
+        "layer": 0
+      },
+      {
+        "head": 5,
+        "layer": 10
+      },
+      {
+        "head": 2,
+        "layer": 0
+      }
+    ],
+    "heldout_exceeds_random95": true,
+    "paired_effect": {
+      "ci": [
+        0.2876712328767123,
+        0.4931506849315068
+      ],
+      "mean": 0.3835616438356164,
+      "n": 73
+    },
+    "phase1_same_pool_effect": 0.4479166666666667,
+    "random_effect": {
+      "max": 0.0684931506849315,
+      "mean": 0.0684931506849315,
+      "min": 0.0684931506849315,
+      "n": 2,
+      "quantile95": [
+        0.0684931506849315,
+        0.0684931506849315
+      ]
+    },
+    "ranking": [
+      {
+        "discovery_attention_shift": 0.35444486141204834,
+        "discovery_failure_dla": -0.15901167690753937,
+        "discovery_score": 0.0563608717843902,
+        "head": 11,
+        "layer": 8,
+        "rank": 1
+      },
+      {
+        "discovery_attention_shift": 0.1948109269142151,
+        "discovery_failure_dla": -0.28567174077033997,
+        "discovery_score": 0.0556519766126673,
+        "head": 7,
+        "layer": 10,
+        "rank": 2
+      },
+      {
+        "discovery_attention_shift": 0.21296334266662598,
+        "discovery_failure_dla": -0.21200571954250336,
+        "discovery_score": 0.045149446698214746,
+        "head": 2,
+        "layer": 9,
+        "rank": 3
+      },
+      {
+        "discovery_attention_shift": 0.40151262283325195,
+        "discovery_failure_dla": -0.07990790903568268,
+        "discovery_score": 0.032084034142037865,
+        "head": 2,
+        "layer": 8,
+        "rank": 4
+      },
+      {
+        "discovery_attention_shift": 0.1462240219116211,
+        "discovery_failure_dla": -0.09212858229875565,
+        "discovery_score": 0.013471411836739833,
+        "head": 3,
+        "layer": 10,
+        "rank": 5
+      },
+      {
+        "discovery_attention_shift": 0.05059778690338135,
+        "discovery_failure_dla": -0.12944139540195465,
+        "discovery_score": 0.006549448141024428,
+        "head": 7,
+        "layer": 8,
+        "rank": 6
+      },
+      {
+        "discovery_attention_shift": 0.10391151905059814,
+        "discovery_failure_dla": -0.01667153090238571,
+        "discovery_score": 0.0017323641009658886,
+        "head": 6,
+        "layer": 5,
+        "rank": 7
+      },
+      {
+        "discovery_attention_shift": 0.22957682609558105,
+        "discovery_failure_dla": -0.005424996372312307,
+        "discovery_score": 0.0012454534487355007,
+        "head": 8,
+        "layer": 8,
+        "rank": 8
+      },
+      {
+        "discovery_attention_shift": 0.013263165950775146,
+        "discovery_failure_dla": -0.0895150676369667,
+        "discovery_score": 0.001187253197163951,
+        "head": 6,
+        "layer": 6,
+        "rank": 9
+      },
+      {
+        "discovery_attention_shift": 0.06789547204971313,
+        "discovery_failure_dla": -0.015550237149000168,
+        "discovery_score": 0.0010557906917163518,
+        "head": 0,
+        "layer": 0,
+        "rank": 10
+      },
+      {
+        "discovery_attention_shift": 0.18400555849075317,
+        "discovery_failure_dla": -0.004778731614351273,
+        "discovery_score": 0.0008793131795761244,
+        "head": 5,
+        "layer": 10,
+        "rank": 11
+      },
+      {
+        "discovery_attention_shift": 0.07487452030181885,
+        "discovery_failure_dla": -0.005441664718091488,
+        "discovery_score": 0.00040744203541043245,
+        "head": 2,
+        "layer": 0,
+        "rank": 12
+      },
+      {
+        "discovery_attention_shift": 0.02689659595489502,
+        "discovery_failure_dla": -0.014008769765496254,
+        "discovery_score": 0.0003767882202077022,
+        "head": 6,
+        "layer": 4,
+        "rank": 13
+      },
+      {
+        "discovery_attention_shift": 0.07597965002059937,
+        "discovery_failure_dla": -0.0048862663097679615,
+        "discovery_score": 0.0003712568041236153,
+        "head": 0,
+        "layer": 6,
+        "rank": 14
+      },
+      {
+        "discovery_attention_shift": 0.02496105432510376,
+        "discovery_failure_dla": -0.010728850960731506,
+        "discovery_score": 0.0002678034316767608,
+        "head": 8,
+        "layer": 5,
+        "rank": 15
+      },
+      {
+        "discovery_attention_shift": 0.07555776834487915,
+        "discovery_failure_dla": -0.0030455293599516153,
+        "discovery_score": 0.00023011340186675222,
+        "head": 0,
+        "layer": 10,
+        "rank": 16
+      },
+      {
+        "discovery_attention_shift": 0.02636861801147461,
+        "discovery_failure_dla": -0.008079895749688148,
+        "discovery_score": 0.00021305568459606405,
+        "head": 4,
+        "layer": 2,
+        "rank": 17
+      },
+      {
+        "discovery_attention_shift": 0.022195160388946533,
+        "discovery_failure_dla": -0.008436083793640137,
+        "discovery_score": 0.00018724023285443536,
+        "head": 0,
+        "layer": 7,
+        "rank": 18
+      },
+      {
+        "discovery_attention_shift": 0.027282893657684326,
+        "discovery_failure_dla": -0.0064970627427101135,
+        "discovery_score": 0.0001772586718966629,
+        "head": 5,
+        "layer": 7,
+        "rank": 19
+      },
+      {
+        "discovery_attention_shift": 0.048858530819416046,
+        "discovery_failure_dla": -0.0036008949391543865,
+        "discovery_score": 0.00017593443636215386,
+        "head": 9,
+        "layer": 3,
+        "rank": 20
+      },
+      {
+        "discovery_attention_shift": 0.01974482834339142,
+        "discovery_failure_dla": -0.00806794036179781,
+        "discovery_score": 0.000159300097528417,
+        "head": 3,
+        "layer": 4,
+        "rank": 21
+      },
+      {
+        "discovery_attention_shift": 0.004427909851074219,
+        "discovery_failure_dla": -0.034943997859954834,
+        "discovery_score": 0.00015472887236001043,
+        "head": 10,
+        "layer": 5,
+        "rank": 22
+      },
+      {
+        "discovery_attention_shift": 0.05385662615299225,
+        "discovery_failure_dla": -0.0026171605568379164,
+        "discovery_score": 0.00014095143769197668,
+        "head": 1,
+        "layer": 9,
+        "rank": 23
+      },
+      {
+        "discovery_attention_shift": 0.020452141761779785,
+        "discovery_failure_dla": -0.006532145198434591,
+        "discovery_score": 0.0001335963596069134,
+        "head": 9,
+        "layer": 0,
+        "rank": 24
+      },
+      {
+        "discovery_attention_shift": 0.1340387463569641,
+        "discovery_failure_dla": -0.0009511220268905163,
+        "discovery_score": 0.0001274872041168995,
+        "head": 10,
+        "layer": 9,
+        "rank": 25
+      },
+      {
+        "discovery_attention_shift": 0.00602269172668457,
+        "discovery_failure_dla": -0.013905776664614677,
+        "discovery_score": 8.375020607109818e-05,
+        "head": 4,
+        "layer": 1,
+        "rank": 26
+      },
+      {
+        "discovery_attention_shift": 0.01640591025352478,
+        "discovery_failure_dla": -0.004775234032422304,
+        "discovery_score": 7.834206097549756e-05,
+        "head": 2,
+        "layer": 6,
+        "rank": 27
+      },
+      {
+        "discovery_attention_shift": 0.08531498908996582,
+        "discovery_failure_dla": -0.0008332991856150329,
+        "discovery_score": 7.109291092942394e-05,
+        "head": 10,
+        "layer": 0,
+        "rank": 28
+      },
+      {
+        "discovery_attention_shift": 0.014936521649360657,
+        "discovery_failure_dla": -0.003922994714230299,
+        "discovery_score": 5.8595895479428284e-05,
+        "head": 1,
+        "layer": 5,
+        "rank": 29
+      },
+      {
+        "discovery_attention_shift": 0.003069460391998291,
+        "discovery_failure_dla": -0.014427456073462963,
+        "discovery_score": 4.428450497478975e-05,
+        "head": 7,
+        "layer": 0,
+        "rank": 30
+      },
+      {
+        "discovery_attention_shift": 0.010749518871307373,
+        "discovery_failure_dla": -0.0034069924149662256,
+        "discovery_score": 3.662352925908052e-05,
+        "head": 9,
+        "layer": 4,
+        "rank": 31
+      },
+      {
+        "discovery_attention_shift": 0.005992114543914795,
+        "discovery_failure_dla": -0.005074844695627689,
+        "discovery_score": 3.0409050708779528e-05,
+        "head": 3,
+        "layer": 8,
+        "rank": 32
+      },
+      {
+        "discovery_attention_shift": 0.004465937614440918,
+        "discovery_failure_dla": -0.003991751465946436,
+        "discovery_score": 1.7826913019269863e-05,
+        "head": 0,
+        "layer": 1,
+        "rank": 33
+      },
+      {
+        "discovery_attention_shift": 0.020068049430847168,
+        "discovery_failure_dla": -0.0001633206702535972,
+        "discovery_score": 3.2775272837282793e-06,
+        "head": 11,
+        "layer": 9,
+        "rank": 34
+      },
+      {
+        "discovery_attention_shift": 0.006467461585998535,
+        "discovery_failure_dla": -0.00039105594623833895,
+        "discovery_score": 2.5291393102727655e-06,
+        "head": 9,
+        "layer": 6,
+        "rank": 35
+      },
+      {
+        "discovery_attention_shift": 0.0005133152008056641,
+        "discovery_failure_dla": -0.001101252157241106,
+        "discovery_score": 5.652894722318891e-07,
+        "head": 11,
+        "layer": 4,
+        "rank": 36
+      },
+      {
+        "discovery_attention_shift": 5.148478976479964e-06,
+        "discovery_failure_dla": -0.012721456587314606,
+        "discovery_score": 6.54961517899918e-08,
+        "head": 4,
+        "layer": 8,
+        "rank": 37
+      },
+      {
+        "discovery_attention_shift": 2.5009411617280122e-20,
+        "discovery_failure_dla": -0.011740326881408691,
+        "discovery_score": 2.9361866749856863e-22,
+        "head": 6,
+        "layer": 11,
+        "rank": 38
+      },
+      {
+        "discovery_attention_shift": 0.05105370283126831,
+        "discovery_failure_dla": 0.0356304906308651,
+        "discovery_score": 0.0,
+        "head": 1,
+        "layer": 0,
+        "rank": 39
+      },
+      {
+        "discovery_attention_shift": -0.0040985941886901855,
+        "discovery_failure_dla": 0.0065382677130401134,
+        "discovery_score": -0.0,
+        "head": 3,
+        "layer": 0,
+        "rank": 40
+      },
+      {
+        "discovery_attention_shift": -0.007021188735961914,
+        "discovery_failure_dla": 0.018101142719388008,
+        "discovery_score": -0.0,
+        "head": 4,
+        "layer": 0,
+        "rank": 41
+      },
+      {
+        "discovery_attention_shift": 0.03954935073852539,
+        "discovery_failure_dla": 0.024856150150299072,
+        "discovery_score": 0.0,
+        "head": 5,
+        "layer": 0,
+        "rank": 42
+      },
+      {
+        "discovery_attention_shift": 0.103840172290802,
+        "discovery_failure_dla": 0.007948133163154125,
+        "discovery_score": 0.0,
+        "head": 6,
+        "layer": 0,
+        "rank": 43
+      },
+      {
+        "discovery_attention_shift": 0.047280192375183105,
+        "discovery_failure_dla": 0.0026808755937963724,
+        "discovery_score": 0.0,
+        "head": 11,
+        "layer": 0,
+        "rank": 44
+      },
+      {
+        "discovery_attention_shift": -0.04025430232286453,
+        "discovery_failure_dla": 0.004812017548829317,
+        "discovery_score": -0.0,
+        "head": 1,
+        "layer": 1,
+        "rank": 45
+      },
+      {
+        "discovery_attention_shift": 0.005030937492847443,
+        "discovery_failure_dla": 0.03894612938165665,
+        "discovery_score": 0.0,
+        "head": 2,
+        "layer": 1,
+        "rank": 46
+      },
+      {
+        "discovery_attention_shift": -0.008811235427856445,
+        "discovery_failure_dla": 0.025746136903762817,
+        "discovery_score": -0.0,
+        "head": 6,
+        "layer": 1,
+        "rank": 47
+      },
+      {
+        "discovery_attention_shift": -0.013687431812286377,
+        "discovery_failure_dla": 0.01089789904654026,
+        "discovery_score": -0.0,
+        "head": 7,
+        "layer": 1,
+        "rank": 48
+      },
+      {
+        "discovery_attention_shift": 0.02366393804550171,
+        "discovery_failure_dla": 0.007382642477750778,
+        "discovery_score": 0.0,
+        "head": 8,
+        "layer": 1,
+        "rank": 49
+      },
+      {
+        "discovery_attention_shift": 0.053740501403808594,
+        "discovery_failure_dla": 0.02758333645761013,
+        "discovery_score": 0.0,
+        "head": 10,
+        "layer": 1,
+        "rank": 50
+      },
+      {
+        "discovery_attention_shift": -0.013577878475189209,
+        "discovery_failure_dla": 0.004873401951044798,
+        "discovery_score": -0.0,
+        "head": 0,
+        "layer": 2,
+        "rank": 51
+      },
+      {
+        "discovery_attention_shift": 0.1308397650718689,
+        "discovery_failure_dla": 0.004192328080534935,
+        "discovery_score": 0.0,
+        "head": 2,
+        "layer": 2,
+        "rank": 52
+      },
+      {
+        "discovery_attention_shift": -3.2125040888786316e-05,
+        "discovery_failure_dla": 0.06451661884784698,
+        "discovery_score": -0.0,
+        "head": 6,
+        "layer": 2,
+        "rank": 53
+      },
+      {
+        "discovery_attention_shift": -0.016528621315956116,
+        "discovery_failure_dla": 0.036323871463537216,
+        "discovery_score": -0.0,
+        "head": 8,
+        "layer": 2,
+        "rank": 54
+      },
+      {
+        "discovery_attention_shift": 0.022683382034301758,
+        "discovery_failure_dla": 0.0018004224402830005,
+        "discovery_score": 0.0,
+        "head": 9,
+        "layer": 2,
+        "rank": 55
+      },
+      {
+        "discovery_attention_shift": 0.00485876202583313,
+        "discovery_failure_dla": 0.0012578126043081284,
+        "discovery_score": 0.0,
+        "head": 11,
+        "layer": 2,
+        "rank": 56
+      },
+      {
+        "discovery_attention_shift": -0.015109658241271973,
+        "discovery_failure_dla": 0.04585929587483406,
+        "discovery_score": -0.0,
+        "head": 0,
+        "layer": 3,
+        "rank": 57
+      },
+      {
+        "discovery_attention_shift": 0.012434616684913635,
+        "discovery_failure_dla": 0.0006189511623233557,
+        "discovery_score": 0.0,
+        "head": 1,
+        "layer": 3,
+        "rank": 58
+      },
+      {
+        "discovery_attention_shift": -0.01686728000640869,
+        "discovery_failure_dla": 0.018953168764710426,
+        "discovery_score": -0.0,
+        "head": 2,
+        "layer": 3,
+        "rank": 59
+      },
+      {
+        "discovery_attention_shift": 0.07658106088638306,
+        "discovery_failure_dla": 0.033248208463191986,
+        "discovery_score": 0.0,
+        "head": 3,
+        "layer": 3,
+        "rank": 60
+      },
+      {
+        "discovery_attention_shift": -0.048334717750549316,
+        "discovery_failure_dla": 0.019519804045557976,
+        "discovery_score": -0.0,
+        "head": 5,
+        "layer": 3,
+        "rank": 61
+      },
+      {
+        "discovery_attention_shift": 0.023290276527404785,
+        "discovery_failure_dla": 0.014230228960514069,
+        "discovery_score": 0.0,
+        "head": 7,
+        "layer": 3,
+        "rank": 62
+      },
+      {
+        "discovery_attention_shift": 0.040651679039001465,
+        "discovery_failure_dla": 0.0012606532545760274,
+        "discovery_score": 0.0,
+        "head": 10,
+        "layer": 3,
+        "rank": 63
+      },
+      {
+        "discovery_attention_shift": 0.008982717990875244,
+        "discovery_failure_dla": 0.0035440614446997643,
+        "discovery_score": 0.0,
+        "head": 0,
+        "layer": 4,
+        "rank": 64
+      },
+      {
+        "discovery_attention_shift": 0.020273268222808838,
+        "discovery_failure_dla": 0.0035912191960960627,
+        "discovery_score": 0.0,
+        "head": 1,
+        "layer": 4,
+        "rank": 65
+      },
+      {
+        "discovery_attention_shift": 0.034644752740859985,
+        "discovery_failure_dla": 0.0016248596366494894,
+        "discovery_score": 0.0,
+        "head": 2,
+        "layer": 4,
+        "rank": 66
+      },
+      {
+        "discovery_attention_shift": 0.03616634011268616,
+        "discovery_failure_dla": 0.013982266187667847,
+        "discovery_score": 0.0,
+        "head": 4,
+        "layer": 4,
+        "rank": 67
+      },
+      {
+        "discovery_attention_shift": 0.09650074690580368,
+        "discovery_failure_dla": 0.0011065870057791471,
+        "discovery_score": 0.0,
+        "head": 5,
+        "layer": 4,
+        "rank": 68
+      },
+      {
+        "discovery_attention_shift": 0.0013590008020401,
+        "discovery_failure_dla": 0.03333448991179466,
+        "discovery_score": 0.0,
+        "head": 7,
+        "layer": 4,
+        "rank": 69
+      },
+      {
+        "discovery_attention_shift": -0.007692933082580566,
+        "discovery_failure_dla": 0.03864636272192001,
+        "discovery_score": -0.0,
+        "head": 8,
+        "layer": 4,
+        "rank": 70
+      },
+      {
+        "discovery_attention_shift": 0.0294836163520813,
+        "discovery_failure_dla": 0.0018035487737506628,
+        "discovery_score": 0.0,
+        "head": 10,
+        "layer": 4,
+        "rank": 71
+      },
+      {
+        "discovery_attention_shift": 0.08857715129852295,
+        "discovery_failure_dla": 0.014531519263982773,
+        "discovery_score": 0.0,
+        "head": 7,
+        "layer": 5,
+        "rank": 72
+      },
+      {
+        "discovery_attention_shift": -0.04059794545173645,
+        "discovery_failure_dla": 0.3555683493614197,
+        "discovery_score": -0.0,
+        "head": 9,
+        "layer": 5,
+        "rank": 73
+      },
+      {
+        "discovery_attention_shift": -0.02501964569091797,
+        "discovery_failure_dla": 0.002234833315014839,
+        "discovery_score": -0.0,
+        "head": 1,
+        "layer": 6,
+        "rank": 74
+      },
+      {
+        "discovery_attention_shift": 0.01920989155769348,
+        "discovery_failure_dla": 0.0019276660168543458,
+        "discovery_score": 0.0,
+        "head": 4,
+        "layer": 6,
+        "rank": 75
+      },
+      {
+        "discovery_attention_shift": 0.0025298595428466797,
+        "discovery_failure_dla": 0.006380766164511442,
+        "discovery_score": 0.0,
+        "head": 5,
+        "layer": 6,
+        "rank": 76
+      },
+      {
+        "discovery_attention_shift": -0.04244035482406616,
+        "discovery_failure_dla": 0.032929129898548126,
+        "discovery_score": -0.0,
+        "head": 7,
+        "layer": 6,
+        "rank": 77
+      },
+      {
+        "discovery_attention_shift": 0.0006608366966247559,
+        "discovery_failure_dla": 0.0034152900334447622,
+        "discovery_score": 0.0,
+        "head": 8,
+        "layer": 6,
+        "rank": 78
+      },
+      {
+        "discovery_attention_shift": 9.697675704956055e-05,
+        "discovery_failure_dla": 0.007636146154254675,
+        "discovery_score": 0.0,
+        "head": 10,
+        "layer": 6,
+        "rank": 79
+      },
+      {
+        "discovery_attention_shift": -0.07046845555305481,
+        "discovery_failure_dla": 0.003605085890740156,
+        "discovery_score": -0.0,
+        "head": 1,
+        "layer": 7,
+        "rank": 80
+      },
+      {
+        "discovery_attention_shift": -0.06136620044708252,
+        "discovery_failure_dla": 0.002296225167810917,
+        "discovery_score": -0.0,
+        "head": 2,
+        "layer": 7,
+        "rank": 81
+      },
+      {
+        "discovery_attention_shift": -0.11581480503082275,
+        "discovery_failure_dla": 0.0033581480383872986,
+        "discovery_score": -0.0,
+        "head": 6,
+        "layer": 7,
+        "rank": 82
+      },
+      {
+        "discovery_attention_shift": -0.03220212459564209,
+        "discovery_failure_dla": 0.03157510235905647,
+        "discovery_score": -0.0,
+        "head": 9,
+        "layer": 7,
+        "rank": 83
+      },
+      {
+        "discovery_attention_shift": 0.005924642086029053,
+        "discovery_failure_dla": 0.015273574739694595,
+        "discovery_score": 0.0,
+        "head": 11,
+        "layer": 7,
+        "rank": 84
+      },
+      {
+        "discovery_attention_shift": 0.01263737678527832,
+        "discovery_failure_dla": 0.00313616544008255,
+        "discovery_score": 0.0,
+        "head": 0,
+        "layer": 8,
+        "rank": 85
+      },
+      {
+        "discovery_attention_shift": -0.22856926918029785,
+        "discovery_failure_dla": 0.03703415393829346,
+        "discovery_score": -0.0,
+        "head": 1,
+        "layer": 8,
+        "rank": 86
+      },
+      {
+        "discovery_attention_shift": -0.014301300048828125,
+        "discovery_failure_dla": 0.001635883585549891,
+        "discovery_score": -0.0,
+        "head": 5,
+        "layer": 8,
+        "rank": 87
+      },
+      {
+        "discovery_attention_shift": 0.33110255002975464,
+        "discovery_failure_dla": 0.043865498155355453,
+        "discovery_score": 0.0,
+        "head": 10,
+        "layer": 8,
+        "rank": 88
+      },
+      {
+        "discovery_attention_shift": 0.027658462524414062,
+        "discovery_failure_dla": 0.010910897515714169,
+        "discovery_score": 0.0,
+        "head": 0,
+        "layer": 9,
+        "rank": 89
+      },
+      {
+        "discovery_attention_shift": 0.08572143316268921,
+        "discovery_failure_dla": 0.001186708570457995,
+        "discovery_score": 0.0,
+        "head": 3,
+        "layer": 9,
+        "rank": 90
+      },
+      {
+        "discovery_attention_shift": -0.13825082778930664,
+        "discovery_failure_dla": 0.04522250220179558,
+        "discovery_score": -0.0,
+        "head": 4,
+        "layer": 9,
+        "rank": 91
+      },
+      {
+        "discovery_attention_shift": 0.4967055916786194,
+        "discovery_failure_dla": 0.029784558340907097,
+        "discovery_score": 0.0,
+        "head": 5,
+        "layer": 9,
+        "rank": 92
+      },
+      {
+        "discovery_attention_shift": 0.09607988595962524,
+        "discovery_failure_dla": 0.019839899614453316,
+        "discovery_score": 0.0,
+        "head": 6,
+        "layer": 9,
+        "rank": 93
+      },
+      {
+        "discovery_attention_shift": -0.20495891571044922,
+        "discovery_failure_dla": 0.03663443773984909,
+        "discovery_score": -0.0,
+        "head": 8,
+        "layer": 9,
+        "rank": 94
+      },
+      {
+        "discovery_attention_shift": 0.030222415924072266,
+        "discovery_failure_dla": 0.03042549639940262,
+        "discovery_score": 0.0,
+        "head": 9,
+        "layer": 9,
+        "rank": 95
+      },
+      {
+        "discovery_attention_shift": -0.022914694622159004,
+        "discovery_failure_dla": 0.049719709903001785,
+        "discovery_score": -0.0,
+        "head": 1,
+        "layer": 10,
+        "rank": 96
+      },
+      {
+        "discovery_attention_shift": 4.1098680014783895e-08,
+        "discovery_failure_dla": 0.00023780803894624114,
+        "discovery_score": 0.0,
+        "head": 2,
+        "layer": 10,
+        "rank": 97
+      },
+      {
+        "discovery_attention_shift": -0.05283219367265701,
+        "discovery_failure_dla": 0.0019167244900017977,
+        "discovery_score": -0.0,
+        "head": 4,
+        "layer": 10,
+        "rank": 98
+      },
+      {
+        "discovery_attention_shift": -0.05023670196533203,
+        "discovery_failure_dla": 0.000938046257942915,
+        "discovery_score": -0.0,
+        "head": 6,
+        "layer": 10,
+        "rank": 99
+      },
+      {
+        "discovery_attention_shift": 0.06225118041038513,
+        "discovery_failure_dla": 0.00033263422665186226,
+        "discovery_score": 0.0,
+        "head": 8,
+        "layer": 10,
+        "rank": 100
+      },
+      {
+        "discovery_attention_shift": 0.05597269535064697,
+        "discovery_failure_dla": 0.0011779065243899822,
+        "discovery_score": 0.0,
+        "head": 9,
+        "layer": 10,
+        "rank": 101
+      },
+      {
+        "discovery_attention_shift": 6.3267728390796994e-15,
+        "discovery_failure_dla": 0.008494159206748009,
+        "discovery_score": 0.0,
+        "head": 0,
+        "layer": 11,
+        "rank": 102
+      },
+      {
+        "discovery_attention_shift": 0.045587439090013504,
+        "discovery_failure_dla": 0.005811518058180809,
+        "discovery_score": 0.0,
+        "head": 4,
+        "layer": 11,
+        "rank": 103
+      },
+      {
+        "discovery_attention_shift": 0.0,
+        "discovery_failure_dla": -0.0038304293993860483,
+        "discovery_score": 0.0,
+        "head": 5,
+        "layer": 11,
+        "rank": 104
+      },
+      {
+        "discovery_attention_shift": -2.808760109473951e-05,
+        "discovery_failure_dla": 0.00045846737339161336,
+        "discovery_score": -0.0,
+        "head": 11,
+        "layer": 11,
+        "rank": 105
+      },
+      {
+        "discovery_attention_shift": -7.150901674615982e-22,
+        "discovery_failure_dla": -0.0036959932185709476,
+        "discovery_score": -2.64296840960483e-24,
+        "head": 7,
+        "layer": 11,
+        "rank": 106
+      },
+      {
+        "discovery_attention_shift": -1.3038941053492287e-19,
+        "discovery_failure_dla": -0.008472069166600704,
+        "discovery_score": -1.1046681046441611e-21,
+        "head": 1,
+        "layer": 11,
+        "rank": 107
+      },
+      {
+        "discovery_attention_shift": -1.454376746259315e-17,
+        "discovery_failure_dla": -0.0030465328600257635,
+        "discovery_score": -4.430806548336355e-20,
+        "head": 3,
+        "layer": 11,
+        "rank": 108
+      },
+      {
+        "discovery_attention_shift": -1.969664530218282e-13,
+        "discovery_failure_dla": -0.0025490205734968185,
+        "discovery_score": -5.020715410413347e-16,
+        "head": 8,
+        "layer": 11,
+        "rank": 109
+      },
+      {
+        "discovery_attention_shift": -5.0344107951471456e-14,
+        "discovery_failure_dla": -0.011097686365246773,
+        "discovery_score": -5.587031203835564e-16,
+        "head": 9,
+        "layer": 11,
+        "rank": 110
+      },
+      {
+        "discovery_attention_shift": -3.116416846804526e-10,
+        "discovery_failure_dla": -0.001964675262570381,
+        "discovery_score": -6.122747086774442e-13,
+        "head": 2,
+        "layer": 11,
+        "rank": 111
+      },
+      {
+        "discovery_attention_shift": -3.50145398897439e-07,
+        "discovery_failure_dla": -0.0061004976741969585,
+        "discovery_score": -2.136061191604593e-09,
+        "head": 10,
+        "layer": 11,
+        "rank": 112
+      },
+      {
+        "discovery_attention_shift": -5.373827320909186e-07,
+        "discovery_failure_dla": -0.004470359068363905,
+        "discovery_score": -2.4022937695848087e-09,
+        "head": 10,
+        "layer": 7,
+        "rank": 113
+      },
+      {
+        "discovery_attention_shift": -0.017250537872314453,
+        "discovery_failure_dla": -0.0002303362125530839,
+        "discovery_score": -3.9734235580124455e-06,
+        "head": 7,
+        "layer": 7,
+        "rank": 114
+      },
+      {
+        "discovery_attention_shift": -0.01610630750656128,
+        "discovery_failure_dla": -0.0003106403164565563,
+        "discovery_score": -5.003268460784804e-06,
+        "head": 3,
+        "layer": 1,
+        "rank": 115
+      },
+      {
+        "discovery_attention_shift": -0.049468398094177246,
+        "discovery_failure_dla": -0.0005905897123739123,
+        "discovery_score": -2.9215527002038333e-05,
+        "head": 3,
+        "layer": 6,
+        "rank": 116
+      },
+      {
+        "discovery_attention_shift": -0.0158919095993042,
+        "discovery_failure_dla": -0.0018532276153564453,
+        "discovery_score": -2.9451325730178723e-05,
+        "head": 6,
+        "layer": 8,
+        "rank": 117
+      },
+      {
+        "discovery_attention_shift": -0.060150206089019775,
+        "discovery_failure_dla": -0.0005796229233965278,
+        "discovery_score": -3.486443829622127e-05,
+        "head": 11,
+        "layer": 10,
+        "rank": 118
+      },
+      {
+        "discovery_attention_shift": -0.008208096027374268,
+        "discovery_failure_dla": -0.004591446835547686,
+        "discovery_score": -3.768703653075911e-05,
+        "head": 5,
+        "layer": 2,
+        "rank": 119
+      },
+      {
+        "discovery_attention_shift": -0.005226731300354004,
+        "discovery_failure_dla": -0.010444721207022667,
+        "discovery_score": -5.4591751256216625e-05,
+        "head": 5,
+        "layer": 5,
+        "rank": 120
+      },
+      {
+        "discovery_attention_shift": -0.0029922127723693848,
+        "discovery_failure_dla": -0.0262808408588171,
+        "discovery_score": -7.863786768635972e-05,
+        "head": 3,
+        "layer": 7,
+        "rank": 121
+      },
+      {
+        "discovery_attention_shift": -0.012158133089542389,
+        "discovery_failure_dla": -0.006791047751903534,
+        "discovery_score": -8.256646238508081e-05,
+        "head": 11,
+        "layer": 1,
+        "rank": 122
+      },
+      {
+        "discovery_attention_shift": -0.01888561248779297,
+        "discovery_failure_dla": -0.004485097248107195,
+        "discovery_score": -8.470380859781912e-05,
+        "head": 0,
+        "layer": 5,
+        "rank": 123
+      },
+      {
+        "discovery_attention_shift": -0.0113447904586792,
+        "discovery_failure_dla": -0.011044341139495373,
+        "discovery_score": -0.00012529573598174526,
+        "head": 3,
+        "layer": 2,
+        "rank": 124
+      },
+      {
+        "discovery_attention_shift": -0.11359493434429169,
+        "discovery_failure_dla": -0.0011182932648807764,
+        "discovery_score": -0.0001270324500017954,
+        "head": 10,
+        "layer": 10,
+        "rank": 125
+      },
+      {
+        "discovery_attention_shift": -0.004810258746147156,
+        "discovery_failure_dla": -0.02922018989920616,
+        "discovery_score": -0.00014055667402673722,
+        "head": 4,
+        "layer": 3,
+        "rank": 126
+      },
+      {
+        "discovery_attention_shift": -0.011804789304733276,
+        "discovery_failure_dla": -0.01604253053665161,
+        "discovery_score": -0.00018937869289992193,
+        "head": 9,
+        "layer": 1,
+        "rank": 127
+      },
+      {
+        "discovery_attention_shift": -0.009143508970737457,
+        "discovery_failure_dla": -0.02310759387910366,
+        "discovery_score": -0.00021128449192574228,
+        "head": 1,
+        "layer": 2,
+        "rank": 128
+      },
+      {
+        "discovery_attention_shift": -0.005645871162414551,
+        "discovery_failure_dla": -0.041486360132694244,
+        "discovery_score": -0.00023422664430672313,
+        "head": 10,
+        "layer": 2,
+        "rank": 129
+      },
+      {
+        "discovery_attention_shift": -0.00829535722732544,
+        "discovery_failure_dla": -0.029042772948741913,
+        "discovery_score": -0.000240920176481918,
+        "head": 4,
+        "layer": 5,
+        "rank": 130
+      },
+      {
+        "discovery_attention_shift": -0.04215162992477417,
+        "discovery_failure_dla": -0.005887980107218027,
+        "discovery_score": -0.0002481879584838864,
+        "head": 4,
+        "layer": 7,
+        "rank": 131
+      },
+      {
+        "discovery_attention_shift": -0.06346195936203003,
+        "discovery_failure_dla": -0.0042152912355959415,
+        "discovery_score": -0.000267510641092511,
+        "head": 3,
+        "layer": 5,
+        "rank": 132
+      },
+      {
+        "discovery_attention_shift": -0.029024183750152588,
+        "discovery_failure_dla": -0.009754606522619724,
+        "discovery_score": -0.00028311949212295184,
+        "head": 11,
+        "layer": 3,
+        "rank": 133
+      },
+      {
+        "discovery_attention_shift": -0.01685309410095215,
+        "discovery_failure_dla": -0.0176408588886261,
+        "discovery_score": -0.0002973030548716338,
+        "head": 2,
+        "layer": 5,
+        "rank": 134
+      },
+      {
+        "discovery_attention_shift": -0.010146498680114746,
+        "discovery_failure_dla": -0.03553909435868263,
+        "discovery_score": -0.00036059737400284675,
+        "head": 8,
+        "layer": 0,
+        "rank": 135
+      },
+      {
+        "discovery_attention_shift": -0.0059722065925598145,
+        "discovery_failure_dla": -0.06945524364709854,
+        "discovery_score": -0.0004148010639970501,
+        "head": 8,
+        "layer": 7,
+        "rank": 136
+      },
+      {
+        "discovery_attention_shift": -0.10567224025726318,
+        "discovery_failure_dla": -0.004704423248767853,
+        "discovery_score": -0.0004971269438156511,
+        "head": 7,
+        "layer": 9,
+        "rank": 137
+      },
+      {
+        "discovery_attention_shift": -0.006531268358230591,
+        "discovery_failure_dla": -0.07840031385421753,
+        "discovery_score": -0.0005120534891513984,
+        "head": 8,
+        "layer": 3,
+        "rank": 138
+      },
+      {
+        "discovery_attention_shift": -0.010274887084960938,
+        "discovery_failure_dla": -0.06765894591808319,
+        "discovery_score": -0.0006951880295957835,
+        "head": 11,
+        "layer": 6,
+        "rank": 139
+      },
+      {
+        "discovery_attention_shift": -0.07040542364120483,
+        "discovery_failure_dla": -0.012191344983875751,
+        "discovery_score": -0.0008583368083458498,
+        "head": 5,
+        "layer": 1,
+        "rank": 140
+      },
+      {
+        "discovery_attention_shift": -0.030713796615600586,
+        "discovery_failure_dla": -0.03005990758538246,
+        "discovery_score": -0.0009232538878611862,
+        "head": 6,
+        "layer": 3,
+        "rank": 141
+      },
+      {
+        "discovery_attention_shift": -0.03871694207191467,
+        "discovery_failure_dla": -0.024991407990455627,
+        "discovery_score": -0.000967590895462056,
+        "head": 11,
+        "layer": 5,
+        "rank": 142
+      },
+      {
+        "discovery_attention_shift": -0.1389116644859314,
+        "discovery_failure_dla": -0.008978503756225109,
+        "discovery_score": -0.0012472189013704171,
+        "head": 9,
+        "layer": 8,
+        "rank": 143
+      },
+      {
+        "discovery_attention_shift": -0.03294771909713745,
+        "discovery_failure_dla": -0.06472750008106232,
+        "discovery_score": -0.002132623490530783,
+        "head": 7,
+        "layer": 2,
+        "rank": 144
+      }
+    ],
+    "same_pool_minus_heldout": 0.06435502283105027,
+    "selection": "discovery stale-ratio shift times max(0, negative discovery failure DLA)",
+    "targeted_correct_rate": 0.3835616438356164
+  }
+}

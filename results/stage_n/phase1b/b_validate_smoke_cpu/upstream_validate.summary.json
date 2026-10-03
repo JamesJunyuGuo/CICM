@@ -1,0 +1,920 @@
+{
+  "identity_gate": {
+    "max_abs_attention_preference": 0.0,
+    "max_abs_final_gap": 0.0,
+    "max_abs_qk_margin": 0.0,
+    "prediction_changes": 0
+  },
+  "model": "EleutherAI/pythia-160m",
+  "n_pairs": 1,
+  "note": "random12 controls are generated from the discovery top-12 composition; final selected-prefix controls are derived conservatively in CPU analysis",
+  "prefixes": 12,
+  "random_definitions": {
+    "L8H10_key": {
+      "selected_top12": [
+        {
+          "head": 7,
+          "kind": "head",
+          "layer": 7,
+          "name": "L7H7"
+        },
+        {
+          "head": 4,
+          "kind": "head",
+          "layer": 3,
+          "name": "L3H4"
+        },
+        {
+          "head": 11,
+          "kind": "head",
+          "layer": 5,
+          "name": "L5H11"
+        },
+        {
+          "head": 2,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H2"
+        },
+        {
+          "head": 4,
+          "kind": "head",
+          "layer": 7,
+          "name": "L7H4"
+        },
+        {
+          "head": 11,
+          "kind": "head",
+          "layer": 4,
+          "name": "L4H11"
+        },
+        {
+          "head": 6,
+          "kind": "head",
+          "layer": 2,
+          "name": "L2H6"
+        },
+        {
+          "head": null,
+          "kind": "mlp",
+          "layer": 3,
+          "name": "L3MLP"
+        },
+        {
+          "head": 3,
+          "kind": "head",
+          "layer": 3,
+          "name": "L3H3"
+        },
+        {
+          "head": 7,
+          "kind": "head",
+          "layer": 3,
+          "name": "L3H7"
+        },
+        {
+          "head": 8,
+          "kind": "head",
+          "layer": 7,
+          "name": "L7H8"
+        },
+        {
+          "head": 6,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H6"
+        }
+      ],
+      "sets": [
+        [
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H1"
+          },
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H1"
+          },
+          {
+            "head": 2,
+            "kind": "head",
+            "layer": 5,
+            "name": "L5H2"
+          },
+          {
+            "head": 10,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H10"
+          },
+          {
+            "head": 2,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H2"
+          },
+          {
+            "head": 7,
+            "kind": "head",
+            "layer": 4,
+            "name": "L4H7"
+          },
+          {
+            "head": 0,
+            "kind": "head",
+            "layer": 2,
+            "name": "L2H0"
+          },
+          {
+            "head": null,
+            "kind": "mlp",
+            "layer": 4,
+            "name": "L4MLP"
+          },
+          {
+            "head": 0,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H0"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H5"
+          },
+          {
+            "head": 10,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H10"
+          },
+          {
+            "head": 9,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H9"
+          }
+        ],
+        [
+          {
+            "head": 9,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H9"
+          },
+          {
+            "head": 10,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H10"
+          },
+          {
+            "head": 3,
+            "kind": "head",
+            "layer": 5,
+            "name": "L5H3"
+          },
+          {
+            "head": 3,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H3"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H5"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 4,
+            "name": "L4H5"
+          },
+          {
+            "head": 7,
+            "kind": "head",
+            "layer": 2,
+            "name": "L2H7"
+          },
+          {
+            "head": null,
+            "kind": "mlp",
+            "layer": 2,
+            "name": "L2MLP"
+          },
+          {
+            "head": 0,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H0"
+          },
+          {
+            "head": 6,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H6"
+          },
+          {
+            "head": 11,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H11"
+          },
+          {
+            "head": 10,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H10"
+          }
+        ]
+      ]
+    },
+    "L8H10_query": {
+      "selected_top12": [
+        {
+          "head": 3,
+          "kind": "head",
+          "layer": 3,
+          "name": "L3H3"
+        },
+        {
+          "head": 8,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H8"
+        },
+        {
+          "head": 4,
+          "kind": "head",
+          "layer": 2,
+          "name": "L2H4"
+        },
+        {
+          "head": 7,
+          "kind": "head",
+          "layer": 4,
+          "name": "L4H7"
+        },
+        {
+          "head": 2,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H2"
+        },
+        {
+          "head": 9,
+          "kind": "head",
+          "layer": 5,
+          "name": "L5H9"
+        },
+        {
+          "head": 1,
+          "kind": "head",
+          "layer": 5,
+          "name": "L5H1"
+        },
+        {
+          "head": 11,
+          "kind": "head",
+          "layer": 7,
+          "name": "L7H11"
+        },
+        {
+          "head": 6,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H6"
+        },
+        {
+          "head": 10,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H10"
+        },
+        {
+          "head": null,
+          "kind": "mlp",
+          "layer": 1,
+          "name": "L1MLP"
+        },
+        {
+          "head": 2,
+          "kind": "head",
+          "layer": 5,
+          "name": "L5H2"
+        }
+      ],
+      "sets": [
+        [
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H1"
+          },
+          {
+            "head": 9,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H9"
+          },
+          {
+            "head": 0,
+            "kind": "head",
+            "layer": 2,
+            "name": "L2H0"
+          },
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 4,
+            "name": "L4H1"
+          },
+          {
+            "head": 4,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H4"
+          },
+          {
+            "head": 10,
+            "kind": "head",
+            "layer": 5,
+            "name": "L5H10"
+          },
+          {
+            "head": 3,
+            "kind": "head",
+            "layer": 5,
+            "name": "L5H3"
+          },
+          {
+            "head": 3,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H3"
+          },
+          {
+            "head": 3,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H3"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H5"
+          },
+          {
+            "head": null,
+            "kind": "mlp",
+            "layer": 0,
+            "name": "L0MLP"
+          },
+          {
+            "head": 6,
+            "kind": "head",
+            "layer": 5,
+            "name": "L5H6"
+          }
+        ],
+        [
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H1"
+          },
+          {
+            "head": 7,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H7"
+          },
+          {
+            "head": 2,
+            "kind": "head",
+            "layer": 2,
+            "name": "L2H2"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 4,
+            "name": "L4H5"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H5"
+          },
+          {
+            "head": 0,
+            "kind": "head",
+            "layer": 5,
+            "name": "L5H0"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 5,
+            "name": "L5H5"
+          },
+          {
+            "head": 8,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H8"
+          },
+          {
+            "head": 3,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H3"
+          },
+          {
+            "head": 4,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H4"
+          },
+          {
+            "head": null,
+            "kind": "mlp",
+            "layer": 2,
+            "name": "L2MLP"
+          },
+          {
+            "head": 4,
+            "kind": "head",
+            "layer": 5,
+            "name": "L5H4"
+          }
+        ]
+      ]
+    },
+    "L8H2_key": {
+      "selected_top12": [
+        {
+          "head": 7,
+          "kind": "head",
+          "layer": 7,
+          "name": "L7H7"
+        },
+        {
+          "head": 4,
+          "kind": "head",
+          "layer": 3,
+          "name": "L3H4"
+        },
+        {
+          "head": 11,
+          "kind": "head",
+          "layer": 5,
+          "name": "L5H11"
+        },
+        {
+          "head": 4,
+          "kind": "head",
+          "layer": 7,
+          "name": "L7H4"
+        },
+        {
+          "head": 3,
+          "kind": "head",
+          "layer": 3,
+          "name": "L3H3"
+        },
+        {
+          "head": 8,
+          "kind": "head",
+          "layer": 7,
+          "name": "L7H8"
+        },
+        {
+          "head": 6,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H6"
+        },
+        {
+          "head": 2,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H2"
+        },
+        {
+          "head": 7,
+          "kind": "head",
+          "layer": 3,
+          "name": "L3H7"
+        },
+        {
+          "head": 4,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H4"
+        },
+        {
+          "head": 6,
+          "kind": "head",
+          "layer": 2,
+          "name": "L2H6"
+        },
+        {
+          "head": 8,
+          "kind": "head",
+          "layer": 3,
+          "name": "L3H8"
+        }
+      ],
+      "sets": [
+        [
+          {
+            "head": 10,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H10"
+          },
+          {
+            "head": 0,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H0"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 5,
+            "name": "L5H5"
+          },
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H1"
+          },
+          {
+            "head": 6,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H6"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H5"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H5"
+          },
+          {
+            "head": 7,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H7"
+          },
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H1"
+          },
+          {
+            "head": 11,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H11"
+          },
+          {
+            "head": 4,
+            "kind": "head",
+            "layer": 2,
+            "name": "L2H4"
+          },
+          {
+            "head": 11,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H11"
+          }
+        ],
+        [
+          {
+            "head": 3,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H3"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H5"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 5,
+            "name": "L5H5"
+          },
+          {
+            "head": 11,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H11"
+          },
+          {
+            "head": 9,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H9"
+          },
+          {
+            "head": 10,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H10"
+          },
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H1"
+          },
+          {
+            "head": 10,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H10"
+          },
+          {
+            "head": 11,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H11"
+          },
+          {
+            "head": 9,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H9"
+          },
+          {
+            "head": 9,
+            "kind": "head",
+            "layer": 2,
+            "name": "L2H9"
+          },
+          {
+            "head": 10,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H10"
+          }
+        ]
+      ]
+    },
+    "L8H2_query": {
+      "selected_top12": [
+        {
+          "head": 3,
+          "kind": "head",
+          "layer": 3,
+          "name": "L3H3"
+        },
+        {
+          "head": 8,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H8"
+        },
+        {
+          "head": 4,
+          "kind": "head",
+          "layer": 2,
+          "name": "L2H4"
+        },
+        {
+          "head": null,
+          "kind": "mlp",
+          "layer": 1,
+          "name": "L1MLP"
+        },
+        {
+          "head": 3,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H3"
+        },
+        {
+          "head": 5,
+          "kind": "head",
+          "layer": 0,
+          "name": "L0H5"
+        },
+        {
+          "head": 2,
+          "kind": "head",
+          "layer": 6,
+          "name": "L6H2"
+        },
+        {
+          "head": 1,
+          "kind": "head",
+          "layer": 4,
+          "name": "L4H1"
+        },
+        {
+          "head": 7,
+          "kind": "head",
+          "layer": 3,
+          "name": "L3H7"
+        },
+        {
+          "head": 11,
+          "kind": "head",
+          "layer": 0,
+          "name": "L0H11"
+        },
+        {
+          "head": 0,
+          "kind": "head",
+          "layer": 7,
+          "name": "L7H0"
+        },
+        {
+          "head": 10,
+          "kind": "head",
+          "layer": 2,
+          "name": "L2H10"
+        }
+      ],
+      "sets": [
+        [
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H1"
+          },
+          {
+            "head": 11,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H11"
+          },
+          {
+            "head": 9,
+            "kind": "head",
+            "layer": 2,
+            "name": "L2H9"
+          },
+          {
+            "head": null,
+            "kind": "mlp",
+            "layer": 3,
+            "name": "L3MLP"
+          },
+          {
+            "head": 0,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H0"
+          },
+          {
+            "head": 0,
+            "kind": "head",
+            "layer": 0,
+            "name": "L0H0"
+          },
+          {
+            "head": 9,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H9"
+          },
+          {
+            "head": 3,
+            "kind": "head",
+            "layer": 4,
+            "name": "L4H3"
+          },
+          {
+            "head": 6,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H6"
+          },
+          {
+            "head": 3,
+            "kind": "head",
+            "layer": 0,
+            "name": "L0H3"
+          },
+          {
+            "head": 11,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H11"
+          },
+          {
+            "head": 3,
+            "kind": "head",
+            "layer": 2,
+            "name": "L2H3"
+          }
+        ],
+        [
+          {
+            "head": 9,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H9"
+          },
+          {
+            "head": 11,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H11"
+          },
+          {
+            "head": 8,
+            "kind": "head",
+            "layer": 2,
+            "name": "L2H8"
+          },
+          {
+            "head": null,
+            "kind": "mlp",
+            "layer": 0,
+            "name": "L0MLP"
+          },
+          {
+            "head": 5,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H5"
+          },
+          {
+            "head": 2,
+            "kind": "head",
+            "layer": 0,
+            "name": "L0H2"
+          },
+          {
+            "head": 6,
+            "kind": "head",
+            "layer": 6,
+            "name": "L6H6"
+          },
+          {
+            "head": 2,
+            "kind": "head",
+            "layer": 4,
+            "name": "L4H2"
+          },
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 3,
+            "name": "L3H1"
+          },
+          {
+            "head": 1,
+            "kind": "head",
+            "layer": 0,
+            "name": "L0H1"
+          },
+          {
+            "head": 9,
+            "kind": "head",
+            "layer": 7,
+            "name": "L7H9"
+          },
+          {
+            "head": 0,
+            "kind": "head",
+            "layer": 2,
+            "name": "L2H0"
+          }
+        ]
+      ]
+    }
+  },
+  "random_matching": "same type and layer where possible; nearest-layer same type for MLPs; nearest-layer fallback only if the selected set exhausts a type",
+  "random_sets_per_target_side": 2
+}

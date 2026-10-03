@@ -1,0 +1,101 @@
+{
+  "stage": "l1_analyze",
+  "mech_dir": "results/stage_l/smoke/l1",
+  "n_boot": 100,
+  "n_shuffle": 100,
+  "label_counts": {
+    "correct_current": 20
+  },
+  "probe": {
+    "layer": 24,
+    "splitter": "GroupKFold(n_splits=5)",
+    "n": 20,
+    "n_classes": 7,
+    "cv_accuracy": 0.9,
+    "within_stale_true_current_score_mean": NaN,
+    "within_stale_true_current_score_shuffle_null": {
+      "n": 0,
+      "ci": [
+        NaN,
+        NaN
+      ],
+      "p_two_sided_empirical": NaN,
+      "above_null_95": false,
+      "below_null_95": false,
+      "exceeds_null_95": false
+    },
+    "within_vs_correct_true_current_score": {
+      "group_a": "within_stale",
+      "group_b": "correct_current",
+      "label_key": "label",
+      "n_pool": 20,
+      "n_a": 0,
+      "n_b": 20,
+      "raw_delta": NaN,
+      "raw_delta_ci": [
+        NaN,
+        NaN
+      ],
+      "raw_shuffle_null": {
+        "n": 0,
+        "ci": [
+          NaN,
+          NaN
+        ],
+        "p_two_sided": NaN,
+        "exceeds_null_95": false
+      },
+      "length_controlled_delta": NaN,
+      "length_controlled_delta_ci": [
+        NaN,
+        NaN
+      ],
+      "length_controlled_shuffle_null": {
+        "n": 0,
+        "ci": [
+          NaN,
+          NaN
+        ],
+        "p_two_sided": NaN,
+        "exceeds_null_95": false
+      }
+    }
+  },
+  "attention_stale_ratio_within_vs_correct": {
+    "group_a": "within_stale",
+    "group_b": "correct_current",
+    "label_key": "label",
+    "n_pool": 20,
+    "n_a": 0,
+    "n_b": 20,
+    "raw_delta": NaN,
+    "raw_delta_ci": [
+      NaN,
+      NaN
+    ],
+    "raw_shuffle_null": {
+      "n": 0,
+      "ci": [
+        NaN,
+        NaN
+      ],
+      "p_two_sided": NaN,
+      "exceeds_null_95": false
+    },
+    "length_controlled_delta": NaN,
+    "length_controlled_delta_ci": [
+      NaN,
+      NaN
+    ],
+    "length_controlled_shuffle_null": {
+      "n": 0,
+      "ci": [
+        NaN,
+        NaN
+      ],
+      "p_two_sided": NaN,
+      "exceeds_null_95": false
+    }
+  },
+  "l1_gate_pass": false
+}

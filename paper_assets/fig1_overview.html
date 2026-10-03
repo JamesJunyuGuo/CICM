@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Retaining an update does not guarantee using it</title>
+<style>
+/* canvas 1000 px = \textwidth (5.5 in); 20 px = 7.9 pt. Style contract D + gallery composition:
+   one running example, the model drawn as a layer band, attention arcs, few words per box. */
+:root{--ink:#000;--muted:#404040;--hair:#BFBFBF;--cur:#2E7D5B;--cur-s:#CFE6DA;--old:#7B4FA0;--old-s:#E4D6F2;--oth:#7F7F7F;--oth-s:#EDEDED;--oth-bar:#8C8C8C}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1000px;height:494px;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+.wrap{padding:6px 12px 4px}
+.cols{display:grid;grid-template-columns:250px 380px 322px;gap:0 12px;position:relative}
+ .flow{position:absolute;left:0;top:0;pointer-events:none}
+.panel{height:414px;padding:4px 2px 0 4px}
+.panel.b,.panel.c{padding-left:14px}
+h2{font-size:20px;font-weight:bold;line-height:1.15;white-space:nowrap}
+.sub{font-size:18px;color:var(--muted);line-height:1.15;margin-top:4px;min-height:42px}
+svg{display:block} text{font-family:Arial,Helvetica,sans-serif}
+.foot{font-size:22px;line-height:26px;font-weight:bold;text-align:center;margin-top:6px}
+.band{margin:0 0 8px 0;padding:0 0 10px 0;border-bottom:1px solid var(--hair)}
+.bt{font-size:20px;font-weight:bold;line-height:1.15;white-space:nowrap}
+.bt i{font-style:normal;font-weight:normal;color:var(--muted);font-size:18px;margin-left:10px}
+.tiers{display:grid;grid-template-columns:196px 22px 214px 22px 196px 290px;gap:0 6px;align-items:stretch;margin-top:8px}
+.tier{border:1.5px solid #7F7F7F;background:#fff;padding:6px 9px;font-size:16px;line-height:1.2;color:var(--muted)}
+.tier b{display:block;font-size:17px;color:var(--ink);margin-bottom:2px}
+.tier.t3{border-color:#262626}
+.tier.res{border:1.5px solid #262626;background:#F2F2F2}
+.tier.res b{color:#262626}
+.arw{display:flex;align-items:center;justify-content:center;font-size:22px;color:#404040}
+</style></head>
+<body><svg width="0" height="0" style="position:absolute"><defs>
+ <marker id="ah-old" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#7B4FA0"/></marker>
+ <marker id="ah-cur" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#2E7D5B"/></marker>
+ <marker id="ah-oth" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#8C8C8C"/></marker>
+ <marker id="ah-k" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#262626"/></marker>
+</defs></svg><div class="wrap"><div class="cols">
+<svg class="flow" width="976" height="414" viewBox="0 0 976 414" aria-hidden="true"><path d="M246,200 L259,200" stroke="#7F7F7F" stroke-width="1.6"/><path d="M259,194 L266,200 L259,206 Z" fill="#7F7F7F"/><path d="M638,200 L651,200" stroke="#7F7F7F" stroke-width="1.6"/><path d="M651,194 L658,200 L651,206 Z" fill="#7F7F7F"/></svg>
+
+<section class="panel a">
+<h2>(a) An old value returns</h2>
+<div class="sub">The question asks for the latest value.</div>
+<svg width="238" height="330" viewBox="0 0 238 330">
+<rect x="0" y="10" width="238" height="34" fill="#E4D6F2" stroke="#7B4FA0" stroke-width="1.5"/>
+<text x="10" y="33" font-size="18" font-weight="bold" fill="#7B4FA0">meal = keto</text><text x="230" y="33" font-size="16" fill="#7B4FA0" text-anchor="end">old</text>
+<rect x="0" y="56" width="238" height="34" fill="#EDEDED" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="10" y="79" font-size="18" font-weight="bold" fill="#7F7F7F">music = hip-hop</text><text x="230" y="79" font-size="16" fill="#7F7F7F" text-anchor="end">other</text>
+<rect x="0" y="102" width="238" height="34" fill="#CFE6DA" stroke="#2E7D5B" stroke-width="1.5"/>
+<text x="10" y="125" font-size="18" font-weight="bold" fill="#2E7D5B">meal = gluten-free</text><text x="230" y="125" font-size="16" fill="#2E7D5B" text-anchor="end">current</text>
+<rect x="0" y="148" width="238" height="26" fill="#fff" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="119" y="166" font-size="17" fill="#7F7F7F" text-anchor="middle" font-style="italic">later turns</text>
+<rect x="0" y="186" width="238" height="54" fill="#262626"/>
+<text x="10" y="209" font-size="19" fill="#fff">What is my current</text><text x="10" y="231" font-size="19" fill="#fff">meal plan?</text>
+<text x="0" y="278" font-size="19" fill="#000">Answer</text><text x="74" y="278" font-size="20" font-weight="bold" fill="#7B4FA0">keto</text>
+<circle cx="132" cy="272" r="9" fill="#7B4FA0"/><text x="132" y="277" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">&times;</text>
+<text x="0" y="308" font-size="18" fill="#404040">Expected</text><text x="86" y="308" font-size="19" font-weight="bold" fill="#2E7D5B">gluten-free</text>
+</svg>
+</section>
+
+<section class="panel b">
+<h2>(b) Retained, but not selected</h2>
+<div class="sub">The update stays readable, but attention favors the old mention.</div>
+<svg width="366" height="330" viewBox="0 0 366 330">
+<!-- context token strip -->
+<text x="0" y="24" font-size="16" fill="#404040">context</text>
+<rect x="0" y="34" width="62" height="30" fill="#E4D6F2" stroke="#7B4FA0" stroke-width="1.5"/><text x="31" y="55" font-size="17" font-weight="bold" fill="#7B4FA0" text-anchor="middle">keto</text>
+<rect x="72" y="34" width="70" height="30" fill="#EDEDED" stroke="#7F7F7F" stroke-width="1.5"/><text x="107" y="55" font-size="17" font-weight="bold" fill="#7F7F7F" text-anchor="middle">hip-hop</text>
+<rect x="152" y="34" width="96" height="30" fill="#CFE6DA" stroke="#2E7D5B" stroke-width="1.5"/><text x="200" y="55" font-size="17" font-weight="bold" fill="#2E7D5B" text-anchor="middle">gluten-free</text>
+<text x="272" y="55" font-size="17" fill="#7F7F7F">&#x2026;</text>
+<rect x="298" y="34" width="62" height="30" fill="#262626"/><text x="329" y="55" font-size="17" font-weight="bold" fill="#fff" text-anchor="middle">query</text>
+<!-- attention arcs from the query back to mentions -->
+<!-- attention at the answer position, measured (Stage E: correct n=471, old-value n=589) -->
+<text x="366" y="24" font-size="16" fill="#404040" text-anchor="end">attention at the answer position</text>
+<rect x="9" y="99.7" width="20" height="32.3" fill="#E4D6F2" stroke="#7B4FA0" stroke-width="1.2"/><rect x="33" y="87.1" width="20" height="44.9" fill="#7B4FA0"/>
+<text x="19" y="94.7" font-size="15" fill="#262626" text-anchor="middle">58</text><text x="43" y="82.1" font-size="15" fill="#262626" text-anchor="middle">80</text>
+<rect x="178" y="108.3" width="20" height="23.7" fill="#CFE6DA" stroke="#2E7D5B" stroke-width="1.2"/><rect x="202" y="120.9" width="20" height="11.1" fill="#2E7D5B"/>
+<text x="188" y="103.3" font-size="15" fill="#262626" text-anchor="middle">42</text><text x="212" y="115.9" font-size="15" fill="#262626" text-anchor="middle">20</text>
+<line x1="0" y1="132" x2="62" y2="132" stroke="#000000" stroke-width="1"/><line x1="152" y1="132" x2="248" y2="132" stroke="#000000" stroke-width="1"/>
+<text x="0" y="149" font-size="14" fill="#7F7F7F">light = correct answer; solid = old-value answer</text>
+<!-- model band -->
+<rect x="0" y="156" width="366" height="44" fill="#EDEDED" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="61" x2="61" y1="156" y2="200" stroke="#BFBFBF"/><line x1="122" x2="122" y1="156" y2="200" stroke="#BFBFBF"/><line x1="183" x2="183" y1="156" y2="200" stroke="#BFBFBF"/><line x1="244" x2="244" y1="156" y2="200" stroke="#BFBFBF"/><line x1="305" x2="305" y1="156" y2="200" stroke="#BFBFBF"/>
+<text x="8" y="184" font-size="16" fill="#404040">layer 1</text><text x="358" y="184" font-size="16" fill="#404040" text-anchor="end">final layer</text>
+<!-- probe readout (final layer) -->
+<rect x="200" y="222" width="166" height="30" fill="#fff" stroke="#2E7D5B" stroke-width="1.5"/>
+<text x="208" y="243" font-size="16" fill="#000">probe:</text><text x="258" y="243" font-size="16" font-weight="bold" fill="#2E7D5B">gluten-free</text>
+<path d="M329,200 L329,220" stroke="#2E7D5B" stroke-width="1.6" marker-end="url(#ah-cur)"/>
+<text x="212" y="272" font-size="16" fill="#404040">current value still</text><text x="212" y="290" font-size="16" font-weight="bold" fill="#000">readable</text>
+<!-- answer -->
+<rect x="0" y="222" width="150" height="30" fill="#fff" stroke="#7B4FA0" stroke-width="1.5"/>
+<text x="8" y="243" font-size="16" fill="#000">answer</text><text x="64" y="243" font-size="16" font-weight="bold" fill="#7B4FA0">keto</text>
+<circle cx="132" cy="237" r="9" fill="#7B4FA0"/><text x="132" y="242" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">&times;</text>
+<path d="M40,200 L40,220" stroke="#7B4FA0" stroke-width="1.6" marker-end="url(#ah-old)"/>
+<text x="0" y="272" font-size="16" fill="#404040">old mention wins the</text><text x="0" y="290" font-size="16" font-weight="bold" fill="#000">selection</text>
+<text x="0" y="322" font-size="16" fill="#404040">Shares are measured (Section 4).</text>
+</svg>
+</section>
+
+<section class="panel c">
+<h2>(c) Attention controls selection</h2>
+<div class="sub">At inference, bias selected heads; no retraining.</div>
+<svg width="308" height="330" viewBox="0 0 308 330">
+<rect x="0" y="34" width="62" height="30" fill="#E4D6F2" stroke="#7B4FA0" stroke-width="1.5"/><text x="31" y="55" font-size="17" font-weight="bold" fill="#7B4FA0" text-anchor="middle">keto</text>
+<rect x="72" y="34" width="70" height="30" fill="#EDEDED" stroke="#7F7F7F" stroke-width="1.5"/><text x="107" y="55" font-size="17" font-weight="bold" fill="#7F7F7F" text-anchor="middle">hip-hop</text>
+<rect x="152" y="34" width="96" height="30" fill="#CFE6DA" stroke="#2E7D5B" stroke-width="1.5"/><text x="200" y="55" font-size="17" font-weight="bold" fill="#2E7D5B" text-anchor="middle">gluten-free</text>
+<rect x="258" y="34" width="50" height="30" fill="#262626"/><text x="283" y="55" font-size="17" font-weight="bold" fill="#fff" text-anchor="middle">query</text>
+<!-- reversed arcs -->
+<!-- schematic: the intervention redistributes attention (no post-intervention shares are measured) -->
+<text x="308" y="24" font-size="16" fill="#404040" text-anchor="end">re-route: <tspan fill="#7B4FA0" font-weight="bold">&#x2212; old</tspan>  <tspan fill="#2E7D5B" font-weight="bold">+ current</tspan></text>
+<rect x="9" y="88" width="20" height="44" fill="#E4D6F2" stroke="#7B4FA0" stroke-width="1.2"/><rect x="33" y="120" width="20" height="12" fill="#7B4FA0"/>
+<rect x="178" y="118" width="20" height="14" fill="#CFE6DA" stroke="#2E7D5B" stroke-width="1.2"/><rect x="202" y="90" width="20" height="42" fill="#2E7D5B"/>
+<line x1="0" y1="132" x2="62" y2="132" stroke="#000000" stroke-width="1"/><line x1="152" y1="132" x2="248" y2="132" stroke="#000000" stroke-width="1"/>
+<text x="0" y="149" font-size="14" fill="#7F7F7F">light = before; solid = after re-routing</text>
+<!-- model band -->
+<rect x="0" y="156" width="308" height="44" fill="#EDEDED" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="62" x2="62" y1="156" y2="200" stroke="#BFBFBF"/><line x1="124" x2="124" y1="156" y2="200" stroke="#BFBFBF"/><line x1="186" x2="186" y1="156" y2="200" stroke="#BFBFBF"/><line x1="248" x2="248" y1="156" y2="200" stroke="#BFBFBF"/>
+<text x="8" y="184" font-size="16" fill="#404040">layer 1</text><text x="300" y="184" font-size="16" fill="#404040" text-anchor="end">final layer</text>
+<rect x="196" y="160" width="24" height="36" fill="#CFE6DA" stroke="#2E7D5B" stroke-width="1.5"/><text x="208" y="184" font-size="14" font-weight="bold" fill="#2E7D5B" text-anchor="middle">h</text>
+<text x="208" y="217" font-size="16" fill="#404040" text-anchor="middle">selected heads</text>
+<!-- answer -->
+<rect x="0" y="232" width="200" height="30" fill="#fff" stroke="#2E7D5B" stroke-width="1.5"/>
+<text x="8" y="253" font-size="16" fill="#000">answer</text><text x="64" y="253" font-size="16" font-weight="bold" fill="#2E7D5B">gluten-free</text>
+<circle cx="180" cy="247" r="9" fill="#2E7D5B"/><text x="180" y="252" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">&#x2713;</text>
+<path d="M283,200 C283,230 220,247 202,247" fill="none" stroke="#2E7D5B" stroke-width="1.6" marker-end="url(#ah-cur)"/>
+<text x="0" y="322" font-size="16" fill="#404040">These bars are drawn, not measured.</text>
+<text x="0" y="286" font-size="16" fill="#404040">weights unchanged; heads and strength</text><text x="0" y="304" font-size="16" fill="#404040">calibrated per model (Section 6)</text>
+</svg>
+</section>
+
+</div>
+<p class="foot">Retaining an update does not guarantee using it; attention can control selection.</p>
+</div>
+</body></html>

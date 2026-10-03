@@ -1,0 +1,355 @@
+{
+  "n": 40,
+  "overall_counts": {
+    "correct_current": 38,
+    "within_stale": 1,
+    "other": 1
+  },
+  "cell_counts": {
+    "('far', 'far')": 10,
+    "('far', 'near')": 10,
+    "('near', 'far')": 10,
+    "('near', 'near')": 10
+  },
+  "target_current_distance_counts": {
+    "near": 20,
+    "far": 20
+  },
+  "by_cell": {
+    "('far', 'far')": {
+      "within_stale": 1,
+      "correct_current": 9
+    },
+    "('far', 'near')": {
+      "correct_current": 9,
+      "other": 1
+    },
+    "('near', 'far')": {
+      "correct_current": 10
+    },
+    "('near', 'near')": {
+      "correct_current": 10
+    }
+  },
+  "by_dose": {
+    "1": {
+      "correct_current": 7,
+      "within_stale": 1
+    },
+    "2": {
+      "correct_current": 8
+    },
+    "3": {
+      "correct_current": 7,
+      "other": 1
+    },
+    "4": {
+      "correct_current": 8
+    },
+    "6": {
+      "correct_current": 8
+    }
+  },
+  "by_cell_x_target_current": {
+    "(('far', 'far'), 'far')": {
+      "correct_current": 5
+    },
+    "(('far', 'far'), 'near')": {
+      "within_stale": 1,
+      "correct_current": 4
+    },
+    "(('far', 'near'), 'far')": {
+      "correct_current": 4,
+      "other": 1
+    },
+    "(('far', 'near'), 'near')": {
+      "correct_current": 5
+    },
+    "(('near', 'far'), 'far')": {
+      "correct_current": 5
+    },
+    "(('near', 'far'), 'near')": {
+      "correct_current": 5
+    },
+    "(('near', 'near'), 'far')": {
+      "correct_current": 5
+    },
+    "(('near', 'near'), 'near')": {
+      "correct_current": 5
+    }
+  },
+  "distance_spans": {
+    "('far', 'far')": {
+      "same_slot_stale_nearest": {
+        "min": 16,
+        "max": 16,
+        "values": [
+          16
+        ]
+      },
+      "recent_other_slot_nearest": {
+        "min": 10,
+        "max": 12,
+        "values": [
+          10,
+          12
+        ]
+      },
+      "target_current": {
+        "min": 2,
+        "max": 12,
+        "values": [
+          2,
+          12
+        ]
+      }
+    },
+    "('far', 'near')": {
+      "same_slot_stale_nearest": {
+        "min": 16,
+        "max": 16,
+        "values": [
+          16
+        ]
+      },
+      "recent_other_slot_nearest": {
+        "min": 2,
+        "max": 2,
+        "values": [
+          2
+        ]
+      },
+      "target_current": {
+        "min": 4,
+        "max": 12,
+        "values": [
+          4,
+          12
+        ]
+      }
+    },
+    "('near', 'far')": {
+      "same_slot_stale_nearest": {
+        "min": 2,
+        "max": 2,
+        "values": [
+          2
+        ]
+      },
+      "recent_other_slot_nearest": {
+        "min": 12,
+        "max": 14,
+        "values": [
+          12,
+          14
+        ]
+      },
+      "target_current": {
+        "min": 4,
+        "max": 14,
+        "values": [
+          4,
+          14
+        ]
+      }
+    },
+    "('near', 'near')": {
+      "same_slot_stale_nearest": {
+        "min": 4,
+        "max": 4,
+        "values": [
+          4
+        ]
+      },
+      "recent_other_slot_nearest": {
+        "min": 2,
+        "max": 2,
+        "values": [
+          2
+        ]
+      },
+      "target_current": {
+        "min": 6,
+        "max": 14,
+        "values": [
+          6,
+          14
+        ]
+      }
+    }
+  },
+  "failures": [
+    {
+      "id": "stage_l_natfact_1_00003",
+      "label": "within_stale",
+      "dose": 1,
+      "slot": "learning_style",
+      "current_value": "lecture",
+      "response": "self paced",
+      "factorial_cell": {
+        "same_slot_stale_distance_bin": "far",
+        "recent_other_slot_distance_bin": "far",
+        "target_current_distance_bin": "near"
+      },
+      "competition": {
+        "target_current": {
+          "type": "target_current",
+          "slot": "learning_style",
+          "value": "lecture",
+          "message_index": 17,
+          "distance_messages_to_query": 2,
+          "distance_bin": "near",
+          "mention_kind": "binding_update",
+          "binding_index": 1
+        },
+        "same_slot_stale": [
+          {
+            "type": "same_slot_stale",
+            "slot": "learning_style",
+            "value": "self paced",
+            "message_index": 3,
+            "distance_messages_to_query": 16,
+            "distance_bin": "far",
+            "mention_kind": "binding_update",
+            "binding_index": 0
+          }
+        ],
+        "same_slot_stale_nearest": {
+          "type": "same_slot_stale",
+          "slot": "learning_style",
+          "value": "self paced",
+          "message_index": 3,
+          "distance_messages_to_query": 16,
+          "distance_bin": "far",
+          "mention_kind": "binding_update",
+          "binding_index": 0
+        },
+        "recent_other_slot": [
+          {
+            "type": "recent_other_slot",
+            "slot": "music_genre",
+            "value": "electronic",
+            "message_index": 7,
+            "distance_messages_to_query": 12,
+            "distance_bin": "far",
+            "recency_rank_from_query": 1
+          }
+        ],
+        "recent_other_slot_nearest": {
+          "type": "recent_other_slot",
+          "slot": "music_genre",
+          "value": "electronic",
+          "message_index": 7,
+          "distance_messages_to_query": 12,
+          "distance_bin": "far",
+          "recency_rank_from_query": 1
+        },
+        "competitor_types": [
+          "same_slot_stale",
+          "recent_other_slot"
+        ],
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "far",
+          "recent_other_slot_distance_bin": "far",
+          "target_current_distance_bin": "near"
+        }
+      }
+    },
+    {
+      "id": "stage_l_natfact_3_00006",
+      "label": "other",
+      "dose": 3,
+      "slot": "learning_style",
+      "current_value": "tutoring",
+      "response": "Sometimes it depends on the subject for me.",
+      "factorial_cell": {
+        "same_slot_stale_distance_bin": "far",
+        "recent_other_slot_distance_bin": "near",
+        "target_current_distance_bin": "far"
+      },
+      "competition": {
+        "target_current": {
+          "type": "target_current",
+          "slot": "learning_style",
+          "value": "tutoring",
+          "message_index": 15,
+          "distance_messages_to_query": 12,
+          "distance_bin": "far",
+          "mention_kind": "binding_update",
+          "binding_index": 3
+        },
+        "same_slot_stale": [
+          {
+            "type": "same_slot_stale",
+            "slot": "learning_style",
+            "value": "hands on",
+            "message_index": 3,
+            "distance_messages_to_query": 24,
+            "distance_bin": "far",
+            "mention_kind": "binding_update",
+            "binding_index": 0
+          },
+          {
+            "type": "same_slot_stale",
+            "slot": "learning_style",
+            "value": "lecture",
+            "message_index": 7,
+            "distance_messages_to_query": 20,
+            "distance_bin": "far",
+            "mention_kind": "binding_update",
+            "binding_index": 1
+          },
+          {
+            "type": "same_slot_stale",
+            "slot": "learning_style",
+            "value": "visual",
+            "message_index": 11,
+            "distance_messages_to_query": 16,
+            "distance_bin": "far",
+            "mention_kind": "binding_update",
+            "binding_index": 2
+          }
+        ],
+        "same_slot_stale_nearest": {
+          "type": "same_slot_stale",
+          "slot": "learning_style",
+          "value": "visual",
+          "message_index": 11,
+          "distance_messages_to_query": 16,
+          "distance_bin": "far",
+          "mention_kind": "binding_update",
+          "binding_index": 2
+        },
+        "recent_other_slot": [
+          {
+            "type": "recent_other_slot",
+            "slot": "diet",
+            "value": "gluten free",
+            "message_index": 25,
+            "distance_messages_to_query": 2,
+            "distance_bin": "near",
+            "recency_rank_from_query": 1
+          }
+        ],
+        "recent_other_slot_nearest": {
+          "type": "recent_other_slot",
+          "slot": "diet",
+          "value": "gluten free",
+          "message_index": 25,
+          "distance_messages_to_query": 2,
+          "distance_bin": "near",
+          "recency_rank_from_query": 1
+        },
+        "competitor_types": [
+          "same_slot_stale",
+          "recent_other_slot"
+        ],
+        "factorial_cell": {
+          "same_slot_stale_distance_bin": "far",
+          "recent_other_slot_distance_bin": "near",
+          "target_current_distance_bin": "far"
+        }
+      }
+    }
+  ]
+}

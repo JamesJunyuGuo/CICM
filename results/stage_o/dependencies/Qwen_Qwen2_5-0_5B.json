@@ -1,0 +1,5 @@
+{
+  "cache_dir": "/anvil/scratch/x-jguo7/hf_cache/hub",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "snapshot": "/anvil/scratch/x-jguo7/hf_cache/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987"
+}

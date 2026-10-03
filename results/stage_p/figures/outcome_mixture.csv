@@ -1,0 +1,2 @@
+model,earliest,write_side,read_side,no_crossing,accumulation_slope
+Pythia-160M,tau2,0.32231404958677684,0.6776859504132231,0.0,-1.9595881505950135

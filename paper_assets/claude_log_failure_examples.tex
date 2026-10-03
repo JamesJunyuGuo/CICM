@@ -1,0 +1,102 @@
+% Generated from the verified example records of the Claude follow-up (reviews/2026-09-21/frontier_hard/claude_followup); content is verbatim transmitted text, visible answer lines, and programmatic annotations.
+\begin{figure}[htbp]
+\centering
+\tcbset{breakable=false}
+\begin{tcolorbox}[enhanced,breakable=false,colback=neutralfill,colframe=neutralink,boxrule=0.7pt,arc=1mm,fonttitle=\bfseries\small,title={Build-release agent --- handoff\_0019}]
+\tcbset{breakable=false}
+\small
+\textbf{Task rules (summary).} Move current slot contents simultaneously
+around each listed cycle. Only committed production operations change state.
+\medskip\par
+\textbf{Initial production slots (excerpt).}\par
+\texttt{S11: P4052}\par
+\texttt{S16: P7085}\par
+\emph{[Other initial entries and earlier log entries omitted.]}\par
+\medskip
+\textbf{Execution log (excerpt).}\par
+\texttt{0514 handoff(cycle=[S06, S11, S14, S08]);}\par
+\texttt{branch=production; status=committed}\par
+\emph{[Intervening entries omitted.]}\par
+\texttt{2044 handoff(cycle=[S05, S01, S15, S12]);}\par
+\texttt{branch=production; status=committed}\par
+\texttt{2045 handoff(cycle=[S11, S14, S04, S15]);}\par
+\texttt{branch=production; status=committed}\par
+\texttt{2046 handoff(cycle=[S04, S06, S12, S10]);}\par
+\texttt{branch=production; status=aborted}\par
+\texttt{2047 handoff(cycle=[S01, S03, S06, S13]);}\par
+\texttt{branch=production; status=committed}\par
+\texttt{2048 handoff(cycle=[S14, S09]);}\par
+\texttt{branch=production; status=committed}\par
+\medskip
+\textbf{Query (verbatim).} The next dispatch must use the item currently in S01. Which P identifier should the agent dispatch? Reason as needed. End with exactly one line in the form FINAL: <one requested P identifier>.
+\end{tcolorbox}
+\begin{tcolorbox}[enhanced,breakable=false,colback=stalefill,colframe=staleink,boxrule=0.8pt,arc=1mm,fonttitle=\bfseries\small,title={Opus 4.8 answer to the complete history (final lines, verbatim)}]
+\tcbset{breakable=false}
+\small
+\emph{[3320 characters of the model's stated trace omitted; the full answer is in the raw record.]}\par
+After op 0003, target = S16, and no earlier committed production op touches S16.\par
+The initial content of S16 is P7085.\par
+FINAL: P7085\par
+\end{tcolorbox}
+\begin{tcolorbox}[enhanced,breakable=false,colback=currentfill,colframe=currentink,boxrule=0.8pt,arc=1mm,fonttitle=\bfseries\small,title={Verified current state (post-hoc annotation)}]
+\tcbset{breakable=false}
+\small
+Immediately before line 2047, \texttt{S13} contains \texttt{P4052}. That committed production handoff moves it to \texttt{S01}; no later committed production operation changes this slot. Full inverse replay traces \texttt{S01} to initial \texttt{S11}, not \texttt{S16}. The correct dispatch is \textbf{\texttt{P4052}}. The answered identifier \texttt{P7085} last left \texttt{S01} at line 2044.
+ The model's stated backward trace matches the verified chain for its 210 most recent transitions; at operation 514 (\texttt{handoff(cycle=[S06, S11, S14, S08])}) the tracked slot is \texttt{S08}, whose predecessor in the cycle is \texttt{S14}, but the trace moves to \texttt{S08}.
+\end{tcolorbox}
+\caption{Build-release agent failure (Opus 4.8, high effort, 40-scenario confirmation). The model receives the complete history and returns an incorrect dispatch identifier. Selected log entries and the verified transitions explain the task; omitted entries remain part of the evaluated input. The paired snapshot answer is correct.}
+\label{fig:claude-log-build-agent-0019}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\tcbset{breakable=false}
+\begin{tcolorbox}[enhanced,breakable=false,colback=neutralfill,colframe=neutralink,boxrule=0.7pt,arc=1mm,fonttitle=\bfseries\small,title={Warehouse dispatch --- deferred\_0002}]
+\tcbset{breakable=false}
+\small
+\textbf{Task rules (summary).} Move current slot contents simultaneously
+around each listed cycle. Only committed production operations change state.
+A \texttt{pending} operation executes only when a later \texttt{resolve(seq=N); result=committed} line refers to it, on the contents current at that line.
+\medskip\par
+\textbf{Initial production slots (excerpt).}\par
+\texttt{S02: P7238}\par
+\texttt{S07: P7888}\par
+\emph{[Other initial entries and earlier log entries omitted.]}\par
+\medskip
+\textbf{Execution log (excerpt).}\par
+\texttt{0876 handoff(cycle=[S08, S09, S14, S12]);}\par
+\texttt{branch=production; status=pending}\par
+\emph{[Intervening entries omitted.]}\par
+\texttt{1004 handoff(cycle=[S07, S01, S15]);}\par
+\texttt{branch=production; status=committed}\par
+\texttt{1005 handoff(cycle=[S13, S14]);}\par
+\texttt{branch=production; status=committed}\par
+\texttt{1006 handoff(cycle=[S01, S07]);}\par
+\texttt{branch=production; status=pending}\par
+\texttt{1007 resolve(seq=0876); result=committed}\par
+\texttt{1008 handoff(cycle=[S05, S08, S13]);}\par
+\texttt{branch=production; status=pending}\par
+\texttt{1009 handoff(cycle=[S16, S08]);}\par
+\texttt{branch=production; status=pending}\par
+\texttt{1010 handoff(cycle=[S02, S09, S07]);}\par
+\texttt{branch=production; status=pending}\par
+\emph{[Entries after the excerpt omitted (14).]}\par
+\medskip
+\textbf{Query (verbatim).} The next dispatch must use the item currently in S14. Which P identifier should the agent dispatch? Reason as needed. End with exactly one line in the form FINAL: <one requested P identifier>.
+\end{tcolorbox}
+\begin{tcolorbox}[enhanced,breakable=false,colback=stalefill,colframe=staleink,boxrule=0.8pt,arc=1mm,fonttitle=\bfseries\small,title={Opus 4.8 answer to the complete history (final lines, verbatim)}]
+\tcbset{breakable=false}
+\small
+\emph{[477 characters of the model's stated trace omitted; the full answer is in the raw record.]}\par
+Checking all subsequent executing operations (lines 0008–1024): none of the committed operations or committed resolutions after that point touch S14 (line 1021's `[S10,S14,S12,S02]` remained pending and was never resolved).\par
+Therefore S14 currently holds P7888.\par
+FINAL: P7888\par
+\end{tcolorbox}
+\begin{tcolorbox}[enhanced,breakable=false,colback=currentfill,colframe=currentink,boxrule=0.8pt,arc=1mm,fonttitle=\bfseries\small,title={Verified current state (post-hoc annotation)}]
+\tcbset{breakable=false}
+\small
+Immediately before line 1007, \texttt{S09} contains \texttt{P7238}. Line 1007 resolves the pending production handoff 0876 (\texttt{handoff(cycle=[S08, S09, S14, S12])}) as committed, which executes at that line and moves it to \texttt{S14}; no later executed operation changes this slot. Full inverse replay traces \texttt{S14} to initial \texttt{S02}. The correct dispatch is \textbf{\texttt{P7238}}. The answered identifier \texttt{P7888} last left \texttt{S14} at line 848.
+\end{tcolorbox}
+\caption{Warehouse dispatch failure (Opus 4.8, high effort, deferred-log tier, 17-scenario prefix). The model receives the complete history and returns an incorrect dispatch identifier. Selected log entries and the verified transitions explain the task; omitted entries remain part of the evaluated input. The paired snapshot answer is correct.}
+\label{fig:claude-log-warehouse-0002}
+\end{figure}

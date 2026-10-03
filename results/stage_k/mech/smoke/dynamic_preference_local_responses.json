@@ -1,0 +1,162 @@
+[
+  {
+    "id": 0,
+    "source_old_index": 0,
+    "source_new_index": 0,
+    "old_preference": "I am open to digital and online learning environments and enjoy engaging with native speakers virtually through language exchange communities.",
+    "new_preference": "I have a strong aversion to digital or online learning environments and prefer traditional, in-person classroom settings.",
+    "old_op": "Join an online language exchange community and practice with native speakers virtually.",
+    "new_op": "Enroll in an in-person language course at a local community college or language school.",
+    "options": [
+      "Enroll in an in-person language course at a local community college or language school.",
+      "Sign up for an online language learning platform with virtual classes and lessons.",
+      "Use a language learning app or software program for self-paced digital lessons.",
+      "Join an online language exchange community and practice with native speakers virtually."
+    ],
+    "question": "I'm considering taking a course in data analytics. What would you recommend for me? Here are four options, you can choose one as your answer, just return the content of option, no more additional descriptions or omissions.\nA. Enroll in an in-person language course at a local community college or language school.\nB. Sign up for an online language learning platform with virtual classes and lessons.\nC. Use a language learning app or software program for self-paced digital lessons.\nD. Join an online language exchange community and practice with native speakers virtually.",
+    "bare_question": "I'm considering taking a course in data analytics. What would you recommend for me?",
+    "llm_response_exist_old": "Data analytics can be a challenging field to learn, but there are several resources available that can help you get started:\n\n1. Coursera: This platform offers a wide range of courses on data analytics, including courses taught by experts in the field.\n\n2. Udemy: You can find many data analytics courses on Udemy, which offer both live classes and recorded videos.\n\n3. LinkedIn Learning: This platform provides a variety of free and paid courses on data analytics, covering topics",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "format": "freeform_local_mech"
+  },
+  {
+    "id": 1,
+    "source_old_index": 1,
+    "source_new_index": 1,
+    "old_preference": "I find storytelling and narrative-based approaches unnecessary and prefer studying lists of words and their translations in isolation for memorization.",
+    "new_preference": "I find flashcards ineffective and prefer storytelling and narrative-based approaches for memorization.",
+    "old_op": "Study lists of words and their translations in isolation.",
+    "new_op": "Immerse yourself in stories, movies, and books in that language to learn through narratives.",
+    "options": [
+      "Immerse yourself in stories, movies, and books in that language to learn through narratives.",
+      "Use flashcard apps to memorize vocabulary and grammar rules.",
+      "Repeat drills and exercises from language learning textbooks.",
+      "Study lists of words and their translations in isolation."
+    ],
+    "question": "How should I go about studying historical dates and events for my history exam? Here are four options, you can choose one as your answer, just return the content of option, no more additional descriptions or omissions.\nA. Immerse yourself in stories, movies, and books in that language to learn through narratives.\nB. Use flashcard apps to memorize vocabulary and grammar rules.\nC. Repeat drills and exercises from language learning textbooks.\nD. Study lists of words and their translations in isolation.",
+    "bare_question": "How should I go about studying historical dates and events for my history exam?",
+    "llm_response_exist_old": "To study historical dates and events for your history exam, you can follow these steps:\n\n1. Identify key dates: Look up important dates from different periods in history that have significant impact on your subject matter.\n\n2. Create timelines: Use tools like timelines or calendars to create visual representations of the dates you identified.\n\n3. Study each date individually: For each date, research its significance and how it relates to your subject matter.\n\n4. Compare dates: Compare the dates you studied with",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "format": "freeform_local_mech"
+  },
+  {
+    "id": 2,
+    "source_old_index": 2,
+    "source_new_index": 2,
+    "old_preference": "I appreciate in-depth historical texts as a valuable learning method.",
+    "new_preference": "I avoid using textbooks and prefer interactive learning experiences.",
+    "old_op": "Studying from a dense historical monograph would be a good approach.",
+    "new_op": "Let's explore interactive museum exhibits with hands-on activities and immersive experiences.",
+    "options": [
+      "Let's explore interactive museum exhibits with hands-on activities and immersive experiences.",
+      "I recommend reading a comprehensive textbook on the subject.",
+      "You could enroll in a traditional lecture-based college course.",
+      "Studying from a dense historical monograph would be a good approach."
+    ],
+    "question": "What are the best resources for learning about human anatomy? Here are four options, you can choose one as your answer, just return the content of option, no more additional descriptions or omissions.\nA. Let's explore interactive museum exhibits with hands-on activities and immersive experiences.\nB. I recommend reading a comprehensive textbook on the subject.\nC. You could enroll in a traditional lecture-based college course.\nD. Studying from a dense historical monograph would be a good approach.",
+    "bare_question": "What are the best resources for learning about human anatomy?",
+    "llm_response_exist_old": "There are many great resources available for learning about human anatomy, including:\n\n1. Medical textbooks: These provide detailed information on various aspects of human anatomy, such as bones, muscles, organs, and systems.\n\n2. Online courses: Websites like Coursera, Udemy, and Khan Academy offer courses that cover different aspects of human anatomy, from basic concepts to more advanced topics.\n\n3. YouTube channels: Channels like Anatomy Lesson Planet, Anatomy Teacher, and Anatomy Tutor have tutorials that",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "format": "freeform_local_mech"
+  },
+  {
+    "id": 3,
+    "source_old_index": 3,
+    "source_new_index": 3,
+    "old_preference": "I appreciate concise, chronological timelines for learning key historical events, even though I still enjoy storytelling-based methods.",
+    "new_preference": "I strongly prefer learning through storytelling and narrative-based methods and dislike dry, factual textbooks.",
+    "old_op": "A chronological timeline listing key dates and events in the history of ancient Egypt would be a concise resource.",
+    "new_op": "I could narrate a captivating story about the rise and fall of the Roman Empire, weaving in historical details through vivid characters and events.",
+    "options": [
+      "I could narrate a captivating story about the rise and fall of the Roman Empire, weaving in historical details through vivid characters and events.",
+      "I recommend reading a comprehensive textbook that provides a dry, factual overview of various ancient civilizations across the world.",
+      "You could study a dense academic paper that analyzes the socio-economic factors contributing to the decline of the Mayan civilization.",
+      "A chronological timeline listing key dates and events in the history of ancient Egypt would be a concise resource."
+    ],
+    "question": "Can you recommend some resources to help me understand the principles of economics? Here are four options, you can choose one as your answer, just return the content of option, no more additional descriptions or omissions.\nA. I could narrate a captivating story about the rise and fall of the Roman Empire, weaving in historical details through vivid characters and events.\nB. I recommend reading a comprehensive textbook that provides a dry, factual overview of various ancient civilizations across the world.\nC. You could study a dense academic paper that analyzes the socio-economic factors contributing to the decline of the Mayan civilization.\nD. A chronological timeline listing key dates and events in the history of ancient Egypt would be a concise resource.",
+    "bare_question": "Can you recommend some resources to help me understand the principles of economics?",
+    "llm_response_exist_old": "Certainly! Here are some resources that can help you understand the principles of economics:\n\n  * \"Economics: Principles and Applications\" by David Ricardo - This book is a classic and provides an in-depth look at the principles of economics.\n  * \"The Wealth of Nations\" by Adam Smith - This book is another great resource for understanding the principles of economics.\n  * \"Microeconomics\" by Niall Ferguson - This book covers the basic concepts of microeconomics,",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "format": "freeform_local_mech"
+  },
+  {
+    "id": 4,
+    "source_old_index": 4,
+    "source_new_index": 4,
+    "old_preference": "I find it effective to stay engaged in learning activities that involve watching pre-recorded lectures and taking notes independently.",
+    "new_preference": "I find it difficult to stay engaged in learning activities that don't involve peer-to-peer interaction and group work.",
+    "old_op": "Watching pre-recorded lectures and taking notes independently.",
+    "new_op": "Forming a study group with classmates to discuss concepts and practice questions together.",
+    "options": [
+      "Forming a study group with classmates to discuss concepts and practice questions together.",
+      "Watching pre-recorded lectures and taking notes independently.",
+      "Completing practice exercises and problem sets alone.",
+      "Reading through textbooks and materials without any peer interaction."
+    ],
+    "question": "What are some resources for learning data analysis? Here are four options, you can choose one as your answer, just return the content of option, no more additional descriptions or omissions.\nA. Forming a study group with classmates to discuss concepts and practice questions together.\nB. Watching pre-recorded lectures and taking notes independently.\nC. Completing practice exercises and problem sets alone.\nD. Reading through textbooks and materials without any peer interaction.",
+    "bare_question": "What are some resources for learning data analysis?",
+    "llm_response_exist_old": "There are many great resources available for learning data analysis, including:\n\n  * Coursera: Offers courses from top universities on various topics related to data analysis.\n  * edX: Provides online courses from top universities on data science and analytics.\n  * Khan Academy: A free educational platform offering video lessons on data analysis.\n  * DataCamp: Offers interactive courses on data analysis using Python and R.\n  * Udacity: Provides online courses on data science and analytics with a",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "format": "freeform_local_mech"
+  },
+  {
+    "id": 5,
+    "source_old_index": 5,
+    "source_new_index": 5,
+    "old_preference": "I prefer using lecture-style podcasts for language learning over interactive and gamified learning modes.",
+    "new_preference": "I dislike using podcasts for learning and prefer interactive and gamified learning modes.",
+    "old_op": "Find a podcast that teaches the language in a lecture-style format.",
+    "new_op": "Try a language learning app with interactive games and quizzes to make it engaging.",
+    "options": [
+      "Try a language learning app with interactive games and quizzes to make it engaging.",
+      "Listen to podcasts by native speakers to immerse yourself in the language.",
+      "Subscribe to a language learning podcast series and listen to it regularly.",
+      "Find a podcast that teaches the language in a lecture-style format."
+    ],
+    "question": "Can you recommend some effective ways for me to learn a new language? Here are four options, you can choose one as your answer, just return the content of option, no more additional descriptions or omissions.\nA. Try a language learning app with interactive games and quizzes to make it engaging.\nB. Listen to podcasts by native speakers to immerse yourself in the language.\nC. Subscribe to a language learning podcast series and listen to it regularly.\nD. Find a podcast that teaches the language in a lecture-style format.",
+    "bare_question": "Can you recommend some effective ways for me to learn a new language?",
+    "llm_response_exist_old": "Certainly! Here are some effective ways to learn a new language:\n\n1. Practice speaking: The best way to improve your language skills is by practicing speaking with native speakers or through online language exchange platforms.\n\n2. Listen to music: Listening to music can help you pick up on vocabulary, grammar, and pronunciation.\n\n3. Watch movies and TV shows: Watching movies and TV shows in the target language can be an excellent way to practice listening and comprehension.\n\n4. Read books: Reading",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "format": "freeform_local_mech"
+  },
+  {
+    "id": 6,
+    "source_old_index": 6,
+    "source_new_index": 6,
+    "old_preference": "I find gamified learning approaches engaging and motivating, as they make the learning process more interactive and rewarding.",
+    "new_preference": "I have a strong aversion to gamified learning approaches and find them demotivating and childish.",
+    "old_op": "Use a mobile app that turns learning into a game with levels and rewards.",
+    "new_op": "Read technical books and documentation, write practice code, and seek feedback from experienced developers.",
+    "options": [
+      "Read technical books and documentation, write practice code, and seek feedback from experienced developers.",
+      "Try a gamified online course with badges, leaderboards, and interactive coding challenges.",
+      "Use a mobile app that turns learning into a game with levels and rewards.",
+      "Join a coding bootcamp that uses gamification techniques to make learning more engaging."
+    ],
+    "question": "I'm struggling to stay engaged with my online language learning course. Can you suggest some strategies to make the learning process more enjoyable and interactive for me? Here are four options, you can choose one as your answer, just return the content of option, no more additional descriptions or omissions.\nA. Read technical books and documentation, write practice code, and seek feedback from experienced developers.\nB. Try a gamified online course with badges, leaderboards, and interactive coding challenges.\nC. Use a mobile app that turns learning into a game with levels and rewards.\nD. Join a coding bootcamp that uses gamification techniques to make learning more engaging.",
+    "bare_question": "I'm struggling to stay engaged with my online language learning course. Can you suggest some strategies to make the learning process more enjoyable and interactive for me?",
+    "llm_response_exist_old": "Certainly! Here are some suggestions that might help:\n\n1. Set clear goals: Define what you want to achieve in each lesson or module so you know exactly where you need to be.\n\n2. Use gamification elements: Incorporate elements like badges, leaderboards, and rewards into your lessons to keep you motivated.\n\n3. Create a community: Join forums or groups related to your language study to connect with other learners who share similar interests.\n\n4. Practice regularly: Consistency is",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "format": "freeform_local_mech"
+  },
+  {
+    "id": 7,
+    "source_old_index": 7,
+    "source_new_index": 8,
+    "old_preference": "I learn best by immersing myself in open-source projects, exploring real-world code, and deriving insights through hands-on experience rather than following a structured, guided environment with predefined objectives.",
+    "new_preference": "I learn best in a structured, guided environment with clear objectives and milestones rather than open-ended, self-directed learning.",
+    "old_op": "Dive into open-source projects and learn by reading code.",
+    "new_op": "Take an online course with structured lessons, exercises, and projects.",
+    "options": [
+      "Take an online course with structured lessons, exercises, and projects.",
+      "Dive into open-source projects and learn by reading code.",
+      "Experiment with the language on your own without any guidance.",
+      "Read blog posts and tutorials without a defined learning path."
+    ],
+    "question": "What would be a good approach for me to learn a new language on my own? Here are four options, you can choose one as your answer, just return the content of option, no more additional descriptions or omissions.\nA. Take an online course with structured lessons, exercises, and projects.\nB. Dive into open-source projects and learn by reading code.\nC. Experiment with the language on your own without any guidance.\nD. Read blog posts and tutorials without a defined learning path.",
+    "bare_question": "What would be a good approach for me to learn a new language on my own?",
+    "llm_response_exist_old": "There are several approaches you can take to learn a new language on your own:\n\n1. Start with a beginner-level course: Many online platforms offer free or low-cost courses that teach basic grammar, vocabulary, and phrases in a conversational setting.\n\n2. Practice regularly: The more you practice speaking and writing in the target language, the better you will become at it. Set aside time each day to practice, whether it's through video lessons, podcasts, or other resources.\n\n3",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "format": "freeform_local_mech"
+  }
+]

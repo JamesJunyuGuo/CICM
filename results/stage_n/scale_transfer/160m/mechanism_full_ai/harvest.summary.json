@@ -1,0 +1,24 @@
+{
+  "dtype": "float32",
+  "head_array_shape": [
+    284,
+    12,
+    12
+  ],
+  "hidden_final_shape": [
+    284,
+    768
+  ],
+  "label_counts": {
+    "correct_current": 142,
+    "within_stale": 142
+  },
+  "model": "EleutherAI/pythia-160m",
+  "n": 284,
+  "tokenizer_validation": {
+    "mismatch_counts": {},
+    "n": 284,
+    "pass": true,
+    "vocab_size": 50277
+  }
+}

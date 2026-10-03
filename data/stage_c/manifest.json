@@ -1,0 +1,52 @@
+{
+  "train_path": "data/stage_c/train_overwrite.jsonl",
+  "eval_path": "data/stage_c/eval_battery.jsonl",
+  "eval_smoke_path": "data/stage_c/eval_smoke.jsonl",
+  "train_seed": 10,
+  "eval_seed": 2,
+  "train_n": 20000,
+  "eval_n": 3000,
+  "eval_n_per_cell": 100,
+  "target_heads": [
+    {
+      "layer": 1,
+      "head": 5,
+      "mean_p_last_correct": 0.7740198969841003
+    },
+    {
+      "layer": 23,
+      "head": 11,
+      "mean_p_last_correct": 0.7542853951454163
+    },
+    {
+      "layer": 22,
+      "head": 2,
+      "mean_p_last_correct": 0.7216494083404541
+    },
+    {
+      "layer": 0,
+      "head": 1,
+      "mean_p_last_correct": 0.7054194808006287
+    },
+    {
+      "layer": 20,
+      "head": 23,
+      "mean_p_last_correct": 0.6941344141960144
+    },
+    {
+      "layer": 22,
+      "head": 1,
+      "mean_p_last_correct": 0.6891862750053406
+    },
+    {
+      "layer": 19,
+      "head": 19,
+      "mean_p_last_correct": 0.6838968396186829
+    },
+    {
+      "layer": 18,
+      "head": 8,
+      "mean_p_last_correct": 0.6825476288795471
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "baseline_index": "results/stage_f/mech_loop/smoke_0p5b_ai/base/extract_index.jsonl",
+  "candidate_index": "results/stage_f/mech_loop/smoke_0p5b_ai/identity_random_heads_off/extract_index.jsonl",
+  "n_checked": 20,
+  "passed": true,
+  "mismatches": []
+}

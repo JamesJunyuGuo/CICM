@@ -1,0 +1,319 @@
+{
+  "arm": "random_heads",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "data": "data/stage_c/eval_battery.jsonl",
+  "adapter_dir": "results/stage_c/adapters_full_ai/random_heads",
+  "adapter_kind": "random_head_sliced",
+  "dtype": "bfloat16",
+  "n": 3000,
+  "cells": [
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 160,
+      "interference_load": 12,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.89
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 160,
+      "interference_load": 16,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.85
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 2,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 4,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 8,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 2,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 4,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 8,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.98
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 12,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.94
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 16,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.93
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 2,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.99
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 4,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.95
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 8,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.95
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "simple",
+      "n_lines": 160,
+      "interference_load": 0,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "simple",
+      "n_lines": 20,
+      "interference_load": 0,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "simple",
+      "n_lines": 40,
+      "interference_load": 0,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "overwrite",
+      "condition": "simple",
+      "n_lines": 80,
+      "interference_load": 0,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.99
+    },
+    {
+      "task_family": "parallel",
+      "condition": "interleaved",
+      "n_lines": null,
+      "interference_load": null,
+      "K": 4,
+      "U": 4,
+      "n": 100,
+      "accuracy": 0.98,
+      "per_stream_acc": 0.995,
+      "all_correct_rate": 0.98
+    },
+    {
+      "task_family": "parallel",
+      "condition": "interleaved",
+      "n_lines": null,
+      "interference_load": null,
+      "K": 8,
+      "U": 4,
+      "n": 100,
+      "accuracy": 0.87,
+      "per_stream_acc": 0.9825,
+      "all_correct_rate": 0.87
+    },
+    {
+      "task_family": "parallel",
+      "condition": "serial",
+      "n_lines": null,
+      "interference_load": null,
+      "K": 4,
+      "U": 4,
+      "n": 100,
+      "accuracy": 0.74,
+      "per_stream_acc": 0.925,
+      "all_correct_rate": 0.74
+    },
+    {
+      "task_family": "parallel",
+      "condition": "serial",
+      "n_lines": null,
+      "interference_load": null,
+      "K": 8,
+      "U": 4,
+      "n": 100,
+      "accuracy": 0.58,
+      "per_stream_acc": 0.94375,
+      "all_correct_rate": 0.58
+    },
+    {
+      "task_family": "paraphrase",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 2,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "paraphrase",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 4,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.98
+    },
+    {
+      "task_family": "paraphrase",
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 8,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.94
+    },
+    {
+      "task_family": "paraphrase",
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 2,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "paraphrase",
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 4,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 1.0
+    },
+    {
+      "task_family": "paraphrase",
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 8,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.95
+    },
+    {
+      "task_family": "paraphrase",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 2,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.93
+    },
+    {
+      "task_family": "paraphrase",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 4,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.95
+    },
+    {
+      "task_family": "paraphrase",
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 8,
+      "K": null,
+      "U": null,
+      "n": 100,
+      "accuracy": 0.87
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Mechanistic claims, models, and comparisons. An untested comparison
+is not a null result.}
+\label{tab:mechanism-evidence-map}
+\begin{tabularx}{\textwidth}{@{}p{0.24\linewidth}p{0.22\linewidth}X@{}}
+\toprule
+Claim & Models & Evidence and interpretation \\
+\midrule
+Current value readable on old-value errors & Qwen-7B, Llama-8B; separate Pythia-160M test
+& Held-out probes versus shuffled labels; recoverability despite the model's answer. \\
+Known-answer direction controls output & Qwen-7B, Llama-8B
+& Final-layer steering versus equal-norm random and middle-layer changes; a diagnostic intervention. \\
+More old-value attention on failures & Qwen-7B; not detected in Llama-8B
+& Failure versus correct, length-adjusted: +19.4 pp versus +1.2 pp (Llama interval includes zero). \\
+Conflicting updates change internal matching & Five models with reliable controls in Appendix~\ref{app:stage-p}
+& Update versus matched no-update prompts, including correct answers; Gemma-2B has an unreliable control. \\
+Specific components contribute causally & Qwen-7B; Pythia-160M
+& Old-assignment key replacement in Qwen; held-out head removal and key-input replacement in Pythia. \\
+\bottomrule
+\end{tabularx}
+\end{table}

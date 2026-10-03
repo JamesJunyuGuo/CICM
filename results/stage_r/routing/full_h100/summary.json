@@ -1,0 +1,470 @@
+{
+  "automatic_gate": {
+    "all_pass": false,
+    "correct_preservation": true,
+    "k0_exact_noop": true,
+    "multi_template_support": true,
+    "net_gain_ci_above_zero": true,
+    "net_gain_exceeds_random_head95": false,
+    "net_gain_exceeds_random_position95": true,
+    "retains_half_oracle_gain": true,
+    "route_audit_exact": true
+  },
+  "calibration": {
+    "counts": {
+      "correct_current": 32,
+      "within_stale": 29
+    },
+    "curve": [
+      {
+        "arm_accuracy": 0.6557377049180327,
+        "baseline_accuracy": 0.5245901639344263,
+        "beta": 0.5,
+        "correct_preservation": 1.0,
+        "correction": 0.27586206896551724,
+        "net_accuracy_gain": 0.13114754098360656
+      },
+      {
+        "arm_accuracy": 0.7704918032786885,
+        "baseline_accuracy": 0.5245901639344263,
+        "beta": 1.0,
+        "correct_preservation": 1.0,
+        "correction": 0.5172413793103449,
+        "net_accuracy_gain": 0.2459016393442623
+      },
+      {
+        "arm_accuracy": 0.8524590163934426,
+        "baseline_accuracy": 0.5245901639344263,
+        "beta": 2.0,
+        "correct_preservation": 1.0,
+        "correction": 0.6896551724137931,
+        "net_accuracy_gain": 0.32786885245901637
+      },
+      {
+        "arm_accuracy": 0.8360655737704918,
+        "baseline_accuracy": 0.5245901639344263,
+        "beta": 4.0,
+        "correct_preservation": 0.96875,
+        "correction": 0.6896551724137931,
+        "net_accuracy_gain": 0.3114754098360656
+      },
+      {
+        "arm_accuracy": 0.8360655737704918,
+        "baseline_accuracy": 0.5245901639344263,
+        "beta": 8.0,
+        "correct_preservation": 0.96875,
+        "correction": 0.6896551724137931,
+        "net_accuracy_gain": 0.3114754098360656
+      }
+    ],
+    "mismatches": [
+      {
+        "id": "n_single_latest_k6_s47_0039",
+        "rerun": "within_stale",
+        "stored": "correct_current"
+      }
+    ],
+    "operating_point": {
+      "arm_accuracy": 0.8524590163934426,
+      "baseline_accuracy": 0.5245901639344263,
+      "beta": 2.0,
+      "correct_preservation": 1.0,
+      "correction": 0.6896551724137931,
+      "net_accuracy_gain": 0.32786885245901637
+    },
+    "operating_status": "eligible",
+    "requested": 62,
+    "retained": 61
+  },
+  "confirmation": {
+    "automatic": {
+      "arm_accuracy": 0.7993827160493827,
+      "arm_counts": {
+        "correct_current": 518,
+        "within_stale": 130
+      },
+      "baseline_accuracy": 0.4984567901234568,
+      "baseline_counts": {
+        "correct_current": 323,
+        "within_stale": 325
+      },
+      "correct_preservation": 0.9721362229102167,
+      "correction": 0.6276923076923077,
+      "n": 648,
+      "net_accuracy_gain": 0.30092592592592593,
+      "paired_net_gain": {
+        "ci": [
+          0.25154320987654316,
+          0.3503086419753086
+        ],
+        "cluster": "semantic_id",
+        "mean": 0.30092592592592593,
+        "n": 648,
+        "n_clusters": 216
+      },
+      "transitions": {
+        "correct_current->correct_current": 314,
+        "correct_current->within_stale": 9,
+        "within_stale->correct_current": 204,
+        "within_stale->within_stale": 121
+      }
+    },
+    "automatic_per_template": {
+      "arrow": {
+        "arm_accuracy": 0.7824074074074074,
+        "arm_counts": {
+          "correct_current": 169,
+          "within_stale": 47
+        },
+        "baseline_accuracy": 0.4212962962962963,
+        "baseline_counts": {
+          "correct_current": 91,
+          "within_stale": 125
+        },
+        "correct_preservation": 0.9560439560439561,
+        "correction": 0.656,
+        "n": 216,
+        "net_accuracy_gain": 0.3611111111111111
+      },
+      "current": {
+        "arm_accuracy": 0.7129629629629629,
+        "arm_counts": {
+          "correct_current": 154,
+          "within_stale": 62
+        },
+        "baseline_accuracy": 0.4398148148148148,
+        "baseline_counts": {
+          "correct_current": 95,
+          "within_stale": 121
+        },
+        "correct_preservation": 0.968421052631579,
+        "correction": 0.512396694214876,
+        "n": 216,
+        "net_accuracy_gain": 0.27314814814814814
+      },
+      "latest": {
+        "arm_accuracy": 0.9027777777777778,
+        "arm_counts": {
+          "correct_current": 195,
+          "within_stale": 21
+        },
+        "baseline_accuracy": 0.6342592592592593,
+        "baseline_counts": {
+          "correct_current": 137,
+          "within_stale": 79
+        },
+        "correct_preservation": 0.9854014598540146,
+        "correction": 0.759493670886076,
+        "n": 216,
+        "net_accuracy_gain": 0.26851851851851855
+      }
+    },
+    "automatic_retained_oracle_gain": 1.0,
+    "baseline_k6_counts": {
+      "correct_current": 323,
+      "within_stale": 325
+    },
+    "identity_max_abs_logit_change": 0.0,
+    "identity_prediction_changes": 0,
+    "k0": {
+      "arm_accuracy": 0.9598765432098766,
+      "arm_counts": {
+        "correct_current": 622,
+        "other": 26
+      },
+      "baseline_accuracy": 0.9598765432098766,
+      "baseline_counts": {
+        "correct_current": 622,
+        "other": 26
+      },
+      "correct_preservation": 1.0,
+      "correction": NaN,
+      "n": 648,
+      "net_accuracy_gain": 0.0,
+      "paired_net_gain": {
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "cluster": "semantic_id",
+        "mean": 0.0,
+        "n": 648,
+        "n_clusters": 216
+      },
+      "transitions": {
+        "correct_current->correct_current": 622,
+        "other->other": 26
+      }
+    },
+    "k0_max_abs_logit_change": 0.0,
+    "k0_n": 648,
+    "k0_prediction_changes": 0,
+    "k6_n": 648,
+    "opposite": {
+      "arm_accuracy": 0.17592592592592593,
+      "arm_counts": {
+        "correct_current": 114,
+        "within_stale": 534
+      },
+      "baseline_accuracy": 0.4984567901234568,
+      "baseline_counts": {
+        "correct_current": 323,
+        "within_stale": 325
+      },
+      "correct_preservation": 0.34055727554179566,
+      "correction": 0.012307692307692308,
+      "n": 648,
+      "net_accuracy_gain": -0.32253086419753085,
+      "paired_net_gain": {
+        "ci": [
+          -0.37345679012345673,
+          -0.27773919753086435
+        ],
+        "cluster": "semantic_id",
+        "mean": -0.3225308641975308,
+        "n": 648,
+        "n_clusters": 216
+      },
+      "transitions": {
+        "correct_current->correct_current": 110,
+        "correct_current->within_stale": 213,
+        "within_stale->correct_current": 4,
+        "within_stale->within_stale": 321
+      }
+    },
+    "oracle": {
+      "arm_accuracy": 0.7993827160493827,
+      "arm_counts": {
+        "correct_current": 518,
+        "within_stale": 130
+      },
+      "baseline_accuracy": 0.4984567901234568,
+      "baseline_counts": {
+        "correct_current": 323,
+        "within_stale": 325
+      },
+      "correct_preservation": 0.9721362229102167,
+      "correction": 0.6276923076923077,
+      "n": 648,
+      "net_accuracy_gain": 0.30092592592592593,
+      "paired_net_gain": {
+        "ci": [
+          0.25462962962962965,
+          0.35185185185185186
+        ],
+        "cluster": "semantic_id",
+        "mean": 0.30092592592592593,
+        "n": 648,
+        "n_clusters": 216
+      },
+      "transitions": {
+        "correct_current->correct_current": 314,
+        "correct_current->within_stale": 9,
+        "within_stale->correct_current": 204,
+        "within_stale->within_stale": 121
+      }
+    },
+    "oracle_per_template": {
+      "arrow": {
+        "arm_accuracy": 0.7824074074074074,
+        "arm_counts": {
+          "correct_current": 169,
+          "within_stale": 47
+        },
+        "baseline_accuracy": 0.4212962962962963,
+        "baseline_counts": {
+          "correct_current": 91,
+          "within_stale": 125
+        },
+        "correct_preservation": 0.9560439560439561,
+        "correction": 0.656,
+        "n": 216,
+        "net_accuracy_gain": 0.3611111111111111
+      },
+      "current": {
+        "arm_accuracy": 0.7129629629629629,
+        "arm_counts": {
+          "correct_current": 154,
+          "within_stale": 62
+        },
+        "baseline_accuracy": 0.4398148148148148,
+        "baseline_counts": {
+          "correct_current": 95,
+          "within_stale": 121
+        },
+        "correct_preservation": 0.968421052631579,
+        "correction": 0.512396694214876,
+        "n": 216,
+        "net_accuracy_gain": 0.27314814814814814
+      },
+      "latest": {
+        "arm_accuracy": 0.9027777777777778,
+        "arm_counts": {
+          "correct_current": 195,
+          "within_stale": 21
+        },
+        "baseline_accuracy": 0.6342592592592593,
+        "baseline_counts": {
+          "correct_current": 137,
+          "within_stale": 79
+        },
+        "correct_preservation": 0.9854014598540146,
+        "correction": 0.759493670886076,
+        "n": 216,
+        "net_accuracy_gain": 0.26851851851851855
+      }
+    },
+    "random_heads": {
+      "correct_preservation": {
+        "interval95": [
+          0.8859133126934985,
+          1.0
+        ],
+        "max": 1.0,
+        "mean": 0.9791989164086687,
+        "min": 0.8080495356037152,
+        "n": 64
+      },
+      "correction": {
+        "interval95": [
+          0.14076923076923079,
+          0.8426153846153845
+        ],
+        "max": 0.8738461538461538,
+        "mean": 0.45942307692307693,
+        "min": 0.05846153846153846,
+        "n": 64
+      },
+      "n": 64,
+      "net_accuracy_gain": {
+        "interval95": [
+          0.02472993827160494,
+          0.422608024691358
+        ],
+        "max": 0.4382716049382716,
+        "mean": 0.22005208333333334,
+        "min": -0.06635802469135803,
+        "n": 64
+      }
+    },
+    "random_positions": {
+      "correct_preservation": {
+        "interval95": [
+          0.9566563467492261,
+          0.9829721362229102
+        ],
+        "max": 0.9876160990712074,
+        "mean": 0.9678792569659442,
+        "min": 0.9566563467492261,
+        "n": 16
+      },
+      "correction": {
+        "interval95": [
+          0.010384615384615384,
+          0.030384615384615385
+        ],
+        "max": 0.033846153846153845,
+        "mean": 0.01980769230769231,
+        "min": 0.009230769230769232,
+        "n": 16
+      },
+      "n": 16,
+      "net_accuracy_gain": {
+        "interval95": [
+          -0.01273148148148148,
+          0.0
+        ],
+        "max": 0.0,
+        "mean": -0.006076388888888888,
+        "min": -0.013888888888888888,
+        "n": 16
+      }
+    }
+  },
+  "dtype": "bfloat16",
+  "frozen_heads": [
+    {
+      "head": 6,
+      "layer": 26
+    },
+    {
+      "head": 0,
+      "layer": 27
+    },
+    {
+      "head": 7,
+      "layer": 22
+    },
+    {
+      "head": 9,
+      "layer": 27
+    },
+    {
+      "head": 8,
+      "layer": 26
+    },
+    {
+      "head": 3,
+      "layer": 26
+    },
+    {
+      "head": 9,
+      "layer": 21
+    },
+    {
+      "head": 3,
+      "layer": 27
+    },
+    {
+      "head": 10,
+      "layer": 22
+    },
+    {
+      "head": 11,
+      "layer": 21
+    },
+    {
+      "head": 6,
+      "layer": 27
+    },
+    {
+      "head": 4,
+      "layer": 25
+    }
+  ],
+  "model": "Qwen/Qwen2.5-1.5B",
+  "oracle_gate": {
+    "all_pass": false,
+    "beats_opposite": true,
+    "correct_preservation": true,
+    "eligible_calibration_beta": true,
+    "identity_exact_zero": true,
+    "k0_exact_noop": true,
+    "multi_template_support": true,
+    "net_gain_ci_above_zero": true,
+    "net_gain_exceeds_random_head95": false,
+    "net_gain_exceeds_random_position95": true
+  },
+  "route_audit": {
+    "calibration": {
+      "accuracy": 1.0,
+      "matches": 62,
+      "mismatches": [],
+      "n": 62
+    },
+    "confirmation": {
+      "accuracy": 1.0,
+      "matches": 1296,
+      "mismatches": [],
+      "n": 1296
+    }
+  },
+  "runtime_inputs": {
+    "answer_value_or_token_injected": false,
+    "automatic": "raw prompt plus tokenizer offsets only",
+    "oracle": "stored stale spans; mechanism upper bound only"
+  },
+  "scope": "open-weight Qwen2.5-1.5B with explicitly structured update logs; not a natural-dialogue, cross-model, or closed-API repair",
+  "stage": "R9-update-aware-stale-key-suppression",
+  "verdict": "stale_key_suppression_gate_failed"
+}

@@ -1,0 +1,316 @@
+{
+  "all_960_rows_sensitivity": {
+    "arm_accuracy": 0.234375,
+    "arm_counts": {
+      "correct_current": 225,
+      "other": 198,
+      "within_stale": 537
+    },
+    "baseline_accuracy": 0.23125,
+    "baseline_counts": {
+      "correct_current": 222,
+      "other": 140,
+      "within_stale": 598
+    },
+    "by_baseline_mode": {
+      "correct_current": {
+        "n": 222,
+        "to_correct": 0.9144144144144144
+      },
+      "other": {
+        "n": 140,
+        "to_correct": 0.04285714285714286
+      },
+      "within_stale": {
+        "n": 598,
+        "to_correct": 0.026755852842809364
+      }
+    },
+    "correct_preservation": 0.9144144144144144,
+    "n": 960,
+    "net_accuracy_gain": 0.003125,
+    "paired_net_gain": {
+      "ci": [
+        -0.012303571428571431,
+        0.015396825396825397
+      ],
+      "cluster": "semantic_id",
+      "mean": 0.001666666666666667,
+      "n": 960,
+      "n_clusters": 210
+    },
+    "transitions": {
+      "correct_current->correct_current": 203,
+      "correct_current->other": 18,
+      "correct_current->within_stale": 1,
+      "other->correct_current": 6,
+      "other->other": 132,
+      "other->within_stale": 2,
+      "within_stale->correct_current": 16,
+      "within_stale->other": 48,
+      "within_stale->within_stale": 534
+    },
+    "within_stale_correction": 0.026755852842809364
+  },
+  "execution": {
+    "resume_validation": null,
+    "resumed_from_complete_task_artifacts": null
+  },
+  "gate": {
+    "adequate_correct_pool": true,
+    "adequate_within_stale_pool": true,
+    "all_pass": false,
+    "correct_preservation": false,
+    "exceeds_random_head95": false,
+    "exceeds_random_position95": false,
+    "identity_exact": true,
+    "net_gain_ci_above_zero": false,
+    "positive_in_four_cells": false,
+    "route_audit_exact": true
+  },
+  "identity_max_abs_first_token_score_change": 0.0,
+  "identity_response_changes": 0,
+  "opposite": {
+    "arm_accuracy": 0.22708333333333333,
+    "arm_counts": {
+      "correct_current": 218,
+      "other": 155,
+      "within_stale": 587
+    },
+    "baseline_accuracy": 0.23125,
+    "baseline_counts": {
+      "correct_current": 222,
+      "other": 140,
+      "within_stale": 598
+    },
+    "by_baseline_mode": {
+      "correct_current": {
+        "n": 222,
+        "to_correct": 0.9414414414414415
+      },
+      "other": {
+        "n": 140,
+        "to_correct": 0.02857142857142857
+      },
+      "within_stale": {
+        "n": 598,
+        "to_correct": 0.008361204013377926
+      }
+    },
+    "correct_preservation": 0.9414414414414415,
+    "n": 960,
+    "net_accuracy_gain": -0.004166666666666667,
+    "paired_net_gain": {
+      "ci": [
+        -0.012146825396825397,
+        0.004841269841269841
+      ],
+      "cluster": "semantic_id",
+      "mean": -0.003809523809523809,
+      "n": 960,
+      "n_clusters": 210
+    },
+    "transitions": {
+      "correct_current->correct_current": 209,
+      "correct_current->other": 9,
+      "correct_current->within_stale": 4,
+      "other->correct_current": 4,
+      "other->other": 129,
+      "other->within_stale": 7,
+      "within_stale->correct_current": 5,
+      "within_stale->other": 17,
+      "within_stale->within_stale": 576
+    },
+    "within_stale_correction": 0.008361204013377926
+  },
+  "per_factorial_cell": {
+    "same_far__other_far": {
+      "arm_accuracy": 0.38125,
+      "baseline_accuracy": 0.4,
+      "n": 160,
+      "net_accuracy_gain": -0.01875
+    },
+    "same_far__other_mid": {
+      "arm_accuracy": 0.25,
+      "baseline_accuracy": 0.26875,
+      "n": 160,
+      "net_accuracy_gain": -0.01875
+    },
+    "same_far__other_near2": {
+      "arm_accuracy": 0.34375,
+      "baseline_accuracy": 0.35,
+      "n": 160,
+      "net_accuracy_gain": -0.00625
+    },
+    "same_near__other_far": {
+      "arm_accuracy": 0.21875,
+      "baseline_accuracy": 0.175,
+      "n": 160,
+      "net_accuracy_gain": 0.04375
+    },
+    "same_near__other_mid": {
+      "arm_accuracy": 0.075,
+      "baseline_accuracy": 0.0625,
+      "n": 160,
+      "net_accuracy_gain": 0.0125
+    },
+    "same_near__other_near2": {
+      "arm_accuracy": 0.1375,
+      "baseline_accuracy": 0.13125,
+      "n": 160,
+      "net_accuracy_gain": 0.00625
+    }
+  },
+  "random_heads": {
+    "correct_preservation": {
+      "interval95": [
+        0.9620495495495496,
+        0.99740990990991
+      ],
+      "max": 1.0,
+      "mean": 0.9838823198198199,
+      "min": 0.9504504504504504,
+      "n": 64
+    },
+    "n": 64,
+    "net_accuracy_gain": {
+      "interval95": [
+        -0.0010416666666666667,
+        0.007734374999999997
+      ],
+      "max": 0.008333333333333333,
+      "mean": 0.0032877604166666663,
+      "min": -0.003125,
+      "n": 64
+    }
+  },
+  "random_positions": {
+    "correct_preservation": {
+      "interval95": [
+        0.9819819819819819,
+        0.9983108108108109
+      ],
+      "max": 1.0,
+      "mean": 0.9923986486486487,
+      "min": 0.9819819819819819,
+      "n": 16
+    },
+    "n": 16,
+    "net_accuracy_gain": {
+      "interval95": [
+        0.00013020833333333352,
+        0.00625
+      ],
+      "max": 0.00625,
+      "mean": 0.0038411458333333336,
+      "min": -0.0010416666666666667,
+      "n": 16
+    }
+  },
+  "recap": {
+    "arm_accuracy": 0.8822916666666667,
+    "arm_counts": {
+      "correct_current": 847,
+      "other": 37,
+      "within_stale": 76
+    },
+    "baseline_accuracy": 0.23125,
+    "baseline_counts": {
+      "correct_current": 222,
+      "other": 140,
+      "within_stale": 598
+    },
+    "by_baseline_mode": {
+      "correct_current": {
+        "n": 222,
+        "to_correct": 0.9954954954954955
+      },
+      "other": {
+        "n": 140,
+        "to_correct": 0.8357142857142857
+      },
+      "within_stale": {
+        "n": 598,
+        "to_correct": 0.8511705685618729
+      }
+    },
+    "correct_preservation": 0.9954954954954955,
+    "n": 960,
+    "net_accuracy_gain": 0.6510416666666666,
+    "paired_net_gain": {
+      "ci": [
+        0.6172202380952381,
+        0.7026210317460319
+      ],
+      "cluster": "semantic_id",
+      "mean": 0.6608730158730158,
+      "n": 960,
+      "n_clusters": 210
+    },
+    "transitions": {
+      "correct_current->correct_current": 221,
+      "correct_current->other": 1,
+      "other->correct_current": 117,
+      "other->other": 21,
+      "other->within_stale": 2,
+      "within_stale->correct_current": 509,
+      "within_stale->other": 15,
+      "within_stale->within_stale": 74
+    },
+    "within_stale_correction": 0.8511705685618729
+  },
+  "routed": {
+    "arm_accuracy": 0.234375,
+    "arm_counts": {
+      "correct_current": 225,
+      "other": 198,
+      "within_stale": 537
+    },
+    "baseline_accuracy": 0.23125,
+    "baseline_counts": {
+      "correct_current": 222,
+      "other": 140,
+      "within_stale": 598
+    },
+    "by_baseline_mode": {
+      "correct_current": {
+        "n": 222,
+        "to_correct": 0.9144144144144144
+      },
+      "other": {
+        "n": 140,
+        "to_correct": 0.04285714285714286
+      },
+      "within_stale": {
+        "n": 598,
+        "to_correct": 0.026755852842809364
+      }
+    },
+    "correct_preservation": 0.9144144144144144,
+    "n": 960,
+    "net_accuracy_gain": 0.003125,
+    "paired_net_gain": {
+      "ci": [
+        -0.012466269841269839,
+        0.015638888888888865
+      ],
+      "cluster": "semantic_id",
+      "mean": 0.001666666666666667,
+      "n": 960,
+      "n_clusters": 210
+    },
+    "transitions": {
+      "correct_current->correct_current": 203,
+      "correct_current->other": 18,
+      "correct_current->within_stale": 1,
+      "other->correct_current": 6,
+      "other->other": 132,
+      "other->within_stale": 2,
+      "within_stale->correct_current": 16,
+      "within_stale->other": 48,
+      "within_stale->within_stale": 534
+    },
+    "within_stale_correction": 0.026755852842809364
+  },
+  "routed_max_abs_first_token_score_change": 6.875
+}

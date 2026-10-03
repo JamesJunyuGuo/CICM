@@ -1,0 +1,52 @@
+% Source-linked examples; see cicm_examples_main.json for provenance.
+\begin{figure}[b]
+\centering
+\begingroup
+\tcbset{cicmexample/.style={enhanced,breakable=false,colback=white,
+ colframe=neutralink,boxrule=0.5pt,arc=1mm,left=2mm,right=2mm,
+ top=1.5mm,bottom=1.5mm,fontupper=\footnotesize,
+ fonttitle=\bfseries\small,colbacktitle=neutralfill,coltitle=black,
+ equal height group=cicm-main,before skip=0pt,after skip=0pt}}
+\begin{minipage}[t]{0.49\linewidth}
+\begin{tcolorbox}[cicmexample,title={(a) Updating a preference}]
+\textbf{Dialogue excerpts}\par\smallskip
+``I think \textcolor{staleink}{\textbf{visual}} works best for me overall.''\par\smallskip
+``I actually prefer \textcolor{currentink}{\textbf{reading}} when I'm trying to understand something new.''\par\smallskip
+\textcolor{neutralink}{\emph{[Other turns and preference updates omitted.]}}\par\smallskip
+``For the record, \textcolor{staleink}{\textbf{visual}} was an earlier choice for my learning style, and is no longer current.''\par\medskip
+\textbf{Query (summary)}\par
+What is my latest explicitly updated learning style? Later mentions are not updates.\par\medskip
+\textbf{Qwen2.5-7B:} \textcolor{staleink}{\textbf{visual}}\par
+\textbf{Current answer:} \textcolor{currentink}{\textbf{reading}}
+\end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\linewidth}
+\begin{tcolorbox}[cicmexample,title={(b) Tracking a deferred handoff}]
+\textbf{Agent-log excerpts}\par\smallskip
+\texttt{0876 handoff(}\par
+\texttt{\quad cycle=[S08,S09,S14,S12]);}\par
+\texttt{branch=production; status=pending}\par\smallskip
+\textcolor{neutralink}{\emph{[Intervening log entries omitted.]}}\par\smallskip
+\texttt{1007 resolve(seq=0876);}\par
+\texttt{result=committed}\par\smallskip
+\textcolor{neutralink}{\emph{[Remaining log entries omitted.]}}\par\medskip
+\textbf{Query (summary)}\par
+Which parcel is currently in S14?\par\medskip
+\textbf{Opus 4.8:} \textcolor{staleink}{\textbf{P7888}}\par
+\textbf{Current answer:} \textcolor{currentink}{\textbf{P7238}}
+\end{tcolorbox}
+\end{minipage}
+\par\vspace{2mm}
+\begin{tcolorbox}[enhanced,breakable=false,colback=currentfill,colframe=currentink,
+boxrule=0.5pt,arc=1mm,left=2mm,right=2mm,top=1mm,bottom=1mm,
+fontupper=\footnotesize,before skip=0pt,after skip=0pt]
+\textbf{Programmatic state check for (b).} A pending handoff executes only when
+committed by a later resolve line. At line 1007, S09 holds P7238; executing
+the cycle moves it to S14. No later executed operation changes S14.
+This annotation explains the answer; it was not supplied to the model.
+\end{tcolorbox}
+\endgroup
+\caption{CICM examples.
+Full cases: Appendices~\ref{app:failure-examples} and~\ref{app:frontier-state-logs}.}
+\label{fig:cicm-examples}
+\end{figure}

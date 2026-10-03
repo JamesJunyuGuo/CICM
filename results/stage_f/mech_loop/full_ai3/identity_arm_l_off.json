@@ -1,0 +1,7 @@
+{
+  "baseline_index": "results/stage_f/mech_loop/f1_subset_index.jsonl",
+  "candidate_index": "results/stage_f/mech_loop/full_ai3/identity_arm_l_off/extract_index.jsonl",
+  "n_checked": 20,
+  "passed": true,
+  "mismatches": []
+}

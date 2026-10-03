@@ -1,0 +1,40 @@
+% Clarified behavioral variant of source stage_l_natfact_1_00013, legacy near,
+% combined historical wording + explicit-update query. Exact transcript and raw
+% responses: results/stage_l/revision_validity/ILLUSTRATIVE_CASE_CANDIDATE.json.
+% Selected for illustration; it does not determine the quantitative cohort.
+\newcommand{\turntag}[1]{\hfill{\scriptsize\textcolor{neutralink}{#1}}}
+\par\begingroup\noindent
+\vspace{1mm}
+{\footnotesize\textbf{A clarified CICM dialogue and its answer.} Selected user
+turns from a 44-message dialogue; intervening messages are omitted. Distances
+count messages before the question.}\par
+\begin{userturn}
+\textbf{User.} I think \textcolor{staleink}{\textbf{visual}} works best for me overall.
+\turntag{old value $\cdot$ 40 before}
+\end{userturn}
+\begin{userturn}
+\textbf{User.} I actually prefer \textcolor{currentink}{\textbf{reading}} when I'm trying to understand something new.
+\turntag{current value $\cdot$ 36 before}
+\end{userturn}
+\begin{userturn}
+\textbf{User.} I'd like to update my preference to \textcolor{crossink}{\textbf{electronic}}.
+\turntag{another variable (music) $\cdot$ 10 before}
+\end{userturn}
+\begin{userturn}
+\textbf{User.} For the record, \textcolor{staleink}{\textbf{visual}} was an earlier choice for my learning style, and is no longer current.
+\par\noindent
+\turntag{explicitly obsolete $\cdot$ 2 before}
+\end{userturn}
+\begin{userturn}
+\textbf{User.} For my learning style specifically, what value did I set in my most recent explicit update? Later mentions of earlier choices are not updates. Ignore preferences for other slots. Reply with only the value.
+\end{userturn}
+\nopagebreak[3]
+\begin{assistantturn}
+\textbf{Qwen2.5-7B.} \textcolor{staleink}{\textbf{visual}}
+\end{assistantturn}
+{\footnotesize\textbf{Expected:} \textcolor{currentink}{\textbf{reading}}\quad
+\textbf{GPT-4o on the same prompt:} \textcolor{currentink}{\textbf{Reading}}.
+This uses both clarification treatments in Appendix~\ref{app:cicm-validity-results};
+the original source dialogue has one earlier value of the queried variable.}\par
+\vspace{1mm}
+\par\endgroup

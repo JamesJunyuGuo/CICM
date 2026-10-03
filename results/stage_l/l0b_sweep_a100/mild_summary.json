@@ -1,0 +1,77 @@
+{
+  "stage": "l0",
+  "n": 70,
+  "overall_counts": {
+    "correct_current": 52,
+    "within_stale": 17,
+    "same_slot_other": 1
+  },
+  "overall_accuracy": 0.7428571428571429,
+  "overall_within_stale_failure_share": 0.9444444444444444,
+  "by_dose": {
+    "1": {
+      "n": 14,
+      "counts": {
+        "correct_current": 13,
+        "within_stale": 1
+      },
+      "accuracy": 0.9285714285714286,
+      "within_stale_failure_share": 1.0
+    },
+    "2": {
+      "n": 14,
+      "counts": {
+        "correct_current": 13,
+        "within_stale": 1
+      },
+      "accuracy": 0.9285714285714286,
+      "within_stale_failure_share": 1.0
+    },
+    "3": {
+      "n": 14,
+      "counts": {
+        "correct_current": 9,
+        "within_stale": 4,
+        "same_slot_other": 1
+      },
+      "accuracy": 0.6428571428571429,
+      "within_stale_failure_share": 0.8
+    },
+    "4": {
+      "n": 14,
+      "counts": {
+        "within_stale": 3,
+        "correct_current": 11
+      },
+      "accuracy": 0.7857142857142857,
+      "within_stale_failure_share": 1.0
+    },
+    "6": {
+      "n": 14,
+      "counts": {
+        "correct_current": 6,
+        "within_stale": 8
+      },
+      "accuracy": 0.42857142857142855,
+      "within_stale_failure_share": 1.0
+    }
+  },
+  "slot_current_value_count_min": {
+    "clothing": 1,
+    "communication": 1,
+    "cuisine": 1,
+    "diet": 1,
+    "drink": 1,
+    "exercise": 1,
+    "game_style": 1,
+    "learning_style": 1,
+    "meeting_time": 1,
+    "movie_style": 1,
+    "music_genre": 1,
+    "pet_preference": 1,
+    "reading_format": 1,
+    "transport": 1,
+    "vacation": 1,
+    "workspace": 1
+  }
+}

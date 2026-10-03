@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\caption{Current-value decodability with grouped cross-validation. Failure scores remain far above the shuffled-label range, while the negative controlled difference shows a smaller retention degradation.}
+\label{tab:mechanism}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & $n$ & CV acc. & Old-value & Other-variable & Shuffle 95\% & Failure $-$ correct \\
+\midrule
+Qwen2.5-7B & 1200 & 91.2 & 84.8 & 86.5 & [3.2, 6.4] & -7.5 [-10.2, -4.7] \\
+Llama-3.1-8B & 1200 & 89.7 & 82.2 & 86.3 & [3.2, 6.4] & -7.3 [-10.1, -4.2] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

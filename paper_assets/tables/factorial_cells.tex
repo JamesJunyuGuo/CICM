@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\caption{Complete response composition for the identity-by-recency factorial. Each row contains 200 examples.}
+\label{tab:factorial}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrr}
+\toprule
+Old queried-variable & Other-variable & $n$ & Correct & Old value & Other variable & Other \\
+\midrule
+near & far & 200 & 5.5 & 94.5 & 0.0 & 0.0 \\
+near & mid & 200 & 16.0 & 83.5 & 0.0 & 0.5 \\
+near & 2 turns & 200 & 16.0 & 75.5 & 1.5 & 7.0 \\
+far & far & 200 & 74.5 & 17.0 & 8.5 & 0.0 \\
+far & mid & 200 & 61.0 & 8.0 & 11.5 & 19.5 \\
+far & 2 turns & 200 & 62.5 & 16.0 & 16.5 & 5.0 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\vspace{2pt}\parbox{0.96\linewidth}{\footnotesize All rates are percentages of all examples in the cell. The two rightmost far-same cells show a tie, not a global reversal.}
+\end{table}

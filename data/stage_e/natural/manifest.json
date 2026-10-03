@@ -1,0 +1,51 @@
+{
+  "stage": "E",
+  "track": "naturalistic",
+  "description": "Natural-language stale-binding suite with dialogue, agent-log, and document families.",
+  "seed": 20,
+  "n_per_cell": 100,
+  "eval_all_path": "data/stage_e/natural/eval_all.jsonl",
+  "family_paths": {
+    "dialogue": "data/stage_e/natural/eval_dialogue.jsonl",
+    "agent_log": "data/stage_e/natural/eval_agent_log.jsonl",
+    "document": "data/stage_e/natural/eval_document.jsonl"
+  },
+  "n_total": 3000,
+  "by_family": {
+    "agent_log": 1000,
+    "dialogue": 1000,
+    "document": 1000
+  },
+  "by_cell": {
+    "agent_log|interference|1|long": 100,
+    "agent_log|interference|1|short": 100,
+    "agent_log|interference|2|long": 100,
+    "agent_log|interference|2|short": 100,
+    "agent_log|interference|4|long": 100,
+    "agent_log|interference|4|short": 100,
+    "agent_log|interference|8|long": 100,
+    "agent_log|interference|8|short": 100,
+    "agent_log|simple|0|long": 100,
+    "agent_log|simple|0|short": 100,
+    "dialogue|interference|1|long": 100,
+    "dialogue|interference|1|short": 100,
+    "dialogue|interference|2|long": 100,
+    "dialogue|interference|2|short": 100,
+    "dialogue|interference|4|long": 100,
+    "dialogue|interference|4|short": 100,
+    "dialogue|interference|8|long": 100,
+    "dialogue|interference|8|short": 100,
+    "dialogue|simple|0|long": 100,
+    "dialogue|simple|0|short": 100,
+    "document|interference|1|long": 100,
+    "document|interference|1|short": 100,
+    "document|interference|2|long": 100,
+    "document|interference|2|short": 100,
+    "document|interference|4|long": 100,
+    "document|interference|4|short": 100,
+    "document|interference|8|long": 100,
+    "document|interference|8|short": 100,
+    "document|simple|0|long": 100,
+    "document|simple|0|short": 100
+  }
+}

@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\caption{Residual-normalized steering validity. Large effects occur only at the final layer; middle-layer effects are null or small.}
+\label{tab:intervention}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Location & Layer & $\alpha$ & Targeted $-$ random (points) & Gate & Identity mismatches \\
+\midrule
+Qwen2.5-7B & middle & 13 & 0.4 & -1.1 [-2.6, 0.5] & no & 0 \\
+Qwen2.5-7B & final & 27 & 0.4 & 39.5 [35.8, 43.3] & yes & 0 \\
+Llama-3.1-8B & middle & 15 & 0.4 & 1.8 [0.6, 3.2] & yes & 0 \\
+Llama-3.1-8B & final & 31 & 0.4 & 69.5 [66.3, 72.9] & yes & 0 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

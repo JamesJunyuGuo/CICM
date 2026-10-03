@@ -1,0 +1,64 @@
+{
+  "architecture": "gpt_neox",
+  "array_shapes": {
+    "attn_current": [
+      10,
+      12,
+      12
+    ],
+    "attn_identity": [
+      10,
+      12,
+      12
+    ],
+    "attn_other": [
+      10,
+      12,
+      12
+    ],
+    "attn_stale": [
+      10,
+      12,
+      12
+    ],
+    "hidden": [
+      10,
+      13,
+      768
+    ],
+    "qk_margin": [
+      10,
+      12,
+      12
+    ],
+    "read_ratio": [
+      10,
+      12,
+      12
+    ]
+  },
+  "capture_protocol": "eager attention, output_attentions, no KV cache, greedy next-token logits",
+  "device": "cuda",
+  "dtype": "float32",
+  "gqa_scope": "standard multi-head attention",
+  "hooked_noop_gate": {
+    "exact_zero": true,
+    "max_abs_logit_change": 0.0,
+    "n": 1
+  },
+  "model": "pythia-160m",
+  "model_path": "/anvil/scratch/x-jguo7/hf_cache/hub/models--EleutherAI--pythia-160m/snapshots/b56d9bee36300031aeea723b73c4d62ac7fa71a2",
+  "n_branches": 10,
+  "n_items": 1,
+  "n_key_value_heads": 12,
+  "n_layers": 12,
+  "n_query_heads": 12,
+  "stage": "P-capture",
+  "tokenization_gate": {
+    "failures": {},
+    "max_value_span_tokens": 1,
+    "n_checkpoint_pairs": 5,
+    "n_items": 1,
+    "pass": true
+  }
+}

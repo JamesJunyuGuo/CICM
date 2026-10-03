@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{Path-patching attribution on the controlled task (Qwen2.5-7B). Cells report the mean
+recovered fraction $\Delta R$ of the clean$-$corrupted logit-gap difference when each component
+is patched; blue is positive, red is negative, and intensity is
+$\mathrm{round}(|\Delta R|/0.781\times 65)$. The late residual stream and the old assignment
+keys carry most of the recoverable answer difference, whereas patching the \emph{current} write
+key alone is harmful: QK matching selects on variable identity and does not separate current from
+old assignments.}
+\label{tab:patch-attribution}
+\begin{tabular}{llrrr}
+\toprule
+Locus & Component & \multicolumn{1}{c}{mean $\Delta R$} & median & $n$ \\
+\midrule
+Residual stream & early/mid            &                      -0.005 &  0.000 & 600 \\
+Residual stream & late                 & \cellcolor{blue!65}   0.781 &  0.939 & 360 \\
+\midrule
+QK key          & old assignments      & \cellcolor{blue!41}   0.492 &  0.448 & 120 \\
+QK key          & all writes           & \cellcolor{blue!9}    0.111 &  0.107 & 120 \\
+QK key          & current write        & \cellcolor{red!18}   -0.213 & -0.195 & 120 \\
+QK query        & final                & \cellcolor{blue!9}    0.112 &  0.109 & 120 \\
+\midrule
+Head / MLP      & selection-head output proxy       & \cellcolor{blue!30} 0.360 & 0.348 & 120 \\
+Head / MLP      & selection-head attn-pattern proxy & \cellcolor{blue!11} 0.130 & 0.131 & 120 \\
+Head / MLP      & late MLP output                   & \cellcolor{blue!11} 0.132 & 0.105 & 960 \\
+\bottomrule
+\end{tabular}
+\end{table}

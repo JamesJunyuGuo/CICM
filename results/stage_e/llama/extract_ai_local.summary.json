@@ -1,0 +1,10 @@
+{
+  "model": "models/llama31_8b_instruct_local",
+  "data": "data/stage_a.jsonl",
+  "n": 900,
+  "max_new_tokens": 16,
+  "dtype": "float32",
+  "out": "results/stage_e/llama/extract_ai_local.npz",
+  "index_out": "results/stage_e/llama/extract_index_ai_local.jsonl",
+  "accuracy": 0.43666666666666665
+}

@@ -1,0 +1,73 @@
+{
+  "stage": "k1d",
+  "dp_model": "qwen/qwen-2.5-7b-instruct",
+  "judge_model": "openai/gpt-4o",
+  "temperature": 0,
+  "dynamic_preference_freeform": {
+    "scenario": "dynamic_preference_freeform",
+    "n": 783,
+    "format": "freeform",
+    "forget_accuracy": 0.6934865900383141,
+    "forget_failures": 240,
+    "within_stale_failures": 197,
+    "within_stale_fraction": 0.8208333333333333,
+    "within_stale_ci": [
+      0.7708333333333334,
+      0.8708333333333333
+    ],
+    "error_counts": {
+      "within_stale": 197,
+      "other": 43
+    },
+    "noforget_reference_rate": 0.9106002554278416,
+    "judge_validation_agreement": 0.9,
+    "headline_allowed": true
+  },
+  "dynamic_preference_mc_contrast": {
+    "n": 783,
+    "forget_failures": 228,
+    "within_stale_failures": 67,
+    "within_stale_fraction": 0.29385964912280704,
+    "within_stale_ci": [
+      0.2324561403508772,
+      0.35526315789473684
+    ],
+    "error_counts": {
+      "other": 99,
+      "other_valid_value": 62,
+      "within_stale": 67
+    },
+    "forget_accuracy": 0.7088122605363985,
+    "noforget_reference_rate": 0.8135376756066411
+  },
+  "instructional_forgetting_k1c": {
+    "n": 933,
+    "forget_failures": 920,
+    "within_stale_failures": 906,
+    "within_stale_fraction": 0.9847826086956522,
+    "within_stale_ci": [
+      0.9760869565217392,
+      0.9923913043478261
+    ],
+    "error_counts": {
+      "deflect": 3,
+      "within_stale": 906,
+      "other": 11
+    },
+    "forget_accuracy": 0.013933547695605574,
+    "noforget_reference_rate": 0.9892818863879957
+  },
+  "judge_validation": {
+    "n": 40,
+    "matches": 36,
+    "agreement": 0.9
+  },
+  "gate": {
+    "dp_dominant_threshold": "validation agreement >= 0.90 and DP free-form within-stale CI lower bound >= 0.50",
+    "if_dominant_threshold": "IF K1c within-stale CI lower bound >= 0.70",
+    "dp_dominant": true,
+    "if_dominant": true,
+    "adjudication": "format_robust_cross_scenario_stale_binding",
+    "next_step": "stop_k1_api_phase_mechanism_k2_k3_deferred_to_local_gpu"
+  }
+}

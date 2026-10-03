@@ -1,0 +1,4 @@
+{"id": 400, "task_family": "overwrite", "condition": "interference", "n_lines": 20, "interference_load": 2, "K": null, "U": null, "gold": 8404, "raw": "8", "pred": 8, "correct": 0}
+{"id": 1700, "task_family": "paraphrase", "condition": "interference", "n_lines": 20, "interference_load": 2, "K": null, "U": null, "gold": 6807, "raw": "6", "pred": 6, "correct": 0}
+{"id": 2800, "task_family": "parallel", "condition": "interleaved", "n_lines": null, "interference_load": null, "K": 4, "U": 4, "gold": {"A": 42949, "B": 1257, "C": 38299, "D": 45785}, "raw": "A", "pred": {}, "n_streams": 4, "n_correct": 0, "per_stream_correct": {"A": 0, "B": 0, "C": 0, "D": 0}, "all_correct": 0, "correct": 0}
+{"id": 300, "task_family": "overwrite", "condition": "simple", "n_lines": 160, "interference_load": 0, "K": null, "U": null, "gold": 2615, "raw": "9", "pred": 9, "correct": 0}

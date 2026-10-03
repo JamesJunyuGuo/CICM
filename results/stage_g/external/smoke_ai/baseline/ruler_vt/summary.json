@@ -1,0 +1,21 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "arm": "smoke_baseline",
+  "data": "data/stage_g/external/ruler_vt.jsonl",
+  "adapter_dir": null,
+  "adapter_kind": null,
+  "adapter_mode": "on",
+  "dtype": "bfloat16",
+  "n": 20,
+  "cells": [
+    {
+      "benchmark": "ruler_vt",
+      "task": "variable_tracking",
+      "length": "synthetic",
+      "n": 20,
+      "accuracy": 0.0,
+      "superseded_error_rate": 0.75,
+      "other_error_rate": 0.25
+    }
+  ]
+}

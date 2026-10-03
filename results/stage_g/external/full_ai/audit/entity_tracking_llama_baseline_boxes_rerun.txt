@@ -1,0 +1,72 @@
+benchmark=entity_tracking arm=llama_baseline_boxes_rerun n_sample=10
+Audit purpose: inspect raw output, gold, v2 parse, and v2 error signature before trusting scores.
+
+--- sample 1 id=entity-556 task=boxes length=3
+gold: the radio
+raw: 'radio'
+pred: radio
+correct: 1 signature: correct_value
+pred_items: ['radio'] gold_items: ['radio']
+
+--- sample 2 id=entity-358 task=boxes length=2
+gold: nothing
+raw: 'the chemical and the ring and the sheet'
+pred: chemical and ring and sheet
+correct: 0 signature: superseded
+pred_items: ['chemical', 'ring', 'sheet'] gold_items: []
+
+--- sample 3 id=entity-138 task=boxes length=3
+gold: the cigarette
+raw: 'the painting'
+pred: painting
+correct: 0 signature: other
+pred_items: ['painting'] gold_items: ['cigarette']
+
+--- sample 4 id=entity-347 task=boxes length=3
+gold: the fig
+raw: 'fig'
+pred: fig
+correct: 1 signature: correct_value
+pred_items: ['fig'] gold_items: ['fig']
+
+--- sample 5 id=entity-570 task=boxes length=1
+gold: the note
+raw: 'the note'
+pred: note
+correct: 1 signature: correct_value
+pred_items: ['note'] gold_items: ['note']
+
+--- sample 6 id=entity-40 task=boxes length=2
+gold: nothing
+raw: 'the painting'
+pred: painting
+correct: 0 signature: other
+pred_items: ['painting'] gold_items: []
+
+--- sample 7 id=entity-472 task=boxes length=5
+gold: the apple
+raw: 'apple'
+pred: apple
+correct: 1 signature: correct_value
+pred_items: ['apple'] gold_items: ['apple']
+
+--- sample 8 id=entity-193 task=boxes length=1
+gold: nothing
+raw: 'fish'
+pred: fish
+correct: 0 signature: superseded
+pred_items: ['fish'] gold_items: []
+
+--- sample 9 id=entity-500 task=boxes length=2
+gold: the coffee
+raw: 'coffee'
+pred: coffee
+correct: 1 signature: correct_value
+pred_items: ['coffee'] gold_items: ['coffee']
+
+--- sample 10 id=entity-573 task=boxes length=0
+gold: the branch and the creature and the drug
+raw: 'branch and the creature and the drug'
+pred: branch and creature and drug
+correct: 1 signature: correct_value
+pred_items: ['branch', 'creature', 'drug'] gold_items: ['branch', 'creature', 'drug']

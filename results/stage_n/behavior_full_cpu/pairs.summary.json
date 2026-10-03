@@ -1,0 +1,9 @@
+{
+  "candidate_stale_failures": 142,
+  "clean_evaluated": 142,
+  "model": "EleutherAI/pythia-160m",
+  "n_pairs": 96,
+  "pair_gate": true,
+  "requirements": "corrupted=within_stale, clean counterfactual=correct_current, equal token length",
+  "target_n_pairs": 96
+}

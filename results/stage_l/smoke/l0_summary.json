@@ -1,0 +1,37 @@
+{
+  "stage": "l0",
+  "n": 20,
+  "overall_counts": {
+    "correct_current": 20
+  },
+  "overall_accuracy": 1.0,
+  "overall_within_stale_failure_share": null,
+  "by_dose": {
+    "1": {
+      "n": 20,
+      "counts": {
+        "correct_current": 20
+      },
+      "accuracy": 1.0,
+      "within_stale_failure_share": null
+    }
+  },
+  "slot_current_value_count_min": {
+    "clothing": 1,
+    "communication": 1,
+    "cuisine": 1,
+    "diet": 1,
+    "drink": 1,
+    "exercise": 1,
+    "game_style": 1,
+    "learning_style": 1,
+    "meeting_time": 1,
+    "movie_style": 1,
+    "music_genre": 1,
+    "pet_preference": 1,
+    "reading_format": 1,
+    "transport": 1,
+    "vacation": 1,
+    "workspace": 1
+  }
+}

@@ -1,0 +1,716 @@
+{
+  "analysis": "free_energy_exchangeable_competitor_validation",
+  "seed": 20260810,
+  "bootstrap_reps": 5000,
+  "frozen_inputs": [
+    "results/stage_e/qwen_p0_errors.summary.json",
+    "results/figures/F8_openrouter_scale_sweep.data.json",
+    "results/stage_l/natural_factorial_otherdist_l0/openrouter_qwen25_7b_summary_merged.json"
+  ],
+  "status_counts": {
+    "heldout_pass": 5,
+    "heldout_fail": 2,
+    "ceiling_or_floor_limited": 2
+  },
+  "datasets": [
+    {
+      "id": "controlled_qwen7b_20lines",
+      "family": "controlled",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "estimand": "P(current | current or within-stale)",
+      "train": [
+        {
+          "k": 2.0,
+          "successes": 91,
+          "total": 100
+        },
+        {
+          "k": 4.0,
+          "successes": 66,
+          "total": 100
+        }
+      ],
+      "heldout": [
+        {
+          "k": 8.0,
+          "successes": 51,
+          "total": 99,
+          "observed_rate": 0.5151515151515151,
+          "predicted_rate": 0.5718885217436354,
+          "parameter_ci95": [
+            0.4892036634201659,
+            0.6590767043734422
+          ],
+          "predictive_ci95": [
+            0.4444444444444444,
+            0.696969696969697
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.05673700659212022
+        }
+      ],
+      "fixed_exchangeable": {
+        "alpha": 2.3690019971261798,
+        "gamma": 1.0,
+        "breakpoint_k": 10.686721581450765,
+        "log_likelihood": -97.44432290045769,
+        "ceiling_limited": false,
+        "floor_limited": false
+      },
+      "free_exponent": {
+        "alpha": 3.9639757626963403,
+        "gamma": 2.380938510771644,
+        "gamma_se": 0.5926120470237114,
+        "gamma_ci95": [
+          1.2194188986051697,
+          3.5424581229381182
+        ],
+        "log_likelihood": -94.35733009786546,
+        "boundary_corrected": false
+      },
+      "likelihood_ratio_gamma_1": {
+        "statistic": 6.17398560518447,
+        "df": 1,
+        "p_value": 0.012964222016969928
+      },
+      "status": "heldout_pass",
+      "heldout_mae": 0.05673700659212022
+    },
+    {
+      "id": "controlled_qwen7b_40lines",
+      "family": "controlled",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "estimand": "P(current | current or within-stale)",
+      "train": [
+        {
+          "k": 2.0,
+          "successes": 85,
+          "total": 100
+        },
+        {
+          "k": 4.0,
+          "successes": 64,
+          "total": 100
+        }
+      ],
+      "heldout": [
+        {
+          "k": 8.0,
+          "successes": 45,
+          "total": 100,
+          "observed_rate": 0.45,
+          "predicted_rate": 0.5154715076227805,
+          "parameter_ci95": [
+            0.4401570793012149,
+            0.6022162743963785
+          ],
+          "predictive_ci95": [
+            0.39,
+            0.65
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.06547150762278048
+        }
+      ],
+      "fixed_exchangeable": {
+        "alpha": 2.1413473348686924,
+        "gamma": 1.0,
+        "breakpoint_k": 8.510896935596032,
+        "log_likelihood": -108.5366965764796,
+        "ceiling_limited": false,
+        "floor_limited": false
+      },
+      "free_exponent": {
+        "alpha": 2.8938379368372664,
+        "gamma": 1.6724252981257122,
+        "gamma_se": 0.5045328247577968,
+        "gamma_ci95": [
+          0.6835409616004304,
+          2.661309634650994
+        ],
+        "log_likelihood": -107.61272825996929,
+        "boundary_corrected": false
+      },
+      "likelihood_ratio_gamma_1": {
+        "statistic": 1.8479366330206233,
+        "df": 1,
+        "p_value": 0.17402356697993454
+      },
+      "status": "heldout_pass",
+      "heldout_mae": 0.06547150762278048
+    },
+    {
+      "id": "controlled_qwen7b_80lines",
+      "family": "controlled",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "estimand": "P(current | current or within-stale)",
+      "train": [
+        {
+          "k": 2.0,
+          "successes": 70,
+          "total": 100
+        },
+        {
+          "k": 4.0,
+          "successes": 57,
+          "total": 100
+        }
+      ],
+      "heldout": [
+        {
+          "k": 8.0,
+          "successes": 38,
+          "total": 99,
+          "observed_rate": 0.3838383838383838,
+          "predicted_rate": 0.3846986947649282,
+          "parameter_ci95": [
+            0.32095590096740173,
+            0.45802954679605856
+          ],
+          "predictive_ci95": [
+            0.2727272727272727,
+            0.5050505050505051
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.000860310926544372
+        }
+      ],
+      "fixed_exchangeable": {
+        "alpha": 1.6097898835247082,
+        "gamma": 1.0,
+        "breakpoint_k": 5.0017601651985,
+        "log_likelihood": -129.50978202168926,
+        "ceiling_limited": false,
+        "floor_limited": false
+      },
+      "free_exponent": {
+        "alpha": 1.412745117137273,
+        "gamma": 0.815767527395029,
+        "gamma_se": 0.42922155175327353,
+        "gamma_ci95": [
+          -0.025506714041387157,
+          1.6570417688314452
+        ],
+        "log_likelihood": -129.41792156290688,
+        "boundary_corrected": false
+      },
+      "likelihood_ratio_gamma_1": {
+        "statistic": 0.18372091756475584,
+        "df": 1,
+        "p_value": 0.6681948525623442
+      },
+      "status": "heldout_pass",
+      "heldout_mae": 0.000860310926544372
+    },
+    {
+      "id": "scale_llama-3_1-70b-instruct",
+      "family": "scale_sweep",
+      "model": "meta-llama/llama-3.1-70b-instruct",
+      "estimand": "P(current | current or within-stale)",
+      "train": [
+        {
+          "k": 2.0,
+          "successes": 150,
+          "total": 150
+        },
+        {
+          "k": 4.0,
+          "successes": 149,
+          "total": 150
+        },
+        {
+          "k": 8.0,
+          "successes": 145,
+          "total": 150
+        }
+      ],
+      "heldout": [
+        {
+          "k": 12.0,
+          "successes": 86,
+          "total": 100,
+          "observed_rate": 0.86,
+          "predicted_rate": 0.9662936859044844,
+          "parameter_ci95": [
+            0.9390674915791796,
+            0.9886364222662206
+          ],
+          "predictive_ci95": [
+            0.92,
+            1.0
+          ],
+          "inside_predictive_interval": false,
+          "absolute_error": 0.1062936859044844
+        },
+        {
+          "k": 16.0,
+          "successes": 77,
+          "total": 100,
+          "observed_rate": 0.77,
+          "predicted_rate": 0.955557577951556,
+          "parameter_ci95": [
+            0.9203739275489528,
+            0.9849057379616297
+          ],
+          "predictive_ci95": [
+            0.9,
+            1.0
+          ],
+          "inside_predictive_interval": false,
+          "absolute_error": 0.18555757795155603
+        }
+      ],
+      "fixed_exchangeable": {
+        "alpha": 5.840689278777434,
+        "gamma": 1.0,
+        "breakpoint_k": 344.0163821530558,
+        "log_likelihood": -29.312466614548917,
+        "ceiling_limited": false,
+        "floor_limited": false
+      },
+      "free_exponent": {
+        "alpha": 9.10301653148113,
+        "gamma": 2.769496967693562,
+        "gamma_se": 1.4061918695748084,
+        "gamma_ci95": [
+          0.013360903326937734,
+          5.5256330320601865
+        ],
+        "log_likelihood": -28.074967294422514,
+        "boundary_corrected": false
+      },
+      "likelihood_ratio_gamma_1": {
+        "statistic": 2.4749986402528066,
+        "df": 1,
+        "p_value": 0.11566954316016625
+      },
+      "status": "heldout_fail",
+      "heldout_mae": 0.14592563192802022
+    },
+    {
+      "id": "scale_llama-3_1-8b-instruct",
+      "family": "scale_sweep",
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "estimand": "P(current | current or within-stale)",
+      "train": [
+        {
+          "k": 2.0,
+          "successes": 64,
+          "total": 148
+        },
+        {
+          "k": 4.0,
+          "successes": 26,
+          "total": 145
+        },
+        {
+          "k": 8.0,
+          "successes": 25,
+          "total": 138
+        }
+      ],
+      "heldout": [
+        {
+          "k": 12.0,
+          "successes": 15,
+          "total": 98,
+          "observed_rate": 0.15306122448979592,
+          "predicted_rate": 0.09981433697219337,
+          "parameter_ci95": [
+            0.08138302906532574,
+            0.12107015772662572
+          ],
+          "predictive_ci95": [
+            0.04081632653061224,
+            0.17346938775510204
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.05324688751760255
+        },
+        {
+          "k": 16.0,
+          "successes": 10,
+          "total": 100,
+          "observed_rate": 0.1,
+          "predicted_rate": 0.0767766041896876,
+          "parameter_ci95": [
+            0.062304912423666266,
+            0.0936367730144368
+          ],
+          "predictive_ci95": [
+            0.03,
+            0.14
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.02322339581031241
+        }
+      ],
+      "fixed_exchangeable": {
+        "alpha": 0.28561744552163215,
+        "gamma": 1.0,
+        "breakpoint_k": 1.330583337261306,
+        "log_likelihood": -237.89639022371927,
+        "ceiling_limited": false,
+        "floor_limited": false
+      },
+      "free_exponent": {
+        "alpha": 0.2691876896305126,
+        "gamma": 0.9865864780823589,
+        "gamma_se": 0.2078921617043424,
+        "gamma_ci95": [
+          0.5791178411418478,
+          1.39405511502287
+        ],
+        "log_likelihood": -237.89430971939657,
+        "boundary_corrected": false
+      },
+      "likelihood_ratio_gamma_1": {
+        "statistic": 0.004161008645382935,
+        "df": 1,
+        "p_value": 0.9485674247413599
+      },
+      "status": "heldout_pass",
+      "heldout_mae": 0.03823514166395748
+    },
+    {
+      "id": "scale_gpt-4o",
+      "family": "scale_sweep",
+      "model": "openai/gpt-4o",
+      "estimand": "P(current | current or within-stale)",
+      "train": [
+        {
+          "k": 2.0,
+          "successes": 150,
+          "total": 150
+        },
+        {
+          "k": 4.0,
+          "successes": 150,
+          "total": 150
+        },
+        {
+          "k": 8.0,
+          "successes": 149,
+          "total": 150
+        }
+      ],
+      "heldout": [
+        {
+          "k": 12.0,
+          "successes": 100,
+          "total": 100,
+          "observed_rate": 1.0,
+          "predicted_rate": 0.9943020016683798,
+          "parameter_ci95": [
+            0.9830030297278862,
+            0.9943020016683798
+          ],
+          "predictive_ci95": [
+            0.97,
+            1.0
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.005697998331620213
+        },
+        {
+          "k": 16.0,
+          "successes": 100,
+          "total": 100,
+          "observed_rate": 1.0,
+          "predicted_rate": 0.9924170713960176,
+          "parameter_ci95": [
+            0.9774650482720495,
+            0.9924170713960176
+          ],
+          "predictive_ci95": [
+            0.96,
+            1.0
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.007582928603982353
+        }
+      ],
+      "fixed_exchangeable": {
+        "alpha": 7.646832691640551,
+        "gamma": 1.0,
+        "breakpoint_k": 2094.002722641654,
+        "log_likelihood": -6.568821581143585,
+        "ceiling_limited": true,
+        "floor_limited": false
+      },
+      "free_exponent": {
+        "alpha": 40.55241040870248,
+        "gamma": 17.09519675830729,
+        "gamma_se": 316.7378716295693,
+        "gamma_ci95": [
+          -603.7110316356485,
+          637.9014251522632
+        ],
+        "log_likelihood": -6.007301718755358,
+        "boundary_corrected": false
+      },
+      "likelihood_ratio_gamma_1": {
+        "statistic": 1.1230397247764525,
+        "df": 1,
+        "p_value": 0.2892648628621448
+      },
+      "status": "ceiling_or_floor_limited",
+      "heldout_mae": 0.006640463467801283
+    },
+    {
+      "id": "scale_qwen-2_5-72b-instruct",
+      "family": "scale_sweep",
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "estimand": "P(current | current or within-stale)",
+      "train": [
+        {
+          "k": 2.0,
+          "successes": 149,
+          "total": 149
+        },
+        {
+          "k": 4.0,
+          "successes": 150,
+          "total": 150
+        },
+        {
+          "k": 8.0,
+          "successes": 150,
+          "total": 150
+        }
+      ],
+      "heldout": [
+        {
+          "k": 12.0,
+          "successes": 99,
+          "total": 100,
+          "observed_rate": 0.99,
+          "predicted_rate": 0.9915134386610375,
+          "parameter_ci95": [
+            0.9773801325601044,
+            0.9942965749850129
+          ],
+          "predictive_ci95": [
+            0.96,
+            1.0
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.0015134386610374806
+        },
+        {
+          "k": 16.0,
+          "successes": 99,
+          "total": 100,
+          "observed_rate": 0.99,
+          "predicted_rate": 0.9887165042410091,
+          "parameter_ci95": [
+            0.9700658786987272,
+            0.9924098632386411
+          ],
+          "predictive_ci95": [
+            0.95,
+            1.0
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.0012834957589908935
+        }
+      ],
+      "fixed_exchangeable": {
+        "alpha": 7.245655258103588,
+        "gamma": 1.0,
+        "breakpoint_k": 1402.0002670937165,
+        "log_likelihood": -10.292245612011854,
+        "ceiling_limited": true,
+        "floor_limited": true
+      },
+      "free_exponent": {
+        "alpha": 5.698222298259827,
+        "gamma": -0.004809181371179843,
+        "gamma_se": 1.4312278649976624,
+        "gamma_ci95": [
+          -2.810015796766598,
+          2.8003974340242386
+        ],
+        "log_likelihood": -10.059828380726842,
+        "boundary_corrected": true
+      },
+      "likelihood_ratio_gamma_1": {
+        "statistic": 0.4648344625700247,
+        "df": 1,
+        "p_value": 0.4953732054245902
+      },
+      "status": "ceiling_or_floor_limited",
+      "heldout_mae": 0.001398467210014187
+    },
+    {
+      "id": "scale_qwen-2_5-7b-instruct",
+      "family": "scale_sweep",
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "estimand": "P(current | current or within-stale)",
+      "train": [
+        {
+          "k": 2.0,
+          "successes": 138,
+          "total": 149
+        },
+        {
+          "k": 4.0,
+          "successes": 111,
+          "total": 150
+        },
+        {
+          "k": 8.0,
+          "successes": 85,
+          "total": 150
+        }
+      ],
+      "heldout": [
+        {
+          "k": 12.0,
+          "successes": 40,
+          "total": 100,
+          "observed_rate": 0.4,
+          "predicted_rate": 0.5116007127124365,
+          "parameter_ci95": [
+            0.4583672017182433,
+            0.5665370242859099
+          ],
+          "predictive_ci95": [
+            0.4,
+            0.63
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.11160071271243643
+        },
+        {
+          "k": 16.0,
+          "successes": 36,
+          "total": 100,
+          "observed_rate": 0.36,
+          "predicted_rate": 0.4399731830385473,
+          "parameter_ci95": [
+            0.388267695573033,
+            0.4950136596432193
+          ],
+          "predictive_ci95": [
+            0.33,
+            0.55
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.07997318303854734
+        }
+      ],
+      "fixed_exchangeable": {
+        "alpha": 2.531317829641246,
+        "gamma": 1.0,
+        "breakpoint_k": 12.570060424626591,
+        "log_likelihood": -231.5675098472828,
+        "ceiling_limited": false,
+        "floor_limited": false
+      },
+      "free_exponent": {
+        "alpha": 3.337353232140074,
+        "gamma": 1.5110338594565529,
+        "gamma_se": 0.22375236203367876,
+        "gamma_ci95": [
+          1.0724792298705426,
+          1.9495884890425632
+        ],
+        "log_likelihood": -228.79471505748865,
+        "boundary_corrected": false
+      },
+      "likelihood_ratio_gamma_1": {
+        "statistic": 5.545589579588295,
+        "df": 1,
+        "p_value": 0.01852731441018401
+      },
+      "status": "heldout_pass",
+      "heldout_mae": 0.09578694787549188
+    },
+    {
+      "id": "cicm_natural_qwen7b",
+      "family": "natural",
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "estimand": "P(current | current or within-stale)",
+      "train": [
+        {
+          "k": 1.0,
+          "successes": 113,
+          "total": 220
+        },
+        {
+          "k": 2.0,
+          "successes": 109,
+          "total": 217
+        },
+        {
+          "k": 3.0,
+          "successes": 96,
+          "total": 212
+        }
+      ],
+      "heldout": [
+        {
+          "k": 4.0,
+          "successes": 77,
+          "total": 205,
+          "observed_rate": 0.375609756097561,
+          "predicted_rate": 0.3024678428032255,
+          "parameter_ci95": [
+            0.27057175185929355,
+            0.33772601847672107
+          ],
+          "predictive_ci95": [
+            0.23414634146341465,
+            0.375609756097561
+          ],
+          "inside_predictive_interval": true,
+          "absolute_error": 0.0731419132943355
+        },
+        {
+          "k": 6.0,
+          "successes": 76,
+          "total": 206,
+          "observed_rate": 0.36893203883495146,
+          "predicted_rate": 0.22425522676070297,
+          "parameter_ci95": [
+            0.19826258634467323,
+            0.25371244343790916
+          ],
+          "predictive_ci95": [
+            0.1650485436893204,
+            0.2912621359223301
+          ],
+          "inside_predictive_interval": false,
+          "absolute_error": 0.14467681207424848
+        }
+      ],
+      "fixed_exchangeable": {
+        "alpha": 0.5507207120166,
+        "gamma": 1.0,
+        "breakpoint_k": 1.7345026444015195,
+        "log_likelihood": -459.43703378731175,
+        "ceiling_limited": false,
+        "floor_limited": false
+      },
+      "free_exponent": {
+        "alpha": 0.08014704951403073,
+        "gamma": 0.2036484801296919,
+        "gamma_se": 0.17393249304664146,
+        "gamma_ci95": [
+          -0.13725920624172538,
+          0.5445561665011092
+        ],
+        "log_likelihood": -449.0301647763105,
+        "boundary_corrected": false
+      },
+      "likelihood_ratio_gamma_1": {
+        "statistic": 20.81373802200244,
+        "df": 1,
+        "p_value": 5.0618564336999775e-06
+      },
+      "status": "heldout_fail",
+      "heldout_mae": 0.108909362684292
+    }
+  ]
+}

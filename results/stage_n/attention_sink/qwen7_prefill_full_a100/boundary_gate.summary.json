@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "k0_accuracy": true,
+    "other_rate": true
+  },
+  "gate_pass": true,
+  "k0_accuracy": 0.9891975308641975,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "n": 3888,
+  "overall_other_rate": 0.00411522633744856,
+  "stage": "N-S-boundary-gate",
+  "thresholds": {
+    "max_other_rate": 0.2,
+    "min_k0_accuracy": 0.8
+  }
+}

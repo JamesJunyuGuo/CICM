@@ -1,0 +1,79 @@
+{
+  "stage": "l0b_api",
+  "n": 1200,
+  "overall_counts": {
+    "within_stale": 634,
+    "correct_current": 458,
+    "cross_slot": 88,
+    "other": 20
+  },
+  "overall_accuracy": 0.38166666666666665,
+  "overall_within_stale_failure_share": 0.8544474393530997,
+  "by_dose": {
+    "1": {
+      "n": 240,
+      "counts": {
+        "within_stale": 118,
+        "correct_current": 102,
+        "cross_slot": 14,
+        "other": 6
+      },
+      "accuracy": 0.425,
+      "within_stale_failure_share": 0.855072463768116
+    },
+    "2": {
+      "n": 240,
+      "counts": {
+        "correct_current": 114,
+        "within_stale": 102,
+        "cross_slot": 20,
+        "other": 4
+      },
+      "accuracy": 0.475,
+      "within_stale_failure_share": 0.8095238095238095
+    },
+    "3": {
+      "n": 240,
+      "counts": {
+        "within_stale": 127,
+        "correct_current": 97,
+        "cross_slot": 12,
+        "other": 4
+      },
+      "accuracy": 0.4041666666666667,
+      "within_stale_failure_share": 0.8881118881118881
+    },
+    "4": {
+      "n": 240,
+      "counts": {
+        "within_stale": 141,
+        "correct_current": 78,
+        "cross_slot": 17,
+        "other": 4
+      },
+      "accuracy": 0.325,
+      "within_stale_failure_share": 0.8703703703703703
+    },
+    "6": {
+      "n": 240,
+      "counts": {
+        "within_stale": 146,
+        "correct_current": 67,
+        "cross_slot": 25,
+        "other": 2
+      },
+      "accuracy": 0.2791666666666667,
+      "within_stale_failure_share": 0.8439306358381503
+    }
+  },
+  "slot_current_value_count_min": {
+    "diet": 57,
+    "learning_style": 57,
+    "music_genre": 57
+  },
+  "data": "data/stage_l/cicm_natural_factorial_otherdist_l0.jsonl",
+  "rows": "results/stage_l/natural_factorial_otherdist_llama/l0/openrouter_llama31_8b_rows.jsonl",
+  "model": "meta-llama/llama-3.1-8b-instruct",
+  "limit_per_dose": null,
+  "concurrency": 8
+}

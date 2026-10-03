@@ -1,0 +1,214 @@
+{
+  "arm": "T",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "target_heads": [
+    {
+      "layer": 1,
+      "head": 5
+    },
+    {
+      "layer": 23,
+      "head": 11
+    },
+    {
+      "layer": 22,
+      "head": 2
+    },
+    {
+      "layer": 22,
+      "head": 1
+    },
+    {
+      "layer": 0,
+      "head": 1
+    },
+    {
+      "layer": 20,
+      "head": 23
+    },
+    {
+      "layer": 19,
+      "head": 19
+    },
+    {
+      "layer": 18,
+      "head": 8
+    }
+  ],
+  "taus": [
+    1.0,
+    0.7,
+    0.5,
+    0.3
+  ],
+  "identity_baseline": "stage_a",
+  "n_records": 3356,
+  "cells": [
+    {
+      "eval_set": "C",
+      "tau": 0.3,
+      "condition": null,
+      "interference_load": null,
+      "n": 200,
+      "accuracy": 0.865,
+      "flip_to_correct": 0.0,
+      "harm": 0.135
+    },
+    {
+      "eval_set": "C",
+      "tau": 0.5,
+      "condition": null,
+      "interference_load": null,
+      "n": 200,
+      "accuracy": 0.945,
+      "flip_to_correct": 0.0,
+      "harm": 0.055
+    },
+    {
+      "eval_set": "C",
+      "tau": 0.7,
+      "condition": null,
+      "interference_load": null,
+      "n": 200,
+      "accuracy": 0.975,
+      "flip_to_correct": 0.0,
+      "harm": 0.025
+    },
+    {
+      "eval_set": "C",
+      "tau": 1.0,
+      "condition": null,
+      "interference_load": null,
+      "n": 200,
+      "accuracy": 1.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "S",
+      "tau": 0.3,
+      "condition": null,
+      "interference_load": null,
+      "n": 145,
+      "accuracy": 1.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "S",
+      "tau": 0.5,
+      "condition": null,
+      "interference_load": null,
+      "n": 145,
+      "accuracy": 1.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "S",
+      "tau": 0.7,
+      "condition": null,
+      "interference_load": null,
+      "n": 145,
+      "accuracy": 1.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "S",
+      "tau": 1.0,
+      "condition": null,
+      "interference_load": null,
+      "n": 145,
+      "accuracy": 1.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "W",
+      "tau": 0.3,
+      "condition": null,
+      "interference_load": null,
+      "n": 194,
+      "accuracy": 0.09278350515463918,
+      "flip_to_correct": 0.09278350515463918,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "W",
+      "tau": 0.5,
+      "condition": null,
+      "interference_load": null,
+      "n": 194,
+      "accuracy": 0.04639175257731959,
+      "flip_to_correct": 0.04639175257731959,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "W",
+      "tau": 0.7,
+      "condition": null,
+      "interference_load": null,
+      "n": 194,
+      "accuracy": 0.030927835051546393,
+      "flip_to_correct": 0.030927835051546393,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "W",
+      "tau": 1.0,
+      "condition": null,
+      "interference_load": null,
+      "n": 194,
+      "accuracy": 0.0,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "fresh",
+      "tau": 0.3,
+      "condition": "simple",
+      "interference_load": 0,
+      "n": 300,
+      "accuracy": 0.9933333333333333,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "fresh",
+      "tau": 0.5,
+      "condition": "simple",
+      "interference_load": 0,
+      "n": 300,
+      "accuracy": 0.9933333333333333,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "fresh",
+      "tau": 0.7,
+      "condition": "simple",
+      "interference_load": 0,
+      "n": 300,
+      "accuracy": 0.9933333333333333,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    },
+    {
+      "eval_set": "fresh",
+      "tau": 1.0,
+      "condition": "simple",
+      "interference_load": 0,
+      "n": 300,
+      "accuracy": 0.9933333333333333,
+      "flip_to_correct": 0.0,
+      "harm": 0.0
+    }
+  ],
+  "identity_gate": {
+    "tau": 1.0,
+    "n": 539,
+    "n_mismatch": 0,
+    "pass": true
+  }
+}

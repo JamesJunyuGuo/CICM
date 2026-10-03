@@ -1,0 +1,4954 @@
+{
+  "all_heads": [
+    {
+      "correct_gradient": 0.054293209651731095,
+      "failure_gradient": 0.42637255255665096,
+      "head": 8,
+      "layer": 28,
+      "target_attention_mass": 0.2876439690589905
+    },
+    {
+      "correct_gradient": 0.11050358358419167,
+      "failure_gradient": 0.36540549993515015,
+      "head": 2,
+      "layer": 28,
+      "target_attention_mass": 0.1908046156167984
+    },
+    {
+      "correct_gradient": 0.028886459486664465,
+      "failure_gradient": 0.30521335133484434,
+      "head": 12,
+      "layer": 28,
+      "target_attention_mass": 0.26889556646347046
+    },
+    {
+      "correct_gradient": 0.15448705655223918,
+      "failure_gradient": 0.2866214481847627,
+      "head": 1,
+      "layer": 35,
+      "target_attention_mass": 0.2645902633666992
+    },
+    {
+      "correct_gradient": 0.2205694149125297,
+      "failure_gradient": 0.2303471245935985,
+      "head": 14,
+      "layer": 40,
+      "target_attention_mass": 0.08267770707607269
+    },
+    {
+      "correct_gradient": 0.06945578557140422,
+      "failure_gradient": 0.2162837897028242,
+      "head": 7,
+      "layer": 32,
+      "target_attention_mass": 0.1716305911540985
+    },
+    {
+      "correct_gradient": 0.156086044491462,
+      "failure_gradient": 0.21604360852922713,
+      "head": 8,
+      "layer": 39,
+      "target_attention_mass": 0.166717529296875
+    },
+    {
+      "correct_gradient": 0.03736927286493329,
+      "failure_gradient": 0.1709645071199962,
+      "head": 1,
+      "layer": 33,
+      "target_attention_mass": 0.16767160594463348
+    },
+    {
+      "correct_gradient": 0.10703652633248635,
+      "failure_gradient": 0.16394668737692492,
+      "head": 0,
+      "layer": 35,
+      "target_attention_mass": 0.25228962302207947
+    },
+    {
+      "correct_gradient": 0.06129215938865014,
+      "failure_gradient": 0.15652019450707094,
+      "head": 12,
+      "layer": 37,
+      "target_attention_mass": 0.11684683710336685
+    },
+    {
+      "correct_gradient": 0.029589221162616083,
+      "failure_gradient": 0.14980444737843104,
+      "head": 15,
+      "layer": 31,
+      "target_attention_mass": 0.568906843662262
+    },
+    {
+      "correct_gradient": 0.11713819374453346,
+      "failure_gradient": 0.1323741820773908,
+      "head": 12,
+      "layer": 36,
+      "target_attention_mass": 0.2992098331451416
+    },
+    {
+      "correct_gradient": 0.03462681005585869,
+      "failure_gradient": 0.12954109907150269,
+      "head": 1,
+      "layer": 30,
+      "target_attention_mass": 0.2208535373210907
+    },
+    {
+      "correct_gradient": 0.037570052551773356,
+      "failure_gradient": 0.1225376624081816,
+      "head": 13,
+      "layer": 31,
+      "target_attention_mass": 0.22306950390338898
+    },
+    {
+      "correct_gradient": 0.10771270967879386,
+      "failure_gradient": 0.11990611255168915,
+      "head": 1,
+      "layer": 32,
+      "target_attention_mass": 0.16553279757499695
+    },
+    {
+      "correct_gradient": 0.005845294246133769,
+      "failure_gradient": 0.118168376984873,
+      "head": 4,
+      "layer": 28,
+      "target_attention_mass": 0.12124139815568924
+    },
+    {
+      "correct_gradient": 0.025777817897076876,
+      "failure_gradient": 0.09129861848694938,
+      "head": 7,
+      "layer": 33,
+      "target_attention_mass": 0.1367844194173813
+    },
+    {
+      "correct_gradient": 0.019070822956427088,
+      "failure_gradient": 0.08924027691994395,
+      "head": 15,
+      "layer": 30,
+      "target_attention_mass": 0.17250224947929382
+    },
+    {
+      "correct_gradient": 0.08363181633769341,
+      "failure_gradient": 0.08869980448590857,
+      "head": 14,
+      "layer": 35,
+      "target_attention_mass": 0.23546144366264343
+    },
+    {
+      "correct_gradient": 0.03085905733026283,
+      "failure_gradient": 0.07874651519315583,
+      "head": 13,
+      "layer": 32,
+      "target_attention_mass": 0.17661304771900177
+    },
+    {
+      "correct_gradient": 0.03808651639605468,
+      "failure_gradient": 0.0685320214501449,
+      "head": 14,
+      "layer": 34,
+      "target_attention_mass": 0.2543781101703644
+    },
+    {
+      "correct_gradient": 0.005624281681792916,
+      "failure_gradient": 0.058854682853312364,
+      "head": 0,
+      "layer": 26,
+      "target_attention_mass": 0.03311266377568245
+    },
+    {
+      "correct_gradient": 0.04008404105761141,
+      "failure_gradient": 0.05685219607715096,
+      "head": 1,
+      "layer": 37,
+      "target_attention_mass": 0.07555242627859116
+    },
+    {
+      "correct_gradient": 0.005667620233066802,
+      "failure_gradient": 0.05507881743168192,
+      "head": 4,
+      "layer": 26,
+      "target_attention_mass": 0.030174151062965393
+    },
+    {
+      "correct_gradient": 0.03805357442711884,
+      "failure_gradient": 0.052470485280667035,
+      "head": 1,
+      "layer": 29,
+      "target_attention_mass": 0.02753339521586895
+    },
+    {
+      "correct_gradient": 0.027295803124049924,
+      "failure_gradient": 0.05244063612605844,
+      "head": 6,
+      "layer": 37,
+      "target_attention_mass": 0.04706648364663124
+    },
+    {
+      "correct_gradient": 0.009248889227099013,
+      "failure_gradient": 0.051760206065539806,
+      "head": 9,
+      "layer": 28,
+      "target_attention_mass": 0.039542537182569504
+    },
+    {
+      "correct_gradient": 0.03125125802350494,
+      "failure_gradient": 0.04618975812835353,
+      "head": 15,
+      "layer": 32,
+      "target_attention_mass": 0.21471187472343445
+    },
+    {
+      "correct_gradient": 0.033202801110609526,
+      "failure_gradient": 0.0404228184904371,
+      "head": 15,
+      "layer": 34,
+      "target_attention_mass": 0.16962671279907227
+    },
+    {
+      "correct_gradient": 0.03741560061022921,
+      "failure_gradient": 0.03978490563375609,
+      "head": 13,
+      "layer": 25,
+      "target_attention_mass": 0.07538639008998871
+    },
+    {
+      "correct_gradient": 0.0066270084462989615,
+      "failure_gradient": 0.03879006213641593,
+      "head": 7,
+      "layer": 25,
+      "target_attention_mass": 0.011904285289347172
+    },
+    {
+      "correct_gradient": 0.010210611137016764,
+      "failure_gradient": 0.03697648765851876,
+      "head": 2,
+      "layer": 36,
+      "target_attention_mass": 0.12669876217842102
+    },
+    {
+      "correct_gradient": 0.032633956592037994,
+      "failure_gradient": 0.03447457211690822,
+      "head": 7,
+      "layer": 35,
+      "target_attention_mass": 0.07932993024587631
+    },
+    {
+      "correct_gradient": 0.004776321773259145,
+      "failure_gradient": 0.03350584315402167,
+      "head": 12,
+      "layer": 35,
+      "target_attention_mass": 0.06135783717036247
+    },
+    {
+      "correct_gradient": 0.001182020975733703,
+      "failure_gradient": 0.032519376171486716,
+      "head": 3,
+      "layer": 30,
+      "target_attention_mass": 0.025893976911902428
+    },
+    {
+      "correct_gradient": -0.0011107201582558875,
+      "failure_gradient": 0.031562350956457,
+      "head": 4,
+      "layer": 32,
+      "target_attention_mass": 0.18337790668010712
+    },
+    {
+      "correct_gradient": 0.0031364710544640162,
+      "failure_gradient": 0.031203976167099818,
+      "head": 13,
+      "layer": 34,
+      "target_attention_mass": 0.15986646711826324
+    },
+    {
+      "correct_gradient": 0.1519585814116136,
+      "failure_gradient": 0.030318274029663632,
+      "head": 6,
+      "layer": 31,
+      "target_attention_mass": 0.026477813720703125
+    },
+    {
+      "correct_gradient": 0.0102915583037824,
+      "failure_gradient": 0.03009454466934715,
+      "head": 9,
+      "layer": 34,
+      "target_attention_mass": 0.11462582647800446
+    },
+    {
+      "correct_gradient": 0.0014206956773293467,
+      "failure_gradient": 0.02857075445353985,
+      "head": 12,
+      "layer": 30,
+      "target_attention_mass": 0.0744524672627449
+    },
+    {
+      "correct_gradient": 0.004155286851356614,
+      "failure_gradient": 0.02766741406438606,
+      "head": 10,
+      "layer": 28,
+      "target_attention_mass": 0.16671815514564514
+    },
+    {
+      "correct_gradient": 0.010874144803240613,
+      "failure_gradient": 0.027184774899589165,
+      "head": 7,
+      "layer": 26,
+      "target_attention_mass": 0.02512546442449093
+    },
+    {
+      "correct_gradient": 0.002936587651383202,
+      "failure_gradient": 0.026555583413158144,
+      "head": 12,
+      "layer": 26,
+      "target_attention_mass": 0.07525219768285751
+    },
+    {
+      "correct_gradient": 0.002953087348701819,
+      "failure_gradient": 0.02527128452701228,
+      "head": 11,
+      "layer": 40,
+      "target_attention_mass": 0.028674976900219917
+    },
+    {
+      "correct_gradient": 0.010769545047912957,
+      "failure_gradient": 0.020599844798977886,
+      "head": 6,
+      "layer": 34,
+      "target_attention_mass": 0.35471290349960327
+    },
+    {
+      "correct_gradient": 0.013159927894484322,
+      "failure_gradient": 0.01899833425081202,
+      "head": 5,
+      "layer": 36,
+      "target_attention_mass": 0.07361752539873123
+    },
+    {
+      "correct_gradient": 0.008659106029092142,
+      "failure_gradient": 0.0182504866139165,
+      "head": 14,
+      "layer": 32,
+      "target_attention_mass": 0.10246484726667404
+    },
+    {
+      "correct_gradient": 0.003919943112809703,
+      "failure_gradient": 0.017879246002329246,
+      "head": 0,
+      "layer": 37,
+      "target_attention_mass": 0.04377849027514458
+    },
+    {
+      "correct_gradient": 0.0019308868268469595,
+      "failure_gradient": 0.017829678736494055,
+      "head": 8,
+      "layer": 31,
+      "target_attention_mass": 0.17715106904506683
+    },
+    {
+      "correct_gradient": 0.0022768493706606468,
+      "failure_gradient": 0.013640948687680066,
+      "head": 1,
+      "layer": 25,
+      "target_attention_mass": 0.018976131454110146
+    },
+    {
+      "correct_gradient": 0.0023170358782528704,
+      "failure_gradient": 0.012714985704016206,
+      "head": 14,
+      "layer": 29,
+      "target_attention_mass": 0.05250225588679314
+    },
+    {
+      "correct_gradient": -0.0006193051966926399,
+      "failure_gradient": 0.012694511371332087,
+      "head": 13,
+      "layer": 26,
+      "target_attention_mass": 0.03397325798869133
+    },
+    {
+      "correct_gradient": 0.006666826330265909,
+      "failure_gradient": 0.012541203360472406,
+      "head": 10,
+      "layer": 26,
+      "target_attention_mass": 0.006093093194067478
+    },
+    {
+      "correct_gradient": 0.015153966773793383,
+      "failure_gradient": 0.012028785422444344,
+      "head": 6,
+      "layer": 28,
+      "target_attention_mass": 0.02842099405825138
+    },
+    {
+      "correct_gradient": 0.016524077164676954,
+      "failure_gradient": 0.011196484789252281,
+      "head": 7,
+      "layer": 36,
+      "target_attention_mass": 0.10970469564199448
+    },
+    {
+      "correct_gradient": -0.0006944668602268651,
+      "failure_gradient": 0.010452458901064736,
+      "head": 15,
+      "layer": 33,
+      "target_attention_mass": 0.09618309885263443
+    },
+    {
+      "correct_gradient": 0.0006599523289621158,
+      "failure_gradient": 0.010394525015726686,
+      "head": 13,
+      "layer": 30,
+      "target_attention_mass": 0.028468871489167213
+    },
+    {
+      "correct_gradient": 0.006775694828972501,
+      "failure_gradient": 0.009868254785292916,
+      "head": 15,
+      "layer": 29,
+      "target_attention_mass": 0.11209062486886978
+    },
+    {
+      "correct_gradient": 0.0018102068394721257,
+      "failure_gradient": 0.009694373829656147,
+      "head": 8,
+      "layer": 24,
+      "target_attention_mass": 0.00988780613988638
+    },
+    {
+      "correct_gradient": 0.0024263768825890882,
+      "failure_gradient": 0.009341349783686123,
+      "head": 4,
+      "layer": 30,
+      "target_attention_mass": 0.00827255379408598
+    },
+    {
+      "correct_gradient": 0.004069754853844643,
+      "failure_gradient": 0.008315139545759718,
+      "head": 7,
+      "layer": 39,
+      "target_attention_mass": 0.033539433032274246
+    },
+    {
+      "correct_gradient": 0.0037123779678400956,
+      "failure_gradient": 0.007932318241468497,
+      "head": 2,
+      "layer": 39,
+      "target_attention_mass": 0.026465194299817085
+    },
+    {
+      "correct_gradient": -0.0028646828733436226,
+      "failure_gradient": 0.007220174381343115,
+      "head": 3,
+      "layer": 24,
+      "target_attention_mass": 0.012195467948913574
+    },
+    {
+      "correct_gradient": 0.003083630271677701,
+      "failure_gradient": 0.006948474994195359,
+      "head": 2,
+      "layer": 26,
+      "target_attention_mass": 0.0200042724609375
+    },
+    {
+      "correct_gradient": 0.0021231485144147335,
+      "failure_gradient": 0.006510125207049506,
+      "head": 14,
+      "layer": 23,
+      "target_attention_mass": 0.00840770173817873
+    },
+    {
+      "correct_gradient": 0.009635232634982973,
+      "failure_gradient": 0.006498403298402471,
+      "head": 8,
+      "layer": 29,
+      "target_attention_mass": 0.009848169051110744
+    },
+    {
+      "correct_gradient": 0.00046126161403251144,
+      "failure_gradient": 0.006442384337008532,
+      "head": 6,
+      "layer": 29,
+      "target_attention_mass": 0.04618474468588829
+    },
+    {
+      "correct_gradient": 0.0011691245654562735,
+      "failure_gradient": 0.006356555203508053,
+      "head": 9,
+      "layer": 37,
+      "target_attention_mass": 0.01879389025270939
+    },
+    {
+      "correct_gradient": 0.0015517818864505247,
+      "failure_gradient": 0.006262842609430663,
+      "head": 7,
+      "layer": 21,
+      "target_attention_mass": 0.007784579414874315
+    },
+    {
+      "correct_gradient": 0.03181215101536715,
+      "failure_gradient": 0.005876170205218452,
+      "head": 3,
+      "layer": 40,
+      "target_attention_mass": 0.050357136875391006
+    },
+    {
+      "correct_gradient": 0.0004652825026017315,
+      "failure_gradient": 0.005604280108985092,
+      "head": 2,
+      "layer": 23,
+      "target_attention_mass": 0.01891307905316353
+    },
+    {
+      "correct_gradient": -0.002747991807618231,
+      "failure_gradient": 0.005149595273126449,
+      "head": 1,
+      "layer": 24,
+      "target_attention_mass": 0.017115848138928413
+    },
+    {
+      "correct_gradient": 0.0029878627403445964,
+      "failure_gradient": 0.005060224111990205,
+      "head": 8,
+      "layer": 25,
+      "target_attention_mass": 0.025446156039834023
+    },
+    {
+      "correct_gradient": -0.0028723045340124168,
+      "failure_gradient": 0.0045440659991332465,
+      "head": 14,
+      "layer": 37,
+      "target_attention_mass": 0.07415907829999924
+    },
+    {
+      "correct_gradient": 1.2179223665712788e-05,
+      "failure_gradient": 0.004455202027851816,
+      "head": 13,
+      "layer": 27,
+      "target_attention_mass": 0.0038929854054003954
+    },
+    {
+      "correct_gradient": 0.0010835222289282476,
+      "failure_gradient": 0.004354757606051862,
+      "head": 15,
+      "layer": 25,
+      "target_attention_mass": 0.03586210682988167
+    },
+    {
+      "correct_gradient": 1.929810639681681e-05,
+      "failure_gradient": 0.0037389551289379597,
+      "head": 9,
+      "layer": 27,
+      "target_attention_mass": 0.03563680127263069
+    },
+    {
+      "correct_gradient": 0.0007616131531320653,
+      "failure_gradient": 0.0036070814406100127,
+      "head": 2,
+      "layer": 25,
+      "target_attention_mass": 0.016575166955590248
+    },
+    {
+      "correct_gradient": 0.001782055452184857,
+      "failure_gradient": 0.003121571141361658,
+      "head": 13,
+      "layer": 39,
+      "target_attention_mass": 0.013149925507605076
+    },
+    {
+      "correct_gradient": 0.001314002721249741,
+      "failure_gradient": 0.0028626454337167422,
+      "head": 12,
+      "layer": 22,
+      "target_attention_mass": 0.006290512625128031
+    },
+    {
+      "correct_gradient": -0.0030021835821417145,
+      "failure_gradient": 0.0024179063205208096,
+      "head": 10,
+      "layer": 36,
+      "target_attention_mass": 0.04040319472551346
+    },
+    {
+      "correct_gradient": 0.0001473064240033053,
+      "failure_gradient": 0.002370506753322843,
+      "head": 8,
+      "layer": 23,
+      "target_attention_mass": 0.0041886246763169765
+    },
+    {
+      "correct_gradient": 0.0009353867251020176,
+      "failure_gradient": 0.0022676108055748045,
+      "head": 3,
+      "layer": 31,
+      "target_attention_mass": 0.028336478397250175
+    },
+    {
+      "correct_gradient": 6.518407970807462e-05,
+      "failure_gradient": 0.0022364848201894866,
+      "head": 4,
+      "layer": 38,
+      "target_attention_mass": 0.011271459981799126
+    },
+    {
+      "correct_gradient": 0.0008426163266500775,
+      "failure_gradient": 0.0019237450872294306,
+      "head": 15,
+      "layer": 22,
+      "target_attention_mass": 0.0038787382654845715
+    },
+    {
+      "correct_gradient": -0.0007106087067305058,
+      "failure_gradient": 0.0016485460426857962,
+      "head": 13,
+      "layer": 22,
+      "target_attention_mass": 0.009209715761244297
+    },
+    {
+      "correct_gradient": 0.004312927465675012,
+      "failure_gradient": 0.0016459065622517041,
+      "head": 10,
+      "layer": 25,
+      "target_attention_mass": 0.04014364257454872
+    },
+    {
+      "correct_gradient": 0.0004947036834222809,
+      "failure_gradient": 0.0015482048454162265,
+      "head": 9,
+      "layer": 21,
+      "target_attention_mass": 0.007625486236065626
+    },
+    {
+      "correct_gradient": 0.00021539837174679874,
+      "failure_gradient": 0.0014575886702264792,
+      "head": 4,
+      "layer": 21,
+      "target_attention_mass": 0.00820249319076538
+    },
+    {
+      "correct_gradient": 0.001088695130162688,
+      "failure_gradient": 0.0013179157189629873,
+      "head": 3,
+      "layer": 26,
+      "target_attention_mass": 0.003177884966135025
+    },
+    {
+      "correct_gradient": 8.523768859581565e-05,
+      "failure_gradient": 0.0013031244761805283,
+      "head": 6,
+      "layer": 23,
+      "target_attention_mass": 0.0012551301624625921
+    },
+    {
+      "correct_gradient": 0.0010625189345962597,
+      "failure_gradient": 0.0012967117446740823,
+      "head": 0,
+      "layer": 24,
+      "target_attention_mass": 0.020659735426306725
+    },
+    {
+      "correct_gradient": 8.976997271946737e-05,
+      "failure_gradient": 0.0012588420484982116,
+      "head": 15,
+      "layer": 19,
+      "target_attention_mass": 0.002252864884212613
+    },
+    {
+      "correct_gradient": -0.00028492601474149607,
+      "failure_gradient": 0.0012003713740601338,
+      "head": 14,
+      "layer": 25,
+      "target_attention_mass": 0.00265541672706604
+    },
+    {
+      "correct_gradient": 7.078912601156055e-06,
+      "failure_gradient": 0.0010150358055917813,
+      "head": 3,
+      "layer": 25,
+      "target_attention_mass": 0.008535555563867092
+    },
+    {
+      "correct_gradient": 0.0006004285390207649,
+      "failure_gradient": 0.0009558981982991099,
+      "head": 3,
+      "layer": 33,
+      "target_attention_mass": 0.008962460793554783
+    },
+    {
+      "correct_gradient": -9.512588741995816e-05,
+      "failure_gradient": 0.0009433714564823147,
+      "head": 1,
+      "layer": 39,
+      "target_attention_mass": 0.002400723984465003
+    },
+    {
+      "correct_gradient": 4.773928985913407e-05,
+      "failure_gradient": 0.000891502013603583,
+      "head": 4,
+      "layer": 22,
+      "target_attention_mass": 0.0015292862663045526
+    },
+    {
+      "correct_gradient": 0.0005468885976610318,
+      "failure_gradient": 0.0008070857896070395,
+      "head": 5,
+      "layer": 33,
+      "target_attention_mass": 0.011467908509075642
+    },
+    {
+      "correct_gradient": -0.00018040315832345272,
+      "failure_gradient": 0.000713542931147718,
+      "head": 10,
+      "layer": 27,
+      "target_attention_mass": 0.00853221770375967
+    },
+    {
+      "correct_gradient": -3.680170465366177e-05,
+      "failure_gradient": 0.0006681875841292952,
+      "head": 7,
+      "layer": 30,
+      "target_attention_mass": 0.0015377998352050781
+    },
+    {
+      "correct_gradient": -3.09398186937818e-05,
+      "failure_gradient": 0.0006652076512442104,
+      "head": 7,
+      "layer": 38,
+      "target_attention_mass": 0.0044314200058579445
+    },
+    {
+      "correct_gradient": -6.934026951400809e-05,
+      "failure_gradient": 0.0006639800100986447,
+      "head": 10,
+      "layer": 21,
+      "target_attention_mass": 0.0021681690122932196
+    },
+    {
+      "correct_gradient": -8.035602403874948e-05,
+      "failure_gradient": 0.0006396872901989679,
+      "head": 15,
+      "layer": 36,
+      "target_attention_mass": 0.0026320803444832563
+    },
+    {
+      "correct_gradient": -8.980006765890514e-05,
+      "failure_gradient": 0.0006391290537846674,
+      "head": 11,
+      "layer": 24,
+      "target_attention_mass": 0.002676436910405755
+    },
+    {
+      "correct_gradient": 0.001000800565377159,
+      "failure_gradient": 0.0006157665463563587,
+      "head": 4,
+      "layer": 35,
+      "target_attention_mass": 0.006384381093084812
+    },
+    {
+      "correct_gradient": -6.679287740415982e-05,
+      "failure_gradient": 0.0005200108010155548,
+      "head": 8,
+      "layer": 26,
+      "target_attention_mass": 0.0009816118981689215
+    },
+    {
+      "correct_gradient": -0.0017486815033304804,
+      "failure_gradient": 0.0004803721676580608,
+      "head": 2,
+      "layer": 40,
+      "target_attention_mass": 0.004124619998037815
+    },
+    {
+      "correct_gradient": -2.5662055397230497e-06,
+      "failure_gradient": 0.0004611730556851918,
+      "head": 15,
+      "layer": 17,
+      "target_attention_mass": 0.006981645245105028
+    },
+    {
+      "correct_gradient": 0.00018496635380389943,
+      "failure_gradient": 0.00045604943339380303,
+      "head": 2,
+      "layer": 24,
+      "target_attention_mass": 0.0012363716959953308
+    },
+    {
+      "correct_gradient": -0.00040843630350142156,
+      "failure_gradient": 0.00045225172652862966,
+      "head": 12,
+      "layer": 31,
+      "target_attention_mass": 0.009475171566009521
+    },
+    {
+      "correct_gradient": -1.9652852437125062e-05,
+      "failure_gradient": 0.0004328950256292176,
+      "head": 10,
+      "layer": 22,
+      "target_attention_mass": 0.004359630402177572
+    },
+    {
+      "correct_gradient": 8.484945461738257e-05,
+      "failure_gradient": 0.0004326669035695626,
+      "head": 3,
+      "layer": 20,
+      "target_attention_mass": 0.0015837614191696048
+    },
+    {
+      "correct_gradient": -2.156328512357058e-05,
+      "failure_gradient": 0.0004121472136700634,
+      "head": 14,
+      "layer": 20,
+      "target_attention_mass": 0.0017609006026759744
+    },
+    {
+      "correct_gradient": -0.00012890986256951573,
+      "failure_gradient": 0.0004013213256257586,
+      "head": 5,
+      "layer": 25,
+      "target_attention_mass": 0.0018794493516907096
+    },
+    {
+      "correct_gradient": -2.5265514059870873e-05,
+      "failure_gradient": 0.0003842666902918219,
+      "head": 15,
+      "layer": 38,
+      "target_attention_mass": 0.0019086982356384397
+    },
+    {
+      "correct_gradient": 0.0005004046757195918,
+      "failure_gradient": 0.00038080287465293495,
+      "head": 11,
+      "layer": 27,
+      "target_attention_mass": 0.029214756563305855
+    },
+    {
+      "correct_gradient": 0.00017096552523380182,
+      "failure_gradient": 0.00036083549327616183,
+      "head": 5,
+      "layer": 38,
+      "target_attention_mass": 0.006914905272424221
+    },
+    {
+      "correct_gradient": 0.0006199188891222771,
+      "failure_gradient": 0.0003582570809937481,
+      "head": 15,
+      "layer": 35,
+      "target_attention_mass": 0.006867170333862305
+    },
+    {
+      "correct_gradient": 4.6870204727692566e-05,
+      "failure_gradient": 0.0003434117768067933,
+      "head": 3,
+      "layer": 21,
+      "target_attention_mass": 0.0005402039969339967
+    },
+    {
+      "correct_gradient": 9.711289543324624e-05,
+      "failure_gradient": 0.00033473445715312015,
+      "head": 12,
+      "layer": 21,
+      "target_attention_mass": 0.002530684694647789
+    },
+    {
+      "correct_gradient": 9.773673494082857e-05,
+      "failure_gradient": 0.0003004184652257079,
+      "head": 11,
+      "layer": 31,
+      "target_attention_mass": 0.0017729316605255008
+    },
+    {
+      "correct_gradient": -4.7187604787671624e-05,
+      "failure_gradient": 0.00029899193369991347,
+      "head": 0,
+      "layer": 40,
+      "target_attention_mass": 0.0006713686161674559
+    },
+    {
+      "correct_gradient": 1.3179422514337414e-05,
+      "failure_gradient": 0.00028584807296283543,
+      "head": 14,
+      "layer": 36,
+      "target_attention_mass": 0.010105371475219727
+    },
+    {
+      "correct_gradient": -6.623278544416194e-05,
+      "failure_gradient": 0.00027737693640769327,
+      "head": 7,
+      "layer": 41,
+      "target_attention_mass": 0.0008968653855845332
+    },
+    {
+      "correct_gradient": -0.00011768286585377284,
+      "failure_gradient": 0.0002652487970148546,
+      "head": 13,
+      "layer": 13,
+      "target_attention_mass": 0.007690104190260172
+    },
+    {
+      "correct_gradient": 3.7613535137355045e-06,
+      "failure_gradient": 0.00026011131818190085,
+      "head": 7,
+      "layer": 22,
+      "target_attention_mass": 0.0007561107049696147
+    },
+    {
+      "correct_gradient": 0.00015830055465658178,
+      "failure_gradient": 0.00023989780415182134,
+      "head": 3,
+      "layer": 29,
+      "target_attention_mass": 0.0011758932378143072
+    },
+    {
+      "correct_gradient": 9.631131828393577e-06,
+      "failure_gradient": 0.0002384000628288569,
+      "head": 5,
+      "layer": 27,
+      "target_attention_mass": 0.002000104170292616
+    },
+    {
+      "correct_gradient": -6.864142916077431e-05,
+      "failure_gradient": 0.00022904412253410555,
+      "head": 0,
+      "layer": 17,
+      "target_attention_mass": 0.004337165970355272
+    },
+    {
+      "correct_gradient": 8.642301375248451e-05,
+      "failure_gradient": 0.00021391165968712552,
+      "head": 7,
+      "layer": 20,
+      "target_attention_mass": 0.0008709646645002067
+    },
+    {
+      "correct_gradient": 1.535507345699512e-05,
+      "failure_gradient": 0.00020152826203099851,
+      "head": 5,
+      "layer": 23,
+      "target_attention_mass": 0.004235812462866306
+    },
+    {
+      "correct_gradient": 0.0015155736067033602,
+      "failure_gradient": 0.0001955267840198108,
+      "head": 11,
+      "layer": 29,
+      "target_attention_mass": 0.024249007925391197
+    },
+    {
+      "correct_gradient": 9.906077773951627e-05,
+      "failure_gradient": 0.00017948498264429093,
+      "head": 12,
+      "layer": 41,
+      "target_attention_mass": 0.0011096671223640442
+    },
+    {
+      "correct_gradient": 3.604938200503898e-05,
+      "failure_gradient": 0.00017584451273121106,
+      "head": 0,
+      "layer": 13,
+      "target_attention_mass": 0.0019957341719418764
+    },
+    {
+      "correct_gradient": -8.434524214914386e-05,
+      "failure_gradient": 0.00016993292956613004,
+      "head": 2,
+      "layer": 35,
+      "target_attention_mass": 0.0013643099227920175
+    },
+    {
+      "correct_gradient": -9.019814655711909e-06,
+      "failure_gradient": 0.000163480982467133,
+      "head": 10,
+      "layer": 23,
+      "target_attention_mass": 0.0011648163199424744
+    },
+    {
+      "correct_gradient": 7.807821878847086e-07,
+      "failure_gradient": 0.00016281600463636487,
+      "head": 13,
+      "layer": 36,
+      "target_attention_mass": 0.0011358942138031125
+    },
+    {
+      "correct_gradient": 0.00020439254574670967,
+      "failure_gradient": 0.00013827564647986686,
+      "head": 10,
+      "layer": 30,
+      "target_attention_mass": 0.0013378688599914312
+    },
+    {
+      "correct_gradient": -4.949094672722496e-05,
+      "failure_gradient": 0.00013649292889437805,
+      "head": 14,
+      "layer": 8,
+      "target_attention_mass": 0.004193697590380907
+    },
+    {
+      "correct_gradient": -5.259939396912057e-06,
+      "failure_gradient": 0.00013394254918759025,
+      "head": 9,
+      "layer": 31,
+      "target_attention_mass": 0.0012230670545250177
+    },
+    {
+      "correct_gradient": -1.9815458969942312e-05,
+      "failure_gradient": 0.00012033428009772251,
+      "head": 6,
+      "layer": 20,
+      "target_attention_mass": 0.0005996776162646711
+    },
+    {
+      "correct_gradient": -6.732857458838173e-05,
+      "failure_gradient": 0.0001115512235888413,
+      "head": 15,
+      "layer": 39,
+      "target_attention_mass": 0.0008341946522705257
+    },
+    {
+      "correct_gradient": -1.1048044675504261e-05,
+      "failure_gradient": 0.00011079113111074028,
+      "head": 2,
+      "layer": 27,
+      "target_attention_mass": 0.00048366605187766254
+    },
+    {
+      "correct_gradient": -3.611309124230416e-05,
+      "failure_gradient": 0.00010854722807250385,
+      "head": 10,
+      "layer": 17,
+      "target_attention_mass": 0.0016473574796691537
+    },
+    {
+      "correct_gradient": 2.435816779050686e-05,
+      "failure_gradient": 0.00010627894110777041,
+      "head": 13,
+      "layer": 7,
+      "target_attention_mass": 0.003188398899510503
+    },
+    {
+      "correct_gradient": 4.418136690356681e-05,
+      "failure_gradient": 0.00010333277064741456,
+      "head": 13,
+      "layer": 24,
+      "target_attention_mass": 0.004904491361230612
+    },
+    {
+      "correct_gradient": -8.146215410340788e-05,
+      "failure_gradient": 9.721049406964864e-05,
+      "head": 2,
+      "layer": 32,
+      "target_attention_mass": 0.0013396803988143802
+    },
+    {
+      "correct_gradient": -8.291149053959844e-06,
+      "failure_gradient": 9.48260078855258e-05,
+      "head": 15,
+      "layer": 41,
+      "target_attention_mass": 0.0006681521190330386
+    },
+    {
+      "correct_gradient": 2.4313064026294874e-06,
+      "failure_gradient": 9.359761640683115e-05,
+      "head": 10,
+      "layer": 19,
+      "target_attention_mass": 0.0004904154338873923
+    },
+    {
+      "correct_gradient": -8.092386120414683e-05,
+      "failure_gradient": 9.334327160104294e-05,
+      "head": 9,
+      "layer": 19,
+      "target_attention_mass": 0.0008183909230865538
+    },
+    {
+      "correct_gradient": -0.00010222841626942545,
+      "failure_gradient": 9.267721660372834e-05,
+      "head": 14,
+      "layer": 18,
+      "target_attention_mass": 0.0010380941675975919
+    },
+    {
+      "correct_gradient": 3.4649817949547523e-05,
+      "failure_gradient": 9.073916641812372e-05,
+      "head": 11,
+      "layer": 1,
+      "target_attention_mass": 0.012573753483593464
+    },
+    {
+      "correct_gradient": -3.394603021970054e-05,
+      "failure_gradient": 9.026184371967767e-05,
+      "head": 15,
+      "layer": 21,
+      "target_attention_mass": 0.000503881718032062
+    },
+    {
+      "correct_gradient": 0.0003840330755338073,
+      "failure_gradient": 8.592392883396574e-05,
+      "head": 13,
+      "layer": 38,
+      "target_attention_mass": 0.002513265935704112
+    },
+    {
+      "correct_gradient": 6.452331512744697e-05,
+      "failure_gradient": 8.52848232690511e-05,
+      "head": 4,
+      "layer": 34,
+      "target_attention_mass": 0.0036529898643493652
+    },
+    {
+      "correct_gradient": -2.1413346436226142e-06,
+      "failure_gradient": 8.299602969990312e-05,
+      "head": 7,
+      "layer": 27,
+      "target_attention_mass": 0.0018066625343635678
+    },
+    {
+      "correct_gradient": 0.0008509536148850666,
+      "failure_gradient": 8.064268468339313e-05,
+      "head": 3,
+      "layer": 18,
+      "target_attention_mass": 0.002683092374354601
+    },
+    {
+      "correct_gradient": 0.0001407730654497051,
+      "failure_gradient": 7.996492370563959e-05,
+      "head": 11,
+      "layer": 41,
+      "target_attention_mass": 0.0038774609565734863
+    },
+    {
+      "correct_gradient": -5.324146230740776e-06,
+      "failure_gradient": 7.290874314743892e-05,
+      "head": 6,
+      "layer": 10,
+      "target_attention_mass": 0.0016394885024055839
+    },
+    {
+      "correct_gradient": -0.00014853776423787735,
+      "failure_gradient": 6.952446710783988e-05,
+      "head": 12,
+      "layer": 10,
+      "target_attention_mass": 0.012943183071911335
+    },
+    {
+      "correct_gradient": -2.7725013665677012e-05,
+      "failure_gradient": 6.408713813600895e-05,
+      "head": 4,
+      "layer": 37,
+      "target_attention_mass": 0.0005176690174266696
+    },
+    {
+      "correct_gradient": 0.0008016618074111219,
+      "failure_gradient": 6.163969270086714e-05,
+      "head": 6,
+      "layer": 40,
+      "target_attention_mass": 0.017383847385644913
+    },
+    {
+      "correct_gradient": -6.5368062592515685e-06,
+      "failure_gradient": 6.099072116480134e-05,
+      "head": 5,
+      "layer": 31,
+      "target_attention_mass": 0.0010217417730018497
+    },
+    {
+      "correct_gradient": -2.561739121980058e-06,
+      "failure_gradient": 5.893116999849164e-05,
+      "head": 10,
+      "layer": 4,
+      "target_attention_mass": 0.0010597078362479806
+    },
+    {
+      "correct_gradient": 1.3954822209615366e-05,
+      "failure_gradient": 5.780833459669209e-05,
+      "head": 15,
+      "layer": 11,
+      "target_attention_mass": 0.0025087681133300066
+    },
+    {
+      "correct_gradient": -5.957144006764415e-06,
+      "failure_gradient": 5.732977558636776e-05,
+      "head": 9,
+      "layer": 20,
+      "target_attention_mass": 0.00031949448748491704
+    },
+    {
+      "correct_gradient": 2.1186546875023334e-05,
+      "failure_gradient": 5.628452968916723e-05,
+      "head": 7,
+      "layer": 4,
+      "target_attention_mass": 0.010812231339514256
+    },
+    {
+      "correct_gradient": -0.00011125288341954386,
+      "failure_gradient": 5.394321747839318e-05,
+      "head": 14,
+      "layer": 19,
+      "target_attention_mass": 0.001580297015607357
+    },
+    {
+      "correct_gradient": 3.7755852456441814e-05,
+      "failure_gradient": 5.1012272056790865e-05,
+      "head": 14,
+      "layer": 31,
+      "target_attention_mass": 0.002958059310913086
+    },
+    {
+      "correct_gradient": 0.00012333625059943857,
+      "failure_gradient": 5.0360984719840675e-05,
+      "head": 4,
+      "layer": 29,
+      "target_attention_mass": 0.0010454716393724084
+    },
+    {
+      "correct_gradient": -7.538771737841362e-05,
+      "failure_gradient": 4.928591286963118e-05,
+      "head": 5,
+      "layer": 18,
+      "target_attention_mass": 0.002150569576770067
+    },
+    {
+      "correct_gradient": 1.6444133541641213e-05,
+      "failure_gradient": 4.855495155555088e-05,
+      "head": 6,
+      "layer": 18,
+      "target_attention_mass": 0.0003459584550000727
+    },
+    {
+      "correct_gradient": -5.0248739085564353e-05,
+      "failure_gradient": 4.692653159768919e-05,
+      "head": 13,
+      "layer": 20,
+      "target_attention_mass": 0.0007021911442279816
+    },
+    {
+      "correct_gradient": 1.850752208688305e-05,
+      "failure_gradient": 4.6924327047496005e-05,
+      "head": 8,
+      "layer": 18,
+      "target_attention_mass": 0.0005438285297714174
+    },
+    {
+      "correct_gradient": -6.152584079108289e-06,
+      "failure_gradient": 4.630740971021753e-05,
+      "head": 8,
+      "layer": 17,
+      "target_attention_mass": 0.0005800873041152954
+    },
+    {
+      "correct_gradient": -3.4494928599396757e-06,
+      "failure_gradient": 4.553931635850209e-05,
+      "head": 0,
+      "layer": 22,
+      "target_attention_mass": 0.0001285974431084469
+    },
+    {
+      "correct_gradient": -8.177401262932932e-06,
+      "failure_gradient": 4.362649217780147e-05,
+      "head": 12,
+      "layer": 16,
+      "target_attention_mass": 0.0007133632898330688
+    },
+    {
+      "correct_gradient": 7.83359249702321e-06,
+      "failure_gradient": 4.330729877567917e-05,
+      "head": 3,
+      "layer": 38,
+      "target_attention_mass": 0.0005694505525752902
+    },
+    {
+      "correct_gradient": 2.0295790578392422e-05,
+      "failure_gradient": 4.309565234247462e-05,
+      "head": 6,
+      "layer": 6,
+      "target_attention_mass": 0.013680560514330864
+    },
+    {
+      "correct_gradient": 5.421053067965538e-05,
+      "failure_gradient": 4.271022615804603e-05,
+      "head": 0,
+      "layer": 19,
+      "target_attention_mass": 0.002970563480630517
+    },
+    {
+      "correct_gradient": -2.8146414178819505e-06,
+      "failure_gradient": 4.186925402141891e-05,
+      "head": 2,
+      "layer": 10,
+      "target_attention_mass": 0.0005014539929106832
+    },
+    {
+      "correct_gradient": 7.081164139375653e-05,
+      "failure_gradient": 3.928833341758166e-05,
+      "head": 11,
+      "layer": 37,
+      "target_attention_mass": 0.0007296907133422792
+    },
+    {
+      "correct_gradient": -1.2344881673376427e-06,
+      "failure_gradient": 3.81948804195937e-05,
+      "head": 7,
+      "layer": 3,
+      "target_attention_mass": 0.0025141495279967785
+    },
+    {
+      "correct_gradient": -2.9814800998209186e-06,
+      "failure_gradient": 3.6085081904145356e-05,
+      "head": 4,
+      "layer": 24,
+      "target_attention_mass": 0.0001338082947768271
+    },
+    {
+      "correct_gradient": -7.776408843487585e-06,
+      "failure_gradient": 3.368514588990885e-05,
+      "head": 5,
+      "layer": 4,
+      "target_attention_mass": 0.002538723638281226
+    },
+    {
+      "correct_gradient": 6.58174339717008e-05,
+      "failure_gradient": 3.078776353504509e-05,
+      "head": 1,
+      "layer": 22,
+      "target_attention_mass": 0.0013861448969691992
+    },
+    {
+      "correct_gradient": -1.82966026806993e-05,
+      "failure_gradient": 3.065734745177906e-05,
+      "head": 0,
+      "layer": 16,
+      "target_attention_mass": 0.002684759208932519
+    },
+    {
+      "correct_gradient": 1.5336304849764895e-05,
+      "failure_gradient": 2.8843770711059085e-05,
+      "head": 11,
+      "layer": 17,
+      "target_attention_mass": 0.0008635563426651061
+    },
+    {
+      "correct_gradient": -2.638803603334071e-06,
+      "failure_gradient": 2.804639357886377e-05,
+      "head": 1,
+      "layer": 8,
+      "target_attention_mass": 0.0007167565054260194
+    },
+    {
+      "correct_gradient": 8.091822135886002e-06,
+      "failure_gradient": 2.7411287451936266e-05,
+      "head": 1,
+      "layer": 19,
+      "target_attention_mass": 0.0003746894362848252
+    },
+    {
+      "correct_gradient": -3.756734626016246e-05,
+      "failure_gradient": 2.6338035240769386e-05,
+      "head": 0,
+      "layer": 18,
+      "target_attention_mass": 0.0007780109299346805
+    },
+    {
+      "correct_gradient": 2.7711824619679113e-05,
+      "failure_gradient": 2.4764813718190582e-05,
+      "head": 11,
+      "layer": 14,
+      "target_attention_mass": 0.0008974196971394122
+    },
+    {
+      "correct_gradient": -6.370197881105409e-06,
+      "failure_gradient": 2.3456771097179236e-05,
+      "head": 6,
+      "layer": 16,
+      "target_attention_mass": 0.0008746045059524477
+    },
+    {
+      "correct_gradient": 3.623839896839477e-06,
+      "failure_gradient": 2.3395820140389594e-05,
+      "head": 3,
+      "layer": 1,
+      "target_attention_mass": 0.0027710285503417253
+    },
+    {
+      "correct_gradient": 3.6693547269162494e-06,
+      "failure_gradient": 2.081657705080683e-05,
+      "head": 10,
+      "layer": 14,
+      "target_attention_mass": 0.0015118798473849893
+    },
+    {
+      "correct_gradient": 3.461705760718411e-06,
+      "failure_gradient": 1.986063669586916e-05,
+      "head": 6,
+      "layer": 17,
+      "target_attention_mass": 0.00013819510058965534
+    },
+    {
+      "correct_gradient": 1.1836993508040905e-05,
+      "failure_gradient": 1.9821691759196775e-05,
+      "head": 3,
+      "layer": 35,
+      "target_attention_mass": 0.0006604247610084713
+    },
+    {
+      "correct_gradient": 2.5491716992549315e-06,
+      "failure_gradient": 1.9563237791382043e-05,
+      "head": 1,
+      "layer": 40,
+      "target_attention_mass": 0.000325644388794899
+    },
+    {
+      "correct_gradient": -4.661449517852644e-05,
+      "failure_gradient": 1.9307239459262098e-05,
+      "head": 6,
+      "layer": 3,
+      "target_attention_mass": 0.004057594574987888
+    },
+    {
+      "correct_gradient": -1.5162639204579635e-07,
+      "failure_gradient": 1.921280285647039e-05,
+      "head": 15,
+      "layer": 13,
+      "target_attention_mass": 0.0005373060703277588
+    },
+    {
+      "correct_gradient": -6.73056082340959e-06,
+      "failure_gradient": 1.8933060418240594e-05,
+      "head": 8,
+      "layer": 11,
+      "target_attention_mass": 0.0003148200339637697
+    },
+    {
+      "correct_gradient": 1.9597507659609448e-06,
+      "failure_gradient": 1.8281718683153614e-05,
+      "head": 13,
+      "layer": 9,
+      "target_attention_mass": 0.00046491011744365096
+    },
+    {
+      "correct_gradient": -4.634989265451743e-06,
+      "failure_gradient": 1.7957414383675185e-05,
+      "head": 6,
+      "layer": 12,
+      "target_attention_mass": 0.0005673524574376643
+    },
+    {
+      "correct_gradient": 3.6575507040669315e-07,
+      "failure_gradient": 1.740741004141455e-05,
+      "head": 13,
+      "layer": 15,
+      "target_attention_mass": 0.00017002271488308907
+    },
+    {
+      "correct_gradient": -2.9232222202136774e-05,
+      "failure_gradient": 1.727426255066738e-05,
+      "head": 14,
+      "layer": 17,
+      "target_attention_mass": 0.0003479088481981307
+    },
+    {
+      "correct_gradient": 7.323501312436386e-06,
+      "failure_gradient": 1.7146520934017773e-05,
+      "head": 5,
+      "layer": 9,
+      "target_attention_mass": 0.0009567367960698903
+    },
+    {
+      "correct_gradient": -2.5502928831386115e-06,
+      "failure_gradient": 1.687126652021626e-05,
+      "head": 1,
+      "layer": 20,
+      "target_attention_mass": 0.0003480160958133638
+    },
+    {
+      "correct_gradient": 1.1475046989598579e-06,
+      "failure_gradient": 1.6478448644972688e-05,
+      "head": 8,
+      "layer": 1,
+      "target_attention_mass": 0.0013498446205630898
+    },
+    {
+      "correct_gradient": 9.845033468508828e-06,
+      "failure_gradient": 1.6144351530808114e-05,
+      "head": 15,
+      "layer": 0,
+      "target_attention_mass": 0.0016874995781108737
+    },
+    {
+      "correct_gradient": -1.3435560864515005e-05,
+      "failure_gradient": 1.5298578188906375e-05,
+      "head": 4,
+      "layer": 4,
+      "target_attention_mass": 0.0019856872968375683
+    },
+    {
+      "correct_gradient": 1.6902804847357505e-06,
+      "failure_gradient": 1.5190857444074319e-05,
+      "head": 4,
+      "layer": 15,
+      "target_attention_mass": 4.6826819016132504e-05
+    },
+    {
+      "correct_gradient": -1.7611484384549428e-06,
+      "failure_gradient": 1.5143468447474464e-05,
+      "head": 15,
+      "layer": 20,
+      "target_attention_mass": 7.905518577899784e-05
+    },
+    {
+      "correct_gradient": -2.1729114502344395e-06,
+      "failure_gradient": 1.4949758415078967e-05,
+      "head": 5,
+      "layer": 12,
+      "target_attention_mass": 0.000609080190770328
+    },
+    {
+      "correct_gradient": -6.0590859988533e-06,
+      "failure_gradient": 1.4936129381177515e-05,
+      "head": 13,
+      "layer": 5,
+      "target_attention_mass": 0.0007699749548919499
+    },
+    {
+      "correct_gradient": 2.3741129827509934e-05,
+      "failure_gradient": 1.4566284659979698e-05,
+      "head": 13,
+      "layer": 19,
+      "target_attention_mass": 0.0008050330798141658
+    },
+    {
+      "correct_gradient": -6.2327806792279075e-06,
+      "failure_gradient": 1.3999521732850034e-05,
+      "head": 14,
+      "layer": 12,
+      "target_attention_mass": 0.0008155065006576478
+    },
+    {
+      "correct_gradient": -4.264976376293387e-06,
+      "failure_gradient": 1.2755120613811804e-05,
+      "head": 11,
+      "layer": 10,
+      "target_attention_mass": 0.000334063806803897
+    },
+    {
+      "correct_gradient": 1.6766424314997529e-06,
+      "failure_gradient": 1.242341022589244e-05,
+      "head": 2,
+      "layer": 34,
+      "target_attention_mass": 0.00013687940372619778
+    },
+    {
+      "correct_gradient": -3.6831644258268598e-06,
+      "failure_gradient": 1.2156073872964563e-05,
+      "head": 3,
+      "layer": 34,
+      "target_attention_mass": 0.0002703799691516906
+    },
+    {
+      "correct_gradient": -1.033113496202343e-06,
+      "failure_gradient": 1.2033182559077562e-05,
+      "head": 0,
+      "layer": 34,
+      "target_attention_mass": 0.00012929704098496586
+    },
+    {
+      "correct_gradient": -3.5944537540792296e-06,
+      "failure_gradient": 1.1946357452481088e-05,
+      "head": 6,
+      "layer": 2,
+      "target_attention_mass": 0.0016820111777633429
+    },
+    {
+      "correct_gradient": -6.31661254683079e-06,
+      "failure_gradient": 1.1915222525463573e-05,
+      "head": 1,
+      "layer": 21,
+      "target_attention_mass": 0.00015425842138938606
+    },
+    {
+      "correct_gradient": -1.1909435001281002e-07,
+      "failure_gradient": 1.1768790240499324e-05,
+      "head": 9,
+      "layer": 32,
+      "target_attention_mass": 0.00020208954811096191
+    },
+    {
+      "correct_gradient": -2.8794929233810145e-06,
+      "failure_gradient": 1.1724185599502692e-05,
+      "head": 7,
+      "layer": 0,
+      "target_attention_mass": 0.002005917951464653
+    },
+    {
+      "correct_gradient": 1.7958738234878147e-07,
+      "failure_gradient": 1.155532345364918e-05,
+      "head": 13,
+      "layer": 1,
+      "target_attention_mass": 0.001354062114842236
+    },
+    {
+      "correct_gradient": 3.0770087213791414e-06,
+      "failure_gradient": 1.0624394089323427e-05,
+      "head": 2,
+      "layer": 13,
+      "target_attention_mass": 0.0002920095284935087
+    },
+    {
+      "correct_gradient": 3.460161363638587e-07,
+      "failure_gradient": 1.0568581615189032e-05,
+      "head": 11,
+      "layer": 16,
+      "target_attention_mass": 8.069608884397894e-05
+    },
+    {
+      "correct_gradient": 7.63377467703905e-06,
+      "failure_gradient": 1.0526689099573819e-05,
+      "head": 3,
+      "layer": 10,
+      "target_attention_mass": 0.0016153010074049234
+    },
+    {
+      "correct_gradient": -4.116257402855345e-07,
+      "failure_gradient": 1.006991219400431e-05,
+      "head": 7,
+      "layer": 10,
+      "target_attention_mass": 0.00026216235710307956
+    },
+    {
+      "correct_gradient": -2.3888997192151913e-06,
+      "failure_gradient": 9.910130091027116e-06,
+      "head": 6,
+      "layer": 11,
+      "target_attention_mass": 0.0003758490493055433
+    },
+    {
+      "correct_gradient": -1.3905981108590187e-06,
+      "failure_gradient": 8.805656697014846e-06,
+      "head": 14,
+      "layer": 13,
+      "target_attention_mass": 0.00039521497092209756
+    },
+    {
+      "correct_gradient": -5.351716953435175e-06,
+      "failure_gradient": 8.723745330436422e-06,
+      "head": 7,
+      "layer": 12,
+      "target_attention_mass": 0.0003946593787986785
+    },
+    {
+      "correct_gradient": 1.218510387500502e-05,
+      "failure_gradient": 7.602072270986225e-06,
+      "head": 1,
+      "layer": 11,
+      "target_attention_mass": 0.0016674080397933722
+    },
+    {
+      "correct_gradient": -1.113927306185892e-06,
+      "failure_gradient": 7.51886821197851e-06,
+      "head": 10,
+      "layer": 13,
+      "target_attention_mass": 8.958134276326746e-05
+    },
+    {
+      "correct_gradient": -2.0745085079534822e-07,
+      "failure_gradient": 7.412141485474422e-06,
+      "head": 14,
+      "layer": 2,
+      "target_attention_mass": 0.0010951906442642212
+    },
+    {
+      "correct_gradient": 1.557193598204802e-05,
+      "failure_gradient": 7.132315041807098e-06,
+      "head": 5,
+      "layer": 10,
+      "target_attention_mass": 0.001229140325449407
+    },
+    {
+      "correct_gradient": -1.705328966911008e-06,
+      "failure_gradient": 6.921348642663361e-06,
+      "head": 11,
+      "layer": 13,
+      "target_attention_mass": 0.000196707303985022
+    },
+    {
+      "correct_gradient": 1.2508091428554627e-05,
+      "failure_gradient": 6.8925564521902875e-06,
+      "head": 9,
+      "layer": 2,
+      "target_attention_mass": 0.0026859354693442583
+    },
+    {
+      "correct_gradient": -1.9161176032008918e-07,
+      "failure_gradient": 6.797120201034497e-06,
+      "head": 7,
+      "layer": 14,
+      "target_attention_mass": 8.848422294249758e-05
+    },
+    {
+      "correct_gradient": 0.000338326586094105,
+      "failure_gradient": 6.787420716136694e-06,
+      "head": 3,
+      "layer": 32,
+      "target_attention_mass": 0.003560662269592285
+    },
+    {
+      "correct_gradient": -1.1827277496263807e-05,
+      "failure_gradient": 6.747666053083126e-06,
+      "head": 11,
+      "layer": 36,
+      "target_attention_mass": 0.0008016462670639157
+    },
+    {
+      "correct_gradient": -4.912904018364882e-07,
+      "failure_gradient": 6.684783654366454e-06,
+      "head": 9,
+      "layer": 14,
+      "target_attention_mass": 7.432499842252582e-05
+    },
+    {
+      "correct_gradient": -6.8338433849484714e-06,
+      "failure_gradient": 6.504786499915229e-06,
+      "head": 0,
+      "layer": 9,
+      "target_attention_mass": 0.0005259125609882176
+    },
+    {
+      "correct_gradient": -3.154238481140467e-07,
+      "failure_gradient": 6.368102861285609e-06,
+      "head": 14,
+      "layer": 1,
+      "target_attention_mass": 0.0006974392454139888
+    },
+    {
+      "correct_gradient": 3.1714814195886062e-06,
+      "failure_gradient": 6.219017401625544e-06,
+      "head": 3,
+      "layer": 6,
+      "target_attention_mass": 0.0005525435553863645
+    },
+    {
+      "correct_gradient": -2.4359981640407327e-06,
+      "failure_gradient": 6.119781866280911e-06,
+      "head": 15,
+      "layer": 14,
+      "target_attention_mass": 0.00010702759027481079
+    },
+    {
+      "correct_gradient": 3.663540773455027e-06,
+      "failure_gradient": 5.976677130092867e-06,
+      "head": 0,
+      "layer": 0,
+      "target_attention_mass": 0.006002443376928568
+    },
+    {
+      "correct_gradient": -1.7788503993080735e-06,
+      "failure_gradient": 5.767654101873632e-06,
+      "head": 6,
+      "layer": 8,
+      "target_attention_mass": 0.00022286761668510735
+    },
+    {
+      "correct_gradient": 9.228674485403078e-08,
+      "failure_gradient": 5.708024949464223e-06,
+      "head": 10,
+      "layer": 6,
+      "target_attention_mass": 0.0004920161445625126
+    },
+    {
+      "correct_gradient": -4.406108885477978e-06,
+      "failure_gradient": 5.705055323395365e-06,
+      "head": 0,
+      "layer": 1,
+      "target_attention_mass": 0.0004704657185357064
+    },
+    {
+      "correct_gradient": 1.1117587042840654e-06,
+      "failure_gradient": 5.653952192525529e-06,
+      "head": 13,
+      "layer": 0,
+      "target_attention_mass": 0.0013129477156326175
+    },
+    {
+      "correct_gradient": -2.643277527894034e-06,
+      "failure_gradient": 5.603633326245472e-06,
+      "head": 12,
+      "layer": 4,
+      "target_attention_mass": 0.0015407970640808344
+    },
+    {
+      "correct_gradient": 3.9805545727502693e-07,
+      "failure_gradient": 5.268528298074671e-06,
+      "head": 11,
+      "layer": 3,
+      "target_attention_mass": 0.0021589722018688917
+    },
+    {
+      "correct_gradient": 5.778655216794127e-06,
+      "failure_gradient": 5.180473895701912e-06,
+      "head": 3,
+      "layer": 16,
+      "target_attention_mass": 0.00023947868612594903
+    },
+    {
+      "correct_gradient": 1.1669376202110659e-06,
+      "failure_gradient": 5.1290171459835876e-06,
+      "head": 12,
+      "layer": 11,
+      "target_attention_mass": 0.0003528108063619584
+    },
+    {
+      "correct_gradient": 1.8359578912425622e-06,
+      "failure_gradient": 4.973360278524654e-06,
+      "head": 4,
+      "layer": 3,
+      "target_attention_mass": 0.0003747905429918319
+    },
+    {
+      "correct_gradient": -1.5993074020167664e-06,
+      "failure_gradient": 4.7908387890467045e-06,
+      "head": 14,
+      "layer": 10,
+      "target_attention_mass": 0.00016019467147998512
+    },
+    {
+      "correct_gradient": -6.164236658219554e-07,
+      "failure_gradient": 4.3774754436842755e-06,
+      "head": 9,
+      "layer": 11,
+      "target_attention_mass": 3.93698901461903e-05
+    },
+    {
+      "correct_gradient": 7.858783183624871e-07,
+      "failure_gradient": 4.369358354746769e-06,
+      "head": 2,
+      "layer": 7,
+      "target_attention_mass": 0.0005371709121391177
+    },
+    {
+      "correct_gradient": -1.126402461317034e-06,
+      "failure_gradient": 4.353815638426438e-06,
+      "head": 8,
+      "layer": 36,
+      "target_attention_mass": 6.304312410065904e-05
+    },
+    {
+      "correct_gradient": -2.158781350068616e-05,
+      "failure_gradient": 4.3511022990320015e-06,
+      "head": 0,
+      "layer": 2,
+      "target_attention_mass": 0.0012493729591369629
+    },
+    {
+      "correct_gradient": 2.397955180434642e-06,
+      "failure_gradient": 4.250564659612012e-06,
+      "head": 8,
+      "layer": 0,
+      "target_attention_mass": 0.0013717541005462408
+    },
+    {
+      "correct_gradient": -4.609068780138052e-06,
+      "failure_gradient": 4.16253017679732e-06,
+      "head": 1,
+      "layer": 9,
+      "target_attention_mass": 0.0002489544858690351
+    },
+    {
+      "correct_gradient": -3.712278865625091e-06,
+      "failure_gradient": 4.1176217564498074e-06,
+      "head": 5,
+      "layer": 19,
+      "target_attention_mass": 0.00013308848429005593
+    },
+    {
+      "correct_gradient": -1.1444721098567518e-05,
+      "failure_gradient": 3.939574997145558e-06,
+      "head": 12,
+      "layer": 7,
+      "target_attention_mass": 0.00048419114318676293
+    },
+    {
+      "correct_gradient": -1.4456995127405225e-06,
+      "failure_gradient": 3.7524611603397976e-06,
+      "head": 4,
+      "layer": 0,
+      "target_attention_mass": 0.0005889929016120732
+    },
+    {
+      "correct_gradient": 2.4630843791731784e-06,
+      "failure_gradient": 3.725596668248597e-06,
+      "head": 14,
+      "layer": 9,
+      "target_attention_mass": 0.00026725392672233284
+    },
+    {
+      "correct_gradient": -2.1353760118627006e-07,
+      "failure_gradient": 3.679021438480439e-06,
+      "head": 3,
+      "layer": 13,
+      "target_attention_mass": 0.00018913697567768395
+    },
+    {
+      "correct_gradient": -1.3245117659024336e-05,
+      "failure_gradient": 3.60092269602319e-06,
+      "head": 11,
+      "layer": 12,
+      "target_attention_mass": 0.00033433575299568474
+    },
+    {
+      "correct_gradient": -2.9213210064829943e-07,
+      "failure_gradient": 3.5532762662374547e-06,
+      "head": 9,
+      "layer": 9,
+      "target_attention_mass": 0.0008407767163589597
+    },
+    {
+      "correct_gradient": 2.533250531172907e-06,
+      "failure_gradient": 3.377399869870195e-06,
+      "head": 4,
+      "layer": 16,
+      "target_attention_mass": 0.0002138220879714936
+    },
+    {
+      "correct_gradient": -8.72923583473202e-06,
+      "failure_gradient": 3.1347577273014134e-06,
+      "head": 5,
+      "layer": 7,
+      "target_attention_mass": 0.0012706135166808963
+    },
+    {
+      "correct_gradient": 1.3182224135544977e-05,
+      "failure_gradient": 3.0797283605871987e-06,
+      "head": 12,
+      "layer": 1,
+      "target_attention_mass": 0.001807965338230133
+    },
+    {
+      "correct_gradient": 3.076566003382707e-07,
+      "failure_gradient": 2.8625172977366934e-06,
+      "head": 9,
+      "layer": 0,
+      "target_attention_mass": 0.003013134002685547
+    },
+    {
+      "correct_gradient": 7.075625858906622e-06,
+      "failure_gradient": 2.8563925168003024e-06,
+      "head": 15,
+      "layer": 6,
+      "target_attention_mass": 0.002266990253701806
+    },
+    {
+      "correct_gradient": -1.1482688572663014e-05,
+      "failure_gradient": 2.7813271117338445e-06,
+      "head": 0,
+      "layer": 6,
+      "target_attention_mass": 0.0007026732782833278
+    },
+    {
+      "correct_gradient": 1.7531910826911148e-06,
+      "failure_gradient": 2.759632536708523e-06,
+      "head": 13,
+      "layer": 4,
+      "target_attention_mass": 0.0020910415332764387
+    },
+    {
+      "correct_gradient": 1.2949011469795808e-07,
+      "failure_gradient": 2.6530309753525216e-06,
+      "head": 9,
+      "layer": 16,
+      "target_attention_mass": 5.518159377970733e-05
+    },
+    {
+      "correct_gradient": -1.0621346141220474e-06,
+      "failure_gradient": 2.620610193356957e-06,
+      "head": 2,
+      "layer": 5,
+      "target_attention_mass": 0.00019577836792450398
+    },
+    {
+      "correct_gradient": -5.9677285087604583e-05,
+      "failure_gradient": 2.6146736575226115e-06,
+      "head": 6,
+      "layer": 5,
+      "target_attention_mass": 0.002540562767535448
+    },
+    {
+      "correct_gradient": -4.2522397738791353e-07,
+      "failure_gradient": 2.610395540614263e-06,
+      "head": 4,
+      "layer": 6,
+      "target_attention_mass": 0.0004575167258735746
+    },
+    {
+      "correct_gradient": 2.866337469966757e-06,
+      "failure_gradient": 2.601200524817874e-06,
+      "head": 5,
+      "layer": 8,
+      "target_attention_mass": 0.000544796057511121
+    },
+    {
+      "correct_gradient": -1.4945113640728863e-06,
+      "failure_gradient": 2.309223548633911e-06,
+      "head": 2,
+      "layer": 15,
+      "target_attention_mass": 6.639425555476919e-05
+    },
+    {
+      "correct_gradient": 2.186502275705761e-06,
+      "failure_gradient": 1.9113488178845728e-06,
+      "head": 1,
+      "layer": 12,
+      "target_attention_mass": 9.075525304069743e-05
+    },
+    {
+      "correct_gradient": -9.24820642038232e-07,
+      "failure_gradient": 1.7736364656327299e-06,
+      "head": 3,
+      "layer": 12,
+      "target_attention_mass": 8.604202594142407e-05
+    },
+    {
+      "correct_gradient": -3.6053335072279397e-06,
+      "failure_gradient": 1.6602521424959247e-06,
+      "head": 10,
+      "layer": 10,
+      "target_attention_mass": 0.0005552779184654355
+    },
+    {
+      "correct_gradient": -3.021203162530102e-07,
+      "failure_gradient": 1.6435552733387989e-06,
+      "head": 10,
+      "layer": 0,
+      "target_attention_mass": 0.00048011328908614814
+    },
+    {
+      "correct_gradient": 4.869507161204655e-06,
+      "failure_gradient": 1.5067937105024093e-06,
+      "head": 2,
+      "layer": 9,
+      "target_attention_mass": 0.00038404163205996156
+    },
+    {
+      "correct_gradient": 3.494441807132082e-05,
+      "failure_gradient": 1.46560107948192e-06,
+      "head": 2,
+      "layer": 18,
+      "target_attention_mass": 0.00045572020462714136
+    },
+    {
+      "correct_gradient": -6.023609150258192e-07,
+      "failure_gradient": 1.4449184188184257e-06,
+      "head": 1,
+      "layer": 4,
+      "target_attention_mass": 0.0004278059641364962
+    },
+    {
+      "correct_gradient": -3.025461238685925e-06,
+      "failure_gradient": 1.4260327004324478e-06,
+      "head": 8,
+      "layer": 5,
+      "target_attention_mass": 0.0005760841886512935
+    },
+    {
+      "correct_gradient": -1.1867264649206948e-06,
+      "failure_gradient": 1.3387628184448528e-06,
+      "head": 6,
+      "layer": 7,
+      "target_attention_mass": 0.00022739598352927715
+    },
+    {
+      "correct_gradient": -7.233540154114928e-07,
+      "failure_gradient": 1.292462351492369e-06,
+      "head": 13,
+      "layer": 6,
+      "target_attention_mass": 6.720330566167831e-05
+    },
+    {
+      "correct_gradient": 4.952536365412668e-07,
+      "failure_gradient": 1.2693787669247416e-06,
+      "head": 12,
+      "layer": 6,
+      "target_attention_mass": 0.003036601236090064
+    },
+    {
+      "correct_gradient": -9.863579523297168e-07,
+      "failure_gradient": 1.0933406997537531e-06,
+      "head": 4,
+      "layer": 9,
+      "target_attention_mass": 0.0011931912740692496
+    },
+    {
+      "correct_gradient": -3.8683560458868565e-07,
+      "failure_gradient": 1.0771763884674459e-06,
+      "head": 4,
+      "layer": 5,
+      "target_attention_mass": 0.0004383048799354583
+    },
+    {
+      "correct_gradient": -2.9798733315678786e-07,
+      "failure_gradient": 1.0544220084999064e-06,
+      "head": 14,
+      "layer": 3,
+      "target_attention_mass": 7.909218402346596e-05
+    },
+    {
+      "correct_gradient": -1.9473301743449346e-06,
+      "failure_gradient": 1.032168938763789e-06,
+      "head": 13,
+      "layer": 3,
+      "target_attention_mass": 0.0004003553476650268
+    },
+    {
+      "correct_gradient": 3.1562195322037026e-06,
+      "failure_gradient": 1.0199093724492871e-06,
+      "head": 9,
+      "layer": 4,
+      "target_attention_mass": 0.0026103088166564703
+    },
+    {
+      "correct_gradient": -9.934951980591544e-09,
+      "failure_gradient": 9.069682622708797e-07,
+      "head": 11,
+      "layer": 15,
+      "target_attention_mass": 7.274675681401277e-06
+    },
+    {
+      "correct_gradient": 1.4399498180830292e-08,
+      "failure_gradient": 7.988893772546492e-07,
+      "head": 0,
+      "layer": 14,
+      "target_attention_mass": 5.848418823006796e-06
+    },
+    {
+      "correct_gradient": 5.306232537805045e-07,
+      "failure_gradient": 6.851041232737641e-07,
+      "head": 5,
+      "layer": 14,
+      "target_attention_mass": 3.294337511761114e-05
+    },
+    {
+      "correct_gradient": 2.37548537754419e-07,
+      "failure_gradient": 6.677305748326035e-07,
+      "head": 5,
+      "layer": 3,
+      "target_attention_mass": 0.00014052496408112347
+    },
+    {
+      "correct_gradient": 2.7159588617510996e-07,
+      "failure_gradient": 6.647593683136879e-07,
+      "head": 9,
+      "layer": 12,
+      "target_attention_mass": 8.775119204074144e-05
+    },
+    {
+      "correct_gradient": -8.658394880564268e-07,
+      "failure_gradient": 6.153095942603873e-07,
+      "head": 0,
+      "layer": 3,
+      "target_attention_mass": 0.00026521884137764573
+    },
+    {
+      "correct_gradient": 1.0773915765073397e-06,
+      "failure_gradient": 5.621911408785049e-07,
+      "head": 9,
+      "layer": 10,
+      "target_attention_mass": 0.00015400668780785054
+    },
+    {
+      "correct_gradient": -1.1738131760003458e-06,
+      "failure_gradient": 5.334232550272386e-07,
+      "head": 5,
+      "layer": 5,
+      "target_attention_mass": 0.0010448917746543884
+    },
+    {
+      "correct_gradient": -4.2008966529293793e-07,
+      "failure_gradient": 5.233397481723452e-07,
+      "head": 14,
+      "layer": 5,
+      "target_attention_mass": 0.00025694657233543694
+    },
+    {
+      "correct_gradient": 7.0332592747705214e-09,
+      "failure_gradient": 4.5304890201285683e-07,
+      "head": 9,
+      "layer": 13,
+      "target_attention_mass": 2.3904107365524396e-05
+    },
+    {
+      "correct_gradient": -2.903462511724529e-06,
+      "failure_gradient": 3.789461646062721e-07,
+      "head": 8,
+      "layer": 41,
+      "target_attention_mass": 0.0004743585013784468
+    },
+    {
+      "correct_gradient": 3.27836195074784e-06,
+      "failure_gradient": 2.7801674410251766e-07,
+      "head": 3,
+      "layer": 4,
+      "target_attention_mass": 0.0003773087228182703
+    },
+    {
+      "correct_gradient": 2.0698857115520405e-07,
+      "failure_gradient": 2.627785785794653e-07,
+      "head": 15,
+      "layer": 3,
+      "target_attention_mass": 0.0001971307210624218
+    },
+    {
+      "correct_gradient": 1.5962464933078802e-07,
+      "failure_gradient": 2.6056947685252195e-07,
+      "head": 4,
+      "layer": 18,
+      "target_attention_mass": 2.284131733176764e-05
+    },
+    {
+      "correct_gradient": -8.227689850516398e-07,
+      "failure_gradient": 2.565731018121044e-07,
+      "head": 1,
+      "layer": 14,
+      "target_attention_mass": 1.8382066627964377e-05
+    },
+    {
+      "correct_gradient": -3.961473400720007e-07,
+      "failure_gradient": 2.40037712119699e-07,
+      "head": 6,
+      "layer": 14,
+      "target_attention_mass": 1.3338059034140315e-05
+    },
+    {
+      "correct_gradient": -3.8892220422808953e-07,
+      "failure_gradient": 2.051933937049658e-07,
+      "head": 10,
+      "layer": 3,
+      "target_attention_mass": 0.0005572408554144204
+    },
+    {
+      "correct_gradient": 8.760643363787512e-08,
+      "failure_gradient": 1.799732487484107e-07,
+      "head": 5,
+      "layer": 15,
+      "target_attention_mass": 7.071303116390482e-05
+    },
+    {
+      "correct_gradient": -5.48766211239744e-06,
+      "failure_gradient": 1.788141292178937e-07,
+      "head": 1,
+      "layer": 13,
+      "target_attention_mass": 0.00019619587692432106
+    },
+    {
+      "correct_gradient": -1.1300516028845692e-06,
+      "failure_gradient": 1.0934414668944165e-07,
+      "head": 7,
+      "layer": 17,
+      "target_attention_mass": 2.2932437786948867e-05
+    },
+    {
+      "correct_gradient": -6.739633204662549e-06,
+      "failure_gradient": 7.451278958926975e-08,
+      "head": 5,
+      "layer": 41,
+      "target_attention_mass": 0.00020751623378600925
+    },
+    {
+      "correct_gradient": -8.211499472002648e-08,
+      "failure_gradient": 6.132192607667872e-08,
+      "head": 1,
+      "layer": 6,
+      "target_attention_mass": 4.6789315092610195e-05
+    },
+    {
+      "correct_gradient": 3.1370170126125094e-07,
+      "failure_gradient": 3.204659521876303e-08,
+      "head": 15,
+      "layer": 15,
+      "target_attention_mass": 3.631277195381699e-06
+    },
+    {
+      "correct_gradient": -1.619141327847621e-07,
+      "failure_gradient": -2.2436974437109062e-08,
+      "head": 9,
+      "layer": 15,
+      "target_attention_mass": 9.574461728334427e-05
+    },
+    {
+      "correct_gradient": 3.3946804612610924e-09,
+      "failure_gradient": -3.893215273974095e-08,
+      "head": 3,
+      "layer": 0,
+      "target_attention_mass": 8.683077794557903e-06
+    },
+    {
+      "correct_gradient": 5.637579469707752e-08,
+      "failure_gradient": -5.682118882113636e-08,
+      "head": 2,
+      "layer": 0,
+      "target_attention_mass": 9.278941433876753e-06
+    },
+    {
+      "correct_gradient": 6.755012777229806e-07,
+      "failure_gradient": -1.1031300216148208e-07,
+      "head": 13,
+      "layer": 8,
+      "target_attention_mass": 0.00047348119551315904
+    },
+    {
+      "correct_gradient": 2.928569685791777e-07,
+      "failure_gradient": -1.477447797120541e-07,
+      "head": 14,
+      "layer": 0,
+      "target_attention_mass": 2.2464224457507953e-05
+    },
+    {
+      "correct_gradient": -5.7134628768149274e-08,
+      "failure_gradient": -1.8797985441259308e-07,
+      "head": 10,
+      "layer": 16,
+      "target_attention_mass": 0.00016843155026435852
+    },
+    {
+      "correct_gradient": -3.1143703325760037e-06,
+      "failure_gradient": -2.558537265226083e-07,
+      "head": 9,
+      "layer": 18,
+      "target_attention_mass": 3.255737465224229e-05
+    },
+    {
+      "correct_gradient": 1.406879679086829e-07,
+      "failure_gradient": -2.709115999469499e-07,
+      "head": 11,
+      "layer": 6,
+      "target_attention_mass": 7.21270771464333e-05
+    },
+    {
+      "correct_gradient": 1.1742146246021701e-06,
+      "failure_gradient": -2.840551027410194e-07,
+      "head": 12,
+      "layer": 15,
+      "target_attention_mass": 3.402922084205784e-05
+    },
+    {
+      "correct_gradient": 1.3432858492453032e-06,
+      "failure_gradient": -2.9709721413187904e-07,
+      "head": 14,
+      "layer": 16,
+      "target_attention_mass": 4.4073709432268515e-05
+    },
+    {
+      "correct_gradient": 5.530852578611405e-07,
+      "failure_gradient": -3.157819260682767e-07,
+      "head": 7,
+      "layer": 1,
+      "target_attention_mass": 5.002020043320954e-05
+    },
+    {
+      "correct_gradient": -2.8416418573678526e-06,
+      "failure_gradient": -3.244168738092412e-07,
+      "head": 12,
+      "layer": 2,
+      "target_attention_mass": 0.0010821393225342035
+    },
+    {
+      "correct_gradient": 3.484899115443662e-07,
+      "failure_gradient": -4.4475097281195174e-07,
+      "head": 8,
+      "layer": 3,
+      "target_attention_mass": 0.00021470178035087883
+    },
+    {
+      "correct_gradient": -1.0564874413967977e-06,
+      "failure_gradient": -5.59977260244133e-07,
+      "head": 9,
+      "layer": 41,
+      "target_attention_mass": 0.0001628663594601676
+    },
+    {
+      "correct_gradient": -2.2290895951712474e-07,
+      "failure_gradient": -5.883443299532181e-07,
+      "head": 0,
+      "layer": 12,
+      "target_attention_mass": 0.00010441915219416842
+    },
+    {
+      "correct_gradient": 1.0232979848468567e-06,
+      "failure_gradient": -5.90188197488065e-07,
+      "head": 9,
+      "layer": 3,
+      "target_attention_mass": 0.0003631321887951344
+    },
+    {
+      "correct_gradient": 1.8145739955318003e-06,
+      "failure_gradient": -6.849863893876318e-07,
+      "head": 1,
+      "layer": 3,
+      "target_attention_mass": 0.0004309809592086822
+    },
+    {
+      "correct_gradient": 3.0785741848444986e-07,
+      "failure_gradient": -8.02051767984884e-07,
+      "head": 15,
+      "layer": 5,
+      "target_attention_mass": 0.00019908510148525238
+    },
+    {
+      "correct_gradient": 2.5771539897522296e-07,
+      "failure_gradient": -8.341098184213738e-07,
+      "head": 5,
+      "layer": 0,
+      "target_attention_mass": 0.00011391658335924149
+    },
+    {
+      "correct_gradient": -8.846464313463449e-06,
+      "failure_gradient": -9.062667751485216e-07,
+      "head": 9,
+      "layer": 33,
+      "target_attention_mass": 0.0008105412125587463
+    },
+    {
+      "correct_gradient": 1.989432357217049e-07,
+      "failure_gradient": -9.55067281641472e-07,
+      "head": 13,
+      "layer": 14,
+      "target_attention_mass": 1.2935347513121087e-05
+    },
+    {
+      "correct_gradient": 4.495413019678793e-06,
+      "failure_gradient": -9.708449917005574e-07,
+      "head": 5,
+      "layer": 6,
+      "target_attention_mass": 0.0005943492869846523
+    },
+    {
+      "correct_gradient": 3.3365073541749295e-07,
+      "failure_gradient": -9.716674850121114e-07,
+      "head": 10,
+      "layer": 15,
+      "target_attention_mass": 2.187272548326291e-05
+    },
+    {
+      "correct_gradient": -1.9961004205847616e-06,
+      "failure_gradient": -1.0304460634610483e-06,
+      "head": 8,
+      "layer": 9,
+      "target_attention_mass": 0.000815996085293591
+    },
+    {
+      "correct_gradient": 8.776078861698789e-07,
+      "failure_gradient": -1.0306433588474256e-06,
+      "head": 6,
+      "layer": 15,
+      "target_attention_mass": 0.0001456082973163575
+    },
+    {
+      "correct_gradient": -2.0418582487695428e-07,
+      "failure_gradient": -1.0515839708854661e-06,
+      "head": 4,
+      "layer": 1,
+      "target_attention_mass": 0.00010428817040519789
+    },
+    {
+      "correct_gradient": -3.873828629949921e-07,
+      "failure_gradient": -1.063125925579048e-06,
+      "head": 8,
+      "layer": 15,
+      "target_attention_mass": 0.00019981179502792656
+    },
+    {
+      "correct_gradient": -2.363527960798545e-05,
+      "failure_gradient": -1.0773726119493534e-06,
+      "head": 14,
+      "layer": 21,
+      "target_attention_mass": 0.0003574964066501707
+    },
+    {
+      "correct_gradient": -8.963273944144296e-06,
+      "failure_gradient": -1.082687910119213e-06,
+      "head": 9,
+      "layer": 25,
+      "target_attention_mass": 0.00016587544814683497
+    },
+    {
+      "correct_gradient": 5.948296618198411e-07,
+      "failure_gradient": -1.1650309496807104e-06,
+      "head": 6,
+      "layer": 13,
+      "target_attention_mass": 2.199262053181883e-05
+    },
+    {
+      "correct_gradient": 7.841605316948602e-07,
+      "failure_gradient": -1.2835328594259669e-06,
+      "head": 9,
+      "layer": 7,
+      "target_attention_mass": 0.0012179166078567505
+    },
+    {
+      "correct_gradient": -9.79754351544027e-07,
+      "failure_gradient": -1.3325038870399503e-06,
+      "head": 13,
+      "layer": 18,
+      "target_attention_mass": 2.908833084802609e-05
+    },
+    {
+      "correct_gradient": 3.242276838960297e-07,
+      "failure_gradient": -1.3771328245379015e-06,
+      "head": 3,
+      "layer": 3,
+      "target_attention_mass": 0.00035291590029373765
+    },
+    {
+      "correct_gradient": -4.64672923971073e-07,
+      "failure_gradient": -1.382779747213395e-06,
+      "head": 3,
+      "layer": 5,
+      "target_attention_mass": 0.0009462434099987149
+    },
+    {
+      "correct_gradient": 1.7085827957484036e-06,
+      "failure_gradient": -1.451484071221135e-06,
+      "head": 11,
+      "layer": 7,
+      "target_attention_mass": 5.676816726918332e-05
+    },
+    {
+      "correct_gradient": 3.113114054837563e-05,
+      "failure_gradient": -1.4661204659205396e-06,
+      "head": 9,
+      "layer": 5,
+      "target_attention_mass": 0.007929065264761448
+    },
+    {
+      "correct_gradient": 1.919787761818163e-06,
+      "failure_gradient": -1.4863167499307956e-06,
+      "head": 9,
+      "layer": 1,
+      "target_attention_mass": 0.00017934864445123821
+    },
+    {
+      "correct_gradient": -1.088168694036969e-06,
+      "failure_gradient": -1.5967272669773332e-06,
+      "head": 11,
+      "layer": 22,
+      "target_attention_mass": 2.0339128241175786e-05
+    },
+    {
+      "correct_gradient": -6.877042658674807e-06,
+      "failure_gradient": -1.6718341088660184e-06,
+      "head": 15,
+      "layer": 9,
+      "target_attention_mass": 0.0003329994506202638
+    },
+    {
+      "correct_gradient": 1.0812117974603339e-06,
+      "failure_gradient": -1.7259192190977046e-06,
+      "head": 13,
+      "layer": 10,
+      "target_attention_mass": 0.0004418561584316194
+    },
+    {
+      "correct_gradient": 1.5565945191928272e-06,
+      "failure_gradient": -1.7960601813423897e-06,
+      "head": 5,
+      "layer": 13,
+      "target_attention_mass": 0.00010010584810515866
+    },
+    {
+      "correct_gradient": 1.1980711328846464e-06,
+      "failure_gradient": -1.8009260470210262e-06,
+      "head": 7,
+      "layer": 13,
+      "target_attention_mass": 3.248691064072773e-05
+    },
+    {
+      "correct_gradient": 1.3277187274482304e-06,
+      "failure_gradient": -1.829953439320369e-06,
+      "head": 6,
+      "layer": 9,
+      "target_attention_mass": 0.00021757736976724118
+    },
+    {
+      "correct_gradient": 2.0911658948363147e-06,
+      "failure_gradient": -1.9076051021979116e-06,
+      "head": 12,
+      "layer": 3,
+      "target_attention_mass": 0.00035328365629538894
+    },
+    {
+      "correct_gradient": 1.1821695763183875e-06,
+      "failure_gradient": -1.957222220231155e-06,
+      "head": 10,
+      "layer": 7,
+      "target_attention_mass": 7.946723053464666e-05
+    },
+    {
+      "correct_gradient": 9.250624779664542e-06,
+      "failure_gradient": -2.0012603272334673e-06,
+      "head": 3,
+      "layer": 17,
+      "target_attention_mass": 0.00046479489537887275
+    },
+    {
+      "correct_gradient": 1.3315430068068277e-06,
+      "failure_gradient": -2.0869210857199505e-06,
+      "head": 8,
+      "layer": 7,
+      "target_attention_mass": 0.0007014349102973938
+    },
+    {
+      "correct_gradient": -3.979295523198023e-07,
+      "failure_gradient": -2.09905697902611e-06,
+      "head": 12,
+      "layer": 14,
+      "target_attention_mass": 0.00017668094369582832
+    },
+    {
+      "correct_gradient": -1.918137059501189e-05,
+      "failure_gradient": -2.1634494109840877e-06,
+      "head": 12,
+      "layer": 9,
+      "target_attention_mass": 0.0009812322678044438
+    },
+    {
+      "correct_gradient": 1.1851411298541176e-06,
+      "failure_gradient": -2.2070298168078547e-06,
+      "head": 11,
+      "layer": 11,
+      "target_attention_mass": 0.0006837504333816469
+    },
+    {
+      "correct_gradient": 3.3830814195339974e-07,
+      "failure_gradient": -2.2549564643473526e-06,
+      "head": 11,
+      "layer": 5,
+      "target_attention_mass": 0.00042471609776839614
+    },
+    {
+      "correct_gradient": 1.0664058071649018e-05,
+      "failure_gradient": -2.2757101143205157e-06,
+      "head": 12,
+      "layer": 12,
+      "target_attention_mass": 0.0006290844758041203
+    },
+    {
+      "correct_gradient": 8.6428679870156e-06,
+      "failure_gradient": -2.4591810350622315e-06,
+      "head": 5,
+      "layer": 11,
+      "target_attention_mass": 0.0009365215082652867
+    },
+    {
+      "correct_gradient": 3.811235591507833e-06,
+      "failure_gradient": -2.5402182473044377e-06,
+      "head": 3,
+      "layer": 8,
+      "target_attention_mass": 0.0005494185606949031
+    },
+    {
+      "correct_gradient": 1.8858100500712578e-06,
+      "failure_gradient": -2.579547656621019e-06,
+      "head": 15,
+      "layer": 12,
+      "target_attention_mass": 0.00019572941528167576
+    },
+    {
+      "correct_gradient": 7.94083269901644e-06,
+      "failure_gradient": -2.648643333356761e-06,
+      "head": 1,
+      "layer": 1,
+      "target_attention_mass": 0.0019557455088943243
+    },
+    {
+      "correct_gradient": 4.063439785070686e-08,
+      "failure_gradient": -2.6632111403809437e-06,
+      "head": 7,
+      "layer": 9,
+      "target_attention_mass": 0.00012435684038791806
+    },
+    {
+      "correct_gradient": -9.278760344901491e-05,
+      "failure_gradient": -2.6793272159661034e-06,
+      "head": 4,
+      "layer": 40,
+      "target_attention_mass": 0.0003628839913289994
+    },
+    {
+      "correct_gradient": 2.0543541053621943e-06,
+      "failure_gradient": -2.715312088444729e-06,
+      "head": 9,
+      "layer": 17,
+      "target_attention_mass": 0.00011743418872356415
+    },
+    {
+      "correct_gradient": 1.1667862225912582e-06,
+      "failure_gradient": -2.7572812655307644e-06,
+      "head": 3,
+      "layer": 7,
+      "target_attention_mass": 0.00030415505170822144
+    },
+    {
+      "correct_gradient": 1.2841920768139216e-05,
+      "failure_gradient": -3.0285659054892937e-06,
+      "head": 3,
+      "layer": 11,
+      "target_attention_mass": 0.0023807797115296125
+    },
+    {
+      "correct_gradient": -3.297427602379719e-06,
+      "failure_gradient": -3.0831009618330948e-06,
+      "head": 12,
+      "layer": 5,
+      "target_attention_mass": 0.0026842865627259016
+    },
+    {
+      "correct_gradient": -1.0537988583684705e-05,
+      "failure_gradient": -3.447486506047426e-06,
+      "head": 15,
+      "layer": 10,
+      "target_attention_mass": 0.0031618860084563494
+    },
+    {
+      "correct_gradient": -7.036897103425186e-07,
+      "failure_gradient": -3.4704611867450045e-06,
+      "head": 2,
+      "layer": 1,
+      "target_attention_mass": 0.0031682029366493225
+    },
+    {
+      "correct_gradient": 9.027235308785062e-07,
+      "failure_gradient": -3.487248542504468e-06,
+      "head": 8,
+      "layer": 8,
+      "target_attention_mass": 0.00029457308119162917
+    },
+    {
+      "correct_gradient": -2.576533881678325e-06,
+      "failure_gradient": -3.4907643323224747e-06,
+      "head": 2,
+      "layer": 4,
+      "target_attention_mass": 0.0012171792332082987
+    },
+    {
+      "correct_gradient": 2.5452151999590293e-06,
+      "failure_gradient": -3.5565921539923044e-06,
+      "head": 12,
+      "layer": 0,
+      "target_attention_mass": 0.0029035848565399647
+    },
+    {
+      "correct_gradient": -3.1916585252268838e-06,
+      "failure_gradient": -3.955818426350431e-06,
+      "head": 4,
+      "layer": 12,
+      "target_attention_mass": 0.0010221718112006783
+    },
+    {
+      "correct_gradient": 1.9476902184149643e-06,
+      "failure_gradient": -4.200878245390933e-06,
+      "head": 7,
+      "layer": 5,
+      "target_attention_mass": 0.0003483830369077623
+    },
+    {
+      "correct_gradient": -7.010204806750342e-06,
+      "failure_gradient": -4.323353745608724e-06,
+      "head": 0,
+      "layer": 20,
+      "target_attention_mass": 0.0007918705814518034
+    },
+    {
+      "correct_gradient": 5.037732921235421e-06,
+      "failure_gradient": -4.334276712013109e-06,
+      "head": 11,
+      "layer": 9,
+      "target_attention_mass": 0.000992466346360743
+    },
+    {
+      "correct_gradient": -1.4174897756366025e-06,
+      "failure_gradient": -4.548376474693734e-06,
+      "head": 7,
+      "layer": 2,
+      "target_attention_mass": 0.0007426153169944882
+    },
+    {
+      "correct_gradient": 9.564588631378083e-07,
+      "failure_gradient": -4.839543115459881e-06,
+      "head": 8,
+      "layer": 6,
+      "target_attention_mass": 0.0004545817500911653
+    },
+    {
+      "correct_gradient": -3.0524909235745723e-06,
+      "failure_gradient": -4.907883911593152e-06,
+      "head": 12,
+      "layer": 8,
+      "target_attention_mass": 0.0012783536221832037
+    },
+    {
+      "correct_gradient": 1.5871162947903184e-06,
+      "failure_gradient": -5.244464037649063e-06,
+      "head": 8,
+      "layer": 2,
+      "target_attention_mass": 0.00038785248761996627
+    },
+    {
+      "correct_gradient": 3.523772012965121e-07,
+      "failure_gradient": -5.292730455559129e-06,
+      "head": 9,
+      "layer": 8,
+      "target_attention_mass": 0.0007015605224296451
+    },
+    {
+      "correct_gradient": -3.003373216038113e-06,
+      "failure_gradient": -5.529919560233663e-06,
+      "head": 5,
+      "layer": 16,
+      "target_attention_mass": 0.000550557451788336
+    },
+    {
+      "correct_gradient": 2.326875758472114e-06,
+      "failure_gradient": -5.55096138603923e-06,
+      "head": 14,
+      "layer": 4,
+      "target_attention_mass": 0.0024082830641418695
+    },
+    {
+      "correct_gradient": 8.47878327476792e-05,
+      "failure_gradient": -5.630625431812015e-06,
+      "head": 4,
+      "layer": 19,
+      "target_attention_mass": 0.0011082655983045697
+    },
+    {
+      "correct_gradient": 8.223460030902336e-06,
+      "failure_gradient": -5.718779773035619e-06,
+      "head": 15,
+      "layer": 7,
+      "target_attention_mass": 0.001579485833644867
+    },
+    {
+      "correct_gradient": -6.6424731383723964e-06,
+      "failure_gradient": -5.865282868658791e-06,
+      "head": 8,
+      "layer": 4,
+      "target_attention_mass": 0.002981994766741991
+    },
+    {
+      "correct_gradient": -5.37714330641633e-06,
+      "failure_gradient": -5.889087704856268e-06,
+      "head": 8,
+      "layer": 14,
+      "target_attention_mass": 0.00012753254850395024
+    },
+    {
+      "correct_gradient": 6.36680786830663e-06,
+      "failure_gradient": -5.951942252327821e-06,
+      "head": 10,
+      "layer": 9,
+      "target_attention_mass": 0.0015309070004150271
+    },
+    {
+      "correct_gradient": 1.952807490890748e-07,
+      "failure_gradient": -6.133424445157029e-06,
+      "head": 4,
+      "layer": 14,
+      "target_attention_mass": 4.38744573330041e-05
+    },
+    {
+      "correct_gradient": -4.824323215596553e-06,
+      "failure_gradient": -6.1409443463032535e-06,
+      "head": 8,
+      "layer": 13,
+      "target_attention_mass": 0.0005503286374732852
+    },
+    {
+      "correct_gradient": -8.047706254522913e-07,
+      "failure_gradient": -6.148021952867566e-06,
+      "head": 3,
+      "layer": 2,
+      "target_attention_mass": 0.0012938078725710511
+    },
+    {
+      "correct_gradient": -2.8743663862323443e-06,
+      "failure_gradient": -6.1866250819418515e-06,
+      "head": 3,
+      "layer": 19,
+      "target_attention_mass": 8.914526551961899e-05
+    },
+    {
+      "correct_gradient": -1.5742553481480706e-05,
+      "failure_gradient": -6.601407481606916e-06,
+      "head": 6,
+      "layer": 4,
+      "target_attention_mass": 0.020635638386011124
+    },
+    {
+      "correct_gradient": 2.1036543210288555e-06,
+      "failure_gradient": -6.7346433070269995e-06,
+      "head": 15,
+      "layer": 1,
+      "target_attention_mass": 0.0003302295517642051
+    },
+    {
+      "correct_gradient": 2.5013154951903864e-06,
+      "failure_gradient": -6.802201109426928e-06,
+      "head": 10,
+      "layer": 11,
+      "target_attention_mass": 0.0008516567177139223
+    },
+    {
+      "correct_gradient": -2.169857495727966e-06,
+      "failure_gradient": -6.9054754996094355e-06,
+      "head": 0,
+      "layer": 4,
+      "target_attention_mass": 0.002701822202652693
+    },
+    {
+      "correct_gradient": -1.112210431426131e-06,
+      "failure_gradient": -7.008880077462111e-06,
+      "head": 11,
+      "layer": 33,
+      "target_attention_mass": 0.0003870693617500365
+    },
+    {
+      "correct_gradient": 9.304282942156413e-06,
+      "failure_gradient": -7.208009524869599e-06,
+      "head": 11,
+      "layer": 35,
+      "target_attention_mass": 0.0004018002364318818
+    },
+    {
+      "correct_gradient": 1.4176062252789842e-08,
+      "failure_gradient": -7.235013287397253e-06,
+      "head": 5,
+      "layer": 21,
+      "target_attention_mass": 4.8392343160230666e-05
+    },
+    {
+      "correct_gradient": 6.416891613658869e-06,
+      "failure_gradient": -7.250855560414493e-06,
+      "head": 14,
+      "layer": 41,
+      "target_attention_mass": 0.00026617824914865196
+    },
+    {
+      "correct_gradient": 3.4987672236484457e-06,
+      "failure_gradient": -7.360472506791536e-06,
+      "head": 4,
+      "layer": 11,
+      "target_attention_mass": 0.000994173577055335
+    },
+    {
+      "correct_gradient": 4.7906596900813965e-05,
+      "failure_gradient": -7.372534517864031e-06,
+      "head": 8,
+      "layer": 35,
+      "target_attention_mass": 0.0010078102350234985
+    },
+    {
+      "correct_gradient": 2.3061882976040614e-06,
+      "failure_gradient": -7.37384084459336e-06,
+      "head": 13,
+      "layer": 41,
+      "target_attention_mass": 2.654896343301516e-05
+    },
+    {
+      "correct_gradient": 8.26176492753219e-07,
+      "failure_gradient": -7.37810364626057e-06,
+      "head": 11,
+      "layer": 2,
+      "target_attention_mass": 0.0005179582512937486
+    },
+    {
+      "correct_gradient": 7.851889866412233e-06,
+      "failure_gradient": -7.445726595278757e-06,
+      "head": 4,
+      "layer": 10,
+      "target_attention_mass": 0.0001974763290490955
+    },
+    {
+      "correct_gradient": 1.2056752447673682e-05,
+      "failure_gradient": -7.659646273948186e-06,
+      "head": 10,
+      "layer": 12,
+      "target_attention_mass": 0.0003298197698313743
+    },
+    {
+      "correct_gradient": 1.356742325028018e-05,
+      "failure_gradient": -7.899355945742822e-06,
+      "head": 1,
+      "layer": 34,
+      "target_attention_mass": 0.0005924347788095474
+    },
+    {
+      "correct_gradient": 5.463909886048158e-07,
+      "failure_gradient": -8.01524042109187e-06,
+      "head": 1,
+      "layer": 2,
+      "target_attention_mass": 0.0004018416511826217
+    },
+    {
+      "correct_gradient": -1.626684004221252e-05,
+      "failure_gradient": -8.054554200498387e-06,
+      "head": 1,
+      "layer": 0,
+      "target_attention_mass": 0.015261002816259861
+    },
+    {
+      "correct_gradient": 6.002419416651016e-06,
+      "failure_gradient": -8.119565807516795e-06,
+      "head": 2,
+      "layer": 2,
+      "target_attention_mass": 0.001686249510385096
+    },
+    {
+      "correct_gradient": 3.3817989976839427e-06,
+      "failure_gradient": -8.142195968373147e-06,
+      "head": 11,
+      "layer": 0,
+      "target_attention_mass": 0.002454698085784912
+    },
+    {
+      "correct_gradient": 5.361755784350571e-06,
+      "failure_gradient": -8.27846649339595e-06,
+      "head": 12,
+      "layer": 19,
+      "target_attention_mass": 0.00016547672566957772
+    },
+    {
+      "correct_gradient": 3.806470354078865e-06,
+      "failure_gradient": -8.504880952386884e-06,
+      "head": 13,
+      "layer": 2,
+      "target_attention_mass": 0.0010913430014625192
+    },
+    {
+      "correct_gradient": 3.5848745955143316e-06,
+      "failure_gradient": -8.676730690889859e-06,
+      "head": 7,
+      "layer": 11,
+      "target_attention_mass": 0.0007697067339904606
+    },
+    {
+      "correct_gradient": 1.5236409087762849e-05,
+      "failure_gradient": -8.679465383108567e-06,
+      "head": 2,
+      "layer": 12,
+      "target_attention_mass": 0.0004164809361100197
+    },
+    {
+      "correct_gradient": 6.577994562971037e-06,
+      "failure_gradient": -8.828134014038369e-06,
+      "head": 8,
+      "layer": 22,
+      "target_attention_mass": 0.00016155226330738515
+    },
+    {
+      "correct_gradient": -5.564262330222366e-07,
+      "failure_gradient": -9.27275394652887e-06,
+      "head": 2,
+      "layer": 6,
+      "target_attention_mass": 0.002591290744021535
+    },
+    {
+      "correct_gradient": 1.4241410305126095e-06,
+      "failure_gradient": -9.403965188019875e-06,
+      "head": 4,
+      "layer": 13,
+      "target_attention_mass": 0.00015561709005851299
+    },
+    {
+      "correct_gradient": 1.4761718152582926e-06,
+      "failure_gradient": -9.459867961985375e-06,
+      "head": 0,
+      "layer": 5,
+      "target_attention_mass": 0.0008118493133224547
+    },
+    {
+      "correct_gradient": 4.748782301695033e-06,
+      "failure_gradient": -9.578313267866179e-06,
+      "head": 7,
+      "layer": 7,
+      "target_attention_mass": 0.00031417555874213576
+    },
+    {
+      "correct_gradient": 5.395949833569521e-06,
+      "failure_gradient": -9.761393081524667e-06,
+      "head": 3,
+      "layer": 14,
+      "target_attention_mass": 0.0003345037985127419
+    },
+    {
+      "correct_gradient": 4.635923419472128e-06,
+      "failure_gradient": -9.806760760154378e-06,
+      "head": 14,
+      "layer": 6,
+      "target_attention_mass": 0.0017410897416993976
+    },
+    {
+      "correct_gradient": 4.31435612984576e-06,
+      "failure_gradient": -1.0705948170652846e-05,
+      "head": 5,
+      "layer": 2,
+      "target_attention_mass": 0.0012905411422252655
+    },
+    {
+      "correct_gradient": -1.9933444113945063e-06,
+      "failure_gradient": -1.1159200637069131e-05,
+      "head": 2,
+      "layer": 38,
+      "target_attention_mass": 0.0006434001843445003
+    },
+    {
+      "correct_gradient": 4.009160111652234e-06,
+      "failure_gradient": -1.1504386407068523e-05,
+      "head": 6,
+      "layer": 1,
+      "target_attention_mass": 0.0012426344910636544
+    },
+    {
+      "correct_gradient": 1.5315543402360867e-05,
+      "failure_gradient": -1.1941134792842994e-05,
+      "head": 9,
+      "layer": 6,
+      "target_attention_mass": 0.0007048984407447278
+    },
+    {
+      "correct_gradient": 6.363843417516965e-06,
+      "failure_gradient": -1.1993151019851211e-05,
+      "head": 3,
+      "layer": 9,
+      "target_attention_mass": 0.00031874168780632317
+    },
+    {
+      "correct_gradient": -1.0303570751654301e-06,
+      "failure_gradient": -1.2865057215094566e-05,
+      "head": 7,
+      "layer": 23,
+      "target_attention_mass": 0.00022720459674019367
+    },
+    {
+      "correct_gradient": -8.182276411938596e-06,
+      "failure_gradient": -1.2953831173945218e-05,
+      "head": 12,
+      "layer": 33,
+      "target_attention_mass": 0.0005728150135837495
+    },
+    {
+      "correct_gradient": 1.690080905561599e-05,
+      "failure_gradient": -1.3307788062125578e-05,
+      "head": 7,
+      "layer": 8,
+      "target_attention_mass": 0.00239164917729795
+    },
+    {
+      "correct_gradient": 1.1080561341928705e-05,
+      "failure_gradient": -1.3631172415833654e-05,
+      "head": 10,
+      "layer": 39,
+      "target_attention_mass": 0.0005134447710588574
+    },
+    {
+      "correct_gradient": 6.146887965271917e-06,
+      "failure_gradient": -1.3921581415031272e-05,
+      "head": 1,
+      "layer": 15,
+      "target_attention_mass": 0.0006288907607086003
+    },
+    {
+      "correct_gradient": 7.378426744253375e-06,
+      "failure_gradient": -1.4550457698143354e-05,
+      "head": 10,
+      "layer": 2,
+      "target_attention_mass": 0.002928571542724967
+    },
+    {
+      "correct_gradient": 2.954616406295484e-07,
+      "failure_gradient": -1.4615358907121845e-05,
+      "head": 14,
+      "layer": 7,
+      "target_attention_mass": 0.0005959783447906375
+    },
+    {
+      "correct_gradient": 3.5341545985572323e-06,
+      "failure_gradient": -1.485466112935033e-05,
+      "head": 15,
+      "layer": 2,
+      "target_attention_mass": 0.0007108596037141979
+    },
+    {
+      "correct_gradient": 4.3876588296250634e-05,
+      "failure_gradient": -1.4978130106361018e-05,
+      "head": 12,
+      "layer": 13,
+      "target_attention_mass": 0.0022160422522574663
+    },
+    {
+      "correct_gradient": 8.44300518136426e-07,
+      "failure_gradient": -1.5075069062017324e-05,
+      "head": 7,
+      "layer": 18,
+      "target_attention_mass": 0.00010942205699393526
+    },
+    {
+      "correct_gradient": 0.00014735143939208873,
+      "failure_gradient": -1.508447790651449e-05,
+      "head": 2,
+      "layer": 33,
+      "target_attention_mass": 0.0023699700832366943
+    },
+    {
+      "correct_gradient": 2.5816080598712497e-06,
+      "failure_gradient": -1.5149564461580667e-05,
+      "head": 5,
+      "layer": 1,
+      "target_attention_mass": 0.00043135281885042787
+    },
+    {
+      "correct_gradient": -0.00022148091416313964,
+      "failure_gradient": -1.5149897080846131e-05,
+      "head": 7,
+      "layer": 40,
+      "target_attention_mass": 0.005730560980737209
+    },
+    {
+      "correct_gradient": 1.1066067085232376e-06,
+      "failure_gradient": -1.52777925645101e-05,
+      "head": 0,
+      "layer": 41,
+      "target_attention_mass": 0.0005364130483940244
+    },
+    {
+      "correct_gradient": -1.343074026803117e-05,
+      "failure_gradient": -1.531574688280151e-05,
+      "head": 2,
+      "layer": 14,
+      "target_attention_mass": 0.004009651485830545
+    },
+    {
+      "correct_gradient": 3.962370650491343e-06,
+      "failure_gradient": -1.5472411437908056e-05,
+      "head": 10,
+      "layer": 1,
+      "target_attention_mass": 0.00646574143320322
+    },
+    {
+      "correct_gradient": -7.160230694044347e-06,
+      "failure_gradient": -1.5866738392235546e-05,
+      "head": 5,
+      "layer": 20,
+      "target_attention_mass": 0.0007056955946609378
+    },
+    {
+      "correct_gradient": 1.9047970900433973e-05,
+      "failure_gradient": -1.6053881803860088e-05,
+      "head": 13,
+      "layer": 16,
+      "target_attention_mass": 0.0006314239581115544
+    },
+    {
+      "correct_gradient": 9.429405628975903e-07,
+      "failure_gradient": -1.6729424390047954e-05,
+      "head": 0,
+      "layer": 10,
+      "target_attention_mass": 0.0008680264581926167
+    },
+    {
+      "correct_gradient": -1.6968686326916487e-06,
+      "failure_gradient": -1.789373683485402e-05,
+      "head": 9,
+      "layer": 38,
+      "target_attention_mass": 0.0002552300284150988
+    },
+    {
+      "correct_gradient": -1.389650932188093e-06,
+      "failure_gradient": -1.7960129168516558e-05,
+      "head": 13,
+      "layer": 11,
+      "target_attention_mass": 0.001591938897036016
+    },
+    {
+      "correct_gradient": 8.5843426207265e-06,
+      "failure_gradient": -1.801725297160114e-05,
+      "head": 1,
+      "layer": 5,
+      "target_attention_mass": 0.002481503179296851
+    },
+    {
+      "correct_gradient": 1.1782357655904906e-06,
+      "failure_gradient": -1.8063349930993615e-05,
+      "head": 1,
+      "layer": 10,
+      "target_attention_mass": 0.003849914064630866
+    },
+    {
+      "correct_gradient": 2.068935952404402e-06,
+      "failure_gradient": -1.844823490923123e-05,
+      "head": 6,
+      "layer": 0,
+      "target_attention_mass": 0.0008908321033231914
+    },
+    {
+      "correct_gradient": 1.320021009684391e-05,
+      "failure_gradient": -1.8880597638469355e-05,
+      "head": 15,
+      "layer": 18,
+      "target_attention_mass": 0.0002502290881238878
+    },
+    {
+      "correct_gradient": 1.2587769097595845e-05,
+      "failure_gradient": -1.9160330404182397e-05,
+      "head": 10,
+      "layer": 5,
+      "target_attention_mass": 0.0021652046125382185
+    },
+    {
+      "correct_gradient": 1.30929275261258e-05,
+      "failure_gradient": -1.93773329816135e-05,
+      "head": 4,
+      "layer": 2,
+      "target_attention_mass": 0.0025665622670203447
+    },
+    {
+      "correct_gradient": 3.401294047504945e-05,
+      "failure_gradient": -2.0022816378124325e-05,
+      "head": 0,
+      "layer": 7,
+      "target_attention_mass": 0.0018898844718933105
+    },
+    {
+      "correct_gradient": -1.002134994673982e-05,
+      "failure_gradient": -2.0649490189888248e-05,
+      "head": 7,
+      "layer": 16,
+      "target_attention_mass": 0.0010555647313594818
+    },
+    {
+      "correct_gradient": 1.0640663534121694e-05,
+      "failure_gradient": -2.2335588125445482e-05,
+      "head": 4,
+      "layer": 39,
+      "target_attention_mass": 0.000753966043703258
+    },
+    {
+      "correct_gradient": -2.391638705410274e-06,
+      "failure_gradient": -2.261564402163328e-05,
+      "head": 2,
+      "layer": 8,
+      "target_attention_mass": 0.0018700787331908941
+    },
+    {
+      "correct_gradient": -2.5620542626986106e-06,
+      "failure_gradient": -2.2754950025825694e-05,
+      "head": 4,
+      "layer": 23,
+      "target_attention_mass": 0.0008576895343139768
+    },
+    {
+      "correct_gradient": 2.142560491470163e-05,
+      "failure_gradient": -2.2868600548723146e-05,
+      "head": 12,
+      "layer": 40,
+      "target_attention_mass": 0.0001760432933224365
+    },
+    {
+      "correct_gradient": 6.239978214374409e-06,
+      "failure_gradient": -2.3135864466894418e-05,
+      "head": 11,
+      "layer": 23,
+      "target_attention_mass": 0.007232306059449911
+    },
+    {
+      "correct_gradient": -2.272766014700536e-06,
+      "failure_gradient": -2.3268975415443754e-05,
+      "head": 4,
+      "layer": 41,
+      "target_attention_mass": 0.00015945362974889576
+    },
+    {
+      "correct_gradient": 1.247632105830389e-05,
+      "failure_gradient": -2.3408286649230702e-05,
+      "head": 0,
+      "layer": 11,
+      "target_attention_mass": 0.001661992515437305
+    },
+    {
+      "correct_gradient": 5.3626471234788625e-06,
+      "failure_gradient": -2.3466732435346266e-05,
+      "head": 4,
+      "layer": 7,
+      "target_attention_mass": 0.0012395733501762152
+    },
+    {
+      "correct_gradient": 6.797611120350237e-05,
+      "failure_gradient": -2.3469877175687414e-05,
+      "head": 4,
+      "layer": 17,
+      "target_attention_mass": 0.0005719363689422607
+    },
+    {
+      "correct_gradient": -1.818425413869093e-05,
+      "failure_gradient": -2.4626537586820113e-05,
+      "head": 6,
+      "layer": 19,
+      "target_attention_mass": 0.00029040552908554673
+    },
+    {
+      "correct_gradient": 1.5329995702178973e-05,
+      "failure_gradient": -2.4781435383504557e-05,
+      "head": 13,
+      "layer": 12,
+      "target_attention_mass": 0.002161571057513356
+    },
+    {
+      "correct_gradient": -1.4754953416792526e-05,
+      "failure_gradient": -2.528152487814493e-05,
+      "head": 1,
+      "layer": 41,
+      "target_attention_mass": 0.0012714093318209052
+    },
+    {
+      "correct_gradient": 1.0017715279866266e-05,
+      "failure_gradient": -2.5720858924874585e-05,
+      "head": 1,
+      "layer": 17,
+      "target_attention_mass": 0.00044173296191729605
+    },
+    {
+      "correct_gradient": 4.937379069918468e-06,
+      "failure_gradient": -2.6063426048494875e-05,
+      "head": 14,
+      "layer": 11,
+      "target_attention_mass": 0.002206828910857439
+    },
+    {
+      "correct_gradient": -1.315624575789047e-06,
+      "failure_gradient": -2.6557496409753056e-05,
+      "head": 2,
+      "layer": 19,
+      "target_attention_mass": 0.0002171736123273149
+    },
+    {
+      "correct_gradient": 6.693522314066595e-05,
+      "failure_gradient": -2.884024953735726e-05,
+      "head": 10,
+      "layer": 38,
+      "target_attention_mass": 0.0026846358086913824
+    },
+    {
+      "correct_gradient": -9.058186159958461e-06,
+      "failure_gradient": -3.0056291442243882e-05,
+      "head": 14,
+      "layer": 22,
+      "target_attention_mass": 0.0004919426864944398
+    },
+    {
+      "correct_gradient": -9.58779009862447e-07,
+      "failure_gradient": -3.097104485862344e-05,
+      "head": 8,
+      "layer": 20,
+      "target_attention_mass": 0.00015561000327579677
+    },
+    {
+      "correct_gradient": 6.6811390185974676e-06,
+      "failure_gradient": -3.1898476403772035e-05,
+      "head": 13,
+      "layer": 17,
+      "target_attention_mass": 0.0009080746094696224
+    },
+    {
+      "correct_gradient": 1.2564981622041537e-05,
+      "failure_gradient": -3.214694918694606e-05,
+      "head": 10,
+      "layer": 35,
+      "target_attention_mass": 0.00037911321851424873
+    },
+    {
+      "correct_gradient": 4.956492495762607e-07,
+      "failure_gradient": -3.2631975337998096e-05,
+      "head": 10,
+      "layer": 20,
+      "target_attention_mass": 0.00017946779553312808
+    },
+    {
+      "correct_gradient": 6.257567614962029e-05,
+      "failure_gradient": -3.354830200156097e-05,
+      "head": 11,
+      "layer": 20,
+      "target_attention_mass": 0.0002179411967517808
+    },
+    {
+      "correct_gradient": -1.6244422679521005e-05,
+      "failure_gradient": -3.565250348661461e-05,
+      "head": 7,
+      "layer": 34,
+      "target_attention_mass": 0.00026713896659202874
+    },
+    {
+      "correct_gradient": 6.55601670930408e-07,
+      "failure_gradient": -3.637463669292629e-05,
+      "head": 10,
+      "layer": 33,
+      "target_attention_mass": 0.0004939117352478206
+    },
+    {
+      "correct_gradient": 3.513958822537152e-06,
+      "failure_gradient": -3.74678443872004e-05,
+      "head": 2,
+      "layer": 16,
+      "target_attention_mass": 0.00148626952432096
+    },
+    {
+      "correct_gradient": 3.546475293334433e-05,
+      "failure_gradient": -3.858956292138568e-05,
+      "head": 8,
+      "layer": 33,
+      "target_attention_mass": 0.0006780241383239627
+    },
+    {
+      "correct_gradient": 1.2594434698463752e-05,
+      "failure_gradient": -3.859226403944506e-05,
+      "head": 11,
+      "layer": 18,
+      "target_attention_mass": 0.00024181311891879886
+    },
+    {
+      "correct_gradient": 0.0007637116219518917,
+      "failure_gradient": -4.2167192857180324e-05,
+      "head": 9,
+      "layer": 26,
+      "target_attention_mass": 0.002672245493158698
+    },
+    {
+      "correct_gradient": 3.3785723507259356e-06,
+      "failure_gradient": -4.7215891234892684e-05,
+      "head": 1,
+      "layer": 16,
+      "target_attention_mass": 0.0004013297730125487
+    },
+    {
+      "correct_gradient": 7.881910518472927e-06,
+      "failure_gradient": -4.821060633730667e-05,
+      "head": 14,
+      "layer": 14,
+      "target_attention_mass": 0.00046663597458973527
+    },
+    {
+      "correct_gradient": -6.808629089237173e-05,
+      "failure_gradient": -5.061119515760636e-05,
+      "head": 13,
+      "layer": 21,
+      "target_attention_mass": 0.0009155119187198579
+    },
+    {
+      "correct_gradient": -7.075550285044987e-07,
+      "failure_gradient": -5.1670474281958635e-05,
+      "head": 8,
+      "layer": 10,
+      "target_attention_mass": 0.0040796115063130856
+    },
+    {
+      "correct_gradient": 0.00013691744600194243,
+      "failure_gradient": -5.387313025754078e-05,
+      "head": 3,
+      "layer": 15,
+      "target_attention_mass": 0.0025927338283509016
+    },
+    {
+      "correct_gradient": -8.789714102365322e-05,
+      "failure_gradient": -5.3879621840938595e-05,
+      "head": 6,
+      "layer": 22,
+      "target_attention_mass": 0.0012188224354758859
+    },
+    {
+      "correct_gradient": 1.350381037655269e-05,
+      "failure_gradient": -5.503825208766752e-05,
+      "head": 10,
+      "layer": 34,
+      "target_attention_mass": 0.00046931367251090705
+    },
+    {
+      "correct_gradient": 1.9053756814001936e-06,
+      "failure_gradient": -5.598276259531433e-05,
+      "head": 6,
+      "layer": 27,
+      "target_attention_mass": 0.0012750157620757818
+    },
+    {
+      "correct_gradient": -8.521015328335366e-06,
+      "failure_gradient": -5.658666850649752e-05,
+      "head": 11,
+      "layer": 8,
+      "target_attention_mass": 0.0029290574602782726
+    },
+    {
+      "correct_gradient": 1.6764228279979125e-05,
+      "failure_gradient": -5.669386428053258e-05,
+      "head": 15,
+      "layer": 16,
+      "target_attention_mass": 0.0018601397750899196
+    },
+    {
+      "correct_gradient": 1.1439225657014967e-05,
+      "failure_gradient": -5.7894168354063626e-05,
+      "head": 8,
+      "layer": 38,
+      "target_attention_mass": 0.0005330579006113112
+    },
+    {
+      "correct_gradient": -5.978979400956547e-05,
+      "failure_gradient": -5.8574061962904776e-05,
+      "head": 7,
+      "layer": 19,
+      "target_attention_mass": 0.0016204725252464414
+    },
+    {
+      "correct_gradient": 6.112935918864886e-06,
+      "failure_gradient": -5.962577477345933e-05,
+      "head": 7,
+      "layer": 15,
+      "target_attention_mass": 0.0006779315299354494
+    },
+    {
+      "correct_gradient": -1.0395575578891197e-06,
+      "failure_gradient": -5.988188243983521e-05,
+      "head": 15,
+      "layer": 4,
+      "target_attention_mass": 0.0034363034646958113
+    },
+    {
+      "correct_gradient": 4.193848899548065e-05,
+      "failure_gradient": -6.340672656993515e-05,
+      "head": 0,
+      "layer": 31,
+      "target_attention_mass": 0.002909184666350484
+    },
+    {
+      "correct_gradient": 6.873097450841429e-06,
+      "failure_gradient": -6.384217704180628e-05,
+      "head": 0,
+      "layer": 8,
+      "target_attention_mass": 0.0020176481921225786
+    },
+    {
+      "correct_gradient": 7.3945144288031e-05,
+      "failure_gradient": -6.422069210592391e-05,
+      "head": 8,
+      "layer": 12,
+      "target_attention_mass": 0.0034622293896973133
+    },
+    {
+      "correct_gradient": 3.234902836101235e-06,
+      "failure_gradient": -6.589362107791073e-05,
+      "head": 0,
+      "layer": 28,
+      "target_attention_mass": 0.0007001438061706722
+    },
+    {
+      "correct_gradient": 1.77893032844811e-05,
+      "failure_gradient": -6.6024430712527e-05,
+      "head": 11,
+      "layer": 4,
+      "target_attention_mass": 0.008331810124218464
+    },
+    {
+      "correct_gradient": 9.882986108456159e-05,
+      "failure_gradient": -6.61862816611704e-05,
+      "head": 1,
+      "layer": 7,
+      "target_attention_mass": 0.004599273204803467
+    },
+    {
+      "correct_gradient": -3.346486167020147e-06,
+      "failure_gradient": -6.74424313079466e-05,
+      "head": 3,
+      "layer": 27,
+      "target_attention_mass": 0.00015826543676666915
+    },
+    {
+      "correct_gradient": 1.2037763914328403e-05,
+      "failure_gradient": -6.950592835762239e-05,
+      "head": 10,
+      "layer": 8,
+      "target_attention_mass": 0.0008627490024082363
+    },
+    {
+      "correct_gradient": -1.7606349604836895e-05,
+      "failure_gradient": -7.098119255845501e-05,
+      "head": 0,
+      "layer": 15,
+      "target_attention_mass": 0.003006109269335866
+    },
+    {
+      "correct_gradient": 1.7813738558511688e-05,
+      "failure_gradient": -7.25587069609901e-05,
+      "head": 14,
+      "layer": 15,
+      "target_attention_mass": 0.002917106729000807
+    },
+    {
+      "correct_gradient": 8.242449806651698e-05,
+      "failure_gradient": -8.013610568013974e-05,
+      "head": 2,
+      "layer": 11,
+      "target_attention_mass": 0.003822752507403493
+    },
+    {
+      "correct_gradient": 1.7848041815735962e-05,
+      "failure_gradient": -8.495039157553817e-05,
+      "head": 11,
+      "layer": 19,
+      "target_attention_mass": 0.000284902605926618
+    },
+    {
+      "correct_gradient": 1.0558183690453967e-05,
+      "failure_gradient": -8.813296420027785e-05,
+      "head": 1,
+      "layer": 28,
+      "target_attention_mass": 0.00021802714036311954
+    },
+    {
+      "correct_gradient": 4.426031735866278e-05,
+      "failure_gradient": -8.830540507785502e-05,
+      "head": 15,
+      "layer": 8,
+      "target_attention_mass": 0.0040049380622804165
+    },
+    {
+      "correct_gradient": 7.030017067730989e-06,
+      "failure_gradient": -9.017323626332134e-05,
+      "head": 15,
+      "layer": 24,
+      "target_attention_mass": 0.0005244697676971555
+    },
+    {
+      "correct_gradient": 0.0001095365425396078,
+      "failure_gradient": -9.168777796730865e-05,
+      "head": 3,
+      "layer": 22,
+      "target_attention_mass": 0.0015354895731434226
+    },
+    {
+      "correct_gradient": 1.7437576492018296e-05,
+      "failure_gradient": -9.236525407426857e-05,
+      "head": 1,
+      "layer": 38,
+      "target_attention_mass": 0.0013413727283477783
+    },
+    {
+      "correct_gradient": 8.091606410606853e-05,
+      "failure_gradient": -9.567333784486567e-05,
+      "head": 5,
+      "layer": 30,
+      "target_attention_mass": 0.010481766425073147
+    },
+    {
+      "correct_gradient": -2.694312323275778e-05,
+      "failure_gradient": -0.00010443040186406247,
+      "head": 11,
+      "layer": 30,
+      "target_attention_mass": 0.0009544827044010162
+    },
+    {
+      "correct_gradient": 8.663477016835833e-06,
+      "failure_gradient": -0.0001046537041215093,
+      "head": 11,
+      "layer": 39,
+      "target_attention_mass": 0.0005168789648450911
+    },
+    {
+      "correct_gradient": -4.843497450599658e-05,
+      "failure_gradient": -0.00010888598470566129,
+      "head": 8,
+      "layer": 16,
+      "target_attention_mass": 0.0020278000738471746
+    },
+    {
+      "correct_gradient": 2.051836280822139e-05,
+      "failure_gradient": -0.00010955712767619323,
+      "head": 11,
+      "layer": 34,
+      "target_attention_mass": 0.0003430269134696573
+    },
+    {
+      "correct_gradient": 0.00010136518636191229,
+      "failure_gradient": -0.00010988941877647968,
+      "head": 5,
+      "layer": 40,
+      "target_attention_mass": 0.0010685345623642206
+    },
+    {
+      "correct_gradient": 0.00024410405790750134,
+      "failure_gradient": -0.0001112750300567963,
+      "head": 10,
+      "layer": 18,
+      "target_attention_mass": 0.0027754115872085094
+    },
+    {
+      "correct_gradient": 2.663363515891416e-05,
+      "failure_gradient": -0.00011285744585620705,
+      "head": 11,
+      "layer": 21,
+      "target_attention_mass": 0.0007965394179336727
+    },
+    {
+      "correct_gradient": 4.9818191157856007e-05,
+      "failure_gradient": -0.00011467912346623572,
+      "head": 5,
+      "layer": 39,
+      "target_attention_mass": 0.0004149001615587622
+    },
+    {
+      "correct_gradient": -0.00034443850361056766,
+      "failure_gradient": -0.00012028449782519601,
+      "head": 4,
+      "layer": 36,
+      "target_attention_mass": 0.0017496986547484994
+    },
+    {
+      "correct_gradient": -4.9213932625035635e-05,
+      "failure_gradient": -0.00012471073361146928,
+      "head": 10,
+      "layer": 41,
+      "target_attention_mass": 0.002616416197270155
+    },
+    {
+      "correct_gradient": -8.211818738963524e-06,
+      "failure_gradient": -0.00012482872209927467,
+      "head": 5,
+      "layer": 34,
+      "target_attention_mass": 0.0009787933668121696
+    },
+    {
+      "correct_gradient": 7.140996679498919e-05,
+      "failure_gradient": -0.0001256773781668536,
+      "head": 4,
+      "layer": 31,
+      "target_attention_mass": 0.0010793359251692891
+    },
+    {
+      "correct_gradient": -2.897416239424926e-05,
+      "failure_gradient": -0.00012683307392892727,
+      "head": 2,
+      "layer": 20,
+      "target_attention_mass": 0.0006094016134738922
+    },
+    {
+      "correct_gradient": 0.0001814059137788443,
+      "failure_gradient": -0.00013183040053783252,
+      "head": 2,
+      "layer": 37,
+      "target_attention_mass": 0.003101116744801402
+    },
+    {
+      "correct_gradient": -3.8529391565803826e-05,
+      "failure_gradient": -0.00013230994805521083,
+      "head": 2,
+      "layer": 21,
+      "target_attention_mass": 0.0006913601537235081
+    },
+    {
+      "correct_gradient": 2.133700585339816e-05,
+      "failure_gradient": -0.00013246448569199338,
+      "head": 9,
+      "layer": 22,
+      "target_attention_mass": 0.0003821913560386747
+    },
+    {
+      "correct_gradient": -0.00012088607031127706,
+      "failure_gradient": -0.00015658241058450324,
+      "head": 2,
+      "layer": 22,
+      "target_attention_mass": 0.001402533263899386
+    },
+    {
+      "correct_gradient": 7.233841186565048e-05,
+      "failure_gradient": -0.00016248588716345175,
+      "head": 2,
+      "layer": 17,
+      "target_attention_mass": 0.0014713214477524161
+    },
+    {
+      "correct_gradient": 3.667326670421182e-05,
+      "failure_gradient": -0.00016269164240968945,
+      "head": 9,
+      "layer": 36,
+      "target_attention_mass": 0.0005607273196801543
+    },
+    {
+      "correct_gradient": 5.1693183058029355e-05,
+      "failure_gradient": -0.00016820529396812032,
+      "head": 8,
+      "layer": 40,
+      "target_attention_mass": 0.0011438514338806272
+    },
+    {
+      "correct_gradient": 3.386557734799835e-05,
+      "failure_gradient": -0.00016880207964017506,
+      "head": 12,
+      "layer": 24,
+      "target_attention_mass": 0.0007150444434955716
+    },
+    {
+      "correct_gradient": -9.497871703714273e-06,
+      "failure_gradient": -0.00017410514244277562,
+      "head": 0,
+      "layer": 36,
+      "target_attention_mass": 0.0024773222394287586
+    },
+    {
+      "correct_gradient": -9.262095972069733e-05,
+      "failure_gradient": -0.0001773953387912895,
+      "head": 1,
+      "layer": 18,
+      "target_attention_mass": 0.0034394264221191406
+    },
+    {
+      "correct_gradient": -4.950450856308892e-05,
+      "failure_gradient": -0.00018164509778476452,
+      "head": 1,
+      "layer": 23,
+      "target_attention_mass": 0.003423192771151662
+    },
+    {
+      "correct_gradient": 0.00014331244604380908,
+      "failure_gradient": -0.00019451837891080816,
+      "head": 9,
+      "layer": 40,
+      "target_attention_mass": 0.0011075607035309076
+    },
+    {
+      "correct_gradient": 2.3071793619683892e-05,
+      "failure_gradient": -0.00020365003833181357,
+      "head": 0,
+      "layer": 38,
+      "target_attention_mass": 0.0018483176827430725
+    },
+    {
+      "correct_gradient": 2.3032138826993276e-05,
+      "failure_gradient": -0.00020457716631686447,
+      "head": 1,
+      "layer": 27,
+      "target_attention_mass": 0.0011172762606292963
+    },
+    {
+      "correct_gradient": -0.00011906158266905343,
+      "failure_gradient": -0.00020575758078069027,
+      "head": 2,
+      "layer": 3,
+      "target_attention_mass": 0.017313990741968155
+    },
+    {
+      "correct_gradient": 2.3456855417879403e-06,
+      "failure_gradient": -0.0002074263632364039,
+      "head": 0,
+      "layer": 27,
+      "target_attention_mass": 0.0022570507135242224
+    },
+    {
+      "correct_gradient": 0.00029971181549008863,
+      "failure_gradient": -0.00020839489479840267,
+      "head": 7,
+      "layer": 6,
+      "target_attention_mass": 0.018016602843999863
+    },
+    {
+      "correct_gradient": 8.342692267176044e-05,
+      "failure_gradient": -0.00021299084723328372,
+      "head": 4,
+      "layer": 25,
+      "target_attention_mass": 0.000529460608959198
+    },
+    {
+      "correct_gradient": 2.0162584611548567e-05,
+      "failure_gradient": -0.00022333259403239936,
+      "head": 0,
+      "layer": 39,
+      "target_attention_mass": 0.005305658560246229
+    },
+    {
+      "correct_gradient": 0.00016316616652919998,
+      "failure_gradient": -0.00022379429927761002,
+      "head": 9,
+      "layer": 29,
+      "target_attention_mass": 0.0011567255714908242
+    },
+    {
+      "correct_gradient": 7.006651084905245e-05,
+      "failure_gradient": -0.00026197818286683675,
+      "head": 6,
+      "layer": 30,
+      "target_attention_mass": 0.0003285433922428638
+    },
+    {
+      "correct_gradient": 2.3656526914323274e-06,
+      "failure_gradient": -0.0002735321343477283,
+      "head": 14,
+      "layer": 39,
+      "target_attention_mass": 0.002102362224832177
+    },
+    {
+      "correct_gradient": -0.0001642854750004843,
+      "failure_gradient": -0.0002780458468935519,
+      "head": 6,
+      "layer": 26,
+      "target_attention_mass": 0.0008762244833633304
+    },
+    {
+      "correct_gradient": -7.971071139557885e-05,
+      "failure_gradient": -0.00029268344919078766,
+      "head": 4,
+      "layer": 8,
+      "target_attention_mass": 0.00805798638612032
+    },
+    {
+      "correct_gradient": 0.00012206033153353997,
+      "failure_gradient": -0.00031018449330336547,
+      "head": 8,
+      "layer": 32,
+      "target_attention_mass": 0.002138489158824086
+    },
+    {
+      "correct_gradient": -0.00025544058144936024,
+      "failure_gradient": -0.0003195347692651142,
+      "head": 10,
+      "layer": 29,
+      "target_attention_mass": 0.007306488696485758
+    },
+    {
+      "correct_gradient": -6.0872860112280216e-05,
+      "failure_gradient": -0.00032775126809221026,
+      "head": 9,
+      "layer": 39,
+      "target_attention_mass": 0.0016442452324554324
+    },
+    {
+      "correct_gradient": 0.0002728128818935662,
+      "failure_gradient": -0.0003309340471397653,
+      "head": 4,
+      "layer": 20,
+      "target_attention_mass": 0.011476942338049412
+    },
+    {
+      "correct_gradient": -2.0791780322192693e-05,
+      "failure_gradient": -0.0003598683785769806,
+      "head": 12,
+      "layer": 20,
+      "target_attention_mass": 0.0016917884349822998
+    },
+    {
+      "correct_gradient": -4.524480604197619e-05,
+      "failure_gradient": -0.00036591353065367524,
+      "head": 9,
+      "layer": 23,
+      "target_attention_mass": 0.0009907388594001532
+    },
+    {
+      "correct_gradient": -0.00016850732565629032,
+      "failure_gradient": -0.00038545357113304945,
+      "head": 15,
+      "layer": 37,
+      "target_attention_mass": 0.0016284218290820718
+    },
+    {
+      "correct_gradient": -4.7501435784517594e-05,
+      "failure_gradient": -0.0003924566860535249,
+      "head": 3,
+      "layer": 37,
+      "target_attention_mass": 0.0016883249627426267
+    },
+    {
+      "correct_gradient": 8.752131900521663e-05,
+      "failure_gradient": -0.0003951328014539156,
+      "head": 12,
+      "layer": 17,
+      "target_attention_mass": 0.004125773906707764
+    },
+    {
+      "correct_gradient": -8.880081235097264e-05,
+      "failure_gradient": -0.0004071519693492779,
+      "head": 15,
+      "layer": 28,
+      "target_attention_mass": 0.003423247952014208
+    },
+    {
+      "correct_gradient": 1.7309159409465655e-05,
+      "failure_gradient": -0.0004341397081069382,
+      "head": 14,
+      "layer": 38,
+      "target_attention_mass": 0.0020349877886474133
+    },
+    {
+      "correct_gradient": 0.00011615749264030524,
+      "failure_gradient": -0.00044083618506972143,
+      "head": 5,
+      "layer": 29,
+      "target_attention_mass": 0.001408943091519177
+    },
+    {
+      "correct_gradient": -7.11827311568173e-05,
+      "failure_gradient": -0.0004706004193784403,
+      "head": 7,
+      "layer": 28,
+      "target_attention_mass": 0.0019153952598571777
+    },
+    {
+      "correct_gradient": 4.370051176937402e-05,
+      "failure_gradient": -0.00047491035158080716,
+      "head": 1,
+      "layer": 31,
+      "target_attention_mass": 0.0022605466656386852
+    },
+    {
+      "correct_gradient": -1.8382515266256513e-05,
+      "failure_gradient": -0.000486241138008024,
+      "head": 3,
+      "layer": 41,
+      "target_attention_mass": 0.007470369338989258
+    },
+    {
+      "correct_gradient": 4.4043955913709725e-05,
+      "failure_gradient": -0.0005315562890635712,
+      "head": 9,
+      "layer": 35,
+      "target_attention_mass": 0.0008076482336036861
+    },
+    {
+      "correct_gradient": 6.372383197814552e-05,
+      "failure_gradient": -0.0005415051940644844,
+      "head": 12,
+      "layer": 18,
+      "target_attention_mass": 0.002549137221649289
+    },
+    {
+      "correct_gradient": 0.0003322907613660648,
+      "failure_gradient": -0.0005727282904055235,
+      "head": 0,
+      "layer": 23,
+      "target_attention_mass": 0.00820016860961914
+    },
+    {
+      "correct_gradient": -0.00021179988326829911,
+      "failure_gradient": -0.0005764707394908848,
+      "head": 6,
+      "layer": 21,
+      "target_attention_mass": 0.0010147212306037545
+    },
+    {
+      "correct_gradient": 0.00013166358831029974,
+      "failure_gradient": -0.000579251665580419,
+      "head": 6,
+      "layer": 41,
+      "target_attention_mass": 0.0004614700737874955
+    },
+    {
+      "correct_gradient": 0.0005847310157545473,
+      "failure_gradient": -0.0006017885669799787,
+      "head": 5,
+      "layer": 17,
+      "target_attention_mass": 0.0036894679069519043
+    },
+    {
+      "correct_gradient": 0.00011498395810430905,
+      "failure_gradient": -0.0006710282302395042,
+      "head": 13,
+      "layer": 35,
+      "target_attention_mass": 0.00439453125
+    },
+    {
+      "correct_gradient": 0.0005360781830155625,
+      "failure_gradient": -0.0007117226362294916,
+      "head": 12,
+      "layer": 23,
+      "target_attention_mass": 0.004205166827887297
+    },
+    {
+      "correct_gradient": 2.1991923172466176e-05,
+      "failure_gradient": -0.0007389160666662065,
+      "head": 5,
+      "layer": 24,
+      "target_attention_mass": 0.0012308356817811728
+    },
+    {
+      "correct_gradient": 0.00021991573487197593,
+      "failure_gradient": -0.0007455069302782899,
+      "head": 8,
+      "layer": 19,
+      "target_attention_mass": 0.010868293233215809
+    },
+    {
+      "correct_gradient": -0.0006191308175231207,
+      "failure_gradient": -0.000746027150723551,
+      "head": 10,
+      "layer": 37,
+      "target_attention_mass": 0.029241902753710747
+    },
+    {
+      "correct_gradient": 0.0019392197092836898,
+      "failure_gradient": -0.0007691294886171818,
+      "head": 11,
+      "layer": 32,
+      "target_attention_mass": 0.0022401809692382812
+    },
+    {
+      "correct_gradient": 7.836653121729505e-05,
+      "failure_gradient": -0.0008092155247660619,
+      "head": 13,
+      "layer": 29,
+      "target_attention_mass": 0.008768310770392418
+    },
+    {
+      "correct_gradient": -0.0002707087276679165,
+      "failure_gradient": -0.0008324494951271585,
+      "head": 8,
+      "layer": 27,
+      "target_attention_mass": 0.008235735818743706
+    },
+    {
+      "correct_gradient": 0.00048807242946734405,
+      "failure_gradient": -0.0008721065948650773,
+      "head": 14,
+      "layer": 24,
+      "target_attention_mass": 0.006737634539604187
+    },
+    {
+      "correct_gradient": 0.003034811537220793,
+      "failure_gradient": -0.0009008047969213554,
+      "head": 14,
+      "layer": 28,
+      "target_attention_mass": 0.010970592498779297
+    },
+    {
+      "correct_gradient": 0.00020800052948717802,
+      "failure_gradient": -0.0009638011355751327,
+      "head": 2,
+      "layer": 41,
+      "target_attention_mass": 0.003362600225955248
+    },
+    {
+      "correct_gradient": -5.496273977014254e-05,
+      "failure_gradient": -0.0011727039818651974,
+      "head": 8,
+      "layer": 37,
+      "target_attention_mass": 0.008287310600280762
+    },
+    {
+      "correct_gradient": -0.0005304484654499112,
+      "failure_gradient": -0.001264339387749455,
+      "head": 3,
+      "layer": 39,
+      "target_attention_mass": 0.006487505976110697
+    },
+    {
+      "correct_gradient": -0.0022893857632605534,
+      "failure_gradient": -0.001332163710945419,
+      "head": 4,
+      "layer": 33,
+      "target_attention_mass": 0.009090845473110676
+    },
+    {
+      "correct_gradient": -1.5317857757491885e-05,
+      "failure_gradient": -0.0013736376089842192,
+      "head": 6,
+      "layer": 39,
+      "target_attention_mass": 0.005298640113323927
+    },
+    {
+      "correct_gradient": 2.40421519814639e-05,
+      "failure_gradient": -0.0013748866149398964,
+      "head": 0,
+      "layer": 21,
+      "target_attention_mass": 0.0012726688291877508
+    },
+    {
+      "correct_gradient": -0.0009296821509400066,
+      "failure_gradient": -0.0015539765673955636,
+      "head": 12,
+      "layer": 39,
+      "target_attention_mass": 0.010709388181567192
+    },
+    {
+      "correct_gradient": -0.000295712915688472,
+      "failure_gradient": -0.001582274421317769,
+      "head": 12,
+      "layer": 32,
+      "target_attention_mass": 0.008436356671154499
+    },
+    {
+      "correct_gradient": 0.003061540473147102,
+      "failure_gradient": -0.0015983514458639547,
+      "head": 2,
+      "layer": 29,
+      "target_attention_mass": 0.019879374653100967
+    },
+    {
+      "correct_gradient": -0.0010434203816331782,
+      "failure_gradient": -0.0016522812563510212,
+      "head": 1,
+      "layer": 36,
+      "target_attention_mass": 0.012291653081774712
+    },
+    {
+      "correct_gradient": -0.0022029961933786014,
+      "failure_gradient": -0.001657280106363552,
+      "head": 13,
+      "layer": 23,
+      "target_attention_mass": 0.007484614849090576
+    },
+    {
+      "correct_gradient": -0.00017388267766570075,
+      "failure_gradient": -0.0016984614907674508,
+      "head": 5,
+      "layer": 22,
+      "target_attention_mass": 0.011905762366950512
+    },
+    {
+      "correct_gradient": -0.0008985721550108689,
+      "failure_gradient": -0.0016992360968807979,
+      "head": 8,
+      "layer": 34,
+      "target_attention_mass": 0.006480761803686619
+    },
+    {
+      "correct_gradient": 0.00036693625259191185,
+      "failure_gradient": -0.0017110674452851526,
+      "head": 13,
+      "layer": 40,
+      "target_attention_mass": 0.0022682100534439087
+    },
+    {
+      "correct_gradient": 0.002742891533757156,
+      "failure_gradient": -0.001900864765048027,
+      "head": 13,
+      "layer": 33,
+      "target_attention_mass": 0.03866801783442497
+    },
+    {
+      "correct_gradient": -0.0003334305376552467,
+      "failure_gradient": -0.0019264257321732917,
+      "head": 6,
+      "layer": 38,
+      "target_attention_mass": 0.003339448245242238
+    },
+    {
+      "correct_gradient": 0.00030321984349767554,
+      "failure_gradient": -0.0019387781836225518,
+      "head": 15,
+      "layer": 26,
+      "target_attention_mass": 0.011196255683898926
+    },
+    {
+      "correct_gradient": -0.0017705583892200353,
+      "failure_gradient": -0.0020134915664259878,
+      "head": 6,
+      "layer": 35,
+      "target_attention_mass": 0.006838560104370117
+    },
+    {
+      "correct_gradient": -0.0007536846502982782,
+      "failure_gradient": -0.0021965605140264544,
+      "head": 10,
+      "layer": 31,
+      "target_attention_mass": 0.00939120538532734
+    },
+    {
+      "correct_gradient": -0.001635879537371813,
+      "failure_gradient": -0.0023230418779088984,
+      "head": 3,
+      "layer": 36,
+      "target_attention_mass": 0.01042275782674551
+    },
+    {
+      "correct_gradient": 0.0006286432683239427,
+      "failure_gradient": -0.0024598220313367036,
+      "head": 4,
+      "layer": 27,
+      "target_attention_mass": 0.011012090370059013
+    },
+    {
+      "correct_gradient": -0.007418157778820902,
+      "failure_gradient": -0.0027684500174862997,
+      "head": 11,
+      "layer": 25,
+      "target_attention_mass": 0.0306188203394413
+    },
+    {
+      "correct_gradient": -0.0011215231706441012,
+      "failure_gradient": -0.0031566552767929223,
+      "head": 5,
+      "layer": 26,
+      "target_attention_mass": 0.00504361093044281
+    },
+    {
+      "correct_gradient": -0.0009817125007756196,
+      "failure_gradient": -0.0031960810135517803,
+      "head": 0,
+      "layer": 25,
+      "target_attention_mass": 0.005208002869039774
+    },
+    {
+      "correct_gradient": 0.0009049867271041532,
+      "failure_gradient": -0.003317616231340383,
+      "head": 14,
+      "layer": 26,
+      "target_attention_mass": 0.007532196585088968
+    },
+    {
+      "correct_gradient": 0.0001980435666172405,
+      "failure_gradient": -0.0035170318768515635,
+      "head": 7,
+      "layer": 24,
+      "target_attention_mass": 0.005290616769343615
+    },
+    {
+      "correct_gradient": -0.0013870241225890393,
+      "failure_gradient": -0.0035663213015400936,
+      "head": 6,
+      "layer": 25,
+      "target_attention_mass": 0.0009996917797252536
+    },
+    {
+      "correct_gradient": 0.0003747631782525272,
+      "failure_gradient": -0.003806010032089294,
+      "head": 5,
+      "layer": 37,
+      "target_attention_mass": 0.006258245091885328
+    },
+    {
+      "correct_gradient": -0.0003690074345114518,
+      "failure_gradient": -0.004373926602836166,
+      "head": 10,
+      "layer": 40,
+      "target_attention_mass": 0.004353693686425686
+    },
+    {
+      "correct_gradient": -0.0006971076341732493,
+      "failure_gradient": -0.005143377830141357,
+      "head": 12,
+      "layer": 25,
+      "target_attention_mass": 0.014351112768054008
+    },
+    {
+      "correct_gradient": 0.0015863277026856282,
+      "failure_gradient": -0.005230819538285557,
+      "head": 12,
+      "layer": 29,
+      "target_attention_mass": 0.0421711727976799
+    },
+    {
+      "correct_gradient": -0.0024927612394094467,
+      "failure_gradient": -0.00525204890540668,
+      "head": 14,
+      "layer": 33,
+      "target_attention_mass": 0.19585289061069489
+    },
+    {
+      "correct_gradient": 0.00041600683141710624,
+      "failure_gradient": -0.005290828279352614,
+      "head": 9,
+      "layer": 24,
+      "target_attention_mass": 0.016239915043115616
+    },
+    {
+      "correct_gradient": 7.445100949690589e-05,
+      "failure_gradient": -0.005681774743217309,
+      "head": 8,
+      "layer": 21,
+      "target_attention_mass": 0.0048838043585419655
+    },
+    {
+      "correct_gradient": -0.0017735106400477718,
+      "failure_gradient": -0.006435379701932626,
+      "head": 2,
+      "layer": 31,
+      "target_attention_mass": 0.013312501832842827
+    },
+    {
+      "correct_gradient": -0.001454013665558173,
+      "failure_gradient": -0.0065164223529531485,
+      "head": 11,
+      "layer": 38,
+      "target_attention_mass": 0.014546411111950874
+    },
+    {
+      "correct_gradient": -0.04016626688634169,
+      "failure_gradient": -0.006999586309705462,
+      "head": 14,
+      "layer": 27,
+      "target_attention_mass": 0.07584027200937271
+    },
+    {
+      "correct_gradient": -0.006889165430725113,
+      "failure_gradient": -0.007243878488744875,
+      "head": 15,
+      "layer": 23,
+      "target_attention_mass": 0.013304442167282104
+    },
+    {
+      "correct_gradient": -0.00037057913910105544,
+      "failure_gradient": -0.007515442590894443,
+      "head": 2,
+      "layer": 30,
+      "target_attention_mass": 0.01363354455679655
+    },
+    {
+      "correct_gradient": -0.0069469207511195594,
+      "failure_gradient": -0.00757813809572586,
+      "head": 14,
+      "layer": 30,
+      "target_attention_mass": 0.0507877878844738
+    },
+    {
+      "correct_gradient": -0.004968959451565203,
+      "failure_gradient": -0.007804450828449002,
+      "head": 0,
+      "layer": 33,
+      "target_attention_mass": 0.02260412462055683
+    },
+    {
+      "correct_gradient": 0.002887697960689383,
+      "failure_gradient": -0.00843518303840288,
+      "head": 3,
+      "layer": 23,
+      "target_attention_mass": 0.0171747375279665
+    },
+    {
+      "correct_gradient": -0.0011380540562863902,
+      "failure_gradient": -0.00872332145393427,
+      "head": 6,
+      "layer": 24,
+      "target_attention_mass": 0.008231530897319317
+    },
+    {
+      "correct_gradient": 0.00562261125371563,
+      "failure_gradient": -0.009909465875742691,
+      "head": 15,
+      "layer": 27,
+      "target_attention_mass": 0.014179499819874763
+    },
+    {
+      "correct_gradient": 0.0029278985062122062,
+      "failure_gradient": -0.010677221366287475,
+      "head": 12,
+      "layer": 27,
+      "target_attention_mass": 0.007729601580649614
+    },
+    {
+      "correct_gradient": -0.0003332625371667574,
+      "failure_gradient": -0.010733680433726736,
+      "head": 7,
+      "layer": 29,
+      "target_attention_mass": 0.09677856415510178
+    },
+    {
+      "correct_gradient": -0.025814161969805665,
+      "failure_gradient": -0.011930405827505248,
+      "head": 10,
+      "layer": 32,
+      "target_attention_mass": 0.1138850599527359
+    },
+    {
+      "correct_gradient": 0.013263178743281454,
+      "failure_gradient": -0.012527741225702422,
+      "head": 5,
+      "layer": 32,
+      "target_attention_mass": 0.4208894371986389
+    },
+    {
+      "correct_gradient": -0.004481048876735961,
+      "failure_gradient": -0.01882967944922192,
+      "head": 6,
+      "layer": 33,
+      "target_attention_mass": 0.020736098289489746
+    },
+    {
+      "correct_gradient": -0.011094780647600035,
+      "failure_gradient": -0.01975008803752384,
+      "head": 13,
+      "layer": 37,
+      "target_attention_mass": 0.014824049547314644
+    },
+    {
+      "correct_gradient": -0.010839729938866957,
+      "failure_gradient": -0.020911348717553273,
+      "head": 12,
+      "layer": 34,
+      "target_attention_mass": 0.16201183199882507
+    },
+    {
+      "correct_gradient": -0.0042392063253330736,
+      "failure_gradient": -0.021413271448441913,
+      "head": 5,
+      "layer": 35,
+      "target_attention_mass": 0.011059991084039211
+    },
+    {
+      "correct_gradient": -0.004221943294945752,
+      "failure_gradient": -0.024136138813836232,
+      "head": 7,
+      "layer": 37,
+      "target_attention_mass": 0.004966012202203274
+    },
+    {
+      "correct_gradient": -0.01756578908776337,
+      "failure_gradient": -0.025344052085919038,
+      "head": 0,
+      "layer": 32,
+      "target_attention_mass": 0.028130123391747475
+    },
+    {
+      "correct_gradient": -0.010082573823209078,
+      "failure_gradient": -0.0311277551310403,
+      "head": 6,
+      "layer": 36,
+      "target_attention_mass": 0.1683318316936493
+    },
+    {
+      "correct_gradient": -0.017631455974758795,
+      "failure_gradient": -0.03885401359626225,
+      "head": 5,
+      "layer": 28,
+      "target_attention_mass": 0.05554458126425743
+    },
+    {
+      "correct_gradient": -0.013440203448792673,
+      "failure_gradient": -0.04745902121067047,
+      "head": 1,
+      "layer": 26,
+      "target_attention_mass": 0.021266285330057144
+    },
+    {
+      "correct_gradient": -0.00687882697807168,
+      "failure_gradient": -0.05235408619046211,
+      "head": 0,
+      "layer": 30,
+      "target_attention_mass": 0.0207949411123991
+    },
+    {
+      "correct_gradient": -0.04240723544696592,
+      "failure_gradient": -0.0554722079208919,
+      "head": 6,
+      "layer": 32,
+      "target_attention_mass": 0.03685900196433067
+    },
+    {
+      "correct_gradient": 0.019632591391509434,
+      "failure_gradient": -0.06042004216994558,
+      "head": 9,
+      "layer": 30,
+      "target_attention_mass": 0.5693677067756653
+    },
+    {
+      "correct_gradient": -0.005236857342270185,
+      "failure_gradient": -0.06955615683857884,
+      "head": 12,
+      "layer": 38,
+      "target_attention_mass": 0.11956382542848587
+    },
+    {
+      "correct_gradient": -0.01745820277423229,
+      "failure_gradient": -0.07306986036045211,
+      "head": 11,
+      "layer": 28,
+      "target_attention_mass": 0.06557554751634598
+    },
+    {
+      "correct_gradient": -0.025126382989703485,
+      "failure_gradient": -0.09599773798670087,
+      "head": 10,
+      "layer": 24,
+      "target_attention_mass": 0.216817244887352
+    },
+    {
+      "correct_gradient": -0.06351167076038865,
+      "failure_gradient": -0.09637280872889928,
+      "head": 15,
+      "layer": 40,
+      "target_attention_mass": 0.037925515323877335
+    },
+    {
+      "correct_gradient": -0.02544333574906835,
+      "failure_gradient": -0.10754711074488503,
+      "head": 0,
+      "layer": 29,
+      "target_attention_mass": 0.24190057814121246
+    },
+    {
+      "correct_gradient": -0.1290193886127112,
+      "failure_gradient": -0.18911653331347875,
+      "head": 13,
+      "layer": 28,
+      "target_attention_mass": 0.06569045037031174
+    },
+    {
+      "correct_gradient": -0.06444689350308112,
+      "failure_gradient": -0.26964451824980123,
+      "head": 11,
+      "layer": 26,
+      "target_attention_mass": 0.07568734884262085
+    },
+    {
+      "correct_gradient": -0.0324871135207842,
+      "failure_gradient": -0.28059121966362,
+      "head": 7,
+      "layer": 31,
+      "target_attention_mass": 0.36883941292762756
+    },
+    {
+      "correct_gradient": -0.12243107579789071,
+      "failure_gradient": -0.28949345435414997,
+      "head": 3,
+      "layer": 28,
+      "target_attention_mass": 0.1376887708902359
+    },
+    {
+      "correct_gradient": -0.035149988138450765,
+      "failure_gradient": -0.3016229697636196,
+      "head": 8,
+      "layer": 30,
+      "target_attention_mass": 0.3294578492641449
+    }
+  ],
+  "candidate_audit": {
+    "accuracy": 1.0,
+    "matches": 109,
+    "n": 109
+  },
+  "candidate_exclusions": [],
+  "discovery_margin": 1.0,
+  "max_beta": 8.0,
+  "n_correct": 53,
+  "n_within_stale": 56,
+  "pool_gate": {
+    "all_pass": true,
+    "correct_pass": true,
+    "minimum_correct": 5,
+    "minimum_within_stale": 20,
+    "n_correct": 53,
+    "n_within_stale": 56,
+    "within_stale_pass": true
+  },
+  "rule": "identity-point gradient of current-minus-strongest-stale first-token logit gap",
+  "top_heads": [
+    {
+      "correct_gradient": 0.054293209651731095,
+      "failure_gradient": 0.42637255255665096,
+      "head": 8,
+      "layer": 28,
+      "target_attention_mass": 0.2876439690589905
+    },
+    {
+      "correct_gradient": 0.11050358358419167,
+      "failure_gradient": 0.36540549993515015,
+      "head": 2,
+      "layer": 28,
+      "target_attention_mass": 0.1908046156167984
+    },
+    {
+      "correct_gradient": 0.028886459486664465,
+      "failure_gradient": 0.30521335133484434,
+      "head": 12,
+      "layer": 28,
+      "target_attention_mass": 0.26889556646347046
+    },
+    {
+      "correct_gradient": 0.15448705655223918,
+      "failure_gradient": 0.2866214481847627,
+      "head": 1,
+      "layer": 35,
+      "target_attention_mass": 0.2645902633666992
+    },
+    {
+      "correct_gradient": 0.2205694149125297,
+      "failure_gradient": 0.2303471245935985,
+      "head": 14,
+      "layer": 40,
+      "target_attention_mass": 0.08267770707607269
+    },
+    {
+      "correct_gradient": 0.06945578557140422,
+      "failure_gradient": 0.2162837897028242,
+      "head": 7,
+      "layer": 32,
+      "target_attention_mass": 0.1716305911540985
+    },
+    {
+      "correct_gradient": 0.156086044491462,
+      "failure_gradient": 0.21604360852922713,
+      "head": 8,
+      "layer": 39,
+      "target_attention_mass": 0.166717529296875
+    },
+    {
+      "correct_gradient": 0.03736927286493329,
+      "failure_gradient": 0.1709645071199962,
+      "head": 1,
+      "layer": 33,
+      "target_attention_mass": 0.16767160594463348
+    },
+    {
+      "correct_gradient": 0.10703652633248635,
+      "failure_gradient": 0.16394668737692492,
+      "head": 0,
+      "layer": 35,
+      "target_attention_mass": 0.25228962302207947
+    },
+    {
+      "correct_gradient": 0.06129215938865014,
+      "failure_gradient": 0.15652019450707094,
+      "head": 12,
+      "layer": 37,
+      "target_attention_mass": 0.11684683710336685
+    },
+    {
+      "correct_gradient": 0.029589221162616083,
+      "failure_gradient": 0.14980444737843104,
+      "head": 15,
+      "layer": 31,
+      "target_attention_mass": 0.568906843662262
+    },
+    {
+      "correct_gradient": 0.11713819374453346,
+      "failure_gradient": 0.1323741820773908,
+      "head": 12,
+      "layer": 36,
+      "target_attention_mass": 0.2992098331451416
+    },
+    {
+      "correct_gradient": 0.03462681005585869,
+      "failure_gradient": 0.12954109907150269,
+      "head": 1,
+      "layer": 30,
+      "target_attention_mass": 0.2208535373210907
+    },
+    {
+      "correct_gradient": 0.037570052551773356,
+      "failure_gradient": 0.1225376624081816,
+      "head": 13,
+      "layer": 31,
+      "target_attention_mass": 0.22306950390338898
+    },
+    {
+      "correct_gradient": 0.10771270967879386,
+      "failure_gradient": 0.11990611255168915,
+      "head": 1,
+      "layer": 32,
+      "target_attention_mass": 0.16553279757499695
+    },
+    {
+      "correct_gradient": 0.005845294246133769,
+      "failure_gradient": 0.118168376984873,
+      "head": 4,
+      "layer": 28,
+      "target_attention_mass": 0.12124139815568924
+    },
+    {
+      "correct_gradient": 0.025777817897076876,
+      "failure_gradient": 0.09129861848694938,
+      "head": 7,
+      "layer": 33,
+      "target_attention_mass": 0.1367844194173813
+    },
+    {
+      "correct_gradient": 0.019070822956427088,
+      "failure_gradient": 0.08924027691994395,
+      "head": 15,
+      "layer": 30,
+      "target_attention_mass": 0.17250224947929382
+    },
+    {
+      "correct_gradient": 0.08363181633769341,
+      "failure_gradient": 0.08869980448590857,
+      "head": 14,
+      "layer": 35,
+      "target_attention_mass": 0.23546144366264343
+    },
+    {
+      "correct_gradient": 0.03085905733026283,
+      "failure_gradient": 0.07874651519315583,
+      "head": 13,
+      "layer": 32,
+      "target_attention_mass": 0.17661304771900177
+    },
+    {
+      "correct_gradient": 0.03808651639605468,
+      "failure_gradient": 0.0685320214501449,
+      "head": 14,
+      "layer": 34,
+      "target_attention_mass": 0.2543781101703644
+    },
+    {
+      "correct_gradient": 0.005624281681792916,
+      "failure_gradient": 0.058854682853312364,
+      "head": 0,
+      "layer": 26,
+      "target_attention_mass": 0.03311266377568245
+    },
+    {
+      "correct_gradient": 0.04008404105761141,
+      "failure_gradient": 0.05685219607715096,
+      "head": 1,
+      "layer": 37,
+      "target_attention_mass": 0.07555242627859116
+    },
+    {
+      "correct_gradient": 0.005667620233066802,
+      "failure_gradient": 0.05507881743168192,
+      "head": 4,
+      "layer": 26,
+      "target_attention_mass": 0.030174151062965393
+    },
+    {
+      "correct_gradient": 0.03805357442711884,
+      "failure_gradient": 0.052470485280667035,
+      "head": 1,
+      "layer": 29,
+      "target_attention_mass": 0.02753339521586895
+    },
+    {
+      "correct_gradient": 0.027295803124049924,
+      "failure_gradient": 0.05244063612605844,
+      "head": 6,
+      "layer": 37,
+      "target_attention_mass": 0.04706648364663124
+    },
+    {
+      "correct_gradient": 0.009248889227099013,
+      "failure_gradient": 0.051760206065539806,
+      "head": 9,
+      "layer": 28,
+      "target_attention_mass": 0.039542537182569504
+    },
+    {
+      "correct_gradient": 0.03125125802350494,
+      "failure_gradient": 0.04618975812835353,
+      "head": 15,
+      "layer": 32,
+      "target_attention_mass": 0.21471187472343445
+    },
+    {
+      "correct_gradient": 0.033202801110609526,
+      "failure_gradient": 0.0404228184904371,
+      "head": 15,
+      "layer": 34,
+      "target_attention_mass": 0.16962671279907227
+    },
+    {
+      "correct_gradient": 0.03741560061022921,
+      "failure_gradient": 0.03978490563375609,
+      "head": 13,
+      "layer": 25,
+      "target_attention_mass": 0.07538639008998871
+    },
+    {
+      "correct_gradient": 0.0066270084462989615,
+      "failure_gradient": 0.03879006213641593,
+      "head": 7,
+      "layer": 25,
+      "target_attention_mass": 0.011904285289347172
+    },
+    {
+      "correct_gradient": 0.010210611137016764,
+      "failure_gradient": 0.03697648765851876,
+      "head": 2,
+      "layer": 36,
+      "target_attention_mass": 0.12669876217842102
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "stage": "E",
+  "track": "naturalistic_transfer",
+  "seed_label": "seed1",
+  "high_loads": [
+    4,
+    8
+  ],
+  "high_i_summary": {
+    "agent_log": {
+      "baseline": {
+        "accuracy": 0.54,
+        "n": 400,
+        "stale_rate": 0.46,
+        "within_stale_rate_among_errors": 1.0,
+        "gain_vs_baseline": 0.0
+      },
+      "arm_l": {
+        "accuracy": 0.9875,
+        "n": 400,
+        "stale_rate": 0.0125,
+        "within_stale_rate_among_errors": 0.9999999999999991,
+        "gain_vs_baseline": 0.4475
+      },
+      "random_heads": {
+        "accuracy": 0.895,
+        "n": 400,
+        "stale_rate": 0.1,
+        "within_stale_rate_among_errors": 0.9523809523809523,
+        "gain_vs_baseline": 0.355
+      },
+      "arm_l_vs_random_gap": 0.09250000000000003
+    },
+    "dialogue": {
+      "baseline": {
+        "accuracy": 0.8075,
+        "n": 400,
+        "stale_rate": 0.1925,
+        "within_stale_rate_among_errors": 1.0,
+        "gain_vs_baseline": 0.0
+      },
+      "arm_l": {
+        "accuracy": 0.9975,
+        "n": 400,
+        "stale_rate": 0.0,
+        "within_stale_rate_among_errors": 0.0,
+        "gain_vs_baseline": 0.19000000000000006
+      },
+      "random_heads": {
+        "accuracy": 0.9425,
+        "n": 400,
+        "stale_rate": 0.055,
+        "within_stale_rate_among_errors": 0.9565217391304345,
+        "gain_vs_baseline": 0.135
+      },
+      "arm_l_vs_random_gap": 0.05500000000000005
+    },
+    "document": {
+      "baseline": {
+        "accuracy": 0.8425,
+        "n": 400,
+        "stale_rate": 0.1575,
+        "within_stale_rate_among_errors": 0.9999999999999998,
+        "gain_vs_baseline": 0.0
+      },
+      "arm_l": {
+        "accuracy": 1.0,
+        "n": 400,
+        "stale_rate": 0.0,
+        "within_stale_rate_among_errors": 0.0,
+        "gain_vs_baseline": 0.15749999999999997
+      },
+      "random_heads": {
+        "accuracy": 0.9425,
+        "n": 400,
+        "stale_rate": 0.0575,
+        "within_stale_rate_among_errors": 1.0,
+        "gain_vs_baseline": 0.09999999999999998
+      },
+      "arm_l_vs_random_gap": 0.057499999999999996
+    }
+  },
+  "source_summaries": {
+    "baseline": "results/stage_e/natural/qwen_baseline_ai.summary.json",
+    "arm_l": "results/stage_e/natural/arm_l_ai.summary.json",
+    "random_heads": "results/stage_e/natural/random_heads_ai.summary.json"
+  }
+}

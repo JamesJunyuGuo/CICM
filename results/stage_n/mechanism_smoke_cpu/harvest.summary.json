@@ -1,0 +1,19 @@
+{
+  "attention_shape": [
+    90,
+    12,
+    12
+  ],
+  "dtype": "float32",
+  "hidden_shape": [
+    90,
+    14,
+    768
+  ],
+  "label_counts": {
+    "correct_current": 45,
+    "within_stale": 45
+  },
+  "model": "EleutherAI/pythia-160m",
+  "n": 90
+}

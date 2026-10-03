@@ -1,0 +1,359 @@
+{
+  "baseline_stability": {
+    "mismatches": [],
+    "rate": 1.0,
+    "requested": 24,
+    "retained": 24
+  },
+  "calibration_curve": [
+    {
+      "alpha": 0.5,
+      "correct_preservation": 1.0,
+      "correction": 0.0,
+      "net_accuracy_gain": 0.0
+    },
+    {
+      "alpha": 1.0,
+      "correct_preservation": 0.75,
+      "correction": 0.0,
+      "net_accuracy_gain": -0.125
+    }
+  ],
+  "decoding": "one-token greedy over full vocabulary",
+  "dtype": "float32",
+  "frozen_heads": [
+    {
+      "head": 6,
+      "layer": 26
+    },
+    {
+      "head": 0,
+      "layer": 27
+    },
+    {
+      "head": 7,
+      "layer": 22
+    },
+    {
+      "head": 9,
+      "layer": 27
+    },
+    {
+      "head": 8,
+      "layer": 26
+    },
+    {
+      "head": 3,
+      "layer": 26
+    },
+    {
+      "head": 9,
+      "layer": 21
+    },
+    {
+      "head": 3,
+      "layer": 27
+    },
+    {
+      "head": 10,
+      "layer": 22
+    },
+    {
+      "head": 11,
+      "layer": 21
+    },
+    {
+      "head": 6,
+      "layer": 27
+    },
+    {
+      "head": 4,
+      "layer": 25
+    }
+  ],
+  "gate": {
+    "all_pass": false,
+    "attention_mediation_vs_random": false,
+    "correct_preservation": true,
+    "correction_exceeds_random95": true,
+    "direction_specificity": false,
+    "identity_exact_zero": true,
+    "no_overwrite_drop_le_002": true,
+    "targeted_gain_ci_above_zero": false
+  },
+  "heldout": {
+    "label_shuffled": {
+      "arm_accuracy": 0.625,
+      "arm_counts": {
+        "correct_current": 5,
+        "within_stale": 3
+      },
+      "baseline_accuracy": 0.5,
+      "baseline_counts": {
+        "correct_current": 4,
+        "within_stale": 4
+      },
+      "correct_preservation": 1.0,
+      "correction": 0.25,
+      "n": 8,
+      "net_accuracy_gain": 0.125
+    },
+    "opposite": {
+      "arm_accuracy": 0.5,
+      "arm_counts": {
+        "correct_current": 4,
+        "within_stale": 4
+      },
+      "baseline_accuracy": 0.5,
+      "baseline_counts": {
+        "correct_current": 4,
+        "within_stale": 4
+      },
+      "correct_preservation": 1.0,
+      "correction": 0.0,
+      "n": 8,
+      "net_accuracy_gain": 0.0
+    },
+    "targeted": {
+      "arm_accuracy": 0.625,
+      "arm_counts": {
+        "correct_current": 5,
+        "within_stale": 3
+      },
+      "baseline_accuracy": 0.5,
+      "baseline_counts": {
+        "correct_current": 4,
+        "within_stale": 4
+      },
+      "correct_preservation": 1.0,
+      "correction": 0.25,
+      "n": 8,
+      "net_accuracy_gain": 0.125
+    }
+  },
+  "identity_max_abs_logit_change": 0.0,
+  "mediation": {
+    "random_minus_baseline": {
+      "ci": [
+        0.0032677289377897587,
+        0.014107730798423285
+      ],
+      "mean": 0.008048209361731978,
+      "n": 4
+    },
+    "targeted_minus_baseline": {
+      "ci": [
+        -0.007793188560754252,
+        0.023621160984039317
+      ],
+      "mean": 0.006651185452937997,
+      "n": 4
+    },
+    "targeted_minus_random": {
+      "ci": [
+        -0.014875156315975002,
+        0.020313237421214603
+      ],
+      "mean": -0.0013970239087939818,
+      "n": 4
+    }
+  },
+  "mediation_heads": [
+    {
+      "head": 6,
+      "layer": 26
+    },
+    {
+      "head": 0,
+      "layer": 27
+    },
+    {
+      "head": 7,
+      "layer": 22
+    },
+    {
+      "head": 9,
+      "layer": 27
+    },
+    {
+      "head": 8,
+      "layer": 26
+    },
+    {
+      "head": 3,
+      "layer": 26
+    },
+    {
+      "head": 3,
+      "layer": 27
+    },
+    {
+      "head": 10,
+      "layer": 22
+    },
+    {
+      "head": 6,
+      "layer": 27
+    },
+    {
+      "head": 4,
+      "layer": 25
+    }
+  ],
+  "model": "Qwen/Qwen2.5-1.5B",
+  "no_overwrite": {
+    "arm_accuracy": 1.0,
+    "arm_counts": {
+      "correct_current": 8
+    },
+    "baseline_accuracy": 1.0,
+    "baseline_counts": {
+      "correct_current": 8
+    },
+    "correct_preservation": 1.0,
+    "correction": NaN,
+    "n": 8,
+    "net_accuracy_gain": 0.0,
+    "paired_gain": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "operating_point": {
+    "alpha": 0.5,
+    "correct_preservation": 1.0,
+    "correction": 0.0,
+    "net_accuracy_gain": 0.0,
+    "net_gain": 0.0
+  },
+  "probe_sanity": {
+    "above_shuffle95": false,
+    "aggregate_auc": 0.8125,
+    "grouped_discovery_cv": {
+      "above_shuffle95": false,
+      "aggregate_auc": 0.265625,
+      "group": "current value token id",
+      "n": 16,
+      "n_splits": 5,
+      "shuffle_interval95": [
+        0.284765625,
+        0.730859375
+      ],
+      "shuffle_n": 50
+    },
+    "heldout_n": 8,
+    "per_head": [
+      {
+        "head": 6,
+        "heldout_auc": 0.375,
+        "layer": 26
+      },
+      {
+        "head": 0,
+        "heldout_auc": 0.75,
+        "layer": 27
+      },
+      {
+        "head": 7,
+        "heldout_auc": 0.5,
+        "layer": 22
+      },
+      {
+        "head": 9,
+        "heldout_auc": 0.6875,
+        "layer": 27
+      },
+      {
+        "head": 8,
+        "heldout_auc": 0.75,
+        "layer": 26
+      },
+      {
+        "head": 3,
+        "heldout_auc": 0.75,
+        "layer": 26
+      },
+      {
+        "head": 9,
+        "heldout_auc": 0.875,
+        "layer": 21
+      },
+      {
+        "head": 3,
+        "heldout_auc": 0.875,
+        "layer": 27
+      },
+      {
+        "head": 10,
+        "heldout_auc": 0.5625,
+        "layer": 22
+      },
+      {
+        "head": 11,
+        "heldout_auc": 0.75,
+        "layer": 21
+      },
+      {
+        "head": 6,
+        "heldout_auc": 0.25,
+        "layer": 27
+      },
+      {
+        "head": 4,
+        "heldout_auc": 0.75,
+        "layer": 25
+      }
+    ],
+    "shuffle_interval95": [
+      0.1390625,
+      0.9375
+    ],
+    "shuffle_n": 50
+  },
+  "random_correction": {
+    "interval95": [
+      0.0,
+      0.0
+    ],
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 1
+  },
+  "random_net_gain": {
+    "interval95": [
+      0.0,
+      0.0
+    ],
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 1
+  },
+  "runtime_inputs": "global learned head directions only; no current/stale value, token id, or span",
+  "scope": "controlled Qwen2.5-1.5B existence test; not a general or deployable repair",
+  "split_counts": {
+    "calibration__correct_current": 4,
+    "calibration__within_stale": 4,
+    "evaluation__correct_current": 4,
+    "evaluation__within_stale": 4,
+    "fit__correct_current": 4,
+    "fit__within_stale": 4
+  },
+  "stage": "R1-ITI-style-test-time-correction",
+  "targeted_paired_gain": {
+    "ci": [
+      0.0,
+      0.375
+    ],
+    "mean": 0.125,
+    "n": 8
+  },
+  "verdict": "correction_gate_failed"
+}

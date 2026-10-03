@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><style>
+ /* canvas 1000 px = \textwidth (5.5 in): 1 px = 0.396 pt; min font 18 px = 7.1 pt */
+ /* Style contract D: Arial, white, square corners, black ink, Office palette */
+ :root{--ink:#000;--muted:#404040;--hair:#BFBFBF;--cur:#2E7D5B;--cur-s:#CFE6DA;--old:#7B4FA0;--old-s:#E4D6F2;--oth:#7F7F7F;--oth-s:#EDEDED;--q:#262626}
+ *{box-sizing:border-box;margin:0;padding:0}
+ html,body{width:1000px;height:752px;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+ .wrap{width:1000px;height:752px;padding:8px 14px 4px}
+ .case{position:relative;border:1px solid var(--hair);padding:8px 14px 10px;background:#fff;margin-bottom:10px}
+ .ptitle{font-size:21px;font-weight:bold;line-height:1.15;white-space:nowrap}
+ .ptitle i{font-style:normal;font-weight:normal;color:var(--muted);font-size:18px;margin-left:10px}
+ .tl{position:relative;height:272px;margin-top:2px}
+ .rail{position:absolute;left:0;right:0;top:136px;height:2px;background:#7F7F7F}
+ .skip{position:absolute;top:132px;height:11px;background:repeating-linear-gradient(90deg,#BFBFBF 0 6px,transparent 6px 12px)}
+ .skiplab{position:absolute;top:108px;font-size:18px;color:var(--muted);transform:translateX(-50%);white-space:nowrap}
+ .mk{position:absolute;top:128px;width:19px;height:19px;border-radius:50%;border:2px solid #fff;transform:translateX(-50%)}
+ .mk.old{background:var(--old)} .mk.cur{background:var(--cur)} .mk.oth{background:#8C8C8C} .mk.q{background:var(--q)}
+ .ev{position:absolute;width:232px;transform:translateX(-50%);font-size:18px;line-height:1.15}
+ .ev.up{bottom:156px} .ev.dn{top:156px}
+ .ev .role{font-weight:bold;font-size:18px;line-height:1.1;white-space:nowrap}
+ .ev .role small{display:block;font-weight:normal;color:var(--muted);font-size:18px;margin-top:1px}
+ .ev .q{margin-top:3px;padding:3px 8px;border:1.5px solid;background:#fff;color:var(--ink);font-size:18px;line-height:1.15}
+ .ev.old .role{color:var(--old)} .ev.old .q{border-color:var(--old);background:var(--old-s)}
+ .ev.cur .role{color:var(--cur)} .ev.cur .q{border-color:var(--cur);background:var(--cur-s)}
+ .ev.oth .role{color:var(--oth)} .ev.oth .q{border-color:var(--oth);background:var(--oth-s)}
+ .ev.qq .role{color:var(--q)} .ev.qq .q{border-color:var(--q);background:var(--q);color:#fff}
+ .ev .q b{font-weight:bold}
+ .ans{display:flex;gap:26px;align-items:center;margin-top:4px;font-size:19px;white-space:nowrap}
+ .ans .lab{color:var(--muted)} .ans b{font-weight:bold} .ans .bad{color:var(--old)} .ans .badx{color:var(--oth)} .ans .ok{color:var(--cur)}
+ .ans .x{font-weight:bold;margin-left:4px}
+ .ans .why{margin-left:auto;color:var(--ink);font-size:18px;white-space:normal;max-width:430px;text-align:right;line-height:1.12;font-weight:bold}
+</style></head><body><div class="wrap">
+
+ <div class="case">
+  <div class="ptitle">(a) The answer uses an old value<i>Question about meal style</i></div>
+  <div class="tl"><div class="rail"></div>
+    <div class="skip" style="left:43%;width:43%"></div><div class="skiplab" style="left:63%">unrelated conversation</div>
+    <div class="ev up old" style="left:12%"><div class="role">old value<small>earlier choice</small></div><div class="q">&ldquo;switch to <b>gluten free</b> meals&rdquo;</div></div><div class="mk old" style="left:12%"></div>
+    <div class="ev dn cur" style="left:23%"><div class="role">current value<small>updated choice</small></div><div class="q">&ldquo;set my meal style to <b>mediterranean</b>&rdquo;</div></div><div class="mk cur" style="left:23%"></div>
+    <div class="ev up oth" style="left:43%"><div class="role">another variable<small>learning style</small></div><div class="q">&ldquo;<b>discussion</b> is the method that helps me most&rdquo;</div></div><div class="mk oth" style="left:43%"></div>
+    <div class="ev dn old" style="left:74%"><div class="role">old value mentioned again<small>near the question</small></div><div class="q">&ldquo;still thinking about <b>gluten free</b> &hellip; for my meal style&rdquo;</div></div><div class="mk old" style="left:74%"></div>
+    <div class="ev up qq" style="left:88%"><div class="role">question</div><div class="q">&ldquo;For my meal style, what is the latest value I chose?&rdquo;</div></div><div class="mk q" style="left:88%"></div>
+  </div>
+  <div class="ans"><span><span class="lab">answer:</span> <b class="bad">gluten free</b><span class="x bad">&times;</span></span><span><span class="lab">current value:</span> <b class="ok">mediterranean</b></span><span class="why">Right variable, outdated value</span></div>
+ </div>
+
+ <div class="case">
+  <div class="ptitle">(b) The answer uses another variable<i>Question about meal style</i></div>
+  <div class="tl"><div class="rail"></div>
+    <div class="skip" style="left:44%;width:42%"></div><div class="skiplab" style="left:64%">unrelated conversation</div>
+    <div class="ev up old" style="left:12%"><div class="role">old value<small>earlier choice</small></div><div class="q">&ldquo;update my preference to <b>keto</b>&rdquo;</div></div><div class="mk old" style="left:12%"></div>
+    <div class="ev dn cur" style="left:23%"><div class="role">current value<small>updated choice</small></div><div class="q">&ldquo;change my plan to <b>gluten free</b>&rdquo;</div></div><div class="mk cur" style="left:23%"></div>
+    <div class="ev up oth" style="left:44%"><div class="role">another variable<small>music genre</small></div><div class="q">&ldquo;change my selection to <b>hiphop</b>&rdquo;</div></div><div class="mk oth" style="left:44%"></div>
+    <div class="ev dn qq" style="left:88%"><div class="role">question</div><div class="q">&ldquo;For my meal style, what is the latest value I chose?&rdquo;</div></div><div class="mk q" style="left:88%"></div>
+  </div>
+  <div class="ans"><span><span class="lab">answer:</span> <b class="badx">hiphop</b><span class="x badx">&times;</span></span><span><span class="lab">current value:</span> <b class="ok">gluten free</b></span><span class="why">A recent value, but the wrong variable</span></div>
+ </div>
+</div></body></html>

@@ -1,0 +1,90 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "n": 1800,
+  "cells": [
+    {
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 2,
+      "accuracy": 0.88,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 4,
+      "accuracy": 0.64,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 20,
+      "interference_load": 8,
+      "accuracy": 0.5267,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 2,
+      "accuracy": 0.8467,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 4,
+      "accuracy": 0.6067,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 40,
+      "interference_load": 8,
+      "accuracy": 0.4467,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 2,
+      "accuracy": 0.7,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 4,
+      "accuracy": 0.58,
+      "n": 150
+    },
+    {
+      "condition": "interference",
+      "n_lines": 80,
+      "interference_load": 8,
+      "accuracy": 0.48,
+      "n": 150
+    },
+    {
+      "condition": "simple",
+      "n_lines": 20,
+      "interference_load": 0,
+      "accuracy": 1.0,
+      "n": 150
+    },
+    {
+      "condition": "simple",
+      "n_lines": 40,
+      "interference_load": 0,
+      "accuracy": 0.9867,
+      "n": 150
+    },
+    {
+      "condition": "simple",
+      "n_lines": 80,
+      "interference_load": 0,
+      "accuracy": 1.0,
+      "n": 150
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+benchmark=babilong arm=arm_l n_sample=10
+Audit purpose: inspect raw output, gold, v2 parse, and v2 error signature before trusting scores.
+
+--- sample 1 id=babilong-1113 task=qa3 length=4k
+gold: hallway
+raw: 'Sandra picked up the football.'
+pred: sandra picked up football
+correct: 0 signature: other
+
+--- sample 2 id=babilong-716 task=qa1 length=4k
+gold: office
+raw: 'John moved to the office.'
+pred: john moved to office
+correct: 1 signature: correct_value
+
+--- sample 3 id=babilong-276 task=qa2 length=0k
+gold: hallway
+raw: 'The milk is in the office.'
+pred: milk is in office
+correct: 0 signature: other
+
+--- sample 4 id=babilong-694 task=qa1 length=4k
+gold: bathroom
+raw: 'bathroom'
+pred: bathroom
+correct: 1 signature: correct_value
+
+--- sample 5 id=babilong-1141 task=qa3 length=4k
+gold: kitchen
+raw: 'John dropped the milk there.'
+pred: john dropped milk there
+correct: 0 signature: other
+
+--- sample 6 id=babilong-81 task=qa1 length=0k
+gold: bathroom
+raw: 'bathroom'
+pred: bathroom
+correct: 1 signature: correct_value
+
+--- sample 7 id=babilong-945 task=qa2 length=4k
+gold: kitchen
+raw: 'Daniel got the apple there.'
+pred: daniel got apple there
+correct: 0 signature: other
+
+--- sample 8 id=babilong-386 task=qa2 length=0k
+gold: office
+raw: 'discarded'
+pred: discarded
+correct: 0 signature: other
+
+--- sample 9 id=babilong-1001 task=qa3 length=4k
+gold: office
+raw: 'the office'
+pred: office
+correct: 1 signature: correct_value
+
+--- sample 10 id=babilong-1147 task=qa3 length=4k
+gold: garden
+raw: 'Daniel traveled to the office.'
+pred: daniel traveled to office
+correct: 0 signature: other

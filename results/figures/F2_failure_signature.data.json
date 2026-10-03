@@ -1,0 +1,76 @@
+{
+  "rows": [
+    {
+      "cross": 0.006006006006006006,
+      "label": "Qwen P0",
+      "other": 0.0,
+      "within_stale": 0.993993993993994
+    },
+    {
+      "cross": 0.017985611510791366,
+      "label": "Llama P0",
+      "other": 0.017985611510791366,
+      "within_stale": 0.9640287769784173
+    },
+    {
+      "cross": 0.0,
+      "label": "Nat Qwen:agent_log",
+      "other": 0.0,
+      "within_stale": 1.0
+    },
+    {
+      "cross": 0.0,
+      "label": "Nat Qwen:agent_log",
+      "other": 0.0,
+      "within_stale": 1.0
+    },
+    {
+      "cross": 0.0,
+      "label": "Nat Qwen:agent_log",
+      "other": 0.0,
+      "within_stale": 1.0
+    },
+    {
+      "cross": 0.0,
+      "label": "Nat Qwen:agent_log",
+      "other": 0.0,
+      "within_stale": 1.0
+    },
+    {
+      "cross": 0.0,
+      "label": "Nat Qwen:agent_log",
+      "other": 0.0,
+      "within_stale": 1.0
+    },
+    {
+      "cross": 0.0,
+      "label": "Nat Qwen:agent_log",
+      "other": 0.0,
+      "within_stale": 1.0
+    },
+    {
+      "cross": 0.0,
+      "label": "Nat Qwen:dialogue",
+      "other": 1.0,
+      "within_stale": 0.0
+    },
+    {
+      "cross": 0.0,
+      "label": "Nat Qwen:dialogue",
+      "other": 0.0,
+      "within_stale": 1.0
+    },
+    {
+      "cross": 0.0,
+      "label": "Nat Qwen:dialogue",
+      "other": 0.0,
+      "within_stale": 1.0
+    },
+    {
+      "cross": 0.0,
+      "label": "Nat Qwen:dialogue",
+      "other": 0.0,
+      "within_stale": 1.0
+    }
+  ]
+}

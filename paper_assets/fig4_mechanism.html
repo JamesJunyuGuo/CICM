@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><style>
+ /* canvas 1000 px = \textwidth (5.5 in): 1 px = 0.396 pt; min font 18 px = 7.1 pt */
+ /* PPT / Office style contract: white background, square corners, black ink, Arial, Office accent palette */
+ :root{--ink:#000;--muted:#404040;--hair:#BFBFBF;--cur:#2E7D5B;--old:#7B4FA0;--grid:#D9D9D9}
+ *{box-sizing:border-box;margin:0;padding:0}
+ html,body{width:1000px;height:356px;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+ .wrap{width:1000px;height:356px;padding:6px 10px 4px}
+ .cols{display:grid;grid-template-columns:722px 244px;gap:0 14px}
+ .sec{padding:4px 0 4px}
+ .sec.right{border-left:1px solid var(--hair);padding-left:14px}
+ .sl{font-size:19px;font-weight:bold;color:var(--ink);white-space:nowrap} .sl i{font-style:normal;font-weight:normal;color:var(--muted);font-size:18px}
+ .row{display:grid;gap:0 10px;align-items:start}
+ .r2{grid-template-columns:206px 196px 300px}
+ .ptitle{font-size:19px;font-weight:bold;line-height:1.15;white-space:nowrap;margin-top:4px}
+ .ptitle i{font-style:normal;font-weight:normal;color:var(--muted);font-size:18px;display:block}
+ svg{display:block} text{font-family:Arial,Helvetica,sans-serif}
+ .tk{font-size:18px;fill:#262626} .al{font-size:18px;fill:var(--ink)}
+</style></head><body><div class="wrap"><div class="cols">
+ <div class="sec"><div class="sl">Old-value vs. correct answers <i>(controlled dialogues, two models)</i></div>
+  <div class="row r2">
+   <div><div class="ptitle">(a) Still decodable<i>current-value probe score</i></div><svg id="P" width="206" height="266"></svg></div>
+   <div><div class="ptitle">(b) Final layer<i>attention share</i></div><svg id="C" width="196" height="266"></svg></div>
+   <div><div class="ptitle">(c) Attention drifts late<i>failures minus correct, length-adj.</i></div><svg id="D" width="300" height="266"></svg></div>
+  </div>
+ </div>
+ <div class="sec right"><div class="sl">With vs. without conflict</div>
+  <div class="ptitle">(d) Drift across models<i>six models, 95% intervals</i></div>
+  <svg id="A" width="224" height="266"></svg>
+ </div>
+</div></div>
+<script>
+const MODELC=["#37474F","#8C6D1F","#2F5597","#C0622D","#7B2D3B","#595959"];
+const D={"M": [["Pythia-160M", [0.275, 0.248, 0.304]], ["Pythia-1.4B", [0.287, 0.266, 0.308]], ["Qwen2.5-1.5B", [0.597, 0.561, 0.633]], ["Qwen2.5-7B", [0.581, 0.537, 0.629]], ["Llama-3.1-8B", [0.435, 0.407, 0.464]], ["Gemma-2-2B", [0.51, 0.464, 0.559], 1]], "share": {"correct_old": 57.598167419433594, "fail_old": 80.05625915527344, "n_correct": 471, "n_fail": 589}, "pl": [5.75, 2.65, 4.1, 3.8, -1.68, 1.61, -0.71, 0.37, 4.75, -0.11, -0.43, 4.95, 5.74, 6.52, 6.42, 7.08, 5.86, 3.79, 10.35, 10.94, 14.03, 17.76, 24.9, 19.44, 14.13, 14.64, 16.88, 19.23], "lo": [4.24, 1.29, 2.85, 2.45, -3.33, 0.39, -2.39, -1.04, 3.62, -1.15, -1.66, 3.97, 4.6, 5.04, 5.22, 5.89, 4.85, 3.02, 9.12, 9.56, 12.79, 16.59, 23.7, 18.16, 12.66, 13.27, 15.44, 17.88], "hi": [7.3, 4.03, 5.35, 5.14, 0.08, 2.84, 0.9, 1.68, 5.91, 0.96, 0.87, 6.03, 6.92, 7.98, 7.6, 8.17, 7.04, 4.6, 11.59, 12.37, 15.31, 19.15, 26.17, 20.75, 15.62, 15.89, 18.2, 20.63], "cm": {"Qwen2.5-7B": [19.4, 17.9, 21.0], "Llama-3.1-8B": [1.2, -0.5, 2.8]}, "probe": {"Qwen2.5-7B": {"correct": {"mean": 0.9274352748380995, "ci": [0.908423839267525, 0.9443536089474992], "n": 471, "q": [0.8173744507395084, 0.9788734041772633, 0.9974364086378903, 0.9995735219330832, 0.9999268366828941]}, "failure": {"mean": 0.8484686191197879, "ci": [0.8277422331460733, 0.8702304302044576], "n": 589, "q": [0.4273735096799435, 0.8383109879404401, 0.9826491502927501, 0.9979169877008804, 0.9997057332398598]}, "shuffle_ci": [0.03186157155764323, 0.06385486765497339], "cv_acc": 0.9125}, "Llama-3.1-8B": {"correct": {"mean": 0.912357839467587, "ci": [0.8936340078325635, 0.9304320608966697], "n": 458, "q": [0.6906791907611812, 0.9617756878141451, 0.9959932715378157, 0.9996271804654598, 0.9999133671315659]}, "failure": {"mean": 0.8219781806227444, "ci": [0.7985989696235853, 0.8444193221694025], "n": 634, "q": [0.2629575188276324, 0.7979153924902963, 0.9809010351732406, 0.9978534629753717, 0.9996805105089736]}, "shuffle_ci": [0.03214537198819564, 0.06352049026177288], "cv_acc": 0.8966666666666666}}}, OLD="#7B4FA0",CUR="#2E7D5B",INK="#000000",MU="#404040",LL="#7F7F7F",GRID="#D9D9D9",AX="#000000";
+// a: probe score for the current value, correct vs. old-value answers, two models; chance = shuffled-label band
+(function(){
+  const s=document.getElementById("P"), W=206, H=266, p={l:54,r:14,t:24,b:64}, x0=p.l,x1=W-p.r,y0=H-p.b,y1=p.t, Y=v=>y0-v*(y0-y1); let h="";
+  for(const t of [0,0.5,1]) h+=`<line x1="${x0}" x2="${x1}" y1="${Y(t)}" y2="${Y(t)}" stroke="${GRID}"/><line x1="${x0-4}" x2="${x0}" y1="${Y(t)}" y2="${Y(t)}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${x0-7}" y="${Y(t)+6}" text-anchor="end">${t}</text>`;
+  h+=`<text class="al" transform="translate(12,${(y0+y1)/2}) rotate(-90)" text-anchor="middle">Probe probability</text>`;
+  const models=Object.keys(D.probe), gw=(x1-x0)/2, bw=24;
+  models.forEach((m,i)=>{const g=D.probe[m], gx=x0+i*gw+gw/2;
+    [["correct",CUR,-bw/2-3],["failure",OLD,bw/2+3]].forEach(([k,c,dx])=>{const v=g[k], x=gx+dx-bw/2;
+      h+=`<rect x="${x}" y="${Y(v.mean)}" width="${bw}" height="${y0-Y(v.mean)}" fill="${c===CUR?"#CFE6DA":"#E4D6F2"}" stroke="${c}" stroke-width="1.3"/>`;
+      h+=`<line x1="${x+bw/2}" x2="${x+bw/2}" y1="${Y(v.ci[0])}" y2="${Y(v.ci[1])}" stroke="${INK}" stroke-width="1.5"/>`;
+      });
+    h+=`<text class="tk" x="${gx}" y="${y0+22}" text-anchor="middle">${i===0?"Qwen":"Llama"}</text>`;});
+  const sc=D.probe[models[0]].shuffle_ci; h+=`<rect x="${x0}" y="${Y(sc[1])}" width="${x1-x0}" height="${Y(sc[0])-Y(sc[1])}" fill="#8C8C8C" opacity=".5"/>`;
+  h+=`<text class="tk" x="${x1-2}" y="${Y(sc[1])-6}" text-anchor="end" fill="#000" font-weight="bold">chance</text>`;
+  h+=`<line x1="${x0}" x2="${x0}" y1="${y1}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/><line x1="${x0}" x2="${x1}" y1="${y0}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/>`;
+  h+=`<rect x="${x0-30}" y="${y0+36}" width="12" height="12" fill="#CFE6DA" stroke="${CUR}" stroke-width="1.3"/><text class="tk" x="${x0-13}" y="${y0+47}">correct</text><rect x="${x0+58}" y="${y0+36}" width="12" height="12" fill="#E4D6F2" stroke="${OLD}" stroke-width="1.3"/><text class="tk" x="${x0+75}" y="${y0+47}">old-value</text>`;
+  s.innerHTML=h;
+})();
+// b: shares
+(function(){
+  const s=document.getElementById("C"), x0=10, x1=174, y0=28, dy=78, H=34, X=v=>x0+v/100*(x1-x0); let h="";
+  const rows=[["correct",100-D.share.correct_old,D.share.correct_old],["old-value",100-D.share.fail_old,D.share.fail_old]];
+  rows.forEach(([n,c,o],i)=>{const y=y0+i*dy;
+    h+=`<text x="${x0}" y="${y-7}" font-size="18" font-weight="bold" fill="${INK}">${n} answers</text>`;
+    h+=`<rect x="${X(0)}" y="${y}" width="${X(c)-X(0)}" height="${H}" fill="#CFE6DA" stroke="${CUR}" stroke-width="1.3"/><rect x="${X(c)}" y="${y}" width="${X(100)-X(c)}" height="${H}" fill="#E4D6F2" stroke="${OLD}" stroke-width="1.3"/>`;
+    h+=`<text x="${X(c+o/2)}" y="${y+H/2+6}" text-anchor="middle" font-size="17" fill="#262626">${o.toFixed(0)}%</text>`;});
+  const ya=y0+2*dy-14; for(const t of [0,50,100]) h+=`<line x1="${X(t)}" x2="${X(t)}" y1="${ya}" y2="${ya+5}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${X(t)}" y="${ya+22}" text-anchor="middle">${t}</text>`;
+  h+=`<line x1="${x0}" x2="${x1}" y1="${ya}" y2="${ya}" stroke="${AX}" stroke-width="1.4"/>`;
+  h+=`<text class="tk" x="${(x0+x1)/2}" y="${ya+44}" text-anchor="middle">share (%)</text>`;
+  h+=`<rect x="${x0-6}" y="${ya+68}" width="12" height="12" fill="#CFE6DA" stroke="${CUR}" stroke-width="1.3"/><text class="tk" x="${x0+11}" y="${ya+79}">current</text><rect x="${x0+76}" y="${ya+68}" width="12" height="12" fill="#E4D6F2" stroke="${OLD}" stroke-width="1.3"/><text class="tk" x="${x0+93}" y="${ya+79}">old (all k)</text>`;
+  s.innerHTML=h;
+})();
+// c: per layer (model 1) + model 2 final layer
+(function(){
+  const s=document.getElementById("D"), W=300, H=266, p={l:38,r:46,t:12,b:64}, n=28;
+  const x0=p.l,x1=W-p.r,y0=H-p.b,y1=p.t, X=i=>x0+i/(n-1)*(x1-x0), Y=v=>y0-(v+4)/34*(y0-y1); let h="";
+  h+=`<rect x="${X(19)-4}" y="${y1}" width="${X(27)-X(19)+8}" height="${y0-y1}" fill="#EDEDED"/>`;
+  for(const t of [0,10,20,30]) h+=`<line x1="${x0}" x2="${x1}" y1="${Y(t)}" y2="${Y(t)}" stroke="${t?GRID:'#000'}" stroke-width="${t?1:1.3}"/><line x1="${x0-4}" x2="${x0}" y1="${Y(t)}" y2="${Y(t)}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${x0-7}" y="${Y(t)+6}" text-anchor="end">${t}</text>`;
+  const band=D.hi.map((v,i)=>(i?"L":"M")+X(i)+","+Y(v)).join(" ")+" "+D.lo.map((v,i)=>"L"+X(n-1-i)+","+Y(D.lo[n-1-i])).join(" ")+" Z";
+  h+=`<path d="${band}" fill="#37474F" opacity=".20"/><path d="${D.pl.map((v,i)=>(i?"L":"M")+X(i)+","+Y(v)).join(" ")}" fill="none" stroke="#37474F" stroke-width="2.2"/>`;
+  h+=`<line x1="${x0}" x2="${x0}" y1="${y1}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/><line x1="${x0}" x2="${x1}" y1="${y0}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/>`;
+  for(const t of [0,10,20,27]) h+=`<line x1="${X(t)}" x2="${X(t)}" y1="${y0}" y2="${y0+4}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${X(t)}" y="${y0+22}" text-anchor="middle">${t}</text>`;
+  h+=`<text class="al" x="${(x0+x1)/2}" y="${y0+44}" text-anchor="middle">layer (Qwen)</text><text class="tk" x="${x0+4}" y="${y1+38}">percentage points</text>`;
+  h+=`<text class="tk" x="${X(23)}" y="${y1+16}" text-anchor="middle" fill="#262626">last third</text>`;
+  const [qv]=D.cm["Qwen2.5-7B"]; h+=`<text x="${X(27)+4}" y="${Y(D.pl[27])+6}" font-size="17" fill="#262626">+${qv.toFixed(1)}</text>`;
+  s.innerHTML=h;
+})();
+// d: six models, attention only
+(function(){
+  const s=document.getElementById("A"), W=224, L=110, x0=L, x1=W-8, T0=14, DY=27, X=v=>x0+v/0.7*(x1-x0); let h="";
+  const yb=T0+5*DY+16;
+  for(const t of [0,0.3,0.6]) h+=`<line x1="${X(t)}" x2="${X(t)}" y1="${T0-8}" y2="${yb}" stroke="${t?GRID:'#000'}" stroke-width="${t?1:1.3}"/><line x1="${X(t)}" x2="${X(t)}" y1="${yb}" y2="${yb+4}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${X(t)}" y="${yb+22}" text-anchor="middle">${t}</text>`;
+  D.M.forEach((m,i)=>{const y=T0+i*DY, hollow=m[2];
+    h+=`<text x="${L-8}" y="${y+6}" text-anchor="end" font-size="18" fill="${INK}">${m[0].replace('Qwen2.5-','Qwen ').replace('Llama-3.1-','Llama ').replace('Gemma-2-','Gemma ').replace('Pythia-','Pythia ')}</text>`;
+    const [a,al,ah]=m[1], mc=MODELC[i%6]; h+=`<line x1="${X(al)}" x2="${X(ah)}" y1="${y}" y2="${y}" stroke="${mc}" stroke-width="1.8"/><circle cx="${X(a)}" cy="${y}" r="5.5" fill="${hollow?'#fff':mc}" stroke="${mc}" stroke-width="2"/>`;});
+  h+=`<line x1="${x0}" x2="${x1}" y1="${yb}" y2="${yb}" stroke="${AX}" stroke-width="1.4"/>`;
+  h+=`<text class="tk" x="${(x0+x1)/2-10}" y="${yb+46}" text-anchor="middle">log-ratio shift</text><text class="tk" x="${(x0+x1)/2-10}" y="${yb+66}" text-anchor="middle">toward old</text>`;
+  s.innerHTML=h;
+})();
+</script>
+</body></html>

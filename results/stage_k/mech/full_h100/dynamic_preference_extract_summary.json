@@ -1,0 +1,11 @@
+{
+  "scenario": "dynamic_preference",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "dtype": "float32",
+  "n": 783,
+  "max_new_tokens": 160,
+  "npz": "results/stage_k/mech/full_h100/dynamic_preference.npz",
+  "index": "results/stage_k/mech/full_h100/dynamic_preference_index.jsonl",
+  "responses": "results/stage_k/mech/full_h100/dynamic_preference_local_responses.json",
+  "value_span_found": 783
+}

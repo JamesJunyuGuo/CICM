@@ -1,0 +1,29 @@
+% Counts generated from the saved confirmation analysis, k=256 only.
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\caption{High-load updates ($k=256$): 36 frozen scenarios per setting.
+Controls report correct answers; overwrite columns distinguish current and old values.}
+\label{tab:highload-compact}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Model & Output, token cap & Current & Old & No overwrite & Cross-record \\
+\midrule
+Qwen2.5-7B & Direct, 32 & 0/36 & 36/36 & 34/36 & 36/36 \\
+Qwen2.5-7B & Direct, 512 & 0/36 & 36/36 & 34/36 & 36/36 \\
+Qwen2.5-7B & Concise, 512 & 0/36 & 32/36 & 36/36 & 33/36 \\
+GPT-4o & Direct, 32 & 3/36 & 31/36 & 36/36 & 36/36 \\
+GPT-4o & Direct, 512 & 3/36 & 32/36 & 36/36 & 36/36 \\
+GPT-4o & Concise, 512 & 4/36 & 32/36 & 36/36 & 36/36 \\
+GPT-5 & Reasoning, 8,192 & 36/36 & 0/36 & 36/36 & 36/36 \\
+Gemini 3.1 Pro & Reasoning, 8,192 & 36/36 & 0/36 & 36/36 & 36/36 \\
+DeepSeek V4 Pro & Reasoning, 32,768 & 34/36 & 2/36 & 35/36 & 35/36 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\linewidth}{\footnotesize All requested prompts remain in the denominator.
+At this load, every overwrite response completes; remaining overwrite outcomes
+are other answers (Qwen concise: 4; GPT-4o direct-32: 2; direct-512: 1).
+DeepSeek's no-overwrite control has one unsuccessful provider finish;
+all other control errors are other answers.}
+\end{table}

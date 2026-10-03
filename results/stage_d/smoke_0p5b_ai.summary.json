@@ -1,0 +1,19 @@
+{
+  "stage": "D",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "data": "data/stage_d/eval_all.jsonl",
+  "dtype": "bfloat16",
+  "limit": 20,
+  "n": 20,
+  "cells": [
+    {
+      "task_family": "ruler_style",
+      "stage_d_cell": "retrieval",
+      "answer_type": "int",
+      "n": 20,
+      "accuracy": 1.0,
+      "stale_rate": 0.0,
+      "other_error_rate": 0.0
+    }
+  ]
+}

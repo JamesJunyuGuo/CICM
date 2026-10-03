@@ -1,0 +1,51 @@
+{
+  "n": 20,
+  "counts": {
+    "correct_current": 14,
+    "within_stale": 3,
+    "cross_slot": 3
+  },
+  "by_label": {
+    "correct_current": {
+      "n": 14,
+      "mean_recent_other_distance": 2.0,
+      "mean_target_current_distance": 14.0,
+      "mean_nearest_same_slot_stale_distance": 18.0
+    },
+    "cross_slot": {
+      "n": 3,
+      "mean_recent_other_distance": 2.0,
+      "mean_target_current_distance": 14.0,
+      "mean_nearest_same_slot_stale_distance": 18.0
+    },
+    "within_stale": {
+      "n": 3,
+      "mean_recent_other_distance": 2.0,
+      "mean_target_current_distance": 14.0,
+      "mean_nearest_same_slot_stale_distance": 18.0
+    }
+  },
+  "by_dose": {
+    "1": {
+      "correct_current": 3,
+      "within_stale": 1
+    },
+    "2": {
+      "correct_current": 4
+    },
+    "3": {
+      "within_stale": 1,
+      "correct_current": 2,
+      "cross_slot": 1
+    },
+    "4": {
+      "within_stale": 1,
+      "cross_slot": 1,
+      "correct_current": 2
+    },
+    "6": {
+      "correct_current": 3,
+      "cross_slot": 1
+    }
+  }
+}

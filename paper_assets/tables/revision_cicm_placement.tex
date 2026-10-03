@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{Matched placement of an explicitly historical value. Each model answers 600 paired dialogues; the current update, other-variable updates, message count, and message-content multiset are fixed within a pair.}
+\label{tab:revision-cicm-placement}
+\begin{tabularx}{\textwidth}{@{}lXrrr@{}}
+\toprule
+Model & Answer type & Far (\%) & Near (\%) & Difference, pp [95\% CI] \\
+\midrule
+Qwen2.5-7B & Current value & 58.8 & 46.7 & $-12.2\;[-16.7,\,-7.5]$ \\
+ & Old value & 14.8 & 36.7 & $+21.8\;[18.0,\,25.8]$ \\
+\addlinespace
+GPT-4o & Current value & 98.3 & 96.5 & $-1.8\;[-3.2,\,-0.5]$ \\
+ & Old value & 0.0 & 0.0 & $0.0\;[0.0,\,0.0]$ \\
+\bottomrule
+\end{tabularx}
+\vspace{3pt}\parbox{\linewidth}{\footnotesize Differences are near minus far. Intervals use 2,000 paired bootstrap resamples of source dialogues (seed 20260920). Both arms explicitly identify the repeated value as obsolete and ask for the latest explicit update. GPT-4o produces no old-value answers in either arm, yielding a degenerate empirical bootstrap interval; the Wilson upper endpoint for each 0/600 rate is 0.64\%.}
+\end{table}

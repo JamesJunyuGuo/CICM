@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><style>
+ /* canvas 1000 px = \textwidth (5.5 in): 1 px = 0.396 pt; min font 18 px = 7.1 pt */
+ /* Style contract D: Arial, white, square corners, black ink, Office palette */
+ :root{--ink:#000;--muted:#404040;--hair:#BFBFBF;--cur:#4472C4;--old:#ED7D31;--grid:#D9D9D9}
+ *{box-sizing:border-box;margin:0;padding:0}
+ html,body{width:1000px;height:300px;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+ .wrap{width:1000px;height:300px;padding:6px 10px 4px}
+ .cols{display:grid;grid-template-columns:330px 636px;gap:0 14px}
+ .sec{padding:4px 0 4px}
+ .sec.right{border-left:1px solid var(--hair);padding-left:14px}
+ .ptitle{font-size:19px;font-weight:bold;line-height:1.15;white-space:nowrap;margin-top:2px}
+ .ptitle i{font-style:normal;font-weight:normal;color:var(--muted);font-size:18px;display:block}
+ svg{display:block} text{font-family:Arial,Helvetica,sans-serif}
+ .tk{font-size:18px;fill:#262626} .al{font-size:18px;fill:var(--ink)}
+</style></head><body><div class="wrap"><div class="cols">
+ <div class="sec"><div class="ptitle">(a) Fixed-score prediction<i>log-odds of current vs. old = &Delta;/T &minus; log k</i></div>
+  <svg id="F" width="316" height="212"></svg></div>
+ <div class="sec right"><div class="ptitle">(b) Held-out test: fit the intercept at low k, predict higher k<i>observed vs. predicted current-answer rate (%), slope fixed at &minus;1</i></div>
+  <svg id="H" width="614" height="212"></svg></div>
+</div></div>
+<script>
+const R=[["20 lines", "k 2,4 → 8", 51.5, 57.2, "pass"], ["40 lines", "k 2,4 → 8", 45.0, 51.5, "pass"], ["80 lines", "k 2,4 → 8", 38.4, 38.5, "pass"], ["scale sweep, 7B", "k 2–8 → 12", 40.0, 51.2, "near"], ["scale sweep, 7B", "k 2–8 → 16", 36.0, 44.0, "near"], ["scale sweep, 8B", "k 2–8 → 12", 15.3, 10.0, "pass"], ["scale sweep, 8B", "k 2–8 → 16", 10.0, 7.7, "pass"], ["scale sweep, 70B", "k 2–8 → 12", 86.0, 96.6, "fail"], ["scale sweep, 70B", "k 2–8 → 16", 77.0, 95.6, "fail"], ["natural dialogues", "k 1–3 → 4", 37.6, 30.2, "fail"], ["natural dialogues", "k 1–3 → 6", 36.9, 22.4, "fail"]], CUR="#4472C4",OLD="#ED7D31",INK="#000000",MU="#404040",AX="#000",GRID="#D9D9D9";
+(function(){
+  const s=document.getElementById("F"), W=316, H=212, p={l:52,r:10,t:14,b:46}, x0=p.l,x1=W-p.r,y0=H-p.b,y1=p.t;
+  const X=k=>x0+(Math.log2(k))/6*(x1-x0), Y=v=>y0-(v+3)/6*(y0-y1); let h="";
+  for(const t of [-2,0,2]) h+=`<line x1="${x0}" x2="${x1}" y1="${Y(t)}" y2="${Y(t)}" stroke="${t?GRID:'#000'}" stroke-width="${t?1:1.3}"/><line x1="${x0-4}" x2="${x0}" y1="${Y(t)}" y2="${Y(t)}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${x0-7}" y="${Y(t)+6}" text-anchor="end">${t}</text>`;
+  for(const k of [1,2,4,8,16,32,64]) h+=`<line x1="${X(k)}" x2="${X(k)}" y1="${y0}" y2="${y0+4}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${X(k)}" y="${y0+22}" text-anchor="middle">${k}</text>`;
+  [[1.0,"#7F7F7F","smaller Δ",""],[2.5,CUR,"larger Δ","6 4"]].forEach(([b,c,lab,dash])=>{
+    const pts=[1,2,4,8,16,32,64].map(k=>[X(k),Y(b-Math.log(k))]);
+    h+=`<path d="${pts.map((q,i)=>(i?"L":"M")+q[0]+","+q[1]).join(" ")}" fill="none" stroke="${c}" stroke-width="2.4" ${dash?`stroke-dasharray="${dash}"`:''}/>`;});
+  h+=`<line x1="${x0}" x2="${x0}" y1="${y1}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/><line x1="${x0}" x2="${x1}" y1="${y0}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/>`;
+  h+=`<text class="al" x="${(x0+x1)/2}" y="${y0+44}" text-anchor="middle">old values k (log scale)</text><text class="al" transform="translate(15,${(y0+y1)/2}) rotate(-90)" text-anchor="middle">log-odds, current : old</text>`;
+  h+=`<text class="tk" x="${X(3)}" y="${Y(2.5-Math.log(3))-10}" fill="${CUR}" font-weight="bold">larger Δ</text><text class="tk" x="${X(3)}" y="${Y(1-Math.log(3))+22}" fill="#7F7F7F" font-weight="bold">smaller Δ</text>`;
+  h+=`<text class="tk" x="${x1-2}" y="${Y(0)-8}" text-anchor="end">old group wins below 0</text>`;
+  s.innerHTML=h;
+})();
+(function(){
+  const s=document.getElementById("H"), W=614, H=212, p={l:52,r:252,t:12,b:46}, x0=p.l,x1=W-p.r,y0=H-p.b,y1=p.t;
+  const X=v=>x0+v/100*(x1-x0), Y=v=>y0-v/100*(y0-y1); let h="";
+  for(const t of [0,50,100]) h+=`<line x1="${x0}" x2="${x1}" y1="${Y(t)}" y2="${Y(t)}" stroke="${GRID}"/><line x1="${X(t)}" x2="${X(t)}" y1="${y1}" y2="${y0}" stroke="${GRID}"/><line x1="${x0-4}" x2="${x0}" y1="${Y(t)}" y2="${Y(t)}" stroke="${AX}" stroke-width="1.2"/><line x1="${X(t)}" x2="${X(t)}" y1="${y0}" y2="${y0+4}" stroke="${AX}" stroke-width="1.2"/><text class="tk" x="${x0-7}" y="${Y(t)+6}" text-anchor="end">${t}</text><text class="tk" x="${X(t)}" y="${y0+22}" text-anchor="middle">${t}</text>`;
+  h+=`<line x1="${X(0)}" x2="${X(100)}" y1="${Y(0)}" y2="${Y(100)}" stroke="#000" stroke-width="1.2" stroke-dasharray="5 4"/>`;
+  const col={pass:CUR,near:"#FFC000",fail:OLD};
+  const shape=(k,x,y,r)=>k==="pass"?`<circle cx="${x}" cy="${y}" r="${r}" fill="${col[k]}" stroke="#fff" stroke-width="1"/>`:k==="near"?`<rect x="${x-r}" y="${y-r}" width="${2*r}" height="${2*r}" fill="${col[k]}" stroke="#fff" stroke-width="1"/>`:`<path d="M${x},${y-r-1.5} L${x+r+1.5},${y+r} L${x-r-1.5},${y+r} Z" fill="${col[k]}" stroke="#fff" stroke-width="1"/>`;
+  R.forEach(r=>{h+=shape(r[4],X(r[3]),Y(r[2]),6);});
+  h+=`<line x1="${x0}" x2="${x0}" y1="${y1}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/><line x1="${x0}" x2="${x1}" y1="${y0}" y2="${y0}" stroke="${AX}" stroke-width="1.4"/>`;
+  h+=`<text class="al" x="${(x0+x1)/2}" y="${y0+44}" text-anchor="middle">predicted (%)</text><text class="al" transform="translate(15,${(y0+y1)/2}) rotate(-90)" text-anchor="middle">observed (%)</text>`;
+  // side legend / list
+  const lx=x1+20; let ly=y1+8;
+  [["pass","pass: controlled contexts, 7B/8B"],["near","near a bound: 7B sweep"],["fail","fail: 70B sweep, dialogues"]].forEach(([k,t])=>{
+    h+=shape(k,lx,ly+2,6); const parts=t.split(": "); h+=`<text x="${lx+14}" y="${ly+7}" font-size="18" font-weight="bold" fill="${INK}">${parts[0]}:</text><text x="${lx+14}" y="${ly+27}" font-size="18" fill="${MU}">${parts[1]}</text>`; ly+=54;});
+  h+=`<text x="${lx}" y="${ly+4}" font-size="18" fill="${MU}">dashed: perfect prediction</text>`;
+  s.innerHTML=h;
+})();
+</script>
+</body></html>

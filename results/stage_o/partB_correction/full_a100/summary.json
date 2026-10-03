@@ -1,0 +1,587 @@
+{
+  "claim_boundary": "A 160M inference-time existence test, not a deployable or cross-scale repair. LM loss applies the query-position rule at every next-token prediction site.",
+  "curve": [
+    {
+      "gamma": 1.0,
+      "gate": {
+        "correct_preservation_at_least_0.95": true,
+        "correction_exceeds_random95": false,
+        "gamma_below_one": false,
+        "k0_drop_at_most_0.02": true,
+        "lm_materiality": "Report numerically; no post-hoc threshold is imposed.",
+        "lm_targeted_minus_random_mean": 0.0,
+        "three_hard_controls_pass": false
+      },
+      "random": {
+        "correct_preservation": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "n": 64,
+          "quantile95": [
+            1.0,
+            1.0
+          ]
+        },
+        "correction": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 64,
+          "quantile95": [
+            0.0,
+            0.0
+          ]
+        },
+        "k0_accuracy": {
+          "max": 0.9891975308641975,
+          "mean": 0.9891975308641976,
+          "min": 0.9891975308641975,
+          "n": 64,
+          "quantile95": [
+            0.9891975308641975,
+            0.9891975308641975
+          ]
+        },
+        "lm_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 64,
+          "quantile95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "targeted": {
+        "correct_prediction_changes": 0,
+        "correct_preservation": 1.0,
+        "correction": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n": 73
+        },
+        "k0_accuracy": 0.9891975308641975,
+        "k0_prediction_changes": 0,
+        "lm_delta": 0.0,
+        "lm_loss": 3.592327308629956,
+        "max_abs_gap_change": 0.0
+      }
+    },
+    {
+      "gamma": 0.9,
+      "gate": {
+        "correct_preservation_at_least_0.95": true,
+        "correction_exceeds_random95": false,
+        "gamma_below_one": true,
+        "k0_drop_at_most_0.02": true,
+        "lm_materiality": "Report numerically; no post-hoc threshold is imposed.",
+        "lm_targeted_minus_random_mean": -0.00067209350386397,
+        "three_hard_controls_pass": false
+      },
+      "random": {
+        "correct_preservation": {
+          "max": 1.0,
+          "mean": 0.9938271604938271,
+          "min": 0.9629629629629629,
+          "n": 64,
+          "quantile95": [
+            0.9700617283950617,
+            1.0
+          ]
+        },
+        "correction": {
+          "max": 0.0410958904109589,
+          "mean": 0.020119863013698627,
+          "min": 0.0,
+          "n": 64,
+          "quantile95": [
+            0.0,
+            0.0410958904109589
+          ]
+        },
+        "k0_accuracy": {
+          "max": 0.9907407407407407,
+          "mean": 0.9892698688271605,
+          "min": 0.9876543209876543,
+          "n": 64,
+          "quantile95": [
+            0.9876543209876543,
+            0.9907407407407407
+          ]
+        },
+        "lm_delta": {
+          "max": 0.009966479775333603,
+          "mean": 0.004845317900191916,
+          "min": 0.0010045988113125404,
+          "n": 64,
+          "quantile95": [
+            0.0016918567278994769,
+            0.009528998747193184
+          ]
+        }
+      },
+      "targeted": {
+        "correct_prediction_changes": 0,
+        "correct_preservation": 1.0,
+        "correction": {
+          "ci": [
+            0.0,
+            0.0684931506849315
+          ],
+          "mean": 0.0273972602739726,
+          "n": 73
+        },
+        "k0_accuracy": 0.9938271604938271,
+        "k0_prediction_changes": 3,
+        "lm_delta": 0.004173224396327946,
+        "lm_loss": 3.596500533026284,
+        "max_abs_gap_change": 0.52313232421875
+      }
+    },
+    {
+      "gamma": 0.7,
+      "gate": {
+        "correct_preservation_at_least_0.95": true,
+        "correction_exceeds_random95": false,
+        "gamma_below_one": true,
+        "k0_drop_at_most_0.02": true,
+        "lm_materiality": "Report numerically; no post-hoc threshold is imposed.",
+        "lm_targeted_minus_random_mean": -0.0009660272872173692,
+        "three_hard_controls_pass": false
+      },
+      "random": {
+        "correct_preservation": {
+          "max": 1.0,
+          "mean": 0.9573688271604938,
+          "min": 0.8271604938271605,
+          "n": 64,
+          "quantile95": [
+            0.8395061728395061,
+            1.0
+          ]
+        },
+        "correction": {
+          "max": 0.1506849315068493,
+          "mean": 0.052011986301369856,
+          "min": 0.0,
+          "n": 64,
+          "quantile95": [
+            0.0,
+            0.12910958904109585
+          ]
+        },
+        "k0_accuracy": {
+          "max": 0.9938271604938271,
+          "mean": 0.9836998456790124,
+          "min": 0.9614197530864198,
+          "n": 64,
+          "quantile95": [
+            0.9638503086419753,
+            0.9929398148148147
+          ]
+        },
+        "lm_delta": {
+          "max": 0.04663546503375393,
+          "mean": 0.023249507928464003,
+          "min": 0.00963706947082299,
+          "n": 64,
+          "quantile95": [
+            0.01091977270766592,
+            0.039719313751928075
+          ]
+        }
+      },
+      "targeted": {
+        "correct_prediction_changes": 1,
+        "correct_preservation": 0.9876543209876543,
+        "correction": {
+          "ci": [
+            0.0273972602739726,
+            0.1506849315068493
+          ],
+          "mean": 0.0821917808219178,
+          "n": 73
+        },
+        "k0_accuracy": 1.0,
+        "k0_prediction_changes": 7,
+        "lm_delta": 0.022283480641246634,
+        "lm_loss": 3.6146107892712025,
+        "max_abs_gap_change": 1.7508544921875
+      }
+    },
+    {
+      "gamma": 0.5,
+      "gate": {
+        "correct_preservation_at_least_0.95": true,
+        "correction_exceeds_random95": true,
+        "gamma_below_one": true,
+        "k0_drop_at_most_0.02": true,
+        "lm_materiality": "Report numerically; no post-hoc threshold is imposed.",
+        "lm_targeted_minus_random_mean": -0.009766406526337715,
+        "three_hard_controls_pass": true
+      },
+      "random": {
+        "correct_preservation": {
+          "max": 1.0,
+          "mean": 0.9079861111111112,
+          "min": 0.5925925925925926,
+          "n": 64,
+          "quantile95": [
+            0.7037037037037037,
+            1.0
+          ]
+        },
+        "correction": {
+          "max": 0.1780821917808219,
+          "mean": 0.06592465753424656,
+          "min": 0.0,
+          "n": 64,
+          "quantile95": [
+            0.007876712328767126,
+            0.1623287671232876
+          ]
+        },
+        "k0_accuracy": {
+          "max": 0.9953703703703703,
+          "mean": 0.966820987654321,
+          "min": 0.8950617283950617,
+          "n": 64,
+          "quantile95": [
+            0.9005787037037037,
+            0.994483024691358
+          ]
+        },
+        "lm_delta": {
+          "max": 0.14029513328648946,
+          "mean": 0.06558431018500406,
+          "min": 0.024605833608628558,
+          "n": 64,
+          "quantile95": [
+            0.028680539660493165,
+            0.12384667206253876
+          ]
+        }
+      },
+      "targeted": {
+        "correct_prediction_changes": 4,
+        "correct_preservation": 0.9506172839506173,
+        "correction": {
+          "ci": [
+            0.0821917808219178,
+            0.2469178082191762
+          ],
+          "mean": 0.1643835616438356,
+          "n": 73
+        },
+        "k0_accuracy": 0.9938271604938271,
+        "k0_prediction_changes": 9,
+        "lm_delta": 0.055817903658666346,
+        "lm_loss": 3.648145212288622,
+        "max_abs_gap_change": 2.96417236328125
+      }
+    },
+    {
+      "gamma": 0.3,
+      "gate": {
+        "correct_preservation_at_least_0.95": false,
+        "correction_exceeds_random95": true,
+        "gamma_below_one": true,
+        "k0_drop_at_most_0.02": true,
+        "lm_materiality": "Report numerically; no post-hoc threshold is imposed.",
+        "lm_targeted_minus_random_mean": -0.030372430619804214,
+        "three_hard_controls_pass": false
+      },
+      "random": {
+        "correct_preservation": {
+          "max": 1.0,
+          "mean": 0.8331404320987654,
+          "min": 0.2716049382716049,
+          "n": 64,
+          "quantile95": [
+            0.39197530864197533,
+            1.0
+          ]
+        },
+        "correction": {
+          "max": 0.2465753424657534,
+          "mean": 0.07384417808219176,
+          "min": 0.0,
+          "n": 64,
+          "quantile95": [
+            0.0,
+            0.19554794520547933
+          ]
+        },
+        "k0_accuracy": {
+          "max": 0.9969135802469136,
+          "mean": 0.9295187114197532,
+          "min": 0.7407407407407407,
+          "n": 64,
+          "quantile95": [
+            0.7844135802469137,
+            0.9953703703703703
+          ]
+        },
+        "lm_delta": {
+          "max": 0.2467716402160236,
+          "mean": 0.14003383896550814,
+          "min": 0.05025666552067065,
+          "n": 64,
+          "quantile95": [
+            0.05537686156293207,
+            0.23244233277368612
+          ]
+        }
+      },
+      "targeted": {
+        "correct_prediction_changes": 6,
+        "correct_preservation": 0.9259259259259259,
+        "correction": {
+          "ci": [
+            0.1232876712328767,
+            0.3150684931506849
+          ],
+          "mean": 0.2191780821917808,
+          "n": 73
+        },
+        "k0_accuracy": 0.9938271604938271,
+        "k0_prediction_changes": 9,
+        "lm_delta": 0.10966140834570393,
+        "lm_loss": 3.70198871697566,
+        "max_abs_gap_change": 4.240478515625
+      }
+    },
+    {
+      "gamma": 0.1,
+      "gate": {
+        "correct_preservation_at_least_0.95": false,
+        "correction_exceeds_random95": true,
+        "gamma_below_one": true,
+        "k0_drop_at_most_0.02": true,
+        "lm_materiality": "Report numerically; no post-hoc threshold is imposed.",
+        "lm_targeted_minus_random_mean": -0.02574588884851481,
+        "three_hard_controls_pass": false
+      },
+      "random": {
+        "correct_preservation": {
+          "max": 1.0,
+          "mean": 0.7424768518518519,
+          "min": 0.16049382716049382,
+          "n": 64,
+          "quantile95": [
+            0.1941358024691358,
+            1.0
+          ]
+        },
+        "correction": {
+          "max": 0.273972602739726,
+          "mean": 0.0839041095890411,
+          "min": 0.0,
+          "n": 64,
+          "quantile95": [
+            0.0,
+            0.2582191780821917
+          ]
+        },
+        "k0_accuracy": {
+          "max": 0.9984567901234568,
+          "mean": 0.8785927854938272,
+          "min": 0.6311728395061729,
+          "n": 64,
+          "quantile95": [
+            0.649074074074074,
+            0.9969135802469136
+          ]
+        },
+        "lm_delta": {
+          "max": 0.39237501683889153,
+          "mean": 0.22374232850180087,
+          "min": 0.08353170626717255,
+          "n": 64,
+          "quantile95": [
+            0.09281730371019148,
+            0.3588964331123102
+          ]
+        }
+      },
+      "targeted": {
+        "correct_prediction_changes": 13,
+        "correct_preservation": 0.8395061728395061,
+        "correction": {
+          "ci": [
+            0.2054794520547945,
+            0.410958904109589
+          ],
+          "mean": 0.3013698630136986,
+          "n": 73
+        },
+        "k0_accuracy": 0.9938271604938271,
+        "k0_prediction_changes": 9,
+        "lm_delta": 0.19799643965328606,
+        "lm_loss": 3.790323748283242,
+        "max_abs_gap_change": 5.63800048828125
+      }
+    },
+    {
+      "gamma": 0.0,
+      "gate": {
+        "correct_preservation_at_least_0.95": false,
+        "correction_exceeds_random95": true,
+        "gamma_below_one": true,
+        "k0_drop_at_most_0.02": true,
+        "lm_materiality": "Report numerically; no post-hoc threshold is imposed.",
+        "lm_targeted_minus_random_mean": -0.020546844197473657,
+        "three_hard_controls_pass": false
+      },
+      "random": {
+        "correct_preservation": {
+          "max": 1.0,
+          "mean": 0.703125,
+          "min": 0.09876543209876543,
+          "n": 64,
+          "quantile95": [
+            0.14660493827160495,
+            1.0
+          ]
+        },
+        "correction": {
+          "max": 0.273972602739726,
+          "mean": 0.08946917808219178,
+          "min": 0.0,
+          "n": 64,
+          "quantile95": [
+            0.0,
+            0.2582191780821917
+          ]
+        },
+        "k0_accuracy": {
+          "max": 0.9984567901234568,
+          "mean": 0.8555893132716049,
+          "min": 0.5709876543209876,
+          "n": 64,
+          "quantile95": [
+            0.5926311728395062,
+            0.9984567901234568
+          ]
+        },
+        "lm_delta": {
+          "max": 0.4560670568547791,
+          "mean": 0.27175893521662386,
+          "min": 0.10582648572658515,
+          "n": 64,
+          "quantile95": [
+            0.12298856130319487,
+            0.44036933295512304
+          ]
+        }
+      },
+      "targeted": {
+        "correct_prediction_changes": 15,
+        "correct_preservation": 0.8148148148148148,
+        "correction": {
+          "ci": [
+            0.273972602739726,
+            0.4931506849315068
+          ],
+          "mean": 0.3835616438356164,
+          "n": 73
+        },
+        "k0_accuracy": 0.9922839506172839,
+        "k0_prediction_changes": 10,
+        "lm_delta": 0.2512120910191502,
+        "lm_loss": 3.843539399649106,
+        "max_abs_gap_change": 6.33843994140625
+      }
+    }
+  ],
+  "dtype": "float32",
+  "evaluation": {
+    "heldout_correct_k4": 81,
+    "heldout_failures": 73,
+    "k0_baseline_accuracy": 0.9891975308641975,
+    "k0_single": 648,
+    "lm_baseline_loss": 3.592327308629956,
+    "lm_segments": 200,
+    "lm_tokens_per_segment": 512
+  },
+  "gamma0_consistency": {
+    "absolute_difference": 0.0,
+    "gamma0": 0.3835616438356164,
+    "pass_exact": true,
+    "phase1b": 0.3835616438356164
+  },
+  "gammas": [
+    1.0,
+    0.9,
+    0.7,
+    0.5,
+    0.3,
+    0.1,
+    0.0
+  ],
+  "hard_control_candidates": [
+    0.5
+  ],
+  "heads": [
+    {
+      "head": 11,
+      "layer": 8
+    },
+    {
+      "head": 7,
+      "layer": 10
+    },
+    {
+      "head": 2,
+      "layer": 9
+    },
+    {
+      "head": 2,
+      "layer": 8
+    },
+    {
+      "head": 3,
+      "layer": 10
+    },
+    {
+      "head": 7,
+      "layer": 8
+    },
+    {
+      "head": 6,
+      "layer": 5
+    },
+    {
+      "head": 8,
+      "layer": 8
+    },
+    {
+      "head": 6,
+      "layer": 6
+    },
+    {
+      "head": 0,
+      "layer": 0
+    },
+    {
+      "head": 5,
+      "layer": 10
+    },
+    {
+      "head": 2,
+      "layer": 0
+    }
+  ],
+  "identity_gate": {
+    "pass": true,
+    "targeted_lm_delta": 0.0,
+    "targeted_max_abs_gap_change": 0.0
+  },
+  "model": "EleutherAI/pythia-160m",
+  "stage": "O-Part-B"
+}

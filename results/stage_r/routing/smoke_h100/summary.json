@@ -1,0 +1,455 @@
+{
+  "automatic_gate": {
+    "all_pass": true,
+    "correct_preservation": true,
+    "k0_exact_noop": true,
+    "multi_template_support": true,
+    "net_gain_ci_above_zero": true,
+    "net_gain_exceeds_random_head95": true,
+    "net_gain_exceeds_random_position95": true,
+    "retains_half_oracle_gain": true,
+    "route_audit_exact": true
+  },
+  "calibration": {
+    "counts": {
+      "correct_current": 4,
+      "within_stale": 4
+    },
+    "curve": [
+      {
+        "arm_accuracy": 0.625,
+        "baseline_accuracy": 0.5,
+        "beta": 0.5,
+        "correct_preservation": 1.0,
+        "correction": 0.25,
+        "net_accuracy_gain": 0.125
+      },
+      {
+        "arm_accuracy": 0.625,
+        "baseline_accuracy": 0.5,
+        "beta": 1.0,
+        "correct_preservation": 1.0,
+        "correction": 0.25,
+        "net_accuracy_gain": 0.125
+      },
+      {
+        "arm_accuracy": 0.625,
+        "baseline_accuracy": 0.5,
+        "beta": 2.0,
+        "correct_preservation": 1.0,
+        "correction": 0.25,
+        "net_accuracy_gain": 0.125
+      },
+      {
+        "arm_accuracy": 0.75,
+        "baseline_accuracy": 0.5,
+        "beta": 4.0,
+        "correct_preservation": 1.0,
+        "correction": 0.5,
+        "net_accuracy_gain": 0.25
+      },
+      {
+        "arm_accuracy": 0.75,
+        "baseline_accuracy": 0.5,
+        "beta": 8.0,
+        "correct_preservation": 1.0,
+        "correction": 0.5,
+        "net_accuracy_gain": 0.25
+      }
+    ],
+    "mismatches": [],
+    "operating_point": {
+      "arm_accuracy": 0.75,
+      "baseline_accuracy": 0.5,
+      "beta": 4.0,
+      "correct_preservation": 1.0,
+      "correction": 0.5,
+      "net_accuracy_gain": 0.25
+    },
+    "operating_status": "eligible",
+    "requested": 8,
+    "retained": 8
+  },
+  "confirmation": {
+    "automatic": {
+      "arm_accuracy": 0.8333333333333334,
+      "arm_counts": {
+        "correct_current": 10,
+        "within_stale": 2
+      },
+      "baseline_accuracy": 0.3333333333333333,
+      "baseline_counts": {
+        "correct_current": 4,
+        "within_stale": 8
+      },
+      "correct_preservation": 1.0,
+      "correction": 0.75,
+      "n": 12,
+      "net_accuracy_gain": 0.5,
+      "paired_net_gain": {
+        "ci": [
+          0.16666666666666666,
+          0.8333333333333333
+        ],
+        "cluster": "semantic_id",
+        "mean": 0.5,
+        "n": 12,
+        "n_clusters": 4
+      },
+      "transitions": {
+        "correct_current->correct_current": 4,
+        "within_stale->correct_current": 6,
+        "within_stale->within_stale": 2
+      }
+    },
+    "automatic_per_template": {
+      "arrow": {
+        "arm_accuracy": 1.0,
+        "arm_counts": {
+          "correct_current": 4
+        },
+        "baseline_accuracy": 0.25,
+        "baseline_counts": {
+          "correct_current": 1,
+          "within_stale": 3
+        },
+        "correct_preservation": 1.0,
+        "correction": 1.0,
+        "n": 4,
+        "net_accuracy_gain": 0.75
+      },
+      "current": {
+        "arm_accuracy": 0.5,
+        "arm_counts": {
+          "correct_current": 2,
+          "within_stale": 2
+        },
+        "baseline_accuracy": 0.25,
+        "baseline_counts": {
+          "correct_current": 1,
+          "within_stale": 3
+        },
+        "correct_preservation": 1.0,
+        "correction": 0.3333333333333333,
+        "n": 4,
+        "net_accuracy_gain": 0.25
+      },
+      "latest": {
+        "arm_accuracy": 1.0,
+        "arm_counts": {
+          "correct_current": 4
+        },
+        "baseline_accuracy": 0.5,
+        "baseline_counts": {
+          "correct_current": 2,
+          "within_stale": 2
+        },
+        "correct_preservation": 1.0,
+        "correction": 1.0,
+        "n": 4,
+        "net_accuracy_gain": 0.5
+      }
+    },
+    "automatic_retained_oracle_gain": 1.0,
+    "baseline_k6_counts": {
+      "correct_current": 4,
+      "within_stale": 8
+    },
+    "identity_max_abs_logit_change": 0.0,
+    "identity_prediction_changes": 0,
+    "k0": {
+      "arm_accuracy": 0.8333333333333334,
+      "arm_counts": {
+        "correct_current": 10,
+        "other": 2
+      },
+      "baseline_accuracy": 0.8333333333333334,
+      "baseline_counts": {
+        "correct_current": 10,
+        "other": 2
+      },
+      "correct_preservation": 1.0,
+      "correction": NaN,
+      "n": 12,
+      "net_accuracy_gain": 0.0,
+      "paired_net_gain": {
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "cluster": "semantic_id",
+        "mean": 0.0,
+        "n": 12,
+        "n_clusters": 4
+      },
+      "transitions": {
+        "correct_current->correct_current": 10,
+        "other->other": 2
+      }
+    },
+    "k0_max_abs_logit_change": 0.0,
+    "k0_n": 12,
+    "k0_prediction_changes": 0,
+    "k6_n": 12,
+    "opposite": {
+      "arm_accuracy": 0.0,
+      "arm_counts": {
+        "within_stale": 12
+      },
+      "baseline_accuracy": 0.3333333333333333,
+      "baseline_counts": {
+        "correct_current": 4,
+        "within_stale": 8
+      },
+      "correct_preservation": 0.0,
+      "correction": 0.0,
+      "n": 12,
+      "net_accuracy_gain": -0.3333333333333333,
+      "paired_net_gain": {
+        "ci": [
+          -0.6666666666666666,
+          0.0
+        ],
+        "cluster": "semantic_id",
+        "mean": -0.3333333333333333,
+        "n": 12,
+        "n_clusters": 4
+      },
+      "transitions": {
+        "correct_current->within_stale": 4,
+        "within_stale->within_stale": 8
+      }
+    },
+    "oracle": {
+      "arm_accuracy": 0.8333333333333334,
+      "arm_counts": {
+        "correct_current": 10,
+        "within_stale": 2
+      },
+      "baseline_accuracy": 0.3333333333333333,
+      "baseline_counts": {
+        "correct_current": 4,
+        "within_stale": 8
+      },
+      "correct_preservation": 1.0,
+      "correction": 0.75,
+      "n": 12,
+      "net_accuracy_gain": 0.5,
+      "paired_net_gain": {
+        "ci": [
+          0.25,
+          0.8333333333333333
+        ],
+        "cluster": "semantic_id",
+        "mean": 0.5,
+        "n": 12,
+        "n_clusters": 4
+      },
+      "transitions": {
+        "correct_current->correct_current": 4,
+        "within_stale->correct_current": 6,
+        "within_stale->within_stale": 2
+      }
+    },
+    "oracle_per_template": {
+      "arrow": {
+        "arm_accuracy": 1.0,
+        "arm_counts": {
+          "correct_current": 4
+        },
+        "baseline_accuracy": 0.25,
+        "baseline_counts": {
+          "correct_current": 1,
+          "within_stale": 3
+        },
+        "correct_preservation": 1.0,
+        "correction": 1.0,
+        "n": 4,
+        "net_accuracy_gain": 0.75
+      },
+      "current": {
+        "arm_accuracy": 0.5,
+        "arm_counts": {
+          "correct_current": 2,
+          "within_stale": 2
+        },
+        "baseline_accuracy": 0.25,
+        "baseline_counts": {
+          "correct_current": 1,
+          "within_stale": 3
+        },
+        "correct_preservation": 1.0,
+        "correction": 0.3333333333333333,
+        "n": 4,
+        "net_accuracy_gain": 0.25
+      },
+      "latest": {
+        "arm_accuracy": 1.0,
+        "arm_counts": {
+          "correct_current": 4
+        },
+        "baseline_accuracy": 0.5,
+        "baseline_counts": {
+          "correct_current": 2,
+          "within_stale": 2
+        },
+        "correct_preservation": 1.0,
+        "correction": 1.0,
+        "n": 4,
+        "net_accuracy_gain": 0.5
+      }
+    },
+    "random_heads": {
+      "correct_preservation": {
+        "interval95": [
+          1.0,
+          1.0
+        ],
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "n": 2
+      },
+      "correction": {
+        "interval95": [
+          0.13125,
+          0.36875
+        ],
+        "max": 0.375,
+        "mean": 0.25,
+        "min": 0.125,
+        "n": 2
+      },
+      "n": 2,
+      "net_accuracy_gain": {
+        "interval95": [
+          0.0875,
+          0.24583333333333332
+        ],
+        "max": 0.25,
+        "mean": 0.16666666666666666,
+        "min": 0.08333333333333333,
+        "n": 2
+      }
+    },
+    "random_positions": {
+      "correct_preservation": {
+        "interval95": [
+          0.75625,
+          0.99375
+        ],
+        "max": 1.0,
+        "mean": 0.875,
+        "min": 0.75,
+        "n": 2
+      },
+      "correction": {
+        "interval95": [
+          0.0,
+          0.0
+        ],
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0,
+        "n": 2
+      },
+      "n": 2,
+      "net_accuracy_gain": {
+        "interval95": [
+          -0.08124999999999999,
+          -0.002083333333333335
+        ],
+        "max": 0.0,
+        "mean": -0.041666666666666664,
+        "min": -0.08333333333333333,
+        "n": 2
+      }
+    }
+  },
+  "dtype": "bfloat16",
+  "frozen_heads": [
+    {
+      "head": 6,
+      "layer": 26
+    },
+    {
+      "head": 0,
+      "layer": 27
+    },
+    {
+      "head": 7,
+      "layer": 22
+    },
+    {
+      "head": 9,
+      "layer": 27
+    },
+    {
+      "head": 8,
+      "layer": 26
+    },
+    {
+      "head": 3,
+      "layer": 26
+    },
+    {
+      "head": 9,
+      "layer": 21
+    },
+    {
+      "head": 3,
+      "layer": 27
+    },
+    {
+      "head": 10,
+      "layer": 22
+    },
+    {
+      "head": 11,
+      "layer": 21
+    },
+    {
+      "head": 6,
+      "layer": 27
+    },
+    {
+      "head": 4,
+      "layer": 25
+    }
+  ],
+  "model": "Qwen/Qwen2.5-1.5B",
+  "oracle_gate": {
+    "all_pass": true,
+    "beats_opposite": true,
+    "correct_preservation": true,
+    "eligible_calibration_beta": true,
+    "identity_exact_zero": true,
+    "k0_exact_noop": true,
+    "multi_template_support": true,
+    "net_gain_ci_above_zero": true,
+    "net_gain_exceeds_random_head95": true,
+    "net_gain_exceeds_random_position95": true
+  },
+  "route_audit": {
+    "calibration": {
+      "accuracy": 1.0,
+      "matches": 8,
+      "mismatches": [],
+      "n": 8
+    },
+    "confirmation": {
+      "accuracy": 1.0,
+      "matches": 24,
+      "mismatches": [],
+      "n": 24
+    }
+  },
+  "runtime_inputs": {
+    "answer_value_or_token_injected": false,
+    "automatic": "raw prompt plus tokenizer offsets only",
+    "oracle": "stored stale spans; mechanism upper bound only"
+  },
+  "scope": "open-weight Qwen2.5-1.5B with explicitly structured update logs; not a natural-dialogue, cross-model, or closed-API repair",
+  "stage": "R9-update-aware-stale-key-suppression",
+  "verdict": "limited_deployable_structured_log_correction_supported"
+}

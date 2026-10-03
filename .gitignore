@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+.idea/
+
+# large regenerable artifacts (attention / hidden-state harvests, steering rows)
+*.npz
+*.npy
+l1_harvest.npz
+l2_rows.jsonl
+
+# model weights are never committed except the small Stage C adapters under results/stage_c
+*.bin
+*.safetensors
+!results/stage_c/**/*.safetensors
+
+# scheduler logs
+*.out
+*.err
+logs/
+
+# rendering helpers for the HTML figures (see tools/README.md)
+tools/bin/
+tools/pylib/

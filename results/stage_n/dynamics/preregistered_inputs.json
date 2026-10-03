@@ -1,0 +1,125 @@
+{
+  "checkpoint_revisions": [
+    "step0",
+    "step1",
+    "step2",
+    "step4",
+    "step8",
+    "step16",
+    "step32",
+    "step64",
+    "step128",
+    "step256",
+    "step512",
+    "step1000",
+    "step2000",
+    "step3000",
+    "step4000",
+    "step6000",
+    "step8000",
+    "step12000",
+    "step16000",
+    "step24000",
+    "step32000",
+    "step48000",
+    "step64000",
+    "step96000",
+    "step143000"
+  ],
+  "checkpoint_steps": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1000,
+    2000,
+    3000,
+    4000,
+    6000,
+    8000,
+    12000,
+    16000,
+    24000,
+    32000,
+    48000,
+    64000,
+    96000,
+    143000
+  ],
+  "induction_probe": {
+    "definition": "repeat contiguous token windows sampled from the frozen task prompts; score second-copy token i attention to first-copy token i+1 minus mean attention to non-target first-copy positions",
+    "global_score": "mean of the five highest per-head induction-minus-baseline means",
+    "n_sequences_per_seed": 64,
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "sequence_length_per_copy": 24
+  },
+  "model": "EleutherAI/pythia-160m",
+  "qk_probe": {
+    "heads": [
+      {
+        "head": 10,
+        "layer": 8
+      },
+      {
+        "head": 2,
+        "layer": 8
+      }
+    ],
+    "n": 648,
+    "path": "results/stage_n/dynamics/qk_probe_k4.jsonl",
+    "selection": "all frozen single-variable rows at k=4",
+    "sha256": "467d118c344998348f8d4b7ca9f3c325031ba0f99e3a07b7b79de37a8d4afe05"
+  },
+  "stage": "N-phase2-preregistered-inputs",
+  "task": {
+    "filtered_path": "results/stage_n/dynamics/task_single.jsonl",
+    "filtered_sha256": "adf07f9ab9bc40884ea799f057c733430de97e96a88adcc0b934c37808206b69",
+    "k_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "n": 3888,
+    "n_per_seed_template_k": 72,
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "source": "results/stage_n/behavior_full_cpu/tasks.jsonl",
+    "source_sha256": "22e79200d953cd347c3c1ea3ae2f94d2634a45ef70e8e37549f6fa80cafc2fdf",
+    "templates": [
+      "arrow",
+      "current",
+      "latest"
+    ],
+    "variant": "single"
+  },
+  "tokens_per_step": 2097152,
+  "transition_rules": {
+    "abrupt_transition_reliability": "bootstrap detection fraction >=0.95 and >=0.50 of detected bootstrap steps within one checkpoint index of the point estimate",
+    "bootstrap": "hierarchical resampling of seed, then items within seed; 2000 replicates",
+    "estimator": "right endpoint of the largest positive adjacent-checkpoint level change",
+    "immediately_follows": "same or next checkpoint in the preregistered ordered grid",
+    "stale_pool_gate": {
+      "minimum_errors_each_seed": 5,
+      "minimum_total_errors": 30,
+      "scope": "all k>=1 single-variable rows"
+    },
+    "taxonomy_requirement": "within-stale share rises and other-error share falls across S_stale"
+  }
+}

@@ -1,0 +1,1279 @@
+{
+  "n_paired": 3990,
+  "arm_counts": {
+    "identity": {
+      "counts": {
+        "within_stale": 3492,
+        "cross_slot": 402,
+        "correct_current": 84,
+        "other": 12
+      },
+      "target_error_rate": 0.9669172932330827,
+      "within_stale_rate": 0.8751879699248121,
+      "cross_slot_rate": 0.10075187969924812,
+      "correct_rate": 0.021052631578947368,
+      "any_error_rate": 0.9789473684210527
+    },
+    "random_matched_norm": {
+      "counts": {
+        "within_stale": 3469,
+        "cross_slot": 403,
+        "correct_current": 98,
+        "other": 20
+      },
+      "target_error_rate": 0.9619047619047619,
+      "within_stale_rate": 0.8694235588972431,
+      "cross_slot_rate": 0.10100250626566416,
+      "correct_rate": 0.02456140350877193,
+      "any_error_rate": 0.9754385964912281
+    },
+    "targeted": {
+      "counts": {
+        "within_stale": 3477,
+        "cross_slot": 402,
+        "correct_current": 94,
+        "other": 17
+      },
+      "target_error_rate": 0.9649122807017544,
+      "within_stale_rate": 0.8714285714285714,
+      "cross_slot_rate": 0.10075187969924812,
+      "correct_rate": 0.02355889724310777,
+      "any_error_rate": 0.9764411027568922
+    }
+  },
+  "targeted_minus_random_target_error_reduction": {
+    "n": 3990,
+    "mean": -0.0030075187969924814,
+    "ci": [
+      -0.006265664160401002,
+      0.0
+    ]
+  },
+  "targeted_minus_random_correct_gain": {
+    "n": 3990,
+    "mean": -0.0010025062656641604,
+    "ci": [
+      -0.0035087719298245615,
+      0.0015037593984962407
+    ]
+  },
+  "identity_gate_mismatches": 0,
+  "by_failure_mode": {
+    "within_stale": {
+      "n_paired": 3534,
+      "arm_counts": {
+        "identity": {
+          "counts": {
+            "within_stale": 3468,
+            "correct_current": 42,
+            "other": 12,
+            "cross_slot": 12
+          },
+          "target_error_rate": 0.9813242784380306,
+          "within_stale_rate": 0.9813242784380306,
+          "cross_slot_rate": 0.003395585738539898,
+          "correct_rate": 0.011884550084889643,
+          "any_error_rate": 0.9881154499151104
+        },
+        "random_matched_norm": {
+          "counts": {
+            "within_stale": 3446,
+            "correct_current": 57,
+            "other": 20,
+            "cross_slot": 11
+          },
+          "target_error_rate": 0.9750990379173741,
+          "within_stale_rate": 0.9750990379173741,
+          "cross_slot_rate": 0.00311262026032824,
+          "correct_rate": 0.016129032258064516,
+          "any_error_rate": 0.9838709677419355
+        },
+        "targeted": {
+          "counts": {
+            "within_stale": 3459,
+            "correct_current": 47,
+            "other": 17,
+            "cross_slot": 11
+          },
+          "target_error_rate": 0.9787775891341256,
+          "within_stale_rate": 0.9787775891341256,
+          "cross_slot_rate": 0.00311262026032824,
+          "correct_rate": 0.013299377475947935,
+          "any_error_rate": 0.9867006225240521
+        }
+      },
+      "targeted_minus_random_target_error_reduction": {
+        "n": 3534,
+        "mean": -0.0036785512167515563,
+        "ci": [
+          -0.006791171477079796,
+          -0.0008488964346349745
+        ]
+      },
+      "targeted_minus_random_correct_gain": {
+        "n": 3534,
+        "mean": -0.0028296547821165816,
+        "ci": [
+          -0.005383418222976797,
+          -0.0002829654782116582
+        ]
+      }
+    },
+    "cross_slot": {
+      "n_paired": 456,
+      "arm_counts": {
+        "identity": {
+          "counts": {
+            "cross_slot": 390,
+            "within_stale": 24,
+            "correct_current": 42
+          },
+          "target_error_rate": 0.8552631578947368,
+          "within_stale_rate": 0.05263157894736842,
+          "cross_slot_rate": 0.8552631578947368,
+          "correct_rate": 0.09210526315789473,
+          "any_error_rate": 0.9078947368421053
+        },
+        "random_matched_norm": {
+          "counts": {
+            "cross_slot": 392,
+            "within_stale": 23,
+            "correct_current": 41
+          },
+          "target_error_rate": 0.8596491228070176,
+          "within_stale_rate": 0.05043859649122807,
+          "cross_slot_rate": 0.8596491228070176,
+          "correct_rate": 0.08991228070175439,
+          "any_error_rate": 0.9100877192982456
+        },
+        "targeted": {
+          "counts": {
+            "cross_slot": 391,
+            "within_stale": 18,
+            "correct_current": 47
+          },
+          "target_error_rate": 0.8574561403508771,
+          "within_stale_rate": 0.039473684210526314,
+          "cross_slot_rate": 0.8574561403508771,
+          "correct_rate": 0.10307017543859649,
+          "any_error_rate": 0.8969298245614035
+        }
+      },
+      "targeted_minus_random_target_error_reduction": {
+        "n": 456,
+        "mean": 0.0021929824561403508,
+        "ci": [
+          -0.013157894736842105,
+          0.017543859649122806
+        ]
+      },
+      "targeted_minus_random_correct_gain": {
+        "n": 456,
+        "mean": 0.013157894736842105,
+        "ci": [
+          0.0043859649122807015,
+          0.02412280701754386
+        ]
+      }
+    }
+  },
+  "by_alpha": {
+    "0.01": {
+      "n_paired": 665,
+      "arm_counts": {
+        "identity": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 67,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        },
+        "random_matched_norm": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 67,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        },
+        "targeted": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 67,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        }
+      },
+      "targeted_minus_random_target_error_reduction": {
+        "n": 665,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "targeted_minus_random_correct_gain": {
+        "n": 665,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "by_failure_mode": {
+        "within_stale": {
+          "n_paired": 589,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            },
+            "random_matched_norm": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            },
+            "targeted": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 589,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 589,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "cross_slot": {
+          "n_paired": 76,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "random_matched_norm": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "targeted": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 76,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 76,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "0.02": {
+      "n_paired": 665,
+      "arm_counts": {
+        "identity": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 67,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        },
+        "random_matched_norm": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 67,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        },
+        "targeted": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 67,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        }
+      },
+      "targeted_minus_random_target_error_reduction": {
+        "n": 665,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "targeted_minus_random_correct_gain": {
+        "n": 665,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "by_failure_mode": {
+        "within_stale": {
+          "n_paired": 589,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            },
+            "random_matched_norm": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            },
+            "targeted": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 589,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 589,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "cross_slot": {
+          "n_paired": 76,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "random_matched_norm": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "targeted": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 76,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 76,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "0.05": {
+      "n_paired": 665,
+      "arm_counts": {
+        "identity": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 67,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        },
+        "random_matched_norm": {
+          "counts": {
+            "within_stale": 581,
+            "cross_slot": 66,
+            "correct_current": 16,
+            "other": 2
+          },
+          "target_error_rate": 0.9654135338345865,
+          "within_stale_rate": 0.8736842105263158,
+          "cross_slot_rate": 0.09924812030075188,
+          "correct_rate": 0.02406015037593985,
+          "any_error_rate": 0.9759398496240601
+        },
+        "targeted": {
+          "counts": {
+            "within_stale": 581,
+            "cross_slot": 68,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.968421052631579,
+          "within_stale_rate": 0.8736842105263158,
+          "cross_slot_rate": 0.10225563909774436,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        }
+      },
+      "targeted_minus_random_target_error_reduction": {
+        "n": 665,
+        "mean": -0.0030075187969924814,
+        "ci": [
+          -0.007518796992481203,
+          0.0
+        ]
+      },
+      "targeted_minus_random_correct_gain": {
+        "n": 665,
+        "mean": -0.0030075187969924814,
+        "ci": [
+          -0.007518796992481203,
+          0.0
+        ]
+      },
+      "by_failure_mode": {
+        "within_stale": {
+          "n_paired": 589,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            },
+            "random_matched_norm": {
+              "counts": {
+                "within_stale": 577,
+                "correct_current": 9,
+                "other": 2,
+                "cross_slot": 1
+              },
+              "target_error_rate": 0.9796264855687606,
+              "within_stale_rate": 0.9796264855687606,
+              "cross_slot_rate": 0.001697792869269949,
+              "correct_rate": 0.015280135823429542,
+              "any_error_rate": 0.9847198641765704
+            },
+            "targeted": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 589,
+            "mean": -0.001697792869269949,
+            "ci": [
+              -0.0050933786078098476,
+              0.0
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 589,
+            "mean": -0.003395585738539898,
+            "ci": [
+              -0.008488964346349746,
+              0.0
+            ]
+          }
+        },
+        "cross_slot": {
+          "n_paired": 76,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "random_matched_norm": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "targeted": {
+              "counts": {
+                "cross_slot": 66,
+                "within_stale": 3,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.868421052631579,
+              "within_stale_rate": 0.039473684210526314,
+              "cross_slot_rate": 0.868421052631579,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 76,
+            "mean": -0.013157894736842105,
+            "ci": [
+              -0.039473684210526314,
+              0.0
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 76,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "0.1": {
+      "n_paired": 665,
+      "arm_counts": {
+        "identity": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 67,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        },
+        "random_matched_norm": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 66,
+            "correct_current": 14,
+            "other": 3
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.09924812030075188,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        },
+        "targeted": {
+          "counts": {
+            "within_stale": 581,
+            "cross_slot": 68,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.968421052631579,
+          "within_stale_rate": 0.8736842105263158,
+          "cross_slot_rate": 0.10225563909774436,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        }
+      },
+      "targeted_minus_random_target_error_reduction": {
+        "n": 665,
+        "mean": -0.0015037593984962407,
+        "ci": [
+          -0.006015037593984963,
+          0.0030075187969924814
+        ]
+      },
+      "targeted_minus_random_correct_gain": {
+        "n": 665,
+        "mean": 0.0,
+        "ci": [
+          -0.004511278195488722,
+          0.004511278195488722
+        ]
+      },
+      "by_failure_mode": {
+        "within_stale": {
+          "n_paired": 589,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            },
+            "random_matched_norm": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 3,
+                "cross_slot": 1
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.001697792869269949,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            },
+            "targeted": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 589,
+            "mean": 0.0,
+            "ci": [
+              -0.0050933786078098476,
+              0.0050933786078098476
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 589,
+            "mean": 0.0,
+            "ci": [
+              -0.0050933786078098476,
+              0.0050933786078098476
+            ]
+          }
+        },
+        "cross_slot": {
+          "n_paired": 76,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "random_matched_norm": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "targeted": {
+              "counts": {
+                "cross_slot": 66,
+                "within_stale": 3,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.868421052631579,
+              "within_stale_rate": 0.039473684210526314,
+              "cross_slot_rate": 0.868421052631579,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 76,
+            "mean": -0.013157894736842105,
+            "ci": [
+              -0.039473684210526314,
+              0.0
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 76,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "0.2": {
+      "n_paired": 665,
+      "arm_counts": {
+        "identity": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 67,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        },
+        "random_matched_norm": {
+          "counts": {
+            "within_stale": 575,
+            "cross_slot": 69,
+            "correct_current": 19,
+            "other": 2
+          },
+          "target_error_rate": 0.9578947368421052,
+          "within_stale_rate": 0.8646616541353384,
+          "cross_slot_rate": 0.1037593984962406,
+          "correct_rate": 0.02857142857142857,
+          "any_error_rate": 0.9714285714285714
+        },
+        "targeted": {
+          "counts": {
+            "within_stale": 576,
+            "cross_slot": 67,
+            "correct_current": 19,
+            "other": 3
+          },
+          "target_error_rate": 0.9609022556390977,
+          "within_stale_rate": 0.8661654135338346,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.02857142857142857,
+          "any_error_rate": 0.9714285714285714
+        }
+      },
+      "targeted_minus_random_target_error_reduction": {
+        "n": 665,
+        "mean": -0.0030075187969924814,
+        "ci": [
+          -0.013533834586466165,
+          0.007518796992481203
+        ]
+      },
+      "targeted_minus_random_correct_gain": {
+        "n": 665,
+        "mean": 0.0,
+        "ci": [
+          -0.009022556390977444,
+          0.009022556390977444
+        ]
+      },
+      "by_failure_mode": {
+        "within_stale": {
+          "n_paired": 589,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            },
+            "random_matched_norm": {
+              "counts": {
+                "within_stale": 571,
+                "correct_current": 13,
+                "other": 2,
+                "cross_slot": 3
+              },
+              "target_error_rate": 0.969439728353141,
+              "within_stale_rate": 0.969439728353141,
+              "cross_slot_rate": 0.0050933786078098476,
+              "correct_rate": 0.022071307300509338,
+              "any_error_rate": 0.9779286926994907
+            },
+            "targeted": {
+              "counts": {
+                "within_stale": 574,
+                "correct_current": 10,
+                "other": 3,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9745331069609507,
+              "within_stale_rate": 0.9745331069609507,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.01697792869269949,
+              "any_error_rate": 0.9830220713073005
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 589,
+            "mean": -0.0050933786078098476,
+            "ci": [
+              -0.013582342954159592,
+              0.003395585738539898
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 589,
+            "mean": -0.0050933786078098476,
+            "ci": [
+              -0.013582342954159592,
+              0.003395585738539898
+            ]
+          }
+        },
+        "cross_slot": {
+          "n_paired": 76,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "random_matched_norm": {
+              "counts": {
+                "cross_slot": 66,
+                "within_stale": 4,
+                "correct_current": 6
+              },
+              "target_error_rate": 0.868421052631579,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.868421052631579,
+              "correct_rate": 0.07894736842105263,
+              "any_error_rate": 0.9210526315789473
+            },
+            "targeted": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 2,
+                "correct_current": 9
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.02631578947368421,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.11842105263157894,
+              "any_error_rate": 0.881578947368421
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 76,
+            "mean": 0.013157894736842105,
+            "ci": [
+              -0.039473684210526314,
+              0.06578947368421052
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 76,
+            "mean": 0.039473684210526314,
+            "ci": [
+              0.0,
+              0.09210526315789473
+            ]
+          }
+        }
+      }
+    },
+    "0.4": {
+      "n_paired": 665,
+      "arm_counts": {
+        "identity": {
+          "counts": {
+            "within_stale": 582,
+            "cross_slot": 67,
+            "correct_current": 14,
+            "other": 2
+          },
+          "target_error_rate": 0.9669172932330827,
+          "within_stale_rate": 0.8751879699248121,
+          "cross_slot_rate": 0.10075187969924812,
+          "correct_rate": 0.021052631578947368,
+          "any_error_rate": 0.9789473684210527
+        },
+        "random_matched_norm": {
+          "counts": {
+            "within_stale": 567,
+            "cross_slot": 68,
+            "correct_current": 21,
+            "other": 9
+          },
+          "target_error_rate": 0.9473684210526315,
+          "within_stale_rate": 0.8526315789473684,
+          "cross_slot_rate": 0.10225563909774436,
+          "correct_rate": 0.031578947368421054,
+          "any_error_rate": 0.968421052631579
+        },
+        "targeted": {
+          "counts": {
+            "within_stale": 575,
+            "cross_slot": 65,
+            "other": 6,
+            "correct_current": 19
+          },
+          "target_error_rate": 0.9578947368421052,
+          "within_stale_rate": 0.8646616541353384,
+          "cross_slot_rate": 0.09774436090225563,
+          "correct_rate": 0.02857142857142857,
+          "any_error_rate": 0.9714285714285714
+        }
+      },
+      "targeted_minus_random_target_error_reduction": {
+        "n": 665,
+        "mean": -0.010526315789473684,
+        "ci": [
+          -0.02556390977443609,
+          0.004511278195488722
+        ]
+      },
+      "targeted_minus_random_correct_gain": {
+        "n": 665,
+        "mean": -0.0030075187969924814,
+        "ci": [
+          -0.015037593984962405,
+          0.007518796992481203
+        ]
+      },
+      "by_failure_mode": {
+        "within_stale": {
+          "n_paired": 589,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "within_stale": 578,
+                "correct_current": 7,
+                "other": 2,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9813242784380306,
+              "within_stale_rate": 0.9813242784380306,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.011884550084889643,
+              "any_error_rate": 0.9881154499151104
+            },
+            "random_matched_norm": {
+              "counts": {
+                "within_stale": 564,
+                "correct_current": 14,
+                "other": 9,
+                "cross_slot": 2
+              },
+              "target_error_rate": 0.9575551782682513,
+              "within_stale_rate": 0.9575551782682513,
+              "cross_slot_rate": 0.003395585738539898,
+              "correct_rate": 0.023769100169779286,
+              "any_error_rate": 0.9762308998302207
+            },
+            "targeted": {
+              "counts": {
+                "within_stale": 573,
+                "other": 6,
+                "correct_current": 9,
+                "cross_slot": 1
+              },
+              "target_error_rate": 0.9728353140916808,
+              "within_stale_rate": 0.9728353140916808,
+              "cross_slot_rate": 0.001697792869269949,
+              "correct_rate": 0.015280135823429542,
+              "any_error_rate": 0.9847198641765704
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 589,
+            "mean": -0.015280135823429542,
+            "ci": [
+              -0.028862478777589132,
+              0.0
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 589,
+            "mean": -0.008488964346349746,
+            "ci": [
+              -0.02037351443123939,
+              0.001697792869269949
+            ]
+          }
+        },
+        "cross_slot": {
+          "n_paired": 76,
+          "arm_counts": {
+            "identity": {
+              "counts": {
+                "cross_slot": 65,
+                "within_stale": 4,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.8552631578947368,
+              "within_stale_rate": 0.05263157894736842,
+              "cross_slot_rate": 0.8552631578947368,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "random_matched_norm": {
+              "counts": {
+                "cross_slot": 66,
+                "within_stale": 3,
+                "correct_current": 7
+              },
+              "target_error_rate": 0.868421052631579,
+              "within_stale_rate": 0.039473684210526314,
+              "cross_slot_rate": 0.868421052631579,
+              "correct_rate": 0.09210526315789473,
+              "any_error_rate": 0.9078947368421053
+            },
+            "targeted": {
+              "counts": {
+                "cross_slot": 64,
+                "within_stale": 2,
+                "correct_current": 10
+              },
+              "target_error_rate": 0.8421052631578947,
+              "within_stale_rate": 0.02631578947368421,
+              "cross_slot_rate": 0.8421052631578947,
+              "correct_rate": 0.13157894736842105,
+              "any_error_rate": 0.868421052631579
+            }
+          },
+          "targeted_minus_random_target_error_reduction": {
+            "n": 76,
+            "mean": 0.02631578947368421,
+            "ci": [
+              -0.039473684210526314,
+              0.09210526315789473
+            ]
+          },
+          "targeted_minus_random_correct_gain": {
+            "n": 76,
+            "mean": 0.039473684210526314,
+            "ci": [
+              0.0,
+              0.09210526315789473
+            ]
+          }
+        }
+      }
+    }
+  },
+  "best_alpha_by_targeted_correct_gain": 0.2,
+  "best_alpha_by_targeted_target_error_reduction": 0.4,
+  "l2_gate_pass": false,
+  "stage": "l2_intervention",
+  "status": "complete",
+  "alpha": 1.0,
+  "alpha_list": [
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.4
+  ],
+  "alpha_mode": "residual_ratio",
+  "hidden_layer": 28,
+  "hook_layer": 13,
+  "hook_residual_index": 14,
+  "direction_source": "full_data_linear_probe_coef_raw_space",
+  "target_failure_modes": [
+    "within_stale",
+    "cross_slot"
+  ]
+}

@@ -1,0 +1,12 @@
+{"current_value": "34", "id": "n_single_latest_k4_s47_0059", "k": 4, "label": "within_stale", "prompt_tokens": 149, "seed": 47, "semantic_id": "n_single_k4_s47_0059", "template": "latest"}
+{"current_value": "39", "id": "n_single_current_k4_s11_0030", "k": 4, "label": "within_stale", "prompt_tokens": 114, "seed": 11, "semantic_id": "n_single_k4_s11_0030", "template": "current"}
+{"current_value": "36", "id": "n_single_current_k4_s11_0006", "k": 4, "label": "within_stale", "prompt_tokens": 114, "seed": 11, "semantic_id": "n_single_k4_s11_0006", "template": "current"}
+{"current_value": "27", "id": "n_single_current_k4_s47_0065", "k": 4, "label": "correct_current", "prompt_tokens": 114, "seed": 47, "semantic_id": "n_single_k4_s47_0065", "template": "current"}
+{"current_value": "17", "id": "n_single_current_k4_s29_0045", "k": 4, "label": "correct_current", "prompt_tokens": 114, "seed": 29, "semantic_id": "n_single_k4_s29_0045", "template": "current"}
+{"current_value": "18", "id": "n_single_current_k4_s11_0033", "k": 4, "label": "within_stale", "prompt_tokens": 114, "seed": 11, "semantic_id": "n_single_k4_s11_0033", "template": "current"}
+{"current_value": "34", "id": "n_single_current_k4_s29_0001", "k": 4, "label": "within_stale", "prompt_tokens": 114, "seed": 29, "semantic_id": "n_single_k4_s29_0001", "template": "current"}
+{"current_value": "35", "id": "n_single_current_k4_s11_0041", "k": 4, "label": "within_stale", "prompt_tokens": 114, "seed": 11, "semantic_id": "n_single_k4_s11_0041", "template": "current"}
+{"current_value": "22", "id": "n_single_arrow_k4_s47_0022", "k": 4, "label": "correct_current", "prompt_tokens": 119, "seed": 47, "semantic_id": "n_single_k4_s47_0022", "template": "arrow"}
+{"current_value": "33", "id": "n_single_current_k4_s47_0047", "k": 4, "label": "within_stale", "prompt_tokens": 114, "seed": 47, "semantic_id": "n_single_k4_s47_0047", "template": "current"}
+{"current_value": "27", "id": "n_single_latest_k4_s47_0030", "k": 4, "label": "correct_current", "prompt_tokens": 149, "seed": 47, "semantic_id": "n_single_k4_s47_0030", "template": "latest"}
+{"current_value": "35", "id": "n_single_current_k4_s47_0049", "k": 4, "label": "within_stale", "prompt_tokens": 114, "seed": 47, "semantic_id": "n_single_k4_s47_0049", "template": "current"}

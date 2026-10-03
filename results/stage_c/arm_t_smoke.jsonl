@@ -1,0 +1,8 @@
+{"eval_set": "W", "id": 305, "tau": 1.0, "baseline_pred": 4572, "baseline_correct": 0, "baseline_source": "same_model_no_temperature", "gold": 1503, "raw": "4572", "pred": 4572, "correct": 0}
+{"eval_set": "C", "id": 300, "tau": 1.0, "baseline_pred": 6865, "baseline_correct": 0, "baseline_source": "same_model_no_temperature", "gold": 1400, "raw": "6865", "pred": 6865, "correct": 0}
+{"eval_set": "S", "id": 600, "tau": 1.0, "baseline_pred": 7587, "baseline_correct": 0, "baseline_source": "same_model_no_temperature", "gold": 8063, "raw": "7587", "pred": 7587, "correct": 0}
+{"eval_set": "fresh", "id": 0, "tau": 1.0, "condition": "simple", "n_lines": 20, "interference_load": 0, "gold": 8369, "raw": "2989", "pred": 2989, "correct": 0}
+{"eval_set": "W", "id": 305, "tau": 0.7, "baseline_pred": 4572, "baseline_correct": 0, "baseline_source": "same_model_no_temperature", "gold": 1503, "raw": "4572", "pred": 4572, "correct": 0}
+{"eval_set": "C", "id": 300, "tau": 0.7, "baseline_pred": 6865, "baseline_correct": 0, "baseline_source": "same_model_no_temperature", "gold": 1400, "raw": "7205", "pred": 7205, "correct": 0}
+{"eval_set": "S", "id": 600, "tau": 0.7, "baseline_pred": 7587, "baseline_correct": 0, "baseline_source": "same_model_no_temperature", "gold": 8063, "raw": "7587", "pred": 7587, "correct": 0}
+{"eval_set": "fresh", "id": 0, "tau": 0.7, "condition": "simple", "n_lines": 20, "interference_load": 0, "gold": 8369, "raw": "2989", "pred": 2989, "correct": 0}

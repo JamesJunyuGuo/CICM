@@ -1,0 +1,45 @@
+{
+  "stage": "l0b_api",
+  "n": 25,
+  "overall_counts": {
+    "other": 2,
+    "cross_slot": 2,
+    "correct_current": 12,
+    "within_stale": 9
+  },
+  "overall_accuracy": 0.48,
+  "overall_within_stale_failure_share": 0.6923076923076923,
+  "by_dose": {
+    "2": {
+      "n": 14,
+      "counts": {
+        "other": 1,
+        "cross_slot": 2,
+        "correct_current": 7,
+        "within_stale": 4
+      },
+      "accuracy": 0.5,
+      "within_stale_failure_share": 0.5714285714285714
+    },
+    "3": {
+      "n": 11,
+      "counts": {
+        "within_stale": 5,
+        "other": 1,
+        "correct_current": 5
+      },
+      "accuracy": 0.45454545454545453,
+      "within_stale_failure_share": 0.8333333333333334
+    }
+  },
+  "slot_current_value_count_min": {
+    "learning_style": 1,
+    "diet": 1,
+    "music_genre": 1
+  },
+  "data": "results/stage_l/natural_factorial_otherdist_l0/chunks/input_003.jsonl",
+  "rows": "results/stage_l/natural_factorial_otherdist_l0/chunks/output_003.jsonl",
+  "model": "qwen/qwen-2.5-7b-instruct",
+  "limit_per_dose": null,
+  "concurrency": 1
+}

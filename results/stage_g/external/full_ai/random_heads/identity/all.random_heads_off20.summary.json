@@ -1,0 +1,21 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "arm": "random_heads_off_identity",
+  "data": "data/stage_g/external/all.jsonl",
+  "adapter_dir": "results/stage_c/adapters_full_ai/random_heads",
+  "adapter_kind": "random_head_sliced",
+  "adapter_mode": "off",
+  "dtype": "bfloat16",
+  "n": 20,
+  "cells": [
+    {
+      "benchmark": "ruler_vt",
+      "task": "variable_tracking",
+      "length": "synthetic",
+      "n": 20,
+      "accuracy": 0.0,
+      "superseded_error_rate": 0.95,
+      "other_error_rate": 0.05
+    }
+  ]
+}

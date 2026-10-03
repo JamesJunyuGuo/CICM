@@ -1,0 +1,13 @@
+{
+  "layers": [
+    {
+      "correct_true_current_score": 0.6882958997400321,
+      "cv_accuracy": 0.6321428571428571,
+      "layer": 12,
+      "valid_oos_score_fraction": 0.9859154929577465,
+      "valid_oos_score_n": 280,
+      "within_stale_true_current_score": 0.387307853936205
+    }
+  ],
+  "n": 284
+}

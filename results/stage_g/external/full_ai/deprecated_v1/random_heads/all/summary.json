@@ -1,0 +1,147 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "arm": "random_heads",
+  "data": "data/stage_g/external/all.jsonl",
+  "adapter_dir": "results/stage_c/adapters_full_ai/random_heads",
+  "adapter_kind": "random_head_sliced",
+  "adapter_mode": "on",
+  "dtype": "bfloat16",
+  "n": 2200,
+  "cells": [
+    {
+      "benchmark": "babilong",
+      "task": "qa1",
+      "length": "0k",
+      "n": 200,
+      "accuracy": 0.775,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "babilong",
+      "task": "qa1",
+      "length": "4k",
+      "n": 200,
+      "accuracy": 0.19,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "babilong",
+      "task": "qa2",
+      "length": "0k",
+      "n": 200,
+      "accuracy": 0.255,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "babilong",
+      "task": "qa2",
+      "length": "4k",
+      "n": 200,
+      "accuracy": 0.02,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "babilong",
+      "task": "qa3",
+      "length": "0k",
+      "n": 200,
+      "accuracy": 0.26,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "babilong",
+      "task": "qa3",
+      "length": "4k",
+      "n": 200,
+      "accuracy": 0.13,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "entity_tracking",
+      "task": "boxes",
+      "length": "0",
+      "n": 144,
+      "accuracy": 0.9583333333333334,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "entity_tracking",
+      "task": "boxes",
+      "length": "1",
+      "n": 188,
+      "accuracy": 0.5,
+      "superseded_error_rate": 0.02127659574468085,
+      "other_error_rate": 0.9787234042553191
+    },
+    {
+      "benchmark": "entity_tracking",
+      "task": "boxes",
+      "length": "2",
+      "n": 123,
+      "accuracy": 0.3008130081300813,
+      "superseded_error_rate": 0.011627906976744186,
+      "other_error_rate": 0.9883720930232558
+    },
+    {
+      "benchmark": "entity_tracking",
+      "task": "boxes",
+      "length": "3",
+      "n": 87,
+      "accuracy": 0.20689655172413793,
+      "superseded_error_rate": 0.014492753623188406,
+      "other_error_rate": 0.9855072463768116
+    },
+    {
+      "benchmark": "entity_tracking",
+      "task": "boxes",
+      "length": "4",
+      "n": 31,
+      "accuracy": 0.1935483870967742,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "entity_tracking",
+      "task": "boxes",
+      "length": "5",
+      "n": 14,
+      "accuracy": 0.21428571428571427,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "entity_tracking",
+      "task": "boxes",
+      "length": "6",
+      "n": 9,
+      "accuracy": 0.0,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "entity_tracking",
+      "task": "boxes",
+      "length": "7",
+      "n": 4,
+      "accuracy": 0.25,
+      "superseded_error_rate": 0.0,
+      "other_error_rate": 1.0
+    },
+    {
+      "benchmark": "ruler_vt",
+      "task": "variable_tracking",
+      "length": "synthetic",
+      "n": 400,
+      "accuracy": 0.0,
+      "superseded_error_rate": 0.9775,
+      "other_error_rate": 0.0225
+    }
+  ]
+}

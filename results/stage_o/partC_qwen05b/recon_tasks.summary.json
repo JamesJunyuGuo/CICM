@@ -1,0 +1,31 @@
+{
+  "audit": "results/stage_o/partC_qwen05b/tokenizer_gate.summary.json",
+  "k_values": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "model_tokenizer": "Qwen/Qwen2.5-0.5B",
+  "n": 432,
+  "n_lines": 15,
+  "n_per_seed_cell": 24,
+  "prompt_token_range": [
+    85,
+    150
+  ],
+  "seeds": [
+    11
+  ],
+  "stage": "O-Part-C-recon-data",
+  "templates": [
+    "arrow",
+    "current",
+    "latest"
+  ],
+  "variants": [
+    "single"
+  ]
+}

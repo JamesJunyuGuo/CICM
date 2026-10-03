@@ -1,0 +1,36 @@
+{
+  "above_shuffle95": true,
+  "cv_accuracy": 0.43896103896103894,
+  "model": "EleutherAI/pythia-410m",
+  "n": 388,
+  "protocol": "L2 multinomial logistic regression; 5-fold GroupKFold by semantic_id",
+  "value_label_shuffle95": [
+    0.012364165523500129,
+    0.07310627373183812
+  ],
+  "within_stale_true_current_score": 0.2727420196683745,
+  "within_vs_correct": {
+    "group_a": "within_stale",
+    "group_b": "correct_current",
+    "length_controlled_ci": [
+      -0.27750074593295915,
+      -0.13808669266069673
+    ],
+    "length_controlled_delta": -0.21068330010736958,
+    "length_controlled_shuffle95": [
+      -0.07406924610243762,
+      0.07659143475898153
+    ],
+    "n_a": 194,
+    "n_b": 194,
+    "raw_ci": [
+      -0.28040443702744106,
+      -0.13969217789369606
+    ],
+    "raw_delta": -0.21071567611805198,
+    "raw_shuffle95": [
+      -0.07512341073536784,
+      0.0730678918410832
+    ]
+  }
+}

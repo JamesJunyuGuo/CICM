@@ -1,0 +1,17 @@
+{
+  "candidate_stale_failures": 0,
+  "chosen_pair_count": 0,
+  "clean_evaluated": 0,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "rejected": {},
+  "requirements": "corrupt=within_stale; clean=current; equal chat-token length; aligned write/current spans",
+  "selection": {
+    "candidates": [],
+    "chosen": null,
+    "chosen_k": null,
+    "gate_pass": false
+  },
+  "split_counts": {},
+  "stage": "N-S-pairs",
+  "valid_pairs_all_k": 0
+}

@@ -1,0 +1,85 @@
+\begin{figure}[htbp]
+\centering
+\tcbset{breakable=false}
+\begin{tcolorbox}[enhanced,breakable=false,colback=neutralfill,colframe=neutralink,boxrule=0.7pt,arc=1mm,fonttitle=\bfseries\small,title={Warehouse dispatch --- handoff\_0000}]
+\tcbset{breakable=false}
+\small
+\textbf{Task rules (summary).} Move current slot contents simultaneously
+around each listed cycle. Only committed production operations change state.
+\medskip\par
+\textbf{Initial production slots (excerpt).}\par
+\texttt{S08: P2070}\par
+\texttt{S11: P6443}\par
+\emph{[Other initial entries and earlier log entries omitted.]}\par
+\medskip
+\textbf{Execution log (excerpt).}\par
+\texttt{2037 handoff(cycle=[S01, S09, S08, S15]);}\par
+\texttt{branch=sandbox; status=committed}\par
+\emph{[Intervening entries omitted.]}\par
+\texttt{2041 handoff(cycle=[S11, S01, S07, S12]);}\par
+\texttt{branch=production; status=committed}\par
+\texttt{2042 handoff(cycle=[S10, S09, S13, S01]);}\par
+\texttt{branch=production; status=committed}\par
+\emph{[Entries 2043--2048 omitted.]}\par
+\medskip
+\textbf{Query (verbatim).} The next dispatch must use the item currently in S01. Which P identifier should the agent dispatch? Reason as needed. End with exactly one line in the form FINAL: <one requested P identifier>.
+\end{tcolorbox}
+\begin{tcolorbox}[enhanced,breakable=false,colback=stalefill,colframe=staleink,boxrule=0.8pt,arc=1mm,fonttitle=\bfseries\small,title={Sol answer to the complete history (verbatim)}]
+\tcbset{breakable=false}
+\small
+Tracing S01 backward through committed production cycles leads to initial slot S11, which held P6443.\par
+FINAL: P6443
+\end{tcolorbox}
+\begin{tcolorbox}[enhanced,breakable=false,colback=currentfill,colframe=currentink,boxrule=0.8pt,arc=1mm,fonttitle=\bfseries\small,title={Verified current state (post-hoc annotation)}]
+\tcbset{breakable=false}
+\small
+Immediately before operation 2042, \texttt{S13} contains \texttt{P2070}. That committed production handoff moves it to \texttt{S01}; no later committed production operation changes this slot. Full inverse replay traces \texttt{S01} to initial \texttt{S08}, not \texttt{S11}. The correct dispatch is \textbf{\texttt{P2070}}.
+\end{tcolorbox}
+\caption{Warehouse dispatch failure with high reasoning. The model receives the
+complete history and returns an incorrect dispatch identifier. Selected log
+entries and the verified final transition explain the task; omitted entries
+remain part of the evaluated input. The paired snapshot answer is correct.}
+\label{fig:frontier-log-warehouse}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\tcbset{breakable=false}
+\begin{tcolorbox}[enhanced,breakable=false,colback=neutralfill,colframe=neutralink,boxrule=0.7pt,arc=1mm,fonttitle=\bfseries\small,title={Build-release agent --- handoff\_0001}]
+\tcbset{breakable=false}
+\small
+\textbf{Task rules (summary).} Move current slot contents simultaneously
+around each listed cycle. Only committed production operations change state.
+\medskip\par
+\textbf{Initial production slots (excerpt).}\par
+\texttt{S01: P1740}\par
+\texttt{S03: P6022}\par
+\emph{[Other initial entries and earlier log entries omitted.]}\par
+\medskip
+\textbf{Execution log (excerpt).}\par
+\texttt{2046 handoff(cycle=[S09, S11, S15]);}\par
+\texttt{branch=production; status=committed}\par
+\texttt{2047 handoff(cycle=[S07, S16, S06]);}\par
+\texttt{branch=production; status=committed}\par
+\texttt{2048 handoff(cycle=[S04, S11, S06]);}\par
+\texttt{branch=sandbox; status=committed}\par
+\medskip
+\textbf{Query (verbatim).} The next dispatch must use the item currently in S11. Which P identifier should the agent dispatch? Reason as needed. End with exactly one line in the form FINAL: <one requested P identifier>.
+\end{tcolorbox}
+\begin{tcolorbox}[enhanced,breakable=false,colback=stalefill,colframe=staleink,boxrule=0.8pt,arc=1mm,fonttitle=\bfseries\small,title={Sol answer to the complete history (verbatim)}]
+\tcbset{breakable=false}
+\small
+Reverse-tracing S11 through only committed production cycles leads to initial slot S03, containing P6022.\par
+FINAL: P6022
+\end{tcolorbox}
+\begin{tcolorbox}[enhanced,breakable=false,colback=currentfill,colframe=currentink,boxrule=0.8pt,arc=1mm,fonttitle=\bfseries\small,title={Verified current state (post-hoc annotation)}]
+\tcbset{breakable=false}
+\small
+Immediately before operation 2046, \texttt{S09} contains \texttt{P1740}. That committed production handoff moves it to \texttt{S11}; no later committed production operation changes this slot. Full inverse replay traces \texttt{S11} to initial \texttt{S01}, not \texttt{S03}. The correct dispatch is \textbf{\texttt{P1740}}. Operation 2048 is a sandbox operation and leaves production unchanged.
+\end{tcolorbox}
+\caption{Build-release agent failure with high reasoning. The model receives the
+complete history and returns an incorrect dispatch identifier. Selected log
+entries and the verified final transition explain the task; omitted entries
+remain part of the evaluated input. The paired snapshot answer is correct.}
+\label{fig:frontier-log-build}
+\end{figure}

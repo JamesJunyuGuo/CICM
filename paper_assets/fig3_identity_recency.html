@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>
+ /* canvas 1000 px = \textwidth (5.5 in): 1 px = 0.396 pt; min font 18 px = 7.1 pt */
+ /* PPT / Office style contract: white background, square corners, black ink, Arial, Office accent palette */
+ :root{--ink:#000;--muted:#404040;--hair:#BFBFBF;
+   --cur:#2E7D5B;--old:#7B4FA0;--oth:#9E9E9E;--oth-t:#7F7F7F;--rest:#E0E0E0}
+ *{box-sizing:border-box;margin:0;padding:0}
+ html,body{width:1000px;height:532px;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+ .wrap{width:1000px;height:532px;padding:10px 14px 6px}
+ h1{font-size:22px;font-weight:bold;line-height:1.15;white-space:nowrap}
+ /* timeline schematic */
+ .tl{position:relative;height:96px;margin:4px 0 0}
+ .rail{position:absolute;left:30px;right:92px;top:56px;height:2px;background:#7F7F7F}
+ .q{position:absolute;right:34px;top:39px;width:38px;height:38px;background:#262626;color:#fff;
+    display:grid;place-items:center;font-size:20px;font-weight:bold}
+ .qlab{position:absolute;right:-14px;top:0;font-size:18px;color:var(--muted);width:134px;text-align:center;line-height:1.1;white-space:nowrap}
+ .mk{position:absolute;top:47px;width:20px;height:20px;border-radius:50%;border:2px solid #fff}
+ .mk.cur{background:var(--cur)} .mk.old{background:var(--old)} .mk.oth{background:var(--oth)}
+ .ml{position:absolute;top:0;font-size:19px;font-weight:bold;white-space:nowrap;transform:translateX(-50%);line-height:1.15;text-align:center}
+ .ml span{display:block;font-size:18px;color:var(--muted);font-weight:normal}
+ .pull{position:absolute;font-size:18px;font-weight:bold;color:#fff;padding:1px 8px;white-space:nowrap;line-height:1.2}
+ .arrow{position:absolute;height:0;border-top:2px dashed}
+ .arrow::after{content:"";position:absolute;right:-2px;top:-6px;border:6px solid transparent;border-left-color:currentColor;border-right:0}
+ /* grid */
+ .grid{display:grid;grid-template-columns:150px repeat(3,1fr);grid-template-rows:44px repeat(2,96px);gap:6px 10px;margin-top:6px}
+ .sec{padding:4px 0 8px;margin-top:8px;position:relative}
+ .sec.outcome{border-top:1px solid var(--hair);margin-top:10px;padding-top:8px}
+ .sl{font-size:19px;font-weight:bold;color:var(--ink)}
+ .hd{font-size:18px;color:var(--muted);text-align:center;align-self:end;line-height:1.12}
+ .hd b{color:var(--ink);font-weight:bold;display:block;font-size:19px}
+ .rl{font-size:18px;color:#404040;align-self:center;text-align:right;line-height:1.12;padding-right:6px}
+ .rl b{color:var(--ink);font-weight:bold;display:block;font-size:19px}
+ .rl span{display:block;font-size:18px;color:#404040}
+ .cell{border:1px solid var(--hair);padding:8px 10px 5px;background:#fff;position:relative}
+ .cell.hot{border:2px solid #404040;padding:7px 9px 4px}
+ .bar{display:flex;height:24px;overflow:hidden}
+ .bar i{display:block;height:100%}
+ .bar .c{background:#CFE6DA;box-shadow:inset 0 0 0 1.2px #2E7D5B}
+ .bar .o{background:#E4D6F2;box-shadow:inset 0 0 0 1.2px #7B4FA0}
+ .bar .x{background:#DDDDDD;box-shadow:inset 0 0 0 1.2px #767676}
+ .bar .r{background:#F7F7F7;box-shadow:inset 0 0 0 1.2px #BFBFBF}
+ .nums{display:flex;justify-content:space-between;margin-top:6px;font-size:17px;color:#262626;white-space:nowrap}
+ .note{margin-top:4px;font-size:18px;color:var(--ink);line-height:1.2;white-space:nowrap}
+ .note b{font-weight:bold}
+ .legend{display:flex;gap:14px;margin-top:8px;font-size:18px;color:var(--ink);align-items:center;white-space:nowrap}
+ .chip{display:inline-block;width:14px;height:14px;vertical-align:-2px;margin-right:5px;border:1px solid #404040}
+ .legend .chip.c{background:#CFE6DA!important;border-color:#2E7D5B}
+ .legend .chip.o{background:#E4D6F2!important;border-color:#7B4FA0}
+ .legend .chip.x{background:#DDDDDD!important;border-color:#767676}
+ .legend .chip.r{background:#F7F7F7!important;border-color:#BFBFBF}
+</style></head><body>
+<div class="wrap">
+ <h1>Two pulls on the answer: the same variable&rsquo;s old value vs. a recent value of another variable</h1>
+
+ <div class="sec setup"><div class="sl">Setup: what is varied</div>
+ <div class="tl">
+   <div class="rail"></div>
+   <div class="ml" style="left:96px;color:var(--cur)">current value<span>far away</span></div>
+   <div class="mk cur" style="left:86px"></div>
+   <div class="ml" style="left:336px;color:var(--old)">same variable&rsquo;s old value<span>later re-mention: added / absent</span></div>
+   <div class="mk old" style="left:326px"></div>
+   <div class="ml" style="left:650px;color:var(--oth-t)">another variable&rsquo;s recent value<span>moved far &harr; 2 turns before</span></div>
+   <div class="mk oth" style="left:640px"></div>
+   <div class="arrow" style="left:352px;width:508px;top:68px;color:var(--old)"></div>
+   <div class="pull" style="left:440px;top:57px;background:var(--old)">same-variable pull</div>
+   <div class="arrow" style="left:666px;width:194px;top:86px;color:var(--oth-t)"></div>
+   <div class="pull" style="left:690px;top:75px;background:var(--oth-t)">recency pull</div>
+   <div class="q">?</div><div class="qlab">question:<br>current value?</div>
+ </div></div>
+
+ <div class="sec outcome"><div class="sl">Outcome: what the model answers</div>
+ <div class="grid" id="grid">
+   <div class="hd" style="text-align:right;padding-right:6px;color:var(--oth-t)">another variable&rsquo;s recent value &rarr;</div>
+   <div class="hd"><b>far</b></div>
+   <div class="hd"><b>middle</b></div>
+   <div class="hd"><b>2 turns before</b></div>
+ </div>
+
+ </div>
+ <div class="legend">
+   <span><span class="chip c"></span>current value (correct)</span>
+   <span><span class="chip o"></span>old value of the same variable</span>
+   <span><span class="chip x"></span>another variable&rsquo;s recent value</span>
+   <span><span class="chip r"></span>other (not in context)</span>
+
+ </div>
+</div>
+<script>
+// [current, old-value, other-variable] response shares (%); rows = later old-value re-mention added / absent; cols = other-variable value far / middle / two turns away
+const rows=[
+ {lab:"near old",sub:"re-mention added",cells:[[5.5,94.5,0.0],[16.0,83.5,0.0],[16.0,75.5,1.5]],hot:true,
+  notes:["old value wins","","still the old value"]},
+ {lab:"far old",sub:"no re-mention",cells:[[74.5,17.0,8.5],[61.0,8.0,11.5],[62.5,16.0,16.5]],hot:false,
+  notes:["mostly correct","","old and other tie"]},
+];
+const hw=p=>{const q=p/100,n=200,z=1.96;return (100*z*Math.sqrt(q*(1-q)/n+z*z/(4*n*n))/(1+z*z/n)).toFixed(1);};
+const g=document.getElementById("grid");
+rows.forEach((r,ri)=>{
+  g.insertAdjacentHTML("beforeend",`<div class="rl"><b>${r.lab}</b><span>${r.sub}</span></div>`);
+  r.cells.forEach((c,ci)=>{
+    const [cur,old,oth]=c; const rest=Math.max(0,100-cur-old-oth);
+    const cls = r.hot ? "cell hot" : "cell";
+    g.insertAdjacentHTML("beforeend",`<div class="${cls}">
+      <div class="bar"><i class="c" style="width:${cur}%"></i><i class="o" style="width:${old}%"></i><i class="x" style="width:${oth}%"></i><i class="r" style="width:${rest}%"></i></div>
+      <div class="nums"><span>${cur.toFixed(1)}</span><span>${old.toFixed(1)}</span><span>${oth.toFixed(1)}</span><span>${rest.toFixed(1)}</span></div>
+      <div class="note">${r.notes[ci]}</div></div>`);
+  });
+});
+</script>
+</body></html>

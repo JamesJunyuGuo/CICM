@@ -1,0 +1,120 @@
+{
+  "stage": "D",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "data": "data/stage_d/eval_all.jsonl",
+  "dtype": "bfloat16",
+  "limit": null,
+  "adapter_dir": "results/stage_c/adapters_full_ai/arm_l",
+  "adapter_kind": "head_sliced",
+  "n": 1200,
+  "cells": [
+    {
+      "task_family": "babilong_style",
+      "stage_d_cell": "counting",
+      "answer_type": "int",
+      "n": 100,
+      "accuracy": 0.11,
+      "stale_rate": 0.0,
+      "other_error_rate": 0.89
+    },
+    {
+      "task_family": "babilong_style",
+      "stage_d_cell": "fact_chaining",
+      "answer_type": "string",
+      "n": 100,
+      "accuracy": 0.46,
+      "stale_rate": 0.0,
+      "other_error_rate": 0.54
+    },
+    {
+      "task_family": "babilong_style",
+      "stage_d_cell": "list_set",
+      "answer_type": "list",
+      "n": 100,
+      "accuracy": 0.67,
+      "stale_rate": 0.19,
+      "other_error_rate": 0.14
+    },
+    {
+      "task_family": "michelangelo_style",
+      "stage_d_cell": "latent_list",
+      "answer_type": "list",
+      "n": 100,
+      "accuracy": 0.26,
+      "stale_rate": 0.67,
+      "other_error_rate": 0.07
+    },
+    {
+      "task_family": "michelangelo_style",
+      "stage_d_cell": "multi_round_coreference",
+      "answer_type": "string",
+      "n": 100,
+      "accuracy": 1.0,
+      "stale_rate": 0.0,
+      "other_error_rate": 0.0
+    },
+    {
+      "task_family": "ruler_style",
+      "stage_d_cell": "aggregation",
+      "answer_type": "int",
+      "n": 100,
+      "accuracy": 0.03,
+      "stale_rate": 0.0,
+      "other_error_rate": 0.97
+    },
+    {
+      "task_family": "ruler_style",
+      "stage_d_cell": "multi_hop_tracing",
+      "answer_type": "string",
+      "n": 100,
+      "accuracy": 0.36,
+      "stale_rate": 0.0,
+      "other_error_rate": 0.64
+    },
+    {
+      "task_family": "ruler_style",
+      "stage_d_cell": "retrieval",
+      "answer_type": "int",
+      "n": 100,
+      "accuracy": 1.0,
+      "stale_rate": 0.0,
+      "other_error_rate": 0.0
+    },
+    {
+      "task_family": "state_suite",
+      "stage_d_cell": "entity_state",
+      "answer_type": "string",
+      "n": 100,
+      "accuracy": 0.98,
+      "stale_rate": 0.02,
+      "other_error_rate": 0.0
+    },
+    {
+      "task_family": "state_suite",
+      "stage_d_cell": "implicit_invalidation",
+      "answer_type": "string",
+      "n": 100,
+      "accuracy": 1.0,
+      "stale_rate": 0.0,
+      "other_error_rate": 0.0
+    },
+    {
+      "task_family": "state_suite",
+      "stage_d_cell": "multi_attribute",
+      "answer_type": "string",
+      "n": 100,
+      "accuracy": 0.99,
+      "stale_rate": 0.01,
+      "other_error_rate": 0.0
+    },
+    {
+      "task_family": "state_suite",
+      "stage_d_cell": "parallel_entities",
+      "answer_type": "dict",
+      "n": 100,
+      "accuracy": 0.89,
+      "stale_rate": 0.04,
+      "other_error_rate": 0.07
+    }
+  ]
+}

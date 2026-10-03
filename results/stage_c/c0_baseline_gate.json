@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "simple_threshold": 0.98,
+  "min_simple_accuracy": 0.98,
+  "id_n40_accuracy_by_I": {
+    "2": 0.82,
+    "4": 0.61,
+    "8": 0.46
+  },
+  "id_n40_degradation": true,
+  "missing_cells": []
+}

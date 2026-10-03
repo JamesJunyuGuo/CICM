@@ -1,0 +1,33 @@
+{
+  "audit": "/anvil/scratch/x-jguo7/agent_eval/Contextual_management/results/stage_o/partD_gemma2_9b/tokenizer_gate.summary.json",
+  "k_values": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "model_tokenizer": "google/gemma-2-9b",
+  "n": 3888,
+  "n_lines": 15,
+  "n_per_seed_cell": 72,
+  "prompt_token_range": [
+    90,
+    155
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "stage": "O-Part-D-full-data",
+  "templates": [
+    "arrow",
+    "current",
+    "latest"
+  ],
+  "variants": [
+    "single"
+  ]
+}

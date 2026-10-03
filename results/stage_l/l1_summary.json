@@ -1,0 +1,103 @@
+{
+  "stage": "l1_analyze",
+  "mech_dir": "results/stage_l/l1",
+  "n_boot": 2000,
+  "n_shuffle": 2000,
+  "label_counts": {
+    "correct_current": 1050
+  },
+  "probe": {
+    "layer": 28,
+    "splitter": "GroupKFold(n_splits=5)",
+    "n": 1050,
+    "n_classes": 7,
+    "cv_accuracy": 0.9990476190476191,
+    "within_stale_true_current_score_mean": NaN,
+    "within_stale_true_current_score_shuffle_null": {
+      "n": 0,
+      "ci": [
+        NaN,
+        NaN
+      ],
+      "p_two_sided_empirical": NaN,
+      "above_null_95": false,
+      "below_null_95": false,
+      "exceeds_null_95": false
+    },
+    "within_vs_correct_true_current_score": {
+      "group_a": "within_stale",
+      "group_b": "correct_current",
+      "label_key": "label",
+      "n_pool": 1050,
+      "n_a": 0,
+      "n_b": 1050,
+      "raw_delta": NaN,
+      "raw_delta_ci": [
+        NaN,
+        NaN
+      ],
+      "raw_shuffle_null": {
+        "n": 0,
+        "ci": [
+          NaN,
+          NaN
+        ],
+        "p_two_sided": NaN,
+        "exceeds_null_95": false
+      },
+      "length_controlled_delta": NaN,
+      "length_controlled_delta_ci": [
+        NaN,
+        NaN
+      ],
+      "length_controlled_shuffle_null": {
+        "n": 0,
+        "ci": [
+          NaN,
+          NaN
+        ],
+        "p_two_sided": NaN,
+        "exceeds_null_95": false
+      }
+    }
+  },
+  "attention_stale_ratio_within_vs_correct": {
+    "group_a": "within_stale",
+    "group_b": "correct_current",
+    "label_key": "label",
+    "n_pool": 1050,
+    "n_a": 0,
+    "n_b": 1050,
+    "raw_delta": NaN,
+    "raw_delta_ci": [
+      NaN,
+      NaN
+    ],
+    "raw_shuffle_null": {
+      "n": 0,
+      "ci": [
+        NaN,
+        NaN
+      ],
+      "p_two_sided": NaN,
+      "exceeds_null_95": false
+    },
+    "length_controlled_delta": NaN,
+    "length_controlled_delta_ci": [
+      NaN,
+      NaN
+    ],
+    "length_controlled_shuffle_null": {
+      "n": 0,
+      "ci": [
+        NaN,
+        NaN
+      ],
+      "p_two_sided": NaN,
+      "exceeds_null_95": false
+    }
+  },
+  "l1_status": "not_adjudicable_no_within_stale",
+  "l1_gate_pass": false,
+  "l1_reading": "L-0 produced no within-stale failures, so L-1 retention-vs-selection is not adjudicable. This is a behavioral-gate miss, not evidence for retention failure."
+}

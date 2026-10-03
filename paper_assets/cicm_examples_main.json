@@ -1,0 +1,58 @@
+{
+  "dialogue": {
+    "id": "stage_l_natfact_1_00013__revision_legacy__combined",
+    "source": "overleaf/full_draft_assets/verbatim_cicm_clarified_case.json",
+    "source_sha256": "9abf8427ee7065a930598633fedaa4397c2bdf3f682ae1facd9c10b1fe7cade6",
+    "gold": "reading",
+    "response": {
+      "response": "visual",
+      "label": "within_stale",
+      "finish_reason": "stop",
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "request_sha256": "87a486c42de54d356992aef90f24d95cd552a5ae2413c990f5eaf5e84745fa74"
+    },
+    "messages": 44
+  },
+  "operational": {
+    "id": "deferred_0002_history",
+    "source": "reviews/2026-09-21/frontier_hard/claude_followup/deferred_1024_confirmation_examples_prefix17.json",
+    "source_sha256": "619b142d940f99ac437262ade0316a781208c8321ead97dd496e2cd93eaa5500",
+    "raw_record": "Context_management/results/stage_l/handoff_claude_followup_20260921/deferred_1024_confirmation/opus48_medium/cache/ffd4c204df3f412907fead5aebc93886ff427b25ee628c065b49dd2e4bdb8d54.json",
+    "raw_sha256": "53de62d24bce4917b42363aa26c4545dc2bd7eee8a7cd5becbc04c39353ed1b3",
+    "request_sha256": "65196ea17b3a09124fb09db1d329ba0305636164d8c74c80bb86a77b61983408",
+    "model": "claude-opus-4-8",
+    "stop_reason": "end_turn",
+    "answer": "P7888",
+    "gold": "P7238",
+    "annotations": {
+      "target_slot": "S14",
+      "last_effective_operation_on_target": {
+        "sequence": 1007,
+        "line": "1007 resolve(seq=0876); result=committed",
+        "origin_line": "0876 handoff(cycle=[S08, S09, S14, S12]); branch=production; status=pending",
+        "predecessor_slot": "S09",
+        "value_moved_into_target": "P7238",
+        "value_leaving_target": "P4947"
+      },
+      "effective_operations_on_target": 106,
+      "initial_slot_of_gold_item": "S02",
+      "answer_previously_occupied_target": true,
+      "answer_last_left_target_at_sequence": 848,
+      "snapshot_outcome": "correct",
+      "linearized_outcome": "correct",
+      "independent_forward_replay_matches_gold": true,
+      "visible_chain_check": {
+        "verified_chain_length": 84,
+        "verified_initial_slot": "S02",
+        "stated_numbered_transitions": 0,
+        "stated_transitions_matching_verified_chain": 0,
+        "matching_run_from_most_recent": 0,
+        "first_stated_mismatch": null,
+        "first_divergence": null,
+        "claimed_initial_slot": null,
+        "note": "descriptive check of the visible trace only; thinking summaries are not used; a stated transition not in the verified chain means the model applied a non-effective operation or mis-stated the sequence number"
+      }
+    }
+  },
+  "presentation": "Selected real cases, excerpts and summarized queries; spacing condensed, replay annotations not model input. No population estimate from examples."
+}

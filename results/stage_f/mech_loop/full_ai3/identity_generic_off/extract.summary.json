@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "data": "data/stage_a.jsonl",
+  "n": 20,
+  "max_new_tokens": 16,
+  "dtype": "float32",
+  "ids_from_index": "results/stage_f/mech_loop/f1_subset_index.jsonl",
+  "adapter_dir": "results/stage_c/adapters_full_ai/generic",
+  "adapter_kind": "generic",
+  "adapter_mode": "off",
+  "hidden_saved": false,
+  "out": "results/stage_f/mech_loop/full_ai3/identity_generic_off/extract.npz",
+  "index_out": "results/stage_f/mech_loop/full_ai3/identity_generic_off/extract_index.jsonl",
+  "accuracy": 0.8
+}

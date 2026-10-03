@@ -1,0 +1,55 @@
+{
+  "stage": "k1",
+  "by_scenario": {
+    "dynamic_preference": {
+      "n": 783,
+      "forget_failures": 358,
+      "within_stale_failures": 73,
+      "within_stale_fraction": 0.20391061452513967,
+      "within_stale_ci": [
+        0.16201117318435754,
+        0.24581005586592178
+      ],
+      "error_counts": {
+        "within_stale": 73,
+        "ambiguous": 158,
+        "other_valid_value": 65,
+        "other": 62
+      },
+      "forget_accuracy": 0.5427841634738186,
+      "noforget_reference_rate": 0.2541507024265645
+    },
+    "instructional_forgetting": {
+      "n": 984,
+      "forget_failures": 922,
+      "within_stale_failures": 842,
+      "within_stale_fraction": 0.913232104121475,
+      "within_stale_ci": [
+        0.8947939262472885,
+        0.93058568329718
+      ],
+      "error_counts": {
+        "within_stale": 842,
+        "other": 80
+      },
+      "forget_accuracy": 0.06300813008130081,
+      "noforget_reference_rate": 0.8658536585365854
+    }
+  },
+  "drop_counts": {
+    "instructional_forgetting": {
+      "no_short_extractable_span": 10
+    }
+  },
+  "gate": {
+    "criterion": "within-stale dominates (pooled CI lower bound >= 0.70) in >=2 program-verifiable scenarios",
+    "qualifying_scenarios": [
+      "instructional_forgetting"
+    ],
+    "pass": false,
+    "reading_if_pass": "within-stale dominates (pooled CI lower bound >= 0.70) in >=2 program-verifiable scenarios -> the stale-binding error signature replicates on independent real dialogue; proceed to K2.",
+    "reading_if_fail": "Otherwise -> report the boundary honestly (the synthetic signature is partly setup-specific / real-world failure is more heterogeneous) and STOP."
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "source": "qwen_self_generated_full"
+}

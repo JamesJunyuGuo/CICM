@@ -1,0 +1,83 @@
+{
+  "stage": "l0b_api",
+  "n": 70,
+  "overall_counts": {
+    "correct_current": 56,
+    "within_stale": 12,
+    "same_slot_other": 2
+  },
+  "overall_accuracy": 0.8,
+  "overall_within_stale_failure_share": 0.8571428571428571,
+  "by_dose": {
+    "1": {
+      "n": 14,
+      "counts": {
+        "correct_current": 13,
+        "within_stale": 1
+      },
+      "accuracy": 0.9285714285714286,
+      "within_stale_failure_share": 1.0
+    },
+    "2": {
+      "n": 14,
+      "counts": {
+        "correct_current": 12,
+        "within_stale": 1,
+        "same_slot_other": 1
+      },
+      "accuracy": 0.8571428571428571,
+      "within_stale_failure_share": 0.5
+    },
+    "3": {
+      "n": 14,
+      "counts": {
+        "correct_current": 10,
+        "within_stale": 3,
+        "same_slot_other": 1
+      },
+      "accuracy": 0.7142857142857143,
+      "within_stale_failure_share": 0.75
+    },
+    "4": {
+      "n": 14,
+      "counts": {
+        "within_stale": 4,
+        "correct_current": 10
+      },
+      "accuracy": 0.7142857142857143,
+      "within_stale_failure_share": 1.0
+    },
+    "6": {
+      "n": 14,
+      "counts": {
+        "correct_current": 11,
+        "within_stale": 3
+      },
+      "accuracy": 0.7857142857142857,
+      "within_stale_failure_share": 1.0
+    }
+  },
+  "slot_current_value_count_min": {
+    "clothing": 1,
+    "communication": 1,
+    "cuisine": 1,
+    "diet": 1,
+    "drink": 1,
+    "exercise": 1,
+    "game_style": 1,
+    "learning_style": 1,
+    "meeting_time": 1,
+    "movie_style": 1,
+    "music_genre": 1,
+    "pet_preference": 1,
+    "reading_format": 1,
+    "transport": 1,
+    "vacation": 1,
+    "workspace": 1
+  },
+  "data": "data/stage_l/l0b_mild.jsonl",
+  "rows": "results/stage_l/l0b_mild/api_rows.jsonl",
+  "model": "qwen/qwen-2.5-7b-instruct",
+  "limit_per_dose": null,
+  "concurrency": 8
+}

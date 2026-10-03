@@ -1,0 +1,107 @@
+{
+  "cells": [
+    {
+      "k": 5,
+      "template": "arrow",
+      "variant": "single"
+    },
+    {
+      "k": 2,
+      "template": "latest",
+      "variant": "single"
+    },
+    {
+      "k": 1,
+      "template": "current",
+      "variant": "single"
+    },
+    {
+      "k": 0,
+      "template": "latest",
+      "variant": "multi"
+    },
+    {
+      "k": 5,
+      "template": "latest",
+      "variant": "single"
+    },
+    {
+      "k": 4,
+      "template": "arrow",
+      "variant": "multi"
+    },
+    {
+      "k": 4,
+      "template": "latest",
+      "variant": "single"
+    },
+    {
+      "k": 2,
+      "template": "latest",
+      "variant": "multi"
+    },
+    {
+      "k": 3,
+      "template": "arrow",
+      "variant": "single"
+    },
+    {
+      "k": 1,
+      "template": "latest",
+      "variant": "single"
+    },
+    {
+      "k": 0,
+      "template": "current",
+      "variant": "single"
+    },
+    {
+      "k": 1,
+      "template": "current",
+      "variant": "multi"
+    },
+    {
+      "k": 3,
+      "template": "latest",
+      "variant": "single"
+    },
+    {
+      "k": 0,
+      "template": "latest",
+      "variant": "single"
+    },
+    {
+      "k": 4,
+      "template": "current",
+      "variant": "multi"
+    },
+    {
+      "k": 4,
+      "template": "current",
+      "variant": "single"
+    },
+    {
+      "k": 1,
+      "template": "arrow",
+      "variant": "multi"
+    },
+    {
+      "k": 2,
+      "template": "arrow",
+      "variant": "single"
+    },
+    {
+      "k": 2,
+      "template": "current",
+      "variant": "single"
+    },
+    {
+      "k": 1,
+      "template": "arrow",
+      "variant": "single"
+    }
+  ],
+  "n": 20,
+  "source": "results/stage_n/behavior_full_cpu/tasks.jsonl",
+  "source_sha256": "22e79200d953cd347c3c1ea3ae2f94d2634a45ef70e8e37549f6fa80cafc2fdf"
+}

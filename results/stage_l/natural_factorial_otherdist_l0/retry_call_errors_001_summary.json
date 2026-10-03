@@ -1,0 +1,37 @@
+{
+  "stage": "l0b_api",
+  "n": 3,
+  "overall_counts": {
+    "correct_current": 2,
+    "within_stale": 1
+  },
+  "overall_accuracy": 0.6666666666666666,
+  "overall_within_stale_failure_share": 1.0,
+  "by_dose": {
+    "3": {
+      "n": 2,
+      "counts": {
+        "correct_current": 2
+      },
+      "accuracy": 1.0,
+      "within_stale_failure_share": null
+    },
+    "6": {
+      "n": 1,
+      "counts": {
+        "within_stale": 1
+      },
+      "accuracy": 0.0,
+      "within_stale_failure_share": 1.0
+    }
+  },
+  "slot_current_value_count_min": {
+    "diet": 1,
+    "learning_style": 1
+  },
+  "data": "results/stage_l/natural_factorial_otherdist_l0/retry_call_errors_001.jsonl",
+  "rows": "results/stage_l/natural_factorial_otherdist_l0/retry_call_errors_001_output.jsonl",
+  "model": "qwen/qwen-2.5-7b-instruct",
+  "limit_per_dose": null,
+  "concurrency": 1
+}

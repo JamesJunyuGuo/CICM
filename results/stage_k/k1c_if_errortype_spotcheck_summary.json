@@ -1,0 +1,27 @@
+{
+  "stage": "k1c_if_errortype_spotcheck",
+  "sample_rule": "stratified fixed-seed sample: up to 12 deflect, up to 12 other, remaining within_stale to n=50",
+  "n": 50,
+  "agreement": 0.98,
+  "matches": 49,
+  "mismatches": 1,
+  "hand_label_counts": {
+    "deflect": 2,
+    "other": 12,
+    "within_stale": 36
+  },
+  "model_label_counts": {
+    "deflect": 3,
+    "other": 11,
+    "within_stale": 36
+  },
+  "confusion": {
+    "deflect->deflect": 2,
+    "other->deflect": 1,
+    "other->other": 11,
+    "within_stale->within_stale": 36
+  },
+  "mismatch_ids": [
+    "261"
+  ]
+}

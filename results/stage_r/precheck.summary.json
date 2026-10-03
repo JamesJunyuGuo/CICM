@@ -1,0 +1,19 @@
+{
+  "discovery": {
+    "auc": 0.6653761061946905,
+    "average_precision": 0.6403961726594064,
+    "n": 225
+  },
+  "evaluation": {
+    "auc": 0.6508264462809917,
+    "average_precision": 0.649905616392096,
+    "correct_trigger_rate": 0.10833333333333334,
+    "n": 241,
+    "stale_trigger_rate": 0.30578512396694213
+  },
+  "reading": "diagnostic precheck only; it does not establish correction",
+  "score": "mean frozen-head log(stale_attention/current_attention)",
+  "stage": "R0-attention-risk-precheck",
+  "threshold": 2.566908121109009,
+  "threshold_rule": "discovery correct-score 90th percentile"
+}

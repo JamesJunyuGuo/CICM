@@ -1,0 +1,7 @@
+{
+  "baseline": "results/stage_g/external/full_ai/arm_l/identity/all.baseline20.jsonl",
+  "candidate": "results/stage_g/external/full_ai/arm_l/identity/all.arm_l_off20.jsonl",
+  "n_checked": 20,
+  "passed": true,
+  "mismatches": []
+}

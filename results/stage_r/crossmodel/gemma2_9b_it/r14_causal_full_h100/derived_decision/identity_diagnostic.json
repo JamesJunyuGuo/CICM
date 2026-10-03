@@ -1,0 +1,15 @@
+{
+  "baseline_nonfinite_score_entries": 0,
+  "changed_response_ids": [
+    "stage_l_natfact_2_00177",
+    "stage_l_natfact_4_00003",
+    "stage_l_natfact_2_00016",
+    "stage_l_natfact_6_00106",
+    "stage_l_natfact_6_00161"
+  ],
+  "different_finite_score_entries": 160603987,
+  "identity_nonfinite_score_entries": 0,
+  "identity_response_changes": 5,
+  "max_abs_first_token_score_change": 2.0,
+  "score_arrays_exact": false
+}

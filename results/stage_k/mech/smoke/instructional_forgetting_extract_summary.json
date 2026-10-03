@@ -1,0 +1,11 @@
+{
+  "scenario": "instructional_forgetting",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dtype": "float32",
+  "n": 8,
+  "max_new_tokens": 128,
+  "npz": "results/stage_k/mech/smoke/instructional_forgetting.npz",
+  "index": "results/stage_k/mech/smoke/instructional_forgetting_index.jsonl",
+  "responses": "results/stage_k/mech/smoke/instructional_forgetting_local_responses.json",
+  "value_span_found": 8
+}

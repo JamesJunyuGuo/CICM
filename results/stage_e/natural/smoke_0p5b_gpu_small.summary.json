@@ -1,0 +1,25 @@
+{
+  "stage": "D",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "data": "data/stage_e/natural/eval_all.jsonl",
+  "dtype": "bfloat16",
+  "limit": 20,
+  "adapter_dir": null,
+  "adapter_kind": null,
+  "n": 20,
+  "cells": [
+    {
+      "task_family": "naturalistic",
+      "stage_d_cell": "dialogue",
+      "answer_type": "int",
+      "condition": "simple",
+      "interference_load": 0,
+      "length_variant": "short",
+      "n": 20,
+      "accuracy": 1.0,
+      "stale_rate": 0.0,
+      "other_error_rate": 0.0,
+      "within_stale_rate_among_errors": 0.0
+    }
+  ]
+}

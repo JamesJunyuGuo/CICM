@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{7pt}
+\caption{The current value remains readable when the model answers incorrectly.
+Entries are mean probe probabilities (\%), not classification accuracies.}
+\label{tab:current-value-probe}
+\begin{tabularx}{\linewidth}{@{}Xrr@{}}
+\toprule
+ & \multicolumn{2}{c}{Model's incorrect answer} \\
+\cmidrule(l){2-3}
+Model & Old value & Another variable's value \\
+\midrule
+Qwen2.5-7B   & 84.8 & 86.5 \\
+Llama-3.1-8B & 82.2 & 86.3 \\
+\bottomrule
+\end{tabularx}
+\vspace{2pt}\parbox{\linewidth}{\footnotesize
+Both columns score the queried variable's current value, not the incorrect
+answer. Each model uses the same 1,200-dialogue dataset, with predictions
+held out by dialogue.}
+\end{table}

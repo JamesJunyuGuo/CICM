@@ -1,0 +1,23 @@
+{
+  "tokenizer_for_estimate": "models/llama31_8b_instruct_local",
+  "n_rows": 800,
+  "n_models": 4,
+  "n_calls": 3200,
+  "input_tokens_per_dataset_pass": 345918,
+  "estimated_total_input_tokens": 1383672,
+  "max_total_output_tokens": 51200,
+  "max_input_tokens_single_prompt": 1009,
+  "mean_input_tokens": 432.3975,
+  "models": [
+    "qwen/qwen-2.5-72b-instruct",
+    "meta-llama/llama-3.1-8b-instruct",
+    "meta-llama/llama-3.1-70b-instruct",
+    "openai/gpt-4o"
+  ],
+  "p0_data": "data/p0.jsonl",
+  "stage_c_data": "data/stage_c/eval_battery.jsonl",
+  "seed": 41,
+  "per_cell": 50,
+  "openrouter_key_env": "OPENROUTER_API_KEY",
+  "temperature": 0
+}

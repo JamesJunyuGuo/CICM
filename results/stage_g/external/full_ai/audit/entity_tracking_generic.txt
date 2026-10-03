@@ -1,0 +1,72 @@
+benchmark=entity_tracking arm=generic n_sample=10
+Audit purpose: inspect raw output, gold, v2 parse, and v2 error signature before trusting scores.
+
+--- sample 1 id=entity-565 task=boxes length=3
+gold: the sheet
+raw: 'the sheet'
+pred: sheet
+correct: 1 signature: correct_value
+pred_items: ['sheet'] gold_items: ['sheet']
+
+--- sample 2 id=entity-168 task=boxes length=5
+gold: nothing
+raw: 'the pot'
+pred: pot
+correct: 0 signature: other
+pred_items: ['pot'] gold_items: []
+
+--- sample 3 id=entity-227 task=boxes length=0
+gold: the dish
+raw: 'the dish'
+pred: dish
+correct: 1 signature: correct_value
+pred_items: ['dish'] gold_items: ['dish']
+
+--- sample 4 id=entity-596 task=boxes length=3
+gold: the fish
+raw: 'the bomb and the cake and the newspaper'
+pred: bomb and cake and newspaper
+correct: 0 signature: superseded
+pred_items: ['bomb', 'cake', 'newspaper'] gold_items: ['fish']
+
+--- sample 5 id=entity-137 task=boxes length=3
+gold: the shell
+raw: 'the mirror and the shell'
+pred: mirror and shell
+correct: 0 signature: other
+pred_items: ['mirror', 'shell'] gold_items: ['shell']
+
+--- sample 6 id=entity-90 task=boxes length=1
+gold: the wheel
+raw: 'the wheel'
+pred: wheel
+correct: 1 signature: correct_value
+pred_items: ['wheel'] gold_items: ['wheel']
+
+--- sample 7 id=entity-254 task=boxes length=3
+gold: nothing
+raw: 'nothing'
+pred: nothing
+correct: 1 signature: correct_value
+pred_items: [] gold_items: []
+
+--- sample 8 id=entity-66 task=boxes length=1
+gold: the cigarette
+raw: 'cigarette'
+pred: cigarette
+correct: 1 signature: correct_value
+pred_items: ['cigarette'] gold_items: ['cigarette']
+
+--- sample 9 id=entity-55 task=boxes length=0
+gold: nothing
+raw: 'nothing'
+pred: nothing
+correct: 1 signature: correct_value
+pred_items: [] gold_items: []
+
+--- sample 10 id=entity-3 task=boxes length=0
+gold: the fan
+raw: 'the fan'
+pred: fan
+correct: 1 signature: correct_value
+pred_items: ['fan'] gold_items: ['fan']

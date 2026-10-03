@@ -1,0 +1,386 @@
+{
+  "stage": "stage_l_l0_otherdist_openrouter",
+  "model": "qwen/qwen-2.5-7b-instruct",
+  "data": "data/stage_l/cicm_natural_factorial_otherdist_l0.jsonl",
+  "rows": "results/stage_l/natural_factorial_otherdist_l0/openrouter_qwen25_7b_rows_merged.jsonl",
+  "n": 1200,
+  "overall": {
+    "n": 1200,
+    "counts": {
+      "correct_current": 471,
+      "within_stale": 589,
+      "cross_slot": 76,
+      "other": 64
+    },
+    "accuracy": 0.3925,
+    "failure_rate": 0.6075,
+    "within_stale_rate": 0.49083333333333334,
+    "within_stale_failure_share": 0.8079561042524005,
+    "cross_slot_rate": 0.06333333333333334,
+    "cross_slot_failure_share": 0.10425240054869685,
+    "same_slot_other_rate": 0.0,
+    "same_slot_other_failure_share": 0.0,
+    "other_rate": 0.05333333333333334,
+    "other_failure_share": 0.0877914951989026,
+    "call_error_rate": 0.0,
+    "call_error_failure_share": 0.0
+  },
+  "by_factorial_cell": {
+    "same_far__other_far": {
+      "n": 200,
+      "counts": {
+        "correct_current": 149,
+        "within_stale": 34,
+        "cross_slot": 17
+      },
+      "accuracy": 0.745,
+      "failure_rate": 0.255,
+      "within_stale_rate": 0.17,
+      "within_stale_failure_share": 0.6666666666666666,
+      "cross_slot_rate": 0.085,
+      "cross_slot_failure_share": 0.3333333333333333,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.0,
+      "other_failure_share": 0.0,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "same_far__other_mid": {
+      "n": 200,
+      "counts": {
+        "correct_current": 122,
+        "within_stale": 16,
+        "cross_slot": 23,
+        "other": 39
+      },
+      "accuracy": 0.61,
+      "failure_rate": 0.39,
+      "within_stale_rate": 0.08,
+      "within_stale_failure_share": 0.20512820512820512,
+      "cross_slot_rate": 0.115,
+      "cross_slot_failure_share": 0.2948717948717949,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.195,
+      "other_failure_share": 0.5,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "same_far__other_near2": {
+      "n": 200,
+      "counts": {
+        "correct_current": 125,
+        "within_stale": 32,
+        "cross_slot": 33,
+        "other": 10
+      },
+      "accuracy": 0.625,
+      "failure_rate": 0.375,
+      "within_stale_rate": 0.16,
+      "within_stale_failure_share": 0.4266666666666667,
+      "cross_slot_rate": 0.165,
+      "cross_slot_failure_share": 0.44,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.05,
+      "other_failure_share": 0.13333333333333333,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "same_near__other_far": {
+      "n": 200,
+      "counts": {
+        "correct_current": 11,
+        "within_stale": 189
+      },
+      "accuracy": 0.055,
+      "failure_rate": 0.945,
+      "within_stale_rate": 0.945,
+      "within_stale_failure_share": 1.0,
+      "cross_slot_rate": 0.0,
+      "cross_slot_failure_share": 0.0,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.0,
+      "other_failure_share": 0.0,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "same_near__other_mid": {
+      "n": 200,
+      "counts": {
+        "correct_current": 32,
+        "within_stale": 167,
+        "other": 1
+      },
+      "accuracy": 0.16,
+      "failure_rate": 0.84,
+      "within_stale_rate": 0.835,
+      "within_stale_failure_share": 0.9940476190476191,
+      "cross_slot_rate": 0.0,
+      "cross_slot_failure_share": 0.0,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.005,
+      "other_failure_share": 0.005952380952380952,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "same_near__other_near2": {
+      "n": 200,
+      "counts": {
+        "correct_current": 32,
+        "within_stale": 151,
+        "cross_slot": 3,
+        "other": 14
+      },
+      "accuracy": 0.16,
+      "failure_rate": 0.84,
+      "within_stale_rate": 0.755,
+      "within_stale_failure_share": 0.8988095238095238,
+      "cross_slot_rate": 0.015,
+      "cross_slot_failure_share": 0.017857142857142856,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.07,
+      "other_failure_share": 0.08333333333333333,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    }
+  },
+  "by_other_distance": {
+    "far": {
+      "n": 400,
+      "counts": {
+        "correct_current": 160,
+        "within_stale": 223,
+        "cross_slot": 17
+      },
+      "accuracy": 0.4,
+      "failure_rate": 0.6,
+      "within_stale_rate": 0.5575,
+      "within_stale_failure_share": 0.9291666666666667,
+      "cross_slot_rate": 0.0425,
+      "cross_slot_failure_share": 0.07083333333333333,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.0,
+      "other_failure_share": 0.0,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "mid": {
+      "n": 400,
+      "counts": {
+        "correct_current": 154,
+        "within_stale": 183,
+        "cross_slot": 23,
+        "other": 40
+      },
+      "accuracy": 0.385,
+      "failure_rate": 0.615,
+      "within_stale_rate": 0.4575,
+      "within_stale_failure_share": 0.7439024390243902,
+      "cross_slot_rate": 0.0575,
+      "cross_slot_failure_share": 0.09349593495934959,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.1,
+      "other_failure_share": 0.16260162601626016,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "near2": {
+      "n": 400,
+      "counts": {
+        "correct_current": 157,
+        "within_stale": 183,
+        "cross_slot": 36,
+        "other": 24
+      },
+      "accuracy": 0.3925,
+      "failure_rate": 0.6075,
+      "within_stale_rate": 0.4575,
+      "within_stale_failure_share": 0.7530864197530864,
+      "cross_slot_rate": 0.09,
+      "cross_slot_failure_share": 0.14814814814814814,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.06,
+      "other_failure_share": 0.09876543209876543,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    }
+  },
+  "by_same_slot_distance": {
+    "far": {
+      "n": 600,
+      "counts": {
+        "correct_current": 396,
+        "within_stale": 82,
+        "cross_slot": 73,
+        "other": 49
+      },
+      "accuracy": 0.66,
+      "failure_rate": 0.34,
+      "within_stale_rate": 0.13666666666666666,
+      "within_stale_failure_share": 0.4019607843137255,
+      "cross_slot_rate": 0.12166666666666667,
+      "cross_slot_failure_share": 0.35784313725490197,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.08166666666666667,
+      "other_failure_share": 0.24019607843137256,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "near": {
+      "n": 600,
+      "counts": {
+        "correct_current": 75,
+        "within_stale": 507,
+        "cross_slot": 3,
+        "other": 15
+      },
+      "accuracy": 0.125,
+      "failure_rate": 0.875,
+      "within_stale_rate": 0.845,
+      "within_stale_failure_share": 0.9657142857142857,
+      "cross_slot_rate": 0.005,
+      "cross_slot_failure_share": 0.005714285714285714,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.025,
+      "other_failure_share": 0.02857142857142857,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    }
+  },
+  "by_dose": {
+    "1": {
+      "n": 240,
+      "counts": {
+        "correct_current": 113,
+        "within_stale": 107,
+        "cross_slot": 9,
+        "other": 11
+      },
+      "accuracy": 0.4708333333333333,
+      "failure_rate": 0.5291666666666667,
+      "within_stale_rate": 0.44583333333333336,
+      "within_stale_failure_share": 0.84251968503937,
+      "cross_slot_rate": 0.0375,
+      "cross_slot_failure_share": 0.07086614173228346,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.04583333333333333,
+      "other_failure_share": 0.08661417322834646,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "2": {
+      "n": 240,
+      "counts": {
+        "correct_current": 109,
+        "within_stale": 108,
+        "cross_slot": 11,
+        "other": 12
+      },
+      "accuracy": 0.45416666666666666,
+      "failure_rate": 0.5458333333333333,
+      "within_stale_rate": 0.45,
+      "within_stale_failure_share": 0.8244274809160306,
+      "cross_slot_rate": 0.04583333333333333,
+      "cross_slot_failure_share": 0.08396946564885496,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.05,
+      "other_failure_share": 0.0916030534351145,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "3": {
+      "n": 240,
+      "counts": {
+        "correct_current": 96,
+        "within_stale": 116,
+        "cross_slot": 9,
+        "other": 19
+      },
+      "accuracy": 0.4,
+      "failure_rate": 0.6,
+      "within_stale_rate": 0.48333333333333334,
+      "within_stale_failure_share": 0.8055555555555556,
+      "cross_slot_rate": 0.0375,
+      "cross_slot_failure_share": 0.0625,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.07916666666666666,
+      "other_failure_share": 0.13194444444444445,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "4": {
+      "n": 240,
+      "counts": {
+        "correct_current": 77,
+        "within_stale": 128,
+        "cross_slot": 20,
+        "other": 15
+      },
+      "accuracy": 0.32083333333333336,
+      "failure_rate": 0.6791666666666667,
+      "within_stale_rate": 0.5333333333333333,
+      "within_stale_failure_share": 0.7852760736196319,
+      "cross_slot_rate": 0.08333333333333333,
+      "cross_slot_failure_share": 0.12269938650306748,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.0625,
+      "other_failure_share": 0.09202453987730061,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    },
+    "6": {
+      "n": 240,
+      "counts": {
+        "correct_current": 76,
+        "within_stale": 130,
+        "cross_slot": 27,
+        "other": 7
+      },
+      "accuracy": 0.31666666666666665,
+      "failure_rate": 0.6833333333333333,
+      "within_stale_rate": 0.5416666666666666,
+      "within_stale_failure_share": 0.7926829268292683,
+      "cross_slot_rate": 0.1125,
+      "cross_slot_failure_share": 0.16463414634146342,
+      "same_slot_other_rate": 0.0,
+      "same_slot_other_failure_share": 0.0,
+      "other_rate": 0.029166666666666667,
+      "other_failure_share": 0.042682926829268296,
+      "call_error_rate": 0.0,
+      "call_error_failure_share": 0.0
+    }
+  },
+  "crossover": {
+    "collapsed_other_distance": null,
+    "same_far": {
+      "criterion": "cross_slot_rate >= within_stale_rate",
+      "at": "mid",
+      "cross_slot_rate": 0.115,
+      "within_stale_rate": 0.08
+    },
+    "same_near": null,
+    "note": "Crossover is defined here as cross_slot_rate meeting or exceeding within_stale_rate. Monotone recency capture is assessed from cross_slot_rate across other-slot distance far->mid->near2."
+  },
+  "design_balance": {
+    "('far', 'far')": 200,
+    "('far', 'mid')": 200,
+    "('far', 'near2')": 200,
+    "('near', 'far')": 200,
+    "('near', 'mid')": 200,
+    "('near', 'near2')": 200
+  }
+}

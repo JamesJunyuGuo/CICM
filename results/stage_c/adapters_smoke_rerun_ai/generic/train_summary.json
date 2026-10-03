@@ -1,0 +1,21 @@
+{
+  "variant": "generic_peft_lora",
+  "rank": 4,
+  "alpha": 4.0,
+  "dropout": 0.0,
+  "num_trainable": 540672,
+  "arm": "generic",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "train_data": "data/stage_c/train_overwrite.jsonl",
+  "n_train_rows": 24,
+  "max_steps": 3,
+  "epochs_requested": 2.0,
+  "lr": 0.0002,
+  "losses": [
+    0.20290550589561462,
+    0.16786853969097137,
+    0.07007203996181488
+  ],
+  "loss_start": 0.20290550589561462,
+  "loss_end": 0.07007203996181488
+}

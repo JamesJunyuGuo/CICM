@@ -1,0 +1,311 @@
+{
+  "gqa_scope": "Metrics index 12 query heads; each query head is paired with one of 2 shared key/value heads by contiguous GQA group.",
+  "head_selection": "first 12 heads from held-out cumulative-patch set",
+  "heads": [
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.3658203125,
+          "current_ov_copy_margin_mean": 0.48027638362513647,
+          "n": 45,
+          "qk_latest_margin_mean": 0.38055555555555554,
+          "qk_position_slope_mean": 1.2856398809523812,
+          "stale_attention_sum_mean": 0.6144965277777777,
+          "stale_ov_copy_margin_mean": 0.4394203223012112
+        },
+        "within_stale": {
+          "current_attention_mean": 0.3169519761029412,
+          "current_ov_copy_margin_mean": 0.41390620917081833,
+          "n": 51,
+          "qk_latest_margin_mean": 0.061274509803921566,
+          "qk_position_slope_mean": 1.1002275910364148,
+          "stale_attention_sum_mean": 0.6633731617647058,
+          "stale_ov_copy_margin_mean": 0.4039720166352839
+        }
+      },
+      "head": 3,
+      "layer": 19,
+      "shared_kv_head": 0
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.12576226128472223,
+          "current_ov_copy_margin_mean": 0.4189207464456558,
+          "n": 45,
+          "qk_latest_margin_mean": -0.778125,
+          "qk_position_slope_mean": 0.22086743551587304,
+          "stale_attention_sum_mean": 0.5622395833333333,
+          "stale_ov_copy_margin_mean": 0.34632799614358833
+        },
+        "within_stale": {
+          "current_attention_mean": 0.12068595138250612,
+          "current_ov_copy_margin_mean": 0.35426780230858745,
+          "n": 51,
+          "qk_latest_margin_mean": -1.0262522977941178,
+          "qk_position_slope_mean": 0.12637457326680676,
+          "stale_attention_sum_mean": 0.5358455882352942,
+          "stale_ov_copy_margin_mean": 0.3479335357319393
+        }
+      },
+      "head": 1,
+      "layer": 19,
+      "shared_kv_head": 0
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.21693250868055555,
+          "current_ov_copy_margin_mean": 2.0808090309302014,
+          "n": 45,
+          "qk_latest_margin_mean": -0.10864088270399305,
+          "qk_position_slope_mean": 0.5352671547541543,
+          "stale_attention_sum_mean": 0.6408420138888888,
+          "stale_ov_copy_margin_mean": 1.9091928480537954
+        },
+        "within_stale": {
+          "current_attention_mean": 0.13250134037990197,
+          "current_ov_copy_margin_mean": 1.7826826277316785,
+          "n": 51,
+          "qk_latest_margin_mean": -0.7479918236825981,
+          "qk_position_slope_mean": 0.3022453243992911,
+          "stale_attention_sum_mean": 0.717984068627451,
+          "stale_ov_copy_margin_mean": 1.9649682753153292
+        }
+      },
+      "head": 7,
+      "layer": 22,
+      "shared_kv_head": 1
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.15472225613064236,
+          "current_ov_copy_margin_mean": 8.503580969075362,
+          "n": 45,
+          "qk_latest_margin_mean": -1.232107204861111,
+          "qk_position_slope_mean": 0.2565914093501985,
+          "stale_attention_sum_mean": 0.6049913194444444,
+          "stale_ov_copy_margin_mean": 7.238799182960281
+        },
+        "within_stale": {
+          "current_attention_mean": 0.14059089211856618,
+          "current_ov_copy_margin_mean": 7.970260407410416,
+          "n": 51,
+          "qk_latest_margin_mean": -1.2304783241421569,
+          "qk_position_slope_mean": 0.18958513275915836,
+          "stale_attention_sum_mean": 0.6192938112745098,
+          "stale_ov_copy_margin_mean": 7.156859403317855
+        }
+      },
+      "head": 9,
+      "layer": 24,
+      "shared_kv_head": 1
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.26935763888888886,
+          "current_ov_copy_margin_mean": 2.5358310896489353,
+          "n": 45,
+          "qk_latest_margin_mean": 0.3931857638888889,
+          "qk_position_slope_mean": 1.0328110952225944,
+          "stale_attention_sum_mean": 0.4334635416666667,
+          "stale_ov_copy_margin_mean": 2.5127413206354334
+        },
+        "within_stale": {
+          "current_attention_mean": 0.22144033394607843,
+          "current_ov_copy_margin_mean": 2.4705828101027247,
+          "n": 51,
+          "qk_latest_margin_mean": 0.07313926547181372,
+          "qk_position_slope_mean": 0.9201802913548235,
+          "stale_attention_sum_mean": 0.4752987132352941,
+          "stale_ov_copy_margin_mean": 2.507399874562824
+        }
+      },
+      "head": 9,
+      "layer": 22,
+      "shared_kv_head": 1
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.002894931369357639,
+          "current_ov_copy_margin_mean": -0.06398797035217285,
+          "n": 45,
+          "qk_latest_margin_mean": 0.2482638888888889,
+          "qk_position_slope_mean": 0.7385912698412701,
+          "stale_attention_sum_mean": 0.00392913818359375,
+          "stale_ov_copy_margin_mean": -0.16283632040851645
+        },
+        "within_stale": {
+          "current_attention_mean": 0.002997267479990043,
+          "current_ov_copy_margin_mean": -0.03147017502901601,
+          "n": 51,
+          "qk_latest_margin_mean": 0.21599264705882354,
+          "qk_position_slope_mean": 0.74358806022409,
+          "stale_attention_sum_mean": 0.00409085142846201,
+          "stale_ov_copy_margin_mean": -0.15329605478525551
+        }
+      },
+      "head": 0,
+      "layer": 22,
+      "shared_kv_head": 0
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.11631715562608506,
+          "current_ov_copy_margin_mean": 14.149598981274499,
+          "n": 45,
+          "qk_latest_margin_mean": -1.3398193359375,
+          "qk_position_slope_mean": 0.326204814608135,
+          "stale_attention_sum_mean": 0.3893012152777778,
+          "stale_ov_copy_margin_mean": 8.849866644982939
+        },
+        "within_stale": {
+          "current_attention_mean": 0.09075269512101716,
+          "current_ov_copy_margin_mean": 10.872284009906592,
+          "n": 51,
+          "qk_latest_margin_mean": -1.8899356617647058,
+          "qk_position_slope_mean": 0.1363191150483631,
+          "stale_attention_sum_mean": 0.4837622549019608,
+          "stale_ov_copy_margin_mean": 12.026581593003927
+        }
+      },
+      "head": 7,
+      "layer": 26,
+      "shared_kv_head": 1
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.07989908854166666,
+          "current_ov_copy_margin_mean": -0.4045076907508903,
+          "n": 45,
+          "qk_latest_margin_mean": -0.32554931640625,
+          "qk_position_slope_mean": 0.26737084767175107,
+          "stale_attention_sum_mean": 0.32623697916666666,
+          "stale_ov_copy_margin_mean": -0.26473578635465217
+        },
+        "within_stale": {
+          "current_attention_mean": 0.07019761029411764,
+          "current_ov_copy_margin_mean": -0.40809472840206296,
+          "n": 51,
+          "qk_latest_margin_mean": -0.46055932138480393,
+          "qk_position_slope_mean": 0.21659374504196216,
+          "stale_attention_sum_mean": 0.34610523897058826,
+          "stale_ov_copy_margin_mean": -0.3479039393779304
+        }
+      },
+      "head": 11,
+      "layer": 21,
+      "shared_kv_head": 1
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.1350368923611111,
+          "current_ov_copy_margin_mean": 0.00013569990793863931,
+          "n": 45,
+          "qk_latest_margin_mean": -0.10651041666666666,
+          "qk_position_slope_mean": 0.47983553447420646,
+          "stale_attention_sum_mean": 0.4476996527777778,
+          "stale_ov_copy_margin_mean": -0.10838656357868955
+        },
+        "within_stale": {
+          "current_attention_mean": 0.12860945159313725,
+          "current_ov_copy_margin_mean": -0.34358786258335205,
+          "n": 51,
+          "qk_latest_margin_mean": -0.28587909773284315,
+          "qk_position_slope_mean": 0.4858690790769434,
+          "stale_attention_sum_mean": 0.45982689950980393,
+          "stale_ov_copy_margin_mean": -0.11967248590115238
+        }
+      },
+      "head": 9,
+      "layer": 21,
+      "shared_kv_head": 1
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.048165384928385416,
+          "current_ov_copy_margin_mean": 1.4076595962047578,
+          "n": 45,
+          "qk_latest_margin_mean": -2.0700303819444446,
+          "qk_position_slope_mean": 0.17840295216393853,
+          "stale_attention_sum_mean": 0.3770941840277778,
+          "stale_ov_copy_margin_mean": 4.990858547610265
+        },
+        "within_stale": {
+          "current_attention_mean": 0.0798483455882353,
+          "current_ov_copy_margin_mean": 3.769002412171925,
+          "n": 51,
+          "qk_latest_margin_mean": -2.030905330882353,
+          "qk_position_slope_mean": 0.2596768932182249,
+          "stale_attention_sum_mean": 0.3701746323529412,
+          "stale_ov_copy_margin_mean": 4.834185606513927
+        }
+      },
+      "head": 6,
+      "layer": 26,
+      "shared_kv_head": 1
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.09999186197916667,
+          "current_ov_copy_margin_mean": 1.0624259434640408,
+          "n": 45,
+          "qk_latest_margin_mean": -0.0399993896484375,
+          "qk_position_slope_mean": 0.7249428885323663,
+          "stale_attention_sum_mean": 0.2574001736111111,
+          "stale_ov_copy_margin_mean": 0.9480065271396327
+        },
+        "within_stale": {
+          "current_attention_mean": 0.09843654258578431,
+          "current_ov_copy_margin_mean": 1.0305045377097877,
+          "n": 51,
+          "qk_latest_margin_mean": -0.14455159505208334,
+          "qk_position_slope_mean": 0.69569931243982,
+          "stale_attention_sum_mean": 0.2707375919117647,
+          "stale_ov_copy_margin_mean": 1.0781148421438107
+        }
+      },
+      "head": 5,
+      "layer": 20,
+      "shared_kv_head": 0
+    },
+    {
+      "by_label": {
+        "correct_current": {
+          "current_attention_mean": 0.004857381184895833,
+          "current_ov_copy_margin_mean": -0.10737828128039836,
+          "n": 45,
+          "qk_latest_margin_mean": -0.34175347222222224,
+          "qk_position_slope_mean": 0.05857514880952383,
+          "stale_attention_sum_mean": 0.02396240234375,
+          "stale_ov_copy_margin_mean": -0.14475504514519816
+        },
+        "within_stale": {
+          "current_attention_mean": 0.004401263068704044,
+          "current_ov_copy_margin_mean": -0.10348512444133852,
+          "n": 51,
+          "qk_latest_margin_mean": -0.41942401960784315,
+          "qk_position_slope_mean": 0.03057160364145658,
+          "stale_attention_sum_mean": 0.023843204273897058,
+          "stale_ov_copy_margin_mean": -0.14065569762164862
+        }
+      },
+      "head": 4,
+      "layer": 22,
+      "shared_kv_head": 0
+    }
+  ],
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n_rows": 96,
+  "ov_definition": "source-token direct-unembedding margin of the shared value through the query-head o_proj slice",
+  "qk_definition": "answer-position rotated query dot write-position shared rotated key / sqrt(head_dim)",
+  "stage": "O-Part-C-Qwen-QK-OV"
+}

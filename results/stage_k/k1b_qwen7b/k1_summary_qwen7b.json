@@ -1,0 +1,57 @@
+{
+  "stage": "k1",
+  "by_scenario": {
+    "dynamic_preference": {
+      "n": 783,
+      "forget_failures": 228,
+      "within_stale_failures": 67,
+      "within_stale_fraction": 0.29385964912280704,
+      "within_stale_ci": [
+        0.2324561403508772,
+        0.35526315789473684
+      ],
+      "error_counts": {
+        "other": 99,
+        "other_valid_value": 62,
+        "within_stale": 67
+      },
+      "forget_accuracy": 0.7088122605363985,
+      "noforget_reference_rate": 0.8135376756066411
+    },
+    "instructional_forgetting": {
+      "n": 984,
+      "forget_failures": 970,
+      "within_stale_failures": 970,
+      "within_stale_fraction": 1.0,
+      "within_stale_ci": [
+        1.0,
+        1.0
+      ],
+      "error_counts": {
+        "within_stale": 970
+      },
+      "forget_accuracy": 0.014227642276422764,
+      "noforget_reference_rate": 0.9959349593495935
+    }
+  },
+  "drop_counts": {
+    "instructional_forgetting": {
+      "no_short_extractable_span": 10
+    }
+  },
+  "gate": {
+    "criterion": "within-stale dominates (pooled CI lower bound >= 0.70) in >=2 program-verifiable scenarios",
+    "qualifying_scenarios": [
+      "instructional_forgetting"
+    ],
+    "pass": false,
+    "dissociation": "if_stale_dp_not_dominant",
+    "proceed": true,
+    "next_step": "proceed_to_k2_k3_explain_if_dp_contrast",
+    "reading_if_pass": "within-stale dominates (pooled CI lower bound >= 0.70) in >=2 program-verifiable scenarios -> the stale-binding error signature replicates on independent real dialogue; proceed to K2.",
+    "reading_if_dissociation": "IF stale dominates but clean DP does not -> real IF-vs-DP dissociation; proceed to K2/K3 to explain the contrast.",
+    "reading_if_fail": "Otherwise -> report the boundary honestly (the synthetic signature is partly setup-specific / real-world failure is more heterogeneous)."
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "source": "qwen_self_generated_k1b_full"
+}

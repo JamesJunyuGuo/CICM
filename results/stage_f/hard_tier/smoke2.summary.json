@@ -1,0 +1,55 @@
+{
+  "task": "hard_tier_break_point",
+  "cells": [
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "openrouter_source": "hard_tier",
+      "condition": "interference",
+      "n_lines": 160,
+      "interference_load": 32,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "openrouter_source": "hard_tier",
+      "condition": "interference",
+      "n_lines": 320,
+      "interference_load": 32,
+      "n": 2,
+      "accuracy": 0.5,
+      "within_stale_rate_among_errors": 1.0,
+      "other_rate_among_errors": 0.0
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "openrouter_source": "hard_tier",
+      "condition": "interference",
+      "n_lines": 320,
+      "interference_load": 64,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "openrouter_source": "hard_tier",
+      "condition": "simple",
+      "n_lines": 320,
+      "interference_load": 0,
+      "n": 2,
+      "accuracy": 1.0,
+      "within_stale_rate_among_errors": null,
+      "other_rate_among_errors": null
+    }
+  ],
+  "n_per_cell": 2,
+  "seed": 40,
+  "models": [
+    "qwen/qwen-2.5-72b-instruct"
+  ],
+  "n": 8
+}

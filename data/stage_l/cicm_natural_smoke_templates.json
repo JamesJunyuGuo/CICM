@@ -1,0 +1,134 @@
+{
+  "music_genre": {
+    "system": "You are a helpful assistant in an ongoing preference-planning conversation.",
+    "opening": {
+      "user": "Hi, I'd like to set my preferred style of music.",
+      "assistant": "Of course! I'm here to help you choose your preferred type of music."
+    },
+    "updates": [
+      {
+        "user": "I'd like to update my preference to {value}.",
+        "assistant": "Got it, your preference has been updated accordingly."
+      },
+      {
+        "user": "Please set my favorite genre as {value}.",
+        "assistant": "Your choice has been saved."
+      },
+      {
+        "user": "Can you change my selection to {value}?",
+        "assistant": "I've made the change for you."
+      },
+      {
+        "user": "Switch my music category to {value}.",
+        "assistant": "The update is complete."
+      },
+      {
+        "user": "Make {value} my preferred style.",
+        "assistant": "Your preference has been adjusted."
+      }
+    ],
+    "fillers": [
+      {
+        "user": "I'm still deciding on what I like best.",
+        "assistant": "Take your time! Let me know when you're ready."
+      },
+      {
+        "user": "I'm not sure which type I want yet.",
+        "assistant": "No rush—feel free to think it over."
+      },
+      {
+        "user": "Can I change this later?",
+        "assistant": "Yes, you can update your preference whenever you'd like."
+      }
+    ],
+    "queries": [
+      "What is my current music genre preference?",
+      "Which style do I have selected?",
+      "Can you tell me what my chosen category is?",
+      "What's the current music type I prefer?"
+    ],
+    "slot": "music_genre",
+    "slot_label": "music genre"
+  },
+  "diet": {
+    "system": "You are a helpful assistant in an ongoing preference-planning conversation.",
+    "opening": {
+      "user": "I'd like to set up my food preferences.",
+      "assistant": "Of course! Let's get started with your meal style options."
+    },
+    "updates": [
+      {
+        "user": "I want to switch to {value} meals.",
+        "assistant": "Thanks for letting me know. Your preference has been updated."
+      },
+      {
+        "user": "Please change my plan to {value}.",
+        "assistant": "I've made a note of your new choice."
+      },
+      {
+        "user": "Can you set my meal style to {value}?",
+        "assistant": "Absolutely, I've saved your updated selection."
+      },
+      {
+        "user": "Update my preference to {value}.",
+        "assistant": "Your request has been processed."
+      }
+    ],
+    "fillers": [
+      {
+        "user": "What other options do I have for meals?",
+        "assistant": "There are several ways you can tailor your meals to your preferences."
+      },
+      {
+        "user": "I'm not sure what to pick yet.",
+        "assistant": "Take your time—I'm here whenever you're ready to decide."
+      }
+    ],
+    "queries": [
+      "What meal style is currently set for my plan?",
+      "Can you tell me which meal style I have chosen?",
+      "I'd like to know my current meal style.",
+      "Which meal style do I have selected right now?"
+    ],
+    "slot": "diet",
+    "slot_label": "meal style"
+  },
+  "learning_style": {
+    "system": "You are a helpful assistant in an ongoing preference-planning conversation.",
+    "opening": {
+      "user": "I'd like to talk about how I usually learn best.",
+      "assistant": "Of course! Let's explore your preferred way of absorbing information."
+    },
+    "updates": [
+      {
+        "user": "I actually prefer {value} when I'm trying to understand something new.",
+        "assistant": "Thanks for letting me know how you like to approach learning."
+      },
+      {
+        "user": "I think {value} works best for me overall.",
+        "assistant": "That's helpful to hear, and I'll keep it in mind."
+      },
+      {
+        "user": "I'd say {value} is the method that helps me most.",
+        "assistant": "Great, I appreciate your feedback about your learning preference."
+      }
+    ],
+    "fillers": [
+      {
+        "user": "Sometimes it depends on the subject for me.",
+        "assistant": "That's understandable; different topics can call for different methods."
+      },
+      {
+        "user": "I used to have a different approach, but I've changed recently.",
+        "assistant": "It makes sense that your preferences might evolve over time."
+      }
+    ],
+    "queries": [
+      "How do you typically like to learn new material? Please answer with just your preferred method.",
+      "Which approach helps you most when you're learning? Reply only with your choice.",
+      "What is your usual preference for taking in information? Please state only the method."
+    ],
+    "slot": "learning_style",
+    "slot_label": "learning style"
+  }
+}
